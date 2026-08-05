@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "f1778ff5b03f93d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d3bd07162c040b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cdd8008e77cc8271",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/synthesis/measurement-problem-threads.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "measurement-problem-threads"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2d286cbbf94cb100",
+    "type": "split",
+    "children": [
+      {
+        "id": "2bdfbf438164cccd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83f8e7ab16d8db92",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6efa1579fef3bd3c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1d38453d4f3891fd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 326.5
+  },
+  "right": {
+    "id": "17eb6608e7d9bb90",
+    "type": "split",
+    "children": [
+      {
+        "id": "8313fd57be6c8031",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7303546629ca786",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/synthesis/measurement-problem-threads.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "86afb40d413ce859",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "e1b77be9ef4cac2d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2a1fb9da25e55775",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8fc3eef5da3bb00e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "94f7302263ae2e40",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "wiki/synthesis/measurement-problem-threads.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6efa1579fef3bd3c",
+  "lastOpenFiles": [
+    "wiki/papers/problem-of-time-cold-atoms.md",
+    "wiki/synthesis/measurement-problem-threads.md",
+    "wiki/index.md",
+    "CHECKPOINT_2026-08-04.md",
+    "spacex_export/DEEPEN_REPORT.md",
+    "spacex_export/POLISH_REPORT.md",
+    "wiki/synthesis/modified-speculative-gravity.md",
+    "wiki/synthesis/nuclear-dense-matter-precision.md",
+    "wiki/synthesis/high-energy-astrophysics-multimessenger.md",
+    "wiki/synthesis/condensed-matter-topology-fractionalization.md",
+    "spacex_export/CLEANUP_REPORT.md",
+    "wiki/papers/temporal-imbalance-gravity.md",
+    "wiki/papers/phosphorus-radical-hydroamination.md",
+    "wiki/papers/evanescent-wave-transverse-spin.md",
+    "wiki/papers/five-dimensional-classical-gravity.md",
+    "wiki/papers/warp-drive-positive-energy.md",
+    "wiki/papers/jwst-ulirg-hydrocarbons.md",
+    "wiki/papers/axion-detector-quantum-erasure.md",
+    "spacex_export/_wave5_heads/2026-02-05_v3-4-3-prompt-evanescent-waves-hidden-transverse-spin-moment_2c39fa3c.txt",
+    "spacex_export/_wave5_heads/2026-01-11_temporal-imbalance-theory-gravity-s-new-clock_bc2d307c.txt",
+    "spacex_export/_wave5_heads/2026-02-09_physically-possible-warp-drive-breakthrough_a388b090.txt",
+    "spacex_export/_wave5_heads/2026-02-25_phosphorus-radical-catalyzed-markovnikov-hydroamination_de2d756d.txt",
+    "spacex_export/_wave5_heads/2026-02-07_jwst-reveals-hydrocarbon-factory-in-ulirg_757ca7d7.txt",
+    "spacex_export/_wave5_heads/2026-01-07_five-dimensional-classical-gravity-model_c344a460.txt",
+    "spacex_export/_wave5_heads/2026-05-25_axion-quantum-signatures-erased-in-detectors_6487c8e0.txt",
+    "spacex_export/_wave5_heads",
+    "spacex_export/_all_extracts.txt",
+    "wiki/papers/iras-21204-fuor.md",
+    "wiki/papers/trinity-ca-cu-si-clathrate.md",
+    "wiki/papers/lab-blazar-pair-instability.md",
+    "wiki/papers/massive-gravity-drgt.md",
+    "wiki/papers/early-universe-popiii-flash-ionization.md",
+    "spacex_export/_wave4_heads/2026-01-14_laboratory-suppression-of-blazar-instabilities_fcdb46c3.txt",
+    "spacex_export/LINT_REPORT.md",
+    "wiki/papers/ice-core-fe60-local-cloud.md",
+    "wiki/papers/nonabelian-photonic-braiding.md",
+    "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/smflym6SHPvsBPOl-profile-picture.webp",
+    "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/ndvVH00uaQ5xl889-profile-picture.webp",
+    "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/fqed5OrQsIKMnSfA-profile-picture.webp",
+    "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/NJlQQ5ApTOvwFYI7-profile-picture.webp",
+    "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/GuSJKMWCjNQdNbEr-profile-picture.webp"
+  ]
+}

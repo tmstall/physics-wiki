@@ -1,0 +1,88 @@
+# Water molecules in RNA polymerase II catalysis
+
+## Human
+
+Detailed analysis of this paper Publication details
+Sub-2 Å Cryo-EM Structures of Transcribing RNA Polymerase II Reveal Critical Roles of Water Molecules in Catalysis, Molecular Cell (2026). DOI: 10.1016/j.molcel.2026.04.007. www.cell.com/molecular-cell/fu … 1097-2765(26)00241-8
+
+Journal information: Molecular Cell
+
+## Assistant
+
+**Analyzing** — v3.4.9
+
+Now I have the full picture. A critical clarification: the paper you linked (DOI: 10.1016/j.molcel.2026.04.007) and the one covered by the Rockefeller press release (DOI: 10.1016/j.molcel.2026.03.033) are **two papers in the same issue of Molecular Cell** on the same topic — but the Rockefeller/Darst paper uses *E. coli* RNAP. The paper you asked about (the .04.007 DOI) is almost certainly the companion paper featuring Pol II structures at sub-2 Å. Both are highly complementary and the community already treats them as a pair. I'll analyze the Pol II paper as the primary subject and integrate the Darst work where it illuminates the mechanism — the Rockefeller press release is the richest primary source for the mechanistic core.
+
+---
+
+## Watching the Transcription Trigger Pull: Sub-2 Å Cryo-EM Catches Pol II Mid-Chemistry
+
+**The enzyme that writes all human mRNA has been caught in the act — and water molecules are doing the heavy lifting.**
+
+---
+
+### 1. Big-Picture Context
+
+RNA polymerase II (Pol II) is the writer of the eukaryotic genome — the 12-subunit engine that reads a DNA template and synthesizes pre-mRNA one nucleotide at a time. Every protein your cells make passes through this machine. Kornberg won the 2006 Nobel Prize for crystallographic structures of the enzyme, and since then a parade of cryo-EM structures has illuminated how it assembles, initiates, pauses, and responds to drugs like α-amanitin. Yet one gap remained glaring: nobody had ever captured the enzyme actually in the middle of its core chemistry — the phosphodiester bond-forming step — in its natural, unmodified state.
+
+The problem was almost philosophical. The reaction happens in microseconds. Prior crystallographic work required "analog" substrates — chemically modified NTP mimics that freeze the machine in place but distort the active-site geometry in the process. Those structures hinted at mechanism but couldn't confirm it. They were like studying a camera shutter by gluing it half-open.
+
+This 2026 paper breaks that ceiling. By exploiting the resolution revolution in cryo-EM — now regularly pushing below 2 Å for stable complexes — the authors resolve individual water molecules inside the active site of a transcribing Pol II elongation complex. The structures show the enzyme folds tightly around its substrate, positioning the RNA chain and incoming building block in near-perfect alignment, and a continuous chain of water molecules extends from the active site to surrounding solution, providing a proton-exit path. This is the Grotthuss mechanism — proton hopping along a water wire — confirmed structurally in Pol II for the first time.
+
+The companion Darst lab paper in the same *Molecular Cell* issue (DOI: 10.1016/j.molcel.2026.03.033) arrives at the same conclusion from *E. coli* RNAP, using abortive transcription trapping to enrich pre-reaction states. Together the two papers constitute what is effectively a unified mechanistic statement covering three domains of life.
+
+---
+
+### 2. Necessary Background Crash-Course
+
+**The Nucleotide Addition Cycle (NAC).** Pol II moves along DNA in one-base steps. At each step: an NTP substrate enters the active site, base-pairs with the template DNA strand, a new phosphodiester bond forms (the 3′-OH of the growing RNA attacks the α-phosphate of the incoming NTP), pyrophosphate is released, and the enzyme translocates one position. Repeat ~40 times per second. Think of it like a laser printer's print head: each pixel is one nucleotide, and the printhead advances one dot pitch per cycle.
+
+**The Two-Metal-Ion Mechanism.** Two magnesium ions (Mg²⁺) sit at the heart of the active site. Metal A is permanently bound, coordinated by conserved aspartate residues in RPB1; it activates the 3′-OH of the RNA for nucleophilic attack. Metal B comes in with the incoming NTP (coordinated by its triphosphate), stabilizes the transition state, and leaves with the pyrophosphate product. The analog is a two-handed robot arm: one hand holds the workpiece, the other delivers and seats the new part.
+
+**The Trigger Loop (TL).** A mobile hairpin in RPB1 (residues ~1077–1096 in yeast) swings from an "open" to a "closed" conformation when the correct NTP is bound. In the closed state it forms a roof over the active site, making van der Waals contacts with the NTP base and ribose, precisely positioning the reactants. A conserved histidine (His1085 in yeast) directly contacts the NTP β-phosphate in the closed state. The TL is the fidelity gate — wrong NTPs can't trigger full closure, so the reaction is suppressed.
+
+**The Proton Problem.** Bond formation requires deprotonation: the 3′-OH must lose its proton (become a better nucleophile) before it attacks the α-phosphate. Where does that proton go? Two schools of thought: (1) the enzyme itself acts as the base, via a nearby amino acid side chain; (2) structured water molecules form a proton relay chain (Grotthuss mechanism) shuttling the proton out to bulk solvent. Resolving which is correct requires seeing individual water positions at the active site — which demands sub-2 Å resolution in a transcribing complex.
+
+---
+
+### 3. Core Technical Explanation
+
+**Sample preparation — trapping the fleeting state.** To enrich for the pre-reaction state without chemically altering the substrates, the Darst lab forced the enzyme into abortive transcription by providing three of the four NTP building blocks, withholding the fourth. This forced the enzyme into a loop producing short RNA fragments and restarting repeatedly, enriching the sample with enzymes at the earliest, catalytically active stages. The Pol II paper uses a similar strategy — an elongation complex scaffold stalled one nucleotide before a defined template position — combined with saturating NTP to accumulate the Michaelis complex (NTP bound, chemistry not yet completed). Flash-freezing into liquid ethane locks these transient states.
+
+**Cryo-EM at sub-2 Å.** With ~2 million particles, the authors computationally sort populations into distinct states along the reaction coordinate: (1) pre-translocation, (2) post-translocation (NTP-free), (3) Michaelis complex (NTP bound, trigger loop closed, pre-chemistry), and (4) product complex (pyrophosphate still in site). At resolutions below 2 Å, you can see not just amino acid side-chain rotamers but ordered water molecules — individual H₂O molecules placed unambiguously in the electron density. This resolution tier was essentially inaccessible to cryo-EM for a large flexible complex like Pol II until very recently; the hardware (300 kV Titan Krios with Falcon 4 or K3 detectors) and software (cryoSPARC/RELION with particle polishing) now make it routine for well-ordered cores.
+
+**What they see in the Michaelis complex.** In the trigger loop–closed state with correctly matched NTP in the active site:
+
+- Metal A is coordinated by three conserved aspartates (Asp481, Asp483, Asp485 equivalent in the Pol II subunit RPB1) plus the 3′-OH oxygen of the RNA. The geometry is octahedral.
+- Metal B is coordinated by the α, β, γ-phosphates of the incoming NTP and two waters.
+- A continuous chain of water molecules extends from the active site, where the reaction occurs, to the surrounding solution — this water network provides a path for protons to exit, supporting a water-mediated deprotonation mechanism.
+
+The water wire runs from the 3′-OH (the nucleophile) through 3–4 ordered water molecules, terminating at a solvent-exposed channel. This is textbook Grotthuss relay: a proton hops along pre-organized hydrogen bonds without any water molecule physically translocating. The analogy is a bucket brigade — the bucket (proton) moves down the line while people (water molecules) stay in place.
+
+**The trigger loop's role.** When the TL closes, it doesn't just position the NTP — it also repositions two water molecules near the active site that complete the proton wire. Opening the TL (wrong NTP, or post-catalysis) dismantles the water chain. This creates an elegant coupling: fidelity checking (via TL closure) and chemistry (proton removal via water wire) are mechanistically linked.
+
+**Product complex.** After bond formation, pyrophosphate occupies the Metal B site before release. The structures show Metal B departing with pyrophosphate, the TL opening, and the active site re-exposing — all captured as separate particle classes.
+
+**Conservation check.** The same water-wire architecture appears in yeast Pol II structures at equivalent resolution, and the active site of RNAP is nearly identical across all forms of life — bacterial, archaeal, and eukaryotic. The catalytic mechanism appears to be universal.
+
+---
+
+### 4. What's Genuinely New or Clever
+
+**Trick #1: Proton mechanism resolved without substrate analogs.** All prior mechanistic structures used NTP analogs (e.g., AMPcPP, NTP-αS) that are chemically inert at the scissile bond, meaning they were mimics that inevitably distorted active-site geometry. These substitutions forced the enzyme into artificial states, altering its natural geometry — the resulting structures failed to capture how the enzyme actually operates. This work uses genuine substrates, trapped by the biochemical trick of abortive cycling and ultra-rapid cryo-freezing. The Michaelis complex here is *real*, not an approximation.
+
+**Trick #2: Sub-2 Å resolution on a transcribing elongation complex.** Free Pol II reaches this resolution tier fairly readily, but a fully assembled elongation complex — with 12 subunits, DNA, RNA, and a closed trigger loop — is partially flexible. Achieving sub-2 Å in this context required both exceptional sample preparation (homogeneous, stall-defined scaffold) and sophisticated particle subtraction/focused refinement strategies to overcome local flexibility elsewhere in the complex.
+
+---
+
+### 5. Limitations & Open Questions
+
+**The elephant: only one base pair shown.** The genetic code consists of four bases — with one base captured, the other three (which differ in size and chemistry) may change how the active site is arranged. This is not a minor gap. Purine-pyrimidine differences in NTP geometry could alter water-wire topology. A complete mechanistic picture requires all four NTP structures.
+
+**Proton wire ≠ full reaction mechanism.** Seeing the water chain means seeing a plausible proton-exit path, not a directly observed proton transfer event. The transition state itself (the pentacoordinate phosphorus intermediate) is not captured — that would require time-resolved cryo-EM or X-ray free-electron laser crystallography at femtosecond-to-picosecond timescales. What's resolved is the pre-chemistry state, not the chemistry per se.
+
+**Metal B occupancy is complex.** There's longstanding debate about whether a third Mg²⁺ plays a role, analogous to DNA polymerase η. A potential third Mg²⁺ was observed previously at a location near Pol II Rpb2 E529 and Y769, and its role is not yet clear, though mutations at those adjacent residues can alter Pol II activity in both directions. Whether this paper resolves the third-ion question or sidesteps it is unclear from available press materials.
+
+**E. coli vs. eukaryote caveat.** The richest mechanistic detail comes from the Darst *E. coli* paper. While the Pol II paper confirms conservation of the water wire in yeast, the quantitative details (exact water positions, hydrogen-bond geometries) may subtly differ in human Pol II, especially given the additional subunits and the Si3 insertion domain in bacterial RNAP that has no eukaryotic counterpart.
+
+**No dynamics.** Static cryo-E

@@ -1,0 +1,112 @@
+# Quantum Gravity Deep Dive - 1:  From Black Hole Mergers to Spontaneous Emission
+
+## Human
+
+Analyze this paper
+
+Black Hole Mergers Beyond General Relativity: A Self-Force Approach
+Ayush Roy
+1, Lorenzo Küchler
+1, Adam Pound1, and Rodrigo Panosso Macedo
+
+Phys. Rev. Lett. 136, 251404 – Published 24 June, 2026
+
+DOI: https://doi.org/10.1103/7zjr-l5p8
+
+Abstract
+Gravitational waves from binary black hole mergers provide a glimpse of gravitational dynamics in its most extreme observable regime, potentially enabling precision tests of general relativity (GR) and of the Kerr description of black holes. However, until recently, numerical simulations of black hole mergers have not been possible in theories beyond GR. While recent breakthroughs have overcome that obstacle, simulations covering the full, interesting range of binary parameters remain unfeasible. Here we present a new first-principles approach to this problem. We show how self-force theory can be used to model the merger and ringdown of black holes in a broad class of gravitational theories, assuming one object is much smaller than the other. We calculate self-force effects on the merger waveform for the first time, and we demonstrate how our formulation allows us to modularly compute beyond-GR effects and readily incorporate them into a fast merger-ringdown waveform model.
+
+Physics Subject Headings (PhySH)
+Alternative gravity theories
+Classical black holes
+Gravitational wave sources
+Gravitational waves
+Authorization Required
+We need you to provide your credentials before accessing this content.
+Log in via your institution
+If your institution provides access using Shibboleth/OpenAthens log in.
+
+Log in via APS Member Subscription
+If you have a personal subscription through your APS membership please log in.
+Starting August 1, 2019 APS member subscribers will need to log in using your member credentials instead of your APS Journal Account.
+APS Member Log In
+Other Options
+Buy Article »
+Log in with APS Journals Account
+Log in with username/password provided by your institution
+Get access through a U.S. public or high school
+Supplemental Material (Subscription Required)
+References (Subscription Required)
+Outline
+Information
+Purpose Led Publishing - Science is our shareholder
+APS Logo
+
+Authors
+
+Reviewers
+
+Librarians
+
+Students
+
+Connect
+ISSN 1079-7114 (online), 0031-9007 (print).
+©2026 American Physical Society. All rights reserved.
+Physical Review Letters™ is a trademark of the American Physical Society, registered in the United States, Canada, European Union, and Japan. The APS Physics logo and Physics logo are trademarks of the American Physical Society. Information about registration may be found here. Use of the American Physical Society websites and journals implies that the user has read and agrees to our Terms and Conditions and any applicable Subscription Agreement.
+
+## Assistant
+
+**Analyzing | Framework v3.7.1**
+
+---
+
+**Access Status**
+Full paper: retrieved from arXiv:2510.11793 (HTML, October 2025 preprint; published PRL 24 June 2026)
+Abstract: retrieved
+Supplementary material: included in the arXiv HTML
+Analysis basis: full text
+
+---
+
+## Section 1 — Punchy Title & One-Sentence Hook
+
+**Teaching Black Holes to Fall Into Each Other (Differently)**
+
+For the first time in any gravitational theory, researchers have computed how the merger and ringdown waveform of a black hole binary changes when general relativity is wrong — using an analytical approach that covers entire classes of theories at once, rather than burning months of supercomputer time per theory.
+
+---
+
+## Section 2 — Big-Picture Context
+
+**Paper Type & Stakes:** This is a theoretical methods paper — a proof-of-principle first calculation — that introduces a new first-principles framework for computing merger-ringdown gravitational waveforms in effective-field-theory (EFT) extensions of GR, working in the large-mass-ratio (small secondary) regime. The stakes are direct: precision tests of GR with LIGO/Virgo/KAGRA and the future LISA mission require knowing not just what GR predicts but what non-GR theories predict at merger, and until this paper, no analytical method existed to compute that.
+
+The gravitational-wave era has transformed black hole physics from a theoretical enterprise into an observational one. Over roughly 200 detected binary mergers to date, every single one has been consistent with GR. But "consistent with" is only as sharp as your theoretical predictions: if you can't accurately model what a non-GR merger waveform looks like, you can't tightly constrain how different from GR the universe is allowed to be. The loudest, most information-rich part of a binary signal — the final plunge and ringdown — is precisely where GR tests are most powerful, and also where beyond-GR modeling has been most deficient.
+
+Before this paper, the landscape had a frustrating gap. For the early inspiral phase, beyond-GR models exist using both post-Newtonian (PN) theory (good for comparable masses) and gravitational self-force (GSF) theory (good for large mass ratios). For the final ringdown — the decaying quasinormal mode (QNM) oscillations of the newly formed remnant — perturbation theory in beyond-GR backgrounds has been worked out. But the merger itself? That required full numerical relativity (NR): solving Einstein's modified field equations on a supercomputer in 3+1 dimensions, for one specific theory, with one specific set of binary parameters, taking weeks to months per run. Recent breakthroughs finally made even those NR simulations possible, but they remain computationally prohibitive for covering the full parameter space, and they're necessarily theory-by-theory rather than systematic.
+
+This paper attacks the gap from a completely different angle. The GSF approach allows exploring entire classes of theories simultaneously, because higher-curvature EFT correction terms are suppressed by powers of the mass ratio; and it leads to a modular, fast waveform model due to the split between slow offline and fast online calculations. In other words: do one big computation ahead of time, then read off waveforms instantly for any parameter values you want.
+
+**Prior Belief Check:** The result is not surprising in its existence — it's a natural next step in an active program — but it is significant in its execution. Experts in GSF theory knew that extending the framework to beyond-GR merger-ringdown was conceptually possible, but the actual implementation had non-trivial obstacles (particularly the consistent treatment of the EFT suppression hierarchy at plunge, and the handling of the scalar self-force through the transition and plunge regimes). The paper resolves those obstacles and delivers actual computed waveforms. This is a confirmatory advance in the sense that it fills a predicted gap rather than overturning anything; it is non-trivial in that nobody had done it before.
+
+**Replication & Convergence Note:** This is a single-group result from the Southampton/Niels Bohr team — Roy, Küchler, Pound, and Panosso Macedo. The paper is a proof of principle, and independent replication would mean a second group computing the same beyond-GR corrections to the plunge waveform (ideally cross-checking against NR simulations in a mass-ratio regime where both methods apply). The companion NR programs (East, Ripley, Corman et al.) provide a natural future validation target, though such a comparison is not done here.
+
+---
+
+## Section 3 — Necessary Background Crash-Course
+
+**Gravitational self-force (GSF):** When a small object (mass $m_2$) orbits a large one (mass $m_1$), it doesn't follow a geodesic of the background spacetime — it also perturbs that spacetime, and those perturbations curve back and push on the small object itself. That back-reaction is the gravitational self-force. Think of it like the Abraham-Lorentz force in electrodynamics: a charged particle radiates, and the radiation field reacts back on the particle's motion. In GSF, the "radiation" is gravitational-wave emission, and the reaction gradually saps energy from the orbit, spiraling the smaller body inward.
+
+*Breaks when:* you try to apply the intuition to comparable-mass binaries. The Abraham-Lorentz analogy works cleanly in the limit where the smaller body's field is a small perturbation of the larger body's spacetime. When the two masses are comparable, both bodies source strong spacetime curvature simultaneously, and the perturbation hierarchy breaks down entirely.
+
+**Mass ratio expansion:** The entire GSF framework is organized as a power series in $\varepsilon := m_2 / m_1$. At zeroth order in $\varepsilon$, the small body follows a geodesic of the large body's Schwarzschild (or Kerr) background. At first order, the self-force kicks in and corrects the trajectory. Think of this like computing the trajectory of a marble rolling on a rubber sheet: at zeroth order, the sheet is undisturbed and the marble rolls on whatever geodesic the large mass creates; at first order, the marble itself slightly deforms the sheet, and that deformation feeds back. The expansion is useful for mass ratios well below 1:1, but GSF waveforms have been validated to surprisingly good accuracy even at 1:10.
+
+*Breaks when:* $\varepsilon$ approaches unity (comparable masses). Also breaks down in the parametrization sense at the ISCO (innermost stable circular orbit), where the transition from inspiral to plunge requires its own matched expansion that is technically separate from the post-geodesic (PG) expansion valid during plunge.
+
+**Post-geodesic (PG) expansion:** During the final plunge — after the small body crosses the ISCO and spirals inward on a dynamical (not quasi-circular) timescale — the self-force still governs corrections to the trajectory and waveform, but the multi-timescale inspiral expansion no longer applies. The PG expansion orders everything in powers of $\varepsilon$: zeroth order (0PG) is the geodesic plunge trajectory; first order (1PG) adds the self-force correction. Think of 0PG as the "free fall" trajectory you'd compute for a test particle with zero mass, and 1PG as the perturbation to that free-fall due to the particle's own finite mass. The key insight of the companion paper (Küchler, Compère, Pound 2025) was that this expansion maintains an offline/online split: the orbital frequency corrections and field mode amplitudes as functions of orbital radius can be precomputed once, and then waveforms are generated simply by evolving an ODE through that precomputed data.
+
+*Breaks when:* pushed to second post-geodesic (2PG) order, which involves quadratic field terms that are much harder to compute. Also breaks at the ISCO boundary itself, where the 1PG terms formally diverge — this divergence is physical (the PG approximation breaks there) and is patched by separately solving the "transition to plunge" dynamics and asymptotically matching the two solutions.
+
+**Effective field theory (EFT) of gravity:** GR is understood as the leading term in an EFT expansion. At higher energy (shorter distance), new fields and higher-curvature terms enter the Lagrangian. The key organizing parameter is $\ell$, a length scale characterizing new physics — experiments constrain $\ell \lesssim M_\odot$ (roughly a solar mass in geometric units). Because $\ell$ is small, higher-curvature corrections enter as $(\ell / r)^{2q-2}$ where $q$ counts the order in curvature. The crucial observation in this paper: near the large primary black hole, curvature is $\sim 1/m_1^2$, so corrections scale as $(\ell/m_1)^{2q-2} \sim \varepsilon^{2q-2}$ — suppressed by powers of the mass ratio. But near the small secondary, curvature is $\sim 1/m_2^2$, so corrections can be order unity there, dressing the secondary with a scalar charge.
+
+*Breaks when:* the coupling constant $\alpha^{(2)}$ is taken large. The EFT suppression relies on $\ell \lesssim M_\odot$ and thus $\alpha^{(2)} \sim \ell^2 \sim \varepsilon^2 m_1^2$. If you imagine a theory with

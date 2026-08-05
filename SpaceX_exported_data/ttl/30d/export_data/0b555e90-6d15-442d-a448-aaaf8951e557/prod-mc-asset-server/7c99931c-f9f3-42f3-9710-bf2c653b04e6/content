@@ -1,0 +1,18 @@
+
+[app]
+title = Tesseract Explorer
+package.name = tesseractexplorer
+package.domain = org.tesseract
+source.dir = .
+source.include_exts = py
+version = 5.6
+requirements = python3, kivy==2.3.0, numpy==1.21.6
+android.api = 30
+android.minapi = 21
+android.ndk = 23b
+orientation = portrait
+fullscreen = 0
+
+[buildozer]
+log_level = 2
+warn_on_root = 1

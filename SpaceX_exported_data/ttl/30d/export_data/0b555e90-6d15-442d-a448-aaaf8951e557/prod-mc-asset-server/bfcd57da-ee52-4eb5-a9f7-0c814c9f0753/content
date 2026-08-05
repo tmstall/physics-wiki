@@ -1,0 +1,95 @@
+# --- 1. CRASH PROTECTION ---
+# This forces the window to stay open if an error occurs.
+Trap {
+    Write-Host "`n!!! CRITICAL FAILURE !!!" -ForegroundColor Red
+    Write-Host $_.Exception.Message -ForegroundColor Red
+    Write-Host "Press Enter to exit..."
+    Read-Host
+    Exit
+}
+
+# --- 2. SETUP ---
+$ErrorActionPreference = "Stop"
+# Ensure we are in the script's folder
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+Set-Location -Path $ScriptDir
+
+Write-Host "--- Markdown to PDF v26 (All-in-One Fix) ---" -ForegroundColor Cyan
+Write-Host "Working in: $ScriptDir" -ForegroundColor Gray
+
+# --- 3. TARGET FILE ---
+$InputFile = "Testing_Grok_file.md"
+$OutputFile = "output.pdf"
+
+if (-not (Test-Path $InputFile)) {
+    Write-Error "CRITICAL: Could not find '$InputFile'"
+    Write-Host "Please rename your file to 'Testing_Grok_file.md'" -ForegroundColor Yellow
+    Write-Host "Press Enter to exit..."
+    Read-Host
+    Exit
+}
+
+# --- 4. READ FILE ---
+Write-Host "Reading file..." -ForegroundColor Green
+$content = Get-Content -Path $InputFile -Raw -Encoding UTF8
+
+# --- 5. MATH VAULT (Step 1: Hide Equation Blocks) ---
+# We must hide $$...$$ blocks so we don't accidentally insert more $ signs inside them.
+Write-Host "Securing equation blocks..." -ForegroundColor Yellow
+
+$MathVault = @{}
+$MathCount = 0
+# Regex to find $$...$$ across multiple lines
+$mathPattern = [regex]'(?s)\$\$.*?\$\$'
+$matches = $mathPattern.Matches($content)
+
+foreach ($m in $matches) {
+    $token = "##__MATH_BLOCK_${MathCount}__##"
+    $MathVault[$token] = $m.Value
+    # Replace the equation with a safe token
+    $content = $content.Replace($m.Value, $token)
+    $MathCount++
+}
+
+# --- 6. CLEAN SYMBOLS (ASCII-SAFE) ---
+Write-Host "Normalizing symbols..." -ForegroundColor Yellow
+# Convert Fancy Unicode to Normal Text
+# We generate chars dynamically to keep the script file encoding safe
+$FixMap = @{
+    # Italic S, P, p, n
+    119878="S"; 119875="P"; 119901="p"; 119899="n"; 
+    # Smart Quotes
+    8217="'"; 8220='"'; 8221='"';
+}
+foreach ($key in $FixMap.Keys) {
+    $badChar = [char]$key # Safe cast for PS 5.1
+    $content = $content.Replace($badChar, $FixMap[$key])
+}
+
+# --- 7. FIX INLINE MATH (Step 2: Wrap Symbols) ---
+Write-Host "Fixing inline math symbols..." -ForegroundColor Yellow
+
+# Map of symbols that need $ wrappers
+$InlineMap = @{
+    "\langle" = "$\langle$";
+    "\rangle" = "$\rangle$";
+    "\sigma"  = "$\sigma$";
+    "\gamma"  = "$\gamma$";
+    "\cdot"   = "$\cdot$";
+}
+
+foreach ($key in $InlineMap.Keys) {
+    # We simple-replace. Since $$ blocks are hidden in the vault, this is safe.
+    # We check if it is already wrapped to avoid $$gamma$$
+    if ($content.Contains($key)) {
+        # Replace raw symbol with $symbol$
+        $content = $content.Replace($key, $InlineMap[$key])
+    }
+}
+
+# Fix "Double Dollar" glitch if any appeared (e.g. $$gamma$$ -> $gamma$)
+$content = $content.Replace('$$', '$')
+
+# --- 8. RESTORE MATH VAULT (Step 3: Put Equations Back) ---
+Write-Host "Restoring equation blocks..." -ForegroundColor Yellow
+foreach ($

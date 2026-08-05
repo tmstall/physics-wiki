@@ -1,0 +1,269 @@
+
+% Setting up the document class and necessary packages
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage{titletoc}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\usepackage{DejaVuSans}
+\renewcommand*\familydefault{\sfdefault}
+
+% Defining title and author
+\title{Tesseract Explorer Manual \\ Version 1.4.1}
+\author{}
+\date{June 24, 2025}
+
+% Starting the document
+\begin{document}
+
+% Generating the title page
+\maketitle
+\thispagestyle{empty}
+\vspace{1cm}
+\begin{center}
+    \textbf{Abstract} \\
+    This manual provides a comprehensive guide to using the Tesseract Explorer application (version 5.6), a tool for visualizing 4D geometric objects: the tesseract (hypercube) and the 5-cell (hyper tetrahedron). It covers object toggling, rotation controls, marking systems, axis display, and visualization methods to build intuition for 4D geometry. Version 1.4.1 includes updated rotation control explanations.
+\end{center}
+\clearpage
+
+% Generating the table of contents
+\tableofcontents
+\clearpage
+
+% Introduction section
+\section{Introduction: What is a Tesseract and a 5-Cell?}
+The Tesseract Explorer is an interactive application designed to visualize two fascinating 4-dimensional (4D) geometric objects: the \textit{tesseract} (or hypercube) and the \textit{5-cell} (or hyper tetrahedron). A tesseract is a 4D analog of a cube, featuring 16 vertices, 32 edges, 24 square faces, and 8 cubic cells. The 5-cell is the 4D analog of a tetrahedron, with 5 vertices, 10 edges, 10 triangular faces, and 5 tetrahedral cells. Since we live in a 3D world, the application projects these 4D objects onto a 2D screen, using rotation and marking tools to help you build intuition for their structure.
+
+This manual, updated for version 5.6 of the application (manual version 1.4.1, June 24, 2025), guides you through exploring these objects using three visualization methods, interactive controls, and marking systems. Key features include toggling between the tesseract and 5-cell, displaying axis labels, and improved axis alignment for the 5-cell.
+
+% Understanding the Initial View section
+\section{Understanding the Initial View}
+When you launch Tesseract Explorer, you see a 2D projection of either a tesseract or a 5-cell, depending on the active object (tesseract by default). The projection resembles a 3D wireframe, but it represents a 4D shape. Below is an overview of each object’s initial view:
+
+\subsection{Tesseract (Hypercube)}
+The tesseract’s projection appears as a cube within a larger cube, connected by six distorted, trapezoid-like shapes:
+\begin{itemize}
+    \item \textbf{Inner Cube (W-)}: The small, central cube, formed by vertices with a negative W-coordinate, appears "furthest" in the 4th dimension.
+    \item \textbf{Outer Cube (W+)}: The large cube, formed by vertices with a positive W-coordinate, appears "closest" in 4D, enveloping the others.
+    \item \textbf{Connecting Cubes}: Six distorted shapes (X-, X+, Y-, Y+, Z-, Z+) connect the inner cube’s vertices to the outer cube’s, representing the other six cubic cells. For example, X- and X+ are the "left" and "right" connectors, Y- and Y+ are "bottom" and "top," and Z- and Z+ are "back" and "front."
+\end{itemize}
+As the tesseract rotates, the inner cube may expand to become the outer cube, revealing the equal nature of all eight cells.
+
+\subsection{5-Cell (Hyper Tetrahedron)}
+The 5-cell’s projection appears as a small, complex wireframe resembling a tetrahedron within a larger tetrahedron, with edges connecting five vertices:
+\begin{itemize}
+    \item \textbf{Vertices}: Five points, labeled internally as 0–4, form the corners of the 5-cell.
+    \item \textbf{Edges}: Ten lines connect all pairs of vertices, forming a complete graph.
+    \item \textbf{Faces}: Ten triangular faces outline the tetrahedral cells.
+    \item \textbf{Cells}: Five tetrahedral cells (Cell 0–4), each defined by four vertices, are the 3D "volumes" of the 4D shape.
+\end{itemize}
+Unlike the tesseract, the 5-cell lacks face symbols due to its triangular faces, but its cells can be marked for visualization. The projection scales with window size to match the tesseract’s proportions.
+
+% Visualization Methods section
+\section{Visualization Methods}
+To build intuition for 4D geometry, Tesseract Explorer offers three methods, progressing from passive observation to active experimentation. These apply to both the tesseract and 5-cell, with slight differences noted.
+
+\subsection{Method 1: Inside-Out World (Observing Transformation)}
+This method helps you see the tesseract and 5-cell as collections of equal cells viewed from different 4D perspectives, breaking the illusion of "inner" versus "outer."
+
+\textbf{Instructions}:
+\begin{enumerate}
+    \item \textbf{Just Watch}: Start the app with auto-rotation on (press space bar if off). Observe the slow tumbling motion for 1–2 minutes.
+    \item \textbf{Focus on Key Features}:
+        \begin{itemize}
+            \item \textit{Tesseract}: Watch the inner cube (W-). Notice it warps, grows, and becomes the outer cube (W+), while the outer cube shrinks to the center.
+            \item \textit{5-Cell}: Track a vertex or tetrahedral cell (e.g., Cell 0). See it move outward, expand, and shift positions with other vertices.
+        \end{itemize}
+    \item \textbf{Witness the Flip}: For the tesseract, the inner cube becomes the outer cube, showing all cells are equal. For the 5-cell, vertices cycle through central and outer positions, revealing their symmetry.
+\end{enumerate}
+
+\textbf{Interpretation}: The "inside-out" transformation demonstrates that cells are equal but appear different due to their 4D distance from you. The tesseract’s cubes swap roles, and the 5-cell’s vertices cycle, highlighting 4D perspective.
+
+\subsection{Method 2: Paused Analysis (Deconstructing the Shape)}
+This method lets you study the static structure of each object, identifying its cells and connections.
+
+\textbf{Instructions}:
+\begin{enumerate}
+    \item \textbf{Find an Interesting View}: Let the object auto-rotate to a complex position, then pause (space bar or Auto-Rotate button).
+    \item \textbf{Identify the Cells}:
+        \begin{itemize}
+            \item \textit{Tesseract}: Spot the inner (W-) and outer (W+) cubes. Identify the six connecting frustums (X-, X+, Y-, Y+, Z-, Z+) as distorted cubic cells.
+            \item \textit{5-Cell}: Locate the five vertices and trace the ten edges. Visualize the five tetrahedral cells (Cell 0–4) as 3D volumes formed by four vertices each.
+        \end{itemize}
+    \item \textbf{Step Through Rotations}:
+        \begin{itemize}
+            \item Rotate manually (e.g., hold Q briefly, speed ~1.00x).
+            \item Pause auto-rotation.
+            \item Press Page Down to step backward or Page Up to step forward in the last manual rotation, moving by small increments.
+        \end{itemize}
+\end{enumerate}
+
+\textbf{Interpretation}: Stepping through rotations reveals how vertices and edges transform, providing insight into 4D connectivity. The tesseract’s cubic cells and the 5-cell’s tetrahedral cells become clearer as you trace their projections.
+
+\subsection{Method 3: Active Visualization}
+This method builds intuition by letting you control specific 4D rotations and observe their effects.
+
+\textbf{Instructions}:
+\begin{enumerate}
+    \item \textbf{Set Speed}: Use the speed slider to set a slow-to-medium speed (~1.00x). Ensure auto-rotation is off.
+    \item \textbf{Rotate on a Single 4D Plane}:
+        \begin{itemize}
+            \item Hold Q for xw-plane rotation. Note the unique swirling motion.
+            \item Hold A for yw-plane rotation. Observe a different 3D projection shift.
+        \end{itemize}
+    \item \textbf{Use Precise Nudges}:
+        \begin{itemize}
+            \item After rotating (e.g., with E), hold Shift and tap Z for small zw-plane rotations.
+        \end{itemize}
+\end{enumerate}
+
+\textbf{Interpretation}: By controlling rotations, you connect actions to visual changes, learning how 4D planes (e.g., xw, yw) affect the projection. The 5-cell’s simpler structure highlights vertex movements, while the tesseract shows complex cell transformations.
+
+% Guide to Controls section
+\section{Guide to Controls}
+Tesseract Explorer offers intuitive controls to interact with the tesseract and 5-cell, supporting visualization and analysis.
+
+\subsection{General Controls}
+\begin{itemize}
+    \item \textbf{Auto-Rotate Button}: Toggles continuous tumbling motion (default: off). The button displays “Auto-Rotate: ON” or “Auto-Rotate: OFF.”
+    \item \textbf{Speed Slider}: Adjusts rotation speed for auto-rotation and manual keys (0.1x to 1.5x, default 1.00x).
+    \item \textbf{Escape}: Exits the application.
+\end{itemize}
+
+\subsection{Object Toggle}
+\begin{itemize}
+    \item \textbf{T Key}: Switches between tesseract and 5-cell, resetting all states (axes, labels, markings, rotation). The marking panel updates to reflect 8 cells (tesseract) or 5 cells (5-cell).
+\end{itemize}
+
+\subsection{Rotation Controls}
+Rotation controls allow you to manipulate the 4D object’s orientation, revealing its structure through different projections. The tesseract and 5-cell can be rotated in six planes: three 4D planes (xw, yw, zw) involving the 4th dimension (W) and three 3D planes (xy, xz, yz) within 3D space. Each plane is controlled by a pair of keys, with one key rotating in the positive direction and the other in the negative direction. For example, Q rotates the xw-plane positively, while W rotates it negatively, producing a swirling motion in the tesseract or vertex shifts in the 5-cell. The 4D rotations (xw, yw, zw) create complex transformations, such as the tesseract’s inner cube expanding to the outer cube, while 3D rotations (xy, xz, yz) resemble familiar rotations of a 3D object.
+
+For precise control, you can apply small, incremental rotations (nudges) by holding Shift with a rotation key, ideal for analyzing specific changes. When auto-rotation is off, Page Up and Page Down allow you to step forward or backward through the last manual rotation, enabling detailed examination of the projection’s evolution.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llp{6cm}}
+        \toprule
+        \textbf{Keys} & \textbf{Plane of Rotation} & \textbf{Description} \\
+        \midrule
+        Q / W & xw-plane & Rotates along X and W axes (4D rotation, swirling motion). \\
+        A / S & yw-plane & Rotates along Y and W axes (4D rotation, vertical shift). \\
+        Z / X & zw-plane & Rotates along Z and W axes (4D rotation, depth shift). \\
+        E / R & xy-plane & Rotates along X and Y axes (3D rotation, horizontal). \\
+        D / F & xz-plane & Rotates along X and Z axes (3D rotation, depth). \\
+        C / V & yz-plane & Rotates along Y and Z axes (3D rotation, vertical). \\
+        Shift + [Key] & Nudge & Applies a small rotation on the corresponding plane. \\
+        Page Up / Down & Paused Nudge & Steps the last manual rotation forward/backward (auto-rotation off). \\
+        \bottomrule
+    \end{tabular}
+    \caption{Rotation Controls}
+    \label{tab:rotation_controls}
+\end{table}
+
+\textbf{Tips for Rotation}:
+\begin{itemize}
+    \item Start with 4D rotations (Q/W, A/S, Z/X) to observe unique 4D effects, like the tesseract’s cell flips or 5-cell’s vertex cycles.
+    \item Use slow speeds (0.25x) with nudges for precise analysis, especially when studying a single plane.
+    \item Combine rotations with axis display (keys 1–6) to visualize the plane being rotated (e.g., Q with xw axes).
+
+\subsection{Marking Controls}
+Marking highlights vertices or faces to track cells during rotation. Select a tool before marking.
+
+\subsubsection{Color and Tool Selection}
+\begin{itemize}
+    \item \textbf{Color Palette}: Click one of 8 color swatches to select an active color (white border indicates selection).
+    \item \textbf{Erase Button}: Select to remove individual vertex markings via point-and-click.
+    \item \textbf{Clear All Button}: Removes all markings (vertices and faces) from the current object.
+\end{itemize}
+
+\subsubsection{Cell-Level Marking}
+\begin{itemize}
+    \item \textbf{Mark Cell Vertices}: Select a color, then toggle a cell button (e.g., W+ for tesseract, Cell 0 for 5-cell). Marks the cell’s vertices with colored dots.
+    \item \textbf{Mark Cell Faces}: Select a color, then toggle a cell button. Highlights the cell’s faces with semi-transparent polygons. Tesseract faces show directional symbols; 5-cell faces are plain triangles.
+\end{itemize}
+
+\subsubsection{Point-and-Click Marking}
+\begin{itemize}
+    \item \textbf{Mark a Single Vertex}: Select a color, click a white vertex to add a colored dot (16 for tesseract, 5 for 5-cell).
+    \item \textbf{Erase a Single Vertex}: Select Erase, click a marked vertex to remove its last color.
+\end{itemize}
+
+\subsection{Face Marking System}
+For the tesseract, each cell’s six faces have unique symbols to indicate orientation (not available for 5-cell’s triangular faces):
+\begin{itemize}
+    \item \textbf{X-Axis}: Horizontal arrow (right for +, left for -).
+    \item \textbf{Y-Axis}: Vertical arrow (up for +, down for -).
+    \item \textbf{Z-Axis}: Circle with diagonal line (out for +, in for -).
+    \item \textbf{W-Axis}: Square with dot (out for +) or cross (in for -).
+\end{itemize}
+Symbols appear on marked faces, aiding in tracking 4D orientation.
+
+\subsection{Mark Axis of Rotation for a Given Plane}
+Toggle axis display to visualize rotation planes:
+\begin{itemize}
+    \item \textbf{Keys 1–6}: Toggle axes for planes:
+        \begin{itemize}
+            \item 1: X, W (xw-plane, Q/W)
+            \item 2: Y, W (yw-plane, A/S)
+            \item 3: Z, W (zw-plane, Z/X)
+            \item 4: X, Y (xy-plane, E/R)
+            \item 5: X, Z (xz-plane, D/F)
+            \item 6: Y, Z (yz-plane, C/V)
+        \end{itemize}
+    \item \textbf{Key 0}: Toggles axis labels (“X”, “Y”, “Z”, “W”) at both axis endpoints.
+\end{itemize}
+
+\textbf{Axis Appearance}:
+\begin{itemize}
+    \item \textbf{W-axis}: Cyan
+    \item \textbf{X-axis}: Magenta
+    \item \textbf{Y-axis}: Yellow
+    \item \textbf{Z-axis}: Green
+    \item \textbf{Length}: Tesseract: ±1.5 (150 units, extends beyond faces); 5-cell: ±0.707 (~70.7 units, approximates face distance).
+    \item \textbf{Labels}: Plane labels (e.g., “1: xw”) at one axis endpoint, offset to avoid overlap; axis labels (with key 0) at both endpoints.
+\end{itemize}
+Axes are thick (width=2.5) and drawn after face meshes for visibility.
+
+\subsection{Mapping the Cell Labels}
+Cell labels correspond to geometric definitions:
+\begin{itemize}
+    \item \textbf{Tesseract (Hypercube)}:
+        \begin{itemize}
+            \item \textbf{X-}: Cube with negative X-coordinate vertices.
+            \item \textbf{X+}: Cube with positive X-coordinate vertices.
+            \item \textbf{Y-}: Cube with negative Y-coordinate vertices.
+            \item \textbf{Y+}: Cube with positive Y-coordinate vertices.
+            \item \textbf{Z-}: Cube with negative Z-coordinate vertices.
+            \item \textbf{Z+}: Cube with positive Z-coordinate vertices.
+            \item \textbf{W-}: Cube with negative W-coordinate vertices (initial inner cube).
+            \item \textbf{W+}: Cube with positive W-coordinate vertices (initial outer cube).
+        \end{itemize}
+    \item \textbf{5-Cell (Hyper Tetrahedron)}:
+        \begin{itemize}
+            \item \textbf{Cell 0–4}: Each cell is a tetrahedron formed by four of the five vertices, labeled internally as Cell 0 to Cell 4.
+        \end{itemize}
+\end{itemize}
+
+% Tips for Visualization section
+\section{Tips for Visualization}
+\begin{itemize}
+    \item \textbf{Start Simple}: Begin with the tesseract, using Method 1 to observe the inside-out flip. Then explore the 5-cell, focusing on vertex cycles.
+    \item \textbf{Use Markings}: Mark W- and W+ (tesseract) or Cell 0 (5-cell) to track key cells during rotation.
+    \item \textbf{Leverage Axes}: Toggle axes (1–6) and labels (0) to understand rotation planes, especially for 4D rotations (xw, yw, zw).
+    \item \textbf{Experiment with Speed}: Use slow speeds (0.25x) for detailed analysis, faster speeds (1.50x) for dynamic observation.
+    \item \textbf{Resize Window}: Maximize the window to compare tesseract and 5-cell sizes, noting their scaled projections.
+    \item \textbf{Toggle Objects}: Switch between tesseract and 5-cell (`T`) to contrast their complexity (8 vs. 5 cells).
+\end{itemize}
+
+% Ending the document
+\end{document}

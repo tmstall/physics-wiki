@@ -1,0 +1,85 @@
+# Master Set List (MSL) v3.13 — 140 Node Master Gold Set
+
+**Project Initialization Date:** May 23, 2026
+
+## Project Purpose
+The **Master Set List (MSL)** was developed as a high-quality, technically rigorous **audiophile test suite** for evaluating stereo hardware performance.
+
+**Core Goals:**
+- Provide repeatable, diagnostic-grade tracks for testing specific aspects of audio reproduction (transient speed, imaging, dynamic headroom, frequency response, phase coherence, etc.).
+- Balance technical utility with musical enjoyment.
+- Maintain a clean, version-controlled, and well-documented collection that can evolve over time.
+- Serve as a consistent benchmark across different listening sessions and hardware configurations.
+
+The set is intentionally curated and maintained with engineering precision (similar to how performance benchmarks are managed in professional systems work).
+
+## Hardware Configurations
+Two primary systems are used for evaluation:
+
+| System | Primary Use | Notes |
+|--------|-------------|-------|
+| **Main Stereo System** | Primary critical listening & testing | Rotel RA-1572 MKII → Sonus Faber Cremona |
+| **Tesla Model 3 Highland** | Secondary / mobile reference | High-resolution FLAC playback via Roon + Qobuz on Samsung T7 Shield SSD |
+
+The MSL is primarily used on the main stereo system, with the Tesla system serving as a secondary validation platform.
+
+## Locked v3.13 Master Gold Set (Current State)
+**Status:** Locked as of May 23, 2026
+
+This is the official **MSL v3.13 — 140 Node Master Gold Set**. No changes should be made without explicit instruction to unlock the set.
+
+**Core Files (Locked):**
+| File | Purpose |
+|------|---------|
+| `msl_data.py` | Single source of truth — contains all 140 nodes in clean format |
+| `generate_gold_list.py` | Generates the main Golden List (single table, one header per set) |
+| `generate_highway.py` | Generates the Highway Robust Subset (Physical strategy nodes only) |
+| `generate_alphabetic.py` | Generates the full alphabetical index with `[set_id]` notation |
+| `generate_audio_hints.py` | Generates the Audio Hints / Technical Verification Notes |
+| `generate_all.py` | Master orchestration script — generates all four DOCX files |
+| `README.md` + `README.txt` | Full project documentation |
+
+**Generated Output Files (v3.13 Master):**
+- `MSL_Golden_List_v3.13.docx`
+- `MSL_Highway_Robust_Subset_v3.13.docx`
+- `MSL_Alphabetic_List_v3.13.docx`
+- `MSL_Audio_Hints_v3.13.docx`
+
+**Key Design Rules (v3.13):**
+- Single table format in Gold and Highway lists (easy global column width adjustment)
+- One header per main set only (not per sub-cluster)
+- Clean artist names (no leading cluster prefixes)
+- `[set_id]` appended at the end of Artist-Album in the Alphabetic list
+- Consistent typography (14pt headers, 12pt data rows)
+- Date and version number included in all document headers
+
+### Document Formatting Standards (v3.13)
+
+All generated `.docx` files follow these explicit formatting rules:
+
+**Vertical Spacing**
+- All data rows use `Pt(2)` paragraph spacing before and after (`paragraph_format.space_before = Pt(2)` and `space_after = Pt(2)`).
+- This provides a balanced, readable density without excessive whitespace.
+
+**Centered Columns**
+- **Alphabetic List**: The "Bit / Sample" column is centered (both header cell and all data cells).
+- **Audio Hints**: The "Strategy" column is centered (both header cell and all data cells).
+- All other columns remain left-aligned by default.
+
+**Column Widths (approximate, as tuned in v3.13)**
+- **Alphabetic List**: Artist-Album ≈ 5.0", Bit/Sample ≈ 2.7"
+- **Audio Hints**: Artist-Album ≈ 2.57", Strategy ≈ 1.57", Audio Hint ≈ 3.57"
+- **Golden List**: Artist ≈ 2.2", Album ≈ 2.75", Technical Verification Phrase ≈ 2.8"
+- **Highway Robust Subset**: Artist ≈ 2.8", Album ≈ 3.2", Technical Verification Phrase ≈ 4.0"
+
+These widths can be adjusted globally in each generator script under the final `for row in table.rows:` block.
+
+**Header Styling**
+- Header rows use a dark blue background (`#2F5496`) with bold white text.
+- Set headers in Golden List and Highway use a light gray background (`#D6DCE4`) with bold 14pt text.
+- When a column is centered, its header cell is also centered for visual consistency.
+
+## How to Generate / Update the Files
+Run this single command from the project directory:
+```bash
+python generate_all.py

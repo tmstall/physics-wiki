@@ -1,0 +1,64 @@
+
+import kivy
+kivy.require('2.3.0')  # Kivy version for compatibility
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.clock import Clock
+from kivy.graphics import Color, Ellipse, Line
+import numpy as np
+
+class QFTVisualizer(Widget):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.e1_pos = np.array([200.0, 300.0])  # Electron 1
+        self.e2_pos = np.array([600.0, 300.0])  # Electron 2
+        self.e1_vel = np.array([1.0, 0.0])     # Moving right
+        self.e2_vel = np.array([-1.0, 0.0])    # Moving left
+        self.init_graphics()
+        Clock.schedule_interval(self.update, 1.0 / 60.0)  # 60 FPS
+
+    def init_graphics(self):
+        with self.canvas:
+            # Electron 1 (blue)
+            Color(0, 0, 1)  # RGB: Blue
+            self.e1_ellipse = Ellipse(pos=(self.e1_pos[0] - 5, self.e1_pos[1] - 5), size=(10, 10))
+            # Electron 2 (blue)
+            Color(0, 0, 1)
+            self.e2_ellipse = Ellipse(pos=(self.e2_pos[0] - 5, self.e2_pos[1] - 5), size=(10, 10))
+            # Virtual photon (red, will be updated)
+            Color(1, 0, 0)  # RGB: Red
+            self.photon_line = Line(points=[])
+
+    def update(self, dt):
+        # Update positions (Coulomb-like repulsion)
+        r = self.e2_pos - self.e1_pos
+        r_mag = np.linalg.norm(r)
+        if r_mag < 1:  # Avoid division by zero
+            r_mag = 1
+        force = 1000 / (r_mag ** 2)  # Inverse-square force
+        self.e1_vel += force * r / r_mag * 0.01
+        self.e2_vel -= force * r / r_mag * 0.01
+        self.e1_pos += self.e1_vel
+        self.e2_pos += self.e2_vel
+
+        # Update graphics
+        self.e1_ellipse.pos = (self.e1_pos[0] - 5, self.e1_pos[1] - 5)
+        self.e2_ellipse.pos = (self.e2_pos[0] - 5, self.e2_pos[1] - 5)
+
+        # Draw wiggly photon line
+        points = []
+        t = np.linspace(0, 1, 50)
+        for i in t:
+            x = self.e1_pos[0] + i * (self.e2_pos[0] - self.e1_pos[0])
+            y = self.e1_pos[1] + i * (self.e2_pos[1] - self.e1_pos[1])
+            # Sine wave offset (amplitude 10, frequency 5)
+            y += 10 * np.sin(2 * np.pi * i * 5)
+            points.extend([x, y])
+        self.photon_line.points = points
+
+class QFTApp(App):
+    def build(self):
+        return QFTVisualizer()
+
+if __name__ == '__main__':
+    QFTApp().run()

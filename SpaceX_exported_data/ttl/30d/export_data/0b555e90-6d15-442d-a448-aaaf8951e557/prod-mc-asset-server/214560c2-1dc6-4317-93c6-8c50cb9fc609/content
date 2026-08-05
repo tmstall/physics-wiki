@@ -1,0 +1,21 @@
+Great question — you're probing the internal QFT structure of a propagating photon wavepacket.
+
+**Short answer: yes, but not in the way you might expect.**
+
+A single-photon wavepacket in QFT is a superposition of frequency (momentum) modes, each weighted by the spectral envelope function ξ(ω). The "front," "middle," and "back" of the pulse aren't different *frequencies* — they're different *phases* of those same frequencies interfering constructively or destructively at different spacetime points.
+
+Think of it exactly like a Fourier synthesis on a CPU: the wavepacket's temporal shape is the inverse Fourier transform of ξ(ω). The front edge of the pulse is where all the frequency components first start arriving in phase. The peak is where they constructively interfere maximally. The trailing tail is where they've dephased and are destructively interfering — but crucially, *never reaching exactly zero*, which is why the tail is infinite.
+
+**The QFT-specific twist:**
+
+In QFT there's a deeper asymmetry — the mode function ξ(ω) is defined only over *positive frequencies* (the integral runs from 0 to infinity, never negative ω). This is what makes photon wavefunctions *analytic in the upper complex frequency half-plane*. That analyticity is precisely what forces the infinite tails — a function analytic in a half-plane cannot have compact support in time. The front and back of the pulse are therefore not symmetric: the leading edge and trailing tail have subtly different analytic structure even if the pulse looks visually symmetric.
+
+**The E and B component angle:**
+
+The electric field E and magnetic field B in a propagating mode maintain a fixed 90° phase relationship locally (they're related by the curl equations), but across the *wavepacket envelope* their interference pattern tracks the same spectral shape. There's no frequency sorting front-to-back in a transform-limited pulse. However, in a *chirped* pulse — where different frequencies arrive at different times — you genuinely do get frequency variation from front to back, with the instantaneous frequency sweeping across the pulse duration.
+
+**The connection to this paper:**
+
+This is exactly why truncation is so destructive. The "tail" you chop off isn't a low-energy afterthought — it contains contributions from *every* frequency in the spectrum, just in a particular phase relationship. Removing it doesn't just shorten the pulse; it destroys the careful phase coherence that made it a single-photon Fock state, which is why the post-shutter state explodes into an infinite photon-number superposition.
+
+Want me to go deeper on the chirped case, or on how the analytic structure of ξ(ω) enforces the infinite tails mathematically?

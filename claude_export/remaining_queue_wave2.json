@@ -1,0 +1,718 @@
+{
+  "built": "2026-08-02",
+  "wiki_papers": 93,
+  "slugs40_count": 40,
+  "candidates": [
+    {
+      "file": "2026-06-27_quantum-gravity-deep-dive-2-outside-project-from-information_5c0fdae0.md",
+      "size": 288745,
+      "title": "Quantum Gravity Deep Dive - 2  Outside Project: From Information Paradox to Holographic Codes",
+      "tier": "physics",
+      "preview": "tion Paradox to Holographic Codes\" created_at: 2026-06-27T01:37:04.576309Z updated_at: 2026-06-28T19:42:32.328030Z tier: B score: 281 n_messages: 68 --- # Quantum Gravity Deep Dive - 2 Outside Project: From Information P"
+    },
+    {
+      "file": "2026-06-28_quantum-gravity-deep-dive-3-holographic-codes-and-bulk-recon_447ad3f1.md",
+      "size": 243669,
+      "title": "Quantum Gravity Deep Dive - 3: Holographic Codes and Bulk Reconstruction",
+      "tier": "physics",
+      "preview": "construction\" created_at: 2026-06-28T19:49:35.873923Z updated_at: 2026-06-30T23:25:32.578025Z tier: B score: 235 n_messages: 56 --- # Quantum Gravity Deep Dive - 3: Holographic Codes and Bulk Reconstruction ## Human I wa"
+    },
+    {
+      "file": "2026-06-25_quantum-gravity-deep-dive-1-from-black-hole-mergers-to-spont_0b25cbf8.md",
+      "size": 211539,
+      "title": "Quantum Gravity Deep Dive - 1:  From Black Hole Mergers to Spontaneous Emission",
+      "tier": "physics",
+      "preview": "pontaneous Emission\" created_at: 2026-06-25T08:29:26.007214Z updated_at: 2026-06-28T19:47:51.616922Z tier: A score: 207 n_messages: 47 --- # Quantum Gravity Deep Dive - 1: From Black Hole Mergers to Spontaneous Emission "
+    },
+    {
+      "file": "2026-07-26_todd-intended-the-spin-quiet-partner-that-almost-never-shows_de8ad8dd.md",
+      "size": 97515,
+      "title": "Todd Intended: The Spin-Quiet Partner That Almost Never Shows Up",
+      "tier": "physics",
+      "preview": "s Up\" created_at: 2026-07-26T20:03:43.651974Z updated_at: 2026-07-27T04:07:11.835638Z tier: A score: 95 n_messages: 22 --- # Todd Intended: The Spin-Quiet Partner That Almost Never Shows Up ## Human Don't know if you can"
+    },
+    {
+      "file": "2026-07-12_one-bond-and-done_b51aa206.md",
+      "size": 88932,
+      "title": "One Bond and Done",
+      "tier": "physics",
+      "preview": "pdated_at: 2026-07-12T21:12:41.774312Z tier: A score: 86 n_messages: 24 --- # One Bond and Done ## Human Analysis paper ## Assistant *(Clean full-text upload \u2014 entire article in context, no retrieval needed, so the Acces"
+    },
+    {
+      "file": "2026-07-07_the-model-keeps-a-small-readable-scratchpad-and-that-s-where_c964decd.md",
+      "size": 67147,
+      "title": "The Model Keeps a Small, Readable Scratchpad, and That's Where the Thinking Happens",
+      "tier": "physics",
+      "preview": "re the Thinking Happens\" created_at: 2026-07-07T07:54:04.268359Z updated_at: 2026-07-08T02:56:55.777486Z tier: A score: 277 n_messages: 17 --- # The Model Keeps a Small, Readable Scratchpad, and That's Where the Thinking"
+    },
+    {
+      "file": "2026-06-09_color-space-has-potholes_0a5c3ef4.md",
+      "size": 66740,
+      "title": "Color Space Has Potholes",
+      "tier": "physics",
+      "preview": "0521Z updated_at: 2026-06-11T15:42:18.300647Z tier: A score: 227 n_messages: 12 --- # Color Space Has Potholes ## Human Detailed analysis of this paper ## Assistant Good. I have solid material from the open-access paper "
+    },
+    {
+      "file": "2026-06-06_dissipation-as-a-feature-not-a-bug_e3b36343.md",
+      "size": 47267,
+      "title": "Dissipation as a Feature, Not a Bug",
+      "tier": "physics",
+      "preview": "17:05:19.061125Z updated_at: 2026-06-08T21:42:56.744311Z tier: A score: 218 n_messages: 8 --- # Dissipation as a Feature, Not a Bug ## Human Detailed analysis of this paper ## Assistant Here is the full analysis. --- # v"
+    },
+    {
+      "file": "2026-06-10_glimpse-17775-inside-the-cocoon_73204815.md",
+      "size": 46658,
+      "title": "GLIMPSE-17775: Inside the Cocoon",
+      "tier": "physics",
+      "preview": "53:17.213217Z updated_at: 2026-06-11T16:04:52.782647Z tier: A score: 217 n_messages: 8 --- # GLIMPSE-17775: Inside the Cocoon ## Human Detailed analysis of this paper ## Assistant **Analyzing** \u2014 v3.4.9 Now I have everyt"
+    },
+    {
+      "file": "2026-07-26_todd-actual-the-resistance-tax-how-breaking-the-one-enzyme-t_93719d40.md",
+      "size": 42355,
+      "title": "Todd ActuaL: The resistance tax \u2014 how breaking the one enzyme that dodges",
+      "tier": "physics",
+      "preview": "e that dodges\" created_at: 2026-07-26T07:09:05.758764Z updated_at: 2026-07-26T20:15:09.901572Z tier: A score: 275 n_messages: 6 --- # Todd ActuaL: The resistance tax \u2014 how breaking the one enzyme that dodges ## Human Ana"
+    },
+    {
+      "file": "2026-06-05_the-third-law-is-dead_911cf359.md",
+      "size": 41732,
+      "title": "The Third Law Is Dead",
+      "tier": "physics",
+      "preview": "2Z updated_at: 2026-06-06T03:23:07.872062Z tier: A score: 225 n_messages: 4 --- # The Third Law Is Dead ## Human Give a very detailed analysis of this paper ## Assistant **Analyzing** \u2014 v3.4.9 Let me fetch the full paper"
+    },
+    {
+      "file": "2026-06-29_quantum-gravity-deep-dive-4-de-sitter-holography-and-quantum_cea522d1.md",
+      "size": 40909,
+      "title": "Quantum Gravity Deep Dive - 4: De Sitter holography and quantum gravity",
+      "tier": "physics",
+      "preview": "tum gravity\" created_at: 2026-06-29T09:58:07.035419Z updated_at: 2026-07-03T21:51:08.220026Z tier: A score: 113 n_messages: 6 --- # Quantum Gravity Deep Dive - 4: De Sitter holography and quantum gravity ## Assistant Res"
+    },
+    {
+      "file": "2026-06-18_schrodinger-s-cat-but-weirder_acd4b7cd.md",
+      "size": 40652,
+      "title": "Schr\u00f6dinger's Cat, But Weirder",
+      "tier": "physics",
+      "preview": ":51.960805Z updated_at: 2026-06-19T00:39:52.495708Z tier: A score: 264 n_messages: 10 --- # Schr\u00f6dinger's Cat, But Weirder ## Human Analyze this paper ## Assistant v3.6.3 --- # 1. Schr\u00f6dinger's Cat, But Weirder: Making S"
+    },
+    {
+      "file": "2026-07-22_freeze-the-fiber-not-the-budget_e1d211de.md",
+      "size": 35500,
+      "title": "Freeze the Fiber, Not the Budget",
+      "tier": "physics",
+      "preview": "12:42.021426Z updated_at: 2026-07-22T18:50:56.501072Z tier: A score: 272 n_messages: 2 --- # Freeze the Fiber, Not the Budget ## Human Analyze this paper ## Assistant > **Access Status** \u2014 Full paper: retrieved from user"
+    },
+    {
+      "file": "2026-06-25_lorentz-violation-in-emergent-gravity-and-cosmological-accel_1a6d0e13.md",
+      "size": 34299,
+      "title": "Lorentz violation in emergent gravity and cosmological acceleration",
+      "tier": "physics",
+      "preview": "eration\" created_at: 2026-06-25T16:56:37.230018Z updated_at: 2026-06-25T16:57:43.410570Z tier: A score: 176 n_messages: 4 --- # Lorentz violation in emergent gravity and cosmological acceleration ## Human OPEN ACCESS Lor"
+    },
+    {
+      "file": "2026-06-14_beyond-iron-the-universe-s-most-violent-events-may-be-firing_344a8eb5.md",
+      "size": 33958,
+      "title": "\"Beyond Iron: The Universe's Most Violent Events May Be Firing Atomic Shotgun",
+      "tier": "physics",
+      "preview": "ing Atomic Shotgun\" created_at: 2026-06-14T00:50:32.610954Z updated_at: 2026-06-14T06:09:03.777936Z tier: A score: 231 n_messages: 8 --- # \"Beyond Iron: The Universe's Most Violent Events May Be Firing Atomic Shotgun ## "
+    },
+    {
+      "file": "2026-06-05_the-nucleus-has-a-memory_9f350308.md",
+      "size": 33191,
+      "title": "The Nucleus Has a Memory",
+      "tier": "physics",
+      "preview": "2608Z updated_at: 2026-06-05T21:00:41.835753Z tier: A score: 211 n_messages: 4 --- # The Nucleus Has a Memory ## Human Very detailed analysis of this paper ## Assistant **Analyzing** \u2014 v3.4.9 I have the full paper metada"
+    },
+    {
+      "file": "2026-06-19_the-sea-that-forgot-half-its-water-bosons_27a5c392.md",
+      "size": 30348,
+      "title": "The Sea That Forgot Half Its Water: Bosons",
+      "tier": "physics",
+      "preview": "-06-19T02:16:50.592379Z updated_at: 2026-06-19T07:32:41.354939Z tier: A score: 269 n_messages: 2 --- # The Sea That Forgot Half Its Water: Bosons ## Human analyze this paper ## Assistant Let me fetch the full paper befor"
+    },
+    {
+      "file": "2026-06-06_the-gpu-moment-for-mass-spectrometry_d44aa7e3.md",
+      "size": 29166,
+      "title": "The GPU Moment for Mass Spectrometry",
+      "tier": "physics",
+      "preview": "T16:11:06.127792Z updated_at: 2026-06-07T02:53:59.065168Z tier: A score: 229 n_messages: 8 --- # The GPU Moment for Mass Spectrometry ## Human Detailed analysis of this table ## Assistant Let me fetch the full paper firs"
+    },
+    {
+      "file": "2026-07-05_the-black-hole-that-flipped-its-radio-switch-and-left-it-on_9b801f92.md",
+      "size": 28970,
+      "title": "The Black Hole That Flipped Its Radio Switch \u2014 and Left It On",
+      "tier": "physics",
+      "preview": "n\" created_at: 2026-07-05T21:38:33.305946Z updated_at: 2026-07-05T22:16:38.492046Z tier: A score: 259 n_messages: 2 --- # The Black Hole That Flipped Its Radio Switch \u2014 and Left It On ## Human Analyze this paper ## Assis"
+    },
+    {
+      "file": "2026-07-04_molecular-rotation-control-in-superfluid-helium_bb64afb7.md",
+      "size": 27880,
+      "title": "Molecular rotation control in superfluid helium",
+      "tier": "physics",
+      "preview": " 2026-07-04T16:13:23.225667Z updated_at: 2026-07-04T16:16:11.278704Z tier: A score: 27 n_messages: 2 --- # Molecular rotation control in superfluid helium ## Human Analysis paper Control of Molecular Rotation in Helium N"
+    },
+    {
+      "file": "2026-06-26_the-droplet-that-rewrites-the-ring_69f8581e.md",
+      "size": 27386,
+      "title": "The Droplet That Rewrites the Ring:",
+      "tier": "physics",
+      "preview": "15:30:06.939784Z updated_at: 2026-06-26T15:33:05.283141Z tier: A score: 268 n_messages: 2 --- # The Droplet That Rewrites the Ring: ## Human Analyze paper ## Assistant Now let me retrieve the full paper from the journal "
+    },
+    {
+      "file": "2026-06-20_spin-signals-that-flip-like-a-switch_afff38f7.md",
+      "size": 27379,
+      "title": "Spin Signals That Flip Like a Switch",
+      "tier": "physics",
+      "preview": "T01:54:13.046939Z updated_at: 2026-06-20T17:01:53.118215Z tier: A score: 218 n_messages: 2 --- # Spin Signals That Flip Like a Switch ## Human Analyze paper ## Assistant # Spin Signals That Flip Like a Switch: Reading Gr"
+    },
+    {
+      "file": "2026-07-26_the-nucleus-tells-on-itself_edc2587e.md",
+      "size": 26705,
+      "title": "The nucleus tells on itself",
+      "tier": "physics",
+      "preview": ".405435Z updated_at: 2026-07-26T17:39:37.506264Z tier: A score: 258 n_messages: 2 --- # The nucleus tells on itself ## Human Analyze this paper using framework v3.9 ## Assistant *Full text supplied with the upload (artic"
+    },
+    {
+      "file": "2026-07-09_the-bond-breaking-discount_30ce2966.md",
+      "size": 26630,
+      "title": "The Bond-Breaking Discount",
+      "tier": "physics",
+      "preview": "346228Z updated_at: 2026-07-09T23:16:27.212743Z tier: A score: 257 n_messages: 4 --- # The Bond-Breaking Discount ## Human Analyze paper ## Assistant **Access Status** - Full paper: retrieved from arXiv (2511.17278v1, HT"
+    },
+    {
+      "file": "2026-06-10_the-quantum-state-sculpto_35bae5fb.md",
+      "size": 26504,
+      "title": "The Quantum State Sculpto",
+      "tier": "physics",
+      "preview": "53844Z updated_at: 2026-06-11T15:43:37.459519Z tier: A score: 217 n_messages: 2 --- # The Quantum State Sculpto ## Human Detailed analysis of this paper ## Assistant Now I have the full paper. Let me pull one more resour"
+    },
+    {
+      "file": "2026-03-12_ultrafast-chemical-shifts-analysis_653e2cb3.md",
+      "size": 26091,
+      "title": "Ultrafast chemical shifts analysis",
+      "tier": "physics",
+      "preview": "8:47:33.811044Z updated_at: 2026-03-12T18:51:05.507109Z tier: A score: 277 n_messages: 4 --- # Ultrafast chemical shifts analysis ## Human analyze this paper AnalPublication details Daniel E. Rivas et al, Unraveling Real"
+    },
+    {
+      "file": "2026-07-19_watching-a-black-hole-set-the-table-a-filament-caught-feedin_2745e811.md",
+      "size": 25070,
+      "title": "\"Watching a Black Hole Set the Table: A Filament Caught Feeding Its Disk\"",
+      "tier": "physics",
+      "preview": "ding Its Disk\\\"\" created_at: 2026-07-19T22:50:42.812884Z updated_at: 2026-07-19T22:57:32.649856Z tier: A score: 257 n_messages: 2 --- # \"Watching a Black Hole Set the Table: A Filament Caught Feeding Its Disk\" ## Human A"
+    },
+    {
+      "file": "2026-06-06_category-79-hurricane-in-space_098f3cd6.md",
+      "size": 24329,
+      "title": "Category 79 Hurricane in Space:",
+      "tier": "physics",
+      "preview": "1:47.975367Z updated_at: 2026-06-06T21:58:05.975727Z tier: A score: 206 n_messages: 2 --- # Category 79 Hurricane in Space: ## Human Detailed analysis of this paper ## Assistant **Analyzing** \u2014 v3.4.9 Good \u2014 I have the f"
+    },
+    {
+      "file": "2026-06-06_light-teaches-a-crystal-new-symmetry_efa101e5.md",
+      "size": 24239,
+      "title": "Light Teaches a Crystal New Symmetry:",
+      "tier": "physics",
+      "preview": "6T16:07:00.427757Z updated_at: 2026-06-06T16:12:17.000346Z tier: A score: 206 n_messages: 4 --- # Light Teaches a Crystal New Symmetry: ## Assistant **Analyzing** \u2014 v3.4.9 ## Human Please do a detailed analysis of the pa"
+    },
+    {
+      "file": "2026-04-30_topological-control-of-chirality-and-spin-with-structured-li_c172b505.md",
+      "size": 22447,
+      "title": "Topological control of chirality and spin with structured light",
+      "tier": "physics",
+      "preview": "ght\" created_at: 2026-04-30T07:25:43.564202Z updated_at: 2026-04-30T07:27:49.021593Z tier: A score: 205 n_messages: 2 --- # Topological control of chirality and spin with structured light ## Human Very detailed analysis "
+    },
+    {
+      "file": "2026-06-16_why-thinner-is-tougher_de07cf13.md",
+      "size": 21844,
+      "title": "Why Thinner Is Tougher",
+      "tier": "physics",
+      "preview": "49Z updated_at: 2026-06-17T00:00:36.653808Z tier: A score: 245 n_messages: 4 --- # Why Thinner Is Tougher ## Human Analyze this paper ## Assistant The user uploaded a screenshot showing a PNAS paper page (not the actual "
+    },
+    {
+      "file": "2026-07-09_letting-a-metal-fall-apart-on-purpose_6609c393.md",
+      "size": 20772,
+      "title": "Letting a Metal Fall Apart On Purpose",
+      "tier": "physics",
+      "preview": "9T19:40:59.241645Z updated_at: 2026-07-09T22:44:05.295420Z tier: A score: 275 n_messages: 2 --- # Letting a Metal Fall Apart On Purpose ## Human Analyze this paper ## Assistant **Analyzing | Framework v3.7.1 | partial ac"
+    },
+    {
+      "file": "2026-06-03_millisecond-pharma-factory-drug-scaffold-rings-built-in-mida_20cc3e4b.md",
+      "size": 20721,
+      "title": "Millisecond Pharma-Factory: Drug-Scaffold Rings Built in Midair Without Catalysts",
+      "tier": "physics",
+      "preview": "air Without Catalysts\" created_at: 2026-06-03T05:14:18.601152Z updated_at: 2026-06-06T16:12:56.559350Z tier: A score: 205 n_messages: 2 --- # Millisecond Pharma-Factory: Drug-Scaffold Rings Built in Midair Without Cataly"
+    },
+    {
+      "file": "2026-05-02_peters-cycle-confirmed-charge-dependent-cosmic-ray-spectral_a9c50c9b.md",
+      "size": 18722,
+      "title": "Peters cycle confirmed: charge-dependent cosmic ray spectral softening",
+      "tier": "physics",
+      "preview": " softening\" created_at: 2026-05-02T05:38:29.358242Z updated_at: 2026-05-02T05:41:01.294030Z tier: A score: 214 n_messages: 2 --- # Peters cycle confirmed: charge-dependent cosmic ray spectral softening ## Human Detailed "
+    },
+    {
+      "file": "2026-06-16_confinement-stiffening-in-nanoscale-ballistic-films_6b9b99ac.md",
+      "size": 18109,
+      "title": "Confinement stiffening in nanoscale ballistic films",
+      "tier": "physics",
+      "preview": "_at: 2026-06-16T05:54:46.671287Z updated_at: 2026-06-16T05:57:20.425946Z tier: A score: 253 n_messages: 2 --- # Confinement stiffening in nanoscale ballistic films ## Human Analyze this paper ## Assistant One quick flag "
+    },
+    {
+      "file": "2026-06-26_magneto-optical-trapping-of-metal-hydride-molecules_a175fb0e.md",
+      "size": 16417,
+      "title": "Magneto-optical trapping of metal hydride molecules",
+      "tier": "physics",
+      "preview": "_at: 2026-06-26T15:35:52.427513Z updated_at: 2026-06-26T15:37:59.840565Z tier: A score: 16 n_messages: 4 --- # Magneto-optical trapping of metal hydride molecules ## Human Analyze paper. This website utilizes technologie"
+    },
+    {
+      "file": "2026-07-03_two-lasers-one-reaction_942df2d8.md",
+      "size": 15096,
+      "title": "Two Lasers, One Reaction",
+      "tier": "physics",
+      "preview": "2587Z updated_at: 2026-07-03T21:34:55.122006Z tier: A score: 252 n_messages: 2 --- # Two Lasers, One Reaction ## Human Analyze this paper ## Assistant # Two Lasers, One Reaction: Steering Where a Molecule \"Decides\" to Si"
+    },
+    {
+      "file": "2026-07-04_a-single-ruthenium-atom-that-both-lights-the-match-and-bends_9beb4c8d.md",
+      "size": 33459,
+      "title": "A Single Ruthenium Atom That Both Lights the Match and Bends the Bond",
+      "tier": "chem",
+      "preview": " the Bond\" created_at: 2026-07-04T16:42:18.839665Z updated_at: 2026-07-05T05:40:48.916709Z tier: A score: 270 n_messages: 7 --- # A Single Ruthenium Atom That Both Lights the Match and Bends the Bond ## Human Analyze thi"
+    },
+    {
+      "file": "2026-05-01_water-molecules-in-rna-polymerase-ii-catalysis_90d5cce7.md",
+      "size": 28655,
+      "title": "Water molecules in RNA polymerase II catalysis",
+      "tier": "chem",
+      "preview": "2026-05-01T17:50:31.614131Z updated_at: 2026-05-01T17:56:26.650629Z tier: A score: 208 n_messages: 4 --- # Water molecules in RNA polymerase II catalysis ## Human Detailed analysis of this paper Publication details Sub-2"
+    },
+    {
+      "file": "2026-06-17_paper-analysis-on-sulfur-chemistry-in-interstellar-ice_d08f1727.md",
+      "size": 37415,
+      "title": "Paper analysis on sulfur chemistry in interstellar ice",
+      "tier": "other",
+      "preview": "ted_at: 2026-06-17T00:59:28.316902Z updated_at: 2026-06-17T01:07:37.475260Z tier: A score: 36 n_messages: 4 --- # Paper analysis on sulfur chemistry in interstellar ice ## Human Analyze this paper ## Human Analyze this p"
+    },
+    {
+      "file": "2026-07-22_finding-the-bias-point-where-a-molecule-stops-listening_1bb5fc5d.md",
+      "size": 36132,
+      "title": "Finding the Bias Point Where a Molecule Stops Listening",
+      "tier": "other",
+      "preview": "ated_at: 2026-07-22T16:50:22.048111Z updated_at: 2026-07-22T18:51:27.431428Z tier: A score: 252 n_messages: 2 --- # Finding the Bias Point Where a Molecule Stops Listening ## Human Analyze paper ## Assistant # 1. Punchy "
+    }
+  ],
+  "skipped": [
+    {
+      "file": "2026-03-19_quantum-computing-tin-vacancy-color-center_e23e2a86.md",
+      "reason": "content-dup",
+      "detail": "snv",
+      "size": 109827
+    },
+    {
+      "file": "2026-03-29_particle-physics-keep_d3854cb8.md",
+      "reason": "content-dup",
+      "detail": "ito",
+      "size": 70510
+    },
+    {
+      "file": "2026-04-08_mass-and-instatons-zero-modes_7b9a60cf.md",
+      "reason": "content-dup",
+      "detail": "eta-prime",
+      "size": 94271
+    },
+    {
+      "file": "2026-04-18_finding-a-matching-paper-with-framework-version-3-4-9_cdda23d6.md",
+      "reason": "junk",
+      "detail": "finding-a-matching-paper",
+      "size": 21334
+    },
+    {
+      "file": "2026-04-27_comparative-analysis-of-two-related-papers_110d5f34.md",
+      "reason": "junk",
+      "detail": "comparative-analysis-of-two",
+      "size": 19612
+    },
+    {
+      "file": "2026-04-27_mond-s-cosmic-fingerprint_898c8c43.md",
+      "reason": "map40",
+      "detail": "mond-external-field-sparc",
+      "size": 71549
+    },
+    {
+      "file": "2026-04-28_finding-and-analyzing-a-referenced-article_74ea21a4.md",
+      "reason": "junk",
+      "detail": "finding-and-analyzing",
+      "size": 19221
+    },
+    {
+      "file": "2026-04-30_untitled_86f5014b.md",
+      "reason": "junk",
+      "detail": "untitled_",
+      "size": 18234
+    },
+    {
+      "file": "2026-05-04_lithium-mediated-mechanochemical-dimerization-of-diarylacety_d7b35a4d.md",
+      "reason": "content-dup",
+      "detail": "ito",
+      "size": 22840
+    },
+    {
+      "file": "2026-05-30_paper-analysis_c20aada3.md",
+      "reason": "junk",
+      "detail": "paper-analysis_",
+      "size": 23278
+    },
+    {
+      "file": "2026-05-31_paper-analysis-details_557f12ba.md",
+      "reason": "junk",
+      "detail": "paper-analysis-details",
+      "size": 26504
+    },
+    {
+      "file": "2026-06-03_the-photon-that-multiplied-when-you-tried-to-cut-it_b2eb34ef.md",
+      "reason": "map40",
+      "detail": "truncated-photon-dynamical-casimir",
+      "size": 58076
+    },
+    {
+      "file": "2026-06-13_dynamical-formation-of-gravastars-from-dust-collapse_3e59a7b3.md",
+      "reason": "map40",
+      "detail": "gravastar-dust-collapse",
+      "size": 31151
+    },
+    {
+      "file": "2026-06-14_thorium-229-nuclear-clock-analysis_c4c4cae5.md",
+      "reason": "map40",
+      "detail": "thorium-229-nuclear-clock",
+      "size": 30023
+    },
+    {
+      "file": "2026-06-15_technical-paper-analysis-framework-upgrade-evaluation_7db30809.md",
+      "reason": "junk",
+      "detail": "technical-paper-analysis-framework",
+      "size": 170978
+    },
+    {
+      "file": "2026-06-15_testing-the-problem-of-time-with-cold-atoms_3bdca1d2.md",
+      "reason": "map40",
+      "detail": "problem-of-time-cold-atoms",
+      "size": 23494
+    },
+    {
+      "file": "2026-06-16_light-is-a-brake_74b6ff14.md",
+      "reason": "map40",
+      "detail": "light-as-friction-brake",
+      "size": 38691
+    },
+    {
+      "file": "2026-06-17_entanglement-detected-in-macroscopic-crystal-via-neutron-sca_11579b57.md",
+      "reason": "map40",
+      "detail": "macroscopic-crystal-entanglement-neutrons",
+      "size": 22178
+    },
+    {
+      "file": "2026-06-17_sunlight-doesn-t-need-a-laser-s-permission_f460aa4e.md",
+      "reason": "map40",
+      "detail": "sunlight-spdc-ghost-imaging",
+      "size": 50154
+    },
+    {
+      "file": "2026-06-18_differential-signaling-for-the-quantum-vacuum_416551a8.md",
+      "reason": "map40",
+      "detail": "differential-signaling-quantum-vacuum",
+      "size": 24669
+    },
+    {
+      "file": "2026-06-19_quantum-ghosts-in-the-collision-zone_ebf7f8a9.md",
+      "reason": "content-dup",
+      "detail": "star-jpsi",
+      "size": 88958
+    },
+    {
+      "file": "2026-06-19_reviewing-prior-session-context_d1b32fa1.md",
+      "reason": "junk",
+      "detail": "reviewing-prior-session",
+      "size": 14577
+    },
+    {
+      "file": "2026-06-19_second-order-gravitational-wave-strain-analysis_9cdb1c0c.md",
+      "reason": "map40",
+      "detail": "second-order-gw-strain-gauge",
+      "size": 44216
+    },
+    {
+      "file": "2026-06-19_untitled_df999a30.md",
+      "reason": "junk",
+      "detail": "untitled_",
+      "size": 31332
+    },
+    {
+      "file": "2026-06-20_a-globular-cluster-that-isn-t_d5678701.md",
+      "reason": "map40",
+      "detail": "not-a-globular-cluster",
+      "size": 29653
+    },
+    {
+      "file": "2026-06-21_a-new-kind-of-quantum-static_860d3f57.md",
+      "reason": "content-dup",
+      "detail": "brown-zak",
+      "size": 74694
+    },
+    {
+      "file": "2026-06-21_electrons-as-piston-not-furnace_e58c866e.md",
+      "reason": "map40",
+      "detail": "hot-electron-coherent-phonons-ptcu",
+      "size": 47466
+    },
+    {
+      "file": "2026-06-21_the-bullet-that-didn-t-need-dark-matter_12fa6547.md",
+      "reason": "content-dup",
+      "detail": "mond",
+      "size": 47439
+    },
+    {
+      "file": "2026-06-23_the-magnetic-compass-of-a-stellar-nursery_81e2ab23.md",
+      "reason": "map40",
+      "detail": "dr21-magnetic-accretion",
+      "size": 52210
+    },
+    {
+      "file": "2026-06-23_the-universe-s-gamma-ray-glow-as-a-primordial-black-hole-det_7f776ce5.md",
+      "reason": "map40",
+      "detail": "gamma-glow-pbh-detector",
+      "size": 28442
+    },
+    {
+      "file": "2026-06-24_finding-detailed-nasa-experiment-research_f6a5c76d.md",
+      "reason": "junk",
+      "detail": "finding-detailed-nasa",
+      "size": 31044
+    },
+    {
+      "file": "2026-06-24_the-standard-rulebook-for-reading-dense-plasmas-is-wrong_94785e1d.md",
+      "reason": "map40",
+      "detail": "dense-plasma-opacity-revision",
+      "size": 37583
+    },
+    {
+      "file": "2026-06-24_the-synchrotron-s-new-dark-matter-detector_1ad48d4d.md",
+      "reason": "map40",
+      "detail": "synchrotron-dm-detector",
+      "size": 32119
+    },
+    {
+      "file": "2026-06-25_the-horizon-speaks_8707aeb2.md",
+      "reason": "map40",
+      "detail": "horizon-direct-wave-gw250114",
+      "size": 73902
+    },
+    {
+      "file": "2026-06-25_the-universe-s-gas-pedal-is-a-leaky-engine_e23e36e1.md",
+      "reason": "map40",
+      "detail": "universe-gas-pedal-leaky",
+      "size": 33006
+    },
+    {
+      "file": "2026-06-25_three-s-company_50eacd55.md",
+      "reason": "map40",
+      "detail": "three-body-quantum-company",
+      "size": 33745
+    },
+    {
+      "file": "2026-06-26_anisotropic-cosmic-structures-at-gigaparsec-scale_e511d1e3.md",
+      "reason": "map40",
+      "detail": "gigaparsec-anisotropic-structures",
+      "size": 33394
+    },
+    {
+      "file": "2026-06-26_water-dissociation-in-confined-nanopores_3c1038a4.md",
+      "reason": "map40",
+      "detail": "water-double-life-nanoconfinement",
+      "size": 30530
+    },
+    {
+      "file": "2026-06-28_water-s-secret-double-life_4318f0b4.md",
+      "reason": "map40",
+      "detail": "water-double-life-nanoconfinement",
+      "size": 32246
+    },
+    {
+      "file": "2026-06-29_finding-and-analyzing-a-technical-paper_41223928.md",
+      "reason": "junk",
+      "detail": "finding-and-analyzing",
+      "size": 30460
+    },
+    {
+      "file": "2026-06-29_the-naked-black-hole_4cff7056.md",
+      "reason": "map40",
+      "detail": "naked-black-hole-candidate",
+      "size": 29367
+    },
+    {
+      "file": "2026-07-04_the-black-hole-recoils_22da14b0.md",
+      "reason": "map40",
+      "detail": "black-hole-recoil-agn",
+      "size": 40319
+    },
+    {
+      "file": "2026-07-05_discovery-of-a-big-ring-ultra-large-scale-structure_2f60382c.md",
+      "reason": "map40",
+      "detail": "big-ring-ultra-large-structure",
+      "size": 30743
+    },
+    {
+      "file": "2026-07-05_the-oscilloscope-that-outran-the-electron_7a3d1b76.md",
+      "reason": "map40",
+      "detail": "attosecond-stm-lightwave",
+      "size": 58701
+    },
+    {
+      "file": "2026-07-06_retrocausal-capacity-of-noisy-quantum-channels_666dfff1.md",
+      "reason": "map40",
+      "detail": "retrocausal-noisy-channel-capacity",
+      "size": 51062
+    },
+    {
+      "file": "2026-07-06_the-quasar-census-begins_15c38246.md",
+      "reason": "map40",
+      "detail": "euclid-high-z-quasar-census",
+      "size": 56814
+    },
+    {
+      "file": "2026-07-08_mit-paper-analysis_1adccb4f.md",
+      "reason": "junk",
+      "detail": "mit-paper-analysis",
+      "size": 22686
+    },
+    {
+      "file": "2026-07-08_patent-analysis_4bccfd68.md",
+      "reason": "junk",
+      "detail": "patent-analysis",
+      "size": 24215
+    },
+    {
+      "file": "2026-07-09_south-pole-telescope-analysis_cad1e155.md",
+      "reason": "content-dup",
+      "detail": "hot-e",
+      "size": 26420
+    },
+    {
+      "file": "2026-07-10_entropy-maximization-in-black-hole-mergers_57963c1b.md",
+      "reason": "map40",
+      "detail": "entropy-maximization-bh-mergers",
+      "size": 65267
+    },
+    {
+      "file": "2026-07-10_two-clocks-one-laser-zero-excess-noise_af4e5b7a.md",
+      "reason": "map40",
+      "detail": "two-clocks-one-laser",
+      "size": 31091
+    },
+    {
+      "file": "2026-07-11_beam-me-up-a-number-state_239be18f.md",
+      "reason": "map40",
+      "detail": "photon-number-optical-analogy-control",
+      "size": 48105
+    },
+    {
+      "file": "2026-07-11_reading-a-supernova-s-onion-by-watching-it-grow_f7f83901.md",
+      "reason": "map40",
+      "detail": "supernova-onion-expansion",
+      "size": 25733
+    },
+    {
+      "file": "2026-07-11_the-tension-was-partly-in-the-ruler_7fd96459.md",
+      "reason": "content-dup",
+      "detail": "desi",
+      "size": 22309
+    },
+    {
+      "file": "2026-07-12_observables-versus-artifacts-in-quantum-chemistry_d49ccfe0.md",
+      "reason": "content-dup",
+      "detail": "diff-sig",
+      "size": 226859
+    },
+    {
+      "file": "2026-07-12_two-ways-to-read-a-black-hole-census_557975a4.md",
+      "reason": "map40",
+      "detail": "bh-recoils-agn-survey",
+      "size": 27028
+    },
+    {
+      "file": "2026-07-14_black-hole-recoils-in-active-galactic-nuclei_77b287ab.md",
+      "reason": "map40",
+      "detail": "bh-recoils-agn-survey",
+      "size": 23959
+    },
+    {
+      "file": "2026-07-15_gw170817-jet-geometry-and-hubble-constant-from-visibility-pl_d836bdf8.md",
+      "reason": "map40",
+      "detail": "gw170817-jet-hubble",
+      "size": 43309
+    },
+    {
+      "file": "2026-07-15_quantum-damping-of-cosmological-shear_062a278d.md",
+      "reason": "map40",
+      "detail": "quantum-damping-cosmological-shear",
+      "size": 41097
+    },
+    {
+      "file": "2026-07-16_the-qubits-that-entangled-themselves_694c81b2.md",
+      "reason": "map40",
+      "detail": "noise-driven-qubit-entanglement",
+      "size": 80017
+    },
+    {
+      "file": "2026-07-19_gravity-as-a-compression-error_7db43741.md",
+      "reason": "map40",
+      "detail": "gravity-from-entropy",
+      "size": 73279
+    },
+    {
+      "file": "2026-07-19_here-s-a-reference-from-a-post-on-x-about-a-paper-find-the-p_2b7c9191.md",
+      "reason": "junk",
+      "detail": "here-s-a-reference-from-a-post",
+      "size": 24700
+    },
+    {
+      "file": "2026-07-21_paper-analysis_ae837ae3.md",
+      "reason": "junk",
+      "detail": "paper-analysis_",
+      "size": 28444
+    },
+    {
+      "file": "2026-07-21_polarizable-vacuum-framework-analysis_c3317248.md",
+      "reason": "junk",
+      "detail": "framework",
+      "size": 54870
+    },
+    {
+      "file": "2026-07-24_create-v3-9-framework-prony-s-method-eats-the-uv_2f0d45c7.md",
+      "reason": "junk",
+      "detail": "create-v3-9-framework",
+      "size": 155637
+    },
+    {
+      "file": "2026-07-27_chiral-molecules-from-twisted-light-and-mass-spectrometry_439a3921.md",
+      "reason": "map40",
+      "detail": "twisted-light-chiral-ms",
+      "size": 64895
+    },
+    {
+      "file": "2026-07-27_light-induced-topological-band-inversion-in-snte_000b415d.md",
+      "reason": "map40",
+      "detail": "snte-light-topological-inversion",
+      "size": 39586
+    },
+    {
+      "file": "2026-07-28_measurement-problem-threads-1-7_19ad1981.md",
+      "reason": "junk",
+      "detail": "measurement-problem-threads",
+      "size": 206667
+    }
+  ],
+  "batch1": [
+    "2026-06-27_quantum-gravity-deep-dive-2-outside-project-from-information_5c0fdae0.md",
+    "2026-06-28_quantum-gravity-deep-dive-3-holographic-codes-and-bulk-recon_447ad3f1.md",
+    "2026-06-25_quantum-gravity-deep-dive-1-from-black-hole-mergers-to-spont_0b25cbf8.md",
+    "2026-07-26_todd-intended-the-spin-quiet-partner-that-almost-never-shows_de8ad8dd.md",
+    "2026-07-12_one-bond-and-done_b51aa206.md"
+  ]
+}

@@ -1,0 +1,295 @@
+#!/usr/bin/env python3
+"""
+MSL v3.14 Audit Tool
+Validates msl_data.py against 148_clean_nodes.txt ground truth.
+
+Usage:
+    python msl_audit.py
+    python msl_audit.py -v
+    python msl_audit.py --verbose
+"""
+
+import argparse
+import ast
+import re
+import sys
+from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
+
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
+SCRIPT_VERSION = "3.14.0"
+DATA_FILE = Path(__file__).parent.parent / "msl_data.py"
+GROUND_TRUTH = Path(__file__).parent.parent / "148_clean_nodes.txt"
+
+
+def get_grok_version():
+    """Return Grok version string for -v flag."""
+    return f"Grok 4.3 beta (MSL Audit v{SCRIPT_VERSION}) - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+
+
+def normalize(name: str) -> str:
+    """Normalize artist/album for matching."""
+    name = name.lower().strip()
+    name = re.sub(r'[^a-z0-9\s]', '', name)
+    name = re.sub(r'\s+', ' ', name)
+    return name[:50]  # limit length for key stability
+
+
+def parse_ground_truth(filepath: Path):
+    """Parse 148_clean_nodes.txt into structured entries.
+    Handles both multi-line and single-line formats (Set + NODE on same line).
+    """
+    entries = []
+    current_section = None
+
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+
+            # Try to extract section from this line (works for both formats)
+            set_match = re.search(r'Set\s+(\d+)\s*[-–]', line)
+            if set_match:
+                current_section = set_match.group(1).zfill(2)
+
+            # Match NODE line (with optional cluster prefix like "03.1 - ")
+            node_match = re.search(r'NODE:\s*(?:(\d+\.\d+)\s*[-–]\s*)?(.+)', line)
+            if node_match and current_section:
+                cluster_prefix = node_match.group(1)
+                artist_album = node_match.group(2).strip()
+
+                # Split artist and album
+                if ' - ' in artist_album:
+                    artist, album = [x.strip() for x in artist_album.split(' - ', 1)]
+                else:
+                    artist = artist_album
+                    album = ''
+
+                cluster = ''
+                if cluster_prefix:
+                    m = re.match(r'\d+\.(\d+)', cluster_prefix)
+                    if m:
+                        cluster = m.group(1)
+
+                entries.append({
+                    'section': current_section,
+                    'cluster': cluster,
+                    'artist': artist,
+                    'album': album,
+                    'raw': line
+                })
+
+    return entries
+
+
+def load_nodes(filepath: Path):
+    """Safely load NODES list from msl_data.py."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Find the NODES assignment
+    match = re.search(r'NODES\s*=\s*(\[.*?\])\s*(?:\n\ndef|\n#|\Z)', content, re.DOTALL)
+    if not match:
+        raise RuntimeError("Could not locate NODES list in msl_data.py")
+
+    try:
+        nodes = ast.literal_eval(match.group(1))
+        return nodes
+    except Exception as e:
+        raise RuntimeError(f"Failed to parse NODES list: {e}")
+
+
+def run_audit(verbose: bool = False):
+    print("=" * 72)
+    print("MSL v3.14 DATA AUDIT REPORT")
+    print("=" * 72)
+    if verbose:
+        print(f"\n{get_grok_version()}")
+    print(f"\nData file     : {DATA_FILE.name}")
+    print(f"Ground truth  : {GROUND_TRUTH.name}")
+    print(f"Audit time    : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
+
+    # Load data
+    try:
+        nodes = load_nodes(DATA_FILE)
+        print(f"Loaded {len(nodes)} nodes from msl_data.py")
+    except Exception as e:
+        print(f"ERROR: {e}")
+        sys.exit(1)
+
+    expected = parse_ground_truth(GROUND_TRUTH)
+    print(f"Parsed {len(expected)} entries from ground truth\n")
+
+    # ============================================================
+    # CHECK 1: Node Count
+    # ============================================================
+    print("-" * 72)
+    print("CHECK 1: NODE COUNT")
+    print("-" * 72)
+    if len(nodes) == len(expected):
+        print(f"✓ PASS — {len(nodes)} nodes (matches ground truth)")
+    else:
+        print(f"✗ FAIL — Found {len(nodes)} nodes, expected {len(expected)}")
+
+    # ============================================================
+    # CHECK 2: Unique node_id
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 2: UNIQUE node_id VALUES")
+    print("-" * 72)
+    node_ids = [n.get('node_id', '') for n in nodes]
+    duplicates = [nid for nid in node_ids if node_ids.count(nid) > 1]
+    if not duplicates:
+        print("✓ PASS — All node_id values are unique")
+    else:
+        print(f"✗ FAIL — Duplicate node_ids found: {set(duplicates)}")
+
+    # ============================================================
+    # CHECK 3: node_id Format
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 3: node_id FORMAT")
+    print("-" * 72)
+    bad_format = []
+    for n in nodes:
+        nid = n.get('node_id', '')
+        if not re.match(r'^\d{2}\.\d{2}(\.\d{2})?$', nid):
+            bad_format.append(nid)
+    if not bad_format:
+        print("✓ PASS — All node_id values follow section.xx or section.xx.xx format")
+    else:
+        print(f"✗ FAIL — Invalid formats: {bad_format[:5]}")
+
+    # ============================================================
+    # CHECK 4: Coverage against ground truth
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 4: COVERAGE vs GROUND TRUTH")
+    print("-" * 72)
+
+    actual_lookup = {}
+    for n in nodes:
+        key = (normalize(n.get('artist', '')), normalize(n.get('album', '')))
+        actual_lookup[key] = n
+
+    missing = []
+    for exp in expected:
+        key = (normalize(exp['artist']), normalize(exp['album']))
+        if key not in actual_lookup:
+            missing.append(f"{exp['section']}.{exp['cluster'] or '??'} | {exp['artist']} - {exp['album']}")
+
+    if not missing:
+        print("✓ PASS — All ground truth entries are present in msl_data.py")
+    else:
+        print(f"✗ FAIL — {len(missing)} entries missing from data file:")
+        for m in missing[:8]:
+            print(f"    - {m}")
+        if len(missing) > 8:
+            print(f"    ... and {len(missing) - 8} more")
+
+    # ============================================================
+    # CHECK 5: Cluster Values
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 5: CLUSTER FIELD VALUES")
+    print("-" * 72)
+
+    valid_clusters = {str(i) for i in range(1, 12)} | {''}
+    bad_clusters = []
+    for n in nodes:
+        c = n.get('cluster', None)
+        if c not in valid_clusters:
+            bad_clusters.append((n.get('node_id'), c))
+
+    if not bad_clusters:
+        print("✓ PASS — All cluster values are valid ('' or '1'–'11')")
+    else:
+        print(f"✗ FAIL — Invalid cluster values found:")
+        for nid, c in bad_clusters[:5]:
+            print(f"    {nid}: cluster='{c}'")
+
+    # ============================================================
+    # CHECK 6: Little Feat Multi-Disc Structure (Critical)
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 6: LITTLE FEAT MULTI-DISC STRUCTURE (section 19 / cluster 10)")
+    print("-" * 72)
+
+    lf_nodes = [n for n in nodes if 'Little Feat' in n.get('artist', '')]
+    main_lf = [n for n in lf_nodes if n.get('cluster') == '10' and 'Disc' not in n.get('album', '')]
+    disc_nodes = [n for n in lf_nodes if 'Disc' in n.get('album', '')]
+
+    print(f"Total Little Feat nodes found: {len(lf_nodes)}")
+    print(f"Main entry (cluster 10): {len(main_lf)}")
+    print(f"Disc sub-entries: {len(disc_nodes)}")
+
+    if len(main_lf) == 1 and len(disc_nodes) == 8:
+        print("✓ PASS — Little Feat structure is correct (1 main + 8 discs)")
+    else:
+        print("✗ FAIL — Expected 1 main entry + 8 disc entries")
+
+    if disc_nodes:
+        print("\nDisc node_ids:")
+        for d in sorted(disc_nodes, key=lambda x: x.get('node_id', '')):
+            print(f"  {d.get('node_id')}: {d.get('album', '')[:55]}...")
+
+    # ============================================================
+    # CHECK 7: Schema Integrity
+    # ============================================================
+    print("\n" + "-" * 72)
+    print("CHECK 7: SCHEMA INTEGRITY")
+    print("-" * 72)
+
+    required_keys = {'node_id', 'section', 'subsection', 'category', 'subcategory',
+                     'artist', 'album', 'year', 'technical_focus', 'audio_description',
+                     'bit_depth', 'sample_rate', 'strategy', 'highway_robust', 'tags',
+                     'notes', 'cluster'}
+
+    schema_issues = []
+    for n in nodes:
+        missing_keys = required_keys - set(n.keys())
+        if missing_keys:
+            schema_issues.append((n.get('node_id'), missing_keys))
+
+    if not schema_issues:
+        print("✓ PASS — All nodes contain the required schema keys")
+    else:
+        print(f"✗ FAIL — {len(schema_issues)} nodes with missing keys")
+        for nid, keys in schema_issues[:3]:
+            print(f"    {nid}: missing {keys}")
+
+    # ============================================================
+    # FINAL SUMMARY
+    # ============================================================
+    print("\n" + "=" * 72)
+    print("AUDIT SUMMARY")
+    print("=" * 72)
+
+    issues_found = bool(missing or bad_clusters or schema_issues or duplicates or bad_format)
+
+    if not issues_found and len(nodes) == len(expected) and len(disc_nodes) == 8:
+        print("✓✓✓  DATA FILE IS CLEAN AND VALID  ✓✓✓")
+        print("\nThe current msl_data.py is ready for document generation.")
+    else:
+        print("⚠ Some issues were detected. Please review the checks above.")
+
+    print("\n" + "=" * 72)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="MSL v3.14 Data Audit Tool")
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='Show Grok version and detailed output')
+    args = parser.parse_args()
+
+    run_audit(verbose=args.verbose)
+
+
+if __name__ == '__main__':
+    main()

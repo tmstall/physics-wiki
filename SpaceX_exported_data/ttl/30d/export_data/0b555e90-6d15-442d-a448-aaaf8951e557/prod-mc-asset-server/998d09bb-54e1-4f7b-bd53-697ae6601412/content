@@ -1,0 +1,22 @@
+
+#:kivy 2.3.0
+<QFTVisualizer>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1  # Black background
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Slider:
+        id: speed_slider
+        min: 0.0
+        max: 2.0
+        value: 1.0  # Current speed as midpoint
+        size_hint: 0.8, 0.1
+        pos_hint: {'center_x': 0.5, 'y': 0.05}
+        on_value: root.on_speed_change(self.value)
+    Label:
+        text: f'Speed: {speed_slider.value:.2f}'
+        size_hint: 0.2, 0.1
+        pos_hint: {'x': 0.85, 'y': 0.05}
+        color: 1, 1, 1, 1  # White text

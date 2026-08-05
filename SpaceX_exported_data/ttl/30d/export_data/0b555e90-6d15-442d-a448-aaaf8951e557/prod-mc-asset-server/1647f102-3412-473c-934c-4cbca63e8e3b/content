@@ -1,0 +1,116 @@
+
+# Version 1.1.0
+import kivy
+kivy.require('2.3.0')
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.clock import Clock
+from kivy.graphics import Color, Ellipse, Line, Rectangle
+from kivy.lang import Builder
+import numpy as np
+
+# Load the .kv file manually
+Builder.load_file('qftvisualizer_v1.1.0.kv')
+
+class QFTVisualizer(Widget):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        print("Initializing QFTVisualizer")  # Debug print
+        self.grid_size = 20  # 20x20 grid for gradient
+        self.cell_size = 800 / self.grid_size  # Window width / grid_size
+        self.reset_simulation(speed=1.0)  # Initial speed
+        self.init_graphics()
+        Clock.schedule_interval(self.update, 1.0 / 60.0)  # 60 FPS
+
+    def reset_simulation(self, speed):
+        self.e1_pos = np.array([200.0, 300.0])  # Electron 1
+        self.e2_pos = np.array([600.0, 300.0])  # Electron 2
+        self.e1_vel = np.array([speed, 0.0])   # Moving right
+        self.e2_vel = np.array([-speed, 0.0])  # Moving left
+
+    def init_graphics(self):
+        self.canvas.clear()
+        with self.canvas.before:  # Gradient drawn before main elements
+            self.grid_colors = []
+            self.grid_rects = []
+            for i in range(self.grid_size):
+                row_colors = []
+                row_rects = []
+                for j in range(self.grid_size):
+                    Color(0, 0, 0, 0)  # Transparent initially
+                    rect = Rectangle(pos=(i * self.cell_size, j * self.cell_size), size=(self.cell_size, self.cell_size))
+                    row_colors.append(Color(0, 0, 0, 0))
+                    row_rects.append(rect)
+                self.grid_colors.append(row_colors)
+                self.grid_rects.append(row_rects)
+        with self.canvas:
+            # Electron 1 (blue)
+            Color(0, 0, 1)
+            self.e1_ellipse = Ellipse(pos=(self.e1_pos[0] - 5, self.e1_pos[1] - 5), size=(10, 10))
+            # Electron 2 (blue)
+            Color(0, 0, 1)
+            self.e2_ellipse = Ellipse(pos=(self.e2_pos[0] - 5, self.e2_pos[1] - 5), size=(10, 10))
+            # Virtual photon (red)
+            Color(1, 0, 0)
+            self.photon_line = Line(points=[])
+
+    def update(self, dt):
+        # Update positions (Coulomb-like repulsion)
+        r = self.e2_pos - self.e1_pos
+        r_mag = np.linalg.norm(r)
+        if r_mag < 1:  # Avoid division by zero
+            r_mag = 1
+        force = 40000 / (r_mag ** 2)  # Increased multiplier
+        self.e1_vel += force * r / r_mag * 0.01
+        self.e2_vel -= force * r / r_mag * 0.01
+        self.e1_pos += self.e1_vel
+        self.e2_pos += self.e2_vel
+
+        # Stop at window edges (800x600)
+        self.e1_pos = np.clip(self.e1_pos, [0, 0], [800, 600])
+        self.e2_pos = np.clip(self.e2_pos, [0, 0], [800, 600])
+
+        # Update electron graphics
+        self.e1_ellipse.pos = (self.e1_pos[0] - 5, self.e1_pos[1] - 5)
+        self.e2_ellipse.pos = (self.e2_pos[0] - 5, self.e2_pos[1] - 5)
+
+        # Update photon line (fixed amplitude)
+        points = []
+        dist = np.linalg.norm(self.e2_pos - self.e1_pos)
+        if dist > 0:
+            t = np.linspace(0, 1, 50, endpoint=True)  # 50 points
+            for i in t:
+                x = self.e1_pos[0] + i * (self.e2_pos[0] - self.e1_pos[0])
+                y = self.e1_pos[1] + i * (self.e2_pos[1] - self.e1_pos[1])
+                y += 10 * np.sin(2 * np.pi * 5 * i)  # Amplitude 10, 5 cycles
+                points.extend([x, y])
+        self.photon_line.points = points
+
+        # Update field gradient
+        print("Updating gradient")  # Debug print
+        for i in range(self.grid_size):
+            for j in range(self.grid_size):
+                x = (i + 0.5) * self.cell_size
+                y = (j + 0.5) * self.cell_size
+                r1 = np.linalg.norm(np.array([x, y]) - self.e1_pos)
+                r2 = np.linalg.norm(np.array([x, y]) - self.e2_pos)
+                r1 = max(r1, 1)
+                r2 = max(r2, 1)
+                field = 40000 / r1 + 40000 / r2  # Increased multiplier
+                field = min(field, 80000)  # Cap for color scaling
+                t = field / 80000  # Normalize to [0, 1]
+                green = max(0, 1 - t)  # Green fades out
+                purple = min(1, t)     # Purple increases
+                self.grid_colors[i][j].rgba = (purple, green, purple, 0.5)
+
+    def on_speed_change(self, value):
+        print(f"Speed changed to {value}")  # Debug print
+        self.reset_simulation(value)
+
+class QFTApp(App):
+    def build(self):
+        print("Building QFTApp")  # Debug print
+        return QFTVisualizer()
+
+if __name__ == '__main__':
+    QFTApp().run()

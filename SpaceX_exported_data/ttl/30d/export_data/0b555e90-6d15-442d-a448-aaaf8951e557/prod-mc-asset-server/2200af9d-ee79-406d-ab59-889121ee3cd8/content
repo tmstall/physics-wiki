@@ -1,0 +1,9 @@
+=== Minimal Patch Version ===
+
+✓ Backup created: msl_data.py.backup_20260526_220347
+
+✓ Done.
+  Nodes updated with cluster : 131
+  Nodes with blank cluster   : 9
+
+New file created: msl_data.py.new

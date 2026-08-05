@@ -1,0 +1,85 @@
+# Color Space Has Potholes
+
+## Human
+
+Detailed analysis of this paper
+
+## Assistant
+
+Good. I have solid material from the open-access paper text, the Wikimedia-hosted PDF cache, and the Newswise/phys.org/SciTechDaily coverage. Now writing the full analysis.
+
+---
+
+# **v3.4.9**
+
+---
+
+## 1. Punchy Title & One-Sentence Hook
+
+**Color Space Has Potholes: Why Your Brain's Distance Meter Isn't a Ruler**
+
+Schrödinger sketched a beautiful geometry of color perception a century ago but left three fatal holes in the foundation — this Los Alamos team patches all three by replacing his flat-ish Riemannian ruler with a genuinely warped, non-Riemannian one, and proves experimentally the fix works.
+
+---
+
+## 2. Big-Picture Context
+
+Color perception is fundamentally a measurement problem: given two colors, how *different* do they look to a human observer? Since the 19th century, scientists have treated that question geometrically — imagine all possible colors living in a 3D space, and the perceived difference between two colors is the "distance" between their positions. Riemann (1854) gave mathematicians the framework for curved distance metrics, Helmholtz applied it to color in the 1890s, and Schrödinger formalized hue, saturation, and lightness from that metric in the 1920s. This lineage is so well-established it's baked into the international color standard ΔE used everywhere from display calibration to paint matching.
+
+The problem is that Schrödinger's Riemannian framework assumes distances add up cleanly — ten small color steps equal one large color step. But human perception doesn't work that way. Large color differences look *smaller* than the accumulated sum of small steps, a well-documented phenomenon called **diminishing returns**. Bujack's group proved in a landmark 2022 PNAS paper that perceptual color space is fundamentally non-Riemannian for exactly this reason — the triangle inequality is violated. Think of it as the color equivalent of discovering that spacetime isn't flat after decades of treating it as Euclidean.
+
+This 2025 CGF paper is the follow-up: now that we know the geometry is non-Riemannian, how do we rebuild Schrödinger's beautiful definitions of hue, saturation, and lightness in that warped space? Three specific flaws in his approach had to be fixed. The paper fixes all three, validates the fixes experimentally, and in doing so closes a century-old loop: hue, saturation, and lightness don't emerge from cultural or learned experiences but reflect intrinsic properties of the color metric itself.
+
+This matters well beyond color science. Scientific visualization — the field of turning data into images that communicate meaning — depends critically on accurate perceptual color models. A bad color map that assigns similar-looking colors to very different data values actively misleads scientists reading their own results. The Los Alamos team works in exactly this applied domain; they came to this problem because their visualization algorithms were producing artifacts from Schrödinger's flawed geometry.
+
+---
+
+## 3. Necessary Background Crash-Course
+
+**Color space as a manifold.** Your three cone types (L, M, S — roughly red, green, blue tuned) each report a scalar activation. Together they produce a 3D coordinate. Color space is just the set of all such coordinates. Saying it's a "Riemannian manifold" means you can define a smoothly varying local distance metric at every point — like a rubber sheet that might be more or less stretched in different directions, but is always locally ruler-flat. *Analogy: a curved CPU floorplan where each tile has its own local clock frequency — cache latency within a tile is clean; cross-tile latency depends on the local warp.*
+
+**The Riemannian line element.** Helmholtz and Schrödinger wrote down a formula that assigns a tiny "perceptual distance" to any infinitesimally small step in color space. Integrate that along a path, and you get total perceptual distance. The key constraint in a Riemannian space is that this integration is additive — no matter how many segments you break a path into, the total length is the same. *Analogy: measuring a signal path in a PCB with a calibrated impedance tester — every segment contributes independently.*
+
+**Why non-Riemannian?** Diminishing returns means: the perceived size of a large color jump is *less* than what you'd get summing up small perceptual steps along that path. This violates a core Riemannian axiom (specifically, metric spaces require triangle inequality equality for collinear points). A non-Riemannian metric — technically a **Finsler metric** — allows the "ruler" itself to change depending on how fast you're moving through color space, not just where you are. *Analogy: a SerDes link where jitter accumulation is sub-linear with cable length — each segment adds less than the previous one.*
+
+**Geodesic.** The shortest path between two points in a curved space. In flat Euclidean space, geodesics are straight lines. In a curved Riemannian space (like the surface of a sphere), they're great circles. In a non-Riemannian Finsler space, they can be even more exotic — shortest path and "straightest path" can diverge. *Analogy: optimal routing in a network with asymmetric link costs.*
+
+**Hue, saturation, lightness (HSL) — Schrödinger's definitions.** Lightness = total geodesic distance from black. Saturation = how far you are from the "neutral axis" (the gray axis from black to white) within your equal-lightness surface. Hue = which direction around the neutral axis you sit. Clean and geometric — in principle. In practice, Schrödinger left three things undefined or broken.
+
+**The Bezold-Brücke effect.** When you increase the brightness of a colored light, its *apparent hue shifts* — a yellow-green becomes more yellow, a blue becomes more cyan. This means equal-hue surfaces in color space are *not* straight lines pointing at black; they curve. Schrödinger's straight-line hue definition misses this entirely.
+
+---
+
+## 4. Core Technical Explanation
+
+**The three problems and their fixes:**
+
+**Problem 1 — Hue definition breaks under Bezold-Brücke.**
+Schrödinger defines hue as the "stimulus quality" that doesn't change as you scale intensity — essentially, the direction from black to your color is your hue label. But that direction is a straight line, and experimental data clearly show equal-hue surfaces curve away from straight lines as you move through the space. Bujack's team replaces the straight-line path from black with the **geodesic** from black to the color under the non-Riemannian metric. They embed previous experimental equal-hue surface measurements into the CIERGB color space and show the geodesic paths follow the curvature of those surfaces. The image below shows this directly:
+
+[![CIERGB equal-hue surfaces showing geodesic curvature](https://scitechdaily.com/images/CIERGB-Color-Spaces-777x548.jpg)](https://scitechdaily.com/images/CIERGB-Color-Spaces.jpg)
+*Equal-hue surfaces in CIERGB space. Schrödinger's straight-line hue paths (what you'd expect if hue were a simple ray from black) don't match the experimental data. The geodesic paths in the non-Riemannian metric do. Each surface represents colors that look the same hue — note how they fan and curve rather than pointing like spokes at the black apex.*
+
+**Problem 2 — Non-Riemannian metrics introduce a lightness ambiguity.**
+In a Riemannian space, the length of a path from A to B equals the length from B to A (symmetry). In a Finsler/non-Riemannian space, this can break — going uphill and going downhill can have different "costs." That means "distance from black" — Schrödinger's lightness — could give two different answers depending on whether you measure starting from the color or starting from black. The team frames this as two candidate lightness definitions. They then run a psychophysical experiment: show observers a color and ask them to pick the gray patch that appears equally light. If the ambiguity mattered perceptually, the two definitions would predict different matching grays. Their experiment shows the two definitions give the same result within experimental noise, so the ambiguity is real mathematically but inconsequential for actual human perception. *Analogy: two different routing algorithms that produce different path lengths in simulation but land on the same hardware execution time due to pipeline saturation masking the difference.*
+
+[![Color perception experiment results](https://scitechdaily.com/images/Color-Perception-Experiment.jpg)](https://scitechdaily.com/images/Color-Perception-Experiment.jpg)
+*The experimental validation. Each row is a reference color; columns 2 and 4 show the gray matches predicted by the two competing lightness definitions. Subjects chose grays from column 3. If columns 2 and 4 match visually, both definitions agree — and they do, row after row. The ambiguity collapses in practice.*
+
+**Problem 3 — The neutral axis was never defined.**
+This is the most fundamental gap. Schrödinger's definitions of saturation and hue both reference the neutral axis (the black-to-white gray spine of color space), but he never gave a geometric definition of it. He simply assumed you'd know where "gray" was. This is like building a coordinate system without defining the origin. In a non-Riemannian setting, you can't even borrow Euclidean intuitions to patch it.
+
+Bujack's team defines the neutral axis geometrically: within any equal-lightness surface (a level set at constant perceived brightness), the neutral point is the color that sits **closest to black** under the non-Riemannian metric — i.e., the color reachable from black via the shortest geodesic that also lies within that lightness surface. String those neutral points together across all lightness levels and you get the neutral axis. Saturation then decreases as one moves closer to this neutral axis — exactly as Schrödinger intended, but now on rigorous geometric footing.
+
+The team also identifies a subtle secondary issue: two plausible ways to generalize Schrödinger's saturation definition to non-Riemannian space don't automatically agree. The first uses the raw non-Riemannian path length directly. The second computes an "induced Riemannian metric" from those path lengths and uses that. These can give different numbers, and the paper flags this openly as an unresolved subtlety that probably doesn't matter perceptually but deserves future attention.
+
+**The experimental backbone:**
+Throughout, they validate by embedding historical color-matching data (multiple independent studies) into the CIERGB color space and checking whether the geodesic predictions align with the experimental equal-hue and equal-saturation boundaries. They also run their own lightness-matching experiment with 289 human responses per reference color. The match between theory and experiment is the whole claim — this isn't a pure theory paper; it's theory-plus-experiment.
+
+---
+
+## 5. What's Genuinely New or Clever
+
+**The geodesic replacement for stimulus quality.** The conceptual move of swapping Schrödinger's straight-line "hue ray" for a geodesic in the non-Riemannian metric is clean, minimal, and automatically handles the Bezold-Brücke effect without adding free parameters. It's the kind of fix that looks obvious in retrospect but required recognizing that the whole Riemannian scaffolding was wrong first.
+
+**Defining the neutral axis via geometric minimization.** Nobody before had formally defined gray as "the shortest-geodesic point on each equal-lightness surface." This closes a foundational gap that has existed since Schrödinger wrote down his definitions — a hole so basic it's almost embarrassing in retrospect. It also makes the definition intrinsic: you can find the neutral axis from the metric alone, without any external cultural or physiological assumptions about what "gray" means. The work establishes color perception attributes as intrinsic properties of the color metric itself, n

@@ -1,0 +1,157 @@
+# MSL v3.12 Golden List Mapping (pre-filled from uploaded data)
+# Format: set.cluster|Artist|Album Title
+# Use this with msl_03c_full_auto_old_to_new.py
+
+01|Donald Fagen|The Nightfly
+01|Miles Davis|Kind of Blue
+01|Roger Waters|Amused to Death
+01|Steely Dan|Aja
+
+02|Beck|Sea Change
+02|Dave Brubeck|Time Out (Disc 1)
+02|Dave Brubeck|Time Out (Disc 2)
+02|Fleetwood Mac|Then Play On
+02|Pink Floyd|Wish You Were Here (Disc 1)
+02|Pink Floyd|Wish You Were Here (Disc 2)
+02|Pink Floyd|Wish You Were Here (Disc 3)
+02|The Beatles|Abbey Road (Disc 1)
+02|The Beatles|Abbey Road (Disc 2)
+02|The Beatles|Abbey Road (Disc 3)
+
+03.1|Buddy Guy|Ain't Done With The Blues
+03.1|John Lee Hooker|That's My Story
+03.1|Muddy Waters|Folk Singer
+03.1|Taj Mahal|Taj Mahal
+03.2|Dominic Miller|Silent Light
+03.2|Ottmar Liebert|Luna Negra
+03.2|Stan Getz|Getz/Gilberto
+03.2|Thibaut Garcia|Goldberg Variations
+03.3|Anouar Brahem|Blue Maqams
+03.3|Bill Evans Trio|Waltz for Debby
+03.3|Derek and the Dominos|In Concert
+03.4|Dhafer Youssef|Street of Minarets
+03.4|John Coltrane|Blue Train
+03.4|Stevie Ray Vaughan|Couldn't Stand the Weather
+03.4|Stevie Ray Vaughan|Texas Flood
+
+04.1|Carole King|Tapestry
+04.1|Dominique Fils-Aimé|My World Is The Sun
+04.1|Norah Jones|Come Away With Me
+04.2|Diana Krall|The Look of Love
+04.2|Gregory Porter|Liquid Spirit
+04.3|Beth Gibbons|Lives Outgrown
+04.3|Joni Mitchell|Blue
+
+05.1|Agnes Obel|Myopia
+05.2|Arooj Aftab|Vulture Prince
+05.4|Kate Bush|50 Words for Snow
+
+06.1|Chris Thile|Bach Sonatas and Partitas
+06.1|Ottmar Liebert|Queja
+06.2|Toquinho + Costa|Bachianinha
+06.2|Yasmin Williams|Urban Driftwood
+06.3|Al Di Meola|Friday Night in San Francisco
+06.3|Béla Fleck|My Bluegrass Heart
+06.3|Julian Lage|Arclight
+06.3|Pedro Iturralde Quintet|Flamenco Jazz
+06.4|Vicente Amigo|Andenes del Tiempo
+
+07.1|Avishai Cohen|Shifting Sands
+07.1|GoGo Penguin|v2.0
+07.2|Nils Frahm|Felt
+07.2|Nils Frahm|Music for Animals
+07.3|Tigran Hamasyan|Mockroot
+07.3|Yussef Dayes|Welcome to the Hills
+07.4|Vijay Iyer Trio|Break Stuff
+
+08.1|Amber Rubarth|Sessions from the 17th Ward
+08.1|Macy Gray|Stripped
+08.2|Carbon Based Lifeforms|Seeker
+08.2|Justin Gray|Immersed
+08.3|Max Cooper|Emergence
+08.3|Melanie De Biasio|Blackened Cities
+08.4|Khruangbin|Hasta El Cielo (Con Todo El Mundo In Dub)
+
+09.1|Hania Rani|Live from Studio S2
+09.2|Lubomyr Melnyk|Live From S1
+09.3|Lubomyr Melnyk|Rivers and Streams
+09.3|Max Richter|The Blue Notebooks
+09.4|Anna von Hausswolff|ICONOCLASTS
+09.4|Nicolas Altstaedt|Blackbirds
+
+10|Goldmund|As Each Breath
+10|Goldmund|The Time It Takes
+10|Grandbrothers|Open
+10|Manu Delago|Snow from Yesterday
+10|Maywa|Essência
+10|Portico Quartet|Terrain
+
+11|Hania Rani|Home
+11|Hauschka|A Different Forest
+11|Joep Beving|Hermetism
+11|Lambert|Actually Good
+11|Nils Frahm|All Melody
+11|Olafur Arnalds|some kind of peace
+
+12.1|Allison Krauss|Raising Sand
+12.2|London Grammar|If You Wait
+12.3|Melody Gardot|Currency Of Man
+12.4|Parcels|Live Vol. 1
+
+13.1|Vangelis|Juno to Jupiter
+13.2|Jon Hopkins|Singularity
+13.2|Jon Hopkins|Immunity
+13.2|Rival Consoles|Articulation
+13.2|Solar Fields|Origin #02 (2023 Remast)
+13.3|Floating Points|Crush
+13.3|Kiasmos|II
+13.3|Max Cooper|Unspoken Words
+13.3|Rival Consoles|Persona
+
+14|Byron Janis|Rachmaninoff Piano Concerto No. 2
+14|Carlos Kleiber|Beethoven Symphony No. 5
+14|Mari Kodama|Beethoven Piano Sonatas Nos. 4 & 8
+14|Max Richter|Voices
+14|Otto Klemperer|Beethoven The 9 Symphonies
+14|Paco de Lucia|The Montreux Years (Live)
+
+15.1|Christopher Herrick|Power of Life
+15.1|Noah Geller|Saint-Saëns Symphony No. 3
+15.2|Iveta Apkalna|Light & Dark
+15.2|Keiko Nakata|Franck Selected Organ Works
+15.3|Olivier Latry|Bach Liszt Franck Alkan
+15.3|Radiohead|Kid A
+
+16.1|Imogen Heap|Speak for Yourself (20th Anniv)
+16.1|James Blake|Playing Robots Into Heaven
+16.2|Jacob Collier|Djesse Vol. 3
+16.3|Bon Iver|SABLE, FABLE
+16.4|ROSALÍA|LUX
+
+17.1|Ben Lukas Boysen|Mirage
+17.2|Kodo|Mondo Head
+17.2|TOOL|Fear Inoculum
+17.3|Trentemøller|Dreamweaver
+17.3|Yello|Point
+17.4|Ami Taf Ra|The Prophet and The Madman
+
+18.1|Led Zeppelin|Led Zeppelin IV
+18.1|Santana|Abraxas
+18.1|The Doors|L.A. Woman
+18.2|Pink Floyd|Dark Side of the Moon
+18.2|The Allman Brothers Band|At Fillmore East
+18.2|The Who|Who's Next
+18.3|Long Distance Calling|The Phantom Void
+18.4|black midi|Hellfire
+
+19.1|Mark Knopfler|Tracker (Deluxe)
+19.2|Cat Stevens|Tea For The Tillerman
+19.3|Television|Marquee Moon
+19.4|Steely Dan|The Royal Scam
+19.5|Talk Talk|The Colour Of Spring
+19.6|Traffic|Low Spark [CONTROL]
+19.7|Jethro Tull|Aqualung (SW Mix)
+19.8|David Bowie|Station to Station
+19.9|The Allman Brothers Band|Idlewild South
+19.10|Little Feat|Waiting for Columbus (Super Delux)
+19.11|Dire Straits|Money For Nothing

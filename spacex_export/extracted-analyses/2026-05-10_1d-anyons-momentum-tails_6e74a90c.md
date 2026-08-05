@@ -1,0 +1,88 @@
+---
+source: spacex_export
+conversation_id: 1c7c91c0-116a-4d67-82e8-f72f42a02fd3
+title: "1D Anyons Momentum Tails"
+created_at: 2026-05-10T02:27:05.185458Z
+updated_at: 2026-05-10T02:29:00.703273Z
+n_responses: 2
+platform: grok/xAI
+pilot: false
+---
+
+# 1D Anyons Momentum Tails
+
+## Human
+
+Journal References:
+
+Raúl Hidalgo-Sacoto, Thomas Busch, D. Blume. Universal momentum tail of identical one-dimensional anyons with two-body interactions. Physical Review A, 2025; 112 (6) DOI: 10.1103/zf6z-2jjs
+Raúl Hidalgo-Sacoto, Thomas Busch, D. Blume. Two identical one-dimensional anyons with zero-range interactions: Exchange statistics, scattering theory, and anyon-anyon mapping. Physical Review A, 2025; 112 (6) DOI: 10.1103/h2vs-ll9d
+
+## Assistant
+
+**v3.5.4**
+
+**1D Anyons Split Into Two Flavors — And Their Momentum Tails Spill the Secret**
+
+In one dimension, anyons refuse to be simple interpolations between bosons and fermions. Their fractional exchange phase imprints distinct, measurable power-law tails on the high-momentum distribution, even when the underlying two-body interactions are tuned identically for both “bosonic anyon” and “fermionic anyon” families.
+
+**Big-Picture Context**
+
+One-dimensional quantum systems are special because particles cannot dodge each other. To exchange positions they must pass through the same point, so the exchange operation is directly tied to short-distance interactions and boundary conditions. Standard bosons pick up +1 and fermions pick up –1 under exchange. Anyons generalize this to a tunable phase controlled by a statistical parameter α (0 ≤ α ≤ 1). The phase is non-local in the sense that it depends on the ordering of all particles along the line.
+
+The authors show that 1D anyons come in two distinct varieties — bosonic anyons (overall + reserves the anyonic character, theorists can take known Bose or Fermi solutions, dress them with a statistical phase factor, and obtain exact anyonic eigenstates for a carefully constructed Hamiltonian that contains both even-parity and odd-parity zero-range interactions.
+
+The payoff appears in the single-particle momentum distribution n(k). At large |k| the distribution decays as power laws whose prefactors depend on both the interaction strength (via Tan contacts) and on α through simple trigonometric factors. The tails are universal — independent of particle number N, trap details, and interaction strength — as long as the short-distance physics is dominated by the two-body scattering length. This universality turns the high-momentum tail into a direct spectroscopic window onto both interactions and statistics.
+
+**Necessary Background Crash-Course**
+
+1D anyons acquire a phase e^{–i π α sign(z)} when two particles exchange places along the line. Think of cars on a single-lane track: when one overtakes the other, the anyonic “toll” flips a quantum phase flag whose size is set by α. α = 0 gives ordinary bosons (no flag change); α = 1 gives ordinary fermions (full sign flip). Intermediate α produces fractional statistics that only exist because particles are forced to pass through each other.
+
+The Bose–Fermi mapping works because, in 1D, you can convert a bosonic wave function into a fermionic one by multiplying by the product of all pairwise sign(z_{ij}). The operation flips the symmetry but leaves the energy spectrum and the contact interactions unchanged provided the even- and odd-parity scattering lengths are equal. It is exact for any interaction strength — like remapping every bit in a cache line while keeping the underlying cache-coherence protocol identical.
+
+High-momentum tails arise because the Fourier transform of a sharp feature in position space decays slowly. A jump discontinuity in the wave function at particle coincidence produces a 1/k² tail; a kink or derivative jump produces 1/k³. In signal-processing terms, the sharper the edge you put in the time-domain waveform, the more high-frequency power leaks into the spectrum. Here the “edges” are engineered by both the anyonic phase and the zero-range pseudopotential.
+
+Tan contacts C₂ and C₃ quantify the probability density for two or three particles to sit on top of each other. They appear as the prefactors of the universal tails, exactly as the integrated intensity of a spectral line tells you the number of emitters. The contacts themselves turn out to be independent of α; only the trigonometric weighting factors in front of them carry the statistical information.
+
+**Core Technical Explanation**
+
+The authors first define the anyonic exchange condition. For bosonic anyons (Ψ_{α,+}) the wave function picks up an overall + sign times the fractional phase; for fermionic anyons (Ψ_{α,–}) it picks up an overall – sign. They implement this by dressing ordinary bosonic or fermionic wave functions with the statistical operator Ŝ_{α/2}^†, which multiplies by a position-dependent phase factor proportional to sign(z_{ij}). Because the dressing is applied consistently, the resulting states automatically satisfy the desired anyonic boundary conditions at every particle coincidence.
+
+They then construct a many-body Hamiltonian containing both even-parity (g₊ δ(z)) and odd-parity (g₋ ∂_z δ(z) ∂_z) zero-range pseudopotentials. When the two scattering lengths are set equal (a₊ = a₋ = a_any), both bosonic-anyon and fermionic-anyon wave functions become exact eigenstates. The mapping between the two families is therefore an exact symmetry of this Hamiltonian, generalizing the usual Bose–Fermi duality.
+
+To extract the momentum distribution they form the one-body density matrix and take its Fourier transform. At large |k| only the short-distance singular pieces of the wave function survive. These singularities are jumps (from the anyonic phase) and derivative jumps (from the contact interaction). Fourier transforming sign(z) z^n terms with Cauchy principal value yields exactly the powers 1/k^{n+1}. Collecting all pairwise and triple coincidences produces the universal tail up to order k^{-3}:
+
+For bosonic anyons the leading terms read  
+4 C₂ sin²(π α / 2) / k²   +   [4 C₂ sin(π α) / (a_any k³) + 8 C₃ sin²(π α / 2) sin(π α) / k³] + O(k^{-4}).
+
+For fermionic anyons the trigonometric prefactors flip: cos²(π α / 2) multiplies the 1/k² term and the signs of the 1/k³ pieces reverse. The two-body contact C₂ and three-body contact C₃ are themselves independent of α; only the weighting by sin and cos of multiples of π α carries the statistical dependence. The authors verify the expressions analytically for two- and three-body bound states and numerically for small trapped systems, confirming that the tails are indeed universal.
+
+**What’s Genuinely New or Clever**
+
+Two genuinely new moves stand out. First, cleanly separating 1D anyons into bosonic (+ sector) and fermionic (– sector) families reconciles contradictory definitions that had circulated in the literature; the anyon–anyon mapping then lets you move solutions between the two sectors without re-solving the Schrödinger equation. Second, the explicit trigonometric dependence of the tail prefactors on α shows that fractional statistics leave a fingerprint that cannot be absorbed into a redefinition of the interaction strength. The k^{-3} term, in particular, vanishes for ordinary bosons and for fermionic anyons at α = 1 but survives for generic bosonic anyons — a smoking-gun signature of the intermediate statistics.
+
+**Limitations & Open Questions**
+
+The pseudopotential is strictly zero-range; any finite effective range immediately generates additional non-universal k^{-4} and higher terms that the present analysis does not capture (the companion two-body paper begins to quantify them). The construction assumes a single-component gas in the continuum; lattice effects, multi-component mixtures, or impurities will modify both the allowed values of α and the form of the tails. Experimentally, time-of-flight imaging must reach sufficiently large |k| with low noise to separate the universal coefficients from background — feasible in principle with ultracold atoms but not yet demonstrated for anyons. Open problems include time-dependent evolution (does the tail structure survive quenches?), the fate of the tails when three-body forces or longer-range interactions are added, and whether the anyon–anyon mapping can be exploited to simulate fractional statistics in higher dimensions or with synthetic gauge fields.
+
+**Three Crystallized Takeaways**
+
+1. One-dimensional anyons come in two distinct families — bosonic and fermionic — whose wave functions differ by an overall sign under exchange; this distinction survives in the high-momentum tails even when interactions are identical.
+
+2. The universal k^{-2} and k^{-3} tails of the momentum distribution encode both the usual Tan contacts and the statistical angle α through simple sine and cosine factors, turning a hard-to-measure phase into a measurable prefactor.
+
+3. Dressing ordinary Bose or Fermi wave functions with a position-dependent statistical phase turns anyonic problems into standard ones plus bookkeeping, so the entire machinery of 1D integrable systems and Tan relations carries over with only trigonometric re-weighting.
+
+**Detailed Summary & Explanation**
+
+The paper demonstrates that a many-body Hamiltonian with additive even- and odd-parity zero-range interactions (tuned to the same anyonic scattering length a_any) supports exact eigenstates obeying generalized 1D anyonic exchange statistics. These eigenstates fall into two classes: bosonic anyons (overall plus tistical phase operator Ŝ_{α/2}^†.  
+
+Because the short-distance singularities of the wave function are completely fixed by the two-body scattering length and the anyonic phase, the large-momentum tail of the single-particle momentum distribution n(k) is universal. Explicit Fourier analysis of the jump and kink discontinuities yields power-law tails whose coefficients depend on the two- and three-body Tan contacts C₂ and C₃ (which themselves are independent of α) multiplied by trigonometric functions of α. Bosonic anyons therefore exhibit both k^{-2} and k^{-3} tails whose relative strengths vary with α; fermionic anyons show a different weighting, with the k^{-3} term vanishing at the fermionic point α = 1.  
+
+The authors verify the analytic tail formulas on two- and three-body bound states in free space and on small harmonically trapped systems, confirming that the expressions hold for arbitrary particle number N and arbitrary interaction strength. The companion two-body scattering paper supplies the microscopic justification for the pseudopotential and checks the tails explicitly for N = 2, including the first non-universal k^{-4} corrections.
+
+In plain language, the work shows that fractional statistics in 1D are not just a mathematical curiosity; they leave a concrete, universal signature in the high-momentum wings of the density distribution. Because the signature factors cleanly into interaction contacts times known functions of α, an experimentalist who measures the tail coefficients can in principle read off both the interaction strength and the statistical angle without needing to resolve individual particle exchanges.
+
+**Shorter Summary**
+
+The authors prove that 1D anyons exist in two varieties (bosonic and fermionic) that can be mapped onto each other while preserving their anyonic character. They construct a zero-range Hamiltonian that supports both varieties and show that the high-momentum tails of the particle distribution are universal power laws whose prefactors depend on the statistical angle α through elementary sine and cosine factors. The tails therefore serve as a direct, measurable reporter of both interactions (via Tan contacts) and fractional statistics. The results generalize the classic 1D Bose–Fermi duality and open a spectroscopic route to detecting anyonic statistics in ultracold-atom experiments.

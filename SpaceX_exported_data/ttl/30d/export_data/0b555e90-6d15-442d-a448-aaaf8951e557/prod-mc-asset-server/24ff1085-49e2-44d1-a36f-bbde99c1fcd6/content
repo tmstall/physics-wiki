@@ -1,0 +1,73 @@
+Great target — this is the core magic of the dynamical Casimir effect and it's worth unpacking all the way down.
+
+---
+
+**Positive vs. negative frequency modes: what they actually are**
+
+In QFT, every solution to Maxwell's equations (or any wave equation) can be decomposed into two types of oscillating terms. Positive frequency modes go as e^{-iωt} — they oscillate forward in time. Negative frequency modes go as e^{+iωt} — they oscillate backward in time. In the quantum field, positive frequency parts are multiplied by *annihilation* operators (they remove a particle) and negative frequency parts are multiplied by *creation* operators (they add a particle). This is not a convention choice — it's hardwired into how QFT constructs the vacuum.
+
+The vacuum is defined as the state that is annihilated by all annihilation operators. Equivalently: the vacuum contains no positive-frequency excitations going forward in time.
+
+**Analogy:** In a CPU pipeline, "positive frequency" is a clock-aligned signal — it's real, it does work, it advances the computation. "Negative frequency" is the anti-phase ghost — normally it cancels out and does nothing. The vacuum is the state where all the ghost components have perfectly cancelled all the real components.
+
+---
+
+**Virtual fluctuations: what they actually are**
+
+The quantum vacuum isn't empty. It's a seething sea of correlated positive and negative frequency fluctuations that *exactly cancel* in expectation value. For every virtual creation event there's a paired virtual annihilation — they're locked in phase so that no net particle exists. These are the virtual fluctuations. They carry no net energy on average, produce no net particle count, but they're physically real in the sense that they affect measurable quantities (Casimir force, Lamb shift, spontaneous emission rates).
+
+**Analogy:** Think of the vacuum as a balanced transmission line where equal and opposite signals propagate simultaneously, producing zero net current. The individual signals are real — they just cancel. Disturb the balance and you get net current.
+
+---
+
+**What a time-varying boundary does**
+
+Now put a mirror in the field that changes with time — moves, appears, or disappears. The mirror imposes a boundary condition: the electric field must be zero at the mirror surface at every instant. As the mirror moves or switches, that boundary condition *changes in time*.
+
+Here's the key: a *static* boundary condition mixes left-movers with right-movers, but it doesn't mix positive frequencies with negative frequencies. A mode at frequency ω reflects into another mode at the *same* frequency ω, just going the other direction. Photon number is conserved. The vacuum stays vacuum.
+
+A *time-varying* boundary condition is different. It has its own time dependence — it oscillates or switches at some rate. When it acts on a field mode at frequency ω, it doesn't just redirect it — it *modulates* it, producing sidebands at ω plus and minus the boundary's own characteristic frequencies. Crucially, some of those sidebands land at *negative* frequencies.
+
+**Analogy:** This is exactly amplitude modulation in RF electronics. Multiply a carrier at frequency ω by a modulating signal at frequency Ω and you get sidebands at ω+Ω and ω−Ω. If the boundary switches fast enough that Ω > ω, the lower sideband goes negative.
+
+---
+
+**The mixing that creates real particles**
+
+In QFT language: the time-varying boundary causes the annihilation operator for mode ω (positive frequency, removes a particle) to pick up a component proportional to the *creation* operator for another mode ω′ (negative frequency contribution, adds a particle). This is the Bogoliubov transformation. Written schematically:
+
+$$\hat{a}_{\omega,\text{new}} = \alpha(\omega,\omega')\,\hat{a}_{\omega',\text{old}} + \beta(\omega,\omega')\,\hat{a}^\dagger_{\omega',\text{old}}$$
+
+**Symbol definitions:**
+- $\hat{a}_{\omega,\text{new}}$ : annihilation operator in the new (after boundary change) description
+- $\hat{a}_{\omega',\text{old}}$ : annihilation operator in the old description — removes a particle
+- $\hat{a}^\dagger_{\omega',\text{old}}$ : creation operator in the old description — adds a particle
+- $\alpha, \beta$ : Bogoliubov coefficients encoding how much mixing occurs; β is specifically the "particle creation" amplitude
+
+**What this actually means:** The new annihilation operator contains a piece of the old *creation* operator. So when you ask "is the new vacuum empty?" you apply the new annihilation operator to the old vacuum state. The α term gives zero (annihilating old vacuum), but the β term — the creation operator piece — acts on old vacuum and produces a particle. The old vacuum is *not* the new vacuum. The state that was empty before the boundary changed now contains real particles in the new description.
+
+**Analogy:** Imagine you defined "zero inventory" in a warehouse using one coordinate system. Someone rotates the shelving layout (changes the boundary conditions). In the new layout, what was previously "empty shelf" now has items on it — not because anyone added stock, but because the definition of "empty" rotated. The β coefficient measures how much the two "empty" definitions disagree.
+
+---
+
+**Why fast boundaries produce more particles**
+
+The magnitude of β depends on how much negative-frequency content the boundary's time variation injects. A slowly varying boundary (adiabatic limit) allows the field modes to continuously readjust — they track the changing boundary and the two vacuum definitions stay nearly aligned. β stays near zero. No particles.
+
+A rapidly varying boundary — especially a discontinuous step like the instantaneous shutter removal in the paper — has a Fourier transform that falls off slowly at high frequency (only as 1/ω for a step function). That slow falloff means the boundary's own spectrum overlaps strongly with arbitrarily high-frequency field modes, producing large β coefficients across a wide frequency range. In the instantaneous limit, the integral over all modes diverges — infinite particles produced. That's exactly the logarithmic divergence in the paper.
+
+---
+
+**The single-photon case: why it's worse than vacuum**
+
+For a vacuum input, the dynamical Casimir effect produces pairs of photons — the β terms act on vacuum to create correlated two-photon states, four-photon states, and so on. Symmetric, paired.
+
+For a single-photon input, you have all of that *plus* the single excitation already present gets scrambled. The single photon's creation operator, expressed in the new basis, contains both creation and annihilation operators — so the single particle simultaneously stimulates emission into new modes AND interferes with the vacuum pair production. The result is asymmetric: odd photon numbers (1, 3, 5...) become possible alongside the even ones from pure vacuum squeezing. The state is genuinely more complex than what you get from vacuum alone — which is why the paper's result is nontrivial even given the existing Casimir literature.
+
+---
+
+**The one-line crystallization:**
+
+A time-varying boundary rotates the definition of "empty" — and anything that was in the old empty (the locked-in-phase virtual fluctuations) becomes real particles in the new empty, because positive and negative frequency modes that were perfectly paired are now cross-coupled by the boundary's own time dependence.
+
+Want to go into how the Unruh effect is the same mechanism but with acceleration replacing a physical mirror?

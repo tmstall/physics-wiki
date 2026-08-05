@@ -1,0 +1,182 @@
+[
+  {
+    "file": "2026-07-26_todd-intended-the-spin-quiet-partner-that-almost-never-shows_de8ad8dd.md",
+    "title": "Todd Intended: The Spin-Quiet Partner That Almost Never Shows Up",
+    "arxiv": null,
+    "doi": "10.1098/rsif.2017.0657",
+    "shorter": "Migratory birds are thought to sense the Earth's magnetic field through a quantum effect in the eye protein cryptochrome. Blue light triggers the protein to shuffle an electron along a chain of tryptophan building blocks, creating two unpaired electrons — a \"radical pair\" — whose behavior is subtly steered by the magnetic field's direction, giving the bird a compass reading. The standard version of this compass is mediocre, because tryptophan is magnetically \"noisy\" and partly masks the faint geomagnetic signal.\n\nTheorists had proposed an upgrade: pair the flavin with the radical form of vitamin C (ascorbic acid) instead. Vitamin C's radical is magnetically \"quiet,\" so in principle it would make the compass far more sensitive — an appealing role for vitamin C in quantum biology. This paper",
+    "takeaways": "1. **Vitamin C's radical would make a *better* bird compass than nature's standard part — it's magnetically \"quiet\" — but this paper shows it almost never gets close enough, often enough, to actually form that pair inside cryptochrome at the vitamin C levels a real cell has.**\n2. **The failure is logistics, not chemistry: at physiological concentration the partner is essentially never in the right spot in time, yet crank the concentration up in a test tube and the magnetic effect duly appears.** The physics isn't wrong; the cellular supply is too thin.\n3. **\"May not be involved\" is a *negative* result that *strengthens* the cryptochrome story** — it crosses one exotic alternative off the lis",
+    "size": 97515
+  },
+  {
+    "file": "2026-06-19_quantum-ghosts-in-the-collision-zone_ebf7f8a9.md",
+    "title": "Quantum Ghosts in the Collision Zone",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "*(≤ 350 words)*\n\nWhen two gold nuclei zoom past each other without touching, each one's electric field looks like a burst of photons. One of those photons can hit the other nucleus and produce a J/ψ — a particle made of a charm quark and its antiquark. Because either nucleus can play the role of photon emitter, the two production paths are quantum-mechanically indistinguishable, so their amplitudes add before you square for a probability. The result is interference.\n\nThe spatial version of this interference — a diffractive oscillation in the J/ψ momentum spectrum — had already been measured. STAR's new contribution is catching the *spin* version. The J/ψ has a spin, and the two interfering production paths can produce J/ψ mesons with *different spin orientations* (helicities). When you add",
+    "takeaways": "1. **The two nuclei are quantum-mechanically a double slit — and STAR just showed the slits are spin-polarized.** The spatial interference in J/ψ photoproduction was known; what's new is that the two paths also carry different spin states, and their interference is legible in the decay-lepton angular distribution.\n\n2. **The smoking gun is a sign flip, not a rate.** The spin-interference terms in the angular distribution change sign at the diffractive minimum in transverse momentum — a prediction that's hard to fake with detector effects. That pattern, correlated with the known diffraction minimum, is what makes this \"evidence\" rather than just a hint.\n\n3. **This is nuclear gluon tomography w",
+    "size": 88958
+  },
+  {
+    "file": "2026-07-12_one-bond-and-done_b51aa206.md",
+    "title": "One Bond and Done",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "The inductive effect — an electronegative atom's pull transmitted down a bond chain and fading at each step — is one of chemistry's foundational teaching tools. This computational paper argues the picture is mechanistically wrong and should be revised.\n\nUsing DFT calculations of atomic charge (checked across three methods so the result isn't an artifact of any one), the authors show that in *neutral* molecules a halogen meaningfully affects only the carbon it's bonded to. The next carbon along is actually slightly electron-*rich*, because the halogen's lone pairs donate density back through hyperconjugation; two carbons out, the effect vanishes. They also show a CF₃ group is net electron-*donating* on a benzene ring's nearest carbon — the reverse of what's taught — and caution that carbon-",
+    "takeaways": "1. **In neutral molecules, an electronegative group changes only its immediate neighbor** — the arrow-chain that fades down the backbone is essentially fiction past one bond, and by two bonds the dominant player is lone-pair donation *back up* the chain.\n\n2. **Chlorine out-acidifies fluorine even though fluorine is more electronegative** — because stabilizing a negative charge is a job for polarizability (soft, deformable clouds), and on that axis chlorine wins. Electronegativity is the wrong lens for anions.\n\n3. **The \"field effect\" may not need to exist as a separate thing** — molecular orbitals span the whole molecule, so what looks like a charge reaching across empty space is really the ",
+    "size": 88932
+  },
+  {
+    "file": "2026-07-16_the-qubits-that-entangled-themselves_694c81b2.md",
+    "title": "The Qubits That Entangled Themselves",
+    "arxiv": "2510.07139",
+    "doi": null,
+    "shorter": "Two superconducting qubits sit half a meter apart, connected to nothing but a source of correlated microwave noise. They have never exchanged a photon; a circulator makes that impossible. Their frequencies differ by more than three gigahertz. Yet after roughly 300 nanoseconds of simply absorbing that noise, they end up entangled — with no pulses, no measurements, no feedback, no discarding of bad runs. This closes a loop opened in 2004, when Kraus and Cirac showed on paper that it should work.\n\nThe trick is a special kind of light. A Josephson parametric converter splits one high-frequency pump photon into two lower-frequency photons, one down each of two cables. The two beams are individually noisy — each looks like a warm thermal field — but their fluctuations are locked together far mor",
+    "takeaways": "1. **Two qubits, 3.3 gigahertz apart in frequency and 50 centimeters apart in space, entangled each other by sitting in correlated noise — no pulses, no measurements, no photon ever passing between them.** The mechanism is that there's exactly one joint state the noise can't see, and the qubits fall into it the way a ball finds the bottom of a bowl.\n\n2. **The entanglement is real but weak — a concurrence of 0.10 out of 1 — and the reason is embarrassingly mundane: the qubits shout in both directions down their cables, and only one direction is listening.** That single wiring choice caps the whole scheme at about 0.26. Terminate the line and the ceiling jumps toward 1.\n\n3. **The sleeper resul",
+    "size": 80017
+  },
+  {
+    "file": "2026-06-21_a-new-kind-of-quantum-static_860d3f57.md",
+    "title": "A New Kind of Quantum Static",
+    "arxiv": "2605.05681",
+    "doi": "10.1103/ydym-5t5p",
+    "shorter": "Physicists have found a new way to \"see\" a strange type of electron-like particle that only exists under very specific magnetic field conditions inside twisted graphene devices. These particles, called Brown-Zak fermions, appear when a magnetic field's strength happens to match a special mathematical relationship with the spacing of the material's moiré pattern — a periodic ripple created by stacking two graphene sheets at a slight angle. At these special field values, the electrons' quantum behavior briefly reorganizes into a recognizable, repeating pattern, even though magnetic fields normally scramble that kind of order.\n\nPreviously, scientists could only detect these particles using fairly strong magnetic fields (above about 1.5 tesla), looking at standard electrical resistance. In thi",
+    "takeaways": "1. **A nonlinear voltage can \"see\" exotic quasiparticles that a linear voltage misses entirely** — the same Brown-Zak fermions that needed >1.5 T to show up in ordinary resistance measurements show up in this nonlinear measurement at just 0.5 T, because the nonlinear signal is intrinsically more sensitive to the underlying quantum geometry rather than to scattering.\n\n2. **The oscillation isn't caused by conductivity changing — it's caused by which physics mechanism is \"in charge\" changing.** At special magnetic field values, ballistic quantum-geometric transport briefly takes over from ordinary scattering-dominated transport, then hands back control as the field moves away — like a relay rac",
+    "size": 74694
+  },
+  {
+    "file": "2026-06-25_the-horizon-speaks_8707aeb2.md",
+    "title": "The Horizon Speaks",
+    "arxiv": "2509.09165",
+    "doi": null,
+    "shorter": "When two black holes merge, the final phase before the companion disappears forever behind the event horizon produces a brief gravitational wave signal called the \"direct wave.\" Unlike the well-studied quasinormal-mode ringdown — which probes the exterior potential barrier near the light ring — the direct wave is generated inside the ergosphere, where frame dragging forces the infalling companion into corotation with the horizon. This locks the wave's oscillation frequency near twice the horizon's own rotation rate and causes the wave to fade exponentially at a rate set by the horizon's surface gravity. Both quantities — the rotation frequency and the surface gravity — are the fundamental thermodynamic variables of the black hole's first law, and they had never been directly measured from ",
+    "takeaways": "**1.** We've heard the final cry of a black hole companion as it crossed the horizon: GW250114's merger data contains a gravitational wave component oscillating near twice the horizon's own rotation frequency and fading at a rate set by the horizon's surface gravity — the first time either of these fundamental horizon properties has been directly read from a gravitational-wave signal.\n\n**2.** Quasinormal modes and direct waves are probing physically different geography of the black hole: QNMs ring from the light ring (1.5 Schwarzschild radii out); direct waves are generated in the ergosphere, centimeters (in the sense of proper proximity) from the actual surface of no return — this is a cate",
+    "size": 73902
+  },
+  {
+    "file": "2026-07-19_gravity-as-a-compression-error_7db43741.md",
+    "title": "Gravity as a Compression Error",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Physicists have long tied gravity to thermodynamics through *horizons* — a black hole's surface, a cosmological boundary — where entropy is proportional to area. That approach is powerful but silent on an old puzzle: how can ordered structures like galaxies and life form in a universe whose total disorder only ever grows?\n\nThis paper develops the thermodynamics of \"Gravity From Entropy\" (GfE), a recent proposal that replaces Einstein's gravitational action with a *relative entropy* — a measure of how distinguishable the true metric of spacetime is from a metric shaped by matter and curvature. Gravity, in this picture, is the information cost of that mismatch, and it needs no horizon. In the everyday, low-energy limit the framework collapses back to ordinary general relativity, so it doesn'",
+    "takeaways": "1. **Gravity here is a compression error.** Spacetime's entropy is the information cost of describing the true metric with a codebook made of matter and curvature — no horizon required. When the two metrics match, gravity turns off.\n\n2. **The universe gets locally tidier and globally messier at the same time — and it's just arithmetic.** Entropy density falls as $t^{-2}$, but volume grows faster, so total entropy diverges while total energy saturates. Local order and the second law stop being in tension.\n\n3. **Geometry runs a hotter clock than its fields.** Each type of geometric degree of freedom carries its own temperature — some negative — and in de Sitter that temperature scales as $H^2$",
+    "size": 73279
+  },
+  {
+    "file": "2026-04-27_mond-s-cosmic-fingerprint_898c8c43.md",
+    "title": "MOND's Cosmic Fingerprint",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "This paper tests a weird but specific prediction of MOND: that a galaxy's rotation curve shape is not just determined by its own mass, but is also influenced by the gravitational field from the entire cosmic environment surrounding it — the External Field Effect, which arises because MOND violates the Strong Equivalence Principle.\n\nThey fit rotation curves from 162 SPARC galaxies with a MOND model that includes the external field as a free parameter (the dimensionless ratio of the external Newtonian acceleration to the MOND threshold acceleration). Independently, they catalog the baryonic content of the universe around each galaxy — summing up ~54,000 galaxies and ~1,700 galaxy clusters out to 150 megaparsecs — and directly compute the Newtonian gravitational field from all that mass.\n\nThe",
+    "takeaways": "1. **A galaxy's outer rotation curve secretly broadcasts the gravitational field of its entire cosmic neighborhood** — isolating galaxies in voids have flat outer curves while galaxies near superclusters show declining curves, exactly as MOND predicts via the External Field Effect.\n\n2. **Two completely independent measurements of the same thing agree:** the external field you calculate by counting up all the galaxies and clusters within 150 Mpc matches the external field inferred from fitting rotation curves — this isn't cherry-picking, it's a genuine self-consistency check that strains dark matter explanations.\n\n3. **This is a >4σ detection of a violation of the Strong Equivalence Principle",
+    "size": 71549
+  },
+  {
+    "file": "2026-03-29_particle-physics-keep_d3854cb8.md",
+    "title": "-> particle physics - keep",
+    "arxiv": null,
+    "doi": "10.1002/advs.202516818",
+    "shorter": "ITO is the conducting oxide on your phone screen. In nanocrystal form, its free electrons resonate with shortwave infrared light and hit a special \"dielectric zero-crossing\" (epsilon-near-zero) condition near 2 micrometers, creating an enormous optical nonlinearity. Herbst and colleagues fire 10-femtosecond, two-cycle laser pulses at a 14-nanometer ITO nanocrystal film deposited on glass, and for the first time measure not just how much transmission changes but the actual oscillating electric field with 90-attosecond precision — using a technique called fieldoscopy.\n\nThe answer is that the switch is sub-cycle: the material starts responding during the *first* oscillation of the two-cycle pulse and reaches maximum effect in the *second*. At higher intensities, the first oscillation partiall",
+    "takeaways": "1. **ITO nanocrystals are a printable femtosecond optical switch** — dip-coatable on any substrate, 10-fs recovery, 2–2.5 μm bandwidth, reversible at 1 MHz, no exotic fabrication required.\n\n2. **Fieldoscopy reveals that the nonlinear response isn't instant — it builds cycle by cycle within a two-cycle pulse**, and higher fluence actually suppresses the first-cycle response, a clear signature of the ENZ resonance shifting under its own excitation.\n\n3. **There's a clear reversibility cliff** at ~1.2 mJ/cm²; operating below it gives you a reusable switch, above 3.3 mJ/cm² you've permanently altered the material — knowing where that cliff is with attosecond-precision measurements is exactly what",
+    "size": 70510
+  },
+  {
+    "file": "2026-07-07_the-model-keeps-a-small-readable-scratchpad-and-that-s-where_c964decd.md",
+    "title": "The Model Keeps a Small, Readable Scratchpad, and That's Where the Thinking Happens",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Anthropic introduces the Jacobian lens, a cheap interpretability tool that reads, for any point inside a language model, which vocabulary words that internal state is disposed to say — not now, but if the occasion arose. It works by averaging the network's input-to-output sensitivity over many contexts, which separates a concept's general \"sayability\" from how it's being used in the moment. The logit lens (an older, cruder version) breaks in early layers; the tuned lens cheats by skipping to the final answer; this one surfaces the in-between steps.\n\nApplying it reveals that models keep a small, privileged set of word-shaped representations — the authors call it the J-space — that behaves like the \"global workspace\" neuroscience links to conscious access. This set is reportable (ask the mod",
+    "takeaways": "1. **A model's \"inner voice\" has an address you can read cheaply.** By averaging the network's input-to-output sensitivity over a thousand contexts, you get a per-layer map that decodes what concept an activation is *poised to say* — surfacing planning, hidden intermediates, and eval-awareness that never reach the output.\n\n2. **The part of a model that it can report and flexibly reason with is tiny — about 6% of the signal — but load-bearing.** Most of the model's representation is automatic machinery that runs without ever touching this workspace; suppress the workspace and the model can still parse and recall but loses the ability to reason across steps.\n\n3. **You can change what a model s",
+    "size": 67147
+  },
+  {
+    "file": "2026-06-09_color-space-has-potholes_0a5c3ef4.md",
+    "title": "Color Space Has Potholes",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Erwin Schrödinger, better known for quantum mechanics, also built the most mathematically complete model of color perception in the 1920s. He defined hue, saturation, and lightness as geometric properties of a curved \"color space\" — a three-dimensional map where distance encodes how different two colors look to a human eye. His framework was influential but had three long-standing problems: his definition of hue used straight-line paths that don't match experimental data (the Bezold-Brücke effect, where perceived hue shifts with brightness); his lightness definition runs into an ambiguity when the underlying geometry is more general than he assumed; and he never formally defined the gray axis that his whole framework depends on.\n\nA Los Alamos team led by Roxana Bujack fixes all three. The ",
+    "takeaways": "1. **Schrödinger was 90% right but built on a cracked foundation** — his hue, saturation, and lightness definitions are geometrically elegant but required a Riemannian assumption that is demonstrably wrong; swapping in the correct non-Riemannian geodesics fixes all three outstanding problems at once.\n\n2. **The neutral axis — the gray spine of color space — finally has a rigorous definition** after a century of being assumed without proof: it's the locus of colors closest to black on each equal-brightness surface, derived purely from the perceptual distance metric with no external reference.\n\n3. **Color qualities are geometry, not culture** — hue, saturation, and lightness are intrinsic prope",
+    "size": 66740
+  },
+  {
+    "file": "2026-07-27_chiral-molecules-from-twisted-light-and-mass-spectrometry_439a3921.md",
+    "title": "Chiral molecules from twisted light and mass spectrometry",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Chirality — the left/right handedness of a molecule — matters enormously in drugs and biology, but distinguishing the two mirror forms optically is notoriously hard. The standard tools rely on how differently left- versus right-circularly polarized light interacts with a handed molecule, and the difference is usually tiny (a fraction of a percent to a few percent).\n\nThis work adds a second, independent handedness to the light. Ordinary circular polarization carries \"spin\" angular momentum. A specially shaped beam can also carry \"orbital\" angular momentum — a corkscrew-twisted wavefront, set by an integer that acts like the number of threads on a screw and whose sign is the screw's handedness. This twist is separate from polarization.\n\nThe researchers fired ultrashort, twisted, circularly p",
+    "takeaways": "1. **Light has two independent handednesses — polarization and wavefront — and a chiral molecule barely notices either one alone but responds strongly to both at once.** That cooperativity, not the twist by itself, is the discovery.\n2. **You can now read molecular handedness straight off a mass spectrum** — no chemical tagging, no chromatography, no coincidence electron detection — at contrast an order of magnitude above conventional circular dichroism.\n3. **The tell that it's real chirality and not an optical artifact is a parity flip:** stepping the wavefront's twist from single to double reverses the effect, following an even/odd rule that geometry can't counterfeit.\n\n---",
+    "size": 64895
+  },
+  {
+    "file": "2026-07-05_the-oscilloscope-that-outran-the-electron_7a3d1b76.md",
+    "title": "The Oscilloscope That Outran the Electron",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Electrons move on attosecond timescales and live on angstrom length scales. Microscopy has long been forced to choose one or the other: electron microscopes see atoms but blur motion; ultrafast optics catches motion but blurs space. This paper reaches both at once, using a scanning tunnelling microscope driven not by a battery but by the electric field of a single cycle of infrared light.\n\nThe team synthesizes light waveforms from two color-separated pulses whose relative delay sculpts the combined field with attosecond precision. Because the colors never overlap, the total power stays perfectly constant while the wave's shape changes — and only a genuinely light-driven tunnelling current cares about shape. By wobbling the wave's internal phase a thousand times per second and listening for",
+    "takeaways": "1. A microscope can now watch a single electron tunnel with better-than-femtosecond timing *and* atom-scale position at the same time — the long-sought \"space-time limit\" of electron imaging has been reached.\n\n2. At these speeds, tunnelling stops being instantaneous: the electron lags the light field by half a femtosecond because it hops through briefly excited states — and those states are physically bigger, so how *fast* you drive the electron changes how *large* it is.\n\n3. The breakthrough was as much noise engineering as physics: by modulating only the light wave's shape at perfectly constant power, the team built a detection channel that thermal artifacts — the poison of every previous ",
+    "size": 58701
+  },
+  {
+    "file": "2026-06-03_the-photon-that-multiplied-when-you-tried-to-cut-it_b2eb34ef.md",
+    "title": "The Photon That Multiplied When You Tried to Cut It",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "A team at the University of Oslo asked: if you fire a single photon at an optical shutter that blocks the leading portion of the pulse, what quantum state are you left with? The answer is not a shorter photon. Because single photons have infinite temporal tails, cutting a photon with a time-varying mirror is equivalent to a dynamical Casimir event — the mirror's sudden removal breaks time-translation invariance, and the quantum field responds by producing real photons from the vacuum. The result is a superposition of zero, one, two, and infinitely many photons, with contributions at all photon numbers.\n\nThe authors derive this using a Bogoliubov transformation — the standard QFT tool that relates \"before\" and \"after\" descriptions when a boundary condition changes. For an instantaneous shut",
+    "takeaways": "1. **Cutting a photon with a fast shutter doesn't produce a shorter photon — it manufactures an infinite superposition of photon numbers, including zero, one, two, and arbitrarily many, out of the quantum vacuum via the dynamical Casimir effect.**\n\n2. **Despite this global complexity, the truncated state is locally indistinguishable from a genuine single photon to the left of the shutter and from vacuum to the right — all the \"extra\" photon energy is squeezed into the narrow transition zone.**\n\n3. **Quantum field theory draws a sharp distinction between \"locally looks like a state\" and \"globally is a state\" — the truncated photon is a clean, simple, experimentally accessible demonstration of",
+    "size": 58076
+  },
+  {
+    "file": "2026-07-06_the-quasar-census-begins_15c38246.md",
+    "title": "The Quasar Census Begins",
+    "arxiv": null,
+    "doi": "10.1051/0004-6361/202658883",
+    "shorter": "The European Space Agency's Euclid telescope has discovered 31 new quasars — the blazing cores of galaxies powered by feeding supermassive black holes — dating to when the universe was just 660 to 830 million years old. Twelve of them lie beyond redshift 7, more than doubling a population that previously took astronomers fifteen years to grow to nine objects. One, EUCL J1729+6410, is now the most distant quasar ever confirmed.\n\nQuasars this early are nearly impossible to find from the ground. Their key light signature shifts into infrared wavelengths where ordinary silicon camera sensors go blind and Earth's atmosphere glows brightly. Euclid, observing from space with deep infrared sensitivity across enormous swaths of sky, sidesteps both problems. The team filtered millions of sources dow",
+    "takeaways": "1. **Euclid found more quasars beyond redshift 7 in eighteen months than the entire field found in fifteen years** — including the new most-distant quasar, seen 662 million years after the Big Bang — because a space telescope built for dark energy happens to be the perfect infrared quasar-hunting machine.\n\n2. **The real prize isn't the distance record, it's the faint ones:** these new quasars are up to ten times dimmer than previous record-holders at the same epoch, meaning we can finally study *ordinary* early supermassive black holes instead of only the freakish outliers.\n\n3. **The first billion years looks weirdly mature:** the new quasars' spectra are nearly indistinguishable from quasar",
+    "size": 56814
+  },
+  {
+    "file": "2026-06-23_the-magnetic-compass-of-a-stellar-nursery_81e2ab23.md",
+    "title": "The Magnetic Compass of a Stellar Nursery",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "The DR21 complex in Cygnus X — one of the most massive nearby star-forming regions — hosts a dense, elongated ridge of some 20,000 solar masses surrounded by a network of lower-density subfilaments. This paper presents the first wide-field magnetic field map of the entire system at ~0.1 parsec resolution, using far-infrared polarimetry from the SOFIA/HAWC+ instrument before the observatory's retirement in 2022. By observing above most of Earth's atmospheric water vapor, the instrument detected polarized dust emission not only in the dense ridge but throughout the surrounding lower-density subfilament network — spatial coverage that was impossible from the ground.\n\nThe key analysis compares three independent vector fields across the cloud: the plane-of-sky magnetic field direction, the proj",
+    "takeaways": "1. **Gravity and magnetic fields are co-pilots in DR21, not rivals.** The plane-of-sky magnetic field direction and the projected gravitational acceleration stay aligned everywhere in the cloud — through the diffuse subfilaments and the dense central ridge alike — even as both independently change their relationship to the cloud's filamentary structure depending on local density. This persistent coupling is the fingerprint of magnetically guided accretion: gas doesn't fall freely toward the center but glides along magnetic channels that happen to point where gravity wants it to go.\n\n2. **Column density is a useful shorthand for magnetic field behavior, but not the full story.** The long-esta",
+    "size": 52210
+  },
+  {
+    "file": "2026-07-06_retrocausal-capacity-of-noisy-quantum-channels_666dfff1.md",
+    "title": "Retrocausal capacity of noisy quantum channels",
+    "arxiv": null,
+    "doi": "10.1103/znyd-npk5",
+    "shorter": "General relativity's equations permit closed timelike curves — paths that loop into their own past — and quantum theorists have long studied a \"postselected\" model of them, where time travel works like quantum teleportation conditioned on always getting the lucky measurement outcome. Ideal versions are absurdly powerful: they can clone quantum states and crack hard computations. This paper asks the sober follow-up: what if the time machine is noisy, degrading whatever passes through it like a static-ridden phone line?\n\nJi, Lloyd, and Wilde prove an exact formula for how many bits or qubits can be sent from the future to the past through such a noisy loop. The answer depends on the noise via two quantities: how well the channel can preserve quantum entanglement when everything cooperates, a",
+    "takeaways": "1. **A noisy time machine has an exactly computable bandwidth backward in time** — and it's set by the ratio of the best to worst entanglement survival through the channel, not by anything resembling ordinary channel capacity.\n\n2. **The message never travels through the time machine.** The optimal protocol teleports it through an ordinary memory and uses the time loop purely as a probability amplifier that erases failure histories — postselection as retry-until-success with the retries deleted from reality.\n\n3. **Even hypothetical time travel obeys Shannon-style limits:** noise tames the legendary pathologies of closed timelike curves, with infinite capacity recovered only in the strictly no",
+    "size": 51062
+  },
+  {
+    "file": "2026-06-17_sunlight-doesn-t-need-a-laser-s-permission_f460aa4e.md",
+    "title": "Sunlight Doesn't Need a Laser's Permission",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Physicists at Xiamen University built a quantum-optics experiment that runs on raw sunlight instead of a laser. Normally, generating correlated pairs of photons — a basic building block of quantum optics — requires shining a stable, coherent laser into a special nonlinear crystal, a process called spontaneous parametric down-conversion (SPDC). The crystal occasionally splits one incoming photon into two lower-energy photons that are correlated with each other: knowing where one landed tells you something predictable about where its twin landed.\n\nThe team replaced the laser with a sun-tracking collector — similar to the mount on a telescope that follows stars — feeding sunlight through a 65-foot fiber-optic cable into a dark lab, where it hit a specially engineered nonlinear crystal. Sunlig",
+    "takeaways": "1. Scientists pointed a sun-tracker at the sky, fed the light through a fiber into a dark room, and got the Sun to do a quantum trick — generating correlated photon pairs — that supposedly needed a precision laser.\n2. The surprise isn't that sunlight can do this at all; it's that the resulting photon pairs stayed correlated enough, position-wise, to reconstruct actual images via ghost imaging at nearly laser-grade quality.\n3. The reason it works is that photon-pair correlation is decided by the crystal's internal geometry, not by how \"clean\" or coherent the incoming light is — coherence turned out to be much less load-bearing than the field assumed.",
+    "size": 50154
+  },
+  {
+    "file": "2026-07-11_beam-me-up-a-number-state_239be18f.md",
+    "title": "Beam Me Up a Number State",
+    "arxiv": "2601.05118",
+    "doi": "10.1038/s41567-026-03370-9",
+    "shorter": "Controlling quantum states of light inside a cavity gets rapidly harder as you add photons, because the standard methods rely on numerically searching for control pulses over an enormous space of possibilities. This paper sidesteps that wall with a change of perspective. It treats the photon number — how many photons are in the cavity — as if it were a position along a line, and time as if it were distance traveled. Under a weak drive and with many photons present, the cavity's quantum state then spreads and evolves according to exactly the same equation that describes a beam of light diffracting through space.\n\nOnce that equivalence is in hand, the entire toolbox of classical optics becomes available. Writing a phase that grows steadily across the photon-number axis steers the \"beam\" like",
+    "takeaways": "1. **They turned a photon counter into an optical bench.** By calling \"photon number\" a position and \"time\" a distance, a single cavity's quantum state propagates like a light beam — so you can build a prism, lens, spectrometer, and double-slit out of nothing but that one mode's amplitudes.\n\n2. **Design-by-intuition beats brute-force optimization for a whole class of tasks.** Instead of numerically hunting for control pulses over thousands of parameters, you sketch the optical system you want and read off the sequence — and they used it to make a 150-photon squeezed state ten times more efficiently than before.\n\n3. **Quantum mechanics gives you a lens with no classical twin.** Flipping the d",
+    "size": 48105
+  },
+  {
+    "file": "2026-06-21_electrons-as-piston-not-furnace_e58c866e.md",
+    "title": "Electrons as Piston, Not Furnace",
+    "arxiv": null,
+    "doi": null,
+    "shorter": "Researchers wanted to know whether ordinary metal-on-metal interfaces — no semiconductor gap, no insulating barrier — could support sharp enough electronic stress to drive coherent, ultrafast lattice vibrations. Conventional wisdom said no: electrons in metals move too fast and spread energy too broadly to create the sharp spatial stress pattern needed.\n\nThey built a metamaterial of five repeating bilayers of platinum and copper, each just a couple of nanometers thick, engineered so its natural vibration frequency sits near 1 trillion cycles per second (1 terahertz). Hitting this with an ultrafast laser pulse and watching the structure's response with X-ray pulses from two different facilities, they saw the internal Pt-versus-Cu motion oscillate at exactly that frequency, with a strikingly",
+    "takeaways": "1. **Hot electrons in metals can shove the lattice before they ever \"heat\" it.** This paper catches a five-layer Pt/Cu sandwich ringing at 1 THz with essentially zero delay after a laser pulse — too fast for the conventional \"electrons heat up, then heat leaks to the lattice\" story, and instead explained by the electron gas's own pressure pushing directly on the atoms.\n\n2. **You don't need a gap or barrier to localize electronic stress — different metals' electron densities are enough.** Platinum's electron sea develops far more pressure per degree of heating than copper's (because of its electronic structure near the Fermi level), and that mismatch alone, at a plain metal-metal junction, is",
+    "size": 47466
+  }
+]

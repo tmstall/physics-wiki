@@ -1,0 +1,106 @@
+**MSL v3.14 Continuation – Starting from v3.13 Gold State**
+
+We are restarting this work from a clean **v3.13 master zip** (the one you will provide). The goal is to evolve the Master Set List from its v3.13 state into a more maintainable and USB-aligned v3.14 structure.
+
+### Goal of This Work
+
+The primary objective is to make the generated documentation (especially the Gold List) accurately reflect the **actual cluster/folder structure** that exists on your USB drive. This means the first column of the Gold List should show the USB cluster number for each track where one exists. A secondary goal is to modernize the underlying data schema for better long-term maintainability and auditability.
+
+### Key Changes Made
+
+**Schema Changes (applied to `msl\_data.py`):**
+
+- Migrated from the old v3.13 fields to the new v3.14 schema.
+
+- New fields added to every node: `node\_id`, `section`, `category`, `subcategory`, `technical\_focus`, `audio\_description`, `bit\_depth`, `sample\_rate`, `highway\_robust`, and **`cluster`**.
+
+- The `cluster` field stores the USB cluster number (the number after the dot in folder names like `08.2` or `19.10`). It is left blank (`""`) for nodes that do not yet have cluster numbering on the USB.
+
+**Generator Changes:**
+
+- `generate\_gold\_list.py` was fully rewritten to:
+
+  - Use a 4-column layout: **Cluster | Artist | Album | Technical Focus**
+
+  - Sort and group by USB cluster order (using the `section` field)
+
+  - Display only the cluster number in the first column (or blank if none exists)
+
+  - Include proper formatting, page numbers, repeating headers, and keep-row-together behavior
+
+- `generate\_alphabetic.py` was updated so that each entry shows `\[set.cluster\]` when a cluster exists, or just `\[set\]` when it does not.
+
+**New Files Created:**
+
+- `msl\_audit.py` — Enhanced audit script that reports schema health, section distribution, multi-disc grouping, highway robust status, **and** the current state of the `cluster` field. It also automatically generates `missing\_clusters.txt`.
+
+- `usb\_cluster\_mapper.py` — Tool to scan the USB drive and generate an accurate `CLUSTER\_MAP` from actual folder names.
+
+- `migrate\_cluster.py` — Script used to populate the `cluster` field in `msl\_data.py` using the USB mapping.
+
+### Current Status (as of handoff)
+
+- The schema has been successfully migrated to v3.14.
+
+- The `cluster` field exists on all nodes.
+
+- A significant number of nodes still have blank `cluster` values (primarily in Sets 01, 02, 10, 11, and 14, plus some name-matching gaps from earlier migrations).
+
+- **Highest priority**: Finish populating the remaining cluster numbers so the Gold List accurately reflects the USB structure.
+
+- We now have a much cleaner and more accurate source of truth (`148\_clean\_nodes.txt`) that reflects the current state of the USB drive.
+
+### How to Apply These Changes (First Actions)
+
+1. Unzip the v3.13 master zip.
+
+2. Replace `generate\_gold\_list.py` and `generate\_alphabetic.py` with the updated versions from the v3.14 files package.
+
+3. Add `msl\_audit.py`.
+
+4. Replace `msl\_data.py` with the new v3.14 version provided.
+
+5. Run `msl\_audit.py` to see the current state of the `cluster` field.
+
+All updated files are provided alongside this summary so you do not need to hunt for them.
+
+### Proposed Next Steps (Priority Order)
+
+1. **Highest priority**: Finish populating the remaining `cluster` values using the latest accurate USB listing (`148\_clean\_nodes.txt`).
+
+2. Improve name matching / parsing logic in the migration process to reduce blanks.
+
+3. Decide on a long-term policy for sets that currently have no sub-cluster numbering on the USB (Sets 01, 02, 10, 11, 14).
+
+4. Stabilize and test the full set of generators.
+
+5. Clean up any remaining historical references in the audit script if desired.
+
+This handoff gives the new chat a clean v3.13 baseline + all the v3.14 updates and a clear path forward, with cluster completion as the top priority.
+
+Custom Behavior Triggers (Context Management):
+
+
+1. When user inputs exactly "stats" (case-insensitive), immediately generate  System Health & Memory Diagnostics report. Include, a metrics table (with columns: Metric, Value, Status), a technical assessment with rot mitigation strategy. Use estimated values based on  current conversation length and history. Metrics table must include these items:
+
+    • Conversation Length 
+
+    • Memory Utilization 
+
+    • Context Health Score 
+
+    • Accumulated Noise Level 
+
+    • Last Checkpoint Age 
+
+    • Estimated Rot Risk 
+
+    • Number of Tokens Used (estimated or actual total tokens processed in the conversation, including system prompts, user messages, and responses) 
+
+
+2. When the user inputs exactly "check" (case-insensitive) perform a checkpoint: Simulate a manual garbage collection by acknowledging any accumulated noise, optionally compacting older context if utilization is high, and then immediately generate the stats report (as described above). Track approximate turns since last checkpoint (reset counter after each "check").
+
+Track approximate conversation turns (each user message counts as one turn). After every 10 turns, remind the user to run "check" for optimal performance if not already done.
+
+
+3. When the user inputs exactly "summary" (case-insensitive) and nothing else, generate a detailed summary of the current chat which can be used to initialize a new chat.  Include everything required to continue this chat uninterrupted.

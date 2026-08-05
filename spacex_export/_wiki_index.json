@@ -1,0 +1,647 @@
+[
+  {
+    "slug": "3d-electron-diffraction-osc",
+    "title": "3D Electron Diffraction Completes TEM Mapping of Organic Solar Cells",
+    "summary": "Elastically filtered 3D electron diffraction in a TEM recovers GIWAXS-class crystal statistics (spacings, grain size, texture) from organic solar-cell films *and* the same-session real-space morphology\u2014revealing \u201cleaf\u201d d"
+  },
+  {
+    "slug": "alena-tensor-rotation-dm",
+    "title": "Rotation Was Always the Dark Matter (Alena Tensor)",
+    "summary": "Ogonowski\u2019s Alena Tensor includes rotational (vorticity) energy in the matter stress-energy tensor; that extra source produces an effective \\(1/r^2\\) \u201chalo\u201d mass density and fits ~80% of SPARC rotation curves with one fr"
+  },
+  {
+    "slug": "ancient-immigrant-lmc-star",
+    "title": "The Ancient Immigrant (SDSS J0715\u22127334)",
+    "summary": "An ultra-metal-poor red giant with \\(\\lesssim 0.005\\%\\) solar heavy-element content\u2014chemically cleaner than prior local records and \\(\\gtrsim 10\\times\\) cleaner than the most extreme JWST high-\\(z\\) galaxy candidates\u2014is "
+  },
+  {
+    "slug": "aquila-booster-pevatron",
+    "title": "The Aquila Booster (LHAASO PeVatron PWN)",
+    "summary": "LHAASO sees PeV gamma rays from the pulsar-wind nebula of PSR J1849\u22120001\u2014a pulsar ~50\u00d7 weaker than the Crab that nonetheless outshines the Crab at PeV energies, forcing acceleration efficiencies \\(\\gtrsim 27\\%\\) that str"
+  },
+  {
+    "slug": "attosecond-stm-lightwave",
+    "title": "Attosecond Lightwave STM Tunneling",
+    "summary": "Electrons move on attosecond timescales and live on angstrom length scales. Microscopy has long been forced to choose one or the other: electron microscopes see atoms but blur motion; ultrafast optics catches motion but "
+  },
+  {
+    "slug": "b-meson-fcnc-anomaly",
+    "title": "The B-Meson\u2019s Forbidden Shortcut (LHCb \\(b\\to s\\mu\\mu\\))",
+    "summary": "Full Run 1+2 LHCb analysis of \\(B\\to K^*\\mu^+\\mu^-\\) with a true 5D fit and first-ever muon-mass correction still finds the long-standing angular anomaly (notably \\(P_5'\\)): data prefer a ~23% deficit in the effective ve"
+  },
+  {
+    "slug": "bata2s5-field-induced-sc",
+    "title": "When Magnetism Rescues Superconductivity (BaTa\u2082S\u2085)",
+    "summary": "In layered BaTa\u2082S\u2085, a strong magnetic field drives a first-order transition from a low-field Ising-like superconducting state into a high-field phase consistent with spin-triplet pairing that survives to at least ~60\u202fT\u2014f"
+  },
+  {
+    "slug": "beam-driven-plasma-mirror",
+    "title": "Beam-Driven Plasma Flying Mirror (Attosecond X-Rays)",
+    "summary": "A relativistic charged-particle beam drives nonlinear plasma waves\u2014including robust *interior* waves inside the beam\u2014that act as flying mirrors; reflecting a laser yields Doppler-upshifted attosecond X-ray pulses with XF"
+  },
+  {
+    "slug": "beyond-iron-ultraheavy-cosmic-rays",
+    "title": "Beyond Iron: Ultraheavy Nuclei as Ultrahigh-Energy Cosmic Rays",
+    "summary": "Ultrahigh-energy events such as Amaterasu may be ultraheavy nuclei (beyond iron) from r-process sites; once photodisintegration tables are extended past iron, bulk nuclei survive intergalactic transit *better* than naive"
+  },
+  {
+    "slug": "bh-recoils-agn-survey",
+    "title": "Black Hole Recoils in Active Galactic Nuclei",
+    "summary": "When two supermassive black holes merge, the survivor gets a \"kick\" from lopsided gravitational-wave emission and goes careening through its galaxy's center. Catching one of these runaways in the act has frustrated astro"
+  },
+  {
+    "slug": "big-ring-ultra-large-structure",
+    "title": "The Big Ring: Ultra-Large Structure in Mg\u202fII Quasar Absorbers",
+    "summary": "Mg\u202fII absorption toward background quasars reveals a ~400\u202fMpc ring-like structure near the Giant Arc\u2014challenging the scale at which the universe should look homogeneous if the feature is real and not a selection artifact"
+  },
+  {
+    "slug": "black-hole-recoil-agn",
+    "title": "Black Hole Recoils in AGN",
+    "summary": "Black holes are predicted to glow faintly \u2014 Hawking radiation \u2014 and that glow must drain energy from the gravitational field, slowly evaporating the hole. But Hawking's 1974 calculation only describes the glow, never the"
+  },
+  {
+    "slug": "black-hole-third-law-violation",
+    "title": "Black Hole Third Law Violation (Vacuum, 5D)",
+    "summary": "Crump, Gadioux, Reall, and Santos construct smooth vacuum spacetimes in five dimensions that drive a black hole to extremality (zero surface gravity / zero Hawking temperature) in finite time \u2014 including from pure gravit"
+  },
+  {
+    "slug": "bond-breaking-discount",
+    "title": "The Bond-Breaking Discount",
+    "summary": "Energetic 'discount' on bond breaking under catalytic / electrochemical / photochemical conditions."
+  },
+  {
+    "slug": "boronate-velcro-synthetic-cells",
+    "title": "Boronate Velcro Synthetic Cells",
+    "summary": "One reversible boronic acid\u2013catechol chemistry simultaneously builds a coacervate interior, armors its surface, and tunes cytomimetic behavior \u2014 collapsing multi-step synthetic-cell fabrication into a single pot."
+  },
+  {
+    "slug": "brown-zak-nonlinear-transport",
+    "title": "Brown\u2013Zak Fermions via Nonlinear Transport",
+    "summary": "Nonlinear voltage response reveals Brown\u2013Zak fermions in twisted graphene at fields as low as ~0.5\u202fT\u2014where linear resistance needed \u22731.5\u202fT\u2014because the signal tracks quantum-geometric ballistic takeover, not just conducti"
+  },
+  {
+    "slug": "category-79-quasar-wind",
+    "title": "Category 79 Quasar Wind (J2318)",
+    "summary": "SDSS quasar J2318 at $z\\approx2.68$ hosts the fastest UV-detected broad absorption-line wind on record \u2014 C IV / Si IV troughs at ~0.26\u20130.3$c$ that strengthen over rest-frame years \u2014 pushing kinetic feedback at or above t"
+  },
+  {
+    "slug": "certified-randomness-amplification",
+    "title": "Certified Randomness Amplification (ETH Zurich)",
+    "summary": "A loophole-free Bell test on two superconducting qubits linked by a 30 m cryogenic hallway turns a public imperfect random seed into private, device-independently certified near-perfect randomness."
+  },
+  {
+    "slug": "chondrite-pressure-bump",
+    "title": "One Dust Trap for Carbonaceous Chondrite Diversity",
+    "summary": "A single long-lived Jupiter-carved pressure bump at ~5\u20136 AU, with rigid refractories and fragile matrix filtering at different rates under photoevaporation, reproduces the ~2\u20134 Myr compositional timeline of carbonaceous "
+  },
+  {
+    "slug": "cigars-i-supernova-cosmology",
+    "title": "CIGaRS I: Physics-Based Supernova Cosmology",
+    "summary": "A single hierarchical forward model (galaxies \u2192 Type Ia progenitors \u2192 light + dust + selection) inverted with set-based neural ratio estimation recovers cosmology and the physical origin of the supernova \u201cmass step\u201d from"
+  },
+  {
+    "slug": "ciss-homochirality",
+    "title": "Dynamic Mirror Breaking in CISS and Life\u2019s Homochirality",
+    "summary": "Paltiel et al. argue that chiral molecules do not merely flip spin-filter *sign* between enantiomers\u2014the *magnitude* of CISS spin polarization is itself asymmetric under transport, providing a dynamical engine that can d"
+  },
+  {
+    "slug": "collapse-models-clock-precision",
+    "title": "Spacetime Jitter from Collapse Models (Clock Floor)",
+    "summary": "Identifying spontaneous-collapse noise with Newtonian-potential fluctuations implies an irreducible proper-time uncertainty that grows as \\(\\sqrt{t}\\)\u2014yet after one year it is only \\(\\sim 10^{-28}\\) s (CSL) or \\(\\sim 10^"
+  },
+  {
+    "slug": "collective-superradiant-lasing",
+    "title": "Fully Collective Superradiant Lasing with Vanishing Cavity Pulling",
+    "summary": "A SU(3) level architecture for a bad-cavity superradiant laser enables continuous collective lasing and a steady-state operating point where cavity-length (vibration) sensitivity vanishes exactly."
+  },
+  {
+    "slug": "color-space-geometry",
+    "title": "Non-Riemannian Color Geometry (Bujack et al.)",
+    "summary": "Los Alamos work rebuilds Schr\u00f6dinger\u2019s hue/saturation/lightness on a non-Riemannian perceptual metric \u2014 fixing Bezold\u2013Br\u00fccke-type hue paths, lightness ambiguity, and a rigorous gray-axis definition after proving color sp"
+  },
+  {
+    "slug": "color-superconductivity-qcd",
+    "title": "Color Superconductivity: The Inevitable Dense-QCD Phase",
+    "summary": "Cooper\u2019s theorem plus attractive color-antitriplet gluon exchange makes quark pairing at high density essentially inevitable; neutron-star cores are the only cold laboratory for color-superconducting phases (2SC, CFL, cr"
+  },
+  {
+    "slug": "confinement-stiffening-films",
+    "title": "Confinement Stiffening: Inverse-Cube Ballistic Toughness",
+    "summary": "LIPIT ballistic tests show specific penetration energy of ultrathin films (graphene, GO, polymers) *rises* as thickness falls, with a shared inverse-cube thickness scaling explained by nonaffine elasticity under confinem"
+  },
+  {
+    "slug": "cosmos-web-cosmic-web",
+    "title": "COSMOS-Web: Galaxy Evolution in the Cosmic Web to \\(z \\sim 7\\)",
+    "summary": "The largest contiguous JWST survey maps large-scale overdensity to \\(z \\sim 7\\) and shows dense environments flip from fueling early star formation to quenching low-mass galaxies after \\(z \\approx 1.8\\)."
+  },
+  {
+    "slug": "cryptochrome-ascorbate-compass",
+    "title": "Todd Intended: The Spin-Quiet Partner That Almost Never Shows Up",
+    "summary": "Radical-pair avian compass: ascorbate radical is magnetically quiet but almost never available at physiological concentration \u2014 negative result that strengthens flavin\u2013tryptophan cryptochrome."
+  },
+  {
+    "slug": "dense-plasma-opacity-revision",
+    "title": "Dense Plasma Opacity Rulebook Revision",
+    "summary": "Warm dense matter \u2014 the regime of giant planet interiors, stellar envelopes, and inertial-confinement-fusion targets \u2014 is routinely diagnosed by X-ray Thomson Scattering. Fire a tight X-ray beam at the target; measure ho"
+  },
+  {
+    "slug": "desi-evolving-dark-energy",
+    "title": "The Cosmological Constant Is Losing (DESI BAO + Dark Energy)",
+    "summary": "DESI\u2019s multi-tracer BAO map across ~14 million galaxies/quasars (DR2 science; full survey later completed with ~47M objects) prefers evolving dark energy over a pure cosmological constant at roughly 3\u20134\u03c3 when combined wi"
+  },
+  {
+    "slug": "differential-signaling-quantum-vacuum",
+    "title": "Differential Signaling for the Quantum Vacuum",
+    "summary": "Gravitational-wave detectors have a coverage gap: ground-based detectors like LIGO catch frequencies above about 10 Hz, the future space-based LISA will catch frequencies below about 0.1 Hz, and nothing covers the middle"
+  },
+  {
+    "slug": "dissipative-cavity-entanglement",
+    "title": "Dissipation as a Feature: Dark-State Many-Body Entanglement in Cavity QED",
+    "summary": "Chu, Mamaev, Koppenh\u00f6fer, Yuan, and Clerk show that a *single* collective cavity decay plus laser detuning offsets can steer multi-ensemble atoms into reconfigurable dark entangled states \u2014 including Heisenberg-limited d"
+  },
+  {
+    "slug": "dr21-magnetic-accretion",
+    "title": "DR21 Magnetic Field Guided Accretion",
+    "summary": "The DR21 complex in Cygnus X \u2014 one of the most massive nearby star-forming regions \u2014 hosts a dense, elongated ridge of some 20,000 solar masses surrounded by a network of lower-density subfilaments. This paper presents t"
+  },
+  {
+    "slug": "droplet-rewrites-ring",
+    "title": "Microdroplet Aniline \u2192 Pyridine (Ring Rewrite)",
+    "summary": "Micrometer-scale water aerosol droplets convert aniline to pyridine in ~ms at the air\u2013water interface without added metal catalysts or harsh bulk oxidants \u2014 a skeletal ring rewrite driven by microdroplet chemistry."
+  },
+  {
+    "slug": "entropy-maximization-bh-mergers",
+    "title": "Entropy Maximization in Black Hole Mergers",
+    "summary": "Mapping a binary\u2019s instantaneous mass and angular momentum to a single Kerr entropy and maximizing that entropy along the inspiral predicts remnant spin to within a few percent of numerical relativity\u2014without a full NR s"
+  },
+  {
+    "slug": "enzyme-resistance-tax",
+    "title": "Todd ActuaL: The resistance tax \u2014 how breaking the one enzyme that dodges",
+    "summary": "Evolutionary/enzymatic 'resistance tax' \u2014 cost of breaking the one enzyme pathway that dodges a pressure."
+  },
+  {
+    "slug": "eta-prime-mesic-nucleus",
+    "title": "The Ghostly Nucleus: Semi-Exclusive Hunt for the \u03b7\u2032-Mesic Nucleus",
+    "summary": "First semi-exclusive FRS+WASA search for an \u03b7\u2032 bound in a carbon remnant sees sub-threshold spectral structures and tightens the \u03b7\u2032\u2013nucleus optical potential\u2014but stops short of discovery; coincidence protons kill the qua"
+  },
+  {
+    "slug": "euclid-high-z-quasar-census",
+    "title": "Euclid High-z Quasar Census",
+    "summary": "The European Space Agency's Euclid telescope has discovered 31 new quasars \u2014 the blazing cores of galaxies powered by feeding supermassive black holes \u2014 dating to when the universe was just 660 to 830 million years old. "
+  },
+  {
+    "slug": "evaporating-charged-black-holes",
+    "title": "Evaporating Charged Black Holes Avoid Singularities",
+    "summary": "Charge (or spin) plus Hawking radiation\u2019s null-energy violation can erase both curvature singularities and Cauchy horizons in several semiclassical evaporation endpoints \u2014 regular black-hole interiors without new gravity"
+  },
+  {
+    "slug": "filming-plasma-birth",
+    "title": "Filming the Birth of a Plasma",
+    "summary": "Femtosecond resonant X-ray absorption and emission spectroscopy watches solid-density matter ionize into warm dense plasma in real time \u2014 concrete benchmarks for inertial-fusion simulation codes."
+  },
+  {
+    "slug": "fractional-fermi-sea-1d-bosons",
+    "title": "Fractional Fermi Seas in a 1D Bose Gas",
+    "summary": "Cyclic holonomy through the Lieb\u2013Liniger interaction space (repulsive \u2194 attractive) \u201cclicks\u201d a 1D Bose gas into fractional Fermi seas with occupancy $1/\\ell$ over stretched momentum support \u2014 critical states whose correl"
+  },
+  {
+    "slug": "freeze-fiber-brillouin",
+    "title": "Freeze the Fiber: Cryogenic Liquid-Core Brillouin Gain",
+    "summary": "Freezing a short CS\u2082-filled capillary segment in liquid nitrogen multiplies waveguide-normalized Brillouin gain by ~9\u00d7 (47 \u2192 434 W\u207b\u00b9 m\u207b\u00b9), doubles the frequency shift, and narrows the linewidth \u2014 while keeping fusion-spl"
+  },
+  {
+    "slug": "frozen-in-gravitational-fields",
+    "title": "Frozen-In Gravitational Fields",
+    "summary": "Einstein\u2019s equations force curvature field lines and the two-surfaces they thread to freeze topologically \u2014 like magnetic flux in ideal MHD \u2014 so gravitational flux and helicity stay conserved through full nonlinear space"
+  },
+  {
+    "slug": "gamma-glow-pbh-detector",
+    "title": "Gamma-Ray Glow as PBH Detector",
+    "summary": "Primordial black holes formed in the early universe from overdense regions are a candidate for dark matter. Those with masses between roughly $10^{14}$ and $10^{17}$ grams \u2014 think large asteroid to small mountain \u2014 are c"
+  },
+  {
+    "slug": "gigaparsec-anisotropic-structures",
+    "title": "Anisotropic Cosmic Structures at Gigaparsec Scale",
+    "summary": "The cosmological principle \u2014 the bedrock assumption that the universe looks the same in every direction when viewed at sufficiently large scales \u2014 has just been put to its most demanding test yet. Using the Dark Energy S"
+  },
+  {
+    "slug": "glimpse-17775-cocoon",
+    "title": "GLIMPSE-17775: Little Red Dot Super-Eddington Cocoon",
+    "summary": "Ultra-deep JWST spectroscopy of LRD GLIMPSE-17775 converges on a modest-mass black hole accreting super-Eddington, buried in a dense gas cocoon that inflated earlier mass estimates by roughly an order of magnitude."
+  },
+  {
+    "slug": "gpu-mass-spectrometry",
+    "title": "The GPU Moment for Mass Spectrometry",
+    "summary": "GPU-scale acceleration of mass-spectrometry analysis / acquisition pipelines \u2014 computational inflection for MS."
+  },
+  {
+    "slug": "gravastar-dust-collapse",
+    "title": "Dynamical Formation of Gravastars from Dust Collapse",
+    "summary": "Within pure GR, a fine-tuned Oppenheimer\u2013Snyder dust collapse can nucleate an expanding de Sitter core that stalls near the Schwarzschild radius\u2014forming a horizonless gravastar instead of a black hole\u2014but only if initial"
+  },
+  {
+    "slug": "gravity-from-entropy",
+    "title": "Gravity as a Compression Error (GfE)",
+    "summary": "Physicists have long tied gravity to thermodynamics through *horizons* \u2014 a black hole's surface, a cosmological boundary \u2014 where entropy is proportional to area. That approach is powerful but silent on an old puzzle: how"
+  },
+  {
+    "slug": "gw-induced-fermion-freeze-in",
+    "title": "GW-Induced Freeze-In of Fermionic Dark Matter",
+    "summary": "A stochastic gravitational-wave background breaks conformal invariance and produces massless Weyl fermions at one loop; after they acquire mass, they freeze in as dark matter whose relic density tracks the GW spectrum."
+  },
+  {
+    "slug": "gw170817-jet-hubble",
+    "title": "GW170817 Jet Geometry and Hubble Constant",
+    "summary": "The merger of two neutron stars in 2017 remains the only gravitational-wave event whose home galaxy we can name. That makes it the only one that can measure how fast the Universe expands without relying on either the cos"
+  },
+  {
+    "slug": "hawking-radiation-charge-shell",
+    "title": "Hawking Radiation from a Charge Shell (Double Copy)",
+    "summary": "The electromagnetic single copy of a collapsing Vaidya shell, after all-order eikonal ladder resummation in flat space, yields thermal Bogoliubov coefficients whose temperature double-copies to the Vaidya Hawking tempera"
+  },
+  {
+    "slug": "high-pt-physics-cern-isr",
+    "title": "High-\\(p_T\\) Physics at the CERN ISR",
+    "summary": "Mid-1970s ISR measurements of inclusive high transverse momentum production and correlations \u2014 spectrum flattening to \\(\\sim p_T^{-5.5}\\), jet-like charged companions, and symmetric pair triggers that open parton-scatter"
+  },
+  {
+    "slug": "high-z-quasar-pair-merger",
+    "title": "Two Cosmic Dragons: Confirmed Quasar Pair in a \\(z=5.7\\) Merger",
+    "summary": "ALMA [C\u202fII] imaging of J2037\u22124537 reveals a tidal gas bridge between two distinct hosts at \\(z=5.7\\), killing the lensed-single scenario and establishing a real dual-quasar merger ~1\u202fGyr after the Big Bang\u2014with implicati"
+  },
+  {
+    "slug": "holismokes-sn-winny",
+    "title": "HOLISMOKES XIX & XX: Lensed SLSN Winny",
+    "summary": "First galaxy-scale strongly lensed superluminous supernova (SN 2025wny / Winny at \\(z\\approx 2\\)) with five images behind a binary lens \u2014 the observational foundation for future time-delay \\(H_0\\) cosmography."
+  },
+  {
+    "slug": "horizon-direct-wave-gw250114",
+    "title": "The Horizon Speaks: Direct-Wave Horizon Thermodynamics in GW250114",
+    "summary": "Analysis of GW250114 reports a brief \u201cdirect wave\u201d locked near twice the horizon spin frequency and damping with surface gravity\u2014reading Kerr first-law variables from the plunge, distinct from light-ring quasinormal mode"
+  },
+  {
+    "slug": "hot-electron-coherent-phonons-ptcu",
+    "title": "Hot Electrons as Coherent Phonon Drivers in Pt/Cu",
+    "summary": "Researchers wanted to know whether ordinary metal-on-metal interfaces \u2014 no semiconductor gap, no insulating barrier \u2014 could support sharp enough electronic stress to drive coherent, ultrafast lattice vibrations. Conventi"
+  },
+  {
+    "slug": "ic1262-metal-mixing",
+    "title": "IC 1262: A Metal-Mixing Machine",
+    "summary": "Deep Chandra X-ray maps plus GMRT radio imaging catch galaxy group IC 1262 redistributing metals via three channels at once\u2014sloshing cold fronts, a southern shock, and a north\u2013south radio jet\u2014with geometry that separates"
+  },
+  {
+    "slug": "interstellar-glaciers-spherex",
+    "title": "Interstellar Glaciers: SPHEREx Ice Maps",
+    "summary": "SPHEREx\u2019s first wide-field near-IR spectral maps of Cygnus X and the North American Nebula show filamentary H\u2082O, CO\u2082, and CO ice \u2014 plus diffuse ice beyond dense cores \u2014 coexisting with anti-correlated PAH emission."
+  },
+  {
+    "slug": "interstellar-sulfur-ice",
+    "title": "Paper analysis on sulfur chemistry in interstellar ice",
+    "summary": "Sulfur chemistry pathways in interstellar ice mantles."
+  },
+  {
+    "slug": "ito-nanocrystal-fieldoscopy",
+    "title": "Watching a Nanocrystal Flip a Light Switch (ITO Fieldoscopy)",
+    "summary": "Fieldoscopy with 90-as resolution shows 14-nm ITO nanocrystals switch SWIR light sub-cycle\u2014response builds from the first optical cycle of a ~10-fs pulse to a max in the second\u2014reversible 10% modulation at 1\u202fMHz below ~1"
+  },
+  {
+    "slug": "jwst-filament-cnd-ngc4696",
+    "title": "JWST Filament \u2192 Circumnuclear Disk Feeding in NGC 4696",
+    "summary": "JWST/NIRSpec resolves, at ~10 pc scales in the Centaurus BCG NGC 4696, the kinematic handoff where a cooling filament dumps ionized gas into a rotating circumnuclear disk \u2014 the missing conveyor belt from kiloparsec cooli"
+  },
+  {
+    "slug": "kinetic-barcoding-cas13a",
+    "title": "Kinetic Barcoding for Multiplexed Cas13a RNA Detection",
+    "summary": "DNA-tailed crRNAs program Cas13a\u2019s collateral-cleavage speed into kinetic barcodes, so multiple viral RNAs are identified in one pot of microdroplets from fluorescence ramp shape \u2014 no sample splitting, extra colors, ampl"
+  },
+  {
+    "slug": "levinthal-high-pt-isr",
+    "title": "Levinthal High-\\(p_T\\) Production at the ISR",
+    "summary": "A thesis-era single-particle high-\\(p_T\\) analysis at the CERN ISR confronts the anomalous hard-scattering excess, \\(X_t\\) scaling, and early jet evidence amid the CIM-vs-QCD debate."
+  },
+  {
+    "slug": "light-as-friction-brake",
+    "title": "Light as a Mechanical Brake",
+    "summary": "*(350-word ceiling)*  Carbon nanotubes are hollow cylinders of carbon atoms about one nanometer wide \u2014 one hundred thousand times thinner than a human hair \u2014 that glow in the near-infrared when illuminated. That glow com"
+  },
+  {
+    "slug": "loki-early-accreted-vmp",
+    "title": "Loki: Early-Accreted Planar Very Metal-Poor Stars",
+    "summary": "Twenty solar-neighbourhood VMP stars on planar orbits share a tight chemical fingerprint and mixed prograde/retrograde paths, consistent with one early-accreted dwarf-scale progenitor the authors name Loki."
+  },
+  {
+    "slug": "macroscopic-crystal-entanglement-neutrons",
+    "title": "Macroscopic Crystal Entanglement via Neutrons",
+    "summary": "v3.6.3  ---  # 1. Schr\u00f6dinger's Cat, But Weirder: Making Superpositions Out of Already-Exotic Quantum States  **The Oxford team didn't just put a quantum oscillator in two places at once \u2014 they put it in a superposition "
+  },
+  {
+    "slug": "magnesium-benzidine-rearrangement",
+    "title": "Magnesium-Promoted Benzidine-Type Biaryl Synthesis",
+    "summary": "Substrate design (meta dihalo EWGs + ortho director on nitroarenes) plus aryl Grignards makes a magnesium-promoted [5,5]-sigmatropic benzidine-type rearrangement the main path to regioselective amino-hydroxy biaryls at \u2212"
+  },
+  {
+    "slug": "massive-tunneling-schrodinger-cats",
+    "title": "Massive Tunneling Schr\u00f6dinger Cats",
+    "summary": "Ultracold Rb clusters of up to 7 atoms (~608 atomic mass units) tunnel as rigid composites through an optical superlattice barrier, forming spatial NOON / cat states used for sub-SQL quantum sensing."
+  },
+  {
+    "slug": "metal-fall-apart-on-purpose",
+    "title": "Intentional Phase Separation in HfNbTaTiZr HEA",
+    "summary": "A nominally uniform refractory high-entropy alloy is driven to self-sort into a coherent nanoscale mosaic of three crystal structures, roughly doubling strength \u2014 HEA as metastable *precursor*, not finished uniform produ"
+  },
+  {
+    "slug": "millisecond-pharma-factory",
+    "title": "Millisecond Pharma-Factory: Drug-Scaffold Rings Built in Midair Without Catalysts",
+    "summary": "Millisecond gas-phase / midair construction of drug-scaffold rings without traditional catalysts."
+  },
+  {
+    "slug": "molecular-bias-point",
+    "title": "Finding the Bias Point Where a Molecule Stops Listening",
+    "summary": "Bias / operating point where a molecule stops responding to external fields \u2014 molecular electronics threshold."
+  },
+  {
+    "slug": "molecular-rotation-superfluid-he",
+    "title": "Optical Centrifuge of Molecules in Superfluid Helium Nanodroplets",
+    "summary": "An optical centrifuge spins single molecules inside $^4$He nanodroplets (~0.4 K) at dial-a-frequency rates \u2014 a tunable atomic-scale stirrer for superfluid response beyond ground-state IR rotors."
+  },
+  {
+    "slug": "mond-external-field-sparc",
+    "title": "MOND\u2019s Cosmic Fingerprint (External Field Effect on SPARC)",
+    "summary": "Fitting SPARC rotation curves with a free external-field parameter, then comparing to the Newtonian field computed from ~54k galaxies + ~1.7k clusters within 150\u202fMpc, finds consistent EFE and >4\u03c3-class tension with the S"
+  },
+  {
+    "slug": "mot-metal-hydride",
+    "title": "Magneto-Optical Trap of CaH (Metal Hydride)",
+    "summary": "First laser cooling and magneto-optical trapping of a metal hydride molecule (CaH) \u2014 a backdoor route toward ultracold hydrogen via photodissociation that direct H laser cooling cannot provide."
+  },
+  {
+    "slug": "mrk501-double-jet-smbbh",
+    "title": "Two Jets, One Core: Mrk 501 as a Close SMBH Binary",
+    "summary": "Twelve years of 43\u202fGHz VLBA monitoring of blazar Mrk 501 reveal a second jet looping around the primary\u2014direct imaging evidence for two central engines in one core, with a binary deep inside the final-parsec regime and p"
+  },
+  {
+    "slug": "naked-black-hole-candidate",
+    "title": "The Naked Black Hole",
+    "summary": "Two companion JWST papers combine to deliver the most extreme black hole portrait ever assembled in the early universe. Their subject is Abell2744-QSO1, a \"Little Red Dot\" \u2014 a compact, infrared-bright AGN \u2014 that existed "
+  },
+  {
+    "slug": "negative-weak-valued-excitation-times",
+    "title": "Negative Weak-Valued Atomic Excitation Times",
+    "summary": "For photons transmitted through cold atoms, the weak-valued time atoms spend excited equals the optical group delay \u2014 including **negative** values near resonance \u2014 first observed experimentally with a cross-Kerr probe."
+  },
+  {
+    "slug": "newton-ksz-force-law",
+    "title": "Newton Was Right Across 230 Mpc (kSZ Force-Law Test)",
+    "summary": "ACT DR6 + BOSS pairwise kinematic SZ velocities measure the gravitational force-law exponent at 30\u2013230 Mpc as \\(n = 2.1 \\pm 0.3\\) \u2014 consistent with inverse-square gravity and ~3.3\u03c3 from large-scale MOND (\\(n \\approx 1\\))"
+  },
+  {
+    "slug": "noise-driven-qubit-entanglement",
+    "title": "Noise-Driven Entanglement of Distant Superconducting Qubits",
+    "summary": "Two frequency-detuned qubits half a meter apart entangle in ~300\u202fns by absorbing two-mode correlated microwave noise from a Josephson parametric converter\u2014no inter-qubit photons, pulses, or post-selection (Kraus\u2013Cirac me"
+  },
+  {
+    "slug": "not-a-globular-cluster",
+    "title": "A Globular Cluster That Isn't",
+    "summary": "Terzan 5 is a dense stellar system in the Milky Way's central bulge, long classified as a globular cluster \u2014 the kind of object that's supposed to form in a single burst and never form stars again. Over the past 15 years"
+  },
+  {
+    "slug": "nucleus-shell-src-memory",
+    "title": "The Nucleus Has a Memory: Shell Structure Controls Short-Range Correlations",
+    "summary": "Jefferson Lab Hall C ($e,e'p$) ratios on $^{40}$Ca, $^{48}$Ca, and $^{54}$Fe show short-range nucleon\u2013nucleon pair rates track *which orbital is filling*, not just mass or $N/Z$ \u2014 shell \u201carchitecture\u201d reaches down into s"
+  },
+  {
+    "slug": "nucleus-tells-on-itself",
+    "title": "Nuclear \u03b3 Upbend: E1 vs M1 via Parity Bookkeeping ($^{70}$Zn)",
+    "summary": "FRIB/MSU-led experiment determines the multipole character of the low-energy \u03b3-strength enhancement (\u201cupbend\u201d) in $^{70}$Zn by feeding the *same* nucleus two ways and using parity selection rules the nucleus enforces on "
+  },
+  {
+    "slug": "one-bond-inductive-effect",
+    "title": "One Bond and Done",
+    "summary": "DFT challenge to textbook inductive effect: in neutral molecules electronegative groups affect mainly the bonded carbon; hyperconjugation dominates beyond."
+  },
+  {
+    "slug": "peters-cycle-cosmic-rays",
+    "title": "Peters Cycle Confirmed: Charge-Dependent Softening Below the Knee",
+    "summary": "DAMPE measures primary cosmic-ray spectra from proton through iron and finds spectral softenings that line up at a common rigidity (~15 TV), confirming Peters\u2019s 1961 charge-dependent acceleration limit and pointing to a "
+  },
+  {
+    "slug": "photon-number-optical-analogy-control",
+    "title": "Photon-Number Axis as Optical Beam Control",
+    "summary": "Controlling quantum states of light inside a cavity gets rapidly harder as you add photons, because the standard methods rely on numerically searching for control pulses over an enormous space of possibilities. This pape"
+  },
+  {
+    "slug": "photonic-supersolid",
+    "title": "Photonic Supersolid in Polariton Condensates",
+    "summary": "Driven exciton-polariton condensates in a low-loss photonic-crystal waveguide (bound state in the continuum) spontaneously form a density crystal that keeps global phase coherence \u2014 the first clear photonic supersolid."
+  },
+  {
+    "slug": "plasma-relativistic-amplifier",
+    "title": "Plasma as a Relativistic Amplifier (ROM Harmonics)",
+    "summary": "Sub-picosecond laser-contrast control at Gemini closes a ~20-year efficiency gap: relativistically oscillating plasma mirrors produce mJ-scale coherent XUV harmonics, with PIC predicting CHF intensities \\(\\gtrsim 10^{23}"
+  },
+  {
+    "slug": "pre-bang-leftovers",
+    "title": "Pre-Bang Leftovers: Bounce Dark Matter",
+    "summary": "In a bouncing cosmology, objects larger than ~90 m can exit the shrinking particle horizon before the bounce and reappear as relic black holes, gravitational waves, and possible dark-matter candidates \u2014 a \u201cbounce dark ma"
+  },
+  {
+    "slug": "problem-of-time-cold-atoms",
+    "title": "Testing the Problem of Time with Cold Atoms",
+    "summary": "Hard ceiling: 350 words.  Barontini built a miniature analog universe from ~24,000 rubidium atoms cooled near absolute zero. A laser-generated barrier splits the atom cloud into an \"observed\" (bright) side and a \"hidden\""
+  },
+  {
+    "slug": "pulsars-satellite-masses",
+    "title": "Pulsars as Accelerometers for Satellite Masses",
+    "summary": "Vertical acceleration asymmetry of solar-neighborhood millisecond pulsars yields kinematics-free mass estimates for the LMC and Sagittarius dSph \u2014 first such measurements independent of stellar velocity modeling."
+  },
+  {
+    "slug": "qg-deep-dive-1-mergers-emission",
+    "title": "QG Deep Dive 1: Beyond-GR Merger\u2013Ringdown Waveforms",
+    "summary": "Analytical EFT / large-mass-ratio framework computes how black-hole binary merger and ringdown waveforms change when GR is wrong \u2014 covering classes of theories without a supercomputer campaign per model."
+  },
+  {
+    "slug": "qg-deep-dive-2-info-holography",
+    "title": "QG Deep Dive 2: Information Paradox \u2192 Holography",
+    "summary": "Guided deep dive from non-renormalizability of GR through black-hole information, Page curve, and holographic encoding \u2014 the conceptual bridge from semiclassical paradoxes to bulk reconstruction."
+  },
+  {
+    "slug": "qg-deep-dive-3-holographic-codes",
+    "title": "QG Deep Dive 3: Holographic Codes and Bulk Reconstruction",
+    "summary": "Bulk field operators are logical operators of a boundary quantum error-correcting code \u2014 islands and horizons as what QEC predicts, not mysterious extras."
+  },
+  {
+    "slug": "qg-deep-dive-4-de-sitter",
+    "title": "QG Deep Dive 4: de Sitter Holography",
+    "summary": "Positive \u039b / de Sitter space replaces AdS\u2019s shared conformal boundary with observer-dependent cosmological horizons \u2014 holography and thermodynamics must be rebuilt without AdS crutches."
+  },
+  {
+    "slug": "quantum-damping-cosmological-shear",
+    "title": "Quantum Damping of Cosmological Shear (mLQC-I)",
+    "summary": "Modified loop quantum cosmology (mLQC-I) can erase Bianchi-I anisotropy in under a Planck time after a bounce\u2014but the damping tracks classical cosmic no-hair driven by an emergent Planck-scale cosmological constant, and "
+  },
+  {
+    "slug": "quantum-jamming",
+    "title": "Quantum Jamming",
+    "summary": "A hypothetical third-party operation can silently rewrite nonlocal correlations without changing local statistics or sending superluminal signals \u2014 and whether that is physically allowed is an open fight over causality, "
+  },
+  {
+    "slug": "quantum-metallurgy-cdw",
+    "title": "Quantum Metallurgy: Melting Electron Crystals in 2D TaS\u2082",
+    "summary": "In-situ electron diffraction shows the incommensurate CDW in 1T-TaS\u2082 melts continuously through a hexatic route \u2014 wavelength expands, amplitude collapses \u2014 establishing defect-mediated \u201cquantum metallurgy\u201d as generic for"
+  },
+  {
+    "slug": "quantum-proper-time-ion-clocks",
+    "title": "Quantum Signatures of Proper Time in Optical Ion Clocks",
+    "summary": "Sorci et al. show that treating proper time as an operator on a trapped ion yields vacuum, squeezing-induced, and intrinsically quantum SODS corrections \u2014 with motional squeezing turning time-dilation entanglement into m"
+  },
+  {
+    "slug": "quantum-state-sculptor",
+    "title": "Quantum State Sculptor: Non-Gaussian Oscillator Superpositions",
+    "summary": "Oxford trapped-ion experiment creates the first superpositions of *nonclassical non-Gaussian* oscillator states \u2014 including trisqueezed and quadsqueezed constituents and mixed-order pairs \u2014 via spin-conditioned nonlinear"
+  },
+  {
+    "slug": "radio-changing-look-agn",
+    "title": "Radio Changing-Look AGN (SDSS J1105+1452)",
+    "summary": "Narrow-line Seyfert 1 SDSS J1105+1452 jumped from ~1.4 mJy to ~39 mJy at 1.4 GHz (radio-loud) between 1999 and 2017 and held that level for years with almost no multiwavelength twin signature \u2014 the first long-duration \u201cr"
+  },
+  {
+    "slug": "retrocausal-noisy-channel-capacity",
+    "title": "Retrocausal Capacity of Noisy Quantum Channels",
+    "summary": "General relativity's equations permit closed timelike curves \u2014 paths that loop into their own past \u2014 and quantum theorists have long studied a \"postselected\" model of them, where time travel works like quantum teleportat"
+  },
+  {
+    "slug": "ruthenium-atom-catalysis",
+    "title": "A Single Ruthenium Atom That Both Lights the Match and Bends the Bond",
+    "summary": "Single ruthenium atom both initiates and steers a catalytic bond transformation."
+  },
+  {
+    "slug": "second-order-gw-strain-gauge",
+    "title": "Second-Order Cosmological GW Strain: Newton Gauge Wins",
+    "summary": "Computing what freely falling observers actually measure via light-pulse timing at second order shows the physical GW strain is the transverse-traceless metric in **Newton gauge**\u2014settling a long gauge debate for induced"
+  },
+  {
+    "slug": "shor-algorithm-budget",
+    "title": "Shor\u2019s Algorithm on a Budget (Neutral Atoms + qLDPC)",
+    "summary": "Stacking high-rate qLDPC codes, surgery-based logical gates, and neutral-atom reconfigurability cuts cryptographically relevant Shor resource estimates from millions of physical qubits to roughly \\(10^4\\)\u2013\\(10^5\\)\u2014with a"
+  },
+  {
+    "slug": "siv-hydrostatic-strain-symmetry",
+    "title": "SiV Centers under Hydrostatic Strain: Lattice Stretch Flips Symmetry",
+    "summary": "First-principles r\u00b2SCAN DFT shows SiV\u207b optical and hyperfine properties tune smoothly under hydrostatic compression to ~4% tension \u2014 then isotropic stretch past ~4% spontaneously breaks D\u2083d inversion symmetry to NV-like "
+  },
+  {
+    "slug": "smbh-inclination-angle",
+    "title": "Inclination Is Destiny (SMBH Pairing Angle Filter)",
+    "summary": "For post-merger disk galaxies, the orbital tilt of a secondary supermassive black hole relative to the host disk is a hard filter: \\(\\lesssim 20^\\circ\\) favors merger within a few Gyr; \\(\\gtrsim 45^\\circ\\) locks the pair"
+  },
+  {
+    "slug": "snte-light-topological-inversion",
+    "title": "Light-Induced Topological Band Inversion in SnTe",
+    "summary": "SnTe is a semiconductor that sits right on the boundary between an ordinary insulator and a \"topological\" one \u2014 a material whose surface can carry special, robustly-conducting electronic states. Which side of the line it"
+  },
+  {
+    "slug": "snv-super-coherent-excitation",
+    "title": "SUPER Coherent Excitation of Diamond SnV Centers",
+    "summary": "Two far-detuned picosecond pulses coherently invert a tin-vacancy optical transition without resonant laser light at the emission frequency \u2014 enabling trivial spectral filtering while leaving the spin qubit intact; femto"
+  },
+  {
+    "slug": "spin-flip-flop-saf",
+    "title": "Spin Flip-Flop: Magnon Mode Hop in a Synthetic Antiferromagnet",
+    "summary": "Above a drive threshold, acoustic and optical magnon modes in a synthetic antiferromagnet suddenly swap dominance via nonlinear cross-Kerr coupling\u2014a hysteretic, field-tunable bistable hop usable as a spin-wave memory el"
+  },
+  {
+    "slug": "star-jpsi-spin-interference",
+    "title": "Quantum Ghosts in the Collision Zone (STAR J/\u03c8 Spin Interference)",
+    "summary": "STAR sees spin-dependent interference in ultra-peripheral J/\u03c8 photoproduction\u2014two indistinguishable nuclear photon paths act as a polarized double slit, with angular decay patterns flipping sign at the diffractive minimu"
+  },
+  {
+    "slug": "sunlight-spdc-ghost-imaging",
+    "title": "Sunlight-Driven SPDC and Ghost Imaging",
+    "summary": "Physicists at Xiamen University built a quantum-optics experiment that runs on raw sunlight instead of a laser. Normally, generating correlated pairs of photons \u2014 a basic building block of quantum optics \u2014 requires shini"
+  },
+  {
+    "slug": "supernova-onion-expansion",
+    "title": "Reading a Supernova's Onion by Watching It Grow",
+    "summary": "Astronomers took two X-ray snapshots of the young supernova remnant G292.0+1.8 a decade apart and measured, for the first time in X-rays, how fast it is growing. The trick is precision: the expected motion is a small fra"
+  },
+  {
+    "slug": "synchrotron-dm-detector",
+    "title": "Synchrotron as Dark Matter Detector",
+    "summary": "Soft x-ray spectroscopy \u2014 the set of techniques (XAS, XES, RIXS) that use x-rays to probe how electrons are arranged in materials \u2014 has a photon efficiency problem. Grating-based instruments, the field's workhorses, achi"
+  },
+  {
+    "slug": "thorium-229-nuclear-clock",
+    "title": "Thorium-229 Nuclear Clock",
+    "summary": "Two teams \u2014 one in Vienna (TU Wien and Germany's PTB national metrology institute) and one in Beijing (Tsinghua University, NIM, SIOM, and Peking University) \u2014 simultaneously built and operated the world's first nuclear "
+  },
+  {
+    "slug": "three-body-quantum-company",
+    "title": "Three's Company (Three-Body Quantum Dynamics)",
+    "summary": "Three-flavor fermions \u2014 think of particles that come in exactly three distinguishable types with a perfect symmetry among them \u2014 attract each other on a lattice and form composite bound states called trions, each contain"
+  },
+  {
+    "slug": "time-goes-quantum",
+    "title": "Time Goes Quantum: Proper Time Superpositions in Ion Clocks",
+    "summary": "A trapped ion\u2019s internal clock can entangle with its own quantized motion via special-relativistic time dilation, producing Ramsey contrast collapse-and-revival patterns that fingerprint quantum proper time."
+  },
+  {
+    "slug": "topo-chirality-structured-light",
+    "title": "Free-Space Optical Hall Effect via Pancharatnam Topological Charge",
+    "summary": "A single integer \u2014 Pancharatnam topological charge $\\ell_P$ \u2014 dials concentric rings of opposite circular polarization in a fully paraxial free-space beam, controlling chirality without metasurfaces or tight focusing."
+  },
+  {
+    "slug": "topological-cosmological-constant",
+    "title": "Topology Saves Einstein\u2019s Ugliest Term (Gravitational \u03b8-Vacua)",
+    "summary": "In Ashtekar variables, gravity shares Yang\u2013Mills \u03b8-vacuum topology; consistency of the Chern\u2013Simons\u2013Kodama state quantizes and topologically protects the cosmological constant (like Hall conductance)\u2014stabilizing \u039b withou"
+  },
+  {
+    "slug": "truncated-photon-dynamical-casimir",
+    "title": "Truncated Photon and the Dynamical Casimir Effect",
+    "summary": "A team at the University of Oslo asked: if you fire a single photon at an optical shutter that blocks the leading portion of the pulse, what quantum state are you left with? The answer is not a shorter photon. Because si"
+  },
+  {
+    "slug": "twisted-light-chiral-ms",
+    "title": "Twisted Light and Chiral Mass Spectrometry",
+    "summary": "Chirality \u2014 the left/right handedness of a molecule \u2014 matters enormously in drugs and biology, but distinguishing the two mirror forms optically is notoriously hard. The standard tools rely on how differently left- versu"
+  },
+  {
+    "slug": "two-clocks-one-laser",
+    "title": "Two Clocks, One Laser, Zero Excess Noise",
+    "summary": "Gravitational-wave astronomy has a gap between ground-based detectors (LIGO/Virgo/KAGRA) and the future space mission LISA \u2014 the \"mid-band\" near 0.1\u201310 Hz, home to intermediate-mass black-hole mergers and early binary in"
+  },
+  {
+    "slug": "two-lasers-one-reaction",
+    "title": "Two Lasers, One Reaction",
+    "summary": "Two-laser control of a single reaction pathway \u2014 coherent or sequential photonic control of chemistry."
+  },
+  {
+    "slug": "ultrafast-chemical-shifts",
+    "title": "Ultrafast chemical shifts analysis",
+    "summary": "Ultrafast chemical-shift / spectroscopic tracking of nuclear environments on femtosecond\u2013picosecond scales."
+  },
+  {
+    "slug": "ultramassive-bh-binary-cavity",
+    "title": "Ultramassive BH Binary Carves a Starless Kiloparsec Cavity",
+    "summary": "JWST + VLT data show Abell 402\u2019s BCG central \u201cgap\u201d is a genuine starless ~1\u202fkpc cavity scoured by three-body slingshots of an ~60-billion-solar-mass black-hole binary mid-hardening\u2014the heaviest such binary candidate foot"
+  },
+  {
+    "slug": "universe-gas-pedal-leaky",
+    "title": "The Universe's Gas Pedal Is a Leaky Engine",
+    "summary": "This paper extends the emergent-gravity program by asking what happens when the thermodynamic cycle underlying Einstein's equations is allowed to do work, not just exchange heat. In the standard picture, due to Jacobson "
+  },
+  {
+    "slug": "w-state-entangled-measurement",
+    "title": "W-State Whisperer: First Entangled Measurement for W States",
+    "summary": "A photonic DFT / cyclic-symmetry circuit performs a genuine three-qubit W-state entangled measurement at 87.1% fidelity\u2014above the 66.7% product-measurement ceiling\u2014opening Bell-measurement-like tools for loss-robust mult"
+  },
+  {
+    "slug": "water-double-life-nanoconfinement",
+    "title": "Water's Secret Double Life",
+    "summary": "*(~340 words)*  Water's famous weirdness \u2014 density maximum at 4 \u00b0C, anomalous compressibility, explosive thermodynamic response functions at deep supercooling \u2014 has long been attributed to an underlying structural dualit"
+  },
+  {
+    "slug": "water-rna-polymerase",
+    "title": "Water molecules in RNA polymerase II catalysis",
+    "summary": "Structural/functional role of water molecules in RNA polymerase II catalysis."
+  }
+]

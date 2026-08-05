@@ -1,0 +1,37 @@
+generate_all.py Grok version: 2026-05-24.02
+=================================================================
+MSL v3.14 — 140 Node Master Gold Set Generator
+Started: May 24, 2026 17:51
+=================================================================
+
+[1/4] Running generate_gold_list.py ...
+generate_gold_list.py Grok version: 2026-05-24.01
+Generated: MSL_Golden_List_v3.14.docx
+   ✓ Success
+
+[2/4] Running generate_highway.py ...
+generate_highway.py Grok version: 2026-05-24.01
+Generated: MSL_Highway_Robust_Subset_v3.14.docx
+   ✓ Success
+
+[3/4] Running generate_alphabetic.py ...
+generate_alphabetic.py Grok version: 2026-05-24.02
+Generated: MSL_Alphabetic_List_v3.14.docx
+   ✓ Success
+
+[4/4] Running generate_audio_hints.py ...
+generate_audio_hints.py Grok version: 2026-05-24.06
+Generated: MSL_Audio_Hints_v3.14.docx
+   ✓ Success
+
+=================================================================
+Generation Complete
+Successful: 4/4
+Time taken: 1.6 seconds
+=================================================================
+
+Final v3.14 Master Gold Set Files:
+  • MSL_Alphabetic_List_v3.14.docx
+  • MSL_Audio_Hints_v3.14.docx
+  • MSL_Golden_List_v3.14.docx
+  • MSL_Highway_Robust_Subset_v3.14.docx

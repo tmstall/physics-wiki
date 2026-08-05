@@ -1,0 +1,978 @@
+{
+  "triaged_at": "2026-08-04",
+  "source": "spacex_export/extracted-analyses",
+  "wiki_papers_compared": 129,
+  "extracts_total": 94,
+  "counts": {
+    "NEW": 27,
+    "SOFT-DUP": 35,
+    "THIN-SKIP": 32
+  },
+  "policy": "Conservative: prefer SOFT-DUP over NEW when uncertain. No wiki ingest.",
+  "items": [
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-05_collapse-gravity-proper-time-uncertainty_4a24df05.md",
+      "title": "-> Collapse, Gravity & Proper-Time Uncertainty",
+      "size": 126318,
+      "closest_wiki": [
+        "collapse-models-clock-precision"
+      ],
+      "note": "CSL/DP spacetime jitter -> clock floor"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-12_cosmic-web-jwst-shows-quenching-flip-by-z-2_057c4984.md",
+      "title": "-> Cosmic Web: JWST Shows Quenching Flip by z=2",
+      "size": 12261,
+      "closest_wiki": [
+        "cosmos-web-cosmic-web"
+      ],
+      "note": "JWST cosmic web / quenching flip"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-26_evaporating-charged-black-holes-avoid-singularities_42f29512.md",
+      "title": "-> Evaporating Charged Black Holes Avoid Singularities",
+      "size": 11386,
+      "closest_wiki": [
+        "evaporating-charged-black-holes"
+      ],
+      "note": "Same charged BH evaporation / regular endpoints paper"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-09_hawking-radiation-from-charged-shell_7a92c9cf.md",
+      "title": "-> Hawking Radiation from Charged Shell",
+      "size": 148468,
+      "closest_wiki": [
+        "hawking-radiation-charge-shell"
+      ],
+      "note": "Same double-copy charge-shell Hawking analysis already in wiki"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-04-16_high-pt-jets-early-isr-evidence-1970s_af30aa25.md",
+      "title": "-> High-pT Jets: Early ISR Evidence 1970s",
+      "size": 59243,
+      "closest_wiki": [
+        "high-pt-physics-cern-isr",
+        "levinthal-high-pt-isr"
+      ],
+      "note": "ISR high-pT historical program"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-27_loki-early-accreted-vmp-stars_811e3d54.md",
+      "title": "-> Loki: Early Accreted VMP Stars",
+      "size": 20319,
+      "closest_wiki": [
+        "loki-early-accreted-vmp"
+      ],
+      "note": "Loki early-accreted VMP stars"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-04-30_magnesium-promoted-benzidine-rearrangement-breakthrough_d07a73a5.md",
+      "title": "-> Magnesium-Promoted Benzidine Rearrangement Breakthrough",
+      "size": 10864,
+      "closest_wiki": [
+        "magnesium-benzidine-rearrangement"
+      ],
+      "note": "Mg benzidine biaryl synthesis"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-11_neural-net-cosmology-simulator_d729b1cb.md",
+      "title": "-> Neural Net Cosmology Simulator",
+      "size": 14647,
+      "closest_wiki": [
+        "cigars-i-supernova-cosmology",
+        "desi-evolving-dark-energy"
+      ],
+      "note": "ML cosmology / SBI-adjacent; soft overlap with existing cosmology inference pages"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-08_photonic-supersolid-nature-paper_1390a395.md",
+      "title": "-> Photonic Supersolid Nature Paper",
+      "size": 44903,
+      "closest_wiki": [
+        "photonic-supersolid"
+      ],
+      "note": "Photonic supersolid paper"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-01_programmable-kinetic-barcoding-for-cas13a-multiplexing_433319cb.md",
+      "title": "-> Programmable Kinetic Barcoding for Cas13a Multiplexing",
+      "size": 15519,
+      "closest_wiki": [
+        "kinetic-barcoding-cas13a"
+      ],
+      "note": "Cas13a kinetic barcoding"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-08_quantum-metallurgy-cdw-electron-crystals-melt_ad2a2c65.md",
+      "title": "-> Quantum Metallurgy: CDW Electron Crystals Melt",
+      "size": 45455,
+      "closest_wiki": [
+        "quantum-metallurgy-cdw"
+      ],
+      "note": "CDW quantum metallurgy melting"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-06_quantum-proper-time-signatures-in-ion-clocks_57902025.md",
+      "title": "-> Quantum Proper Time Signatures in Ion Clocks",
+      "size": 47938,
+      "closest_wiki": [
+        "quantum-proper-time-ion-clocks",
+        "time-goes-quantum"
+      ],
+      "note": "Ion-clock proper-time / SODS program"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-26_single-pressure-bump-explains-carbonaceous-chondrite-diversi_1d61108e.md",
+      "title": "-> Single Pressure Bump Explains Carbonaceous Chondrite Diversity",
+      "size": 10307,
+      "closest_wiki": [
+        "chondrite-pressure-bump"
+      ],
+      "note": "Chondrite pressure-bump story"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-04_siv-centers-in-diamond-tension-induced-symmetry-breaking_e044c9ed.md",
+      "title": "-> SiV Centers in Diamond: Tension-Induced Symmetry Breaking",
+      "size": 22336,
+      "closest_wiki": [
+        "siv-hydrostatic-strain-symmetry"
+      ],
+      "note": "SiV strain / symmetry"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-01_sub-2-cryo-em-of-transcribing-rna-polymerase-ii_55dfe2e1.md",
+      "title": "-> Sub-2 Å Cryo-EM of Transcribing RNA Polymerase II",
+      "size": 6493,
+      "closest_wiki": [
+        "water-rna-polymerase"
+      ],
+      "note": "RNA Pol II catalysis / structure island (closest existing page)"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-12_ultramassive-black-hole-binary-carves-a-starless-kiloparsec-_5d425014.md",
+      "title": "-> Ultramassive Black Hole Binary Carves a Starless Kiloparsec Void",
+      "size": 10744,
+      "closest_wiki": [
+        "ultramassive-bh-binary-cavity"
+      ],
+      "note": "Ultramassive BH binary kpc cavity"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-10_1d-anyons-momentum-tails_6e74a90c.md",
+      "title": "1D Anyons Momentum Tails",
+      "size": 12145,
+      "closest_wiki": [
+        "fractional-fermi-sea-1d-bosons",
+        "three-body-quantum-company"
+      ],
+      "note": "1d-anyons-momentum-tails",
+      "topic_tag": "1d-anyons-momentum-tails"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-05-23_analyze-paper-in-conversation_5dad645d.md",
+      "title": "Analyze Paper in Conversation",
+      "size": 8637,
+      "closest_wiki": [],
+      "note": "Unnamed thin analysis session"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-16_anyon-trions-reveal-fractional-charges-in-twisted-mote_7e86dd11.md",
+      "title": "Anyon-Trions Reveal Fractional Charges in Twisted MoTe₂",
+      "size": 8990,
+      "closest_wiki": [
+        "three-body-quantum-company",
+        "fractional-fermi-sea-1d-bosons"
+      ],
+      "note": "anyon-trions-motte2",
+      "topic_tag": "anyon-trions-motte2"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-10-20_astronomy-cosmology-advances_7cfc9fe8.md",
+      "title": "Astronomy & Cosmology Advances",
+      "size": 20980,
+      "closest_wiki": [],
+      "note": "Generic advances survey without single-paper core"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-25_axion-quantum-signatures-erased-in-detectors_6487c8e0.md",
+      "title": "Axion Quantum Signatures Erased in Detectors",
+      "size": 9407,
+      "closest_wiki": [
+        "synchrotron-dm-detector",
+        "gamma-glow-pbh-detector"
+      ],
+      "note": "axion-signature-erasure",
+      "topic_tag": "axion-signature-erasure"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-10_bec-superfluid-he4_6bdb7007.md",
+      "title": "BEC, superfluid He4",
+      "size": 15819,
+      "closest_wiki": [
+        "molecular-rotation-superfluid-he"
+      ],
+      "note": "Short BEC/4He teaching thread"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-03-14_biology-microscopy_7fb6f0cb.md",
+      "title": "Biology/Microscopy",
+      "size": 13350,
+      "closest_wiki": [],
+      "note": "Generic biology/microscopy chat"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-24_black-holes-evaporate-before-breaking_fe621d53.md",
+      "title": "Black Holes Evaporate Before Breaking",
+      "size": 11397,
+      "closest_wiki": [
+        "evaporating-charged-black-holes",
+        "black-hole-evaporation-energy-conditions"
+      ],
+      "note": "Evaporation-before-breakdown theme; covered by evaporation cluster"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-03-01_chemistry_73efd331.md",
+      "title": "Chemistry",
+      "size": 66871,
+      "closest_wiki": [],
+      "note": "Generic chemistry chat; no single-paper core"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-17_cluster-tunneling-forges-scalable-schr-dinger-cats_19c6e325.md",
+      "title": "Cluster Tunneling Forges Scalable Schrödinger Cats",
+      "size": 47314,
+      "closest_wiki": [
+        "massive-tunneling-schrodinger-cats"
+      ],
+      "note": "Collective tunneling NOON cats paper"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-08_clustering-of-conditional-mutual-information_6b2b0505.md",
+      "title": "Clustering of Conditional Mutual Information",
+      "size": 15528,
+      "closest_wiki": [],
+      "note": "ML/info-theory fragment; not a physics paper page"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-06-13_cold-atoms-measure-time-via-entropy_aae7fe62.md",
+      "title": "Cold Atoms Measure Time via Entropy",
+      "size": 12634,
+      "closest_wiki": [
+        "problem-of-time-cold-atoms"
+      ],
+      "note": "Cold-atom problem of time / entropy-time probes"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-09-29_continuing-qmm_c7ba254f.md",
+      "title": "Continuing QMM",
+      "size": 39897,
+      "closest_wiki": [],
+      "note": "QMM continuation fragment"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-10_cooper-pairs-in-superconductivity-explained_43aca8a3.md",
+      "title": "Cooper Pairs in Superconductivity Explained",
+      "size": 10295,
+      "closest_wiki": [
+        "bata2s5-field-induced-sc",
+        "color-superconductivity-qcd"
+      ],
+      "note": "Pedagogical Cooper-pair explainer"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-05-24_delayed-choice-quantum-eraser-summary-and-updates_de4ce7a3.md",
+      "title": "Delayed-Choice Quantum Eraser: Summary and Updates",
+      "size": 4206,
+      "closest_wiki": [
+        "negative-weak-valued-excitation-times",
+        "w-state-entangled-measurement"
+      ],
+      "note": "Thin delayed-choice summary with high chrome; not full paper page"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2025-08-20_early-universe-ionization-by-supermassive-stars_fd46ef60.md",
+      "title": "Early Universe Ionization by Supermassive Stars",
+      "size": 8978,
+      "closest_wiki": [
+        "cosmos-web-cosmic-web",
+        "pre-bang-leftovers"
+      ],
+      "note": "early-universe-ionization-sms",
+      "topic_tag": "early-universe-ionization-sms"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-07-20_einstein-and-riemann-geometry-in-relativity_3c9369d4.md",
+      "title": "Einstein and Riemann Geometry in Relativity",
+      "size": 59637,
+      "closest_wiki": [
+        "second-order-gw-strain-gauge",
+        "frozen-in-gravitational-fields"
+      ],
+      "note": "Pedagogical relativity/geometry thread"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-14_electric-nucleation-of-3d-magnetic-heliknotons_65da18c4.md",
+      "title": "Electric Nucleation of 3D Magnetic Heliknotons",
+      "size": 9118,
+      "closest_wiki": [
+        "spin-flip-flop-saf",
+        "photonic-supersolid"
+      ],
+      "note": "magnetic-heliknotons",
+      "topic_tag": "magnetic-heliknotons"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2025-08-29_emc-effect-quarks-and-gluons_a467bb47.md",
+      "title": "EMC Effect: Quarks and Gluons",
+      "size": 14331,
+      "closest_wiki": [
+        "nucleus-shell-src-memory",
+        "high-pt-physics-cern-isr"
+      ],
+      "note": "emc-effect-quarks-gluons",
+      "topic_tag": "emc-effect-quarks-gluons"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-07-09_euclid-images-technical-paper-analysis_9f84bcac.md",
+      "title": "Euclid Images Technical Paper Analysis",
+      "size": 17568,
+      "closest_wiki": [
+        "euclid-high-z-quasar-census"
+      ],
+      "note": "Euclid imaging/high-z program soft-overlap"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-04-05_femtosecond-laser-pulse-carrier-envelope-phase-explained_750daeba.md",
+      "title": "Femtosecond Laser Pulse: Carrier-Envelope Phase Explained",
+      "size": 28052,
+      "closest_wiki": [
+        "attosecond-stm-lightwave"
+      ],
+      "note": "CEP concept explainer; thin for paper page"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-03-26_femtosecond-spin-conserving-coherent-tin-vacancy-excitation_0a0600d1.md",
+      "title": "Femtosecond Spin-Conserving Coherent Tin-Vacancy Excitation",
+      "size": 22250,
+      "closest_wiki": [
+        "snv-super-coherent-excitation"
+      ],
+      "note": "SnV coherent / SUPER excitation family"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-01-07_five-dimensional-classical-gravity-model_c344a460.md",
+      "title": "Five-Dimensional Classical Gravity Model",
+      "size": 85270,
+      "closest_wiki": [
+        "black-hole-third-law-violation",
+        "gravastar-dust-collapse"
+      ],
+      "note": "5d-classical-gravity",
+      "topic_tag": "5d-classical-gravity"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-22_flexible-electrodynamic-dust-shields-for-moon_5b2e8080.md",
+      "title": "Flexible Electrodynamic Dust Shields for Moon",
+      "size": 20819,
+      "closest_wiki": [],
+      "note": "Engineering dust-shield note; low wiki priority / thin analysis"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-04-12_general-physics_4e3dc5c4.md",
+      "title": "General Physics ",
+      "size": 3203,
+      "closest_wiki": [],
+      "note": "Generic general-physics chat"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-02-08_generation-v3-4-4-1-holographic-universe-error-correcting-co_25dca1ca.md",
+      "title": "Generation v3.4.4.1 - Holographic Universe: Error-Correcting Cosmology",
+      "size": 7645,
+      "closest_wiki": [
+        "qg-deep-dive-2-info-holography",
+        "qg-deep-dive-3-holographic-codes"
+      ],
+      "note": "Holographic error-correcting cosmology; same theme as QG deep dives"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2025-02-28_i-astrophysics-and-black-holes_5d552948.md",
+      "title": "I - Astrophysics (and Black Holes)",
+      "size": 329931,
+      "closest_wiki": [
+        "evaporating-charged-black-holes",
+        "hawking-radiation-charge-shell",
+        "pre-bang-leftovers"
+      ],
+      "note": "Long multi-topic BH/astro learning mega-thread; overlaps existing BH cluster"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2025-03-01_i-quantum-mechanics-quantum-field-theory_c6667db7.md",
+      "title": "I - Quantum Mechanics & Quantum Field Theory",
+      "size": 311840,
+      "closest_wiki": [
+        "time-goes-quantum",
+        "quantum-proper-time-ion-clocks",
+        "massive-tunneling-schrodinger-cats"
+      ],
+      "note": "Long QM/QFT learning mega-thread; overlaps quantum-time / foundations cluster"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-16_ice-core-traces-supernova-fe-60-in-local-cloud_1507751a.md",
+      "title": "Ice Core Traces Supernova Fe-60 in Local Cloud",
+      "size": 16196,
+      "closest_wiki": [
+        "supernova-onion-expansion",
+        "interstellar-glaciers-spherex"
+      ],
+      "note": "ice-core-fe60-supernova",
+      "topic_tag": "ice-core-fe60-supernova"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-26_iras-21204-4913-eruptive-low-mass-fuor_48e8a69e.md",
+      "title": "IRAS 21204+4913: Eruptive Low-Mass FUor",
+      "size": 10138,
+      "closest_wiki": [
+        "dr21-magnetic-accretion",
+        "supernova-onion-expansion"
+      ],
+      "note": "iras-fuor-outburst",
+      "topic_tag": "iras-fuor-outburst"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-07_jwst-reveals-hydrocarbon-factory-in-ulirg_757ca7d7.md",
+      "title": "JWST Reveals Hydrocarbon Factory in ULIRG",
+      "size": 9336,
+      "closest_wiki": [
+        "interstellar-glaciers-spherex",
+        "interstellar-sulfur-ice"
+      ],
+      "note": "jwst-ulirg-hydrocarbons",
+      "topic_tag": "jwst-ulirg-hydrocarbons"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-02-11_jwst-reveals-uv-deficient-low-luminosity-agn_5567d75b.md",
+      "title": "JWST Reveals UV-Deficient Low-Luminosity AGN",
+      "size": 11957,
+      "closest_wiki": [
+        "euclid-high-z-quasar-census",
+        "naked-black-hole-candidate"
+      ],
+      "note": "High-z / compact AGN portrait family"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-01-14_laboratory-suppression-of-blazar-instabilities_fcdb46c3.md",
+      "title": "Laboratory Suppression of Blazar Instabilities",
+      "size": 10312,
+      "closest_wiki": [
+        "mrk501-double-jet-smbbh",
+        "plasma-relativistic-amplifier"
+      ],
+      "note": "lab-blazar-instability-suppression",
+      "topic_tag": "lab-blazar-instability-suppression"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-05-08_liquids-pin-bio-friendly-constants_cdd8a90f.md",
+      "title": "Liquids Pin Bio-Friendly Constants",
+      "size": 30556,
+      "closest_wiki": [],
+      "note": "Speculative constants chat; thin for paper page"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-17_long-term-timing-of-psr-j1906-0746-binary_19e0bfc4.md",
+      "title": "Long-term Timing of PSR J1906+0746 Binary",
+      "size": 21578,
+      "closest_wiki": [
+        "pulsars-satellite-masses",
+        "gw170817-jet-hubble"
+      ],
+      "note": "psr-j1906-binary-timing",
+      "topic_tag": "psr-j1906-binary-timing"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-23_magnetar-powered-slsn-2017egm-fermi-lat-detection_42ee8206.md",
+      "title": "Magnetar-Powered SLSN 2017egm: Fermi-LAT Detection",
+      "size": 12407,
+      "closest_wiki": [
+        "supernova-onion-expansion",
+        "aquila-booster-pevatron"
+      ],
+      "note": "magnetar-slsn-fermi",
+      "topic_tag": "magnetar-slsn-fermi"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2025-11-08_massive-gravity-gluon-magic_a16227af.md",
+      "title": "Massive Gravity/Gluon Magic",
+      "size": 152638,
+      "closest_wiki": [
+        "color-superconductivity-qcd",
+        "gw-induced-fermion-freeze-in"
+      ],
+      "note": "massive-gravity-gluon",
+      "topic_tag": "massive-gravity-gluon"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-02-28_materials-science-semiconductors-nanostructures_afa0fe4c.md",
+      "title": "Materials Science (Semiconductors & Nanostructures)",
+      "size": 157543,
+      "closest_wiki": [],
+      "note": "Broad materials survey mega-thread; not one paper"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-11_microfluidic-electro-viscoelastic-nano-particle-separation_fec8a441.md",
+      "title": "Microfluidic Electro-Viscoelastic Nano-Particle Separation",
+      "size": 11740,
+      "closest_wiki": [],
+      "note": "Device paper island; short/thin relative to wiki paper standard"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-06-21_mond-bullet-cluster-core-mass-solved_e2ed039c.md",
+      "title": "MOND Bullet Cluster Core Mass Solved",
+      "size": 14306,
+      "closest_wiki": [
+        "mond-external-field-sparc",
+        "newton-ksz-force-law"
+      ],
+      "note": "MOND / large-scale gravity family (Bullet Cluster angle)"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-18_muse-captures-glowing-quasar-filament-at-z-3_4e0316bd.md",
+      "title": "MUSE Captures Glowing Quasar Filament at z=3",
+      "size": 12171,
+      "closest_wiki": [
+        "jwst-filament-cnd-ngc4696",
+        "high-z-quasar-pair-merger"
+      ],
+      "note": "muse-quasar-filament-z3",
+      "topic_tag": "muse-quasar-filament-z3"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-23_nickelate-films-nodeless-gap-and-70-mev-kink_765e7590.md",
+      "title": "Nickelate Films: Nodeless Gap and 70-meV Kink",
+      "size": 9638,
+      "closest_wiki": [
+        "bata2s5-field-induced-sc",
+        "hot-electron-coherent-phonons-ptcu"
+      ],
+      "note": "nickelate-nodeless-gap",
+      "topic_tag": "nickelate-nodeless-gap"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2025-05-18_nuclear-magnetization-observation-breakthrough_d40be7a8.md",
+      "title": "Nuclear Magnetization Observation Breakthrough",
+      "size": 158531,
+      "closest_wiki": [
+        "nucleus-shell-src-memory",
+        "nucleus-tells-on-itself"
+      ],
+      "note": "nuclear-magnetization",
+      "topic_tag": "nuclear-magnetization"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-11-17_perovskite-research-synthesis-and-optimization_cf3c923a.md",
+      "title": "Perovskite Research: Synthesis and Optimization",
+      "size": 7125,
+      "closest_wiki": [],
+      "note": "Chemistry process chat; thin for paper page"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-25_phosphorus-radical-catalyzed-markovnikov-hydroamination_de2d756d.md",
+      "title": "Phosphorus Radical-Catalyzed Markovnikov Hydroamination",
+      "size": 9373,
+      "closest_wiki": [
+        "magnesium-benzidine-rearrangement",
+        "bond-breaking-discount"
+      ],
+      "note": "p-radical-hydroamination",
+      "topic_tag": "p-radical-hydroamination"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-06-03_photon-truncation-creates-infinite-particle-zoo_771b4084.md",
+      "title": "Photon Truncation Creates Infinite Particle Zoo",
+      "size": 142603,
+      "closest_wiki": [
+        "truncated-photon-dynamical-casimir"
+      ],
+      "note": "Truncated-photon dynamical Casimir multiphoton states"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-09_physically-possible-warp-drive-breakthrough_a388b090.md",
+      "title": "Physically Possible Warp Drive Breakthrough",
+      "size": 12854,
+      "closest_wiki": [
+        "second-order-gw-strain-gauge",
+        "universe-gas-pedal-leaky"
+      ],
+      "note": "warp-drive-metric",
+      "topic_tag": "warp-drive-metric"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-03-10_physics_c7a8e63b.md",
+      "title": "Physics",
+      "size": 25099,
+      "closest_wiki": [],
+      "note": "Generic physics chat; too fragmentary for a paper page"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-01-19_positronium-diffraction-breakthrough-in-antimatter-physics_1d9d4313.md",
+      "title": "Positronium Diffraction Breakthrough in Antimatter Physics",
+      "size": 8853,
+      "closest_wiki": [
+        "3d-electron-diffraction-osc"
+      ],
+      "note": "positronium-diffraction",
+      "topic_tag": "positronium-diffraction"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2025-10-01_precision-net-proton-fluctuations-at-rhic_284130d8.md",
+      "title": "Precision Net-Proton Fluctuations at RHIC",
+      "size": 10365,
+      "closest_wiki": [
+        "color-superconductivity-qcd",
+        "star-jpsi-spin-interference"
+      ],
+      "note": "rhic-net-proton-fluctuations",
+      "topic_tag": "rhic-net-proton-fluctuations"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-13_programmable-non-abelian-photonic-braiding_c725bcab.md",
+      "title": "Programmable Non-Abelian Photonic Braiding",
+      "size": 9813,
+      "closest_wiki": [
+        "photon-number-optical-analogy-control",
+        "twisted-light-chiral-ms"
+      ],
+      "note": "nonabelian-photonic-braiding",
+      "topic_tag": "nonabelian-photonic-braiding"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-25_pulsar-timing-reveals-lmc-and-sagittarius-masses_2c1f4c1d.md",
+      "title": "Pulsar Timing Reveals LMC and Sagittarius Masses",
+      "size": 13646,
+      "closest_wiki": [
+        "pulsars-satellite-masses"
+      ],
+      "note": "Pulsar accelerations -> satellite masses"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-04-12_qft-related_09c7589c.md",
+      "title": "QFT Related",
+      "size": 87745,
+      "closest_wiki": [],
+      "note": "Loose QFT-related discussion; no single paper"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-09-26_qmm-information-as-fundamental-cosmic-component_5901c9a9.md",
+      "title": "QMM - Information as Fundamental Cosmic Component",
+      "size": 24180,
+      "closest_wiki": [
+        "qg-deep-dive-2-info-holography"
+      ],
+      "note": "Speculative QMM series; not wiki-grade paper analysis"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-09-29_qmm-and-dark-matter_e136b865.md",
+      "title": "QMM and Dark Matter",
+      "size": 17282,
+      "closest_wiki": [
+        "gamma-glow-pbh-detector"
+      ],
+      "note": "Speculative QMM + DM chat"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-05-07_quantum-field-theory_5568829a.md",
+      "title": "Quantum Field Theory ",
+      "size": 187872,
+      "closest_wiki": [],
+      "note": "Broad QFT pedagogy without single-paper core"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-07-30_quantum-field-theory-and-qed-vectors_4da72e5b.md",
+      "title": "Quantum Field Theory and QED Vectors",
+      "size": 14399,
+      "closest_wiki": [],
+      "note": "Pedagogical QED vectors thread"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-08-04_quantum-field-theory-basics-car_ae9cfbc1.md",
+      "title": "Quantum Field Theory Basics -  car",
+      "size": 84585,
+      "closest_wiki": [],
+      "note": "Informal car-chat QFT basics"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-07-30_quantum-field-theory-basics-for-chemists_a0236668.md",
+      "title": "Quantum Field Theory Basics for Chemists",
+      "size": 16546,
+      "closest_wiki": [],
+      "note": "QFT for chemists overview; pedagogy only"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-08-01_quantum-field-theory-perspective_dfc276c9.md",
+      "title": "Quantum Field Theory Perspective",
+      "size": 71010,
+      "closest_wiki": [],
+      "note": "QFT perspective overview; no single paper"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-02-17_quantum-field-theory-virtual-particles-analysis_7510072d.md",
+      "title": "Quantum Field Theory: Virtual Particles Analysis",
+      "size": 10059,
+      "closest_wiki": [],
+      "note": "Virtual-particles pedagogy; not one experimental/theory paper"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-07-12_quantum-information-and-thermodynamics_b7200478.md",
+      "title": "Quantum Information and Thermodynamics",
+      "size": 19140,
+      "closest_wiki": [
+        "noise-driven-qubit-entanglement",
+        "dissipative-cavity-entanglement"
+      ],
+      "note": "Pedagogical QI+thermo discussion; not a distinct paper analysis"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2026-06-01_quantum-mechanics-particle-eigenvectors-and-resonance-harmon_6d7909ce.md",
+      "title": "Quantum Mechanics: Particle Eigenvectors and Resonance Harmonics",
+      "size": 43370,
+      "closest_wiki": [],
+      "note": "Pedagogical eigenvectors/harmonics chat"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-08_quantum-metric-from-spin-momentum-locking_7ba11668.md",
+      "title": "Quantum Metric from Spin-Momentum Locking",
+      "size": 36927,
+      "closest_wiki": [
+        "snte-light-topological-inversion",
+        "brown-zak-nonlinear-transport"
+      ],
+      "note": "quantum-metric-spin-momentum",
+      "topic_tag": "quantum-metric-spin-momentum"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2025-10-01_quark-gluon-plasma-discussion_88f679b7.md",
+      "title": "Quark-gluon plasma Discussion",
+      "size": 27452,
+      "closest_wiki": [
+        "color-superconductivity-qcd",
+        "high-pt-physics-cern-isr"
+      ],
+      "note": "QGP discussion overlaps dense QCD / high-energy nuclear cluster"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-02-24_reviving-schr-dinger-s-geometric-color-vision-theory_2c22f0bf.md",
+      "title": "Reviving Schrödinger's Geometric Color Vision Theory",
+      "size": 17914,
+      "closest_wiki": [
+        "color-space-geometry"
+      ],
+      "note": "Same Schrödinger color-geometry / non-Riemannian color program"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-01-17_spin-networks-to-spin-foams-evolution_560ee84e.md",
+      "title": "Spin Networks to Spin Foams Evolution",
+      "size": 11594,
+      "closest_wiki": [
+        "qg-deep-dive-1-mergers-emission",
+        "quantum-damping-cosmological-shear"
+      ],
+      "note": "Spin networks/foams pedagogy; overlaps LQG / QG deep-dive material"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-11-11_sun-s-photon-generation-via-fusion-reactions_4720fc2d.md",
+      "title": "Sun's Photon Generation via Fusion Reactions",
+      "size": 4837,
+      "closest_wiki": [],
+      "note": "Pop-level solar fusion photon chat"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-16_supermoir-trilayer-graphene-superconductivity_f38a787f.md",
+      "title": "Supermoiré Trilayer Graphene Superconductivity",
+      "size": 11088,
+      "closest_wiki": [
+        "brown-zak-nonlinear-transport",
+        "bata2s5-field-induced-sc"
+      ],
+      "note": "supermoire-trilayer-sc",
+      "topic_tag": "supermoire-trilayer-sc"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-09-12_technical-paper-discussion-continuation_4fca6e67.md",
+      "title": "Technical Paper Discussion Continuation",
+      "size": 8827,
+      "closest_wiki": [],
+      "note": "Continuation fragment; paper identity unclear"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-01-11_temporal-imbalance-theory-gravity-s-new-clock_bc2d307c.md",
+      "title": "Temporal Imbalance Theory: Gravity's New Clock",
+      "size": 47426,
+      "closest_wiki": [
+        "collapse-models-clock-precision",
+        "quantum-proper-time-ion-clocks"
+      ],
+      "note": "temporal-imbalance-gravity",
+      "topic_tag": "temporal-imbalance-gravity"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-05-13_trinity-test-creates-novel-ca-cu-si-clathrate_42edff4d.md",
+      "title": "Trinity Test Creates Novel Ca-Cu-Si Clathrate",
+      "size": 89023,
+      "closest_wiki": [
+        "dense-plasma-opacity-revision",
+        "filming-plasma-birth"
+      ],
+      "note": "trinity-clathrate",
+      "topic_tag": "trinity-clathrate"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-06-30_two-mode-squeezed-states-entanglement_4726e199.md",
+      "title": "Two-Mode Squeezed States Entanglement",
+      "size": 3719,
+      "closest_wiki": [
+        "noise-driven-qubit-entanglement",
+        "dissipative-cavity-entanglement"
+      ],
+      "note": "Two-mode squeezing / noise-entanglement family already covered"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-02-11_universe-as-holographic-error-correcting-code_6c0f6fd9.md",
+      "title": "Universe as Holographic Error-Correcting Code",
+      "size": 9627,
+      "closest_wiki": [
+        "qg-deep-dive-3-holographic-codes",
+        "qg-deep-dive-2-info-holography"
+      ],
+      "note": "Holographic code cosmology; same as QG deep-dive cluster"
+    },
+    {
+      "bucket": "NEW",
+      "file": "2026-02-05_v3-4-3-prompt-evanescent-waves-hidden-transverse-spin-moment_2c39fa3c.md",
+      "title": "v3.4.3 prompt - Evanescent Waves: Hidden Transverse Spin Momentum",
+      "size": 51432,
+      "closest_wiki": [
+        "snte-light-topological-inversion",
+        "ciss-homochirality"
+      ],
+      "note": "evanescent-transverse-spin",
+      "topic_tag": "evanescent-transverse-spin"
+    },
+    {
+      "bucket": "THIN-SKIP",
+      "file": "2025-08-01_vector-potential-car_c3a4e848.md",
+      "title": "Vector Potential - car",
+      "size": 27237,
+      "closest_wiki": [],
+      "note": "Informal car-chat vector potential teaching"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-16_mesic-nuclei-discovery-at-gsi_9525664b.md",
+      "title": "η'-Mesic Nuclei Discovery at GSI",
+      "size": 41638,
+      "closest_wiki": [
+        "eta-prime-mesic-nucleus"
+      ],
+      "note": "eta-prime mesic nucleus GSI search"
+    },
+    {
+      "bucket": "SOFT-DUP",
+      "file": "2026-05-14_vacua-quantize-cosmological-constant_be01e1f5.md",
+      "title": "θ-Vacua Quantize Cosmological Constant",
+      "size": 12367,
+      "closest_wiki": [
+        "topological-cosmological-constant"
+      ],
+      "note": "theta-vacua / topological cosmological constant"
+    }
+  ]
+}

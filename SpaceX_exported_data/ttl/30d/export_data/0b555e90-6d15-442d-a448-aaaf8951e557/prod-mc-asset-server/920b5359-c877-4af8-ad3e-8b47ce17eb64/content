@@ -1,0 +1,251 @@
+
+# Tesseract Explorer v2.30 - 2025-06-19
+# Changes:
+# - Kept fallback import for Checkbox from kivy.uix if kivy.uix.checkbox fails
+# - Added diagnostic print to list kivy.uix modules for debugging
+# - Preserved v2.26 fixes: toggle mode sync and per-cell vertical axis for marking
+# - Updated version to v2.30 in comment and UI
+
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.button import Button
+from kivy.uix.togglebutton import ToggleButton
+from kivy.uix.slider import Slider
+from kivy.uix.label import Label
+from kivy.graphics import Color, Line, Rectangle
+from kivy.clock import Clock
+from kivy.properties import NumericProperty, ObjectProperty, BooleanProperty
+from kivy.core.window import Window
+import numpy as np
+import pkgutil
+import kivy.uix
+
+# Diagnostic: List available modules in kivy.uix
+print("Available modules in kivy.uix:")
+for module in pkgutil.iter_modules(kivy.uix.__path__):
+    print(f" - {module.name}")
+
+# Try importing Checkbox with fallback
+try:
+    from kivy.uix.checkbox import Checkbox
+    print("Imported Checkbox from kivy.uix.checkbox")
+except ImportError:
+    try:
+        from kivy.uix import Checkbox
+        print("Imported Checkbox from kivy.uix (fallback)")
+    except ImportError:
+        print("Failed to import Checkbox from both kivy.uix.checkbox and kivy.uix")
+        raise
+
+class TesseractLogic:
+    def __init__(self, show_4d=True):
+        self.show_4d = show_4d
+        self.initialize_geometry()
+
+    def initialize_geometry(self):
+        if self.show_4d:
+            # 4D tesseract: 16 vertices, 32 edges, 8 cells
+            self.vertices = [(x, y, z, w) for x in [0, 1] for y in [0, 1] for z in [0, 1] for w in [0, 1]]
+            self.edges = [(i, j) for i in range(16) for j in range(i+1, 16)
+                          if bin(i ^ j).count('1') == 1]
+            self.cells = {
+                'X+': [v for v in self.vertices if v[0] == 1],
+                'X-': [v for v in self.vertices if v[0] == 0],
+                'Y+': [v for v in self.vertices if v[1] == 1],
+                'Y-': [v for v in self.vertices if v[1] == 0],
+                'Z+': [v for v in self.vertices if v[2] == 1],
+                'Z-': [v for v in self.vertices if v[2] == 0],
+                'W+': [v for v in self.vertices if v[3] == 1],
+                'W-': [v for v in self.vertices if v[3] == 0],
+            }
+        else:
+            # 3D cube: 3x3x3 grid (27 vertices) for debugging
+            self.vertices = [(x, y, z, 0) for x in range(3) for y in range(3) for z in range(3)]
+            self.edges = []
+            for i, v1 in enumerate(self.vertices):
+                for j, v2 in enumerate(self.vertices[i+1:], start=i+1):
+                    if sum(abs(a - b) for a, b in zip(v1, v2)) == 1:
+                        self.edges.append((i, j))
+            self.cells = {
+                'X+': [v for v in self.vertices if v[0] == 2],
+                'X-': [v for v in self.vertices if v[0] == 0],
+                'Y+': [v for v in self.vertices if v[1] == 2],
+                'Y-': [v for v in self.vertices if v[1] == 0],
+                'Z+': [v for v in self.vertices if v[2] == 2],
+                'Z-': [v for v in self.vertices if v[2] == 0],
+                'W+': [],  # Empty in 3D mode
+                'W-': [v for v in self.vertices],  # All vertices (w=0)
+            }
+
+    def _get_faces_for_cell(self, cell):
+        cell_vertices = set(self.cells[cell])
+        faces = []
+        for v1 in cell_vertices:
+            for v2 in cell_vertices:
+                if v1 != v2 and sum(abs(a - b) for a, b in zip(v1, v2)) == 2:
+                    diff_coords = [i for i in range(4) if v1[i] != v2[i]]
+                    if len(diff_coords) == 2:
+                        face = [v1, v2]
+                        for v3 in cell_vertices:
+                            if v3 != v1 and v3 != v2 and sum(abs(a - b) for a, b in zip(v1, v3)) == 1:
+                                for v4 in cell_vertices:
+                                    if (v4 != v1 and v4 != v2 and v4 != v3 and
+                                        sum(abs(a - b) for a, b in zip(v2, v4)) == 1 and
+                                        sum(abs(a - b) for a, b in zip(v3, v4)) == 1):
+                                        face.extend([v3, v4])
+                                        break
+                                if len(face) == 4:
+                                    break
+                        if len(face) == 4:
+                            faces.append(tuple(sorted(face)))
+        return list(set(faces))
+
+class TesseractExplorer(BoxLayout):
+    rotation_speed = NumericProperty(0.1)
+    tesseract_logic = ObjectProperty(None)
+    show_4d = BooleanProperty(True)
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.orientation = 'vertical'
+        self.tesseract_logic = TesseractLogic(show_4d=self.show_4d)
+        self.build_ui()
+        self.angles = {'xy': 0, 'xz': 0, 'xw': 0, 'yz': 0, 'yw': 0, 'zw': 0}
+        self.auto_rotate = True
+        self.marking_tool = None
+        self.selected_cell = None
+        self.face_markings = {}
+        Clock.schedule_interval(self.update, 1.0 / 60.0)
+
+    def build_ui(self):
+        self.canvas_layout = FloatLayout()
+        self.add_widget(self.canvas_layout)
+
+        control_panel = BoxLayout(orientation='horizontal', size_hint=(1, 0.2))
+        self.add_widget(control_panel)
+
+        rotation_box = BoxLayout(orientation='vertical')
+        control_panel.add_widget(rotation_box)
+        rotation_box.add_widget(Label(text='Rotation Controls'))
+        for plane in ['xy', 'xz', 'xw', 'yz', 'yw', 'zw']:
+            btn_inc = Button(text=f'{plane} +')
+            btn_inc.bind(on_press=lambda inst, p=plane: self.rotate(p, 0.1))
+            btn_dec = Button(text=f'{plane} -')
+            btn_dec.bind(on_press=lambda inst, p=plane: self.rotate(p, -0.1))
+            rotation_box.add_widget(btn_inc)
+            rotation_box.add_widget(btn_dec)
+
+        marking_box = BoxLayout(orientation='vertical')
+        control_panel.add_widget(marking_box)
+        marking_box.add_widget(Label(text='Marking Tools'))
+        colors = {'Red': (1, 0, 0, 1), 'Green': (0, 1, 0, 1), 'Blue': (0, 0, 1, 1)}
+        for color_name, color in colors.items():
+            btn = ToggleButton(text=color_name, group='marking')
+            btn.bind(on_press=lambda inst, c=color: self.set_marking_tool(c))
+            marking_box.add_widget(btn)
+
+        cell_box = BoxLayout(orientation='vertical')
+        control_panel.add_widget(cell_box)
+        cell_box.add_widget(Label(text='Mark Cell Faces'))
+        for cell in ['X+', 'X-', 'Y+', 'Y-', 'Z+', 'Z-', 'W+', 'W-']:
+            btn = Button(text=cell)
+            btn.bind(on_press=lambda inst, c=cell: self.select_cell(c))
+            cell_box.add_widget(btn)
+
+        mode_box = BoxLayout(orientation='vertical')
+        control_panel.add_widget(mode_box)
+        mode_box.add_widget(Label(text='Mode'))
+        checkbox = Checkbox(active=True)
+        checkbox.bind(active=self.toggle_mode)
+        mode_box.add_widget(checkbox)
+        mode_box.add_widget(Label(text='Show 4D Tesseract'))
+        mode_box.add_widget(Label(text='v2.30'))  # Updated to v2.30
+
+        speed_box = BoxLayout(orientation='vertical')
+        control_panel.add_widget(speed_box)
+        speed_box.add_widget(Label(text='Rotation Speed'))
+        slider = Slider(min=0, max=1, value=0.1)
+        slider.bind(value=lambda inst, val: setattr(self, 'rotation_speed', val))
+        speed_box.add_widget(slider)
+
+    def toggle_mode(self, checkbox, active):
+        self.show_4d = active
+        self.tesseract_logic.show_4d = active  # Sync tesseract_logic with UI
+        self.face_markings.clear()
+        self.tesseract_logic.initialize_geometry()
+
+    def set_marking_tool(self, color):
+        self.marking_tool = color
+
+    def select_cell(self, cell):
+        self.selected_cell = cell
+        if self.marking_tool and self.selected_cell:
+            faces = self.tesseract_logic._get_faces_for_cell(cell)
+            if cell not in self.face_markings:
+                self.face_markings[cell] = {}
+            for face in faces:
+                self.face_markings[cell][face] = self.marking_tool
+
+    def rotate(self, plane, angle_delta):
+        self.angles[plane] += angle_delta
+
+    def update(self, dt):
+        if self.auto_rotate:
+            for plane in self.angles:
+                self.angles[plane] += self.rotation_speed * dt
+        self.update_canvas()
+
+    def update_canvas(self):
+        self.canvas_layout.canvas.clear()
+        with self.canvas_layout.canvas:
+            projected_vertices = [self.project_vertex(v) for v in self.tesseract_logic.vertices]
+            vertex_map = {v: p for v, p in zip(self.tesseract_logic.vertices, projected_vertices)}
+
+            Color(1, 1, 1, 1)
+            for i, j in self.tesseract_logic.edges:
+                p1 = projected_vertices[i]
+                p2 = projected_vertices[j]
+                Line(points=[p1[0], p1[1], p2[0], p2[1]], width=1)
+
+            for cell, markings in self.face_markings.items():
+                faces = self.tesseract_logic._get_faces_for_cell(cell)
+                cell_proj = [vertex_map[v] for v in self.tesseract_logic.cells[cell] if v in vertex_map]
+                if not cell_proj:
+                    continue
+                variations = [max(p[i] for p in cell_proj) - min(p[i] for p in cell_proj) for i in range(2)]
+                vertical_axis = variations.index(max(variations)) if variations else 0
+                cell_verts = self.tesseract_logic.cells[cell]
+                min_val = min(v[vertical_axis] for v in cell_verts) if cell_verts else 0
+                max_val = max(v[vertical_axis] for v in cell_verts) if cell_verts else 0
+                top_faces = [f for f in faces if all(v[vertical_axis] == max_val for v in f)]
+                bottom_faces = [f for f in faces if all(v[vertical_axis] == min_val for v in f)]
+                side_faces = [f for f in faces if f not in top_faces and f not in bottom_faces]
+                for face in faces:
+                    if face in markings:
+                        Color(*markings[face])
+                        pts = [vertex_map[v] for v in face if v in vertex_map]
+                        if len(pts) >= 2:
+                            flat_pts = [p for pt in pts for p in pt] + [pts[0][0], pts[0][1]]
+                            Line(points=flat_pts, width=2)
+
+    def project_vertex(self, vertex):
+        v = np.array(vertex, dtype=float)
+        for plane, angle in self.angles.items():
+            i, j = {'xy': (0,1), 'xz': (0,2), 'xw': (0,3), 'yz': (1,2), 'yw': (1,3), 'zw': (2,3)}[plane]
+            rot = np.eye(4)
+            rot[i,i] = rot[j,j] = np.cos(angle)
+            rot[i,j] = -np.sin(angle)
+            rot[j,i] = np.sin(angle)
+            v = np.dot(rot, v)
+        w = 1 / (2 - v[3]) if self.show_4d else 1
+        x = (v[0] * w + 1) * Window.width / 2
+        y = (v[1] * w + 1) * Window.height / 2
+        return (x, y)
+
+class TesseractApp(App):
+    def build(self):
+        return TesseractExplorer()
+
+if __name__ == '__main__':
+    TesseractApp().run()

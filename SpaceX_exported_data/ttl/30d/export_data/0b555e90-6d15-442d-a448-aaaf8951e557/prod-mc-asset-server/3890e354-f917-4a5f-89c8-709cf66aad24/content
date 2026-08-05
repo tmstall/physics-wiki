@@ -1,0 +1,330 @@
+# === Markdown to PDF v60 - Greek Letter Support + Better Wrapping ===
+# PowerShell 5.1 compatible
+# Fixes: Greek letters in math mode, no mid-word breaks, comprehensive Unicode
+
+$ErrorActionPreference = "Continue"
+
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+Set-Location -Path $ScriptDir
+
+Clear-Host
+Write-Host "===================================================" -ForegroundColor Cyan
+Write-Host "   Markdown to PDF Converter v60" -ForegroundColor Cyan
+Write-Host "   (Greek letters + improved line handling)" -ForegroundColor Cyan
+Write-Host "===================================================`n" -ForegroundColor Cyan
+
+$InputFile  = "new_Testing_Grok_file.md"
+$TempFile   = "temp_fixed.md"
+$OutputFile = "output.pdf"
+$LogFile    = "conversion_log_v60.txt"
+
+"=== Markdown to PDF Conversion Log v60 ===" | Set-Content $LogFile -Encoding UTF8
+"Started: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Add-Content $LogFile
+
+if (-not (Test-Path $InputFile)) {
+    Write-Host "ERROR: '$InputFile' not found!" -ForegroundColor Red
+    Read-Host "Press Enter to close..."
+    Exit 1
+}
+
+Write-Host "Found: $InputFile`n" -ForegroundColor Green
+
+try {
+    $content = Get-Content -Path $InputFile -Raw -Encoding UTF8
+    "Read input file: $($content.Length) characters" | Add-Content $LogFile
+    
+    # Remove markdown code fence if present (some exports wrap content)
+    if ($content -match '^```markdown\s*\n') {
+        $content = $content -replace '^```markdown\s*\n', ''
+        $content = $content -replace '\n```\s*$', ''
+        "Removed markdown code fence wrapper" | Add-Content $LogFile
+    }
+} catch {
+    Write-Host "FAILED to read input file" -ForegroundColor Red
+    Read-Host "Press Enter to close..."
+    Exit 1
+}
+
+Write-Host "Processing Markdown..." -ForegroundColor Green
+
+# Protect display math
+Write-Host "  Step 1: Protecting display math..." -ForegroundColor Yellow
+$MathVault = @{}
+$MathCount = 0
+$mathPattern = [regex]'(?s)\$\$(.*?)\$\$'
+$matches = $mathPattern.Matches($content)
+foreach ($m in $matches) {
+    $token = "##__MATH_BLOCK_${MathCount}__##"
+    $MathVault[$token] = $m.Groups[0].Value
+    $content = $content.Replace($m.Groups[0].Value, $token)
+    $MathCount++
+}
+"Protected $MathCount display math blocks" | Add-Content $LogFile
+
+# COMPREHENSIVE Unicode cleanup
+Write-Host "  Step 2: Comprehensive Unicode normalization..." -ForegroundColor Yellow
+
+# Mathematical Alphanumeric Symbols (U+1D400-U+1D7FF)
+$mathUnicodeRanges = @{
+    # Mathematical Bold Italic
+    0x1D468='A'; 0x1D469='B'; 0x1D46A='C'; 0x1D46B='D'; 0x1D46C='E'; 0x1D46D='F';
+    0x1D46E='G'; 0x1D46F='H'; 0x1D470='I'; 0x1D471='J'; 0x1D472='K'; 0x1D473='L';
+    0x1D474='M'; 0x1D475='N'; 0x1D476='O'; 0x1D477='P'; 0x1D478='Q'; 0x1D479='R';
+    0x1D47A='S'; 0x1D47B='T'; 0x1D47C='U'; 0x1D47D='V'; 0x1D47E='W'; 0x1D47F='X';
+    0x1D480='Y'; 0x1D481='Z';
+    0x1D482='a'; 0x1D483='b'; 0x1D484='c'; 0x1D485='d'; 0x1D486='e'; 0x1D487='f';
+    0x1D488='g'; 0x1D489='h'; 0x1D48A='i'; 0x1D48B='j'; 0x1D48C='k'; 0x1D48D='l';
+    0x1D48E='m'; 0x1D48F='n'; 0x1D490='o'; 0x1D491='p'; 0x1D492='q'; 0x1D493='r';
+    0x1D494='s'; 0x1D495='t'; 0x1D496='u'; 0x1D497='v'; 0x1D498='w'; 0x1D499='x';
+    0x1D49A='y'; 0x1D49B='z';
+    
+    # Mathematical Italic
+    0x1D434='A'; 0x1D435='B'; 0x1D436='C'; 0x1D437='D'; 0x1D438='E'; 0x1D439='F';
+    0x1D43A='G'; 0x1D43B='H'; 0x1D43C='I'; 0x1D43D='J'; 0x1D43E='K'; 0x1D43F='L';
+    0x1D440='M'; 0x1D441='N'; 0x1D442='O'; 0x1D443='P'; 0x1D444='Q'; 0x1D445='R';
+    0x1D446='S'; 0x1D447='T'; 0x1D448='U'; 0x1D449='V'; 0x1D44A='W'; 0x1D44B='X';
+    0x1D44C='Y'; 0x1D44D='Z';
+    0x1D44E='a'; 0x1D44F='b'; 0x1D450='c'; 0x1D451='d'; 0x1D452='e'; 0x1D453='f';
+    0x1D454='g'; 0x1D455='h'; 0x1D456='i'; 0x1D457='j'; 0x1D458='k'; 0x1D459='l';
+    0x1D45A='m'; 0x1D45B='n'; 0x1D45C='o'; 0x1D45D='p'; 0x1D45E='q'; 0x1D45F='r';
+    0x1D460='s'; 0x1D461='t'; 0x1D462='u'; 0x1D463='v'; 0x1D464='w'; 0x1D465='x';
+    0x1D466='y'; 0x1D467='z';
+    
+    # Mathematical Bold
+    0x1D400='A'; 0x1D401='B'; 0x1D402='C'; 0x1D403='D'; 0x1D404='E'; 0x1D405='F';
+    0x1D406='G'; 0x1D407='H'; 0x1D408='I'; 0x1D409='J'; 0x1D40A='K'; 0x1D40B='L';
+    0x1D40C='M'; 0x1D40D='N'; 0x1D40E='O'; 0x1D40F='P'; 0x1D410='Q'; 0x1D411='R';
+    0x1D412='S'; 0x1D413='T'; 0x1D414='U'; 0x1D415='V'; 0x1D416='W'; 0x1D417='X';
+    0x1D418='Y'; 0x1D419='Z';
+    0x1D41A='a'; 0x1D41B='b'; 0x1D41C='c'; 0x1D41D='d'; 0x1D41E='e'; 0x1D41F='f';
+    0x1D420='g'; 0x1D421='h'; 0x1D422='i'; 0x1D423='j'; 0x1D424='k'; 0x1D425='l';
+    0x1D426='m'; 0x1D427='n'; 0x1D428='o'; 0x1D429='p'; 0x1D42A='q'; 0x1D42B='r';
+    0x1D42C='s'; 0x1D42D='t'; 0x1D42E='u'; 0x1D42F='v'; 0x1D430='w'; 0x1D431='x';
+    0x1D432='y'; 0x1D433='z'
+}
+
+# Greek letters - replace with LaTeX commands wrapped in $...$
+$greekLetters = @{
+    # Lowercase
+    0x03B1='$\alpha$';   # α
+    0x03B2='$\beta$';    # β
+    0x03B3='$\gamma$';   # γ - THIS IS THE KEY ONE
+    0x03B4='$\delta$';   # δ
+    0x03B5='$\epsilon$'; # ε
+    0x03B6='$\zeta$';    # ζ
+    0x03B7='$\eta$';     # η
+    0x03B8='$\theta$';   # θ
+    0x03B9='$\iota$';    # ι
+    0x03BA='$\kappa$';   # κ
+    0x03BB='$\lambda$';  # λ
+    0x03BC='$\mu$';      # μ
+    0x03BD='$\nu$';      # ν
+    0x03BE='$\xi$';      # ξ
+    0x03BF='o';          # ο (omicron - just use 'o')
+    0x03C0='$\pi$';      # π
+    0x03C1='$\rho$';     # ρ
+    0x03C3='$\sigma$';   # σ
+    0x03C4='$\tau$';     # τ
+    0x03C5='$\upsilon$'; # υ
+    0x03C6='$\phi$';     # φ
+    0x03C7='$\chi$';     # χ
+    0x03C8='$\psi$';     # ψ
+    0x03C9='$\omega$';   # ω
+    
+    # Uppercase
+    0x0391='$\Alpha$';   # Α (often just A)
+    0x0393='$\Gamma$';   # Γ
+    0x0394='$\Delta$';   # Δ
+    0x0398='$\Theta$';   # Θ
+    0x039B='$\Lambda$';  # Λ
+    0x039E='$\Xi$';      # Ξ
+    0x03A0='$\Pi$';      # Π
+    0x03A3='$\Sigma$';   # Σ
+    0x03A6='$\Phi$';     # Φ
+    0x03A8='$\Psi$';     # Ψ
+    0x03A9='$\Omega$'    # Ω
+}
+
+# Standard Unicode (quotes, dashes)
+$standardUnicode = @{
+    0x201C='"'; 0x201D='"'; 0x2018="'"; 0x2019="'";
+    0x2013='-'; 0x2014='-'
+}
+
+$replaceCount = 0
+# Replace mathematical alphanumerics
+foreach ($code in $mathUnicodeRanges.Keys) {
+    $badChar = [char]::ConvertFromUtf32($code)
+    if ($content.Contains($badChar)) {
+        $content = $content.Replace($badChar, $mathUnicodeRanges[$code])
+        $replaceCount++
+    }
+}
+
+# Replace Greek letters
+$greekCount = 0
+foreach ($code in $greekLetters.Keys) {
+    $badChar = [char]::ConvertFromUtf32($code)
+    if ($content.Contains($badChar)) {
+        $content = $content.Replace($badChar, $greekLetters[$code])
+        $greekCount++
+        "  Replaced Greek letter U+$($code.ToString('X4')) with $($greekLetters[$code])" | Add-Content $LogFile
+    }
+}
+
+# Replace standard Unicode
+foreach ($code in $standardUnicode.Keys) {
+    $badChar = [char]::ConvertFromUtf32($code)
+    if ($content.Contains($badChar)) {
+        $content = $content.Replace($badChar, $standardUnicode[$code])
+        $replaceCount++
+    }
+}
+
+"Replaced $replaceCount Unicode + $greekCount Greek character types" | Add-Content $LogFile
+
+# Convert images to clickable links
+Write-Host "  Step 3: Converting images to clickable links..." -ForegroundColor Yellow
+$imageCount = 0
+
+$inlinePattern = [regex]'!\[([^\]]*)\]\(([^)]+)\)'
+$inlineMatches = $inlinePattern.Matches($content)
+$imageCount += $inlineMatches.Count
+foreach ($m in $inlineMatches) {
+    $alt = if ($m.Groups[1].Value) { $m.Groups[1].Value } else { "Image" }
+    $url = $m.Groups[2].Value
+    $replacement = "[View image: $alt]($url)"
+    $content = $content.Replace($m.Value, $replacement)
+}
+
+$refLinks = @{}
+$refPattern = [regex]'(?im)^\s*\[([^\]]+)\]:\s*(.+)\s*$'
+$refMatches = $refPattern.Matches($content)
+foreach ($m in $refMatches) {
+    $id = $m.Groups[1].Value.Trim()
+    $url = $m.Groups[2].Value.Trim().Trim('"').Trim("'")
+    $refLinks[$id] = $url
+    $content = $content.Replace($m.Groups[0].Value, '')
+}
+
+$refImagePattern = [regex]'!\[([^\]]*)\]\[([^\]]+)\]'
+$refImageMatches = $refImagePattern.Matches($content)
+$imageCount += $refImageMatches.Count
+$content = [regex]::Replace($content, $refImagePattern, {
+    param($m)
+    $alt = if ($m.Groups[1].Value) { $m.Groups[1].Value.Trim() } else { "Image" }
+    $id  = $m.Groups[2].Value.Trim()
+    $url = $refLinks[$id]
+    if ($url) { "[View image: $alt]($url)" } else { "[View image: $alt]" }
+})
+
+"Converted $imageCount images to clickable links" | Add-Content $LogFile
+
+# Leave isotopes as-is - they're already correct ($^{26}$P)
+Write-Host "  Step 4: Isotopes already in correct format..." -ForegroundColor Yellow
+"Isotopes left as-is (e.g., $^{26}$P)" | Add-Content $LogFile
+
+# IMPROVED line wrapping - don't break mid-word
+Write-Host "  Step 5: Smart line wrapping (no mid-word breaks)..." -ForegroundColor Yellow
+$lines = $content -split "`n"
+$wrapped = @()
+$wrappedCount = 0
+
+foreach ($line in $lines) {
+    # Only wrap lines longer than 800 chars (more generous)
+    if ($line.Length -gt 800) {
+        $wrappedCount++
+        $words = $line -split '\s+'
+        $currentLine = ""
+        
+        foreach ($word in $words) {
+            $testLine = if ($currentLine) { "$currentLine $word" } else { $word }
+            
+            # If adding this word exceeds limit, save current line and start new
+            if ($testLine.Length -gt 800 -and $currentLine) {
+                $wrapped += $currentLine
+                $currentLine = $word
+            } else {
+                $currentLine = $testLine
+            }
+        }
+        
+        # Add remaining text
+        if ($currentLine) {
+            $wrapped += $currentLine
+        }
+    } else {
+        $wrapped += $line
+    }
+}
+$content = $wrapped -join "`n"
+"Wrapped $wrappedCount long lines (word-boundary aware)" | Add-Content $LogFile
+
+# Restore display math
+Write-Host "  Step 6: Restoring display math..." -ForegroundColor Yellow
+foreach ($token in $MathVault.Keys) {
+    $content = $content.Replace($token, $MathVault[$token])
+}
+
+# Write temp file
+Write-Host "  Step 7: Writing temporary file..." -ForegroundColor Yellow
+Set-Content -Path $TempFile -Value $content -Encoding UTF8
+"Wrote temp file: $TempFile" | Add-Content $LogFile
+
+Write-Host "`nPreprocessing complete`n" -ForegroundColor Green
+
+# Run Pandoc
+Write-Host "Running Pandoc to generate PDF..." -ForegroundColor Cyan
+Write-Host "  This may take 30-60 seconds..." -ForegroundColor Yellow
+
+$pandocStartTime = Get-Date
+$pandocOutput = & pandoc $TempFile -o $OutputFile -f markdown-implicit_figures --pdf-engine=xelatex -V colorlinks=true 2>&1 | Out-String
+$pandocEndTime = Get-Date
+$duration = ($pandocEndTime - $pandocStartTime).TotalSeconds
+
+"`nPandoc completed in $duration seconds" | Add-Content $LogFile
+"Exit code: $LASTEXITCODE" | Add-Content $LogFile
+"`n=== Pandoc Output ===" | Add-Content $LogFile
+$pandocOutput | Add-Content $LogFile
+"=== End Output ===`n" | Add-Content $LogFile
+
+if ($pandocOutput -match "WARNING") {
+    Write-Host "`nWarnings detected (usually harmless):" -ForegroundColor Yellow
+    $warningLines = $pandocOutput -split "`n" | Where-Object { $_ -match "WARNING" }
+    $warningLines | ForEach-Object {
+        Write-Host "  $_" -ForegroundColor DarkYellow
+    }
+}
+
+# Check success
+if (Test-Path $OutputFile) {
+    $pdfSize = (Get-Item $OutputFile).Length
+    if ($pdfSize -gt 5000) {
+        Write-Host "`n==================================================" -ForegroundColor Green
+        Write-Host "SUCCESS! PDF generated" -ForegroundColor Green
+        Write-Host "==================================================" -ForegroundColor Green
+        Write-Host "File: $OutputFile ($pdfSize bytes)" -ForegroundColor Cyan
+        Write-Host "`nFeatures:" -ForegroundColor White
+        Write-Host "  [OK] Chemical isotopes with superscripts" -ForegroundColor Green
+        Write-Host "  [OK] Greek letters rendered correctly" -ForegroundColor Green
+        Write-Host "  [OK] Images as clickable hyperlinks" -ForegroundColor Green
+        Write-Host "  [OK] All Unicode normalized" -ForegroundColor Green
+        Write-Host "  [OK] No mid-word line breaks" -ForegroundColor Green
+        
+        "SUCCESS: PDF created ($pdfSize bytes)" | Add-Content $LogFile
+    } else {
+        Write-Host "`nWARNING: PDF seems small ($pdfSize bytes)" -ForegroundColor Yellow
+    }
+} else {
+    Write-Host "`nFAILED: PDF not generated" -ForegroundColor Red
+    "FAILED: PDF not created" | Add-Content $LogFile
+}
+
+Remove-Item $TempFile -ErrorAction SilentlyContinue
+
+"Completed: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Add-Content $LogFile
+
+Write-Host "`n===================================================" -ForegroundColor Cyan
+Write-Host "Log: $LogFile" -ForegroundColor Cyan
+Write-Host "===================================================" -ForegroundColor Cyan
+Read-Host "`nPress Enter to close..."

@@ -1,0 +1,250 @@
+{
+  "pilot_requested": 15,
+  "found": 15,
+  "usable": 15,
+  "files": [
+    {
+      "file": "2025-02-28_i-astrophysics-and-black-holes_5d552948.md",
+      "title": "I - Astrophysics (and Black Holes)",
+      "bytes": 329931,
+      "raw_chars": 322418,
+      "clean_chars": 322389,
+      "frac_removed": 0.0,
+      "n_messages_kept": 77
+    },
+    {
+      "file": "2025-03-01_i-quantum-mechanics-quantum-field-theory_c6667db7.md",
+      "title": "I - Quantum Mechanics & Quantum Field Theory",
+      "bytes": 311840,
+      "raw_chars": 307499,
+      "clean_chars": 305696,
+      "frac_removed": 0.006,
+      "n_messages_kept": 88
+    },
+    {
+      "file": "2025-05-07_quantum-field-theory_5568829a.md",
+      "title": "Quantum Field Theory ",
+      "bytes": 187872,
+      "raw_chars": 185981,
+      "clean_chars": 183819,
+      "frac_removed": 0.012,
+      "n_messages_kept": 48
+    },
+    {
+      "file": "2025-11-08_massive-gravity-gluon-magic_a16227af.md",
+      "title": "Massive Gravity/Gluon Magic",
+      "bytes": 152638,
+      "raw_chars": 160249,
+      "clean_chars": 149905,
+      "frac_removed": 0.065,
+      "n_messages_kept": 57
+    },
+    {
+      "file": "2025-05-18_nuclear-magnetization-observation-breakthrough_d40be7a8.md",
+      "title": "Nuclear Magnetization Observation Breakthrough",
+      "bytes": 158531,
+      "raw_chars": 155198,
+      "clean_chars": 154747,
+      "frac_removed": 0.003,
+      "n_messages_kept": 39
+    },
+    {
+      "file": "2025-02-28_materials-science-semiconductors-nanostructures_afa0fe4c.md",
+      "title": "Materials Science (Semiconductors & Nanostructures)",
+      "bytes": 157543,
+      "raw_chars": 154557,
+      "clean_chars": 153785,
+      "frac_removed": 0.005,
+      "n_messages_kept": 56
+    },
+    {
+      "file": "2026-05-09_hawking-radiation-from-charged-shell_7a92c9cf.md",
+      "title": "-> Hawking Radiation from Charged Shell",
+      "bytes": 148468,
+      "raw_chars": 144635,
+      "clean_chars": 144267,
+      "frac_removed": 0.003,
+      "n_messages_kept": 59
+    },
+    {
+      "file": "2025-10-01_quark-gluon-plasma-discussion_88f679b7.md",
+      "title": "Quark-gluon plasma Discussion",
+      "bytes": 27452,
+      "raw_chars": 26325,
+      "clean_chars": 26105,
+      "frac_removed": 0.008,
+      "n_messages_kept": 59
+    },
+    {
+      "file": "2026-05-05_collapse-gravity-proper-time-uncertainty_4a24df05.md",
+      "title": "-> Collapse, Gravity & Proper-Time Uncertainty",
+      "bytes": 126318,
+      "raw_chars": 123127,
+      "clean_chars": 123057,
+      "frac_removed": 0.001,
+      "n_messages_kept": 36
+    },
+    {
+      "file": "2026-05-06_quantum-proper-time-signatures-in-ion-clocks_57902025.md",
+      "title": "-> Quantum Proper Time Signatures in Ion Clocks",
+      "bytes": 47938,
+      "raw_chars": 46591,
+      "clean_chars": 46560,
+      "frac_removed": 0.001,
+      "n_messages_kept": 14
+    },
+    {
+      "file": "2026-05-17_cluster-tunneling-forges-scalable-schr-dinger-cats_19c6e325.md",
+      "title": "Cluster Tunneling Forges Scalable Schr\u00f6dinger Cats",
+      "bytes": 47314,
+      "raw_chars": 45457,
+      "clean_chars": 45452,
+      "frac_removed": 0.0,
+      "n_messages_kept": 17
+    },
+    {
+      "file": "2026-06-03_photon-truncation-creates-infinite-particle-zoo_771b4084.md",
+      "title": "Photon Truncation Creates Infinite Particle Zoo",
+      "bytes": 142603,
+      "raw_chars": 142330,
+      "clean_chars": 139522,
+      "frac_removed": 0.02,
+      "n_messages_kept": 40
+    },
+    {
+      "file": "2026-07-20_einstein-and-riemann-geometry-in-relativity_3c9369d4.md",
+      "title": "Einstein and Riemann Geometry in Relativity",
+      "bytes": 59637,
+      "raw_chars": 57725,
+      "clean_chars": 57488,
+      "frac_removed": 0.004,
+      "n_messages_kept": 60
+    },
+    {
+      "file": "2026-02-10_bec-superfluid-he4_6bdb7007.md",
+      "title": "BEC, superfluid He4",
+      "bytes": 15819,
+      "raw_chars": 14348,
+      "clean_chars": 14316,
+      "frac_removed": 0.002,
+      "n_messages_kept": 64
+    },
+    {
+      "file": "2026-05-08_photonic-supersolid-nature-paper_1390a395.md",
+      "title": "-> Photonic Supersolid Nature Paper",
+      "bytes": 44903,
+      "raw_chars": 44041,
+      "clean_chars": 43583,
+      "frac_removed": 0.01,
+      "n_messages_kept": 13
+    }
+  ],
+  "skipped": [],
+  "noise_stats": [
+    {
+      "title": "I - Astrophysics (and Black Holes)",
+      "raw_chars": 322418,
+      "clean_chars": 322389,
+      "frac_removed": 0.0,
+      "usable": true
+    },
+    {
+      "title": "I - Quantum Mechanics & Quantum Field Theory",
+      "raw_chars": 307499,
+      "clean_chars": 305696,
+      "frac_removed": 0.006,
+      "usable": true
+    },
+    {
+      "title": "Quantum Field Theory ",
+      "raw_chars": 185981,
+      "clean_chars": 183819,
+      "frac_removed": 0.012,
+      "usable": true
+    },
+    {
+      "title": "Massive Gravity/Gluon Magic",
+      "raw_chars": 160249,
+      "clean_chars": 149905,
+      "frac_removed": 0.065,
+      "usable": true
+    },
+    {
+      "title": "Nuclear Magnetization Observation Breakthrough",
+      "raw_chars": 155198,
+      "clean_chars": 154747,
+      "frac_removed": 0.003,
+      "usable": true
+    },
+    {
+      "title": "Materials Science (Semiconductors & Nanostructures)",
+      "raw_chars": 154557,
+      "clean_chars": 153785,
+      "frac_removed": 0.005,
+      "usable": true
+    },
+    {
+      "title": "-> Hawking Radiation from Charged Shell",
+      "raw_chars": 144635,
+      "clean_chars": 144267,
+      "frac_removed": 0.003,
+      "usable": true
+    },
+    {
+      "title": "Quark-gluon plasma Discussion",
+      "raw_chars": 26325,
+      "clean_chars": 26105,
+      "frac_removed": 0.008,
+      "usable": true
+    },
+    {
+      "title": "-> Collapse, Gravity & Proper-Time Uncertainty",
+      "raw_chars": 123127,
+      "clean_chars": 123057,
+      "frac_removed": 0.001,
+      "usable": true
+    },
+    {
+      "title": "-> Quantum Proper Time Signatures in Ion Clocks",
+      "raw_chars": 46591,
+      "clean_chars": 46560,
+      "frac_removed": 0.001,
+      "usable": true
+    },
+    {
+      "title": "Cluster Tunneling Forges Scalable Schr\u00f6dinger Cats",
+      "raw_chars": 45457,
+      "clean_chars": 45452,
+      "frac_removed": 0.0,
+      "usable": true
+    },
+    {
+      "title": "Photon Truncation Creates Infinite Particle Zoo",
+      "raw_chars": 142330,
+      "clean_chars": 139522,
+      "frac_removed": 0.02,
+      "usable": true
+    },
+    {
+      "title": "Einstein and Riemann Geometry in Relativity",
+      "raw_chars": 57725,
+      "clean_chars": 57488,
+      "frac_removed": 0.004,
+      "usable": true
+    },
+    {
+      "title": "BEC, superfluid He4",
+      "raw_chars": 14348,
+      "clean_chars": 14316,
+      "frac_removed": 0.002,
+      "usable": true
+    },
+    {
+      "title": "-> Photonic Supersolid Nature Paper",
+      "raw_chars": 44041,
+      "clean_chars": 43583,
+      "frac_removed": 0.01,
+      "usable": true
+    }
+  ]
+}

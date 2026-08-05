@@ -1,0 +1,138 @@
+# Molecular rotation control in superfluid helium
+
+## Human
+
+Analysis paper
+
+Control of Molecular Rotation in Helium Nanodroplets with an Optical Centrifuge
+Ian MacPhail-Bartley
+1, Alexander A. Milner
+1, Frank Stienkemeier
+2, and Valery Milner
+1,*
+
+Phys. Rev. Lett. 136, 033002 – Published 22 January, 2026
+
+DOI: https://doi.org/10.1103/5jnj-97vs
+
+22 total citations on Dimensions.
+
+Abstract
+We experimentally demonstrate that the rotation of molecules embedded in helium nanodroplets can be controlled with an optical centrifuge, allowing for the study of molecular dynamics inside the strongly interacting many-body environment of superfluid helium at variable levels of rotational excitation. By doping the droplets with dimers of nitric oxide, (NO)2, and measuring the degree of their centrifuge-induced alignment as a function of time, we show both the forced in-field rotation of molecules in a continuous range of frequencies, as well as the field-free resonant rotation with a long nanosecond-scale decay. The ability to control and monitor the rotational dynamics of molecular rotors inside the superfluid medium may shed new light on superfluidity and the interaction of superfluids with defects at the atomic level.
+
+Physics Subject Headings (PhySH)
+Coherent control
+Rotational states
+Superfluidity
+Ultrafast phenomena
+Helium-4 superfluids
+Physics logo purple small
+synopsis
+
+Spinning Molecules Suspended in Superfluid
+Published 22 January, 2026
+A technique for spinning up molecules in a gas has now been adapted to work with superfluid helium as the host medium.
+
+See more in Physics
+
+Authorization Required
+We need you to provide your credentials before accessing this content.
+Log in via your institution
+If your institution provides access using Shibboleth/OpenAthens log in.
+
+Log in via APS Member Subscription
+If you have a personal subscription through your APS membership please log in.
+Starting August 1, 2019 APS member subscribers will need to log in using your member credentials instead of your APS Journal Account.
+APS Member Log In
+Other Options
+Buy Article »
+Log in with APS Journals Account
+Log in with username/password provided by your institution
+Get access through a U.S. public or high school
+References (Subscription Required)
+Outline
+Information
+Purpose Led Publishing - Science is our shareholder
+APS Logo
+
+Authors
+
+Reviewers
+
+Librarians
+
+Students
+
+Connect
+ISSN 1079-7114 (online), 0031-9007 (print).
+©2026 American Physical Society. All rights reserved.
+Physical Review Letters™ is a trademark of the American Physical Society, registered in the United States, Canada, European Union, and Japan. The APS Physics logo and Physics logo are trademarks of the American Physical Society. Information about registration may be found here. Use of the American Physical Society websites and journals implies that the user has read and agrees to our Terms and Conditions and any applicable Subscription Agreement.
+
+## Assistant
+
+| retrieving full text
+
+Analyzing | Framework v3.7.1 | full text retrieved
+
+**Access Status**
+Full paper: retrieved from arXiv (2509.02913, HTML full text — identical to the PRL 136, 033002 version)
+Abstract: retrieved (APS page + arXiv)
+Supplementary material: APS Physics Synopsis noted; companion paper arXiv:2507.12689 (the centrifuge design paper) consulted for context
+Analysis basis: full text
+
+Pre-read note: this is a short PRL Letter, but it's a substantive experimental demonstration with real many-body physics stakes, not a narrow methods note — proceeding directly to full analysis.
+
+---
+
+## 1. Punchy Title & One-Sentence Hook
+
+**A Synchronous Motor Inside a Superfluid: Spinning Single Molecules at Dial-a-Frequency Inside Helium Nanodroplets**
+
+For the first time, an optical centrifuge has successfully grabbed and spun molecules embedded in superfluid helium — turning a single molecule into a tunable-frequency stirring rod for probing superfluidity at the atomic scale.
+
+## 2. Big-Picture Context
+
+Superfluid helium is the textbook macroscopic quantum fluid, but its microscopic behavior — how it responds to a single moving defect at the atomic scale — is still not fully understood. Helium nanodroplets (here, ~3000 atoms of $^{4}$He at 0.4 K) offer a beautiful laboratory: drop a single molecule inside, and the molecule becomes a nanoprobe of the surrounding quantum liquid. Decades of infrared spectroscopy established that embedded molecules often rotate surprisingly freely, but with renormalized rotational constants — the helium partially "dresses" the rotor, increasing its effective moment of inertia. Crucially, how strongly a molecule couples to the bath depends on whether its rotational energy overlaps the superfluid's collective excitation spectrum, especially the roton region around 180 GHz where the density of states piles up.
+
+The problem: IR spectroscopy only sees the lowest rotational states, because at 0.4 K almost everything sits in the ground state. To map the frequency dependence of molecule–superfluid coupling, researchers had to swap in different molecules with different rotational constants — which changes everything else about the probe at the same time. Time-resolved wave-packet methods (femtosecond kick pulses) added dynamics, but suffer a fundamental confound: they can't separate rotational *decoherence* from rotational *energy relaxation*, because both kill the coherent signal.
+
+The optical centrifuge — a laser pulse whose linear polarization rotates, dragging the molecule's most polarizable axis along with it — was the obvious tool to fix this, since it lets you dial in a single rotation frequency. But previous attempts in droplets failed: conventional centrifuges accelerate at ~100 GHz/ps toward terahertz terminal frequencies, and a helium-dressed molecule, with its enormously enhanced effective centrifugal distortion, simply gets flung off the merry-go-round. This paper deploys a newly developed constant-frequency centrifuge (cfCFG) — zero acceleration, tunable below 100 GHz — and shows it works.
+
+**Paper Type & Stakes:** This is an experimental technique-demonstration Letter — the first successful application of an optical centrifuge to molecules inside helium nanodroplets — whose stakes are a new, general-purpose method for probing superfluidity with a single tunable molecular rotor.
+
+**Prior Belief Check:** The findings align cleanly with mainstream consensus. The measured rotational-constant renormalization (factor of 1.9) and the long nanosecond-scale decay for rotational energies well below the roton are exactly what the field expects from twenty years of droplet spectroscopy. Experts would not be surprised by the numbers; what's notable to them is that the technique works at all, given documented prior failures. This is an enabling, incremental-but-important result — a new door opened, not a consensus overturned.
+
+**Replication & Convergence Note:** This is a single-group result (UBC, with Freiburg collaboration on droplet expertise) with no independent replication of centrifuge spinning inside droplets; independent confirmation would look like another droplet-alignment group (e.g., the Aarhus/Stapelfeldt community) reproducing controlled in-field rotation and the resonant decay with a different molecule and apparatus — important here because the interpretation of the alignment signal relies on this group's specific centrifuge calibration.
+
+## 3. Necessary Background Crash-Course
+
+**Helium nanodroplets.** Expand high-pressure helium through a cold 5-micron nozzle and it condenses into droplets of a few thousand atoms, self-cooled by evaporation to 0.4 K — below the superfluid transition. Fly the droplet beam through a pickup cell with a trace of dopant gas, and droplets swallow single molecules, cooling them instantly to the droplet temperature.
+
+*Analogy:* A droplet is like a flying cleanroom-plus-cryostat — a self-refrigerating container that isolates one molecule in the gentlest, coldest matrix known.
+*Breaks when:* you assume the matrix is passive. Unlike an inert cage, the superfluid actively dresses the molecule — dragging effective mass, renormalizing its rotational constants, and opening dissipation channels when frequencies match its collective modes.
+
+**Optical centrifuge.** Two counter-chirped, oppositely circularly polarized laser pulses interfere to make a linearly polarized field whose polarization axis rotates. The field induces a dipole in the molecule; the induced dipole torques the most polarizable molecular axis into alignment, and the axis follows the rotating polarization.
+
+*Analogy:* It's a synchronous motor — the laser field is the rotating stator field, and the molecule is a rotor that phase-locks to it, provided the field doesn't accelerate faster than the rotor can follow.
+*Breaks when:* you push to slip dynamics. In a real induction motor, a rotor that falls behind still gets torque from slip; a molecule that falls behind the centrifuge simply detaches — capture is adiabatic-or-nothing, and the dressed pendular states have no classical slip mechanism.
+
+**Constant-frequency centrifuge (cfCFG).** The conventional centrifuge chirps the rotation rate upward violently. The cfCFG instead splits one chirped pulse in a Michelson interferometer; the delay between arms fixes a constant instantaneous frequency difference between the two recombined pulses, so the polarization rotates at one steady, tunable frequency (here 8–17 GHz).
+
+*Analogy:* Conventional centrifuge = flooring the accelerator from 0 to redline; cfCFG = cruise control locked at a chosen RPM.
+*Breaks when:* you assume perfect cruise control — third-order dispersion leaves a residual ~4 GHz frequency drift over the pulse, which sets the effective linewidth of the technique.
+
+**Rotational decoherence vs. energy relaxation.** A rotational wave packet has both a phase relationship among its components and an energy content. Losing phase coherence (dephasing) and losing energy to the bath are physically distinct processes.
+
+*Analogy:* This is exactly the T2 versus T1 distinction from quantum information — phase noise versus amplitude decay in a qubit or an oscillator.
+*Breaks when:* you map it one-to-one onto two-level-system language — a rotor in a many-body bath has a ladder of states, anisotropic coupling, and the "T1" measured here is the decay of planar rotational alignment, not a single-state population lifetime.
+
+**Roton spectrum.** Superfluid helium's elementary excitations follow a dispersion curve with a minimum — the roton — around 180 GHz, where the density of states is very high. A rotor whose frequency sits near that region couples strongly and dissipates fast; well below it, the superfluid has almost nothing to absorb the energy into.
+
+*Analogy:* Driving a transmission line below its cutoff frequency — signals in the stopband barely couple into the medium and propagate losslessly; hit the band and energy pours in.
+*Breaks when:* you take "stopband" as literally zero coupling — even far below the roton, phonon emission and droplet-surface modes give finite, if slow, relaxation.
+
+**Central analogy for this paper:** a synchronous motor phase-locked inside a quantum fluid.
+
+## 4. Core Technical Explanation
+
+The team generates droplets of ~3000 $^{4}$He atoms (30 bar through a 5 μm nozzle at 18 K), dopes them with nitric oxide dimers, (NO)₂, and crosses the droplet beam with two collinear laser pulses: the cfCFG (peak intensity ~2×10¹² W/cm²) and, at a controllable delay, a 120-fs probe pulse (~5×10¹⁴ W/cm²) that Coulomb-explodes the dimer. A velocity-map-imaging spectrometer records where the NO⁺ fragments fly; the angular distribution of fragments reveals where the molecular axes pointed at the instant of explosion. The standard alignment metric is the average of cos-squared of the fragment angle relative to the centrifuge's rotation plane — call it the alignment score. Isotropic tumbling gives 0.5; axes confined to the rotation plane push it abov

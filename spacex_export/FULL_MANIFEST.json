@@ -1,0 +1,1929 @@
+{
+  "source": "SpaceX_exported_data / prod-grok-backend.json",
+  "extracted_at": "2026-08-04",
+  "total_conversations_examined": 224,
+  "kept_count": 94,
+  "newly_extracted_this_run": 79,
+  "discarded_count": 130,
+  "discard_reasons": {
+    "denylist-title": 115,
+    "not-physics": 9,
+    "too-thin": 4,
+    "denylist-body": 1,
+    "postfilter-meta-prompt": 1
+  },
+  "topic_distribution": {
+    "condensed-matter": 43,
+    "relativity": 40,
+    "astro": 36,
+    "quantum-info": 34,
+    "amo-optics": 28,
+    "cosmology": 26,
+    "quantum-foundations": 25,
+    "gravity-bh": 22,
+    "qft": 22,
+    "materials": 17,
+    "nuclear-particle": 16,
+    "chemistry": 14,
+    "math-methods": 14,
+    "biophysics": 3,
+    "physics-general": 2
+  },
+  "entries": [
+    {
+      "conversation_id": "4862e5e9-2902-4e6c-8460-3dce2e02f699",
+      "original_title": "I - Astrophysics (and Black Holes)",
+      "cleaned_filename": "2025-02-28_i-astrophysics-and-black-holes_5d552948.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "condensed-matter",
+        "amo-optics"
+      ],
+      "raw_chars": 322418,
+      "clean_chars": 322389,
+      "file_bytes": 329931,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0001
+    },
+    {
+      "conversation_id": "c94afd07-03b8-4a1a-a4f2-e12759b14f01",
+      "original_title": "Materials Science (Semiconductors & Nanostructures)",
+      "cleaned_filename": "2025-02-28_materials-science-semiconductors-nanostructures_afa0fe4c.md",
+      "topic_tags": [
+        "materials"
+      ],
+      "raw_chars": 154557,
+      "clean_chars": 153785,
+      "file_bytes": 157543,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.005
+    },
+    {
+      "conversation_id": "5b64fc1c-561f-4bd5-8164-49ca0a884de4",
+      "original_title": "Chemistry",
+      "cleaned_filename": "2025-03-01_chemistry_73efd331.md",
+      "topic_tags": [
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 65277,
+      "clean_chars": 65244,
+      "file_bytes": 66871,
+      "frac_removed": 0.0005,
+      "n_messages_kept": 16,
+      "n_responses_raw": 17,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-03-01T01:15:28.397778Z"
+    },
+    {
+      "conversation_id": "fb96a8d2-4800-4774-a664-9f54c30610e2",
+      "original_title": "I - Quantum Mechanics & Quantum Field Theory",
+      "cleaned_filename": "2025-03-01_i-quantum-mechanics-quantum-field-theory_c6667db7.md",
+      "topic_tags": [
+        "qft",
+        "condensed-matter"
+      ],
+      "raw_chars": 307499,
+      "clean_chars": 305696,
+      "file_bytes": 311840,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0059
+    },
+    {
+      "conversation_id": "f90894b3-8498-4210-8f3a-8c895fe73583",
+      "original_title": "Physics",
+      "cleaned_filename": "2025-03-10_physics_c7a8e63b.md",
+      "topic_tags": [
+        "condensed-matter",
+        "nuclear-particle",
+        "materials"
+      ],
+      "raw_chars": 24444,
+      "clean_chars": 24430,
+      "file_bytes": 25099,
+      "frac_removed": 0.0006,
+      "n_messages_kept": 8,
+      "n_responses_raw": 9,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-03-10T15:56:39.377195Z"
+    },
+    {
+      "conversation_id": "c2648359-63c0-4207-b14a-4b509e85dd19",
+      "original_title": "Biology/Microscopy",
+      "cleaned_filename": "2025-03-14_biology-microscopy_7fb6f0cb.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "biophysics"
+      ],
+      "raw_chars": 12776,
+      "clean_chars": 12776,
+      "file_bytes": 13350,
+      "frac_removed": 0.0,
+      "n_messages_kept": 8,
+      "n_responses_raw": 8,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-03-14T15:13:29.317389Z"
+    },
+    {
+      "conversation_id": "7c40c158-f99e-4471-8113-78a53c43a6de",
+      "original_title": "QFT Related",
+      "cleaned_filename": "2025-04-12_qft-related_09c7589c.md",
+      "topic_tags": [
+        "qft",
+        "condensed-matter",
+        "quantum-info",
+        "math-methods"
+      ],
+      "raw_chars": 85615,
+      "clean_chars": 85611,
+      "file_bytes": 87745,
+      "frac_removed": 0.0,
+      "n_messages_kept": 26,
+      "n_responses_raw": 28,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-04-12T18:02:45.363741Z"
+    },
+    {
+      "conversation_id": "3be0aef7-4a51-4616-8482-157c66ac3fd2",
+      "original_title": "General Physics ",
+      "cleaned_filename": "2025-04-12_general-physics_4e3dc5c4.md",
+      "topic_tags": [
+        "relativity",
+        "quantum-info",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 2833,
+      "clean_chars": 2833,
+      "file_bytes": 3203,
+      "frac_removed": 0.0,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-04-12T19:48:31.830391Z"
+    },
+    {
+      "conversation_id": "585dde81-28c7-4ea1-b109-f123089053a8",
+      "original_title": "Quantum Field Theory ",
+      "cleaned_filename": "2025-05-07_quantum-field-theory_5568829a.md",
+      "topic_tags": [
+        "qft",
+        "relativity"
+      ],
+      "raw_chars": 185981,
+      "clean_chars": 183819,
+      "file_bytes": 187872,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0116
+    },
+    {
+      "conversation_id": "f313f2c6-ff61-40b5-956c-f00dda467f3d",
+      "original_title": "Nuclear Magnetization Observation Breakthrough",
+      "cleaned_filename": "2025-05-18_nuclear-magnetization-observation-breakthrough_d40be7a8.md",
+      "topic_tags": [
+        "relativity",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 155198,
+      "clean_chars": 154747,
+      "file_bytes": 158531,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0029
+    },
+    {
+      "conversation_id": "63f08c44-572e-4fa5-9615-441d685f241d",
+      "original_title": "Quantum Information and Thermodynamics",
+      "cleaned_filename": "2025-07-12_quantum-information-and-thermodynamics_b7200478.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "quantum-info"
+      ],
+      "raw_chars": 18434,
+      "clean_chars": 18432,
+      "file_bytes": 19140,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 10,
+      "n_responses_raw": 10,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-07-12T04:54:44.704180Z"
+    },
+    {
+      "conversation_id": "fc9dbb72-ec07-4feb-a514-92aa7437dc42",
+      "original_title": "Quantum Field Theory Basics for Chemists",
+      "cleaned_filename": "2025-07-30_quantum-field-theory-basics-for-chemists_a0236668.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "nuclear-particle",
+        "astro",
+        "amo-optics",
+        "chemistry"
+      ],
+      "raw_chars": 15536,
+      "clean_chars": 15524,
+      "file_bytes": 16546,
+      "frac_removed": 0.0008,
+      "n_messages_kept": 24,
+      "n_responses_raw": 24,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-07-30T00:35:08.018727Z"
+    },
+    {
+      "conversation_id": "a5dee4b5-bbe5-4586-a864-ede5d5f15ee4",
+      "original_title": "Quantum Field Theory and QED Vectors",
+      "cleaned_filename": "2025-07-30_quantum-field-theory-and-qed-vectors_4da72e5b.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "condensed-matter",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 13533,
+      "clean_chars": 13467,
+      "file_bytes": 14399,
+      "frac_removed": 0.0049,
+      "n_messages_kept": 22,
+      "n_responses_raw": 24,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-07-30T21:55:29.848394Z"
+    },
+    {
+      "conversation_id": "fe20f266-c6f6-4e44-802d-5a1fb025be46",
+      "original_title": "Quantum Field Theory Perspective",
+      "cleaned_filename": "2025-08-01_quantum-field-theory-perspective_dfc276c9.md",
+      "topic_tags": [
+        "qft",
+        "astro"
+      ],
+      "raw_chars": 68355,
+      "clean_chars": 68299,
+      "file_bytes": 71010,
+      "frac_removed": 0.0008,
+      "n_messages_kept": 47,
+      "n_responses_raw": 50,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-08-01T18:25:57.363786Z"
+    },
+    {
+      "conversation_id": "8f0fb3fc-3a5d-438e-8938-e3959ccac06f",
+      "original_title": "Vector Potential - car",
+      "cleaned_filename": "2025-08-01_vector-potential-car_c3a4e848.md",
+      "topic_tags": [
+        "condensed-matter"
+      ],
+      "raw_chars": 26198,
+      "clean_chars": 25857,
+      "file_bytes": 27237,
+      "frac_removed": 0.013,
+      "n_messages_kept": 61,
+      "n_responses_raw": 72,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-08-01T21:55:59.488002Z"
+    },
+    {
+      "conversation_id": "1be91f8c-d303-46fc-81ca-e44c584f5c61",
+      "original_title": "Quantum Field Theory Basics -  car",
+      "cleaned_filename": "2025-08-04_quantum-field-theory-basics-car_ae9cfbc1.md",
+      "topic_tags": [
+        "qft",
+        "condensed-matter",
+        "quantum-info",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 90085,
+      "clean_chars": 82227,
+      "file_bytes": 84585,
+      "frac_removed": 0.0872,
+      "n_messages_kept": 63,
+      "n_responses_raw": 68,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-08-04T17:56:48.810247Z"
+    },
+    {
+      "conversation_id": "3e3ce98e-aaf6-4aa8-a552-71967400444e",
+      "original_title": "Early Universe Ionization by Supermassive Stars",
+      "cleaned_filename": "2025-08-20_early-universe-ionization-by-supermassive-stars_fd46ef60.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "condensed-matter",
+        "quantum-foundations"
+      ],
+      "raw_chars": 8421,
+      "clean_chars": 8421,
+      "file_bytes": 8978,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-08-20T05:21:46.495277Z"
+    },
+    {
+      "conversation_id": "89f1a37d-c3b5-45af-ace6-55893a46837e",
+      "original_title": "EMC Effect: Quarks and Gluons",
+      "cleaned_filename": "2025-08-29_emc-effect-quarks-and-gluons_a467bb47.md",
+      "topic_tags": [
+        "qft",
+        "quantum-info",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 13802,
+      "clean_chars": 13724,
+      "file_bytes": 14331,
+      "frac_removed": 0.0057,
+      "n_messages_kept": 16,
+      "n_responses_raw": 18,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-08-29T23:05:13.707386Z"
+    },
+    {
+      "conversation_id": "70a9f320-f5a9-479c-9921-ab21e75f3d58",
+      "original_title": "Technical Paper Discussion Continuation",
+      "cleaned_filename": "2025-09-12_technical-paper-discussion-continuation_4fca6e67.md",
+      "topic_tags": [
+        "quantum-info"
+      ],
+      "raw_chars": 8039,
+      "clean_chars": 7990,
+      "file_bytes": 8827,
+      "frac_removed": 0.0061,
+      "n_messages_kept": 28,
+      "n_responses_raw": 30,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-09-12T18:39:27.999101Z"
+    },
+    {
+      "conversation_id": "a066f35c-e015-4517-8630-bc1ebfce03e1",
+      "original_title": "QMM - Information as Fundamental Cosmic Component",
+      "cleaned_filename": "2025-09-26_qmm-information-as-fundamental-cosmic-component_5901c9a9.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "cosmology",
+        "quantum-info",
+        "astro",
+        "math-methods"
+      ],
+      "raw_chars": 27481,
+      "clean_chars": 23589,
+      "file_bytes": 24180,
+      "frac_removed": 0.1416,
+      "n_messages_kept": 8,
+      "n_responses_raw": 8,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-09-26T06:28:55.222220Z"
+    },
+    {
+      "conversation_id": "82aa7039-fcb0-458a-87dd-625bb9029619",
+      "original_title": "Continuing QMM",
+      "cleaned_filename": "2025-09-29_continuing-qmm_c7ba254f.md",
+      "topic_tags": [
+        "math-methods"
+      ],
+      "raw_chars": 38575,
+      "clean_chars": 38184,
+      "file_bytes": 39897,
+      "frac_removed": 0.0101,
+      "n_messages_kept": 67,
+      "n_responses_raw": 74,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-09-29T18:24:12.077704Z"
+    },
+    {
+      "conversation_id": "89365450-76ca-422f-86fd-497929869c52",
+      "original_title": "QMM and Dark Matter",
+      "cleaned_filename": "2025-09-29_qmm-and-dark-matter_e136b865.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology",
+        "condensed-matter",
+        "quantum-info",
+        "math-methods"
+      ],
+      "raw_chars": 16359,
+      "clean_chars": 16138,
+      "file_bytes": 17282,
+      "frac_removed": 0.0135,
+      "n_messages_kept": 49,
+      "n_responses_raw": 60,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-09-29T21:22:11.741692Z"
+    },
+    {
+      "conversation_id": "83534aea-3672-4095-8da6-c1bb98dc90ce",
+      "original_title": "Precision Net-Proton Fluctuations at RHIC",
+      "cleaned_filename": "2025-10-01_precision-net-proton-fluctuations-at-rhic_284130d8.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "quantum-info",
+        "nuclear-particle"
+      ],
+      "raw_chars": 10288,
+      "clean_chars": 9845,
+      "file_bytes": 10365,
+      "frac_removed": 0.0431,
+      "n_messages_kept": 6,
+      "n_responses_raw": 6,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-10-01T16:59:43.388048Z"
+    },
+    {
+      "conversation_id": "f051bebf-944f-4880-a3a9-ce1fa1c1c53b",
+      "original_title": "Quark-gluon plasma Discussion",
+      "cleaned_filename": "2025-10-01_quark-gluon-plasma-discussion_88f679b7.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "quantum-info",
+        "nuclear-particle"
+      ],
+      "raw_chars": 26325,
+      "clean_chars": 26105,
+      "file_bytes": 27452,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0084
+    },
+    {
+      "conversation_id": "f945cc0a-2b6f-44f7-aa19-70f1085b0b74",
+      "original_title": "Astronomy & Cosmology Advances",
+      "cleaned_filename": "2025-10-20_astronomy-cosmology-advances_7cfc9fe8.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "cosmology"
+      ],
+      "raw_chars": 20153,
+      "clean_chars": 20153,
+      "file_bytes": 20980,
+      "frac_removed": 0.0,
+      "n_messages_kept": 10,
+      "n_responses_raw": 10,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-10-20T04:19:24.552702Z"
+    },
+    {
+      "conversation_id": "1fbbef52-462e-497b-9ff6-6b200940c6b4",
+      "original_title": "Massive Gravity/Gluon Magic",
+      "cleaned_filename": "2025-11-08_massive-gravity-gluon-magic_a16227af.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "cosmology",
+        "quantum-foundations",
+        "nuclear-particle",
+        "amo-optics"
+      ],
+      "raw_chars": 160249,
+      "clean_chars": 149905,
+      "file_bytes": 152638,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0645
+    },
+    {
+      "conversation_id": "9f9ddd36-e4ad-4564-ba69-8a583caea8ca",
+      "original_title": "Sun's Photon Generation via Fusion Reactions",
+      "cleaned_filename": "2025-11-11_sun-s-photon-generation-via-fusion-reactions_4720fc2d.md",
+      "topic_tags": [
+        "amo-optics"
+      ],
+      "raw_chars": 4357,
+      "clean_chars": 4315,
+      "file_bytes": 4837,
+      "frac_removed": 0.0096,
+      "n_messages_kept": 11,
+      "n_responses_raw": 12,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-11-11T20:42:59.142755Z"
+    },
+    {
+      "conversation_id": "86bc7958-e81e-430f-80b8-04630faa4d92",
+      "original_title": "Perovskite Research: Synthesis and Optimization",
+      "cleaned_filename": "2025-11-17_perovskite-research-synthesis-and-optimization_cf3c923a.md",
+      "topic_tags": [
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 6774,
+      "clean_chars": 6567,
+      "file_bytes": 7125,
+      "frac_removed": 0.0306,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2025-11-17T04:14:18.795366Z"
+    },
+    {
+      "conversation_id": "d9676023-24e3-44bb-aaae-53890865f3ca",
+      "original_title": "Five-Dimensional Classical Gravity Model",
+      "cleaned_filename": "2026-01-07_five-dimensional-classical-gravity-model_c344a460.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "relativity",
+        "quantum-info"
+      ],
+      "raw_chars": 84091,
+      "clean_chars": 83191,
+      "file_bytes": 85270,
+      "frac_removed": 0.0107,
+      "n_messages_kept": 26,
+      "n_responses_raw": 26,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-01-07T17:33:33.848046Z"
+    },
+    {
+      "conversation_id": "6d14e9e8-06f9-434d-88ba-6c33c5888645",
+      "original_title": "Temporal Imbalance Theory: Gravity's New Clock",
+      "cleaned_filename": "2026-01-11_temporal-imbalance-theory-gravity-s-new-clock_bc2d307c.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "relativity",
+        "cosmology"
+      ],
+      "raw_chars": 46372,
+      "clean_chars": 46367,
+      "file_bytes": 47426,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 10,
+      "n_responses_raw": 10,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-01-11T09:18:01.575218Z"
+    },
+    {
+      "conversation_id": "1bb00a7f-8279-4fca-921d-543eeb180aaf",
+      "original_title": "Laboratory Suppression of Blazar Instabilities",
+      "cleaned_filename": "2026-01-14_laboratory-suppression-of-blazar-instabilities_fcdb46c3.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 9799,
+      "clean_chars": 9798,
+      "file_bytes": 10312,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-01-14T21:07:45.216521Z"
+    },
+    {
+      "conversation_id": "18e1ace5-980b-4ff8-b8c5-1f888ceb8225",
+      "original_title": "Spin Networks to Spin Foams Evolution",
+      "cleaned_filename": "2026-01-17_spin-networks-to-spin-foams-evolution_560ee84e.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "math-methods"
+      ],
+      "raw_chars": 11107,
+      "clean_chars": 11107,
+      "file_bytes": 11594,
+      "frac_removed": 0.0,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-01-17T21:11:05.310758Z"
+    },
+    {
+      "conversation_id": "27254a4d-9115-4eeb-b81a-a85c76b93f4a",
+      "original_title": "Positronium Diffraction Breakthrough in Antimatter Physics",
+      "cleaned_filename": "2026-01-19_positronium-diffraction-breakthrough-in-antimatter-physics_1d9d4313.md",
+      "topic_tags": [
+        "qft",
+        "condensed-matter",
+        "quantum-foundations",
+        "quantum-info"
+      ],
+      "raw_chars": 8361,
+      "clean_chars": 8361,
+      "file_bytes": 8853,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-01-19T23:02:26.322325Z"
+    },
+    {
+      "conversation_id": "74289620-7d6c-4f42-9413-4b31794f7a0f",
+      "original_title": "v3.4.3 prompt - Evanescent Waves: Hidden Transverse Spin Momentum",
+      "cleaned_filename": "2026-02-05_v3-4-3-prompt-evanescent-waves-hidden-transverse-spin-moment_2c39fa3c.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "condensed-matter",
+        "amo-optics"
+      ],
+      "raw_chars": 51299,
+      "clean_chars": 50237,
+      "file_bytes": 51432,
+      "frac_removed": 0.0207,
+      "n_messages_kept": 12,
+      "n_responses_raw": 12,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-05T03:23:34.775636Z"
+    },
+    {
+      "conversation_id": "b1f596bf-3f5c-435d-9b22-62feaef71f3c",
+      "original_title": "JWST Reveals Hydrocarbon Factory in ULIRG",
+      "cleaned_filename": "2026-02-07_jwst-reveals-hydrocarbon-factory-in-ulirg_757ca7d7.md",
+      "topic_tags": [
+        "cosmology",
+        "amo-optics",
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 9053,
+      "clean_chars": 8876,
+      "file_bytes": 9336,
+      "frac_removed": 0.0196,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-07T18:38:11.590931Z"
+    },
+    {
+      "conversation_id": "f5acd41f-7735-43ed-9f5c-56e8f78fcc3a",
+      "original_title": "Clustering of Conditional Mutual Information",
+      "cleaned_filename": "2026-02-08_clustering-of-conditional-mutual-information_6b2b0505.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "cosmology",
+        "chemistry"
+      ],
+      "raw_chars": 14991,
+      "clean_chars": 14991,
+      "file_bytes": 15528,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 3,
+      "keep_reason": "body-physics-substance",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-08T01:10:31.718848Z"
+    },
+    {
+      "conversation_id": "c3b10b09-843a-4ebc-a693-8acc5f13d1af",
+      "original_title": "Quantum Metric from Spin-Momentum Locking",
+      "cleaned_filename": "2026-02-08_quantum-metric-from-spin-momentum-locking_7ba11668.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "astro",
+        "materials",
+        "math-methods"
+      ],
+      "raw_chars": 35731,
+      "clean_chars": 35727,
+      "file_bytes": 36927,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 12,
+      "n_responses_raw": 13,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-08T04:33:46.049696Z"
+    },
+    {
+      "conversation_id": "244bcf9c-d342-4e97-a6a2-dfa1293a88ff",
+      "original_title": "Generation v3.4.4.1 - Holographic Universe: Error-Correcting Cosmology",
+      "cleaned_filename": "2026-02-08_generation-v3-4-4-1-holographic-universe-error-correcting-co_25dca1ca.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "cosmology",
+        "quantum-info",
+        "chemistry"
+      ],
+      "raw_chars": 7033,
+      "clean_chars": 7033,
+      "file_bytes": 7645,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-08T19:36:18.391547Z"
+    },
+    {
+      "conversation_id": "ca3e35e2-a107-4920-b1db-ecaa53ecf6ad",
+      "original_title": "Physically Possible Warp Drive Breakthrough",
+      "cleaned_filename": "2026-02-09_physically-possible-warp-drive-breakthrough_a388b090.md",
+      "topic_tags": [
+        "relativity",
+        "quantum-info",
+        "nuclear-particle"
+      ],
+      "raw_chars": 12704,
+      "clean_chars": 12350,
+      "file_bytes": 12854,
+      "frac_removed": 0.0279,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-09T07:12:10.888449Z"
+    },
+    {
+      "conversation_id": "2edb8b7e-47d9-4e00-a19d-e2c0f1071191",
+      "original_title": "Cooper Pairs in Superconductivity Explained",
+      "cleaned_filename": "2026-02-10_cooper-pairs-in-superconductivity-explained_43aca8a3.md",
+      "topic_tags": [
+        "condensed-matter"
+      ],
+      "raw_chars": 9274,
+      "clean_chars": 9258,
+      "file_bytes": 10295,
+      "frac_removed": 0.0017,
+      "n_messages_kept": 38,
+      "n_responses_raw": 38,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-10T20:24:25.610627Z"
+    },
+    {
+      "conversation_id": "0616c33a-f441-43c0-9003-dd592e3b6ab1",
+      "original_title": "BEC, superfluid He4",
+      "cleaned_filename": "2026-02-10_bec-superfluid-he4_6bdb7007.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "condensed-matter"
+      ],
+      "raw_chars": 14348,
+      "clean_chars": 14316,
+      "file_bytes": 15819,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0022
+    },
+    {
+      "conversation_id": "bf284b56-936e-403e-955d-66621d0bd9f2",
+      "original_title": "Microfluidic Electro-Viscoelastic Nano-Particle Separation",
+      "cleaned_filename": "2026-02-11_microfluidic-electro-viscoelastic-nano-particle-separation_fec8a441.md",
+      "topic_tags": [
+        "astro",
+        "chemistry"
+      ],
+      "raw_chars": 11897,
+      "clean_chars": 11237,
+      "file_bytes": 11740,
+      "frac_removed": 0.0555,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-11T04:45:40.640098Z"
+    },
+    {
+      "conversation_id": "866e97b5-af3d-4778-96c7-c4cf55967217",
+      "original_title": "JWST Reveals UV-Deficient Low-Luminosity AGN",
+      "cleaned_filename": "2026-02-11_jwst-reveals-uv-deficient-low-luminosity-agn_5567d75b.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 11782,
+      "clean_chars": 11461,
+      "file_bytes": 11957,
+      "frac_removed": 0.0272,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-11T20:08:30.723647Z"
+    },
+    {
+      "conversation_id": "9a80a638-431e-4c3a-949f-fcdaad7739a6",
+      "original_title": "Universe as Holographic Error-Correcting Code",
+      "cleaned_filename": "2026-02-11_universe-as-holographic-error-correcting-code_6c0f6fd9.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "quantum-foundations",
+        "quantum-info"
+      ],
+      "raw_chars": 9712,
+      "clean_chars": 9181,
+      "file_bytes": 9627,
+      "frac_removed": 0.0547,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-11T20:14:29.060411Z"
+    },
+    {
+      "conversation_id": "f29c2fbe-2ffe-4931-91b4-be8a14006e8a",
+      "original_title": "Programmable Non-Abelian Photonic Braiding",
+      "cleaned_filename": "2026-02-13_programmable-non-abelian-photonic-braiding_c725bcab.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology",
+        "condensed-matter",
+        "quantum-info",
+        "amo-optics",
+        "math-methods"
+      ],
+      "raw_chars": 10280,
+      "clean_chars": 9352,
+      "file_bytes": 9813,
+      "frac_removed": 0.0903,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-13T04:26:20.584673Z"
+    },
+    {
+      "conversation_id": "4130694a-f5e0-4d88-989e-7c2ec8620dee",
+      "original_title": "Electric Nucleation of 3D Magnetic Heliknotons",
+      "cleaned_filename": "2026-02-14_electric-nucleation-of-3d-magnetic-heliknotons_65da18c4.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-info",
+        "astro",
+        "materials",
+        "math-methods"
+      ],
+      "raw_chars": 9320,
+      "clean_chars": 8645,
+      "file_bytes": 9118,
+      "frac_removed": 0.0724,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-14T04:53:46.399681Z"
+    },
+    {
+      "conversation_id": "6bf7bb12-c22c-41c4-bde7-46b01bfed6ce",
+      "original_title": "Supermoiré Trilayer Graphene Superconductivity",
+      "cleaned_filename": "2026-02-16_supermoir-trilayer-graphene-superconductivity_f38a787f.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "materials"
+      ],
+      "raw_chars": 10593,
+      "clean_chars": 10593,
+      "file_bytes": 11088,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-16T00:46:40.102255Z"
+    },
+    {
+      "conversation_id": "183384b7-70a3-45fc-88c1-e4379a917f10",
+      "original_title": "Anyon-Trions Reveal Fractional Charges in Twisted MoTe₂",
+      "cleaned_filename": "2026-02-16_anyon-trions-reveal-fractional-charges-in-twisted-mote_7e86dd11.md",
+      "topic_tags": [
+        "cosmology",
+        "condensed-matter",
+        "quantum-foundations",
+        "astro",
+        "amo-optics",
+        "materials",
+        "math-methods"
+      ],
+      "raw_chars": 8520,
+      "clean_chars": 8520,
+      "file_bytes": 8990,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-16T16:54:42.861076Z"
+    },
+    {
+      "conversation_id": "7bd5937f-f603-481c-885e-82cf90d131b8",
+      "original_title": "Long-term Timing of PSR J1906+0746 Binary",
+      "cleaned_filename": "2026-02-17_long-term-timing-of-psr-j1906-0746-binary_19e0bfc4.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology",
+        "condensed-matter",
+        "quantum-foundations",
+        "astro"
+      ],
+      "raw_chars": 21298,
+      "clean_chars": 20944,
+      "file_bytes": 21578,
+      "frac_removed": 0.0166,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-17T01:03:40.998711Z"
+    },
+    {
+      "conversation_id": "df4136d2-3682-4b12-8940-729b5bb43175",
+      "original_title": "Quantum Field Theory: Virtual Particles Analysis",
+      "cleaned_filename": "2026-02-17_quantum-field-theory-virtual-particles-analysis_7510072d.md",
+      "topic_tags": [
+        "qft",
+        "condensed-matter",
+        "quantum-info",
+        "astro",
+        "amo-optics",
+        "materials"
+      ],
+      "raw_chars": 10329,
+      "clean_chars": 9580,
+      "file_bytes": 10059,
+      "frac_removed": 0.0725,
+      "n_messages_kept": 3,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-17T17:18:31.775550Z"
+    },
+    {
+      "conversation_id": "e78aa869-c382-42fe-bcba-a82e32e0d749",
+      "original_title": "Flexible Electrodynamic Dust Shields for Moon",
+      "cleaned_filename": "2026-02-22_flexible-electrodynamic-dust-shields-for-moon_5b2e8080.md",
+      "topic_tags": [
+        "condensed-matter",
+        "materials"
+      ],
+      "raw_chars": 20793,
+      "clean_chars": 20262,
+      "file_bytes": 20819,
+      "frac_removed": 0.0255,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-22T00:00:10.439229Z"
+    },
+    {
+      "conversation_id": "e60dad79-d64d-4795-9f6a-4245d510a38b",
+      "original_title": "Reviving Schrödinger's Geometric Color Vision Theory",
+      "cleaned_filename": "2026-02-24_reviving-schr-dinger-s-geometric-color-vision-theory_2c22f0bf.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology",
+        "condensed-matter"
+      ],
+      "raw_chars": 17774,
+      "clean_chars": 17287,
+      "file_bytes": 17914,
+      "frac_removed": 0.0274,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-24T01:42:38.450209Z"
+    },
+    {
+      "conversation_id": "3530a845-bfe4-41af-85ce-bd93aae41863",
+      "original_title": "Phosphorus Radical-Catalyzed Markovnikov Hydroamination",
+      "cleaned_filename": "2026-02-25_phosphorus-radical-catalyzed-markovnikov-hydroamination_de2d756d.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "nuclear-particle",
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 8903,
+      "clean_chars": 8903,
+      "file_bytes": 9373,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-25T17:58:30.226404Z"
+    },
+    {
+      "conversation_id": "78276bb4-ca23-4060-9117-75dd39cc0626",
+      "original_title": "IRAS 21204+4913: Eruptive Low-Mass FUor",
+      "cleaned_filename": "2026-02-26_iras-21204-4913-eruptive-low-mass-fuor_48e8a69e.md",
+      "topic_tags": [
+        "cosmology",
+        "quantum-info",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 9689,
+      "clean_chars": 9688,
+      "file_bytes": 10138,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-02-26T20:19:23.353850Z"
+    },
+    {
+      "conversation_id": "ad8ab047-d521-4f03-878c-5e407d4bb565",
+      "original_title": "Femtosecond Spin-Conserving Coherent Tin-Vacancy Excitation",
+      "cleaned_filename": "2026-03-26_femtosecond-spin-conserving-coherent-tin-vacancy-excitation_0a0600d1.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "relativity",
+        "cosmology",
+        "quantum-foundations",
+        "quantum-info",
+        "nuclear-particle",
+        "astro",
+        "amo-optics",
+        "materials",
+        "math-methods",
+        "chemistry"
+      ],
+      "raw_chars": 21478,
+      "clean_chars": 21478,
+      "file_bytes": 22250,
+      "frac_removed": 0.0,
+      "n_messages_kept": 3,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-03-26T01:02:32.743205Z"
+    },
+    {
+      "conversation_id": "13159aa1-eba9-4b38-b498-715fa325fdde",
+      "original_title": "Femtosecond Laser Pulse: Carrier-Envelope Phase Explained",
+      "cleaned_filename": "2026-04-05_femtosecond-laser-pulse-carrier-envelope-phase-explained_750daeba.md",
+      "topic_tags": [
+        "quantum-info",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 26688,
+      "clean_chars": 26685,
+      "file_bytes": 28052,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 12,
+      "n_responses_raw": 12,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-04-05T00:37:50.350974Z"
+    },
+    {
+      "conversation_id": "0946b645-0dbd-44cc-84b7-ac9c5b548d3b",
+      "original_title": "-> High-pT Jets: Early ISR Evidence 1970s",
+      "cleaned_filename": "2026-04-16_high-pt-jets-early-isr-evidence-1970s_af30aa25.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-info",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 59086,
+      "clean_chars": 57892,
+      "file_bytes": 59243,
+      "frac_removed": 0.0202,
+      "n_messages_kept": 18,
+      "n_responses_raw": 18,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-04-16T02:33:53.830072Z"
+    },
+    {
+      "conversation_id": "41cb194e-49df-42c1-911a-fd2ad7bb6f3c",
+      "original_title": "-> Magnesium-Promoted Benzidine Rearrangement Breakthrough",
+      "cleaned_filename": "2026-04-30_magnesium-promoted-benzidine-rearrangement-breakthrough_d07a73a5.md",
+      "topic_tags": [
+        "condensed-matter",
+        "astro",
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 10592,
+      "clean_chars": 10308,
+      "file_bytes": 10864,
+      "frac_removed": 0.0268,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-04-30T17:02:12.421160Z"
+    },
+    {
+      "conversation_id": "bdc0a238-ab3f-4a6a-8942-bda7431ecbdb",
+      "original_title": "-> Programmable Kinetic Barcoding for Cas13a Multiplexing",
+      "cleaned_filename": "2026-05-01_programmable-kinetic-barcoding-for-cas13a-multiplexing_433319cb.md",
+      "topic_tags": [
+        "astro",
+        "chemistry"
+      ],
+      "raw_chars": 14968,
+      "clean_chars": 14967,
+      "file_bytes": 15519,
+      "frac_removed": 0.0001,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-01T16:40:41.746369Z"
+    },
+    {
+      "conversation_id": "fbe21ca2-e079-41b0-a46f-4c9e22713f67",
+      "original_title": "-> Sub-2 Å Cryo-EM of Transcribing RNA Polymerase II",
+      "cleaned_filename": "2026-05-01_sub-2-cryo-em-of-transcribing-rna-polymerase-ii_55dfe2e1.md",
+      "topic_tags": [
+        "condensed-matter",
+        "chemistry",
+        "biophysics"
+      ],
+      "raw_chars": 6275,
+      "clean_chars": 5991,
+      "file_bytes": 6493,
+      "frac_removed": 0.0453,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-01T23:45:23.241758Z"
+    },
+    {
+      "conversation_id": "19b0929c-478d-4e97-93da-9aa25eb392d4",
+      "original_title": "-> SiV Centers in Diamond: Tension-Induced Symmetry Breaking",
+      "cleaned_filename": "2026-05-04_siv-centers-in-diamond-tension-induced-symmetry-breaking_e044c9ed.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-foundations",
+        "quantum-info",
+        "astro",
+        "amo-optics",
+        "materials"
+      ],
+      "raw_chars": 21632,
+      "clean_chars": 21628,
+      "file_bytes": 22336,
+      "frac_removed": 0.0002,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-04T17:25:08.057369Z"
+    },
+    {
+      "conversation_id": "c9c43ac3-6e7a-400d-8eab-8140b4a6ae06",
+      "original_title": "-> Collapse, Gravity & Proper-Time Uncertainty",
+      "cleaned_filename": "2026-05-05_collapse-gravity-proper-time-uncertainty_4a24df05.md",
+      "topic_tags": [
+        "qft",
+        "relativity",
+        "quantum-foundations"
+      ],
+      "raw_chars": 123127,
+      "clean_chars": 123057,
+      "file_bytes": 126318,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0006
+    },
+    {
+      "conversation_id": "9b148a4f-6d8a-41ff-98c9-123e82a7ff0c",
+      "original_title": "-> Quantum Proper Time Signatures in Ion Clocks",
+      "cleaned_filename": "2026-05-06_quantum-proper-time-signatures-in-ion-clocks_57902025.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "quantum-info",
+        "amo-optics"
+      ],
+      "raw_chars": 46591,
+      "clean_chars": 46560,
+      "file_bytes": 47938,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0007
+    },
+    {
+      "conversation_id": "5c702723-69e5-4b17-8a63-cf50b746cc51",
+      "original_title": "Liquids Pin Bio-Friendly Constants",
+      "cleaned_filename": "2026-05-08_liquids-pin-bio-friendly-constants_cdd8a90f.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-foundations",
+        "nuclear-particle",
+        "astro",
+        "chemistry"
+      ],
+      "raw_chars": 29601,
+      "clean_chars": 29419,
+      "file_bytes": 30556,
+      "frac_removed": 0.0061,
+      "n_messages_kept": 7,
+      "n_responses_raw": 7,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-08T15:44:58.905558Z"
+    },
+    {
+      "conversation_id": "fe8cd9db-9973-4658-9617-12663dc10dc9",
+      "original_title": "-> Quantum Metallurgy: CDW Electron Crystals Melt",
+      "cleaned_filename": "2026-05-08_quantum-metallurgy-cdw-electron-crystals-melt_ad2a2c65.md",
+      "topic_tags": [
+        "condensed-matter",
+        "quantum-foundations"
+      ],
+      "raw_chars": 44319,
+      "clean_chars": 43950,
+      "file_bytes": 45455,
+      "frac_removed": 0.0083,
+      "n_messages_kept": 16,
+      "n_responses_raw": 16,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-08T18:18:59.088498Z"
+    },
+    {
+      "conversation_id": "249cf340-26cc-45ce-93c0-78d483b5ee9d",
+      "original_title": "-> Photonic Supersolid Nature Paper",
+      "cleaned_filename": "2026-05-08_photonic-supersolid-nature-paper_1390a395.md",
+      "topic_tags": [
+        "amo-optics",
+        "materials"
+      ],
+      "raw_chars": 44041,
+      "clean_chars": 43583,
+      "file_bytes": 44903,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0104
+    },
+    {
+      "conversation_id": "7943747d-62aa-4acd-af1c-19a3067e4fd0",
+      "original_title": "-> Hawking Radiation from Charged Shell",
+      "cleaned_filename": "2026-05-09_hawking-radiation-from-charged-shell_7a92c9cf.md",
+      "topic_tags": [
+        "qft",
+        "gravity-bh",
+        "relativity",
+        "condensed-matter",
+        "quantum-foundations",
+        "quantum-info",
+        "astro",
+        "math-methods"
+      ],
+      "raw_chars": 144635,
+      "clean_chars": 144267,
+      "file_bytes": 148468,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0025
+    },
+    {
+      "conversation_id": "1c7c91c0-116a-4d67-82e8-f72f42a02fd3",
+      "original_title": "1D Anyons Momentum Tails",
+      "cleaned_filename": "2026-05-10_1d-anyons-momentum-tails_6e74a90c.md",
+      "topic_tags": [
+        "condensed-matter",
+        "quantum-info"
+      ],
+      "raw_chars": 12162,
+      "clean_chars": 11606,
+      "file_bytes": 12145,
+      "frac_removed": 0.0457,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-10T02:27:05.185458Z"
+    },
+    {
+      "conversation_id": "560cfa0f-5ec3-43c0-970e-4a491b97496c",
+      "original_title": "-> Neural Net Cosmology Simulator",
+      "cleaned_filename": "2026-05-11_neural-net-cosmology-simulator_d729b1cb.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology",
+        "condensed-matter",
+        "quantum-info",
+        "astro"
+      ],
+      "raw_chars": 14148,
+      "clean_chars": 14148,
+      "file_bytes": 14647,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-11T16:06:34.675169Z"
+    },
+    {
+      "conversation_id": "9da400fc-ac2e-4730-8c23-510a9248aa9c",
+      "original_title": "-> Cosmic Web: JWST Shows Quenching Flip by z=2",
+      "cleaned_filename": "2026-05-12_cosmic-web-jwst-shows-quenching-flip-by-z-2_057c4984.md",
+      "topic_tags": [
+        "relativity",
+        "cosmology"
+      ],
+      "raw_chars": 11695,
+      "clean_chars": 11693,
+      "file_bytes": 12261,
+      "frac_removed": 0.0002,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-12T05:51:34.330385Z"
+    },
+    {
+      "conversation_id": "f2775a42-c122-48c6-a2d0-a179e6b8a6e3",
+      "original_title": "-> Ultramassive Black Hole Binary Carves a Starless Kiloparsec Void",
+      "cleaned_filename": "2026-05-12_ultramassive-black-hole-binary-carves-a-starless-kiloparsec-_5d425014.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "quantum-info",
+        "amo-optics"
+      ],
+      "raw_chars": 10141,
+      "clean_chars": 10139,
+      "file_bytes": 10744,
+      "frac_removed": 0.0002,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-12T05:54:57.323811Z"
+    },
+    {
+      "conversation_id": "a238c46e-4715-42d3-8a75-67685e586cf0",
+      "original_title": "Trinity Test Creates Novel Ca-Cu-Si Clathrate",
+      "cleaned_filename": "2026-05-13_trinity-test-creates-novel-ca-cu-si-clathrate_42edff4d.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "nuclear-particle",
+        "materials",
+        "chemistry"
+      ],
+      "raw_chars": 87327,
+      "clean_chars": 86372,
+      "file_bytes": 89023,
+      "frac_removed": 0.0109,
+      "n_messages_kept": 40,
+      "n_responses_raw": 42,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-13T00:52:29.668700Z"
+    },
+    {
+      "conversation_id": "3688d9d4-1ad3-431b-bdcc-44af0d5c2650",
+      "original_title": "θ-Vacua Quantize Cosmological Constant",
+      "cleaned_filename": "2026-05-14_vacua-quantize-cosmological-constant_be01e1f5.md",
+      "topic_tags": [
+        "qft",
+        "cosmology",
+        "condensed-matter",
+        "astro",
+        "math-methods"
+      ],
+      "raw_chars": 11799,
+      "clean_chars": 11797,
+      "file_bytes": 12367,
+      "frac_removed": 0.0002,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-14T05:28:51.653933Z"
+    },
+    {
+      "conversation_id": "27cffdbc-35d7-406d-a187-259d922dbc39",
+      "original_title": "Ice Core Traces Supernova Fe-60 in Local Cloud",
+      "cleaned_filename": "2026-05-16_ice-core-traces-supernova-fe-60-in-local-cloud_1507751a.md",
+      "topic_tags": [
+        "quantum-foundations",
+        "astro"
+      ],
+      "raw_chars": 15774,
+      "clean_chars": 15594,
+      "file_bytes": 16196,
+      "frac_removed": 0.0114,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-16T17:45:27.047585Z"
+    },
+    {
+      "conversation_id": "8206e572-6293-4812-b900-da124a7c6ce9",
+      "original_title": "η'-Mesic Nuclei Discovery at GSI",
+      "cleaned_filename": "2026-05-16_mesic-nuclei-discovery-at-gsi_9525664b.md",
+      "topic_tags": [
+        "condensed-matter",
+        "quantum-foundations",
+        "nuclear-particle",
+        "astro"
+      ],
+      "raw_chars": 40168,
+      "clean_chars": 40167,
+      "file_bytes": 41638,
+      "frac_removed": 0.0,
+      "n_messages_kept": 18,
+      "n_responses_raw": 18,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-16T18:37:06.101944Z"
+    },
+    {
+      "conversation_id": "a5aa42b6-263e-4fea-808b-f4027c1e1181",
+      "original_title": "Cluster Tunneling Forges Scalable Schrödinger Cats",
+      "cleaned_filename": "2026-05-17_cluster-tunneling-forges-scalable-schr-dinger-cats_19c6e325.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-info",
+        "amo-optics"
+      ],
+      "raw_chars": 45457,
+      "clean_chars": 45452,
+      "file_bytes": 47314,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0001
+    },
+    {
+      "conversation_id": "ca8a9759-26c6-474a-82a1-1eb4278bdc40",
+      "original_title": "MUSE Captures Glowing Quasar Filament at z=3",
+      "cleaned_filename": "2026-05-18_muse-captures-glowing-quasar-filament-at-z-3_4e0316bd.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "condensed-matter",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 11802,
+      "clean_chars": 11661,
+      "file_bytes": 12171,
+      "frac_removed": 0.0119,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-18T01:39:22.230093Z"
+    },
+    {
+      "conversation_id": "a8b016af-4beb-451e-bba5-376a557563ed",
+      "original_title": "Magnetar-Powered SLSN 2017egm: Fermi-LAT Detection",
+      "cleaned_filename": "2026-05-23_magnetar-powered-slsn-2017egm-fermi-lat-detection_42ee8206.md",
+      "topic_tags": [
+        "condensed-matter",
+        "quantum-foundations",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 12080,
+      "clean_chars": 11900,
+      "file_bytes": 12407,
+      "frac_removed": 0.0149,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-23T05:55:48.701495Z"
+    },
+    {
+      "conversation_id": "f51957c7-f2e9-4a7e-ae81-d12fec404342",
+      "original_title": "Analyze Paper in Conversation",
+      "cleaned_filename": "2026-05-23_analyze-paper-in-conversation_5dad645d.md",
+      "topic_tags": [
+        "condensed-matter",
+        "math-methods"
+      ],
+      "raw_chars": 8195,
+      "clean_chars": 8195,
+      "file_bytes": 8637,
+      "frac_removed": 0.0,
+      "n_messages_kept": 3,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-23T06:09:42.746839Z"
+    },
+    {
+      "conversation_id": "eb67c9dd-42ff-44e5-bea7-f3e970cc9d34",
+      "original_title": "Nickelate Films: Nodeless Gap and 70-meV Kink",
+      "cleaned_filename": "2026-05-23_nickelate-films-nodeless-gap-and-70-mev-kink_765e7590.md",
+      "topic_tags": [
+        "condensed-matter",
+        "amo-optics"
+      ],
+      "raw_chars": 9159,
+      "clean_chars": 9159,
+      "file_bytes": 9638,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-23T16:38:28.932335Z"
+    },
+    {
+      "conversation_id": "74a1e844-3a60-412e-b9be-d7c2f5cd0a5c",
+      "original_title": "Delayed-Choice Quantum Eraser: Summary and Updates",
+      "cleaned_filename": "2026-05-24_delayed-choice-quantum-eraser-summary-and-updates_de4ce7a3.md",
+      "topic_tags": [
+        "relativity",
+        "quantum-foundations",
+        "quantum-info",
+        "amo-optics"
+      ],
+      "raw_chars": 5349,
+      "clean_chars": 3791,
+      "file_bytes": 4206,
+      "frac_removed": 0.2913,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-24T06:09:20.418648Z"
+    },
+    {
+      "conversation_id": "f8c6fb89-303d-46f9-b900-db239563ab3b",
+      "original_title": "Black Holes Evaporate Before Breaking",
+      "cleaned_filename": "2026-05-24_black-holes-evaporate-before-breaking_fe621d53.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "quantum-foundations",
+        "astro"
+      ],
+      "raw_chars": 10938,
+      "clean_chars": 10938,
+      "file_bytes": 11397,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-24T07:58:32.346080Z"
+    },
+    {
+      "conversation_id": "1aea1d3c-4460-4e84-9de2-ae8291c9bf60",
+      "original_title": "Axion Quantum Signatures Erased in Detectors",
+      "cleaned_filename": "2026-05-25_axion-quantum-signatures-erased-in-detectors_6487c8e0.md",
+      "topic_tags": [
+        "cosmology",
+        "condensed-matter",
+        "quantum-info",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 8954,
+      "clean_chars": 8952,
+      "file_bytes": 9407,
+      "frac_removed": 0.0002,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-25T04:24:09.739317Z"
+    },
+    {
+      "conversation_id": "9aa96624-c6ca-4543-ac62-84c41597bbcf",
+      "original_title": "Pulsar Timing Reveals LMC and Sagittarius Masses",
+      "cleaned_filename": "2026-05-25_pulsar-timing-reveals-lmc-and-sagittarius-masses_2c1f4c1d.md",
+      "topic_tags": [
+        "relativity",
+        "astro"
+      ],
+      "raw_chars": 13114,
+      "clean_chars": 13114,
+      "file_bytes": 13646,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-25T04:28:24.644882Z"
+    },
+    {
+      "conversation_id": "70047adb-bc30-45de-9470-df1c54faf2dd",
+      "original_title": "-> Evaporating Charged Black Holes Avoid Singularities",
+      "cleaned_filename": "2026-05-26_evaporating-charged-black-holes-avoid-singularities_42f29512.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "quantum-foundations",
+        "astro"
+      ],
+      "raw_chars": 11038,
+      "clean_chars": 10858,
+      "file_bytes": 11386,
+      "frac_removed": 0.0163,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-26T23:00:33.561377Z"
+    },
+    {
+      "conversation_id": "9366d417-a070-4106-b65a-ccdf3eaf863c",
+      "original_title": "-> Single Pressure Bump Explains Carbonaceous Chondrite Diversity",
+      "cleaned_filename": "2026-05-26_single-pressure-bump-explains-carbonaceous-chondrite-diversi_1d61108e.md",
+      "topic_tags": [
+        "gravity-bh",
+        "quantum-info",
+        "math-methods"
+      ],
+      "raw_chars": 9962,
+      "clean_chars": 9782,
+      "file_bytes": 10307,
+      "frac_removed": 0.0181,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-26T23:06:57.338408Z"
+    },
+    {
+      "conversation_id": "c75027cd-1ddc-41a6-9dcd-4e09705245d3",
+      "original_title": "-> Loki: Early Accreted VMP Stars",
+      "cleaned_filename": "2026-05-27_loki-early-accreted-vmp-stars_811e3d54.md",
+      "topic_tags": [
+        "physics-general"
+      ],
+      "raw_chars": 20299,
+      "clean_chars": 19662,
+      "file_bytes": 20319,
+      "frac_removed": 0.0314,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-05-27T16:51:16.292615Z"
+    },
+    {
+      "conversation_id": "6b226123-ecc8-43fe-b455-a9f5cdb2e667",
+      "original_title": "Quantum Mechanics: Particle Eigenvectors and Resonance Harmonics",
+      "cleaned_filename": "2026-06-01_quantum-mechanics-particle-eigenvectors-and-resonance-harmon_6d7909ce.md",
+      "topic_tags": [
+        "physics-general"
+      ],
+      "raw_chars": 42423,
+      "clean_chars": 41113,
+      "file_bytes": 43370,
+      "frac_removed": 0.0309,
+      "n_messages_kept": 53,
+      "n_responses_raw": 56,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-06-01T17:28:58.454794Z"
+    },
+    {
+      "conversation_id": "8aed4074-f924-4737-b89c-9a60095219e8",
+      "original_title": "Photon Truncation Creates Infinite Particle Zoo",
+      "cleaned_filename": "2026-06-03_photon-truncation-creates-infinite-particle-zoo_771b4084.md",
+      "topic_tags": [
+        "quantum-info",
+        "amo-optics"
+      ],
+      "raw_chars": 142330,
+      "clean_chars": 139522,
+      "file_bytes": 142603,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0197
+    },
+    {
+      "conversation_id": "0966092c-1c1f-45be-987f-8016e1b777f3",
+      "original_title": "Cold Atoms Measure Time via Entropy",
+      "cleaned_filename": "2026-06-13_cold-atoms-measure-time-via-entropy_aae7fe62.md",
+      "topic_tags": [
+        "gravity-bh",
+        "relativity",
+        "condensed-matter",
+        "quantum-foundations",
+        "amo-optics"
+      ],
+      "raw_chars": 12125,
+      "clean_chars": 12095,
+      "file_bytes": 12634,
+      "frac_removed": 0.0025,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "body-physics-substance",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-06-13T03:51:33.413879Z"
+    },
+    {
+      "conversation_id": "25cd521f-e4aa-4144-8444-a7b74152e230",
+      "original_title": "MOND Bullet Cluster Core Mass Solved",
+      "cleaned_filename": "2026-06-21_mond-bullet-cluster-core-mass-solved_e2ed039c.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "condensed-matter"
+      ],
+      "raw_chars": 13857,
+      "clean_chars": 13797,
+      "file_bytes": 14306,
+      "frac_removed": 0.0043,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-06-21T02:27:47.086694Z"
+    },
+    {
+      "conversation_id": "850961e4-7df3-473d-a209-31d0b74e89d2",
+      "original_title": "Two-Mode Squeezed States Entanglement",
+      "cleaned_filename": "2026-06-30_two-mode-squeezed-states-entanglement_4726e199.md",
+      "topic_tags": [
+        "relativity",
+        "condensed-matter",
+        "quantum-foundations",
+        "quantum-info",
+        "astro",
+        "amo-optics"
+      ],
+      "raw_chars": 3325,
+      "clean_chars": 3325,
+      "file_bytes": 3719,
+      "frac_removed": 0.0,
+      "n_messages_kept": 2,
+      "n_responses_raw": 2,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-06-30T19:57:59.001263Z"
+    },
+    {
+      "conversation_id": "5147093f-f4b7-4cef-b444-11b8f8e49a29",
+      "original_title": "Euclid Images Technical Paper Analysis",
+      "cleaned_filename": "2026-07-09_euclid-images-technical-paper-analysis_9f84bcac.md",
+      "topic_tags": [
+        "gravity-bh",
+        "cosmology",
+        "biophysics"
+      ],
+      "raw_chars": 17112,
+      "clean_chars": 16903,
+      "file_bytes": 17568,
+      "frac_removed": 0.0122,
+      "n_messages_kept": 4,
+      "n_responses_raw": 4,
+      "keep_reason": "title-physics",
+      "pilot": false,
+      "status": "extracted",
+      "create_time": "2026-07-09T03:18:14.759307Z"
+    },
+    {
+      "conversation_id": "84ad4e31-9ab6-45fc-8d0f-97c3d7dad75f",
+      "original_title": "Einstein and Riemann Geometry in Relativity",
+      "cleaned_filename": "2026-07-20_einstein-and-riemann-geometry-in-relativity_3c9369d4.md",
+      "topic_tags": [
+        "relativity"
+      ],
+      "raw_chars": 57725,
+      "clean_chars": 57488,
+      "file_bytes": 59637,
+      "pilot": true,
+      "status": "already_on_disk",
+      "keep_reason": "pilot-or-prior",
+      "frac_removed": 0.0041
+    }
+  ]
+}

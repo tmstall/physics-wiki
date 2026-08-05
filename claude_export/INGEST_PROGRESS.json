@@ -1,0 +1,11 @@
+{
+  "synthesis_total": 2,
+  "completed": 40,
+  "stopped": true,
+  "papers_total": 93,
+  "batches_done": 8,
+  "new_papers": 40,
+  "target": 40,
+  "note": "Stopped at 40 new papers as instructed",
+  "concepts_total": 61
+}

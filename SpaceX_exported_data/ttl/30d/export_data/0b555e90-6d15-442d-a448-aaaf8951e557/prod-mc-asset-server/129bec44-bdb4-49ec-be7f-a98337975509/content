@@ -1,0 +1,139 @@
+
+from kivy.app import App
+from kivy.uix.floatlayout import FloatLayout
+from kivy.clock import Clock
+from kivy.graphics import Color, Ellipse, Line, Rectangle
+from kivy.properties import NumericProperty
+from kivy.lang import Builder
+import numpy as np
+
+# Load Kivy UI definition directly in Python to ensure it works
+Builder.load_string('''
+<QFTVisualizer>:
+    Slider:
+        id: speed_slider
+        min: 0.1
+        max: 2.0
+        value: 1.0
+        size_hint: 0.8, 0.1
+        pos_hint: {'center_x': 0.5, 'y': 0.05}
+        on_value: root.speed_factor = self.value
+    Label:
+        text: f'Speed: {speed_slider.value:.2f}'
+        size_hint: 0.2, 0.1
+        pos_hint: {'x': 0.85, 'y': 0.05}
+        color: 1, 1, 1, 1
+''')
+
+class QFTVisualizer(FloatLayout):
+    speed_factor = NumericProperty(1.0)
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.grid_size_x = 100  # Even finer grid for x-axis
+        self.grid_size_y = 75   # Even finer grid for y-axis
+        self.cell_size_x = 800 / self.grid_size_x
+        self.cell_size_y = 600 / self.grid_size_y
+        self.e1_pos = np.array([200.0, 300.0])
+        self.e2_pos = np.array([600.0, 300.0])
+        self.e1_vel = np.array([20.0, 0.0])  # Faster initial velocity towards each other
+        self.e2_vel = np.array([-20.0, 0.0])
+        self.init_graphics()
+        Clock.schedule_interval(self.update, 1.0 / 60.0)
+
+    def init_graphics(self):
+        self.canvas.clear()
+        with self.canvas:
+            # Gradient grid
+            self.grid_colors = []
+            self.grid_rects = []
+            for i in range(self.grid_size_x):
+                row_colors = []
+                row_rects = []
+                for j in range(self.grid_size_y):
+                    color = Color(0, 0, 0, 1)
+                    rect = Rectangle(pos=(i * self.cell_size_x, j * self.cell_size_y),
+                                     size=(self.cell_size_x, self.cell_size_y))
+                    row_colors.append(color)
+                    row_rects.append(rect)
+                self.grid_colors.append(row_colors)
+                self.grid_rects.append(row_rects)
+            # Electron 1
+            Color(0, 0, 1)
+            self.e1_ellipse = Ellipse(pos=(self.e1_pos[0] - 5, self.e1_pos[1] - 5), size=(10, 10))
+            # Electron 2
+            Color(0, 0, 1)
+            self.e2_ellipse = Ellipse(pos=(self.e2_pos[0] - 5, self.e2_pos[1] - 5), size=(10, 10))
+            # Photon line
+            Color(1, 0, 0)
+            self.photon_line = Line(points=[])
+
+    def update(self, dt):
+        dt_scaled = dt * self.speed_factor
+        r = self.e2_pos - self.e1_pos
+        r_mag = np.linalg.norm(r)
+        if r_mag < 1:
+            r_mag = 1
+        # Stronger attractive force to ensure they meet
+        force = 20000 / (r_mag ** 2)
+        acceleration = force * (r / r_mag)
+        self.e1_vel += acceleration * dt_scaled  # Attraction for e1
+        self.e2_vel -= acceleration * dt_scaled  # Attraction for e2
+        self.e1_pos += self.e1_vel * dt_scaled
+        self.e2_pos += self.e2_vel * dt_scaled
+
+        # Boundary checks to stop at edges
+        if self.e1_pos[0] < 0:
+            self.e1_pos[0] = 0
+            self.e1_vel = np.array([0.0, 0.0])
+        elif self.e1_pos[0] > 800:
+            self.e1_pos[0] = 800
+            self.e1_vel = np.array([0.0, 0.0])
+        if self.e2_pos[0] < 0:
+            self.e2_pos[0] = 0
+            self.e2_vel = np.array([0.0, 0.0])
+        elif self.e2_pos[0] > 800:
+            self.e2_pos[0] = 800
+            self.e2_vel = np.array([0.0, 0.0])
+
+        # Update electron graphics
+        self.e1_ellipse.pos = (self.e1_pos[0] - 5, self.e1_pos[1] - 5)
+        self.e2_ellipse.pos = (self.e2_pos[0] - 5, self.e2_pos[1] - 5)
+
+        # Update photon line
+        points = []
+        t = np.linspace(0, 1, 50)
+        for i in t:
+            x = self.e1_pos[0] + i * (self.e2_pos[0] - self.e1_pos[0])
+            y = self.e1_pos[1] + i * (self.e2_pos[1] - self.e1_pos[1])
+            y += 10 * np.sin(2 * np.pi * 5 * i)
+            points.extend([x, y])
+        self.photon_line.points = points
+
+        # Update gradient
+        field_values = []
+        for i in range(self.grid_size_x):
+            for j in range(self.grid_size_y):
+                x = (i + 0.5) * self.cell_size_x
+                y = (j + 0.5) * self.cell_size_y
+                r1 = np.linalg.norm(np.array([x, y]) - self.e1_pos)
+                r2 = np.linalg.norm(np.array([x, y]) - self.e2_pos)
+                r1 = max(r1, 1)
+                r2 = max(r2, 1)
+                field = 10000 / r1 + 10000 / r2
+                field_values.append(field)
+        max_field = max(field_values) if field_values else 1
+        for i in range(self.grid_size_x):
+            for j in range(self.grid_size_y):
+                field = field_values[i * self.grid_size_y + j]
+                t = field / max_field
+                green = 1 - t
+                purple = t
+                self.grid_colors[i][j].rgba = (purple, green, purple, 1.0)
+
+class QFTApp(App):
+    def build(self):
+        return QFTVisualizer()
+
+if __name__ == '__main__':
+    QFTApp().run()

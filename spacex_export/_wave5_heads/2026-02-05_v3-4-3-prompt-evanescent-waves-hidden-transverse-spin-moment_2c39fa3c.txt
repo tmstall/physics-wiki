@@ -1,0 +1,120 @@
+---
+source: spacex_export
+conversation_id: 74289620-7d6c-4f42-9413-4b31794f7a0f
+title: "v3.4.3 prompt - Evanescent Waves: Hidden Transverse Spin Momentum"
+created_at: 2026-02-05T03:23:34.775636Z
+updated_at: 2026-02-08T04:12:42.990865Z
+n_responses: 12
+platform: grok/xAI
+pilot: false
+---
+
+# v3.4.3 prompt - Evanescent Waves: Hidden Transverse Spin Momentum
+
+## Human
+
+analyze this paper Extraordinary momentum and spin in evanescent waves
+
+* Konstantin Y. Bliokh,
+
+* Aleksandr Y. Bekshaev &
+
+* Franco Nori 
+
+Nature Communications volume
+
+## Assistant
+
+### Evanescent Waves' Hidden Twists Exposed
+Evanescent light waves defy conventional wisdom by carrying momentum and spin perpendicular to their direction, revealing a long-theorized but unseen spin momentum from quantum field theory.
+
+### Big-Picture Context
+Light waves carry momentum and spin, fundamental properties that dictate how they interact with matter—like pushing tiny particles or twisting them as they absorb energy. In everyday propagating waves, like a laser beam zipping through air, momentum points straight ahead along the propagation direction, independent of how the light is polarized, while spin aligns with that direction but depends on the light's circular handedness. This setup mirrors photons in quantum mechanics: linear momentum tied to wave vector, angular momentum to helicity.
+
+Evanescent waves, however, live in the shadows. They appear during total internal reflection, like when light bounces off a glass-water interface at a shallow angle, decaying exponentially away from the surface without propagating far. These waves power near-field optics, scanning tunneling microscopes, and plasmonics, where they manipulate light at nanoscale. But their weird, non-propagating nature hints at unconventional dynamics—momentum faster than light in some senses, or spins that don't follow the rules.
+
+This paper dives into that weirdness, connecting it to deep field theory ideas from the 1930s. Belinfante's spin momentum, a correction to make energy-momentum tensors symmetric, usually hides in propagating fields because it averages to zero. Evanescent inhomogeneity brings it out, offering a lab-friendly way to probe quantum field subtleties with classical optics setups.
+
+### Necessary Background Crash-Course
+Propagating plane waves carry orbital momentum along their direction, like a bullet's forward push, independent of polarization—think a straight arrow driven by the wave vector. Spin angular momentum aligns with that direction but flips with circular polarization, akin to a drill bit's twist determining rotation sense.
+
+Evanescent waves decay exponentially perpendicular to their "propagation" plane, like a damped oscillator fading out, created by imaginary components in the wave vector. This makes their group velocity superluminal along the interface, similar to a signal racing along a waveguide faster than c but without violating relativity.
+
+Belinfante's spin momentum symmetrizes field tensors, splitting total momentum into observable orbital and "virtual" spin parts—the latter like hidden eddy currents in a fluid flow that don't net transport but curl locally.
+
+Poynting vector measures energy flow, equaling total momentum density in light, but in evanescent fields, it picks up transverse components, reminiscent of side leaks in a pressured pipe.
+
+### Core Technical Explanation
+They start by recalling standard momentum and spin in propagating waves to set the baseline. They express the electric field for an elliptically polarized wave zipping along z.
+
+$$ \mathbf{E}(\mathbf{r}) = A \mathbf{e}_x + m A \mathbf{e}_y + i k A m \mathbf{e}_z \exp(i k z) $$
+
+**Symbol definitions:**  
+A : amplitude of the field (volts per meter)  
+\mathbf{e}_x, \mathbf{e}_y, \mathbf{e}_z : unit vectors along x, y, z axes (dimensionless)  
+m : polarization parameter determining ellipticity (complex number)  
+k : wave number, omega over c (per meter)  
+\exp(i k z) : phase factor for propagation (dimensionless)  
+
+**What this actually means:**  
+This describes how the electric field oscillates and twists as the wave moves forward, with a small longitudinal component for elliptical cases.  
+
+Like coupled oscillators in a chip where phase lags create a helical pattern, or in fiber optics where modes spiral due to birefringence.
+
+They calculate momentum and spin densities from this, showing momentum along z independent of polarization, spin along z proportional to helicity.
+
+They introduce field-theory formalism, splitting momentum into canonical (orbital) and Belinfante spin parts because the raw tensor is asymmetric—they add the spin curl to fix it, making total p = p_O + p_S.
+
+In propagating waves, p_S loops cancel out over volume, like closed current loops in a solenoid producing no net flow but local circulation.
+
+They explain probing with small particles: Rayleigh dipoles feel force from gradient of energy plus orbital momentum, torque from spin, because absorption transfers those quantities directly—like a paddle wheel spun by water flow.
+
+For evanescent waves, they construct the field by "rotating" a propagating one by imaginary angle, yielding exponential decay in x.
+
+$$ \mathbf{E}(\mathbf{r}) = A (\mathbf{e}_x - i \kappa \mathbf{e}_z) \exp(i k_z z - \kappa x) $$
+
+**Symbol definitions:**  
+A : amplitude (volts per meter)  
+\mathbf{e}_x, \mathbf{e}_z : unit vectors (dimensionless)  
+\kappa : decay constant in x (per meter)  
+k_z : real wave number along z (per meter)  
+\exp(i k_z z - \kappa x) : phase and decay factor (dimensionless)  
+
+**What this actually means:**  
+The field decays away from the interface while oscillating along z, with an imaginary z-component creating out-of-phase wiggles.  
+
+Analogous to a leaky waveguide where energy tunnels but fades, or in computer architecture, like cache misses causing exponential drop-off in access efficiency.
+
+Plugging in, they find longitudinal orbital momentum larger than usual, transverse spin independent of helicity, and transverse momentum dependent on it—flipped from propagating case.
+
+This happens because inhomogeneity prevents p_S loop cancellation, exposing Belinfante term.
+This graphic (Figure 2 from the paper) illustrates the field helices and spin-momentum distributions for linear (top) and circular (bottom) polarizations in evanescent waves: panels a,d show E and H fields twisting in x-z plane; b,e depict p_S loops; c,f show resulting force F and torque T on a probe particle, highlighting the transverse components.
+
+They address old controversies like Fedorov-Imbert, clarifying that transverse shifts come from interference, not single evanescent momentum.
+
+Finally, they simulate Mie particles (larger than Rayleigh) in evanescent fields from total reflection, calculating forces and torques numerically because higher multipoles couple to p_S.
+This related illustration shows the evanescent wave setup with Poynting vector, spin momentum, and forces on matter, depicting the transverse Belinfante component pushing a particle sideways—visualizing the experimental geometry.
+
+They show transverse force emerges only for ka ~1, helicity-dependent, allowing measurement of p_S.
+
+### What’s Genuinely New or Clever
+They cleverly expose Belinfante's p_S in a single evanescent wave by leveraging inhomogeneity to break loop cancellation, turning a theoretical artifact into something pushable with particles—overlooked because most focus on propagating or interfering fields.
+
+They flip the spin-momentum roles: spin becomes polarization-independent and transverse, momentum polarization-dependent, counterintuitive but rooted in imaginary longitudinal polarization acting like a hidden helicity.
+
+### Limitations & Open Questions
+They assume monochromatic fields and Gaussian units, glossing over relativistic frames or quantum photon pictures where evanescent "photons" aren't well-defined. Simulations use gold particles in water at 650nm, but ignore surface effects or heating that could swamp weak transverse forces in real experiments.
+
+Brutally, the "extraordinary" flips rely on evanescent decay; in weakly decaying limits, it reduces to normal, so not universal. They don't quantify noise or detection limits—how small is that transverse push compared to Brownian motion?
+
+Follow-up: Build optical tweezers setups to measure Mie particle deflections in next 12 months; extend to quantum optics for entangled evanescent states in 24 months, probing if p_S affects vacuum fluctuations.
+
+### Three Crystallized Takeaways
+1. Evanescent waves carry spin perpendicular to their direction, independent of polarization—like a universal sideways twist hidden in decaying light.
+2. Their momentum goes sideways too, but only for circularly polarized light, flipping the usual rules and exposing Belinfante's elusive spin momentum.
+3. Probe particles get pushed and twisted transversely, letting us measure field-theory ghosts with tabletop optics.
+
+### Detailed Summary & Explanation
+The paper uncovers that evanescent optical waves possess a transverse spin angular momentum independent of their polarization and orthogonal to the wave vector, alongside a transverse momentum component that depends on circular polarization and is also orthogonal. These features stem from the Belinfante spin momentum, a field-theory construct that symmetrizes the energy-momentum tensor but integrates to zero in propagating waves. By calculating field densities and simulating interactions with probe particles, the authors show how inhomogeneity in evanescent fields prevents cancellation of spin-momentum loops, making this "virtual" momentum observable via transverse forces and torques on Mie-sized particles in setups like total internal reflection. Key findings include super-momentum along the interface, helicity-flipped roles for spin and momentum, and numerical predictions for gold nanoparticles experiencing sideways pushes proportional to helicity. Unusual discoveries: the transverse spin causes polarization-independent twisting, while the momentum induces measurable lateral shifts only in larger particles, resolving old debates like the Fedorov-Imbert effect by distinguishing single-wave from interference phenomena.
+
+This summary captures the physics flow without equations: start with standard wave properties, introduce field splitting, derive evanescent peculiarities from complex wave vectors, and validate via particle dynamics. It explains why evanescent waves are special—their decay creates a gradient that "freezes" local spin currents, like trapping eddies in a narrowing river, allowing direct mechanical detection of what was once just a mathematical fix in quantum fields.
