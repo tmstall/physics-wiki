@@ -6,3 +6,11 @@ SpaceX_exported_data/
 claude_export/
 SpaceX_exported_data/
 
+
+# Sensitive exports – never commit these
+claude_export/
+SpaceX_exported_data/
+**/conversations.json
+**/*credentials*
+**/*service-account*
+**/*.key
