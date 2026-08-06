@@ -1,5 +1,0 @@
-BUILD FAILURE: No main.py(c) found in your app directory. This
-file must exist to act as the entry point for you app. If your app is
-started by a file with a different name, rename it to main.py or add a
-main.py that loads it.
-# Command failed: ['/usr/bin/python3', '-m', 'pythonforandroid.toolchain', 'apk', '--bootstrap', 'sdl2', '--dist_name', 'Tesseract', '--name', 'Tessaract Explorer', '--version', '0.1', '--package', 'org.test.tesseract', '--minsdk', '21', '--ndk-api', '21', '--private', '/home/tmstall0/Tesseract/.buildozer/android/app', '--permission', 'INTERNET', '--android-entrypoint', 'org.kivy.android.PythonActivity', '--android-apptheme', '@android:style/Theme.NoTitleBar', '--orientation', 'portrait', '--window', '--enable-androidx', '--copy-libs', '--arch', 'arm64-v8a', '--arch', 'armeabi-v7a', '--color=always', '--storage-dir=/home/tmstall0/Tesseract/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']

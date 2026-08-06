@@ -1,9 +1,0 @@
-=== FINAL Migration Script ===
-
-✓ Backup created: msl_data.py.backup_20260526_214743
-
-✓ Done.
-  Nodes updated with cluster : 137
-  Nodes with blank cluster   : 3
-
-New file created: msl_data.py.new
