@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, semiclassical-gravity, general-relativity]
-last_updated: 2026-07-31
+last_updated: 2026-09-05
 status: synthesis
-related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes]
+related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes, warp-drive-positive-energy, quantum-relative-entropy-einstein-equations, bh-thermo-far-from-equilibrium]
 ---
 
 # Black Hole Evaporation, Energy Conditions, and Regular Endpoints
@@ -18,6 +18,8 @@ Semiclassical gravity and modern amplitude tools open other doors. This synthesi
 For **modified / speculative gravity** (massive gravity, warp metrics, exploratory foundations) that *use* energy conditions as a referee rather than studying evaporation endpoints, see [[modified-speculative-gravity]]. That page is comparative catalog; this page stays inside standard semiclassical GR.
 
 A separate *origin* thread — not covered in the routes below — is early-universe [[primordial-black-holes]] from inflation or bounce survival ([[pre-bang-leftovers]]). Those objects may later evaporate or act as dark matter; this page focuses on interior regularity and thermality once a horizon already exists.
+
+**Foundations addendum (2026-09-05):** [[bh-thermo-far-from-equilibrium]] rebuilds the first law for finite, far-from-equilibrium processes and puts dynamical entropy on a **marginally trapped surface** (quasi-local), not the teleological event horizon. That strengthens the “what surface carries entropy mid-process?” question that Routes 1–3 already touch when horizons move. See also [[black-hole-thermodynamics]] and [[entropic-information-gravity]].
 
 ---
 
@@ -109,14 +111,34 @@ Do not force a false merger. Prefer a stack:
 
 ---
 
+## Extended neighbors (under-narrated vs frontmatter)
+
+These appear in `related_papers` and matter for the stack, but they are **not** extra evaporation routes:
+
+| Neighbor | Role here | Prefer instead when… |
+| --- | --- | --- |
+| [[black-hole-third-law-violation]] | Extremal / third-law status affects how seriously “eternal remnant” endpoints are taken | Discussing third-law theorems vs finite-time extremality |
+| [[qg-deep-dive-2-info-holography]], [[qg-deep-dive-3-holographic-codes]] | Information / holography / QEC language for horizons | Page-curve / island questions (not computed on Routes 1–3) |
+| [[pre-bang-leftovers]] | PBH / bounce *origin* | Asking where horizons come from cosmologically |
+| [[warp-drive-positive-energy]] | NEC bookkeeping contrast (metric engineering) | Comparing NEC use in evaporation vs warp cruise — home on [[modified-speculative-gravity]] |
+| [[quantum-jamming]] | Operational horizon / causality side door (already Route side note) | DI / multiparty foundations |
+
+**Not this page:** Astrophysical SMBH inclination / pairing ([[smbh-inclination-angle]]) → [[black-hole-feedback-and-changing-look-agn]]. GW plunge / remnant waveform probes → [[gravitational-wave-strong-field-probes]].
+
+---
+
 ## Map of pages
 
 | Role | Pages |
 | --- | --- |
 | Core papers | [[evaporating-charged-black-holes]], [[hawking-radiation-charge-shell]], [[frozen-in-gravitational-fields]] |
 | Side paper | [[quantum-jamming]] |
+| Extended neighbors | [[black-hole-third-law-violation]], [[qg-deep-dive-2-info-holography]], [[qg-deep-dive-3-holographic-codes]], [[pre-bang-leftovers]] |
 | Concepts | [[hawking-radiation]], [[null-energy-condition]], [[reissner-nordstrom]], [[black-hole-interiors]], [[double-copy]], [[frozen-in-gravity]], [[primordial-black-holes]] |
 
 ## Related synthesis
 
-- [[black-hole-feedback-and-changing-look-agn]]
+- [[black-hole-feedback-and-changing-look-agn]] — fuel and feedback, not interiors
+- [[gravitational-wave-strong-field-probes]] — waveforms as instruments
+- [[modified-speculative-gravity]] — NEC / warp / exploratory competitors
+- [[dark-matter-detection-channels]] — PBH γ-glow as DM bound (not endpoint regularity)

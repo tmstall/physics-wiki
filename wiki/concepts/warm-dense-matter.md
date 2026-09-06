@@ -1,8 +1,8 @@
 ---
 tags: [concepts, plasma, high-energy-density]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [filming-plasma-birth, dense-plasma-opacity-revision, trinity-ca-cu-si-clathrate, lab-blazar-pair-instability]
+related_papers: [filming-plasma-birth, dense-plasma-opacity-revision, trinity-ca-cu-si-clathrate, lab-blazar-pair-instability, beam-driven-plasma-mirror, dark-photon-plasma-saturation, dephasingless-flying-focus-wakefield, plasma-relativistic-amplifier]
 ---
 
 # Warm Dense Matter (WDM)
@@ -17,7 +17,16 @@ Extreme HED transients push further: nuclear-fireball quench in trinitite freeze
 
 ## Related pages
 
+- Reverse-link: [[beam-driven-plasma-mirror]]
+- Reverse-link: [[dark-photon-plasma-saturation]]
+- Reverse-link: [[dephasingless-flying-focus-wakefield]]
+- Reverse-link: [[plasma-relativistic-amplifier]]
+
 - Xfel Pump Probe
 - Inertial Confinement Fusion
 - [[filming-plasma-birth]], [[dense-plasma-opacity-revision]]
 - [[trinity-ca-cu-si-clathrate]], [[lab-blazar-pair-instability]]
+
+## Connections
+
+- Synthesis: [[plasma-hed-lab]]

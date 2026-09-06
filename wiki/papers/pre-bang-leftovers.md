@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, bouncing-universe, dark-matter]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [gw-induced-fermion-freeze-in]
+related_papers: [gw-induced-fermion-freeze-in, alena-tensor-rotation-dm, color-superconductivity-qcd, gamma-glow-pbh-detector, gravastar-dust-collapse, quantum-damping-cosmological-shear, second-order-gw-strain-gauge, topological-cosmological-constant]
 source_analysis: "raw/analyses/List1_Combined_Clean.md"
 ---
 
@@ -31,6 +31,15 @@ Standard Big Bang singularity is a model failure notice, not a photo of the begi
 - Competition with ordinary PBH and particle DM scenarios.
 
 ## Connections
+
+- Reverse-link: [[alena-tensor-rotation-dm]]
+- Reverse-link: [[color-superconductivity-qcd]]
+- Reverse-link: [[gamma-glow-pbh-detector]]
+- Reverse-link: [[gravastar-dust-collapse]]
+- Reverse-link: [[quantum-damping-cosmological-shear]]
+- Reverse-link: [[second-order-gw-strain-gauge]]
+- Reverse-link: [[topological-cosmological-constant]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
 
   - Concepts: [[primordial-black-holes]]
 - Early-universe cousins: [[gw-induced-fermion-freeze-in]] (SGWB as DM factory — different channel), [[stochastic-gw-background]].

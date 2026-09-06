@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [big-ring-ultra-large-structure, cosmos-web-cosmic-web, desi-evolving-dark-energy]
+related_papers: [big-ring-ultra-large-structure, cosmos-web-cosmic-web, desi-evolving-dark-energy, gigaparsec-anisotropic-structures, primordial-tidal-torque-galaxy-spin]
 ---
 
 # Cosmological Principle
@@ -14,5 +14,8 @@ related_papers: [big-ring-ultra-large-structure, cosmos-web-cosmic-web, desi-evo
 Zoom out enough and every patch should look like every other. Surveys map the cosmic web; claims of ~Gpc arcs and rings ([[big-ring-ultra-large-structure]]) test where “enough” really is versus ΛCDM variance and selection effects.
 
 ## Related
+
+- Reverse-link: [[gigaparsec-anisotropic-structures]]
+- Reverse-link: [[primordial-tidal-torque-galaxy-spin]]
 
 - large-scale structure, [[cosmic-web]], [[big-ring-ultra-large-structure]]

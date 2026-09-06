@@ -21,3 +21,4 @@ Not ordinary expectation values. Post-select on a rare outcome (e.g. photon tran
 - [[group-delay]]
 - [[coherent-forward-scattering]]
 - [[quantum-proper-time]] (different notion of quantum time)
+- Perceptual / non-Riemannian measurement geometry cousin: [[color-space-geometry]]

@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-biology, spin-chemistry]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [ciss-homochirality]
+related_papers: [ciss-homochirality, enzyme-resistance-tax]
 source_analysis: "claude_export/extracted-analyses/2026-07-26_todd-intended-the-spin-quiet-partner-that-almost-never-shows_de8ad8dd.md"
 ---
 
@@ -25,6 +25,9 @@ The radical-pair compass is the leading explanation for how migratory birds see 
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[enzyme-resistance-tax]]
 
 - Related: [[ciss-homochirality]]
 

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, quantum-gravity, topology]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [topological-cosmological-constant]
+related_papers: [topological-cosmological-constant, desi-evolving-dark-energy, frozen-in-gravitational-fields]
 ---
 
 # Gravitational θ-Vacua
@@ -14,5 +14,8 @@ related_papers: [topological-cosmological-constant]
 As in Yang–Mills, gauge configurations can wind. Physical states superpose winding sectors with relative phases set by θ. In gravity this θ locks to Λ in the Chern–Simons–Kodama construction, offering topological stability against perturbative vacuum noise ([[topological-cosmological-constant]]). Ashtekar variables rewrite GR as an SU(2) connection plus triad so this Yang–Mills-like topology is available.
 
 ## Related
+
+- Reverse-link: [[desi-evolving-dark-energy]]
+- Reverse-link: [[frozen-in-gravitational-fields]]
 
 - [[topological-cosmological-constant]], [[frozen-in-gravity]]

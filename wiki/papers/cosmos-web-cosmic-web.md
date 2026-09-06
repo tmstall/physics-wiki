@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, galaxies, jwst]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cigars-i-supernova-cosmology]
+related_papers: [cigars-i-supernova-cosmology, big-ring-ultra-large-structure, desi-evolving-dark-energy, early-universe-popiii-flash-ionization, euclid-high-z-quasar-census, gw-induced-fermion-freeze-in, high-z-quasar-pair-merger, imf-variation-milky-way, interstellar-glaciers-spherex, oyashio-extragalactic-gc-stream, primordial-tidal-torque-galaxy-spin, pulsars-satellite-masses]
 source_analysis: "raw/analyses/Cosmic_web.md"
 ---
 
@@ -30,6 +30,20 @@ The cosmic web is not scenery — it is traffic infrastructure. Early on, filame
 - No direct cold-gas or kinematic measurements of the fueling/quenching mechanisms.
 
 ## Connections
+
+- Reverse-link: [[big-ring-ultra-large-structure]]
+- Reverse-link: [[desi-evolving-dark-energy]]
+- Reverse-link: [[early-universe-popiii-flash-ionization]]
+- Reverse-link: [[euclid-high-z-quasar-census]]
+- Reverse-link: [[gw-induced-fermion-freeze-in]]
+- Reverse-link: [[high-z-quasar-pair-merger]]
+- Reverse-link: [[imf-variation-milky-way]]
+- Reverse-link: [[interstellar-glaciers-spherex]]
+- Reverse-link: [[oyashio-extragalactic-gc-stream]]
+- Reverse-link: [[primordial-tidal-torque-galaxy-spin]]
+- Reverse-link: [[pulsars-satellite-masses]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
+- Reverse-link: [[bottom-heavy-imf-early-galaxies]]
 
 - Concepts: [[cosmic-web]], [[photometric-redshifts]]
 - Photometric large-sample theme shared with [[cigars-i-supernova-cosmology]] (SNe as distance tools vs. galaxies as web tracers).

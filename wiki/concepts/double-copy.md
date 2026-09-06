@@ -1,8 +1,8 @@
 ---
 tags: [concepts, quantum-gravity, amplitudes]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [hawking-radiation-charge-shell]
+related_papers: [hawking-radiation-charge-shell, differential-signaling-quantum-vacuum, massive-gravity-drgt]
 ---
 
 # Double Copy
@@ -14,6 +14,9 @@ related_papers: [hawking-radiation-charge-shell]
 If \(A_\mu = \phi k_\mu\), gravity can use \(h_{\mu\nu} \propto \phi k_\mu k_\nu\). [[hawking-radiation-charge-shell]] runs the map backward: EM charge shell ↔ Vaidya mass shell; flat-space scattering thermality ↔ Hawking temperature.
 
 ## Related pages
+
+- Reverse-link: [[differential-signaling-quantum-vacuum]]
+- Reverse-link: [[massive-gravity-drgt]]
 
 - Vaidya Spacetime
 - [[hawking-radiation]]

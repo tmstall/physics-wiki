@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-metrology, relativity, ion-clocks]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [quantum-proper-time-ion-clocks]
+related_papers: [quantum-proper-time-ion-clocks, negative-weak-valued-excitation-times, problem-of-time-cold-atoms, temporal-imbalance-gravity]
 source_analysis: "raw/analyses/Time Goes Quantum.md; List2_Combined_Clean.md (Time Goes Quantum.md)"
 ---
 
@@ -33,6 +33,10 @@ Engineering analogy: cache lines that accumulate different cycle counts on diffe
 - **Ingest note (List2 batch 8):** List2 re-analyzes the same Sorci / Foo / Leibfried / Sanner / Pikovski proper-time program already filed from the standalone analysis—no second paper page.
 
 ## Connections
+
+- Reverse-link: [[negative-weak-valued-excitation-times]]
+- Reverse-link: [[problem-of-time-cold-atoms]]
+- Reverse-link: [[temporal-imbalance-gravity]]
 
 - Tightly related to [[quantum-proper-time-ion-clocks]], which pushes the same physics toward **squeezed motion** and named SODS corrections (vSODS, sqSODS, qSODS).
 - Builds on [[quantum-proper-time]], [[second-order-doppler-shift]], and [[ramsey-interferometry]].

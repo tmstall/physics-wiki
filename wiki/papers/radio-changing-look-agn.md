@@ -38,6 +38,7 @@ Optical and X-ray changing-look AGN already dismantle neat type bins. Radio loud
 - Lint link: [[glimpse-17775-cocoon]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[stellar-spin-repeating-partial-tde]]
 
 ## Source
 

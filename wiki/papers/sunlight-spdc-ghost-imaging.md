@@ -27,6 +27,7 @@ Physicists at Xiamen University built a quantum-optics experiment that runs on r
 
 ## Connections
 
+- Synthesis: [[amo-quantum-state-control]]
 - [[ito-nanocrystal-fieldoscopy]], [[certified-randomness-amplification]]
 
 - Related (SpaceX set): [[positronium-diffraction-graphene]] — Positronium graphene diffraction

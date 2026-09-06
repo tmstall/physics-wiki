@@ -1,6 +1,6 @@
 ---
 tags: [quantum-optics, cavity-qed, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-11_beam-me-up-a-number-state_239be18f.md"
 ---
@@ -27,10 +27,15 @@ Controlling quantum states of light inside a cavity gets rapidly harder as you a
 
 ## Connections
 
+- Reverse-link: [[evanescent-wave-transverse-spin]]
+- Reverse-link: [[quantum-state-sculptor]]
+
 - [[noise-driven-qubit-entanglement]], [[collective-superradiant-lasing]]
 - Programmable topological photonics: [[nonabelian-photonic-braiding]]
 
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
+- Reverse-link: [[mmwave-optical-microcomb]]
 
 ## Source
 

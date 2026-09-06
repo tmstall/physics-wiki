@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmic-rays, high-energy-astrophysics]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [beyond-iron-ultraheavy-cosmic-rays, aquila-booster-pevatron]
+related_papers: [beyond-iron-ultraheavy-cosmic-rays, aquila-booster-pevatron, cygnus-x3-pevatron-bubble]
 source_analysis: "claude_export/extracted-analyses/2026-05-02_peters-cycle-confirmed-charge-dependent-cosmic-ray-spectral_a9c50c9b.md"
 ---
 
@@ -32,6 +32,10 @@ Magnetic accelerators (supernova shocks, etc.) care about how hard it is to bend
 - Secondary-to-primary ratios at TV rigidities would further separate acceleration limits from propagation.
 
 ## Connections
+
+- Reverse-link: [[cygnus-x3-pevatron-bubble]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Reverse-link: [[icecube-galactic-plane-neutrinos]]
 
 - Composition / extreme end: [[beyond-iron-ultraheavy-cosmic-rays]]
 - Galactic PeV accelerators: [[aquila-booster-pevatron]], [[pulsar-wind-nebulae]]

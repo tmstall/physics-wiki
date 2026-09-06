@@ -1,8 +1,8 @@
 ---
 tags: [papers, photochemistry, ultrafast]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [ultrafast-chemical-shifts, two-clocks-one-laser]
+related_papers: [ultrafast-chemical-shifts, two-clocks-one-laser, phosphorus-radical-hydroamination]
 source_analysis: "claude_export/extracted-analyses/2026-07-03_two-lasers-one-reaction_942df2d8.md"
 ---
 
@@ -26,6 +26,9 @@ Molecules with more than one stable geometric arrangement (isomers) sitting clos
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[phosphorus-radical-hydroamination]]
 
 - Related: [[ultrafast-chemical-shifts]], [[two-clocks-one-laser]]
 

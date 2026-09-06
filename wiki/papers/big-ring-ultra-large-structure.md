@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, large-scale-structure, observations]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cosmos-web-cosmic-web, desi-evolving-dark-energy, newton-ksz-force-law]
+related_papers: [cosmos-web-cosmic-web, desi-evolving-dark-energy, newton-ksz-force-law, gigaparsec-anisotropic-structures]
 source_analysis: "claude_export/extracted-analyses/2026-07-05_discovery-of-a-big-ring-ultra-large-scale-structure_2f60382c.md"
 ---
 
@@ -30,6 +30,9 @@ Quasars are flashlights behind the fog. Magnesium atoms in intervening gas cast 
 - ΛCDM can produce rare large fluctuations; “impossible” vs “unlikely” is subtle.
 
 ## Connections
+
+- Reverse-link: [[gigaparsec-anisotropic-structures]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 
 - Large-scale structure: [[cosmic-web]], [[cosmos-web-cosmic-web]], [[baryon-acoustic-oscillations]]
 - Expansion / principle tests: [[desi-evolving-dark-energy]], [[hubble-tension]], [[newton-ksz-force-law]]

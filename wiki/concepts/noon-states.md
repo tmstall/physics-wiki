@@ -1,8 +1,8 @@
 ---
 tags: [concepts, quantum-sensing, entanglement]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [massive-tunneling-schrodinger-cats]
+related_papers: [massive-tunneling-schrodinger-cats, macroscopic-crystal-entanglement-neutrons, three-body-quantum-company, w-state-entangled-measurement]
 ---
 
 # NOON States (Spatial Schrödinger Cats)
@@ -18,6 +18,10 @@ Form: \((|N,0\rangle + e^{i\phi}|0,N\rangle)/\sqrt{2}\). There is no half-and-ha
 [[massive-tunneling-schrodinger-cats]] prepares NOON-like cats by collective tunneling in a double-well superlattice, then uses Ramsey recombination to sense sub-micron energy gradients below the standard quantum limit. A different “macroscopic quantum” push in this wiki is operator [[quantum-proper-time]] in ion clocks (motional, not spatial cats).
 
 ## Related pages
+
+- Reverse-link: [[macroscopic-crystal-entanglement-neutrons]]
+- Reverse-link: [[three-body-quantum-company]]
+- Reverse-link: [[w-state-entangled-measurement]]
 
 - [[collective-tunneling]]
 - [[ramsey-interferometry]]

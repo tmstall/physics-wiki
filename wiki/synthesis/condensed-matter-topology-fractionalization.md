@@ -1,9 +1,10 @@
 ---
 tags: [synthesis, condensed-matter, topology, fractionalization, moire, quantum-geometry]
-last_updated: 2026-08-04
+last_updated: 2026-09-05
 status: synthesis
-related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw]
+related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw, tise2-core-level-cdw-excitons, erte3-competing-cdw-time-domain, woven-ferroelectric-domains-optical]
 ---
+
 
 # Condensed-Matter Topology and Fractionalization
 
@@ -17,7 +18,7 @@ Fractional charges, anyonic exchange, mini-band superconductivity, quantum geome
 
 No single paper wins. Stack them and four mechanisms appear: (1) **fractionalization** of charge or occupancy, (2) **band geometry** as a resource (metric, Brown–Zak, supermoiré folding), (3) **classical topological textures** you can write with current, (4) **photonic / soft-matter emulators** of non-Abelian structure. The tensions live where “anyon” means a real quasiparticle versus a programmable phase or a classical knot.
 
-This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology lives on [[quantum-time-across-platforms]]; general AMO state engineering lives on [[amo-quantum-state-control]]. They share cold-atom pages; they answer different questions.
+This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology lives on [[quantum-time-across-platforms]]; general AMO state engineering lives on [[amo-quantum-state-control]]. Sub-cycle fieldoscopy and color-center *hardware* live on [[ultrafast-optics-and-solid-state-emitters]] — [[tise2-core-level-cdw-excitons]] dual-links intentionally (CDW order here; attosecond XUV method there).
 
 ---
 
@@ -133,6 +134,7 @@ This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology li
 - **Quantum metric as measurable geometry:** [[quantum-metric-spin-momentum-locking]] tied to nonlinear transport culture.
 - **Writable spin topology + magnon hub:** [[magnetic-heliknoton-electric-write]], [[magnons]], [[spin-flip-flop-saf]].
 - **Photonic non-Abelian control:** [[nonabelian-photonic-braiding]] as emulator anchor.
+- **CDW / ultrafast local probe:** [[quantum-metallurgy-cdw]], [[tise2-core-level-cdw-excitons]] (transient cores vs static blindness).
 
 ### Still thin (honest gaps)
 
@@ -162,3 +164,7 @@ This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology li
 - For time-as-quantum-object (NOON duration, clocks), see [[quantum-time-across-platforms]] — different axis.
 
 **Catalog role:** Sixth synthesis page. Complements the two BH syntheses (evaporation vs AGN feedback), the two quantum foundations/AMO syntheses (time, state control, measurement), and leaves cosmology / QFT clusters without a topology-fractionalization synthesis of their own.
+
+## Lint addendum (2026-08-31)
+
+- Method neighbors (not topology claims): [[particle-view-nn-wavefunction]], [[3d-electron-diffraction-osc]].

@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, gravity, cmb]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [gw-induced-fermion-freeze-in, cosmos-web-cosmic-web]
+related_papers: [gw-induced-fermion-freeze-in, cosmos-web-cosmic-web, alena-tensor-rotation-dm, big-ring-ultra-large-structure, desi-evolving-dark-energy, primordial-tidal-torque-galaxy-spin]
 source_analysis: "raw/analyses/Newton Was Right All Along.md"
 ---
 
@@ -30,6 +30,13 @@ Positions of galaxies tell you *where* structure ended up after a messy history.
 - \(\bar\tau\) degeneracy partially shapes constraints.
 
 ## Connections
+
+- Reverse-link: [[alena-tensor-rotation-dm]]
+- Reverse-link: [[big-ring-ultra-large-structure]]
+- Reverse-link: [[desi-evolving-dark-energy]]
+- Reverse-link: [[primordial-tidal-torque-galaxy-spin]]
+- Synthesis: [[modified-speculative-gravity]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 
   - Concepts: [[ksz-effect]], [[modified-newtonian-dynamics]]
 - Cosmology neighbors: [[cosmos-web-cosmic-web]] (structure mapping), [[hubble-tension]] (independent large-scale gravity stress test), [[gw-induced-fermion-freeze-in]] (early-universe GW/DM, different regime).

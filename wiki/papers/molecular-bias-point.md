@@ -26,6 +26,7 @@ By tuning applied electric and magnetic fields to a "magic" operating point, Cal
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Related: [[ito-nanocrystal-fieldoscopy]], [[ciss-homochirality]]
 
 ## Source

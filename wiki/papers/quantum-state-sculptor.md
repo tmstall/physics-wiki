@@ -38,6 +38,8 @@ A harmonic oscillator is an infinite ladder of rungs. Cats usually superpose two
 - Key terms: continuous-variable QHO, trisqueezing, quadsqueezing, Wigner negativity, mid-circuit measurement, spin–motion coupling, GKP / cat codes (context)
 
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
+- Synthesis: [[measurement-problem-threads]]
+- Reverse-link: [[cft-spectra-rydberg-simulator]]
 
 ## Source
 

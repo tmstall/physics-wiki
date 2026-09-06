@@ -1,8 +1,8 @@
 ---
 tags: [papers, chemistry, electronic-structure, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [bond-breaking-discount]
+related_papers: [bond-breaking-discount, phosphorus-radical-hydroamination]
 source_analysis: "claude_export/extracted-analyses/2026-07-12_one-bond-and-done_b51aa206.md"
 ---
 
@@ -26,7 +26,11 @@ Every organic student learns the picture in the paper's Figure 1: attach chlorin
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[phosphorus-radical-hydroamination]]
+
 - Related: [[bond-breaking-discount]]
+- Near-exact neural wave functions → classical Lewis / VB readout (different method, same “make electronic structure drawable” goal): [[particle-view-nn-wavefunction]]
 
 ## Source
 

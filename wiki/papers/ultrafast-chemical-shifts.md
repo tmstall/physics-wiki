@@ -1,8 +1,8 @@
 ---
 tags: [papers, ultrafast, spectroscopy, chemistry]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [hot-electron-coherent-phonons-ptcu, attosecond-stm-lightwave]
+related_papers: [hot-electron-coherent-phonons-ptcu, attosecond-stm-lightwave, two-lasers-one-reaction]
 source_analysis: "claude_export/extracted-analyses/2026-03-12_ultrafast-chemical-shifts-analysis_653e2cb3.md"
 ---
 
@@ -25,6 +25,9 @@ Chemistry happens in the dark. You know the starting materials, you see the fina
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[two-lasers-one-reaction]]
 
 - Related: [[hot-electron-coherent-phonons-ptcu]], [[attosecond-stm-lightwave]]
 

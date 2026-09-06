@@ -1,8 +1,8 @@
 ---
 tags: [papers, soft-matter, synthetic-biology, chemistry]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [millisecond-pharma-factory]
 source_analysis: "raw/analyses/Boronate Velcro One Pot, Three Jobs.md"
 ---
 
@@ -30,6 +30,9 @@ Naked coacervates are great cytoplasm analogs with no package — they fuse, dis
 - Bibliographic details provisional from analysis.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[millisecond-pharma-factory]]
 
 - Chemistry / biotech island (one-pot programmable matter, different science): [[kinetic-barcoding-cas13a]] (kinetic barcodes in droplets for multiplex RNA), [[magnesium-benzidine-rearrangement]] (one-pot biaryl synthesis via rearrangement).
 - Domain sits outside the quantum-metrology core of the wiki but fits soft-matter / origins-of-life adjacent engineering physics.

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, general-relativity, topology]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [frozen-in-gravitational-fields]
+related_papers: [frozen-in-gravitational-fields, topological-cosmological-constant]
 ---
 
 # Frozen-In Gravity
@@ -16,6 +16,8 @@ Ideal MHD glues magnetic lines to a perfect conductor. Asenjo–Winkler–Comiss
 Paper: [[frozen-in-gravitational-fields]].
 
 ## Related pages
+
+- Reverse-link: [[topological-cosmological-constant]]
 
 - Gravitational Helicity
 - Weyl Curvature

@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, galaxy-evolution, jwst]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [smbh-inclination-angle, mrk501-double-jet-smbbh, high-z-quasar-pair-merger, ic1262-metal-mixing]
+related_papers: [smbh-inclination-angle, mrk501-double-jet-smbbh, high-z-quasar-pair-merger, ic1262-metal-mixing, category-79-quasar-wind, jwst-filament-cnd-ngc4696]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Ultramassive Black Hole Binary Carves)"
 ---
 
@@ -31,6 +31,9 @@ Two wrecking balls chained together in a parking lot: every star that wanders cl
 - Dark-matter response to scouring less constrained than stars.
 
 ## Connections
+
+- Reverse-link: [[category-79-quasar-wind]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
 
 - SMBH binary / final-parsec cluster: [[smbh-inclination-angle]], [[supermassive-black-hole-binaries]], [[dynamical-friction]], [[mrk501-double-jet-smbbh]], [[high-z-quasar-pair-merger]]
 - Cluster / group baryons: [[ic1262-metal-mixing]]

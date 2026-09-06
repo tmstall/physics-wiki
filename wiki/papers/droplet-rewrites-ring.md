@@ -1,8 +1,8 @@
 ---
 tags: [papers, chemistry, microdroplet, synthesis, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [millisecond-pharma-factory, water-double-life-nanoconfinement, bond-breaking-discount]
+related_papers: [millisecond-pharma-factory, water-double-life-nanoconfinement, bond-breaking-discount, phosphorus-radical-hydroamination]
 source_analysis: "claude_export/extracted-analyses/2026-06-26_the-droplet-that-rewrites-the-ring_69f8581e.md"
 ---
 
@@ -28,6 +28,9 @@ Bulk water is a mild solvent. A 4 µm droplet is mostly surface. At that air–w
 - Island / chemistry page; analysis-based ingest.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[phosphorus-radical-hydroamination]]
 
 - Fast synthesis island: [[millisecond-pharma-factory]]
 - Confined water: [[water-double-life-nanoconfinement]]

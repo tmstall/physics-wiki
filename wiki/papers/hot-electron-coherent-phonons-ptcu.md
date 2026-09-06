@@ -1,6 +1,6 @@
 ---
 tags: [condensed-matter, ultrafast, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-21_electrons-as-piston-not-furnace_e58c866e.md"
 ---
@@ -26,9 +26,17 @@ Researchers wanted to know whether ordinary metal-on-metal interfaces — no sem
 
 ## Connections
 
+- Reverse-link: [[ruthenium-atom-catalysis]]
+- Reverse-link: [[tise2-core-level-cdw-excitons]]
+- Reverse-link: [[ultrafast-chemical-shifts]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
+- Reverse-link: [[bessy-tes-soft-xray-spectrometer]]
+- Reverse-link: [[erte3-competing-cdw-time-domain]]
+
 - [[brown-zak-nonlinear-transport]], [[ito-nanocrystal-fieldoscopy]]
 
 - Related (SpaceX set): [[nickelate-nodeless-gap-arpes]] — Nickelate electron-boson kink
+- Local bond / phonon-correlation cousin (STEM fringe visibility → Si–Si stiffness): [[atomic-scale-double-slit-si]]
 
 ## Source
 

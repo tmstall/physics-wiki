@@ -1,8 +1,8 @@
 ---
 tags: [concepts, galactic-archaeology, cosmology]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [loki-early-accreted-vmp, ancient-immigrant-lmc-star]
+related_papers: [loki-early-accreted-vmp, ancient-immigrant-lmc-star, imf-variation-milky-way, not-a-globular-cluster, pulsars-satellite-masses, smbh-inclination-angle]
 ---
 
 # Galactic Accretion
@@ -14,6 +14,11 @@ related_papers: [loki-early-accreted-vmp, ancient-immigrant-lmc-star]
 Early mergers can scatter stars onto both prograde and retrograde planar orbits before the disc potential settles. Late mergers struggle to do the same. Central narrative of [[loki-early-accreted-vmp]]. The LMC also delivers chemical fossils: [[ancient-immigrant-lmc-star]] is an ultra-metal-poor star whose orbit traces to the Clouds. Cosmic-scale environment of galaxies is mapped separately in [[cosmos-web-cosmic-web]].
 
 ## Related pages
+
+- Reverse-link: [[imf-variation-milky-way]]
+- Reverse-link: [[not-a-globular-cluster]]
+- Reverse-link: [[pulsars-satellite-masses]]
+- Reverse-link: [[smbh-inclination-angle]]
 
 - [[ultra-metal-poor-stars]]
 - [[cosmic-web]]

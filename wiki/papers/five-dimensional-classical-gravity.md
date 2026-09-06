@@ -1,8 +1,8 @@
 ---
 tags: [papers, gravity, foundations, extra-dimensions, quantum-foundations, speculative]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: exploratory
-related_papers: [gravity-from-entropy, retrocausal-noisy-channel-capacity, qg-deep-dive-4-de-sitter, problem-of-time-cold-atoms, temporal-imbalance-gravity]
+related_papers: [gravity-from-entropy, retrocausal-noisy-channel-capacity, qg-deep-dive-4-de-sitter, problem-of-time-cold-atoms, temporal-imbalance-gravity, warp-drive-positive-energy]
 source_analysis: "spacex_export/extracted-analyses/2026-01-07_five-dimensional-classical-gravity-model_c344a460.md"
 ---
 
@@ -35,6 +35,8 @@ Instead of quantizing the metric, let spacetime and particle threads co-relax in
 - Do not cite this page as established physics; use it only as a pointer to an idea under discussion.
 
 ## Connections
+
+- Reverse-link: [[warp-drive-positive-energy]]
 
 - Entropy / emergent gravity: [[gravity-from-entropy]], [[temporal-imbalance-gravity]]
 - Retrocausal / zigzag causality: [[retrocausal-noisy-channel-capacity]]

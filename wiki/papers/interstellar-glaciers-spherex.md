@@ -1,8 +1,8 @@
 ---
 tags: [papers, astrophysics, interstellar-medium, ice]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [chondrite-pressure-bump, dr21-magnetic-accretion, iras-21204-fuor]
 source_analysis: "raw/analyses/Interstellar Glaciers.md"
 ---
 
@@ -31,6 +31,10 @@ At 10–20 K, gas sticks to smoke-sized dust grains and freezes — ice mantles 
 - Diffuse ice challenges standard column-density thresholds for mantle growth.
 
 ## Connections
+
+- Reverse-link: [[chondrite-pressure-bump]]
+- Reverse-link: [[dr21-magnetic-accretion]]
+- Reverse-link: [[iras-21204-fuor]]
 
 - Soft bridge to large-scale structure: GMCs as local fuel for galaxies in the [[cosmic-web]] ([[cosmos-web-cosmic-web]]).
 - Astrobiology / planet-formation stake: water inventory available before solar systems form.

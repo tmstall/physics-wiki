@@ -1,13 +1,14 @@
 ---
 tags: [synthesis, nuclear-physics, qcd, dense-matter, heavy-ion, precision]
-last_updated: 2026-08-04
+last_updated: 2026-08-29
 status: synthesis
-related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr]
+related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, alice-jpsi-gluon-saturation, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr, nucleus-tells-on-itself, intrinsic-charm-proton-nnpdf, x2370-pseudoscalar-glueball, alice-oo-nene-nuclear-geometry-flow, tracking-baryon-number-nuclear-collisions, equilibrated-fraction-oo-qcd]
 ---
+
 
 # Nuclear and Dense-Matter Precision Observables
 
-**One-line summary:** This wiki’s nuclear, heavy-ion, and dense-QCD pages form a comparative map of **precision observables** — net-proton cumulants, charged/neutral kaon ratios, $A=3$ EMC slopes, SRC shell memory, UPCs, and color-SC theory — that constrain different corners of nuclear structure and the QCD phase diagram without a single shared “smoking gun.”
+**One-line summary:** This wiki’s nuclear, heavy-ion, and dense-QCD pages form a comparative map of **precision observables** — net-proton cumulants, baryon-number transport, charged/neutral kaon ratios, $A=3$ EMC slopes, free-proton intrinsic charm, SRC shell memory, UPCs, and color-SC theory — that constrain different corners of nuclear structure and the QCD phase diagram without a single shared “smoking gun.”
 
 ## Why pull these together
 
@@ -26,10 +27,14 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 | Observable | Facility / setting | What it primarily constrains | What it does *not* (yet) settle | Wiki anchors |
 | --- | --- | --- | --- | --- |
 | Net-proton $C_n$, $\kappa_n$ ratios | RHIC BES-II Au+Au | Non-critical baselines vs possible CP vicinity at $\mu_B\sim150$–$400$ MeV | Discovery of the critical point; full dynamical CP model | [[rhic-net-proton-fluctuations]] |
+| Mid-rapidity baryon transport ($B/\Delta Q$, $\alpha_B$) | STAR isobar + γ+Au + Au+Au | Soft gluonic vs valence-quark baryon-number carrier | Hybrid carrier mix; independent-facility replication | [[tracking-baryon-number-nuclear-collisions]] |
+| O+O / Ne+Ne anisotropic flow $v_n$ | ALICE light-ion run @ 5.36 TeV | Ab initio nuclear-shape imprint on hydro | Subnucleon-width tension; second-run systematics | [[alice-oo-nene-nuclear-geometry-flow]] |
+| O+O core/corona yield fractions | DCCI2 hybrid phenomenology | Equilibrated vs vacuum-fragmentation mix; ~30% corona floor | Framework-dependent split; clustered-$^{16}$O geometry | [[equilibrated-fraction-oo-qcd]] |
 | $R_K$ (charged/neutral kaons) | NA61/SHINE Ar+Sc @ 11.9 GeV | Unexpected isospin breaking in strangeness yields | Microscopic $u$–$d$ mechanism; perfect isospin symmetry of the system | [[na61-isospin-kaon-asymmetry]] |
 | EMC ratios $^3$H, $^3$He / $d$ | JLab MARATHON DIS | Isoscalar medium modification of valence PDFs; off-shell models | Large isovector EMC; full SRC–EMC dual cause | [[emc-effect-marathon-a3]] |
 | $(e,e'p)$ SRC ratios Ca/Fe | JLab Hall C | Orbital-dependent SRC rates (shell “memory”) | Universal contact picture; full nuclear chart | [[nucleus-shell-src-memory]] |
 | UPC J/ψ spin interference | STAR Au+Au UPC | Nuclear gluon tomography with helicity-sensitive diffraction | Inclusive nuclear PDF global fits alone | [[star-jpsi-spin-interference]] |
+| Incoherent UPC J/ψ vs $|t|$ | ALICE Pb–Pb UPC | Sub-fm gluon-fluctuation / saturation vs shadowing | 5σ discovery; multi-experiment replication | [[alice-jpsi-gluon-saturation]] |
 | High-$p_T$ spectra / jets | CERN ISR (historical) | Hard parton scattering baseline of QCD jets | Modern pQCD precision | [[high-pt-physics-cern-isr]], [[parton-jets]] |
 | Color-SC phases (theory) | NS cores (indirect) | Inevitable pairing at high $\mu$; EOS handles | Which phase (CFL/2SC/…) in real stars | [[color-superconductivity-qcd]] |
 | η′–nucleus potential | FRS+WASA semi-exclusive | Optical potential bounds; partial mass shift hints | Discovery of η′-mesic nucleus | [[eta-prime-mesic-nucleus]] |
@@ -42,7 +47,7 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 
 ## Thread A — Hot dense matter: fluctuations and isospin
 
-**Papers:** [[rhic-net-proton-fluctuations]], [[na61-isospin-kaon-asymmetry]], [[color-superconductivity-qcd]]
+**Papers:** [[rhic-net-proton-fluctuations]], [[tracking-baryon-number-nuclear-collisions]], [[na61-isospin-kaon-asymmetry]], [[alice-oo-nene-nuclear-geometry-flow]], [[equilibrated-fraction-oo-qcd]], [[color-superconductivity-qcd]]
 
 ### A1 — Net-proton cumulants as critical-point sensors
 
@@ -52,6 +57,10 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 
 **Limits:** Baseline choice moves the σ; volume/efficiency/centrality systematics dominate; FXT gap 3–7.7 GeV open; no CP dynamical model fully matches the suite.
 
+### A1b — Where baryon number rides (mean transport)
+
+[[tracking-baryon-number-nuclear-collisions]] (*Science* 2026): isobar $B/\Delta Q$, γ+Au $\alpha_B$, and Au+Au slopes all favor enhanced mid-rapidity stopping over valence-only models — the soft-junction reading of the same conserved $B$ that BES-II studies through *fluctuations*. Keep mean-transport and cumulant stories separate when stacking claims.
+
 ### A2 — Kaon isospin excess at the SPS
 
 [[na61-isospin-kaon-asymmetry]]: $R_K=1.184\pm0.061$ in Ar+Sc at 11.9 GeV — charged kaons exceed neutrals by ~18%, far above few-percent HRG / mass-splitting / neutron-excess expectations (~4.7σ with world data in the analysis narrative).
@@ -59,6 +68,14 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 **Intuition:** Isospin says $u$ and $d$ are near twins. Kaon charge states should lockstep. The fireball plays favorites more than textbooks budgeted.
 
 **Limits:** Neutral vs charged reconstruction systematics; Ar+Sc not perfectly isospin-symmetric; origin unidentified. (Extract filename “nuclear magnetization” is a **mismatch** — body is NA61 only.)
+
+### A2b — Light-ion O+O: geometry mold vs equilibrated fraction
+
+[[alice-oo-nene-nuclear-geometry-flow]] (ALICE): O+O / Ne+Ne $v_n$ match shape-informed hydro (NLEFT/PGCM→Trajectum); Ne/O ratios favor small subnucleon width and the tetrahedral-vs-bowling-pin contrast in central collisions.
+
+[[equilibrated-fraction-oo-qcd]] (Ito & Hirano, DCCI2): same $\sqrt{s_{NN}}=5.36$ TeV O+O system, different question — core exceeds corona above $\langle dN_{ch}/d\eta\rangle\approx20$, yet ~30% of central mid-rapidity yield stays non-thermalized corona. Woods–Saxon $^{16}$O in DCCI2 does **not** encode the clustered shapes ALICE exploits.
+
+**Intuition:** ALICE asks whether the mold’s *shape* survives into momentum anisotropy; DCCI2 asks how much of the cast is real fluid vs cold fallback. Stack them without collapsing “flow-like” into “fully equilibrated.”
 
 ### A3 — Theory corner: cold dense pairing
 
@@ -125,7 +142,7 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 - **MARATHON $A=3$ EMC** retied to arXiv:2410.12099; isoscalar vs isovector story corrected ([[emc-effect-marathon-a3]]).
 - **SRC shell-memory** experiment as architecture-vs-contact test ([[nucleus-shell-src-memory]]).
 - **Color-SC phase-diagram tutorial** as dense-matter theory hub ([[color-superconductivity-qcd]]).
-- **Hard-probe chain** from ISR history to STAR UPC spin interference.
+- **Hard-probe chain** from ISR history to STAR UPC spin interference and ALICE incoherent J/ψ saturation evidence ([[alice-jpsi-gluon-saturation]]).
 
 ### Still thin (honest gaps)
 
@@ -145,6 +162,7 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 3. **Critical region baselines:** Which non-critical baseline family (UrQMD, HRG CE, hydro EV, peripheral data) should be the wiki’s default reference when citing the ~2–5σ notch at 19.6 GeV — and how does that choice change the claim strength?
 4. **Hot vs cold dense:** What observational bridge (if any) connects BES-II fluctuation structure to color-SC / NS-core EOS handles without overclaiming continuity across the sign-problem wall?
 5. **What to ingest next:** Neutron-star radius/tidal precision papers, dilepton continuum fluctuation results, or a nuclear PDF global-analysis page — which gap most strengthens this map?
+6. **O+O stack:** Do ALICE/CMS/ATLAS light-ion data confirm both the geometry-imprinted $v_n$ ratios ([[alice-oo-nene-nuclear-geometry-flow]]) and the DCCI2 ~30% corona floor ([[equilibrated-fraction-oo-qcd]]), and does clustered $^{16}$O geometry move the core fraction?
 
 ---
 

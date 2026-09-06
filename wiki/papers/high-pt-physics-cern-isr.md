@@ -1,8 +1,8 @@
 ---
 tags: [papers, particle-physics, qcd, historical]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [levinthal-high-pt-isr]
+related_papers: [levinthal-high-pt-isr, alice-jpsi-gluon-saturation, b-meson-fcnc-anomaly, nucleus-shell-src-memory, star-jpsi-spin-interference]
 source_analysis: "raw/analyses/High-pT Physics at the CERN ISR.md"
 ---
 
@@ -31,9 +31,15 @@ Soft hadron traffic mostly sprays along the beams. High \(p_T\) is a sideways ki
 
 ## Connections
 
+- Reverse-link: [[alice-jpsi-gluon-saturation]]
+- Reverse-link: [[b-meson-fcnc-anomaly]]
+- Reverse-link: [[nucleus-shell-src-memory]]
+- Reverse-link: [[star-jpsi-spin-interference]]
+
   - Concepts: [[high-pt-scaling]], [[parton-jets]]
 - Fuller experimental narrative of the thin outline page [[levinthal-high-pt-isr]] (same thesis lineage / analysis family).
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Reverse-link: [[intrinsic-charm-proton-nnpdf]]
 
 ## Open questions (historical then; archival now)
 

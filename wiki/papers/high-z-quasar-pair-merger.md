@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, black-holes, galaxy-mergers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, cosmos-web-cosmic-web]
+related_papers: [smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, cosmos-web-cosmic-web, category-79-quasar-wind, early-universe-popiii-flash-ionization, entropy-maximization-bh-mergers, euclid-high-z-quasar-census, glimpse-17775-cocoon, jwst-filament-cnd-ngc4696]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Two Cosmic Dragons Fighting at the Dawn of Time)"
 ---
 
@@ -33,11 +33,21 @@ Two campfires with a stream of gas between them are not one fire in a funhouse m
 
 ## Connections
 
+- Reverse-link: [[category-79-quasar-wind]]
+- Reverse-link: [[early-universe-popiii-flash-ionization]]
+- Reverse-link: [[entropy-maximization-bh-mergers]]
+- Reverse-link: [[euclid-high-z-quasar-census]]
+- Reverse-link: [[glimpse-17775-cocoon]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+
 - SMBH binary / pairing cluster: [[smbh-inclination-angle]], [[dynamical-friction]], [[supermassive-black-hole-binaries]], [[mrk501-double-jet-smbbh]], [[ultramassive-bh-binary-cavity]]
 - High-\(z\) structure: [[cosmos-web-cosmic-web]], [[cosmic-web]]
 - Concepts: [[dual-agn]], [[pulsar-timing-arrays]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[horizon-direct-wave-gw250114]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Reverse-link: [[dual-agn-green-pea]]
 
 - Related (SpaceX set): [[muse-quasar-filament-z3]] — MUSE LyA filament at z~3
 

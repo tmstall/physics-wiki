@@ -1,8 +1,8 @@
 ---
 tags: [concepts, quantum-foundations, causality]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [quantum-jamming]
+related_papers: [quantum-jamming, certified-randomness-amplification, evaporating-charged-black-holes, macroscopic-crystal-entanglement-neutrons, shor-algorithm-budget, three-body-quantum-company, w-state-entangled-measurement]
 ---
 
 # Quantum Jamming
@@ -20,6 +20,13 @@ Lives in the gap between [[no-signaling]] (no usable FTL message) and stronger â
 Active definitional debate (Weilenmann vs. Eckstein et al. and earlier causal-model work). See paper page [[quantum-jamming]].
 
 ## Related pages
+
+- Reverse-link: [[certified-randomness-amplification]]
+- Reverse-link: [[evaporating-charged-black-holes]]
+- Reverse-link: [[macroscopic-crystal-entanglement-neutrons]]
+- Reverse-link: [[shor-algorithm-budget]]
+- Reverse-link: [[three-body-quantum-company]]
+- Reverse-link: [[w-state-entangled-measurement]]
 
 - [[monogamy-of-entanglement]]
 - [[no-signaling]]

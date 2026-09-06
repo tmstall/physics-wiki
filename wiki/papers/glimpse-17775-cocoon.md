@@ -1,8 +1,8 @@
 ---
 tags: [papers, high-z, little-red-dots, black-holes, jwst]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [euclid-high-z-quasar-census, naked-black-hole-candidate, high-z-quasar-pair-merger, jwst-filament-cnd-ngc4696]
+related_papers: [euclid-high-z-quasar-census, naked-black-hole-candidate, high-z-quasar-pair-merger, jwst-filament-cnd-ngc4696, early-universe-popiii-flash-ionization, jwst-ulirg-hydrocarbons]
 source_analysis: "claude_export/extracted-analyses/2026-06-10_glimpse-17775-inside-the-cocoon_73204815.md"
 ---
 
@@ -31,11 +31,19 @@ Little Red Dots looked like impossible baby galaxies or dust monsters. Neither s
 
 ## Connections
 
+- Synthesis: [[smbh-stellar-encounters]]
+
+- Reverse-link: [[early-universe-popiii-flash-ionization]]
+- Reverse-link: [[jwst-ulirg-hydrocarbons]]
+
 - High-$z$ AGN census: [[euclid-high-z-quasar-census]], [[high-z-quasar-pair-merger]]
 - Extreme early BH portraits: [[naked-black-hole-candidate]]
 - Local fast-growth cousins: [[radio-changing-look-agn]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[bottom-heavy-imf-early-galaxies]]
+- Reverse-link: [[dual-agn-green-pea]]
+- Reverse-link: [[stellar-spin-repeating-partial-tde]]
 
 ## Source
 

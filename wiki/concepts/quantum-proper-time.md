@@ -1,8 +1,8 @@
 ---
 tags: [concepts, relativity, quantum-foundations, metrology]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, collapse-models-clock-precision]
+related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, collapse-models-clock-precision, problem-of-time-cold-atoms, thorium-229-nuclear-clock]
 last_updated: 2026-08-01
 ---
 
@@ -38,6 +38,9 @@ Speculative **time-first** gravity theories ([[temporal-imbalance-gravity]], [[f
 - Tension: some physicists call this “quantum special relativity,” not “quantum gravity” — both framings appear in the literature.
 
 ## Related pages
+
+- Reverse-link: [[problem-of-time-cold-atoms]]
+- Reverse-link: [[thorium-229-nuclear-clock]]
 
 - Synthesis: [[measurement-problem-threads]] (foundations: measurement problem threads)
 

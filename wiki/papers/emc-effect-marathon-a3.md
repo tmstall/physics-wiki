@@ -1,8 +1,8 @@
 ---
 tags: [papers, nuclear-physics, qcd, deep-inelastic-scattering]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [nucleus-shell-src-memory, high-pt-physics-cern-isr, star-jpsi-spin-interference, color-superconductivity-qcd, na61-isospin-kaon-asymmetry, rhic-net-proton-fluctuations]
+related_papers: [nucleus-shell-src-memory, high-pt-physics-cern-isr, star-jpsi-spin-interference, color-superconductivity-qcd, na61-isospin-kaon-asymmetry, rhic-net-proton-fluctuations, alice-jpsi-gluon-saturation]
 source_analysis: "spacex_export/extracted-analyses/2025-08-29_emc-effect-quarks-and-gluons_a467bb47.md"
 cleanup_note: "2026-08-04: claims retied to arXiv:2410.12099 abstract/body; conversational extract drift corrected"
 ---
@@ -36,6 +36,9 @@ A free nucleon’s quark PDFs are its internal traffic map. Drop that nucleon in
 - Low-$x$ shadowing is not the focus of this DIS valence-region result.
 
 ## Connections
+
+- Reverse-link: [[alice-jpsi-gluon-saturation]]
+- Reverse-link: [[intrinsic-charm-proton-nnpdf]] (free-proton IC vs nuclear EMC — different questions)
 
 - Nuclear short-range structure: [[nucleus-shell-src-memory]]
 - High-energy nuclear / partons: [[high-pt-physics-cern-isr]], [[star-jpsi-spin-interference]]

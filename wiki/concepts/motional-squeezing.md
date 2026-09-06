@@ -1,8 +1,8 @@
 ---
 tags: [concepts, quantum-optics, ion-traps]
-last_updated: 2026-07-31
+last_updated: 2026-08-29
 status: draft
-related_papers: [quantum-proper-time-ion-clocks]
+related_papers: [quantum-proper-time-ion-clocks, coupling-free-electrons-trapped-ion, quantum-state-sculptor]
 ---
 
 # Motional Squeezing
@@ -22,3 +22,4 @@ The trap ground state already has zero-point spread in position and momentum. A 
 - [[quantum-proper-time]]
 - [[second-order-doppler-shift]]
 - [[optical-ion-clocks]]
+- Motional cats as amplifiers (not squeezing per se): [[quantum-state-sculptor]], [[coupling-free-electrons-trapped-ion]]

@@ -36,6 +36,7 @@ Near resonance, anomalous dispersion can make a pulse peak exit *earlier* than v
 - Time-as-interaction-theme cousin: [[quantum-proper-time]] / [[time-goes-quantum]] (different physics: relativistic operator time vs. optical dwell-time weak values).
 - Platform: cold atoms — also appears in [[massive-tunneling-schrodinger-cats]].
 - Synthesis: [[quantum-time-across-platforms]]
+- Reverse-link: [[collapse-models-clock-precision]]
 
 ## Open questions
 

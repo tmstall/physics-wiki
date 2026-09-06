@@ -38,6 +38,7 @@ This is a **finite-density hadronic** experiment: nuclear matter at roughly satu
 
 - QCD density physics tutorial companion: [[color-superconductivity-qcd]]
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Reverse-link: [[x2370-pseudoscalar-glueball]]
 - Flavor / hadron neighbors: [[flavor-changing-neutral-current]] (different regime)
 - Key terms (stubs folded here): **η′ meson** (~958 MeV) is heavy because the **U(1)ₐ anomaly** / topology adds mass beyond the eight light Goldstones; a **mesic nucleus** is a meson bound inside nuclear matter when that mass drops enough at finite density.
 

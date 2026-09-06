@@ -1,8 +1,8 @@
 ---
 tags: [concepts, black-holes, general-relativity]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [evaporating-charged-black-holes, frozen-in-gravitational-fields]
+related_papers: [evaporating-charged-black-holes, frozen-in-gravitational-fields, black-hole-third-law-violation, five-dimensional-classical-gravity, naked-black-hole-candidate, smbh-inclination-angle]
 ---
 
 # Black Hole Interiors
@@ -23,6 +23,11 @@ Four wiki threads:
 Horizons as special multiparty geometry also appear in [[quantum-jamming]].
 
 ## Related pages
+
+- Reverse-link: [[black-hole-third-law-violation]]
+- Reverse-link: [[five-dimensional-classical-gravity]]
+- Reverse-link: [[naked-black-hole-candidate]]
+- Reverse-link: [[smbh-inclination-angle]]
 
 - [[hawking-radiation]]
 - [[reissner-nordstrom]]

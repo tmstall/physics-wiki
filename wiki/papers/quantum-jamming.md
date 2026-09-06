@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-foundations, quantum-crypto, causality]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [certified-randomness-amplification]
+related_papers: [certified-randomness-amplification, macroscopic-crystal-entanglement-neutrons, shor-algorithm-budget, three-body-quantum-company, w-state-entangled-measurement]
 source_analysis: "raw/analyses/Quantum Jamming.md"
 ---
 
@@ -34,6 +34,12 @@ Engineering analogy: a network switch that reroutes packets between two servers 
 - Analysis synthesizes a multi-paper arc from popular + research sources; verify citations against primaries.
 
 ## Connections
+
+- Reverse-link: [[macroscopic-crystal-entanglement-neutrons]]
+- Reverse-link: [[shor-algorithm-budget]]
+- Reverse-link: [[three-body-quantum-company]]
+- Reverse-link: [[w-state-entangled-measurement]]
+- Synthesis: [[black-hole-evaporation-energy-conditions]]
 
   - Concepts: [[quantum-jamming]], [[monogamy-of-entanglement]], [[no-signaling]], [[device-independence]], [[bell-tests]]
 - Crypto / hardware cousin: [[certified-randomness-amplification]] also leans on loophole-free Bell structure, but for entropy extraction rather than key monogamy.

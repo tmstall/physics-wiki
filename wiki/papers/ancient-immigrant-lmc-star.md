@@ -1,8 +1,8 @@
 ---
 tags: [papers, galactic-archaeology, stellar-chemistry, early-universe]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [loki-early-accreted-vmp, pulsars-satellite-masses]
+related_papers: [loki-early-accreted-vmp, pulsars-satellite-masses, imf-variation-milky-way]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Ancient Immigrant)"
 ---
 
@@ -33,6 +33,8 @@ This star is a sealed vial of first-generation explosion ash. Its chemistry is a
 - Provenance of “independent identification” should be fully clarified in the literature.
 
 ## Connections
+
+- Reverse-link: [[imf-variation-milky-way]]
 
 - Galactic archaeology: [[loki-early-accreted-vmp]], [[galactic-accretion]], [[pulsars-satellite-masses]] (LMC mass / dynamics)
 - Key terms: **Population III** = first, metal-free stars whose yields seed later UMP fossils.

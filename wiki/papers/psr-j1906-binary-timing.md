@@ -36,6 +36,8 @@ A binary pulsar is a clock on a warped train track. Years of arrival-time residu
 
 ## Connections
 
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+
 - Pulsar mass / acceleration work: [[pulsars-satellite-masses]]
 - Multi-messenger neutron-star binaries: [[gw170817-jet-hubble]]
 - GW strain / timing language: [[second-order-gw-strain-gauge]], [[horizon-direct-wave-gw250114]]

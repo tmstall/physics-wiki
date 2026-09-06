@@ -1,8 +1,8 @@
 ---
 tags: [papers, gravity, dark-matter, galaxy-dynamics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [newton-ksz-force-law, pre-bang-leftovers, gw-induced-fermion-freeze-in]
+related_papers: [newton-ksz-force-law, pre-bang-leftovers, gw-induced-fermion-freeze-in, mond-external-field-sparc]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Rotation Was Always the Dark Matter)"
 ---
 
@@ -31,6 +31,10 @@ Galaxy “missing mass” can be an accounting error: spin energy is real energy
 - Constant-\(\chi\) per galaxy is a simplification; full \(r\)-dependent tensor not yet applied to clusters with independent lensing.
 
 ## Connections
+
+- Reverse-link: [[mond-external-field-sparc]]
+- Synthesis: [[modified-speculative-gravity]]
+- Synthesis: [[dark-matter-detection-channels]]
 
 - Alternatives to particle DM / MOND: [[modified-newtonian-dynamics]], [[newton-ksz-force-law]] (large-scale force law prefers \(n\approx 2\)).
 - Other DM production ideas in the wiki: [[gw-induced-fermion-freeze-in]], [[pre-bang-leftovers]], [[primordial-black-holes]].

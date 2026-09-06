@@ -29,6 +29,8 @@ At high level density, individual γ lines blur into a strength function — an 
 
 ## Connections
 
+- Synthesis: [[nuclear-dense-matter-precision]]
+
 - Nuclear structure: [[nucleus-shell-src-memory]], [[thorium-229-nuclear-clock]]
 - Heavy-element path: [[beyond-iron-ultraheavy-cosmic-rays]]
 

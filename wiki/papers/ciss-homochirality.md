@@ -1,8 +1,8 @@
 ---
 tags: [papers, condensed-matter, biophysics, spintronics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [spin-flip-flop-saf]
+related_papers: [spin-flip-flop-saf, molecular-bias-point, topo-chirality-structured-light, twisted-light-chiral-ms]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Handedness of Life Is Written in Electron Spin)"
 ---
 
@@ -31,6 +31,10 @@ Mirror images of screws look opposite, but if you force a directed current throu
 - Field still debates microscopic CISS theory; this is a major proposed mechanism, not settled dogma.
 
 ## Connections
+
+- Reverse-link: [[molecular-bias-point]]
+- Reverse-link: [[topo-chirality-structured-light]]
+- Reverse-link: [[twisted-light-chiral-ms]]
 
 - Spin transport neighbors: [[spin-flip-flop-saf]], [[magnons]]
 - Key terms: **homochirality** = biology’s global one-hand preference (L-amino acids, D-sugars); CISS supplies a spin-transport ratchet that can amplify enantiomeric excess.

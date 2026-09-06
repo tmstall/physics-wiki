@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, agn, feedback, galaxy-evolution]
-last_updated: 2026-08-04
+last_updated: 2026-08-29
 status: synthesis
-related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate]
+related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744]
 ---
 
 # Black Hole Feedback and Changing-Look AGN
@@ -17,7 +17,7 @@ A supermassive black hole is a small engine with galaxy-scale consequences. The 
 
 No single paper owns the whole loop. Stack them and a ladder appears: kiloparsec filaments → circumnuclear disks → accretion states → winds and jets → dual nuclei and binaries → recoils and cavities. The tensions live at the handoffs between rungs.
 
-This synthesis is **astrophysical** (fuel and feedback). Interior evaporation and energy conditions live on [[black-hole-evaporation-energy-conditions]]; do not collapse the two. High-energy messengers, ISM chemistry, and early ionization history live on [[high-energy-astrophysics-multimessenger]] — shared filament/quasar pages, different question.
+This synthesis is **astrophysical** (fuel and feedback). Interior evaporation and energy conditions live on [[black-hole-evaporation-energy-conditions]]; do not collapse the two. **One-star probes** (S-stars, repeating partial TDEs, Hills capture) live on [[smbh-stellar-encounters]]. High-energy messengers, ISM chemistry, and early ionization history live on [[high-energy-astrophysics-multimessenger]] — shared filament/quasar pages, different question.
 
 ---
 
@@ -32,13 +32,15 @@ Think of a power plant with a fuel pipe, a furnace, an exhaust stack, and occasi
 | **Furnace mode** | Accretion lights a quasar / AGN; soft vs hard continua, WLQ vs strong-lined | [[category-79-quasar-wind]], [[glimpse-17775-cocoon]], [[euclid-high-z-quasar-census]] |
 | **Exhaust (radiative)** | UV / X-ray winds carry mass and kinetic power | [[category-79-quasar-wind]] |
 | **Exhaust (mechanical)** | Jets and radio lobes reheat atmospheres; radio loudness can flip | [[radio-changing-look-agn]], [[mrk501-double-jet-smbbh]] |
-| **Pairing** | Two holes in one host; inclination filters merger vs stall | [[smbh-inclination-angle]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]] |
+| **Pairing** | Two holes in one host; inclination filters merger vs stall | [[smbh-inclination-angle]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]], [[dual-agn-green-pea]] |
 | **Hardening / scouring** | Binary slingshots stars and gas; kpc cavities | [[ultramassive-bh-binary-cavity]] |
 | **Kick** | GW recoil flings the remnant through the nucleus | [[bh-recoils-agn-survey]], [[black-hole-recoil-agn]] |
 
 **Intuition:** Feedback is a control loop, not a one-way blast. Without fuel, no wind. Without wind or jets, cooling dumps too hard. Without pairing physics, you cannot budget the nanohertz GW sky or explain dual quasars. The wiki’s value is that each rung has at least one concrete observational paper.
 
 **Concepts nearby:** [[supermassive-black-hole-binaries]], [[dual-agn]], [[dynamical-friction]], [[pulsar-timing-arrays]]
+
+**Simulation population layer:** [[astrid-z0-mbh-lss]] supplies a $z=0$ hydro census with dynamical-friction BH motion (vs repositioning), useful as infrastructure behind duals, mergers, and PTA/LISA rate work — while flagging late-time BHAD and seed-excess wounds in the same feedback loop.
 
 ---
 
@@ -82,17 +84,18 @@ An NLS1 jumped from radio-quiet (~1.4 mJy) to radio-loud (~39 mJy) and *stayed* 
 
 **Tension with Rung 2:** Radiative BAL winds and mechanical radio jets are different exhaust channels. A galaxy can be wind-dominated, jet-dominated, or both over different epochs. Changing-look phenomenology means **mode is not a permanent property of the black hole’s passport**.
 
-**High-$z$ cousin:** [[glimpse-17775-cocoon]] — a Little Red Dot where a dense cocoon rewrites the spectrum and inflates inferred mass; super-Eddington on a *smaller* hole can hide inside fog. Early growth modes (NLS1-like fast accretors) connect local radio switches to JWST’s compact red monsters without forcing every LRD to be an overmassive galaxy.
+**High-$z$ cousins:** [[glimpse-17775-cocoon]] — a Little Red Dot where a dense cocoon rewrites the spectrum and inflates inferred mass; super-Eddington on a *smaller* hole can hide inside fog. [[direct-bh-mass-lrd-abell2744]] — first *direct* dynamical mass for a lensed $z=7.04$ LRD (~$5\times10^7\,M_\odot$), consistent with virial within a few but with extreme $M_{\rm BH}/M_*$. Early growth modes connect local radio switches to JWST’s compact red monsters without forcing every LRD to be an overmassive galaxy.
 
 ---
 
 ## Rung 4 — Pairing: inclination, duals, and imaged jets
 
-**Papers:** [[smbh-inclination-angle]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]]
+**Papers:** [[smbh-inclination-angle]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]], [[dual-agn-green-pea]]
 
 - **Inclination filter:** Post-merger disk galaxies — secondary SMBH orbital tilt $\lesssim 20^\circ$ favors merger in a few Gyr; $\gtrsim 45^\circ$ risks everlasting high-inclination stall ([[smbh-inclination-angle]]).
 - **High-$z$ dual:** Confirmed quasar pair in a $z=5.7$ merger with a tidal gas bridge — dual engines in the early universe ([[high-z-quasar-pair-merger]]).
 - **Local imaging:** Mrk 501’s second jet loops around the primary — binary deep in the final-parsec regime ([[mrk501-double-jet-smbbh]]).
+- **Compact Green Pea dual:** First confirmed dual AGN in a metal-poor Green Pea (Chandra+Keck multi-factor; arXiv-only at ingest) — extends dual habitat beyond massive mergers ([[dual-agn-green-pea]], [[dual-agn]]).
 
 **Intuition:** Two black holes in one galaxy are not guaranteed to merge. Geometry is a gate: flat coplanar orbits sink; polar orbits can hang. Dual quasars and double jets are the times when *both* furnaces light up before the final plunge.
 
@@ -117,9 +120,9 @@ An NLS1 jumped from radio-quiet (~1.4 mJy) to radio-loud (~39 mJy) and *stayed* 
 
 ## Census rungs — population context
 
-**Papers:** [[euclid-high-z-quasar-census]], [[naked-black-hole-candidate]], [[glimpse-17775-cocoon]]
+**Papers:** [[euclid-high-z-quasar-census]], [[naked-black-hole-candidate]], [[glimpse-17775-cocoon]], [[direct-bh-mass-lrd-abell2744]]
 
-Euclid multiplies the high-$z$ quasar sample; extreme JWST portraits (naked / horizonless candidates, LRD cocoons) stress how incomplete “standard AGN SED” assumptions are. Feedback models trained on local quasars must not pretend every $z\sim6$–8 object is a scaled-up SDSS template.
+Euclid multiplies the high-$z$ quasar sample; extreme JWST portraits (naked / horizonless candidates, LRD cocoons) stress how incomplete “standard AGN SED” assumptions are. [[direct-bh-mass-lrd-abell2744]] adds the first reionization-era *dynamical* LRD mass (~$5\times10^7\,M_\odot$), calming some virial-scare scenarios for that object while sharpening the $M_{\rm BH}/M_*$ assembly puzzle. Feedback models trained on local quasars must not pretend every $z\sim6$–8 object is a scaled-up SDSS template.
 
 ---
 
@@ -179,3 +182,7 @@ Do not force one “SMBH feedback theory.” Prefer a **stack of constraints**:
 | Scars | [[ultramassive-bh-binary-cavity]], [[bh-recoils-agn-survey]], [[black-hole-recoil-agn]] |
 | Concepts | [[supermassive-black-hole-binaries]], [[dual-agn]], [[dynamical-friction]], [[pulsar-timing-arrays]] |
 | Sister synthesis (interiors) | [[black-hole-evaporation-energy-conditions]] |
+
+## Related
+
+- Paper: [[muse-quasar-filament-z3]]

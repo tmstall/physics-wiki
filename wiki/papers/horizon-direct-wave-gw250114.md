@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, gravitational-waves]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [entropy-maximization-bh-mergers, mrk501-double-jet-smbbh, high-z-quasar-pair-merger]
+related_papers: [entropy-maximization-bh-mergers, mrk501-double-jet-smbbh, high-z-quasar-pair-merger, black-hole-third-law-violation, gw-bound-states-continuum]
 source_analysis: "claude_export/extracted-analyses/2026-06-25_the-horizon-speaks_8707aeb2.md"
 ---
 
@@ -28,6 +28,11 @@ Ringdown is the black hole’s after-ring, sounding from the light-ring “bell.
 - Mapping to exact \(\Omega_H,\kappa\) depends on remnant parameters and waveform models.
 
 ## Connections
+
+- Reverse-link: [[black-hole-third-law-violation]]
+- Reverse-link: [[gw-bound-states-continuum]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+- Reverse-link: [[s301-sgra-spin-sensitive-star]]
 
 - [[entropy-maximization-bh-mergers]], [[black-hole-thermodynamics]], [[hawking-radiation]], [[supermassive-black-hole-binaries]]
 - Concepts: quasinormal modes vs direct waves (folded into paper)

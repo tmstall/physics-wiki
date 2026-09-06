@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, galaxy-mergers, gravitational-waves]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields]
+related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, bh-recoils-agn-survey, black-hole-recoil-agn, category-79-quasar-wind, entropy-maximization-bh-mergers, ic1262-metal-mixing, jwst-filament-cnd-ngc4696]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Angle That Decides Everything)"
 ---
 
@@ -33,12 +33,23 @@ Imagine sliding a heavy puck across a spinning vinyl record: if the path is near
 
 ## Connections
 
+- Synthesis: [[smbh-stellar-encounters]]
+
+- Reverse-link: [[bh-recoils-agn-survey]]
+- Reverse-link: [[black-hole-recoil-agn]]
+- Reverse-link: [[category-79-quasar-wind]]
+- Reverse-link: [[entropy-maximization-bh-mergers]]
+- Reverse-link: [[ic1262-metal-mixing]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+
 - BH / GR cluster: [[black-hole-interiors]], [[evaporating-charged-black-holes]], [[hawking-radiation]], synthesis [[black-hole-evaporation-energy-conditions]]
 - Satellite / dynamical-friction lab neighbor (MSP accelerations constrain LMC/Sgr masses — different scale, same gravitational-drag toolkit that sinks SMBHs): [[pulsars-satellite-masses]], [[galactic-accretion]]
 - Observed binary footprints: high-\(z\) dual quasars [[high-z-quasar-pair-merger]]; close blazar binary candidate [[mrk501-double-jet-smbbh]]; ultramassive core-scouring cavity [[ultramassive-bh-binary-cavity]]
 - Concepts: [[dynamical-friction]], [[supermassive-black-hole-binaries]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[dual-agn-green-pea]]
+- Reverse-link: [[s301-sgra-spin-sensitive-star]]
 
 ## Source
 

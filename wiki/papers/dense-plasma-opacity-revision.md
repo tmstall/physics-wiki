@@ -1,6 +1,6 @@
 ---
 tags: [plasma, high-energy-density, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-24_the-standard-rulebook-for-reading-dense-plasmas-is-wrong_94785e1d.md"
 ---
@@ -25,6 +25,12 @@ Warm dense matter — the regime of giant planet interiors, stellar envelopes, a
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Synthesis: [[plasma-hed-lab]]
+- Reverse-link: [[dark-photon-plasma-saturation]]
+- Reverse-link: [[lab-blazar-pair-instability]]
+- Reverse-link: [[trinity-ca-cu-si-clathrate]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
 
 - [[warm-dense-matter]], [[filming-plasma-birth]]
 

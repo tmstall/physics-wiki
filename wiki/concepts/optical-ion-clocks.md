@@ -1,8 +1,8 @@
 ---
 tags: [concepts, metrology, platforms]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks]
+related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, collapse-models-clock-precision, siv-hydrostatic-strain-symmetry, thorium-229-nuclear-clock, two-clocks-one-laser]
 ---
 
 # Optical Ion Clocks
@@ -21,6 +21,11 @@ Two quantum “rooms” live in the same ion:
 Precision metrology usually treats motion as a noise source (Doppler shifts, micromotion, heating). The proper-time program flips that: motion is a **resource** for quantum-relativistic effects — see [[time-goes-quantum]] and [[quantum-proper-time-ion-clocks]].
 
 ## Related pages
+
+- Reverse-link: [[collapse-models-clock-precision]]
+- Reverse-link: [[siv-hydrostatic-strain-symmetry]]
+- Reverse-link: [[thorium-229-nuclear-clock]]
+- Reverse-link: [[two-clocks-one-laser]]
 
 - [[quantum-proper-time]]
 - [[second-order-doppler-shift]]

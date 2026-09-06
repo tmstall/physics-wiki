@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-gravity, information-paradox, holography]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [qg-deep-dive-1-mergers-emission, qg-deep-dive-3-holographic-codes, black-hole-evaporation-energy-conditions, evaporating-charged-black-holes]
+related_papers: [qg-deep-dive-1-mergers-emission, qg-deep-dive-3-holographic-codes, black-hole-evaporation-energy-conditions, evaporating-charged-black-holes, five-dimensional-classical-gravity]
 source_analysis: "claude_export/extracted-analyses/2026-06-27_quantum-gravity-deep-dive-2-outside-project-from-information_5c0fdae0.md"
 ---
 
@@ -28,6 +28,10 @@ Gravity’s quantum loops need infinitely many new knobs as energy rises — unl
 - Always verify technical claims against the cited primary literature.
 
 ## Connections
+
+- Reverse-link: [[five-dimensional-classical-gravity]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+- Reverse-link: [[cft-spectra-rydberg-simulator]]
 
 - Evaporation synthesis: [[black-hole-evaporation-energy-conditions]], [[evaporating-charged-black-holes]]
 - Codes: [[qg-deep-dive-3-holographic-codes]]

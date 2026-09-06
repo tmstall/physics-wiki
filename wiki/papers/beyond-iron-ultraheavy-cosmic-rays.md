@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmic-rays, nuclear-astrophysics, high-energy-astrophysics]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [aquila-booster-pevatron, gamma-glow-pbh-detector, supernova-onion-expansion]
+related_papers: [aquila-booster-pevatron, gamma-glow-pbh-detector, supernova-onion-expansion, cygnus-x3-pevatron-bubble, nucleus-shell-src-memory, nucleus-tells-on-itself]
 source_analysis: "claude_export/extracted-analyses/2026-06-14_beyond-iron-the-universe-s-most-violent-events-may-be-firing_344a8eb5.md"
 ---
 
@@ -35,9 +35,15 @@ Think of a UHECR nucleus as a truck of freight crates, not a single bullet. Each
 
 ## Connections
 
+- Reverse-link: [[cygnus-x3-pevatron-bubble]]
+- Reverse-link: [[nucleus-shell-src-memory]]
+- Reverse-link: [[nucleus-tells-on-itself]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Reverse-link: [[icecube-galactic-plane-neutrinos]]
+
 - High-energy astrophysics island: [[aquila-booster-pevatron]], [[pulsar-wind-nebulae]]
 - Sub-knee rigidity spectrum (same messenger class): [[peters-cycle-cosmic-rays]]
-- Extreme messengers / dark-sector neighbors: [[gamma-glow-pbh-detector]], [[synchrotron-dm-detector]]
+- Extreme messengers / dark-sector neighbors: [[gamma-glow-pbh-detector]]
 - Explosive nucleosynthesis context: [[supernova-onion-expansion]]
 - Key terms (no separate stubs): UHECR, GZK horizon, photodisintegration / Giant Dipole Resonance, r-process, rigidity $E/Z$, Hillas limit, Telescope Array vs Auger composition tension
 

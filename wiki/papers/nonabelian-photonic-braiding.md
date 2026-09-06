@@ -1,8 +1,8 @@
 ---
 tags: [papers, photonics, topology, quantum-optics]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [photon-number-optical-analogy-control, twisted-light-chiral-ms, photonic-supersolid, 1d-anyons-momentum-tails]
+related_papers: [photon-number-optical-analogy-control, twisted-light-chiral-ms, photonic-supersolid, 1d-anyons-momentum-tails, evanescent-wave-transverse-spin, magnetic-heliknoton-electric-write]
 source_analysis: "spacex_export/extracted-analyses/2026-02-13_programmable-non-abelian-photonic-braiding_c725bcab.md"
 ---
 
@@ -36,12 +36,17 @@ This platform **practices** non-commutative braiding with classical light at roo
 
 ## Connections
 
+- Reverse-link: [[evanescent-wave-transverse-spin]]
+- Reverse-link: [[magnetic-heliknoton-electric-write]]
+
 - Programmable optical state control: [[photon-number-optical-analogy-control]]
 - Structured light / OAM: [[twisted-light-chiral-ms]]
 - Topological soft light: [[photonic-supersolid]]
 - Anyonic statistics (1D theory): [[1d-anyons-momentum-tails]]
 - Key terms: non-Abelian braiding, photonic pseudospin, SU(2) rotation gate, topological photonics
+- Symmetry-protected BIC cousin in linearized GR (exploratory): [[gw-bound-states-continuum]]
 - Synthesis: [[condensed-matter-topology-fractionalization]] (fractionalization & topology map)
+- Reverse-link: [[cft-spectra-rydberg-simulator]]
 
 ## Source
 

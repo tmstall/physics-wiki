@@ -1,8 +1,8 @@
 ---
-tags: [synthesis, astrophysics, multi-messenger, cosmology, interstellar-medium, high-energy-astrophysics]
-last_updated: 2026-08-04
+tags: [synthesis, astrophysics, multi-messenger, interstellar-medium, high-energy-astrophysics]
+last_updated: 2026-09-05
 status: synthesis
-related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, lab-blazar-pair-instability, cosmos-web-cosmic-web, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, gamma-glow-pbh-detector, dr21-magnetic-accretion, category-79-quasar-wind, euclid-high-z-quasar-census]
+related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays]
 ---
 
 # High-Energy Astrophysics, Multi-Messenger Signals & Early-Universe Thermal History
@@ -17,7 +17,7 @@ High-energy astrophysics, multi-messenger astronomy, and early-universe thermal 
 
 No single paper owns the whole ladder. Stack them and four channels appear: (1) **prompt high-energy photons** from engines, (2) **nucleosynthetic fossils** in the local ISM and ice, (3) **line emission and absorption** that light or process gas across cosmic time, (4) **ionization history** from first stars to the CMB. The tensions live where “signal” means a burst, a chemical barcode, or an integrated electron column.
 
-This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–feedback loops live on [[black-hole-feedback-and-changing-look-agn]]. Condensed-matter topology lives on [[condensed-matter-topology-fractionalization]]. Do not collapse those programs into this page.
+This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–feedback loops live on [[black-hole-feedback-and-changing-look-agn]]. Expansion history, LSS anomalies, and DESI/$H_0$ phenomenology live on [[cosmology-expansion-history-and-structure]]. DM search/bound channels (γ-glow PBH, dark-photon plasma, streams) live on [[dark-matter-detection-channels]]. GW instruments live on [[gravitational-wave-strong-field-probes]]. Do not collapse those programs into this page.
 
 ---
 
@@ -26,8 +26,10 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 | Messenger / channel | Epoch or scale | What it diagnoses | Wiki anchors |
 | --- | --- | --- | --- |
 | GeV γ-rays (Fermi-LAT) | Nearby transient (~days–months) | Central engine vs CSM in SLSNe | [[magnetar-slsn-2017egm-fermi]] |
-| UHE γ / CR / PeVatron | Galactic accelerators | Knee-scale particle factories | [[aquila-booster-pevatron]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]] |
+| UHE γ / CR / PeVatron | Galactic accelerators | Knee-scale particle factories | [[aquila-booster-pevatron]], [[cygnus-x3-pevatron-bubble]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]] |
 | Lab pair beams | Blazar cascade physics | IGMF vs plasma instability | [[lab-blazar-pair-instability]] |
+| HE astrophysical neutrinos | Galactic diffuse glow; blazar candidates | Hadronic CR interactions; source ID | [[icecube-galactic-plane-neutrinos]], [[pks2233-neutrino-lensing]], [[astrophysical-neutrinos]] |
+| Flying-focus LWFA / dense plasma | Lab accelerator plasma | Dephasingless electron gain; opacity | [[dephasingless-flying-focus-wakefield]], [[dense-plasma-opacity-revision]] |
 | $^{60}$Fe in ice | Local ISM (~$10^4$–$10^5$ yr) | SN ash structure in the LIC | [[ice-core-fe60-local-cloud]] |
 | SN ejecta layering | Explosion physics | Onion structure of ejecta | [[supernova-onion-expansion]] |
 | Lyα (MUSE) | Cosmic noon ($z\sim3$) | Filament density + CGM→IGM handoff | [[muse-quasar-filament-z3]], [[cosmic-web]] |
@@ -35,11 +37,14 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 | Ice inventories (SPHEREx) | Galactic star-forming ISM | Volatile fuel pipes | [[interstellar-glaciers-spherex]], [[interstellar-sulfur-ice]] |
 | Optical/NIR YSO outburst | Local stellar nurseries (~pc–kpc) | Disk accretion floods | [[iras-21204-fuor]], [[dr21-magnetic-accretion]] |
 | CMB $\tau$ + theory flash | First stars ($z\sim20$–$25$) | Early ionization + heavy seeds | [[early-universe-popiii-flash-ionization]] |
-| Diffuse γ / PBH probes | Cosmological integrated | Exotic high-energy backgrounds | [[gamma-glow-pbh-detector]] |
+| Soft X-ray + IR/optical layers | Local Group H II (30 Dor) | Where wind energy goes (mix/leak vs sealed bubble) | [[missing-watts-tarantula]] |
+| X-ray polarization (magnetar) | Galactic magnetar magnetosphere | QED vacuum birefringence fingerprint | [[vacuum-birefringence-magnetar-xrays]] |
+
+**Peeled out (2026-08-18):** DESI / Big Ring / IMF / TTT spins / JWST density–SFR maps → [[cosmology-expansion-history-and-structure]]. PBH γ-glow, dark-photon saturation, Oyashio streams, and the contested ~43 GeV cluster γ-line ([[43gev-gamma-ray-line-clusters]]) → [[dark-matter-detection-channels]]. AGN winds / Euclid census → [[black-hole-feedback-and-changing-look-agn]]. TC storms stay an Earth-system island (no HEA home).
 
 **Intuition:** Think of the sky as a multi-band flight recorder. Gamma rays timestamp the engine. Radioisotopes date the ash. Lyα paints the highways. Mid-IR reads the chemical factory. Ice cores are the windshield strip chart for the Local Cloud. CMB optical depth is the integrated electron fog from the first flashlights. Same universe, different sensors.
 
-**Concepts nearby:** [[cosmic-web]], [[pulsar-wind-nebulae]], [[hubble-tension]] (via $\tau$ lever), [[type-ia-supernovae]] (standard-candle cousin, not HEA engine)
+**Concepts nearby:** [[cosmic-web]], [[pulsar-wind-nebulae]], [[astrophysical-neutrinos]], [[hubble-tension]] (via $\tau$ lever on cosmology page), [[type-ia-supernovae]] (standard-candle cousin, not HEA engine)
 
 ---
 
@@ -111,13 +116,14 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 
 ## Thread D — Early ionization and thermal history
 
-**Papers:** [[early-universe-popiii-flash-ionization]], [[muse-quasar-filament-z3]], [[euclid-high-z-quasar-census]], [[desi-evolving-dark-energy]], [[hubble-tension]]
+**Papers:** [[early-universe-popiii-flash-ionization]], [[muse-quasar-filament-z3]]  
+**Handoff:** High-$z$ quasar census / duals → [[black-hole-feedback-and-changing-look-agn]]. Expansion-history / $H_0$ / $\tau$ parameter fights → [[cosmology-expansion-history-and-structure]].
 
 [[early-universe-popiii-flash-ionization]]: Pop III.1 supermassive stars (~$10^5\,M_\odot$) at $z\sim20$–$25$ flash-ionize ~cMpc bubbles, adding $\tau\sim0.04$ (total $\tau\sim0.10$) and planting heavy SMBH seeds at ~$0.1\,{\rm cMpc}^{-3}$.
 
 **Intuition:** Standard reionization is a slow city-light rollout at $z\lesssim10$. Pop III.1 is pre-dawn flash: super-stars light bubbles, die into seeds, leave extra electron fog for CMB photons. One knob, two observables (CMB $\tau$ and seed census).
 
-**Downstream links:** High-$z$ quasar census and duals ([[euclid-high-z-quasar-census]], [[high-z-quasar-pair-merger]]) test whether heavy seeds are needed. Lyα filaments at $z\sim3$ ([[muse-quasar-filament-z3]]) show later web gas after reionization is largely done. Parameter tensions ([[hubble-tension]], [[desi-evolving-dark-energy]]) can feel a high-$\tau$ lever — speculative, not settled.
+**Downstream links:** High-$z$ quasar census and duals ([[euclid-high-z-quasar-census]], [[high-z-quasar-pair-merger]]) test whether heavy seeds are needed — owned on the AGN feedback ladder. Lyα filaments at $z\sim3$ ([[muse-quasar-filament-z3]]) show later web gas after reionization is largely done. Parameter tensions ([[hubble-tension]], [[desi-evolving-dark-energy]]) can feel a high-$\tau$ lever — discuss on the cosmology synthesis, not here.
 
 **Limits:** Idealized flash; WIMP heating unproven; Planck prefers lower $\tau$; 21 cm / LiteBIRD / patchy kSZ will decide.
 
@@ -138,8 +144,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 
 ### Still thin (honest gaps)
 
-- **True multi-messenger coincidences** (GW+EM, neutrino+EM) — wiki has HEA pieces but no dedicated joint-detection paper cluster.
-- **Core-collapse SN neutrino and GW channels** — optical/γ and ice fossils dominate; neutrino astronomy pages thin.
+- **True multi-messenger coincidences** (GW+EM, neutrino+EM) — Galactic neutrino *glow* and blazar *candidates* now on disk ([[icecube-galactic-plane-neutrinos]], [[pks2233-neutrino-lensing]]); still no airtight joint neutrino+EM discovery event page.
+- **Core-collapse SN neutrino and GW channels** — optical/γ and ice fossils dominate; SN neutrino burst pages still thin.
 - **GRB / kilonova / r-process** ladder — not a deep stack here (contrast with SLSN magnetar focus).
 - **21 cm intensity mapping experiments** as data pages — Pop III.1 predicts EDGES-class radio excess; primary 21 cm experiment pages sparse.
 - **IGMF observational bounds** beyond the lab-suppression argument — theory/lab strong; multi-telescope cascade halo campaigns thin.
@@ -161,6 +167,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 
 - Start here for **messenger × epoch comparison**, then open paper pages for claims, limits, and sources.
 - For SMBH fuel, winds, duals, and cavities, use [[black-hole-feedback-and-changing-look-agn]].
-- For expansion history / DE parameters that couple to $\tau$ and $H_0$, use [[hubble-tension]] and [[desi-evolving-dark-energy]] — different axis, shared $\tau$ knob.
+- For expansion history / DE / LSS / $H_0$, use [[cosmology-expansion-history-and-structure]] (shared $\tau$ knob with Pop III.1).
+- For axion / PBH γ-glow / dark-photon / stream DM channels, use [[dark-matter-detection-channels]].
+- For GW waveform / siren / timing instruments, use [[gravitational-wave-strong-field-probes]].
 
-**Catalog role:** Seventh synthesis page. Sits between the AGN feedback loop (engine–galaxy coupling) and cosmology parameter pages (expansion history), owning the **high-energy, chemical, and ionization messenger** layer.
+**Catalog role:** Owns the **high-energy, chemical, and ionization messenger** layer. Slimmed 2026-08-18 so cosmology and DM channels are not catch-all overflow.

@@ -39,6 +39,7 @@ The Solar System is driving through a fog bank (the Local Interstellar Cloud) th
 - Extreme cosmic nuclei: [[beyond-iron-ultraheavy-cosmic-rays]]
 - Key terms: $^{60}$Fe, Local Interstellar Cloud (LIC), accelerator mass spectrometry, EPICA ice core
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Reverse-link: [[icecube-galactic-plane-neutrinos]]
 
 ## Source
 

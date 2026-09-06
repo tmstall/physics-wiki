@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, dark-energy, bao]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cigars-i-supernova-cosmology, holismokes-sn-winny, cosmos-web-cosmic-web, newton-ksz-force-law, massive-gravity-drgt, early-universe-popiii-flash-ionization]
+related_papers: [cigars-i-supernova-cosmology, holismokes-sn-winny, cosmos-web-cosmic-web, newton-ksz-force-law, massive-gravity-drgt, early-universe-popiii-flash-ionization, big-ring-ultra-large-structure, qg-deep-dive-4-de-sitter, universe-gas-pedal-leaky]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Cosmological Constant Is Losing)"
 ---
 
@@ -32,12 +32,19 @@ BAO is a cookie-cutter imprint ~150 Mpc across frozen into the galaxy web. Measu
 
 ## Connections
 
+- Reverse-link: [[big-ring-ultra-large-structure]]
+- Reverse-link: [[qg-deep-dive-4-de-sitter]]
+- Reverse-link: [[universe-gas-pedal-leaky]]
+
 - Cosmology cluster: [[type-ia-supernovae]], [[cigars-i-supernova-cosmology]], [[holismokes-sn-winny]], [[hubble-tension]], [[cosmos-web-cosmic-web]], [[newton-ksz-force-law]]
 - Modified-gravity alternative to DE fluid: [[massive-gravity-drgt]]
 - Early reionization / τ lever: [[early-universe-popiii-flash-ionization]]
 - Quantum-gravity Λ theory (topological stability of a pure cosmological constant—not the evolving-\(w\) preference): [[topological-cosmological-constant]], [[gravitational-theta-vacua]]
 - Concepts: [[baryon-acoustic-oscillations]], [[dark-energy-equation-of-state]]
-- Synthesis: [[modified-speculative-gravity]] (fluid DE vs IR modified-gravity competition)
+- Synthesis: [[cosmology-expansion-history-and-structure]] (primary — expansion-history phenomenology)
+- Synthesis: [[modified-speculative-gravity]] (secondary — fluid DE vs IR modified-gravity competition)
+- Reverse-link: [[quantum-damping-cosmological-shear]]
+- Reverse-link: [[second-order-gw-strain-gauge]]
 
 ## Source
 

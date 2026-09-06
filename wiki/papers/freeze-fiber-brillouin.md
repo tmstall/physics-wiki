@@ -40,6 +40,8 @@ Stimulated Brillouin scattering is a self-written acoustic Bragg mirror: pump an
 - Key terms: stimulated Brillouin scattering, liquid-core optical fiber (LiCOF), CS₂, waveguide-normalized gain, optoacoustic memory, isochoric freeze
 
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
+- Reverse-link: [[mmwave-optical-microcomb]]
 
 ## Source
 

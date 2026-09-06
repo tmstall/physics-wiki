@@ -34,6 +34,11 @@ A \(b\) quark cannot freely turn into an \(s\) quark plus muons at tree level—
 
 ## Connections
 
+- Reverse-link: [[eta-prime-mesic-nucleus]]
+- Reverse-link: [[star-jpsi-spin-interference]]
+- Synthesis: [[nuclear-dense-matter-precision]]
+- Reverse-link: [[intrinsic-charm-proton-nnpdf]]
+- Reverse-link: [[x2370-pseudoscalar-glueball]]
 - HEP historical / collider neighbors: [[high-pt-physics-cern-isr]], [[parton-jets]]
 - Key terms: **Wilson coefficients** (e.g. \(C_9\), \(C_{10}\)) package short-distance \(b\to s\ell\ell\) physics in an EFT—experiments fit them when angular shapes deviate from the SM.
 - Concepts: [[flavor-changing-neutral-current]]

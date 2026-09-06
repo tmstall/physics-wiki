@@ -1,6 +1,6 @@
 ---
 tags: [metrology, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-10_two-clocks-one-laser-zero-excess-noise_af4e5b7a.md"
 ---
@@ -25,6 +25,11 @@ Gravitational-wave astronomy has a gap between ground-based detectors (LIGO/Virg
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[two-lasers-one-reaction]]
+- Synthesis: [[amo-quantum-state-control]]
+- Synthesis: [[quantum-time-across-platforms]]
+- Reverse-link: [[mmwave-optical-microcomb]]
 
 - [[optical-ion-clocks]], [[collective-superradiant-lasing]]
 - Fiber / optoacoustic platform neighbor: [[freeze-fiber-brillouin]]

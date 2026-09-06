@@ -1,8 +1,8 @@
 ---
 tags: [papers, chemistry, catalysis, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [ruthenium-atom-catalysis, one-bond-inductive-effect]
+related_papers: [ruthenium-atom-catalysis, one-bond-inductive-effect, droplet-rewrites-ring]
 source_analysis: "claude_export/extracted-analyses/2026-07-09_the-bond-breaking-discount_30ce2966.md"
 ---
 
@@ -28,6 +28,9 @@ Breaking a specific chemical bond with light is an old dream: tune a laser to a 
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[droplet-rewrites-ring]]
 
 - Related: [[ruthenium-atom-catalysis]], [[one-bond-inductive-effect]]
 - Main-group photoredox hydroamination: [[phosphorus-radical-hydroamination]]

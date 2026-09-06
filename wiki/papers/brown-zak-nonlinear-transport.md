@@ -1,8 +1,8 @@
 ---
 tags: [papers, condensed-matter, graphene, transport]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [quantum-metallurgy-cdw, photonic-supersolid, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, anyon-trions-twisted-mote2]
+related_papers: [quantum-metallurgy-cdw, photonic-supersolid, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, anyon-trions-twisted-mote2, hot-electron-coherent-phonons-ptcu, snte-light-topological-inversion]
 source_analysis: "claude_export/extracted-analyses/2026-06-21_a-new-kind-of-quantum-static_860d3f57.md"
 ---
 
@@ -32,6 +32,9 @@ Brown–Zak physics and the quantum metric ([[quantum-metric-spin-momentum-locki
 - Analysis-based ingest; verify field scales and device details against primary paper.
 
 ## Connections
+
+- Reverse-link: [[hot-electron-coherent-phonons-ptcu]]
+- Reverse-link: [[snte-light-topological-inversion]]
 
 - Condensed-matter: [[quantum-metallurgy-cdw]], [[photonic-supersolid]], [[supermoire-trilayer-graphene-sc]], [[anyon-trions-twisted-mote2]]
 - Concepts: moiré / Brown–Zak fermions (folded); nonlinear transport as geometry probe

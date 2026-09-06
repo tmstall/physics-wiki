@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-metrology, relativity, ion-clocks, squeezing]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [time-goes-quantum]
+related_papers: [time-goes-quantum, collapse-models-clock-precision, mot-metal-hydride, temporal-imbalance-gravity]
 source_analysis: "raw/analyses/Quantum Proper Time Goes Live in Ion Clocks.md; raw/analyses/Ion Clocks Enter the Quantum Proper-Time Regime.md"
 ---
 
@@ -37,11 +37,16 @@ The ion is a tiny watch whose gears also jiggle from quantum uncertainty. Even i
 
 ## Connections
 
+- Reverse-link: [[collapse-models-clock-precision]]
+- Reverse-link: [[mot-metal-hydride]]
+- Reverse-link: [[temporal-imbalance-gravity]]
+
 - Complements [[time-goes-quantum]] (revival / characteristic-function view of the same coupling family).
 - Core concepts: [[quantum-proper-time]], [[second-order-doppler-shift]], [[motional-squeezing]], [[ramsey-interferometry]].
 - Platform: [[optical-ion-clocks]].
 - Metrology cousin: [[collective-superradiant-lasing]].
 - Synthesis: [[quantum-time-across-platforms]].
+- Synthesis: [[modified-speculative-gravity]]
 
 ## Open questions
 

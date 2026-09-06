@@ -1,8 +1,8 @@
 ---
 tags: [papers, structured-light, chirality, spin-orbit]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [twisted-light-chiral-ms, ciss-homochirality, snte-light-topological-inversion]
+related_papers: [twisted-light-chiral-ms, ciss-homochirality, snte-light-topological-inversion, gw-bound-states-continuum]
 source_analysis: "claude_export/extracted-analyses/2026-04-30_topological-control-of-chirality-and-spin-with-structured-li_c172b505.md"
 ---
 
@@ -28,6 +28,9 @@ Usually you buy chirality from fabrication: q-plates, metasurfaces, plasmonic ed
 - Broadband / polychromatic behavior may degrade ideal monochromatic topology.
 
 ## Connections
+
+- Reverse-link: [[gw-bound-states-continuum]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
 
 - Chiral readout: [[twisted-light-chiral-ms]], [[ciss-homochirality]]
 - Light-driven topology in solids: [[snte-light-topological-inversion]]

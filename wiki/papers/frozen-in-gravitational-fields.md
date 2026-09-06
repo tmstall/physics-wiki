@@ -1,8 +1,8 @@
 ---
 tags: [papers, general-relativity, topology, plasma-analogy]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, topological-cosmological-constant]
+related_papers: [evaporating-charged-black-holes, topological-cosmological-constant, gravastar-dust-collapse, temporal-imbalance-gravity, warp-drive-positive-energy]
 source_analysis: "raw/analyses/frozen gravity.md; List2_Combined_Clean.md (frozen gravity.md)"
 ---
 
@@ -37,12 +37,19 @@ Cache-coherency analogy: once ownership flags lock a line, the protocol forbids 
 
 ## Connections
 
+- Reverse-link: [[gravastar-dust-collapse]]
+- Reverse-link: [[temporal-imbalance-gravity]]
+- Reverse-link: [[warp-drive-positive-energy]]
+
 - Concepts: [[frozen-in-gravity]]
 - GR neighbor: [[evaporating-charged-black-holes]] (different angle: causal structure of evaporating interiors vs. topological constraints on evolution).
 - Topological protection of Λ (different topology story — θ-vacua / CSK, not flux freeze): [[topological-cosmological-constant]], [[gravitational-theta-vacua]]
 - Name-adjacent early-universe cousin (different physics — freeze-in DM, not curvature topology): [[gw-induced-fermion-freeze-in]]
 - Method heritage: plasma MHD frozen-in theorem ported to vacuum gravity.
 - Synthesis: [[black-hole-evaporation-energy-conditions]]
+- Reverse-link: [[smbh-inclination-angle]]
+- Synthesis: [[modified-speculative-gravity]]
+- Reverse-link: [[quantum-relative-entropy-einstein-equations]]
 - **Ingest note (List2 final batch):** List2 re-analyzes the same frozen-gravity result already filed from the standalone analysis—no second paper page.
 
 ## Open questions

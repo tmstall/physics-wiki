@@ -1,8 +1,8 @@
 ---
 tags: [concepts, black-holes]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [evaporating-charged-black-holes]
+related_papers: [evaporating-charged-black-holes, black-hole-third-law-violation]
 ---
 
 # Reissner–Nordström Geometry
@@ -14,6 +14,8 @@ related_papers: [evaporating-charged-black-holes]
 Horizons at \(r_\pm = M \pm \sqrt{M^2 - Q^2}\). Between them the region is trapped; inside \(r_-\) geometry can permit re-expansion. That bounce + evaporation is the stage for [[evaporating-charged-black-holes]]. A different charge-based route to thermality uses the [[double-copy]] single-copy shell ([[hawking-radiation-charge-shell]]) rather than full RN dynamics.
 
 ## Related pages
+
+- Reverse-link: [[black-hole-third-law-violation]]
 
 - [[black-hole-interiors]]
 - [[hawking-radiation]]

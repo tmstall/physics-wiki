@@ -948,3 +948,485 @@ No new papers/synthesis. Focused density pass after index polish.
 
 ### Catalog
 - Unchanged: **156 papers · 61 concepts · 9 synthesis**
+
+
+---
+
+## [2026-08-14] ingest | raw/analyses batch of 6 (cowork pipeline)
+
+First post-checkpoint ingest from `raw/analyses/` only (listed files). Catalog **156 → 162** papers.
+
+### Sources → wiki paths
+| Source | Wiki page | Cluster |
+| --- | --- | --- |
+| `2026-08-12_..._dephasingless-flying-focus-wakefield.md` | [[dephasingless-flying-focus-wakefield]] | Islands · Plasma & HED |
+| `2026-08-13_..._globular-cluster-stellar-stream.md` | [[oyashio-extragalactic-gc-stream]] | Cosmology / galaxies |
+| `2026-08-13_..._alice-jpsi-gluon-saturation.md` | [[alice-jpsi-gluon-saturation]] | QCD, dense matter & flavor |
+| `2026-08-13_..._imf-variation-milky-way.md` | [[imf-variation-milky-way]] | Cosmology / galaxies |
+| `2026-08-14_..._tc-vertical-alignment.md` | [[tc-vertical-alignment]] | Islands · Atmosphere / Earth system |
+| `2026-08-14_..._primordial-tidal-torque-galaxy-spin.md` | [[primordial-tidal-torque-galaxy-spin]] | Cosmology / galaxies |
+
+### Concept hubs expanded (no new stubs)
+- [[cosmic-web]] — Oyashio stream, TTT spins, IMF
+- [[parton-jets]] — ALICE UPC J/ψ saturation
+- [[ultra-metal-poor-stars]] — IMF variation link
+
+### Reverse links
+- star-jpsi ↔ alice-jpsi; beam-driven-plasma-mirror ↔ flying-focus
+
+### Catalog
+- **Papers: 162** · **Concepts: 61** · **Synthesis: 9**
+
+
+---
+
+## [2026-08-16] ingest | raw/analyses batch of 5
+
+Ingest from `raw/analyses/` only (listed files; note life2.0 file is dated `2026-08-15_arxiv-2608.04342_...` not `5_arxiv-...`). Catalog **162 → 167**.
+
+### Sources → wiki paths
+| Source | Wiki page | Cluster |
+| --- | --- | --- |
+| `2026-08-15_arxiv-2608.04342_life2.0-...md` | [[life2-telescope-array-biosignatures]] | Islands · Instrumentation |
+| `2026-08-15_doi-10.1088-..._bound-states-continuum-gravitational-waves.md` | [[gw-bound-states-continuum]] | BH/GR (exploratory) |
+| `2026-08-15_doi-10.3847-..._cygnus-x3-pevatron-cygnus-bubble.md` | [[cygnus-x3-pevatron-bubble]] | Islands · HEA |
+| `2026-08-16_arxiv-2407.00772_core-level-signature-density-wave-tise2.md` | [[tise2-core-level-cdw-excitons]] | Solid-state / CM |
+| `2026-08-16_doi-10.1103-98cx-7t43_dark-photon-...md` | [[dark-photon-plasma-saturation]] | Cosmology / DM |
+
+### Concept hubs
+- No new stubs. Reverse/links on aquila, quantum-metallurgy-cdw, axion-detector, nonabelian-photonic.
+
+### Notes
+- Life 2.0: preprint/concept — adversarial framing kept.
+- GW BIC: abstract-only analysis — `status: exploratory`.
+- TiSe₂: arXiv; peer-review status flagged on page.
+
+### Catalog
+- **Papers: 167** · **Concepts: 61** · **Synthesis: 9**
+
+
+---
+
+## [2026-08-16] lint | Deeper link pass after recent ingest
+
+### Checks
+- Index: all 167 papers + 9 synthesis present; only dual listing `quantum-jamming` (paper+concept)
+- True orphans (excl. index): 7 → **0** after reverse-link patches
+- Recent papers folded into nuclear / HEA / CM-topology / modified-gravity synthesis maps
+
+### Report
+- `LINT_REPORT_2026-08-16.md` (repo root)
+
+### Catalog
+- Unchanged: **167 papers · 61 concepts · 9 synthesis**
+
+
+---
+
+## [2026-08-18] lint | Full 167-paper reverse-link audit
+
+### Checks
+- Exhaustive paper↔paper, paper↔concept, paper↔synth, synth→paper, orphans, unresolved targets
+- Parser fix: inline YAML `related_papers: [...]` now counted (earlier body-only scans under-counted)
+
+### Results
+- Paper↔paper asymmetries: **15 → 0**
+- Synth→paper missing reverse: **41 → 0**
+- Paper→concept / paper→synth missing reverse: **0** (already closed)
+- True orphans: **0**
+- Unresolved wikilink targets: **0**
+- Files touched: **47** paper pages (`Reverse-link` / `Synthesis` lines under Connections)
+
+### Report
+- `RLINK_REPORT_2026-08-18.md` (repo root)
+- Reusable auditor: `_rlink_audit.py`
+
+### Catalog
+- Unchanged: **167 papers · 61 concepts · 9 synthesis**
+
+
+---
+
+## [2026-08-18] synthesis | Four new hubs + HEA/modified-gravity slim
+
+### New synthesis (build order 1–4)
+1. [[cosmology-expansion-history-and-structure]] — BAO/SN/sirens/delays vs LSS anomalies / early levers
+2. [[gravitational-wave-strong-field-probes]] — waveforms, sirens, timing as strong-field instruments
+3. [[ultrafast-optics-and-solid-state-emitters]] — fieldoscopy/ENZ, attosecond STM, SnV/SiV, structured light
+4. [[dark-matter-detection-channels]] — axion cavities, PBH γ-glow, dark-photon bounds, streams (+ Alena/MOND contrast)
+
+### Existing updates
+- [[high-energy-astrophysics-multimessenger]] — slimmed; peeled cosmology/DM/AGN/TC overflow; fixed duplicate `last_updated`
+- [[modified-speculative-gravity]] — DESI / gas-pedal phenomenology handed to cosmology synth; force-law / dRGT kept
+- [[black-hole-evaporation-energy-conditions]] — extended-neighbor map (third-law, QG deep-dives, pre-bang); GW instruments pointed out
+- [[amo-quantum-state-control]] — explicit out-of-scope → ultrafast emitters
+- [[quantum-time-across-platforms]] — thorium / two-clocks / superradiant metrology neighbors
+- [[nuclear-dense-matter-precision]] — `nucleus-tells-on-itself`; YAML cleanup
+- [[condensed-matter-topology-fractionalization]] — ultrafast dual-link note; YAML cleanup
+
+### Wiring
+- Synthesis reverse-links added on ~41 seed papers; index catalog **9 → 13** synthesis
+
+### Notes
+- Former `synchrotron-dm-detector` was a mis-titled ingest (see next log entry) — rewritten as [[bessy-tes-soft-xray-spectrometer]]
+
+### Catalog
+- **Papers: 167** · **Concepts: 61** · **Synthesis: 13**
+
+
+---
+
+## [2026-08-18] fix | Rename mis-titled synchrotron “DM detector” page
+
+### Problem
+Claude-export title / old slug `synchrotron-dm-detector` claimed dark-matter detection; primary analysis is RSI soft x-ray **TES spectrometer commissioning** at BESSY II (materials / chemistry instrumentation).
+
+### Fixes
+1. New page [[bessy-tes-soft-xray-spectrometer]] rewritten from source analysis; old `wiki/papers/synchrotron-dm-detector.md` deleted
+2. Retagged away from dark-matter → instrumentation / soft-x-ray / condensed-matter
+3. Removed from [[dark-matter-detection-channels]] (removal note kept)
+4. Homed under [[ultrafast-optics-and-solid-state-emitters]] + Solid-state index row; reverse links cleaned on axion / dark-photon / GW freeze-in / beyond-iron / PBH concept
+
+### Catalog
+- Unchanged count: **167 papers · 61 concepts · 13 synthesis** (rename, not net add)
+
+
+---
+
+## [2026-08-19] ingest | raw/analyses batch of 6
+
+Ingest **only** the six listed analyses from `raw/analyses/` (batch-of-6 exception). Catalog **167 → 173** papers; **61 → 62** concepts.
+
+### Sources → wiki paths
+| Source | Wiki page | Cluster |
+| --- | --- | --- |
+| `2026-08-16_doi-10.1126-science.adc9818_high-energy-neutrinos-galactic-plane.md` | [[icecube-galactic-plane-neutrinos]] | HEA / neutrinos |
+| `2026-08-17_arxiv-2607.17729_dual-agn-green-pea-galaxy.md` | [[dual-agn-green-pea]] | AGN duals (arXiv-only) |
+| `2026-08-17_mnras-stag1355_pks2233-148-neutrino-lensing.md` | [[pks2233-neutrino-lensing]] | HEA / neutrinos |
+| `2026-08-18_doi-10.1126-sciadv-aea6091_ai-agents-majority-following-coordination.md` | [[ai-agents-majority-following]] | Islands · complex systems |
+| `2026-08-19_arxiv-2602.06744_bridging-quantum-semiclassical-thermodynamics-cavity-qed.md` | [[cavity-qed-tur-io-bookkeeping]] | AMO / quantum thermo (arXiv) |
+| `2026-08-19_doi-10.1038-s41586-022-04998-2_intrinsic-charm-proton-nnpdf.md` | [[intrinsic-charm-proton-nnpdf]] | QCD / PDFs |
+
+### Concept / synthesis hubs
+- **New multi-paper concept:** [[astrophysical-neutrinos]] (IceCube Galactic + PKS2233)
+- Updated: [[dual-agn]], [[parton-jets]], [[strong-gravitational-lensing]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]], [[black-hole-feedback-and-changing-look-agn]], [[nuclear-dense-matter-precision]], [[amo-quantum-state-control]]
+- No thin single-paper concept stubs (AI agents left as island only)
+
+### Notes
+- Dual Green Pea + cavity TUR: adversarial (arXiv / preprint) posture preserved on pages
+- IceCube Galactic ~4.5σ trial-corrected — not formal 5σ discovery
+- PKS lensing claims hedged; Bayesian flash test rejects lensing
+- Intrinsic charm: ~3σ “evidence,” not discovery
+
+### Catalog
+- **Papers: 173** · **Concepts: 62** · **Synthesis: 13**
+
+---
+
+## [2026-08-22] ingest | READY_QUEUE batch 1 of 2 (5 papers)
+
+Staged ingest per `incoming/prompts/INGEST.md`. Triage: ingest all 10 in filename order.
+
+### Sources → wiki paths
+| Source | Wiki page | Cluster |
+| --- | --- | --- |
+| `...02932-4_bottom-heavy-imf-...` | [[bottom-heavy-imf-early-galaxies]] | Cosmology / galaxies |
+| `...03382-5_time-domain-competing-cdw-ErTe3.md` | [[erte3-competing-cdw-time-domain]] | CM / ultrafast |
+| `...5pr6-5fmd_quantum-droplets-...` | [[quantum-droplets-bose-fermi]] | AMO / cold atoms |
+| `...s301-star-sensitive-to-spin-sgrA-star.md` | [[s301-sgra-spin-sensitive-star]] | BH / GC (preprint) |
+| `...2607.20366_x2370-...glueball.md` | [[x2370-pseudoscalar-glueball]] | QCD / hadrons (arxiv) |
+
+### Hubs touched
+- Synthesis: cosmology-expansion-history, CM-topology, ultrafast emitters, AMO state control, GW strong-field, nuclear-dense-matter
+- Papers: imf-variation-milky-way, quantum-metallurgy-cdw reverse links
+- No new concept stubs
+
+### Catalog
+- **Papers: 173 → 178** · Concepts: 62 · Synthesis: 13
+- Queue remaining: 5 pending
+
+---
+
+## [2026-08-22] ingest | READY_QUEUE batch 2 of 2 (5 papers)
+
+### Sources → wiki paths
+| Source | Wiki page | Cluster |
+| --- | --- | --- |
+| `...76747-2_mmwave-comb-...` | [[mmwave-optical-microcomb]] | Photonics / metrology |
+| `...10904-x_cft-spectra-...` | [[cft-spectra-rydberg-simulator]] | Quantum simulation / CFT |
+| `...gymp-vp87_...oo-nene...` | [[alice-oo-nene-nuclear-geometry-flow]] | Nuclear / QGP |
+| `...lmq8-nsty_quantum-relative-entropy-...` | [[quantum-relative-entropy-einstein-equations]] | QG / BH thermo |
+| `...ae8f31_stellar-spin-...tde.md` | [[stellar-spin-repeating-partial-tde]] | TDE / SMBH |
+
+### Hubs touched
+- AMO, ultrafast, nuclear, BH evaporation, modified gravity, BH feedback, HEA
+- Reverse links: gravity-from-entropy, s301↔rpTDE
+
+### Catalog
+- **Papers: 178 → 183** · Concepts: 62 · Synthesis: 13
+- Queue: **0 pending** (all 10 done). Final full AGENTS lint on next `continue`.
+
+---
+
+## [2026-08-22] synthesis + lint | Two hubs then full AGENTS lint
+
+### New synthesis (before lint)
+1. [[smbh-stellar-encounters]] — S301 + rpTDE / Hills one-star SMBH probes
+2. [[entropic-information-gravity]] — relative-entropy Jacobson upgrade + GfE lane
+- Skipped third (would be thin)
+
+### Full lint
+- Report: `LINT_REPORT_2026-08-22.md`
+- Index complete; 0 broken wikilinks; new pages all synth-linked
+- Orphans: ai-agents, tc-vertical (accepted islands)
+- Patched reverse `Synthesis:` links for the two new hubs
+- Deferred: exhaustive 71 paper↔paper asymmetry re-rlink
+
+### Catalog
+- **Papers: 183** · **Concepts: 62** · **Synthesis: 13 → 15**
+
+---
+
+## [2026-08-22] lint + deepen | Paper↔paper rlink + GfE rewrite + COPY refresh
+
+### COPY prompt
+- Reviewed Cowork-updated `incoming/prompts/COPY.md` (device_bash / mount paths) — **keep**; light refresh only: preserve READY_QUEUE `done` history; never re-pending finished files. Re-paste into Cowork recommended.
+
+### Rlink
+- Paper↔paper asymmetries: **71 → 0** (batch Reverse-link pass on neighbors of recent ingest)
+- Orphans unchanged: ai-agents, tc-vertical (accepted islands)
+
+### Deepen
+- [[gravity-from-entropy]] rewritten from `claude_export/.../gravity-as-a-compression-error_...md` (claims, FRW thermo, limits, synth links)
+
+### Catalog
+- Unchanged counts: **183 papers · 62 concepts · 15 synthesis**
+
+---
+
+## [2026-08-29] ingest | Batch 1 — baryon junction, e⁻–ion hybrid, X-ray HHG, NN WF, 43 GeV line
+
+First phase of staged ingest from READY_QUEUE (11 pending → 5 done this batch).
+
+### Papers created
+- [[tracking-baryon-number-nuclear-collisions]] — STAR *Science* baryon-junction transport
+- [[coupling-free-electrons-trapped-ion]] — free electrons coupled to trapped-ion QC
+- [[correlated-electrons-xray-hhg]] — correlated-electron X-ray HHG beyond SAE cutoff
+- [[particle-view-nn-wavefunction]] — neural many-body WF / quasiparticle view
+- [[43gev-gamma-ray-line-clusters]] — ~43 GeV Fermi-LAT cluster γ-line (~4.3σ global)
+
+### Hubs touched (no new thin concepts)
+- Synthesis: [[nuclear-dense-matter-precision]], [[amo-quantum-state-control]], [[ultrafast-optics-and-solid-state-emitters]], [[dark-matter-detection-channels]] (+ HEA peel note)
+- Concepts: [[motional-squeezing]], [[optical-ion-clocks]] (links only)
+
+### Catalog
+- Papers **183 → 188** · Concepts 62 · Synthesis 15
+- Queue remaining pending: **6**
+
+### Pause
+- STOP after batch 1 per INGEST.md — await `continue` / `next` / `go`
+
+## Deferred (do not start until READY_QUEUE current pending wave is fully ingested)
+
+1. **Widen wiki charter** — update AGENTS.md Current Priority + add a first-class index section (e.g. Multi-agent systems & collective AI); former "non-physics islands" are in-scope.
+2. **Island policy** — future: investigate when Islands stay islands vs graduate to topical hubs (avoid too many permanent islands).
+3. **Thorough synthesis** — wait until all current staged papers are in the wiki before a broad multi-paper synthesis pass on the new cluster (and any backlog).
+
+Recorded 2026-08-29 during ingest batch 1→2 handoff per user direction.
+
+---
+
+## [2026-08-29] ingest | Batch 2 — LLM conventions, GW Ori, OASIS, Si double-slit, O+O core–corona
+
+### Papers created
+- [[emergent-social-conventions-llm-populations]] — *Sci. Adv.* LLM population conventions / collective bias
+- [[gw-ori-streamer-misalignment]] — GW Ori circumtriple disk streamer misalignment
+- [[oasis-million-agent-social-simulator]] — OASIS million-agent social simulator
+- [[atomic-scale-double-slit-si]] — atomic-scale double-slit on Si (*Nature*)
+- [[equilibrated-fraction-oo-qcd]] — Ito & Hirano O+O equilibrated fraction / DCCI2
+
+### Hubs touched
+- Multi-agent: reverse-linked [[ai-agents-majority-following]] (in-scope note)
+- Nuclear: [[alice-oo-nene-nuclear-geometry-flow]], [[nuclear-dense-matter-precision]] (A2b geometry vs core/corona)
+- Disk/YSO neighbors: chondrite, IRAS FUor, DR21
+- Diffraction neighbors: 3D ED, positronium, hot-electron phonons, attosecond STM
+
+### Catalog
+- Papers **188 → 193** · Concepts 62 · Synthesis 15
+- Queue remaining pending: **1** (ASTRID z=0)
+
+### Note
+- Multi-agent papers parked under index Islands → Complex systems for now; charter promotion + thorough synthesis still deferred (see deferred block above).
+
+### Pause
+- STOP after batch 2 — await `continue` for final pending (ASTRID) then charter implementation.
+
+---
+
+## [2026-08-29] ingest | Batch 3 (final) — ASTRID z=0 MBH/LSS
+
+### Paper created
+- [[astrid-z0-mbh-lss]] — Zhou et al. *ApJ* 999:41; DF vs repositioning; non-monotonic BH bias; BHAD/seed/GSMF wounds
+
+### Hubs touched
+- Concept: [[dynamical-friction]]
+- Synthesis: [[black-hole-feedback-and-changing-look-agn]], [[gravitational-wave-strong-field-probes]], [[cosmology-expansion-history-and-structure]]
+
+### Catalog
+- Papers **193 → 194** · Concepts 62 · Synthesis 15
+- READY_QUEUE pending: **0** (this wave complete; 11 successes)
+
+### Next
+- Full AGENTS lint (appropriate at end of run)
+
+---
+
+## [2026-08-29] lint | Full AGENTS lint after READY_QUEUE wave (11 papers)
+
+- Report: `LINT_REPORT_2026-08-29.md`
+- Catalog: **194 papers · 62 concepts · 15 synthesis**
+- Index complete; **0** unresolved wikilinks
+- Orphan: [[tc-vertical-alignment]] only (accepted Earth-system island)
+- Multi-agent pages no longer singleton-orphaned; synth hub intentionally deferred
+- Patched synth links on GW Ori, Si double-slit, particle-view during lint
+
+---
+
+## [2026-08-29] charter | Steps 1–2 — widen scope + promote multi-agent section
+
+### AGENTS.md
+- Vault described as physics-first Karpathy wiki **plus** in-scope multi-agent / collective AI
+- Current Priority rewritten; Islands kept for true one-offs
+- No forced physics metaphors on multi-agent papers
+
+### Index
+- New top-level `## Multi-agent systems & collective AI` with the three LLM/agent papers
+- Removed from Islands; Islands blurb notes graduation
+- Root `index.md` counts → 194 + scope line
+
+### Pipeline
+- `INGEST.md` triage + `PIPELINE.md` stub updated for in-scope multi-agent
+
+### Still deferred (not this step)
+- Island graduation audit (step 3)
+- Multi-agent synthesis hub (step 4)
+
+---
+
+## [2026-08-29] charter | Steps 3–4 — island graduation + multi-agent synthesis
+
+### Step 3 — Island policy + audit
+- Policy written into `AGENTS.md` (≥2–3 papers + clear question + not already owned; audit-then-move)
+- **Graduated to first-class index sections:** Plasma & HED; High-energy astrophysics; Historical particle physics; Chemistry & biotech
+- **Remain Islands:** [[chondrite-pressure-bump]], [[tc-vertical-alignment]], [[life2-telescope-array-biosignatures]]
+
+### Step 4 — Synthesis
+- Created [[multi-agent-collective-ai]] (Threads A/B/C: $, conventions/bias, OASIS scale)
+- Linked from all three multi-agent paper pages; root + wiki index Synthesis tables updated
+- Catalog: synthesis **15 → 16**
+
+---
+
+## [2026-08-29] coordinator | Grok Bot + Build/Cowork wiring (plan execute)
+
+### Wave 0 defaults
+- Analyzer: always ask; inbox threshold **5**; MSL dir `Documents/MSL`; status card yes; dual analyses both in raw + human wiki choice; Bot may scorecard
+
+### Physics-Wiki
+- Prompts: `COORDINATOR.md`, `ANALYZE_KICKOFF.md`, `COMPARE.md`, `COWORK_ANALYZE.md`
+- Bot packs: `incoming/bot/` (Wiki only)
+- Patched: `PIPELINE.md`, `AGENTS.md`, `ANALYZE.md`, `COPY.md`, `INGEST.md`
+- Build skill: `.grok/skills/wiki-compare`
+- Status: `incoming/_PIPELINE_STATUS.md` + Drive `Analyses/_PIPELINE_STATUS.md`
+
+### MSL (sibling)
+- Copied `Build_dir_v3.23` → `Documents/MSL` (source left in place)
+- `AGENTS.md` + `docs/bot/` profile/skills (Roon = taste only; Bot researches new candidates)
+
+### Human still must
+- Create two grok.com Bots from paste packs
+- Re-paste Cowork `COPY` + `COWORK_ANALYZE`
+- Optional inbox routine on Wiki Bot
+
+---
+
+## [2026-08-31] ingest | Wave of 6 — vacuum imaging, urban routing, LRD BH mass, discrete gravity, path-integral photons, LZ EFT
+
+`ingest all` on READY_QUEUE pending (staged 2026-09-03). Batches 5+1 completed in one run (6 successes this run; light lint threshold not hit).
+
+### Papers created
+- [[imaging-vacuum-fluctuations-qft]] — cold-atom QFT vacuum jitter (arXiv:2608.20311)
+- [[urban-congestion-routing-app]] — Google Maps shadow-toll cities experiment (Islands / urban)
+- [[direct-bh-mass-lrd-abell2744]] — first direct dynamical mass for z~7 LRD
+- [[discrete-gravity-planck-cells]] — Chamseddine–Mukhanov discrete GR
+- [[feynman-path-integral-single-photons]] — Feynman postulates with single photons
+- [[lz-dm-eft-high-energy-recoil]] — LZ high-E NR + 293 EFT models; 2.6σ anomaly (preprint)
+
+### Synthesis touched
+- [[dark-matter-detection-channels]] (+ LZ channel row)
+- [[black-hole-feedback-and-changing-look-agn]] (+ direct LRD mass)
+- [[modified-speculative-gravity]] (+ discrete cells)
+- [[measurement-problem-threads]] (+ path-integral / slits links)
+- [[amo-quantum-state-control]] (+ vacuum imaging)
+
+### Catalog
+- Papers **194 → 200** · concepts 62 · synthesis 16
+- READY_QUEUE: **0 pending**
+
+---
+
+## [2026-08-31] index | Move urban routing into multi-agent cluster
+
+[[urban-congestion-routing-app]] removed from Islands; listed under **Multi-agent systems & collective AI** with the three LLM-agent papers. Synthesis [[multi-agent-collective-ai]] gains **Thread D** (human selfish vs system-optimal routing contrast — not an LLM paper).
+
+---
+
+## [2026-08-31] lint | Full AGENTS lint + chemistry/plasma synthesis
+
+### New synthesis
+- [[chemistry-biotech-methods]] — map for graduated Chemistry & biotech shelf
+- [[plasma-hed-lab]] — map for graduated Plasma & HED lab shelf
+
+### Lint
+- Report: `LINT_REPORT_2026-08-31.md`
+- Unresolved wikilinks: **0** (soft `[[log]]` excluded)
+- Index complete for papers/concepts; synthesis **18** topical hubs
+- Urban already in multi-agent; no new LRD/LZ/discrete hubs (owned)
+- Light reverse links for a few synth-orphan papers
+
+### Catalog
+- Papers 200 · Concepts 62 · Synthesis **18** (+ measurement 1–7 refresher companion)
+
+---
+
+## [2026-09-05] ingest | Claude export wave (12 papers) + auto-continue
+
+Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light lint @10 successes; full lint at empty queue.
+
+### Papers created (12)
+- [[missing-watts-tarantula]] — 30 Dor leaky wind bubble (ApJ 998:318)
+- [[bh-thermo-far-from-equilibrium]] — dynamical BH first law / MTS entropy (arXiv:2512.11659)
+- [[vacuum-birefringence-magnetar-xrays]] — magnetar X-ray VB fingerprint (arXiv:2604.10477)
+- [[extracting-reasoning-traces-proprietary-llms]] — encrypted LLM reasoning break (arXiv:2608.09867)
+- [[mirror-that-lies-diffractive-concealment]] — passive diffractive lying mirror (Nat Commun)
+- [[electron-hole-migrate-molecule]] — attosecond hole-migration movie (Nat Phys)
+- [[hi-intensity-mapping-meerkat]] — MeerKAT 21 cm autopower (ApJL)
+- [[25gpps-diffractive-microscope]] — ~25 Gpx/s compressive microscope
+- [[deepmind-hurricane-forecasting]] — WN-C cyclone AI / NHC 2025
+- [[desktop-ct-electron-clouds]] — lab 3D orbital tomography
+- [[recycling-idler-quantum-superresolution]] — multi-pass idler ~4× resolution
+- [[woven-ferroelectric-domains-optical]] — KTN:Li woven domains + optical write
+
+### Skipped
+- `…phase-transition-hides-fingerprints.md` → **skipped_duplicate** of [[erte3-competing-cdw-time-domain]]
+
+### Synthesis touched
+- [[multi-agent-collective-ai]] — Threads E (trace security) + F (weather ML cousin)
+- [[high-energy-astrophysics-multimessenger]] — Tarantula + magnetar VB rows
+- [[black-hole-evaporation-energy-conditions]] — dynamical first-law addendum
+- related_papers updates: chemistry, ultrafast, cosmology, condensed-matter topology
+
+### Catalog
+- Papers **200 → 212** · Concepts 62 · Synthesis 18
+

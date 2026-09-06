@@ -1,8 +1,8 @@
 ---
 tags: [papers, cold-atoms, one-dimensional-physics, quantum-criticality]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [problem-of-time-cold-atoms, massive-tunneling-schrodinger-cats, three-body-quantum-company]
+related_papers: [problem-of-time-cold-atoms, massive-tunneling-schrodinger-cats, three-body-quantum-company, molecular-rotation-superfluid-he]
 source_analysis: "claude_export/extracted-analyses/2026-06-19_the-sea-that-forgot-half-its-water-bosons_27a5c392.md"
 ---
 
@@ -33,6 +33,8 @@ In one dimension you cannot walk around someone: collisions are mandatory, so st
 
 ## Connections
 
+- Reverse-link: [[molecular-rotation-superfluid-he]]
+
 - Cold-atom foundations neighbors: [[problem-of-time-cold-atoms]], [[massive-tunneling-schrodinger-cats]], [[three-body-quantum-company]]
 - 2D moiré fractional optical fingerprints: [[anyon-trions-twisted-mote2]]
 - 1D anyon momentum tails (theory): [[1d-anyons-momentum-tails]]
@@ -40,6 +42,8 @@ In one dimension you cannot walk around someone: collisions are mandatory, so st
 
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
 - Synthesis: [[condensed-matter-topology-fractionalization]] (fractionalization & topology map)
+- Reverse-link: [[cft-spectra-rydberg-simulator]]
+- Reverse-link: [[quantum-droplets-bose-fermi]]
 
 ## Source
 

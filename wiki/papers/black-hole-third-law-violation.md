@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, general-relativity, numerical-relativity]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, entropy-maximization-bh-mergers, horizon-direct-wave-gw250114, gravastar-dust-collapse]
+related_papers: [evaporating-charged-black-holes, entropy-maximization-bh-mergers, horizon-direct-wave-gw250114, gravastar-dust-collapse, warp-drive-positive-energy]
 source_analysis: "claude_export/extracted-analyses/2026-06-05_the-third-law-is-dead_911cf359.md"
 ---
 
@@ -35,11 +35,15 @@ Black-hole mechanics maps temperature to surface gravity and entropy to area. Th
 
 ## Connections
 
+- Reverse-link: [[warp-drive-positive-energy]]
+
 - Thermodynamics hub: [[black-hole-thermodynamics]], [[hawking-radiation]]
 - Interiors / endpoints: [[black-hole-interiors]], [[evaporating-charged-black-holes]], [[reissner-nordstrom]]
 - Other classical GR extremes: [[gravastar-dust-collapse]], [[naked-black-hole-candidate]]
 - Observational horizon thermodynamics neighbor: [[horizon-direct-wave-gw250114]]
 - Synthesis: [[black-hole-evaporation-energy-conditions]] (third-law status affects how seriously one treats “eternal extremal remnants”)
+- Synthesis: [[modified-speculative-gravity]]
+- Reverse-link: [[quantum-relative-entropy-einstein-equations]]
 - Key terms: surface gravity $\kappa$, extremal Myers–Perry, characteristic gluing, cohomogeneity, Hawking mass, neural-network spectral ansatz
 
 ## Open questions

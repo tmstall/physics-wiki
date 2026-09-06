@@ -1,6 +1,6 @@
 ---
 tags: [atomic-molecular, optics, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-27_chiral-molecules-from-twisted-light-and-mass-spectrometry_439a3921.md"
 ---
@@ -27,6 +27,9 @@ Chirality — the left/right handedness of a molecule — matters enormously in 
 
 ## Connections
 
+- Reverse-link: [[evanescent-wave-transverse-spin]]
+- Synthesis: [[condensed-matter-topology-fractionalization]]
+
 - [[chiral-induced-spin-selectivity]], [[ciss-homochirality]]
 
 - Lint link: [[topo-chirality-structured-light]]
@@ -34,6 +37,7 @@ Chirality — the left/right handedness of a molecule — matters enormously in 
 - Related (SpaceX set): [[nonabelian-photonic-braiding]] — Non-Abelian photonic braiding
 
 - Related (SpaceX set): [[positronium-diffraction-graphene]] — Positronium graphene diffraction
+- MS compute / acquisition pipeline neighbor: [[gpu-mass-spectrometry]]
 
 ## Source
 

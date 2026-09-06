@@ -1,8 +1,8 @@
 ---
 tags: [papers, high-energy-astrophysics, supernovae, magnetars, gamma-rays]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [supernova-onion-expansion, aquila-booster-pevatron, gamma-glow-pbh-detector, dense-plasma-opacity-revision]
+related_papers: [supernova-onion-expansion, aquila-booster-pevatron, gamma-glow-pbh-detector, dense-plasma-opacity-revision, cygnus-x3-pevatron-bubble]
 source_analysis: "spacex_export/extracted-analyses/2026-05-23_magnetar-powered-slsn-2017egm-fermi-lat-detection_42ee8206.md"
 ---
 
@@ -35,12 +35,15 @@ SLSNe are too bright and long-lived for ordinary radioactive nickel alone. Two e
 
 ## Connections
 
+- Reverse-link: [[cygnus-x3-pevatron-bubble]]
+
 - Supernova structure/evolution: [[supernova-onion-expansion]]
 - Extreme particle accelerators: [[aquila-booster-pevatron]]
 - Diffuse high-energy messengers: [[gamma-glow-pbh-detector]]
 - Dense plasma / opacity context: [[dense-plasma-opacity-revision]]
 - Key terms: superluminous supernova (SLSN), magnetar wind nebula, Fermi-LAT TS, CSM interaction
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Reverse-link: [[stellar-spin-repeating-partial-tde]]
 
 ## Source
 

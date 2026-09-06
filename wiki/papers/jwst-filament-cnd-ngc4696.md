@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, agn-feedback, jwst, galaxy-clusters]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [ultramassive-bh-binary-cavity, smbh-inclination-angle, mrk501-double-jet-smbbh, high-z-quasar-pair-merger, dr21-magnetic-accretion]
+related_papers: [ultramassive-bh-binary-cavity, smbh-inclination-angle, mrk501-double-jet-smbbh, high-z-quasar-pair-merger, dr21-magnetic-accretion, radio-changing-look-agn]
 source_analysis: "claude_export/extracted-analyses/2026-07-19_watching-a-black-hole-set-the-table-a-filament-caught-feedin_2745e811.md"
 ---
 
@@ -35,6 +35,9 @@ Cluster cores should cool and dump gas onto the central black hole; jets reheat 
 - Multiphase thermal structure not fully matched by the cold-dominated simulated CND.
 
 ## Connections
+
+- Reverse-link: [[radio-changing-look-agn]]
+- Reverse-link: [[glimpse-17775-cocoon]]
 
 - SMBH / AGN cluster: [[ultramassive-bh-binary-cavity]], [[smbh-inclination-angle]], [[mrk501-double-jet-smbbh]], [[high-z-quasar-pair-merger]], [[bh-recoils-agn-survey]]
 - Extreme outflow / feedback counterpart: [[category-79-quasar-wind]]

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, nanophotonics, nonlinear-optics]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [ito-nanocrystal-fieldoscopy, evanescent-wave-transverse-spin]
+related_papers: [ito-nanocrystal-fieldoscopy, evanescent-wave-transverse-spin, photonic-supersolid]
 ---
 
 # Epsilon-Near-Zero (ENZ)
@@ -16,6 +16,8 @@ Metals have \(\varepsilon < 0\) (screening); dielectrics \(\varepsilon > 0\). At
 Interface / near-field cousins: strongly inhomogeneous modes (plasmonic, guided, **evanescent**) also rearrange electromagnetic spin and momentum densities — including transverse Belinfante spin momentum that bulk plane waves hide ([[evanescent-wave-transverse-spin]]). ENZ concentrates energy; evanescence exposes hidden spin–orbit structure.
 
 ## Related
+
+- Reverse-link: [[photonic-supersolid]]
 
 - [[ito-nanocrystal-fieldoscopy]], [[fieldoscopy]]
 - [[evanescent-wave-transverse-spin]]

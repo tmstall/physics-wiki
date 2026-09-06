@@ -33,6 +33,7 @@ Cuprate lore taught nodal $d$-wave fortresses with open corner gates. These nick
 
 ## Connections
 
+- Synthesis: [[condensed-matter-topology-fractionalization]]
 - Field-tuned SC phases: [[bata2s5-field-induced-sc]]
 - Hierarchical moiré SC cascade: [[supermoire-trilayer-graphene-sc]]
 - Moiré / geometry transport neighbors: [[brown-zak-nonlinear-transport]]

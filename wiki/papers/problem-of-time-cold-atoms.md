@@ -1,6 +1,6 @@
 ---
 tags: [quantum-foundations, cold-atoms, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-15_testing-the-problem-of-time-with-cold-atoms_3bdca1d2.md"
 ---
@@ -25,6 +25,8 @@ Hard ceiling: 350 words.  Barontini built a miniature analog universe from ~24,0
 
 ## Connections
 
+- Reverse-link: [[mot-metal-hydride]]
+
 - [[quantum-proper-time]], [[time-goes-quantum]], [[quantum-time-across-platforms]]
 - Speculative time-first gravity: [[temporal-imbalance-gravity]], [[five-dimensional-classical-gravity]]
 - Other engineered 1D cold-atom critical states: [[fractional-fermi-sea-1d-bosons]]
@@ -32,6 +34,8 @@ Hard ceiling: 350 words.  Barontini built a miniature analog universe from ~24,0
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
 
 - Synthesis: [[measurement-problem-threads]] (foundations: measurement problem threads)
+- Synthesis: [[modified-speculative-gravity]]
+- Reverse-link: [[cft-spectra-rydberg-simulator]]
 
 ## Source
 

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, condensed-matter, magnetism]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [spin-flip-flop-saf, magnetic-heliknoton-electric-write]
+related_papers: [spin-flip-flop-saf, magnetic-heliknoton-electric-write, ciss-homochirality, photonic-supersolid]
 ---
 
 # Magnons
@@ -18,6 +18,9 @@ Flip one spin in an ordered magnet and the disturbance propagates. Quantize it: 
 **What magnons are not:** They are not fractional charges, not photonic non-Abelian braids, and not quantum-metric nonlinearities in oxide 2DEGs — those live in other threads of [[condensed-matter-topology-fractionalization]].
 
 ## Related
+
+- Reverse-link: [[ciss-homochirality]]
+- Reverse-link: [[photonic-supersolid]]
 
 - [[spin-flip-flop-saf]], [[magnetic-heliknoton-electric-write]], [[chiral-induced-spin-selectivity]]
 - Synthesis: [[condensed-matter-topology-fractionalization]]

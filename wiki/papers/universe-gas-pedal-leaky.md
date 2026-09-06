@@ -29,6 +29,7 @@ This paper extends the emergent-gravity program by asking what happens when the 
 - [[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]], [[hubble-tension]]
 - Finite-range / massive-gravity alternative: [[massive-gravity-drgt]]
 - Synthesis: [[modified-speculative-gravity]] (IR modified gravity vs DE narratives)
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 - Soft-overlap note: extract `2026-06-25_lorentz-violation-in-emergent-gravity-and-cosmological-accel_1a6d0e13.md` is the same Isichei–Magueijo emergent-gravity Otto-cycle / work-leg program (PRL 136, 231501) — **not re-ingested** as a separate paper page
 
 - Lint link: [[qg-deep-dive-4-de-sitter]]

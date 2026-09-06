@@ -1,6 +1,6 @@
 ---
 tags: [quantum-foundations, condensed-matter, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-18_schrodinger-s-cat-but-weirder_acd4b7cd.md"
 ---
@@ -25,6 +25,9 @@ v3.6.3  ---  # 1. Schrödinger's Cat, But Weirder: Making Superpositions Out of 
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[dissipative-cavity-entanglement]]
+- Reverse-link: [[quantum-state-sculptor]]
 
 - [[massive-tunneling-schrodinger-cats]], [[noon-states]], [[quantum-jamming]]
 

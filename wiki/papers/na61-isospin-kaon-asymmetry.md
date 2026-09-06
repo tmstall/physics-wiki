@@ -42,6 +42,7 @@ QCD’s strong force almost treats up and down quarks as twins — isospin is th
 - RHIC / high-energy nuclear: [[star-jpsi-spin-interference]], [[high-pt-physics-cern-isr]]
 - Key terms: isospin symmetry, kaon multiplicity ratio $R_K$, NA61/SHINE, Hadron Resonance Gas baseline
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Reverse-link: [[alice-oo-nene-nuclear-geometry-flow]]
 
 ## Source
 

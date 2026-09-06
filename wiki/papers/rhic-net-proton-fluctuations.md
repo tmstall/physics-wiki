@@ -1,8 +1,8 @@
 ---
 tags: [papers, nuclear-physics, heavy-ion, qcd-critical-point, rhic]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [color-superconductivity-qcd, star-jpsi-spin-interference, high-pt-physics-cern-isr, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3]
+related_papers: [color-superconductivity-qcd, star-jpsi-spin-interference, high-pt-physics-cern-isr, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, alice-jpsi-gluon-saturation, eta-prime-mesic-nucleus]
 source_analysis: "spacex_export/extracted-analyses/2025-10-01_precision-net-proton-fluctuations-at-rhic_284130d8.md"
 cleanup_note: "2026-08-04: abstract claims verified against arXiv:2504.00817; extract chat noise discarded"
 ---
@@ -37,6 +37,9 @@ Near a QCD critical point, baryon-number fluctuations should swing non-monotonic
 
 ## Connections
 
+- Reverse-link: [[alice-jpsi-gluon-saturation]]
+- Reverse-link: [[eta-prime-mesic-nucleus]]
+
 - Dense QCD / color SC context: [[color-superconductivity-qcd]]
 - RHIC / spin nuclear neighbor: [[star-jpsi-spin-interference]]
 - SPS isospin / strangeness neighbor: [[na61-isospin-kaon-asymmetry]]
@@ -44,6 +47,7 @@ Near a QCD critical point, baryon-number fluctuations should swing non-monotonic
 - High-energy nuclear history: [[high-pt-physics-cern-isr]]
 - Key terms: net-proton cumulants, Beam Energy Scan II, QCD critical point, $\mu_B$, $C_4/C_2$, factorial cumulants
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Reverse-link: [[alice-oo-nene-nuclear-geometry-flow]]
 
 ## Source
 

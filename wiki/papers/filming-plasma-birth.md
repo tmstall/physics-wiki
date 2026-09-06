@@ -1,8 +1,8 @@
 ---
 tags: [papers, plasma, fusion, xfel, warm-dense-matter]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [beam-driven-plasma-mirror, dense-plasma-opacity-revision, dephasingless-flying-focus-wakefield]
 source_analysis: "raw/analyses/Filming the Birth of a Plasma.md"
 ---
 
@@ -30,6 +30,11 @@ ICF ablators must turn solid into plasma on a schedule the simulation trusts. WD
 - Analysis rebuilt from title/news/field knowledge without full PDF text in places.
 
 ## Connections
+
+- Synthesis: [[plasma-hed-lab]]
+- Reverse-link: [[beam-driven-plasma-mirror]]
+- Reverse-link: [[dense-plasma-opacity-revision]]
+- Reverse-link: [[dephasingless-flying-focus-wakefield]]
 
   - Concepts: [[warm-dense-matter]]
 - Experimental “time-resolved extreme matter” culture distant from quantum-metrology core, but shares femtosecond control themes with [[snv-super-coherent-excitation]].

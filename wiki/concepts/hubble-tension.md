@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [holismokes-sn-winny, newton-ksz-force-law, cigars-i-supernova-cosmology, desi-evolving-dark-energy, early-universe-popiii-flash-ionization]
+related_papers: [holismokes-sn-winny, newton-ksz-force-law, cigars-i-supernova-cosmology, desi-evolving-dark-energy, early-universe-popiii-flash-ionization, big-ring-ultra-large-structure, gw170817-jet-hubble, massive-gravity-drgt, topological-cosmological-constant, universe-gas-pedal-leaky]
 ---
 
 # Hubble Tension
@@ -18,6 +18,12 @@ DESI’s BAO expansion history ([[desi-evolving-dark-energy]], [[baryon-acoustic
 Another early-universe lever is the CMB electron-scattering optical depth $\tau$. A Pop III.1 “Flash” ionization at $z\sim20$–$25$ ([[early-universe-popiii-flash-ionization]]) can raise $\tau$ by $\sim0.04$ and, in some analyses, relax the CMB preference toward lower $H_0$ — at the cost of tension with Planck’s low-$\tau$ window and reliance on unproven supermassive first stars. Treat as a speculative reionization fix, not a settled $H_0$ solution.
 
 ## Related pages
+
+- Reverse-link: [[big-ring-ultra-large-structure]]
+- Reverse-link: [[gw170817-jet-hubble]]
+- Reverse-link: [[massive-gravity-drgt]]
+- Reverse-link: [[topological-cosmological-constant]]
+- Reverse-link: [[universe-gas-pedal-leaky]]
 
 - [[time-delay-cosmography]]
 - [[strong-gravitational-lensing]]

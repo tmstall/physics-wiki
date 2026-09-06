@@ -1,8 +1,8 @@
 ---
 tags: [papers, gravitational-waves, cosmology, perturbation-theory]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [gw-induced-fermion-freeze-in, pre-bang-leftovers, desi-evolving-dark-energy]
+related_papers: [gw-induced-fermion-freeze-in, pre-bang-leftovers, desi-evolving-dark-energy, qg-deep-dive-1-mergers-emission]
 source_analysis: "claude_export/extracted-analyses/2026-06-19_second-order-gravitational-wave-strain-analysis_9cdb1c0c.md"
 ---
 
@@ -30,6 +30,9 @@ A detector does not read a coordinate table—it times light between free-fallin
 - Idealized cosmology; detector response functions for real PTAs still need folding in.
 
 ## Connections
+
+- Reverse-link: [[qg-deep-dive-1-mergers-emission]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
 
 - Stochastic / induced GW bath: [[stochastic-gw-background]], [[gw-induced-fermion-freeze-in]]
 - Early-universe GW channels: [[pre-bang-leftovers]], [[primordial-black-holes]]

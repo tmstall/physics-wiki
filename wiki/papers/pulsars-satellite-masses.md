@@ -1,8 +1,8 @@
 ---
 tags: [papers, astrophysics, pulsars, galactic-dynamics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [loki-early-accreted-vmp]
+related_papers: [loki-early-accreted-vmp, ancient-immigrant-lmc-star, mrk501-double-jet-smbbh, oyashio-extragalactic-gc-stream]
 source_analysis: "raw/analyses/List1_Combined_Clean.md"
 ---
 
@@ -29,6 +29,10 @@ Stellar kinematics are a hard-drive full of every past file. Accelerations are t
 - Sgr mass uncertainty ~70%; SMC/LMC internal structure incomplete.
 
 ## Connections
+
+- Reverse-link: [[ancient-immigrant-lmc-star]]
+- Reverse-link: [[mrk501-double-jet-smbbh]]
+- Reverse-link: [[oyashio-extragalactic-gc-stream]]
 
 - Concepts: [[galactic-accretion]]
 - Assembly neighbors: [[loki-early-accreted-vmp]] (local fossils of early accretion), [[cosmos-web-cosmic-web]] (high-\(z\) environment).

@@ -1,8 +1,8 @@
 ---
 tags: [papers, materials, soft-matter, electron-microscopy]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [confinement-stiffening-films, atomic-scale-double-slit-si, positronium-diffraction-graphene]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Electron Microscope Finally Gets a Full Map)"
 ---
 
@@ -33,10 +33,16 @@ GIWAXS is a stadium aerial photo of tile statistics; TEM imaging is a close-up o
 
 ## Connections
 
+- Synthesis: [[condensed-matter-topology-fractionalization]] (structure method neighbor)
+
+- Reverse-link: [[confinement-stiffening-films]]
+- Reverse-link: [[bessy-tes-soft-xray-spectrometer]]
+
 - Soft-matter / materials island (new cluster entry).
 - Key terms (stubs folded here): **3D electron diffraction** = tilt-series ED that fills reciprocal space for crystal stats; **organic solar cells** hinge on nanoscale domain packing (exciton split vs charge collection trade-off).
 - Ultrafast nanophotonics neighbor (solution-processable nanocrystal optics, different probe): [[ito-nanocrystal-fieldoscopy]].
 - Antimatter matter-wave diffraction: [[positronium-diffraction-graphene]]
+- Atomic-scale STEM double-slit / bond-stiffness interferometry: [[atomic-scale-double-slit-si]]
 
 ## Source
 

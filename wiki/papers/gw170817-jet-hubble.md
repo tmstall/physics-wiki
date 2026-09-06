@@ -26,6 +26,9 @@ The merger of two neutron stars in 2017 remains the only gravitational-wave even
 
 ## Connections
 
+- Synthesis: [[cosmology-expansion-history-and-structure]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+
 - [[hubble-tension]], [[holismokes-sn-winny]], [[type-ia-supernovae]]
 
 - Related (SpaceX set): [[psr-j1906-binary-timing]] — PSR J1906+0746 long-term timing

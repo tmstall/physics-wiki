@@ -31,6 +31,7 @@ Cas13a is a security gate that, once unlocked by the right RNA key, shreds every
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Soft-matter island neighbor (different field): [[boronate-velcro-synthetic-cells]] — both one-pot programmable chemistry, no shared physics.
 
 ## Open questions

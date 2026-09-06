@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology, large-scale-structure]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, big-ring-ultra-large-structure]
 ---
 
 # Baryon Acoustic Oscillations (BAO)
@@ -19,5 +19,7 @@ Before recombination, photon–baryon plasma supported sound waves. At decouplin
 - Combined with CMB + SN Ia, BAO drives the evolving-dark-energy tension with pure \(\Lambda\).
 
 ## Related
+
+- Reverse-link: [[big-ring-ultra-large-structure]]
 
 - [[dark-energy-equation-of-state]], [[type-ia-supernovae]], [[hubble-tension]], [[cosmic-web]]

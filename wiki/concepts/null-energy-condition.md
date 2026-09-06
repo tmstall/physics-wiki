@@ -1,8 +1,8 @@
 ---
 tags: [concepts, general-relativity]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [evaporating-charged-black-holes, warp-drive-positive-energy, hawking-radiation-charge-shell, gravastar-dust-collapse]
+related_papers: [evaporating-charged-black-holes, warp-drive-positive-energy, hawking-radiation-charge-shell, gravastar-dust-collapse, massive-gravity-drgt, naked-black-hole-candidate]
 ---
 
 # Null Energy Condition (NEC)
@@ -16,6 +16,9 @@ Penrose-type theorems need the NEC (or close cousins) to force geodesic incomple
 **Warp drives** historically demand the opposite: Alcubierre-style bubbles need negative energy and NEC failure. [[warp-drive-positive-energy]] shows a constant-velocity *subluminal* shell construction that claims to satisfy all classical energy conditions with positive ADM mass — still not FTL, but a bookkeeping win against the classic exotic-matter requirement. Related exotic compact-object constructions that reorganize energy conditions include [[gravastar-dust-collapse]].
 
 ## Related pages
+
+- Reverse-link: [[massive-gravity-drgt]]
+- Reverse-link: [[naked-black-hole-candidate]]
 
 - [[hawking-radiation]], [[hawking-radiation-charge-shell]]
 - [[black-hole-interiors]]

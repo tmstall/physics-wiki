@@ -1,8 +1,8 @@
 ---
 tags: [papers, plasma, high-intensity-lasers, qed]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [filming-plasma-birth, beam-driven-plasma-mirror]
+related_papers: [filming-plasma-birth, beam-driven-plasma-mirror, aquila-booster-pevatron, dephasingless-flying-focus-wakefield, ito-nanocrystal-fieldoscopy, lab-blazar-pair-instability]
 source_analysis: "raw/analyses/List1_Combined_Clean.md"
 ---
 
@@ -29,6 +29,12 @@ A solid surface becomes a mirror oscillating near \(c\). Each bounce Doppler-squ
 - Facility-specific contrast fingerprint; scaling to ELI/SEL non-trivial.
 
 ## Connections
+
+- Synthesis: [[plasma-hed-lab]]
+- Reverse-link: [[aquila-booster-pevatron]]
+- Reverse-link: [[dephasingless-flying-focus-wakefield]]
+- Reverse-link: [[ito-nanocrystal-fieldoscopy]]
+- Reverse-link: [[lab-blazar-pair-instability]]
 
 - Plasma neighbor: [[filming-plasma-birth]], [[warm-dense-matter]] (different regime: WDM spectroscopy vs ROM HHG).
 - Beam-driven flying-mirror cousin (particle driver, interior waves; same near-\(c\) Doppler-compression idea): [[beam-driven-plasma-mirror]].

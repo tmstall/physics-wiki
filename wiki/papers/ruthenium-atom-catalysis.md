@@ -1,8 +1,8 @@
 ---
 tags: [papers, catalysis, single-atom, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [bond-breaking-discount, hot-electron-coherent-phonons-ptcu]
+related_papers: [bond-breaking-discount, hot-electron-coherent-phonons-ptcu, phosphorus-radical-hydroamination]
 source_analysis: "claude_export/extracted-analyses/2026-07-04_a-single-ruthenium-atom-that-both-lights-the-match-and-bends_9beb4c8d.md"
 ---
 
@@ -28,6 +28,9 @@ I'm working through a retrieval strategy for this ACS Catalysis paper the user s
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[phosphorus-radical-hydroamination]]
 
 - Related: [[bond-breaking-discount]], [[hot-electron-coherent-phonons-ptcu]]
 

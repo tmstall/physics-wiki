@@ -1,8 +1,8 @@
 ---
 tags: [papers, high-energy-astrophysics, cosmic-rays, pulsars]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [pulsars-satellite-masses, plasma-relativistic-amplifier]
+related_papers: [pulsars-satellite-masses, plasma-relativistic-amplifier, ic1262-metal-mixing, lab-blazar-pair-instability, supernova-onion-expansion]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Aquila Booster)"
 ---
 
@@ -34,6 +34,10 @@ Think of the pulsar as a power supply and the nebula as a particle factory. The 
 
 ## Connections
 
+- Reverse-link: [[ic1262-metal-mixing]]
+- Reverse-link: [[lab-blazar-pair-instability]]
+- Reverse-link: [[supernova-onion-expansion]]
+
 - Pulsars / multi-messenger: [[pulsars-satellite-masses]]
 - Extreme plasma acceleration (lab analog scale): [[plasma-relativistic-amplifier]]
 - Direct multi-species spectra / Peters cycle below the knee: [[peters-cycle-cosmic-rays]]; ultraheavy UHECR path: [[beyond-iron-ultraheavy-cosmic-rays]]
@@ -41,7 +45,9 @@ Think of the pulsar as a power supply and the nebula as a particle factory. The 
 - Concepts: [[pulsar-wind-nebulae]]
 
 - Related (SpaceX set): [[magnetar-slsn-2017egm-fermi]] — Magnetar-powered SLSN GeV detection
+- Microquasar PeVatron / Cygnus Bubble model: [[cygnus-x3-pevatron-bubble]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Reverse-link: [[icecube-galactic-plane-neutrinos]]
 
 ## Source
 

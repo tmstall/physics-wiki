@@ -1,6 +1,6 @@
 ---
 tags: [cosmology, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-26_anisotropic-cosmic-structures-at-gigaparsec-scale_e511d1e3.md"
 ---
@@ -25,6 +25,9 @@ The cosmological principle — the bedrock assumption that the universe looks th
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[primordial-tidal-torque-galaxy-spin]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 
 - [[big-ring-ultra-large-structure]], [[cosmological-principle]], [[cosmic-web]]
 

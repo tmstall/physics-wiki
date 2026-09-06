@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, gravitational-waves, thermodynamics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, smbh-inclination-angle]
+related_papers: [evaporating-charged-black-holes, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, smbh-inclination-angle, horizon-direct-wave-gw250114, qg-deep-dive-1-mergers-emission]
 source_analysis: "claude_export/extracted-analyses/2026-07-10_entropy-maximization-in-black-hole-mergers_57963c1b.md"
 ---
 
@@ -31,6 +31,12 @@ Two bricks in contact maximize total entropy when temperatures equalize. Two bla
 - Mass loss underpredicted relative to NR.
 
 ## Connections
+
+- Reverse-link: [[horizon-direct-wave-gw250114]]
+- Reverse-link: [[qg-deep-dive-1-mergers-emission]]
+- Reverse-link: [[black-hole-third-law-violation]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+- Reverse-link: [[s301-sgra-spin-sensitive-star]]
 
 - BH cluster: [[black-hole-interiors]], [[hawking-radiation]], [[evaporating-charged-black-holes]]
 - Merger population: [[supermassive-black-hole-binaries]], [[smbh-inclination-angle]], [[mrk501-double-jet-smbbh]], [[high-z-quasar-pair-merger]]

@@ -1,8 +1,8 @@
 ---
 tags: [papers, gravity, foundations, entropy, time, speculative]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: exploratory
-related_papers: [gravity-from-entropy, five-dimensional-classical-gravity, problem-of-time-cold-atoms, quantum-proper-time-ion-clocks, frozen-in-gravitational-fields]
+related_papers: [gravity-from-entropy, five-dimensional-classical-gravity, problem-of-time-cold-atoms, quantum-proper-time-ion-clocks, frozen-in-gravitational-fields, warp-drive-positive-energy]
 source_analysis: "spacex_export/extracted-analyses/2026-01-11_temporal-imbalance-theory-gravity-s-new-clock_bc2d307c.md"
 ---
 
@@ -36,6 +36,10 @@ Think of time as a distributed clock network. Where tick rates disagree, traffic
 - Analysis-based ingest; verify axioms, monotonicity proof, and weak-field limit against the primary preprint before any technical use.
 
 ## Connections
+
+- Synthesis: [[entropic-information-gravity]]
+
+- Reverse-link: [[warp-drive-positive-energy]]
 
 - Entropy-driven gravity: [[gravity-from-entropy]]
 - Classical emergence / extra structure: [[five-dimensional-classical-gravity]], [[frozen-in-gravitational-fields]]

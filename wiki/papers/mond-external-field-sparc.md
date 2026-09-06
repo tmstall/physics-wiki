@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, gravity, galaxy-dynamics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [newton-ksz-force-law, alena-tensor-rotation-dm, modified-newtonian-dynamics]
+related_papers: [newton-ksz-force-law, alena-tensor-rotation-dm, modified-newtonian-dynamics, primordial-tidal-torque-galaxy-spin]
 source_analysis: "claude_export/extracted-analyses/2026-04-27_mond-s-cosmic-fingerprint_898c8c43.md"
 ---
 
@@ -31,9 +31,12 @@ In Newton/GR, a lab doesn’t care about the gravity of the Virgo cluster for lo
 
 ## Connections
 
+- Reverse-link: [[primordial-tidal-torque-galaxy-spin]]
+
 - [[modified-newtonian-dynamics]], [[newton-ksz-force-law]], [[alena-tensor-rotation-dm]], [[ksz-effect]]
 - Concepts: External Field Effect (folded); SEP tension note
 - Synthesis: [[modified-speculative-gravity]] (force-law / MOND layer of modified gravity map)
+- Synthesis: [[dark-matter-detection-channels]]
 
 ## Source
 

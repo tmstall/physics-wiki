@@ -27,6 +27,8 @@ A team at the University of Oslo asked: if you fire a single photon at an optica
 
 ## Connections
 
+- Synthesis: [[amo-quantum-state-control]]
+- Reverse-link: [[cavity-qed-tur-io-bookkeeping]]
 - [[noise-driven-qubit-entanglement]], [[w-state-entangled-measurement]]
 
 - Related (SpaceX set): [[positronium-diffraction-graphene]] — Positronium matter-wave diffraction

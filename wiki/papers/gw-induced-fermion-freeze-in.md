@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, dark-matter, gravitational-waves]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [frozen-in-gravitational-fields]
+related_papers: [frozen-in-gravitational-fields, alena-tensor-rotation-dm, axion-detector-quantum-erasure, newton-ksz-force-law, second-order-gw-strain-gauge, gamma-glow-pbh-detector]
 source_analysis: "raw/analyses/Gravitational Waves as Dark Matter Factories.md"
 ---
 
@@ -30,6 +30,14 @@ Massless Weyl fermions in a uniformly expanding universe are like a ship on perf
 - Chiral GWB / dark-sector asymmetry flagged, not computed.
 
 ## Connections
+
+- Reverse-link: [[alena-tensor-rotation-dm]]
+- Reverse-link: [[axion-detector-quantum-erasure]]
+- Reverse-link: [[newton-ksz-force-law]]
+- Reverse-link: [[second-order-gw-strain-gauge]]
+- Reverse-link: [[gamma-glow-pbh-detector]]
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+- Synthesis: [[dark-matter-detection-channels]]
 
 - Key terms: **freeze-in** = feeble non-equilibrium DM production (never thermalizes; drips until the faucet cools shut)—here driven by a GW bath.
 - Concepts: [[stochastic-gw-background]]

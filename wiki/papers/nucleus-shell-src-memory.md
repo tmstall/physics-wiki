@@ -39,6 +39,7 @@ Nuclear physics long ran two toolboxes that barely talked. The shell model is a 
 - EMC / medium-modified PDFs: [[emc-effect-marathon-a3]]
 - Key terms (folded, no stubs): nuclear shell model, magic numbers, short-range correlations (SRC), missing momentum, tensor force, $pn$ dominance, ($e,e'p$), angular-momentum selection rules
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Reverse-link: [[alice-oo-nene-nuclear-geometry-flow]]
 
 ## Open questions
 

@@ -1,6 +1,6 @@
 ---
 tags: [black-holes, galaxies, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-14_black-hole-recoils-in-active-galactic-nuclei_77b287ab.md"
 ---
@@ -26,9 +26,13 @@ When two supermassive black holes merge, the survivor gets a "kick" from lopside
 
 ## Connections
 
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+- Reverse-link: [[radio-changing-look-agn]]
+
 - [[supermassive-black-hole-binaries]], [[dual-agn]], [[smbh-inclination-angle]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[dual-agn-green-pea]]
 
 ## Source
 

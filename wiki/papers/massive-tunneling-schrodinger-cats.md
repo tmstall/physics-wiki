@@ -1,8 +1,8 @@
 ---
 tags: [papers, cold-atoms, quantum-sensing, macroscopic-superposition]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [axion-detector-quantum-erasure, dissipative-cavity-entanglement, fractional-fermi-sea-1d-bosons, macroscopic-crystal-entanglement-neutrons, three-body-quantum-company, w-state-entangled-measurement]
 source_analysis: "raw/analyses/Quantum Tunneling Just Hauled a 608-Dalton Object Into Superposition .md"
 ---
 
@@ -49,12 +49,20 @@ Cooling to nanokelvin stretches the de Broglie wavelength until it matches the l
 
 ## Connections
 
+- Reverse-link: [[axion-detector-quantum-erasure]]
+- Reverse-link: [[dissipative-cavity-entanglement]]
+- Reverse-link: [[fractional-fermi-sea-1d-bosons]]
+- Reverse-link: [[macroscopic-crystal-entanglement-neutrons]]
+- Reverse-link: [[three-body-quantum-company]]
+- Reverse-link: [[w-state-entangled-measurement]]
+
   - Concepts: [[collective-tunneling]], [[noon-states]], [[optical-lattices]], [[ramsey-interferometry]]
 - Sensing link: quantum-enhanced inertial / gradient measurements; long-term interest in macroscopic superpositions and quantum gravity tests.
 - Contrast with ion-clock [[quantum-proper-time]] work ([[time-goes-quantum]]): here the “two places at once” is **spatial**; there it is **proper-time / motional**.
 - Cold-atom platform cousin (dwell-time weak values, not spatial cats): [[negative-weak-valued-excitation-times]].
 - Continuous-variable non-Gaussian “cat cousins” (ions, not lattice NOON): [[quantum-state-sculptor]]
 - Synthesis: [[quantum-time-across-platforms]]
+- Reverse-link: [[quantum-droplets-bose-fermi]]
 
 ## Open questions
 

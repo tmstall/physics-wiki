@@ -1,6 +1,6 @@
 ---
 tags: [cosmology, black-holes, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-06_the-quasar-census-begins_15c38246.md"
 ---
@@ -27,12 +27,19 @@ The European Space Agency's Euclid telescope has discovered 31 new quasars — t
 
 ## Connections
 
+- Reverse-link: [[category-79-quasar-wind]]
+- Reverse-link: [[glimpse-17775-cocoon]]
+
 - [[high-z-quasar-pair-merger]], [[supermassive-black-hole-binaries]], [[cosmos-web-cosmic-web]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Reverse-link: [[bottom-heavy-imf-early-galaxies]]
+- Reverse-link: [[dual-agn-green-pea]]
 
 - Related (SpaceX set): [[muse-quasar-filament-z3]] — MUSE LyA quasar-pair filament
 - Heavy-seed / early ionization path: [[early-universe-popiii-flash-ionization]]
+- Exoplanet transit-spectroscopy array concept (instrumentation island): [[life2-telescope-array-biosignatures]]
 
 ## Source
 

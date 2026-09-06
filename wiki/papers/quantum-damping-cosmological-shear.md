@@ -32,6 +32,8 @@ A bouncing universe is like a rubber band that can snap back lopsided. mLQC-I ap
 
 ## Connections
 
+- Synthesis: [[cosmology-expansion-history-and-structure]]
+
 - Bounce cosmology: [[pre-bang-leftovers]]
 - Cosmological constant / vacuum structure: [[topological-cosmological-constant]], [[dark-energy-equation-of-state]]
 - Concepts: [[loop-quantum-cosmology]], cosmic no-hair (Wald)

@@ -1,8 +1,8 @@
 ---
 tags: [papers, astrochemistry, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [interstellar-glaciers-spherex, dr21-magnetic-accretion]
+related_papers: [interstellar-glaciers-spherex, dr21-magnetic-accretion, iras-21204-fuor]
 source_analysis: "claude_export/extracted-analyses/2026-06-17_paper-analysis-on-sulfur-chemistry-in-interstellar-ice_d08f1727.md"
 ---
 
@@ -25,6 +25,10 @@ Sulfur is the tenth most abundant element in the universe, and in diffuse inters
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[iras-21204-fuor]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
 
 - Related: [[interstellar-glaciers-spherex]], [[dr21-magnetic-accretion]]
 

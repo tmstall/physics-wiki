@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, radio-astronomy, gravitational-waves]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, ultramassive-bh-binary-cavity, pulsars-satellite-masses]
+related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, ultramassive-bh-binary-cavity, pulsars-satellite-masses, entropy-maximization-bh-mergers, jwst-filament-cnd-ngc4696, radio-changing-look-agn]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Two Jets, One Core, Zero Wiggle Room)"
 ---
 
@@ -33,6 +33,10 @@ One black hole, one jet. Two holes, two jets—and if they orbit, one jet’s pa
 
 ## Connections
 
+- Reverse-link: [[entropy-maximization-bh-mergers]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+- Reverse-link: [[radio-changing-look-agn]]
+
 - Binary SMBH cluster: [[smbh-inclination-angle]], [[supermassive-black-hole-binaries]], [[dynamical-friction]], [[high-z-quasar-pair-merger]], [[ultramassive-bh-binary-cavity]]
 - PTA / multi-messenger: [[pulsar-timing-arrays]], [[pulsars-satellite-masses]]
 - Pair-cascade / IGMF lab analogue: [[lab-blazar-pair-instability]]
@@ -40,6 +44,9 @@ One black hole, one jet. Two holes, two jets—and if they orbit, one jet’s pa
 - Concepts: [[supermassive-black-hole-binaries]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[horizon-direct-wave-gw250114]]
+- Reverse-link: [[dual-agn-green-pea]]
+- Reverse-link: [[pks2233-neutrino-lensing]]
 
 ## Source
 

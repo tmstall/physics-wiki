@@ -27,6 +27,7 @@ General relativity's equations permit closed timelike curves — paths that loop
 
 ## Connections
 
+- Synthesis: [[modified-speculative-gravity]]
 - [[noise-driven-qubit-entanglement]], [[w-state-entangled-measurement]], [[certified-randomness-amplification]]
 - Classical zigzag / retrocausal geometry toy model: [[five-dimensional-classical-gravity]]
 

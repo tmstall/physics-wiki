@@ -1,8 +1,8 @@
 ---
 tags: [papers, condensed-matter, magnonics, spintronics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [quantum-metallurgy-cdw, photonic-supersolid]
+related_papers: [quantum-metallurgy-cdw, photonic-supersolid, bata2s5-field-induced-sc]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Spin Flip-Flop)"
 ---
 
@@ -30,6 +30,9 @@ Two coupled pendulums can swing together (acoustic) or see-saw (optical). Drive 
 - Single sub-micron device demonstration; integration into larger magnonic circuits remains open.
 
 ## Connections
+
+- Reverse-link: [[bata2s5-field-induced-sc]]
+- Synthesis: [[condensed-matter-topology-fractionalization]]
 
 - Condensed-matter neighbors: [[quantum-metallurgy-cdw]], [[photonic-supersolid]], [[magnetic-heliknoton-electric-write]] (collective modes / nonlinear matter-wave / 3D soliton analogs)
 - Spin-transport cousin (electron spin filtering in chiral molecules, not magnon mode hops): [[ciss-homochirality]], [[chiral-induced-spin-selectivity]], [[magnons]]

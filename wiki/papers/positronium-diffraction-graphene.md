@@ -2,7 +2,7 @@
 tags: [papers, antimatter, quantum-optics, matter-waves]
 last_updated: 2026-08-04
 status: analysis-ingest
-related_papers: [3d-electron-diffraction-osc, sunlight-spdc-ghost-imaging, truncated-photon-dynamical-casimir]
+related_papers: [3d-electron-diffraction-osc, atomic-scale-double-slit-si, sunlight-spdc-ghost-imaging, truncated-photon-dynamical-casimir]
 source_analysis: "spacex_export/extracted-analyses/2026-01-19_positronium-diffraction-breakthrough-in-antimatter-physics_1d9d4313.md"
 ---
 
@@ -38,12 +38,14 @@ Hot-surface Ps sources spit out a messy velocity spray; the coherence length col
 ## Connections
 
 - Electron diffraction of organics: [[3d-electron-diffraction-osc]]
+- Crystal-as-double-slit STEM interferometry (electrons, Si dumbbell): [[atomic-scale-double-slit-si]]
 - Quantum optics / imaging neighbors: [[sunlight-spdc-ghost-imaging]], [[truncated-photon-dynamical-casimir]]
 - Structured-light / OAM cousin: [[twisted-light-chiral-ms]]
 - Near-field / interface wave structure (different physics, same “hidden momentum in constrained waves” flavor): [[evanescent-wave-transverse-spin]]
 - Antimatter / composite-matter wave note: Ps diffracts as one de Broglie object of mass $2m_e$, not as independent $e^+$ and $e^-$ gratings.
 - Matter-wave / AMO control cousins: [[amo-quantum-state-control]] (state engineering culture, different platform)
 - Key terms: positronium, matter-wave diffraction, photodetachment beam, graphene grating
+- Graphene electronic structure (spin-staggered VB readout from neural wave functions — different question): [[particle-view-nn-wavefunction]]
 
 ## Source
 

@@ -25,6 +25,7 @@ Three-flavor fermions — think of particles that come in exactly three distingu
 
 ## Connections
 
+- Synthesis: [[condensed-matter-topology-fractionalization]]
 - [[massive-tunneling-schrodinger-cats]], [[noon-states]], [[quantum-jamming]]
 - Optical fractional-charge fingerprints in moiré: [[anyon-trions-twisted-mote2]]
 - 1D fractional seas: [[fractional-fermi-sea-1d-bosons]]

@@ -2,7 +2,7 @@
 tags: [papers, dark-matter, axions, quantum-optics, detectors]
 last_updated: 2026-08-04
 status: analysis-ingest
-related_papers: [synchrotron-dm-detector, gw-induced-fermion-freeze-in, gamma-glow-pbh-detector, noise-driven-qubit-entanglement]
+related_papers: [gw-induced-fermion-freeze-in, gamma-glow-pbh-detector, noise-driven-qubit-entanglement, dark-photon-plasma-saturation]
 source_analysis: "spacex_export/extracted-analyses/2026-05-25_axion-quantum-signatures-erased-in-detectors_6487c8e0.md"
 ---
 
@@ -33,10 +33,13 @@ A cavity does not listen to one pure axion tone. It averages thousands of indepe
 
 ## Connections
 
-- DM detection hardware: [[synchrotron-dm-detector]], [[gamma-glow-pbh-detector]]
+- Synthesis: [[dark-matter-detection-channels]]
+
+- DM detection / bounds: [[gamma-glow-pbh-detector]], [[dark-photon-plasma-saturation]]
 - Cosmological DM production context: [[gw-induced-fermion-freeze-in]], [[primordial-black-holes]]
 - Quantum optics / nonclassical states: [[noise-driven-qubit-entanglement]], [[massive-tunneling-schrodinger-cats]]
 - Detector classicalization note: even if the galactic field were a cat or squeezed state, the cavity still reports a classical noisy tone — same practical lesson as treating macroscopic occupation carefully in [[massive-tunneling-schrodinger-cats]].
+- Soft x-ray TES facility (mis-titled “DM detector” in an old ingest — **not** a DM channel): [[bessy-tes-soft-xray-spectrometer]]
 - Key terms: axion haloscope, Glauber–Sudarshan $P$-function, mode averaging, $g_{a\gamma\gamma}$, quantum central-limit theorem
 
 ## Source

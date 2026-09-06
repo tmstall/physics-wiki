@@ -1,6 +1,6 @@
 ---
 tags: [quantum-field-theory, foundations, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-18_differential-signaling-for-the-quantum-vacuum_416551a8.md"
 ---
@@ -24,6 +24,10 @@ Gravitational-wave detectors have a coverage gap: ground-based detectors like LI
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Synthesis: [[amo-quantum-state-control]] (vacuum / QI neighbor)
+
+- Reverse-link: [[hawking-radiation-charge-shell]]
 
 - [[hawking-radiation]], [[double-copy]]
 

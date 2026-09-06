@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-optics, atomic-clocks, superradiance]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [dissipative-cavity-entanglement, light-as-friction-brake, photon-number-optical-analogy-control, two-clocks-one-laser]
 source_analysis: "raw/analyses/The Atom-Synchronized Clock That Stops Caring About Vibrations.md"
 ---
 
@@ -34,6 +34,13 @@ Ordinary lasers are hostages of their mirrors: shake the cavity, pull the freque
 Zero pulling is like pushing a balanced seesaw at the pivot — the cavity detuning multiplies the bare inversion; set that inversion to zero and the cavity has no lever arm on the output frequency.
 
 ## Connections
+
+- Reverse-link: [[dissipative-cavity-entanglement]]
+- Reverse-link: [[light-as-friction-brake]]
+- Reverse-link: [[photon-number-optical-analogy-control]]
+- Reverse-link: [[two-clocks-one-laser]]
+- Synthesis: [[quantum-time-across-platforms]]
+- Reverse-link: [[cavity-qed-tur-io-bookkeeping]]
 
 - Key terms: **superradiance** = collective emission where many atoms radiate coherently and the ensemble acts as a phase flywheel (here for an active laser clock).
 - Broader metrology thread: complements passive [[optical-ion-clocks]] and lattice clocks by attacking **transportable / vibration-tolerant** timekeeping.

@@ -29,6 +29,8 @@ Inspiral is post-Newtonian; ringdown is black-hole spectroscopy. The messy join 
 
 ## Connections
 
+- Synthesis: [[gravitational-wave-strong-field-probes]]
+
 - Observational horizon waves: [[horizon-direct-wave-gw250114]]
 - Remnant spin heuristics: [[entropy-maximization-bh-mergers]]
 - Strain gauge theory: [[second-order-gw-strain-gauge]]

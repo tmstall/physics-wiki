@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, gravitational-lensing, supernovae]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cigars-i-supernova-cosmology]
+related_papers: [cigars-i-supernova-cosmology, desi-evolving-dark-energy, gw170817-jet-hubble, supernova-onion-expansion]
 source_analysis: "raw/analyses/HOLISMOKES XIX & XX.md"
 ---
 
@@ -29,6 +29,12 @@ A wine-glass galaxy between us and a distant explosion multiplies the image and 
 - Unusual SLSN spectral features (hot, depressed lines) need better phase coverage.
 
 ## Connections
+
+- Reverse-link: [[desi-evolving-dark-energy]]
+- Reverse-link: [[gw170817-jet-hubble]]
+- Reverse-link: [[supernova-onion-expansion]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
+- Reverse-link: [[pks2233-neutrino-lensing]]
 
   - Concepts: [[strong-gravitational-lensing]], [[time-delay-cosmography]], [[hubble-tension]]
 - SN cosmology neighbor: [[cigars-i-supernova-cosmology]] (standardizable Ia vs lensed SLSN path to \(H_0\)).

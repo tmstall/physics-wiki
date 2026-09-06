@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-gravity, de-sitter, cosmology]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [qg-deep-dive-3-holographic-codes, topological-cosmological-constant, universe-gas-pedal-leaky, desi-evolving-dark-energy]
+related_papers: [qg-deep-dive-3-holographic-codes, topological-cosmological-constant, universe-gas-pedal-leaky, desi-evolving-dark-energy, five-dimensional-classical-gravity]
 source_analysis: "claude_export/extracted-analyses/2026-06-29_quantum-gravity-deep-dive-4-de-sitter-holography-and-quantum_cea522d1.md"
 ---
 
@@ -28,6 +28,10 @@ AdS is a box with walls you can put a dual theory on. de Sitter is an expanding 
 - Links to data (DESI, etc.) are conceptual, not fits inside this note.
 
 ## Connections
+
+- Synthesis: [[entropic-information-gravity]] (holography / dS neighbor)
+
+- Reverse-link: [[five-dimensional-classical-gravity]]
 
 - Codes: [[qg-deep-dive-3-holographic-codes]]
 - Λ structure: [[topological-cosmological-constant]]

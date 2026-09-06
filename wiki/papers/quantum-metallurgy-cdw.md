@@ -1,8 +1,8 @@
 ---
 tags: [papers, condensed-matter, quantum-materials]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [photonic-supersolid]
+related_papers: [photonic-supersolid, bata2s5-field-induced-sc, brown-zak-nonlinear-transport, metal-fall-apart-on-purpose, spin-flip-flop-saf, trinity-ca-cu-si-clathrate, erte3-competing-cdw-time-domain, tise2-core-level-cdw-excitons]
 source_analysis: "raw/analyses/List1_Combined_Clean.md"
 ---
 
@@ -29,12 +29,22 @@ Electrons form a traffic-density crystal inside a fixed atomic parking lot. When
 
 ## Connections
 
+- Reverse-link: [[erte3-competing-cdw-time-domain]] (competing CDW transition order via trARPES)
+
+- Reverse-link: [[bata2s5-field-induced-sc]]
+- Reverse-link: [[brown-zak-nonlinear-transport]]
+- Reverse-link: [[metal-fall-apart-on-purpose]]
+- Reverse-link: [[spin-flip-flop-saf]]
+- Reverse-link: [[trinity-ca-cu-si-clathrate]]
+- Synthesis: [[condensed-matter-topology-fractionalization]]
+
   - Key terms: a **charge-density wave (CDW)** is a spontaneous periodic modulation of electron density—an “electron crystal” that can melt through hexatic intermediate phases.
 - Condensed-matter order cousins: [[photonic-supersolid]] (different platform: polariton density crystal + superfluidity).
 
 - Related (SpaceX set): [[nickelate-nodeless-gap-arpes]] — Nickelate nodeless SC
 
 - Related (SpaceX set): [[supermoire-trilayer-graphene-sc]] — Supermoiré SC cascade
+- Transient core-level CDW / exciton precursors in TiSe₂: [[tise2-core-level-cdw-excitons]]
 
 ## Source
 

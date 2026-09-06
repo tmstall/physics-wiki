@@ -1,8 +1,8 @@
 ---
 tags: [papers, ultrafast-optics, nanophotonics, materials]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [photonic-supersolid, 3d-electron-diffraction-osc, plasma-relativistic-amplifier, beam-driven-plasma-mirror]
+related_papers: [photonic-supersolid, 3d-electron-diffraction-osc, plasma-relativistic-amplifier, beam-driven-plasma-mirror, attosecond-stm-lightwave, evanescent-wave-transverse-spin, freeze-fiber-brillouin, hot-electron-coherent-phonons-ptcu, light-as-friction-brake, sunlight-spdc-ghost-imaging]
 source_analysis: "raw/analyses/Watching a Nanocrystal Flip a Light Switch.md"
 ---
 
@@ -35,9 +35,20 @@ ITO is the transparent conductor on a phone screen. Shrink it to a 14-nm crystal
 
 ## Connections
 
+- Reverse-link: [[attosecond-stm-lightwave]]
+- Reverse-link: [[evanescent-wave-transverse-spin]]
+- Reverse-link: [[freeze-fiber-brillouin]]
+- Reverse-link: [[hot-electron-coherent-phonons-ptcu]]
+- Reverse-link: [[light-as-friction-brake]]
+- Reverse-link: [[sunlight-spdc-ghost-imaging]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
+- Reverse-link: [[bessy-tes-soft-xray-spectrometer]]
+- Reverse-link: [[mmwave-optical-microcomb]]
+
 - Chip-scale light–matter nonlinear order (different quasiparticles): [[photonic-supersolid]]
 - Nanoscale materials metrology culture: [[3d-electron-diffraction-osc]]
 - Extreme ultrafast light control (different regime—plasma mirrors vs solid ENZ switch): [[plasma-relativistic-amplifier]], [[beam-driven-plasma-mirror]]
+- Molecular electronics operating-point neighbor: [[molecular-bias-point]]
 - Key terms: **fieldoscopy** = direct \(E(t)\) sampling with sub-cycle resolution; **ENZ** = \(\varepsilon \approx 0\) dielectric crossing that boosts nonlinearity; **LSPR** = nanocrystal free-electron antenna resonance.
 
 ## Source

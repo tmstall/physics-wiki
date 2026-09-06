@@ -1,8 +1,8 @@
 ---
 tags: [papers, astrophysics, galaxy-groups, feedback]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cosmos-web-cosmic-web, aquila-booster-pevatron]
+related_papers: [cosmos-web-cosmic-web, aquila-booster-pevatron, ultramassive-bh-binary-cavity]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Galaxy Group IC 1262 Is a Metal-Mixing Machine)"
 ---
 
@@ -31,6 +31,8 @@ Think of a coffee cup (group core) bumped by a spoon (minor merger): the liquid 
 - Outer metallicity fits photon-starved; error bars grow at large radius.
 
 ## Connections
+
+- Reverse-link: [[ultramassive-bh-binary-cavity]]
 
 - Galaxy environment / assembly: [[cosmos-web-cosmic-web]], [[cosmic-web]]
 - AGN energetics neighbors: [[aquila-booster-pevatron]] (different scale), [[smbh-inclination-angle]]

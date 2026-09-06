@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, double-copy, quantum-fields]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes]
+related_papers: [evaporating-charged-black-holes, massive-gravity-drgt]
 source_analysis: "raw/analyses/Hawking Radiation from a Charge Shel.md"
 ---
 
@@ -31,9 +31,18 @@ Double copy says gravity is often the “square” of gauge theory. Here the aut
 
 ## Connections
 
+- Synthesis: [[entropic-information-gravity]]
+
+- Reverse-link: [[massive-gravity-drgt]]
+
   - Concepts: [[double-copy]], [[hawking-radiation]]
 - Related GR/BH pages: [[evaporating-charged-black-holes]], [[black-hole-interiors]], [[reissner-nordstrom]]
+- Vacuum-response / differential-signaling neighbor: [[differential-signaling-quantum-vacuum]]
 - Synthesis: [[black-hole-evaporation-energy-conditions]]
+- Reverse-link: [[smbh-inclination-angle]]
+- Synthesis: [[modified-speculative-gravity]]
+- Reverse-link: [[quantum-relative-entropy-einstein-equations]]
+- Reverse-link: [[gravity-from-entropy]]
 
 ## Open questions
 

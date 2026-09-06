@@ -26,6 +26,7 @@ Mass spectrometry (MS) is the workhorse of modern analytical chemistry. You vapo
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Related: [[twisted-light-chiral-ms]]
 
 ## Source

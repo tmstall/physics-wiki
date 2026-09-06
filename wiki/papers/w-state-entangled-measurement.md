@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-information, quantum-optics, multipartite-entanglement]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [certified-randomness-amplification, quantum-jamming, shor-algorithm-budget, massive-tunneling-schrodinger-cats]
+related_papers: [certified-randomness-amplification, quantum-jamming, shor-algorithm-budget, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, retrocausal-noisy-channel-capacity, truncated-photon-dynamical-casimir]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (W-State Whisperer)"
 ---
 
@@ -31,6 +31,10 @@ GHZ is a three-way majority vote: lose one ballot and the vote is gone. W is a s
 - Network protocol advantage over GHZ is application-dependent.
 
 ## Connections
+
+- Reverse-link: [[dissipative-cavity-entanglement]]
+- Reverse-link: [[retrocausal-noisy-channel-capacity]]
+- Reverse-link: [[truncated-photon-dynamical-casimir]]
 
 - Quantum info / foundations: [[certified-randomness-amplification]], [[quantum-jamming]], [[device-independence]], [[shor-algorithm-budget]], [[noise-driven-qubit-entanglement]]
 - Multipartite cats (different resource): [[massive-tunneling-schrodinger-cats]], [[noon-states]]

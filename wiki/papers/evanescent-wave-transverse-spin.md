@@ -1,8 +1,8 @@
 ---
 tags: [papers, optics, quantum-optics, near-field, spin-momentum]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [photon-number-optical-analogy-control, topo-chirality-structured-light, twisted-light-chiral-ms, ito-nanocrystal-fieldoscopy, nonabelian-photonic-braiding]
+related_papers: [photon-number-optical-analogy-control, topo-chirality-structured-light, twisted-light-chiral-ms, ito-nanocrystal-fieldoscopy, nonabelian-photonic-braiding, gw-bound-states-continuum, positronium-diffraction-graphene]
 source_analysis: "spacex_export/extracted-analyses/2026-02-05_v3-4-3-prompt-evanescent-waves-hidden-transverse-spin-moment_2c39fa3c.md"
 ---
 
@@ -31,6 +31,10 @@ In a uniform laser beam the hidden spin-momentum eddies cancel like closed curre
 - Analysis-based ingest; verify formulas and figure claims against the primary *Nat. Commun.* paper.
 
 ## Connections
+
+- Reverse-link: [[gw-bound-states-continuum]]
+- Reverse-link: [[positronium-diffraction-graphene]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
 
 - Structured light / chirality: [[topo-chirality-structured-light]], [[twisted-light-chiral-ms]], [[nonabelian-photonic-braiding]]
 - Optical control / field sampling: [[photon-number-optical-analogy-control]], [[ito-nanocrystal-fieldoscopy]], [[fieldoscopy]]

@@ -2,7 +2,7 @@
 tags: [papers, astrophysics, star-formation, young-stellar-objects, accretion]
 last_updated: 2026-08-04
 status: analysis-ingest
-related_papers: [dr21-magnetic-accretion, interstellar-glaciers-spherex, interstellar-sulfur-ice, chondrite-pressure-bump]
+related_papers: [dr21-magnetic-accretion, interstellar-glaciers-spherex, interstellar-sulfur-ice, chondrite-pressure-bump, gw-ori-streamer-misalignment]
 source_analysis: "spacex_export/extracted-analyses/2026-02-26_iras-21204-4913-eruptive-low-mass-fuor_48e8a69e.md"
 ---
 
@@ -39,6 +39,7 @@ Young stars do not sip their disks — they sometimes **gulp**. FUors are months
 - Magnetically guided stellar accretion: [[dr21-magnetic-accretion]]
 - Disk/cloud ice chemistry that feeds YSOs: [[interstellar-glaciers-spherex]], [[interstellar-sulfur-ice]]
 - Planet-forming disk reservoirs / traps: [[chondrite-pressure-bump]]
+- Class II circumtriple disk still accreting via a mapped streamer: [[gw-ori-streamer-misalignment]]
 - Key terms: FUor, EXor, YSO outburst, P Cygni profile, Herbig–Haro objects, accretion luminosity
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
 

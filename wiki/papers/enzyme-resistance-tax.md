@@ -28,6 +28,7 @@ One flag before I start: the uploaded file is *named* for a vitamin‑C / crypto
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Related: [[water-rna-polymerase]], [[cryptochrome-ascorbate-compass]]
 
 ## Source

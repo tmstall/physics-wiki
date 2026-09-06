@@ -32,6 +32,7 @@ Usually a magnet is the executioner of Cooper pairs. Here the field is a gear sh
 
 ## Connections
 
+- Synthesis: [[condensed-matter-topology-fractionalization]]
 - Condensed-matter neighbors: [[spin-flip-flop-saf]], [[quantum-metallurgy-cdw]], [[photonic-supersolid]], [[nickelate-nodeless-gap-arpes]], [[supermoire-trilayer-graphene-sc]]
 - Key terms (stubs folded here): **Ising superconductivity** = 2D SOC-locked pairing with enhanced in-plane Pauli limit; **spin-triplet superconductivity** = parallel-spin Cooper pairs that can survive much stronger magnetic fields.
 

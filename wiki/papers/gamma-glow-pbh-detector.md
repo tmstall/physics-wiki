@@ -1,6 +1,6 @@
 ---
 tags: [cosmology, dark-matter, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-23_the-universe-s-gamma-ray-glow-as-a-primordial-black-hole-det_7f776ce5.md"
 ---
@@ -26,9 +26,17 @@ Primordial black holes formed in the early universe from overdense regions are a
 
 ## Connections
 
+- Reverse-link: [[axion-detector-quantum-erasure]]
+- Reverse-link: [[beyond-iron-ultraheavy-cosmic-rays]]
+- Synthesis: [[dark-matter-detection-channels]]
+- Reverse-link: [[dark-photon-plasma-saturation]]
+- Reverse-link: [[gw-induced-fermion-freeze-in]]
+- Reverse-link: [[pks2233-neutrino-lensing]]
+
 - [[primordial-black-holes]], [[pre-bang-leftovers]], [[stochastic-gw-background]]
 
 - Related (SpaceX set): [[magnetar-slsn-2017egm-fermi]] — SLSN 2017egm Fermi-LAT
+- Indirect γ **line** search (spectral spike, not diffuse PBH glow): [[43gev-gamma-ray-line-clusters]]
 
 ## Source
 

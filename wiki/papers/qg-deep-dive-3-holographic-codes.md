@@ -29,6 +29,7 @@ Store one logical bit in many noisy physical bits; any small erasure is correcta
 
 ## Connections
 
+- Synthesis: [[black-hole-evaporation-energy-conditions]]
 - Info paradox setup: [[qg-deep-dive-2-info-holography]]
 - Cosmology: [[qg-deep-dive-4-de-sitter]]
 - QI resources: [[shor-algorithm-budget]]

@@ -1,6 +1,6 @@
 ---
 tags: [metrology, nuclear, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-14_thorium-229-nuclear-clock-analysis_c4c4cae5.md"
 ---
@@ -24,6 +24,9 @@ Two teams — one in Vienna (TU Wien and Germany's PTB national metrology instit
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[nucleus-tells-on-itself]]
+- Synthesis: [[quantum-time-across-platforms]]
 
 - [[optical-ion-clocks]], [[quantum-proper-time]]
 

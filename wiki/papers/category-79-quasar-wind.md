@@ -1,8 +1,8 @@
 ---
 tags: [papers, quasars, agn-feedback, black-holes]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [jwst-filament-cnd-ngc4696, euclid-high-z-quasar-census, high-z-quasar-pair-merger, ultramassive-bh-binary-cavity]
+related_papers: [jwst-filament-cnd-ngc4696, euclid-high-z-quasar-census, high-z-quasar-pair-merger, ultramassive-bh-binary-cavity, jwst-ulirg-hydrocarbons, lab-blazar-pair-instability]
 source_analysis: "claude_export/extracted-analyses/2026-06-06_category-79-hurricane-in-space_098f3cd6.md"
 ---
 
@@ -32,6 +32,11 @@ A quasar is a black hole’s accretion disk as a radiation firehose. Some of tha
 
 ## Connections
 
+- Synthesis: [[smbh-stellar-encounters]]
+
+- Reverse-link: [[jwst-ulirg-hydrocarbons]]
+- Reverse-link: [[lab-blazar-pair-instability]]
+
 - Cold feeding side of the AGN loop: [[jwst-filament-cnd-ngc4696]]
 - High-$z$ quasar census: [[euclid-high-z-quasar-census]], [[high-z-quasar-pair-merger]]
 - SMBH environment: [[ultramassive-bh-binary-cavity]], [[smbh-inclination-angle]]
@@ -40,6 +45,8 @@ A quasar is a black hole’s accretion disk as a radiation firehose. Some of tha
 - Lint link: [[radio-changing-look-agn]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Reverse-link: [[stellar-spin-repeating-partial-tde]]
 
 ## Source
 

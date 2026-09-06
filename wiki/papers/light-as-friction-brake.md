@@ -1,6 +1,6 @@
 ---
 tags: [optomechanics, quantum-optics, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-16_light-is-a-brake_74b6ff14.md"
 ---
@@ -25,6 +25,9 @@ source_analysis: "claude_export/extracted-analyses/2026-06-16_light-is-a-brake_7
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[confinement-stiffening-films]]
+- Reverse-link: [[freeze-fiber-brillouin]]
 
 - [[ito-nanocrystal-fieldoscopy]], [[collective-superradiant-lasing]]
 

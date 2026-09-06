@@ -1,8 +1,8 @@
 ---
 tags: [concepts, high-energy-astrophysics, pulsars]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [aquila-booster-pevatron, pulsars-satellite-masses]
+related_papers: [aquila-booster-pevatron, pulsars-satellite-masses, beyond-iron-ultraheavy-cosmic-rays, cygnus-x3-pevatron-bubble, peters-cycle-cosmic-rays]
 ---
 
 # Pulsar Wind Nebulae (PWNe)
@@ -14,5 +14,9 @@ related_papers: [aquila-booster-pevatron, pulsars-satellite-masses]
 A spinning magnetized neutron star launches a magnetized pair wind. Where that wind rams into ejecta or ISM, a termination shock forms—the classic DSA site. Low average \(B\) plus extreme UHE gamma output can force efficiencies that stress ideal-MHD shock models, pointing to reconnection in the wind ([[aquila-booster-pevatron]]).
 
 ## Related
+
+- Reverse-link: [[beyond-iron-ultraheavy-cosmic-rays]]
+- Reverse-link: [[cygnus-x3-pevatron-bubble]]
+- Reverse-link: [[peters-cycle-cosmic-rays]]
 
 - [[aquila-booster-pevatron]], [[pulsars-satellite-masses]]

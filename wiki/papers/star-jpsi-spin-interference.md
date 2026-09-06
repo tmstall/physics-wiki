@@ -1,8 +1,8 @@
 ---
 tags: [papers, nuclear-physics, qcd, heavy-ions]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [high-pt-physics-cern-isr, b-meson-fcnc-anomaly, rhic-net-proton-fluctuations, emc-effect-marathon-a3, na61-isospin-kaon-asymmetry]
+related_papers: [high-pt-physics-cern-isr, b-meson-fcnc-anomaly, rhic-net-proton-fluctuations, emc-effect-marathon-a3, na61-isospin-kaon-asymmetry, nucleus-shell-src-memory]
 source_analysis: "claude_export/extracted-analyses/2026-06-19_quantum-ghosts-in-the-collision-zone_ebf7f8a9.md"
 ---
 
@@ -33,11 +33,16 @@ This is the modern RHIC end of a story that begins with ISR high-$p_T$ jet langu
 
 ## Connections
 
+- Reverse-link: [[nucleus-shell-src-memory]]
+
 - QCD / multi-particle: [[high-pt-physics-cern-isr]], [[parton-jets]]
 - RHIC BES-II fluctuation hunt: [[rhic-net-proton-fluctuations]]
 - Medium PDFs / isospin neighbors: [[emc-effect-marathon-a3]], [[na61-isospin-kaon-asymmetry]]
 - Key terms: ultra-peripheral collision (UPC), coherent photoproduction, spin interference, nuclear gluon tomography
+- LHC UPC gluon saturation (incoherent J/ψ): [[alice-jpsi-gluon-saturation]]
 - Synthesis: [[nuclear-dense-matter-precision]]
+- Reverse-link: [[alice-oo-nene-nuclear-geometry-flow]]
+- Reverse-link: [[intrinsic-charm-proton-nnpdf]]
 
 ## Source
 

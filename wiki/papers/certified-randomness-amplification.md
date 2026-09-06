@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-info, quantum-crypto, superconducting-qubits]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [quantum-jamming]
+related_papers: [quantum-jamming, noise-driven-qubit-entanglement, retrocausal-noisy-channel-capacity, snv-super-coherent-excitation, sunlight-spdc-ghost-imaging, w-state-entangled-measurement]
 source_analysis: "raw/analyses/Certified Perfect Randomness Machine.md"
 ---
 
@@ -33,6 +33,13 @@ Analogy: a CRC validated against a physical oracle that classical compression th
 - Details should be checked against the primary paper / Nature report.
 
 ## Connections
+
+- Reverse-link: [[noise-driven-qubit-entanglement]]
+- Reverse-link: [[retrocausal-noisy-channel-capacity]]
+- Reverse-link: [[snv-super-coherent-excitation]]
+- Reverse-link: [[sunlight-spdc-ghost-imaging]]
+- Reverse-link: [[w-state-entangled-measurement]]
+- Synthesis: [[amo-quantum-state-control]]
 
 - Concepts: [[bell-tests]], [[device-independence]], [[no-signaling]]
 - Contrast: [[quantum-jamming]] attacks [[monogamy-of-entanglement]] assumptions behind device-independent crypto; this paper *uses* device-independent Bell structure as a constructive entropy engine.

@@ -1,6 +1,6 @@
 ---
 tags: [astrophysics, galaxies, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-20_a-globular-cluster-that-isn-t_d5678701.md"
 ---
@@ -25,6 +25,8 @@ Terzan 5 is a dense stellar system in the Milky Way's central bulge, long classi
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[oyashio-extragalactic-gc-stream]]
 
 - [[galactic-accretion]], [[ultra-metal-poor-stars]], [[loki-early-accreted-vmp]]
 

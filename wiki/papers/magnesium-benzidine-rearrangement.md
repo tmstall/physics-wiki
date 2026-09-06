@@ -1,8 +1,8 @@
 ---
 tags: [papers, chemistry, organic-synthesis]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [millisecond-pharma-factory, phosphorus-radical-hydroamination]
 source_analysis: "raw/analyses/Magnesium Hijacks the Benzidine Rearrangement.md"
 ---
 
@@ -28,6 +28,10 @@ Two benzene rings on a short N–N rope spin in synchrony and clasp hands at the
 - Grignard handling at −45 °C still operationally demanding at scale.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[millisecond-pharma-factory]]
+- Reverse-link: [[phosphorus-radical-hydroamination]]
 
 - Chemistry island neighbor: [[boronate-velcro-synthetic-cells]] (one-pot programmable synthesis, different chemistry).
 

@@ -34,6 +34,7 @@ Transition metals glue alkenes by pi-coordination, then insert N. Azoles often p
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Photochemical bond control: [[bond-breaking-discount]], [[two-lasers-one-reaction]]
 - Single-atom / catalytic design: [[ruthenium-atom-catalysis]], [[one-bond-inductive-effect]]
 - Organic synthesis island: [[magnesium-benzidine-rearrangement]], [[droplet-rewrites-ring]]

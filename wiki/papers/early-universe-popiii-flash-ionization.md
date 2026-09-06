@@ -40,6 +40,7 @@ Standard reionization is a slow city-light rollout at $z\lesssim10$. Pop III.1 i
 - Expansion / parameter tensions: [[desi-evolving-dark-energy]], [[hubble-tension]], [[dark-energy-equation-of-state]]
 - Key terms: Pop III.1, flash ionization, CMB optical depth $\tau$, heavy seeds, Strömgren spheres, EDGES 21 cm
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 
 ## Source
 

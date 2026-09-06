@@ -1,8 +1,8 @@
 ---
 tags: [concepts, galactic-dynamics, black-holes]
-last_updated: 2026-08-01
+last_updated: 2026-08-29
 status: draft
-related_papers: [smbh-inclination-angle]
+related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, jwst-filament-cnd-ngc4696, mrk501-double-jet-smbbh, pulsars-satellite-masses, ultramassive-bh-binary-cavity, astrid-z0-mbh-lss]
 ---
 
 # Dynamical Friction
@@ -15,4 +15,11 @@ A SMBH moving through a galactic disk raises a trailing overdensity; that overde
 
 ## Related
 
+- Reverse-link: [[high-z-quasar-pair-merger]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+- Reverse-link: [[mrk501-double-jet-smbbh]]
+- Reverse-link: [[pulsars-satellite-masses]]
+- Reverse-link: [[ultramassive-bh-binary-cavity]]
+
 - [[supermassive-black-hole-binaries]], [[smbh-inclination-angle]]
+- Simulation infrastructure: [[astrid-z0-mbh-lss]] (DF subgrid vs repositioning at cosmological volume)

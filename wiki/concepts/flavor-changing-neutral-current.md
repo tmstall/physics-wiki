@@ -1,8 +1,8 @@
 ---
 tags: [concepts, particle-physics, flavor]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: draft
-related_papers: [b-meson-fcnc-anomaly]
+related_papers: [b-meson-fcnc-anomaly, eta-prime-mesic-nucleus]
 ---
 
 # Flavor-Changing Neutral Current (FCNC)
@@ -18,5 +18,7 @@ A \(b\) quark cannot freely become an \(s\) quark while emitting a photon or \(\
 - LHCb \(B\to K^*\mu\mu\): persistent angular tension summarized by a downward shift in the vector Wilson coefficient \(C_9\) ([[b-meson-fcnc-anomaly]]).
 
 ## Related
+
+- Reverse-link: [[eta-prime-mesic-nucleus]]
 
 - [[b-meson-fcnc-anomaly]]

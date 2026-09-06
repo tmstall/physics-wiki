@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, semiclassical-gravity, singularities]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [frozen-in-gravitational-fields, quantum-jamming]
+related_papers: [frozen-in-gravitational-fields, quantum-jamming, black-hole-third-law-violation, entropy-maximization-bh-mergers, gravastar-dust-collapse, qg-deep-dive-2-info-holography, smbh-inclination-angle]
 source_analysis: "raw/analyses/Evaporating Charged Black Holes Avoid Singularities.md"
 ---
 
@@ -32,12 +32,23 @@ Penrose-type theorems say trapped surfaces + energy conditions force incompleten
 
 ## Connections
 
+- Synthesis: [[entropic-information-gravity]]
+
+- Reverse-link: [[black-hole-third-law-violation]]
+- Reverse-link: [[entropy-maximization-bh-mergers]]
+- Reverse-link: [[gravastar-dust-collapse]]
+- Reverse-link: [[qg-deep-dive-2-info-holography]]
+- Reverse-link: [[smbh-inclination-angle]]
+
   - Concepts: [[hawking-radiation]], [[null-energy-condition]], [[reissner-nordstrom]], [[black-hole-interiors]]
 - Topology / evolution constraints: [[frozen-in-gravitational-fields]]
 - Complementary thermality route (flat-space double copy): [[hawking-radiation-charge-shell]]
 - Energy-condition bookkeeping cousin (positive-energy warp shell): [[warp-drive-positive-energy]]
 - Foundations cross-link: [[quantum-jamming]] also uses black-hole horizons as special causal geometry (different question).
 - Synthesis: [[black-hole-evaporation-energy-conditions]]
+- Synthesis: [[modified-speculative-gravity]]
+- Reverse-link: [[quantum-relative-entropy-einstein-equations]]
+- Reverse-link: [[gravity-from-entropy]]
 
 ## Open questions
 

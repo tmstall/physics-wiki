@@ -1,8 +1,8 @@
 ---
 tags: [concepts, ultrafast-optics, measurement]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [ito-nanocrystal-fieldoscopy, evanescent-wave-transverse-spin, photon-number-optical-analogy-control]
+related_papers: [ito-nanocrystal-fieldoscopy, evanescent-wave-transverse-spin, photon-number-optical-analogy-control, attosecond-stm-lightwave, photonic-supersolid]
 ---
 
 # Fieldoscopy
@@ -16,6 +16,9 @@ A photodetector measures average power. Fieldoscopy mixes the signal with a weak
 Near-field structure matters once you leave free-space beams: evanescent waves carry **transverse** Belinfante spin momentum and helicity-dependent sideways forces that bulk plane waves hide ([[evanescent-wave-transverse-spin]]). Field-resolved and near-field force probes are complementary windows on the same electromagnetic spin–orbit bookkeeping.
 
 ## Related
+
+- Reverse-link: [[attosecond-stm-lightwave]]
+- Reverse-link: [[photonic-supersolid]]
 
 - [[ito-nanocrystal-fieldoscopy]], [[epsilon-near-zero]]
 - [[evanescent-wave-transverse-spin]], [[photon-number-optical-analogy-control]]

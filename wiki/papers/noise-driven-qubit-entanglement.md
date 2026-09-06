@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-information, superconducting-qubits]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [w-state-entangled-measurement, certified-randomness-amplification, shor-algorithm-budget]
+related_papers: [w-state-entangled-measurement, certified-randomness-amplification, shor-algorithm-budget, axion-detector-quantum-erasure, photon-number-optical-analogy-control, retrocausal-noisy-channel-capacity, truncated-photon-dynamical-casimir]
 source_analysis: "claude_export/extracted-analyses/2026-07-16_the-qubits-that-entangled-themselves_694c81b2.md"
 ---
 
@@ -29,6 +29,11 @@ Ordinary noise destroys quantum order. **Matched** noise on two lines is differe
 
 ## Connections
 
+- Reverse-link: [[axion-detector-quantum-erasure]]
+- Reverse-link: [[photon-number-optical-analogy-control]]
+- Reverse-link: [[retrocausal-noisy-channel-capacity]]
+- Reverse-link: [[truncated-photon-dynamical-casimir]]
+
 - QI cluster: [[w-state-entangled-measurement]], [[certified-randomness-amplification]], [[device-independence]]
 - Complementary “noise/dissipation as resource” theory: [[dissipative-cavity-entanglement]] (engineered collective decay → dark entangled many-body states)
 - Concepts: key terms folded — two-mode squeezing as correlated bath; dark-state cooling into entanglement
@@ -36,6 +41,7 @@ Ordinary noise destroys quantum order. **Matched** noise on two lines is differe
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
 
 - Synthesis: [[measurement-problem-threads]] (foundations: measurement problem threads)
+- Reverse-link: [[cavity-qed-tur-io-bookkeeping]]
 
 ## Source
 

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology, large-scale-structure]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [cosmos-web-cosmic-web, muse-quasar-filament-z3, jwst-filament-cnd-ngc4696, early-universe-popiii-flash-ionization]
+related_papers: [cosmos-web-cosmic-web, muse-quasar-filament-z3, jwst-filament-cnd-ngc4696, early-universe-popiii-flash-ionization, big-ring-ultra-large-structure, dr21-magnetic-accretion, gigaparsec-anisotropic-structures, high-z-quasar-pair-merger, ic1262-metal-mixing, jwst-ulirg-hydrocarbons, loki-early-accreted-vmp]
 ---
 
 # Cosmic Web
@@ -17,10 +17,21 @@ Before the web’s galaxy factories dominate reionization, a proposed Pop III.1 
 
 ## Related pages
 
+- Reverse-link: [[big-ring-ultra-large-structure]]
+- Reverse-link: [[dr21-magnetic-accretion]]
+- Reverse-link: [[gigaparsec-anisotropic-structures]]
+- Reverse-link: [[high-z-quasar-pair-merger]]
+- Reverse-link: [[ic1262-metal-mixing]]
+- Reverse-link: [[jwst-ulirg-hydrocarbons]]
+- Reverse-link: [[loki-early-accreted-vmp]]
+
 - Environmental Quenching
 - [[photometric-redshifts]]
 - Giant Molecular Clouds
 - [[interstellar-glaciers-spherex]]
 - [[muse-quasar-filament-z3]], [[jwst-filament-cnd-ngc4696]], [[cosmos-web-cosmic-web]]
 - [[early-universe-popiii-flash-ionization]]
+- Extragalactic GC stream / UDG halo probe: [[oyashio-extragalactic-gc-stream]]
+- Primordial tidal-torque spin imprint: [[primordial-tidal-torque-galaxy-spin]]
+- IMF / stellar populations (structure inference): [[imf-variation-milky-way]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (messengers & thermal history); [[black-hole-feedback-and-changing-look-agn]] (AGN fuel loop)

@@ -1,6 +1,6 @@
 ---
 tags: [soft-matter, chemistry, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-28_water-s-secret-double-life_4318f0b4.md"
 ---
@@ -25,6 +25,10 @@ source_analysis: "claude_export/extracted-analyses/2026-06-28_water-s-secret-dou
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[droplet-rewrites-ring]]
+- Reverse-link: [[water-rna-polymerase]]
 
 - islands
 

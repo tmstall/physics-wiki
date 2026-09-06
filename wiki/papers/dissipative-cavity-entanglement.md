@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-information, cavity-qed, quantum-metrology]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [noise-driven-qubit-entanglement, w-state-entangled-measurement, collective-superradiant-lasing, massive-tunneling-schrodinger-cats]
+related_papers: [noise-driven-qubit-entanglement, w-state-entangled-measurement, collective-superradiant-lasing, massive-tunneling-schrodinger-cats, quantum-state-sculptor]
 source_analysis: "claude_export/extracted-analyses/2026-06-06_dissipation-as-a-feature-not-a-bug_e3b36343.md"
 ---
 
@@ -36,6 +36,10 @@ Imagine $N$ atoms as cores sharing one leaky memory bus (the cavity). Usually th
 - Scaling from 2 ensembles to a long AKLT chain is a large experimental leap.
 
 ## Connections
+
+- Reverse-link: [[cavity-qed-tur-io-bookkeeping]] (entropy bookkeeping / TUR in driven cavities — different question)
+
+- Reverse-link: [[quantum-state-sculptor]]
 
 - Neighboring “noise helps” experiment: [[noise-driven-qubit-entanglement]] (correlated microwave noise → entanglement; complementary platform)
 - Multipartite photonic measurement: [[w-state-entangled-measurement]]

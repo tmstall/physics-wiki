@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-computing, cryptography, error-correction]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [certified-randomness-amplification, quantum-jamming]
+related_papers: [certified-randomness-amplification, quantum-jamming, qg-deep-dive-3-holographic-codes, w-state-entangled-measurement]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Shor's Algorithm on a Budget)"
 ---
 
@@ -31,6 +31,12 @@ Error correction is the real cost of crypto-breaking quantum computers. Surface 
 - Building blocks exist (k-atom arrays, small FT demos); integrated 26k-atom crypto machine is multi-year engineering.
 
 ## Connections
+
+- Synthesis: [[measurement-problem-threads]] (QI / compute neighbor)
+
+- Reverse-link: [[qg-deep-dive-3-holographic-codes]]
+- Reverse-link: [[w-state-entangled-measurement]]
+- Reverse-link: [[noise-driven-qubit-entanglement]]
 
 - Quantum info / foundations cluster: [[certified-randomness-amplification]], [[quantum-jamming]], [[device-independence]].
 - Key terms (stubs folded here): **qLDPC codes** = high-rate quantum LDPC error correction (~tens of % encoding vs ~0.1% surface codes); **neutral-atom qubits** = tweezer-array atoms with reconfigurable connectivity that makes nonlocal qLDPC checks practical.

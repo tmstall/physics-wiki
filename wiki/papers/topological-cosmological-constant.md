@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-gravity, cosmology, topology]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [desi-evolving-dark-energy, frozen-in-gravitational-fields, pre-bang-leftovers]
+related_papers: [desi-evolving-dark-energy, frozen-in-gravitational-fields, pre-bang-leftovers, gravity-from-entropy, massive-gravity-drgt, qg-deep-dive-4-de-sitter, quantum-damping-cosmological-shear]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Topology Saves Einstein's Ugliest Term)"
 ---
 
@@ -33,6 +33,14 @@ QCD’s θ-angle labels how the gluon vacuum winds. Gravity in Ashtekar language
 - Dynamical θ (axion-like) undeveloped here.
 
 ## Connections
+
+- Synthesis: [[entropic-information-gravity]]
+
+- Reverse-link: [[gravity-from-entropy]]
+- Reverse-link: [[massive-gravity-drgt]]
+- Reverse-link: [[qg-deep-dive-4-de-sitter]]
+- Reverse-link: [[quantum-damping-cosmological-shear]]
+- Synthesis: [[modified-speculative-gravity]]
 
 - Observational DE (evolving \(w\), not pure Λ): [[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]], [[hubble-tension]]
 - Topology / GR evolution: [[frozen-in-gravitational-fields]], [[frozen-in-gravity]]

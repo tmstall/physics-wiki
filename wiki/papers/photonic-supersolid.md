@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-optics, condensed-matter, polaritons]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [siv-hydrostatic-strain-symmetry, snv-super-coherent-excitation, ito-nanocrystal-fieldoscopy]
+related_papers: [siv-hydrostatic-strain-symmetry, snv-super-coherent-excitation, ito-nanocrystal-fieldoscopy, bata2s5-field-induced-sc, brown-zak-nonlinear-transport, molecular-rotation-superfluid-he, snte-light-topological-inversion]
 source_analysis: "raw/analyses/Photonic Supersolid.md"
 ---
 
@@ -30,6 +30,13 @@ A supersolid is a rigid convoy of self-driving trains that still glides without 
 - Viral “freeze light into a solid” headlines oversell.
 
 ## Connections
+
+- Reverse-link: [[bata2s5-field-induced-sc]]
+- Reverse-link: [[brown-zak-nonlinear-transport]]
+- Reverse-link: [[molecular-rotation-superfluid-he]]
+- Reverse-link: [[snte-light-topological-inversion]]
+- Synthesis: [[condensed-matter-topology-fractionalization]]
+- Reverse-link: [[quantum-droplets-bose-fermi]]
 
 - Solid-state quantum hardware culture: [[color-centers]], [[snv-super-coherent-excitation]] (different quasiparticles, same chip-scale quantum optics lab).
 - Condensed-matter order cousin (electron-density crystal melting, not polariton supersolid): [[quantum-metallurgy-cdw]].

@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, astrophysics, machine-learning]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cosmos-web-cosmic-web]
+related_papers: [cosmos-web-cosmic-web, gw-induced-fermion-freeze-in, supernova-onion-expansion]
 source_analysis: "raw/analyses/CIGaRS I.md"
 ---
 
@@ -29,6 +29,10 @@ Type Ia supernovae are almost-standard candles after shape/color corrections, bu
 - Explicitly “Paper I” — science payoff on real data is future work.
 
 ## Connections
+
+- Reverse-link: [[gw-induced-fermion-freeze-in]]
+- Reverse-link: [[supernova-onion-expansion]]
+- Synthesis: [[cosmology-expansion-history-and-structure]]
 
 - Concepts: [[type-ia-supernovae]], [[photometric-redshifts]]
 - Cosmology neighbor: [[cosmos-web-cosmic-web]] (environment and structure at high \(z\); different observables, same LSST/JWST era of large photometric samples).

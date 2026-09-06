@@ -26,7 +26,9 @@ Detailed analysis of this paper Publication details Sub-2 Å Cryo-EM Structures 
 
 ## Connections
 
+- Synthesis: [[chemistry-biotech-methods]]
 - Related: [[water-double-life-nanoconfinement]]
+- Evolutionary / catalytic pathway cost neighbor: [[enzyme-resistance-tax]]
 
 ## Source
 

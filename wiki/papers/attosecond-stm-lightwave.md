@@ -1,6 +1,6 @@
 ---
 tags: [ultrafast-optics, condensed-matter, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-05_the-oscilloscope-that-outran-the-electron_7a3d1b76.md"
 ---
@@ -27,7 +27,14 @@ Electrons move on attosecond timescales and live on angstrom length scales. Micr
 
 ## Connections
 
+- Reverse-link: [[tise2-core-level-cdw-excitons]]
+- Reverse-link: [[ultrafast-chemical-shifts]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
+- Reverse-link: [[bessy-tes-soft-xray-spectrometer]]
+- Reverse-link: [[erte3-competing-cdw-time-domain]]
+
 - [[ito-nanocrystal-fieldoscopy]], [[fieldoscopy]]
+- Atomic-column STEM interferometry neighbor (diffraction fringes, not tunnel current): [[atomic-scale-double-slit-si]]
 
 ## Source
 

@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, quantum-metrology, quantum-optics, foundations]
-last_updated: 2026-08-01
+last_updated: 2026-08-18
 status: synthesis
-related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, negative-weak-valued-excitation-times, massive-tunneling-schrodinger-cats, collapse-models-clock-precision]
+related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, negative-weak-valued-excitation-times, massive-tunneling-schrodinger-cats, collapse-models-clock-precision, problem-of-time-cold-atoms, thorium-229-nuclear-clock, two-clocks-one-laser, collective-superradiant-lasing]
 ---
 
 # Quantum Time Across Platforms
@@ -119,17 +119,29 @@ If objective collapse (CSL / Diósi–Penrose) couples mass density to classical
 
 ---
 
+## Metrology neighbors (clock hardware, not new “time meanings”)
+
+| Page | Why it sits next to this synthesis |
+| --- | --- |
+| [[thorium-229-nuclear-clock]] | Nuclear transition as a different clock carrier — frequency standard neighbor to Thread A |
+| [[two-clocks-one-laser]] | Dual atom-interferometer / clock common-mode rejection — metrology control, not a fourth duration ontology |
+| [[collective-superradiant-lasing]] | Superradiant laser with vanishing cavity pulling — shared Ramsey / metrology culture |
+
+These do **not** redefine “time” the way Threads A–C do; they harden the platforms that make those threads measurable.
+
+---
+
 ## Map of pages
 
 | Role | Pages |
 | --- | --- |
-| Papers | [[time-goes-quantum]], [[quantum-proper-time-ion-clocks]], [[negative-weak-valued-excitation-times]], [[massive-tunneling-schrodinger-cats]], [[collapse-models-clock-precision]] |
+| Core papers | [[time-goes-quantum]], [[quantum-proper-time-ion-clocks]], [[negative-weak-valued-excitation-times]], [[massive-tunneling-schrodinger-cats]], [[collapse-models-clock-precision]], [[problem-of-time-cold-atoms]] |
+| Metrology neighbors | [[thorium-229-nuclear-clock]], [[two-clocks-one-laser]], [[collective-superradiant-lasing]] |
 | Core concepts | [[quantum-proper-time]], [[second-order-doppler-shift]], [[weak-values]], [[group-delay]], [[noon-states]], [[collective-tunneling]], [[ramsey-interferometry]], [[spontaneous-collapse-models]] |
 | Platforms | [[optical-ion-clocks]], [[optical-lattices]] |
 
 ## Related synthesis
 
-- Synthesis: [[measurement-problem-threads]] (foundations: measurement problem threads)
-
-
-- [[amo-quantum-state-control]]
+- [[measurement-problem-threads]] — foundations / outcome selection
+- [[amo-quantum-state-control]] — state engineering factory
+- [[ultrafast-optics-and-solid-state-emitters]] — sub-cycle probes (different question)

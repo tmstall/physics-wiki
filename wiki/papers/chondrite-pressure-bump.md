@@ -1,8 +1,8 @@
 ---
 tags: [papers, planetary-science, solar-system, dust-dynamics]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [interstellar-glaciers-spherex]
+related_papers: [interstellar-glaciers-spherex, iras-21204-fuor, gw-ori-streamer-misalignment]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (Single Pressure Bump… Chondrite)"
 ---
 
@@ -32,6 +32,8 @@ A pressure bump is a traffic jam in the solar nebula: gas pressure peaks, headwi
 
 ## Connections
 
+- Reverse-link: [[iras-21204-fuor]]
+- Circumtriple disk still fed by an external streamer (misalignment / open-disk neighbor): [[gw-ori-streamer-misalignment]]
 - ISM / ice context (different scale): [[interstellar-glaciers-spherex]]
 - Key terms: a **pressure bump** is a local gas-pressure maximum in a protoplanetary disk that reverses the usual headwind and traps drifting pebbles—here acting as a long-lived compositional filter for carbonaceous chondrites.
 

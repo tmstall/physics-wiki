@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, amo, quantum-information, quantum-optics, cold-atoms]
-last_updated: 2026-08-04
+last_updated: 2026-08-29
 status: synthesis
-related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir]
+related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir, positronium-diffraction-graphene, cavity-qed-tur-io-bookkeeping, quantum-droplets-bose-fermi, cft-spectra-rydberg-simulator, mmwave-optical-microcomb, coupling-free-electrons-trapped-ion, imaging-vacuum-fluctuations-qft]
 ---
 
 # AMO and Quantum State Control Across Platforms
@@ -16,6 +16,10 @@ Quantum information and AMO experiments look fragmented: ions, lattices, cavitie
 > How do you **prepare**, **protect**, and **read** a non-classical state when the environment will not leave you alone?
 
 [[quantum-time-across-platforms]] covers duration as a quantum object (proper time, weak values, NOON phase). This synthesis covers **state engineering and coherent control** — the factory, not the stopwatch. They overlap on cats and cold atoms; they answer different questions. For fractionalization, moiré topology, and photonic braids as a comparative map (including 1D holonomy as *fractionalization*, not only control), see [[condensed-matter-topology-fractionalization]].
+
+**Out of scope (use the other hub):** Sub-cycle fieldoscopy, ENZ nanocrystal switches, attosecond STM, and SnV/SiV emitter hardware live on [[ultrafast-optics-and-solid-state-emitters]]. Fiber Brillouin and photon-number analogies may dual-link; the question here remains “is the target state the attractor?”
+
+**Neighbor (thermodynamics, not state prep):** [[cavity-qed-tur-io-bookkeeping]] adjudicates how to count cavity heat vs power for TUR bounds — cite from driven-dissipative culture, do not treat as an entanglement-engineering result.
 
 ---
 
@@ -34,12 +38,13 @@ Quantum information and AMO experiments look fragmented: ions, lattices, cavitie
 
 ## Thread A — Spatial and motional cats (unitary sculpting)
 
-**Papers:** [[massive-tunneling-schrodinger-cats]], [[quantum-state-sculptor]], [[macroscopic-crystal-entanglement-neutrons]], [[photon-number-optical-analogy-control]]
+**Papers:** [[massive-tunneling-schrodinger-cats]], [[quantum-state-sculptor]], [[macroscopic-crystal-entanglement-neutrons]], [[photon-number-optical-analogy-control]], [[coupling-free-electrons-trapped-ion]]
 
 | Platform | What is superposed | How you build it |
 | --- | --- | --- |
 | Optical superlattice Rb | All-left vs all-right NOON (~608 u) | Collective tunneling locked by on-site $U$ ([[massive-tunneling-schrodinger-cats]]) |
 | Trapped $^{88}$Sr$^+$ | Opposite or mixed-order non-Gaussian oscillator states (tri/quadsqueeze) | Spin-conditioned $H_k$ + mid-circuit herald ([[quantum-state-sculptor]]) |
+| Trapped $^{40}$Ca$^+$ in TEM (proposal) | Motional cat as Coulomb antenna for free electrons | Bichromatic sideband cat + electron fly-by phase ([[coupling-free-electrons-trapped-ion]]) |
 | Neutron / crystal | Macroscopic entanglement signatures | Scattering-based witness ([[macroscopic-crystal-entanglement-neutrons]]) |
 | Cavity photon number | Number-state control via optical analogy axes | Beam-axis ↔ Fock mapping ([[photon-number-optical-analogy-control]]) |
 
@@ -155,3 +160,11 @@ Do not collapse into “dissipation always helps.” Prefer: **sometimes the env
 | Sister synthesis (time) | [[quantum-time-across-platforms]] |
 
 - Synthesis: [[measurement-problem-threads]] (foundations: measurement problem threads)
+
+## Related
+
+- Paper: [[positronium-diffraction-graphene]]
+
+## Lint addendum (2026-08-31)
+
+- Vacuum / QI neighbor also linked from paper side: [[differential-signaling-quantum-vacuum]], [[imaging-vacuum-fluctuations-qft]].

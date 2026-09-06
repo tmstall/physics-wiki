@@ -1,9 +1,10 @@
 ---
 tags: [synthesis, gravity, modified-gravity, foundations, speculative, energy-conditions]
-last_updated: 2026-08-04
+last_updated: 2026-08-18
 status: synthesis
-related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, universe-gas-pedal-leaky, desi-evolving-dark-energy, mond-external-field-sparc, newton-ksz-force-law, evaporating-charged-black-holes, gravastar-dust-collapse, frozen-in-gravitational-fields, black-hole-third-law-violation, hawking-radiation-charge-shell]
+related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells]
 ---
+
 
 # Modified and Speculative Gravity Approaches
 
@@ -19,7 +20,7 @@ Modified gravity, exotic metrics, and “gravity emerges from X” programs usua
 
 No winner. Stack them and four layers appear: (1) **field-theory modifications** still written in a GR-like language (massive gravity), (2) **metric engineering** inside classical GR (warp shells, gravastars), (3) **foundational rewrites** that claim to derive gravity (5D classical, temporal imbalance, gravity-from-entropy), (4) **phenomenological force-law alternatives** (MOND / EFE) that target galaxy data rather than horizons. The tensions live where “works” means ghost-free Lagrangian, numerical energy conditions, or rotation-curve fit.
 
-This synthesis is **modified / speculative gravity**. Semiclassical black-hole evaporation and energy conditions in *standard* GR live on [[black-hole-evaporation-energy-conditions]]. That page is a **constraint library** for this one, not a competing “theory of everything.”
+This synthesis is **modified / speculative gravity**. Semiclassical black-hole evaporation and energy conditions in *standard* GR live on [[black-hole-evaporation-energy-conditions]]. That page is a **constraint library** for this one, not a competing “theory of everything.” **Entropic / QI derivations of Einstein** (Jacobson–relative-entropy, GfE compression) live on [[entropic-information-gravity]] — cite here as ontology neighbors; do not own the derivation lane here. **Data-driven** expansion history (DESI $w(z)$, SN Ia systematics, sirens, LSS anomalies) lives on [[cosmology-expansion-history-and-structure]] — cite those pages as constraints here; do not own them here. DM *search channels* live on [[dark-matter-detection-channels]].
 
 ---
 
@@ -27,7 +28,7 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 
 | Approach | What it actually changes | Status on disk | Wiki constraints / neighbors |
 | --- | --- | --- | --- |
-| dRGT massive gravity | Graviton mass; 5 healthy modes; finite range at large scales | Active research program (not “settled DE solution”) | Multimessenger GW speed, solar-system/Vainshtein, DESI/$w$ data as **competing** narrative | [[massive-gravity-drgt]], [[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]] |
+| dRGT massive gravity | Graviton mass; 5 healthy modes; finite range at large scales | Active research program (not “settled DE solution”) | Multimessenger GW speed, solar-system/Vainshtein; DESI/$w$ data as **competing** narrative (owned on cosmology synth) | [[massive-gravity-drgt]], [[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]], [[cosmology-expansion-history-and-structure]] |
 | Positive-energy warp shell | Shift-vector metric on a TOV matter shell; claims all classical energy conditions at **constant subluminal** $v$ | Classical GR construction; engineering-impractical | [[null-energy-condition]], Alcubierre exotic-matter history; no acceleration phase | [[warp-drive-positive-energy]] |
 | 5D classical worldline gravity | Extra evolution parameter $\tau$; classical emergence of GR-like + QM-like effects | **Exploratory / non-consensus** | No PPN suite; no QFT sector; not community GR | [[five-dimensional-classical-gravity]] |
 | Temporal imbalance | Gravity from time-flow scalar gradients + entropy flow | **Exploratory / non-consensus** preprint | Operational clocks do **not** depend on it | [[temporal-imbalance-gravity]], [[quantum-proper-time]] |
@@ -35,6 +36,8 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 | Topological $\Lambda$ protection | Quantized / topologically protected cosmological constant sector | Theory proposal in Ashtekar variables | Does not select observed tiny $\Lambda$; separate from evolving-$w$ data | [[topological-cosmological-constant]], [[gravitational-theta-vacua]] |
 | MOND + external field | Force law at low acceleration; EFE | Phenomenology vs GR+DM | SPARC EFE claims; force-law tests via kSZ | [[mond-external-field-sparc]], [[modified-newtonian-dynamics]], [[newton-ksz-force-law]] |
 | Semiclassical evaporation (standard GR) | NEC violation via Hawking flux; regular endpoints **possible** | Community-standard semiclassical toolkit | **Constraint library**, not “modified gravity” | [[black-hole-evaporation-energy-conditions]], [[evaporating-charged-black-holes]] |
+| GW bound state in the continuum | Linearized-GR BIC construction (optics transplant) | **Exploratory**; abstract-thin ingest | No LIGO prediction; idealized surface stress-energy | [[gw-bound-states-continuum]] |
+| Discrete Planck cells | Rebuild geometry from indivisible cells; continuum GR recovered as cell size → 0 | Peer-reviewed JHEP; postulate-driven | Contested vs LQG / asymptotic safety diagnoses | [[discrete-gravity-planck-cells]] |
 
 **Intuition:** GR is a tight package — massless spin-2, Einstein equations, energy conditions, and a geometric ontology. Each row loosens **one bolt**. Massive gravity changes the messenger. Warp shells redesign a metric while trying to keep energy conditions. 5D and temporal-imbalance rewrite the factory that builds spacetime. MOND rewrites the force law in the weak-field galaxy regime. Evaporation pages show how even *standard* GR already violates classical energy conditions quantum-mechanically — so “NEC forever” was never a safe assumption.
 
@@ -44,7 +47,7 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 
 ## Thread A — Field-theory modifications (still “gravity as a field”)
 
-**Papers:** [[massive-gravity-drgt]], [[universe-gas-pedal-leaky]], [[desi-evolving-dark-energy]] · concepts [[dark-energy-equation-of-state]], [[hubble-tension]]
+**Papers:** [[massive-gravity-drgt]] · concepts [[dark-energy-equation-of-state]], [[hubble-tension]] · phenomenology handoff [[cosmology-expansion-history-and-structure]]
 
 ### A1 — Ghost-free massive gravity (dRGT)
 
@@ -54,14 +57,14 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 
 **Constraints already in the wiki:**
 - Multimessenger / GW speed ≈ $c$ and solar-system tests force tiny $m$ and healthy screening (page limitations).
-- DESI evolving-$w$ preference ([[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]]) is a **data-driven DE narrative**, not a confirmation of massive gravity. Treat dRGT as a **competing** IR story, not the DESI fit.
+- DESI evolving-$w$ preference ([[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]], [[cosmology-expansion-history-and-structure]]) is a **data-driven DE narrative**, not a confirmation of massive gravity. Treat dRGT as a **competing** IR story, not the DESI fit.
 - Source for the wiki page is profile + pointers — verify against primary dRGT literature before technical use.
 
 **Intuition:** Massless gravity is infinite-range radio. Massive gravity is a transmitter with a horizon. Locally you sit inside the Vainshtein bubble; cosmically the band snaps.
 
-### A2 — Neighboring acceleration narratives
+### A2 — Neighboring acceleration narratives (handoff)
 
-[[universe-gas-pedal-leaky]] and DESI pages discuss cosmic acceleration dynamics and evolving DE. They constrain **what any IR modification must reproduce**, whether the microphysics is a fluid $w(z)$ or a massive graviton.
+[[universe-gas-pedal-leaky]] and DESI pages discuss cosmic acceleration dynamics and evolving DE. They constrain **what any IR modification must reproduce**, whether the microphysics is a fluid $w(z)$ or a massive graviton. **Primary home for that phenomenology:** [[cosmology-expansion-history-and-structure]] (updated 2026-08-18).
 
 **A-thread status:** Research-program class — serious literature, open viability windows, **not** a replacement of GR in applications.
 
@@ -149,8 +152,8 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 
 - **Explicit exploratory disclaimers** already on 5D and temporal-imbalance pages (cleanup pass).
 - **Energy-condition bridge** between evaporation synthesis and warp construction via [[null-energy-condition]].
-- **Massive gravity** tied to DE/acceleration cluster ([[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]]).
-- **MOND/EFE + force-law** observational thread separate from foundational rewrites.
+- **Massive gravity** tied as a *competitor* to the DE/acceleration cluster (phenomenology on [[cosmology-expansion-history-and-structure]]; concepts [[dark-energy-equation-of-state]]).
+- **MOND/EFE + force-law** observational thread separate from foundational rewrites (contrast also on [[dark-matter-detection-channels]]).
 - **BH evaporation synthesis** as the standard-GR constraint library for NEC and regular endpoints.
 
 ### Still thin (honest gaps)
@@ -180,5 +183,7 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 - For evaporation, thermality, and NEC *inside standard semiclassical GR*, use [[black-hole-evaporation-energy-conditions]].
 - For operational quantum time (clocks, proper-time superpositions), use [[quantum-time-across-platforms]] — **not** temporal-imbalance gravity.
 - For AGN fuel and feedback, use [[black-hole-feedback-and-changing-look-agn]] — astrophysical engines, not modified field equations.
+- For DESI / SN / sirens / LSS anomalies, use [[cosmology-expansion-history-and-structure]].
+- For axion / PBH / stream DM sensors, use [[dark-matter-detection-channels]].
 
-**Catalog role:** Ninth synthesis page. Owns the **modified / speculative gravity** layer; defers standard GR black-hole physics to the evaporation synthesis and data-driven DE phenomenology to cosmology paper pages.
+**Catalog role:** Owns the **modified / speculative gravity** layer; defers standard GR black-hole physics to the evaporation synthesis and data-driven DE phenomenology to the cosmology synthesis (handoff 2026-08-18).

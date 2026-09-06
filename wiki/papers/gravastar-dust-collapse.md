@@ -1,8 +1,8 @@
 ---
 tags: [papers, general-relativity, black-holes, alternatives]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, pre-bang-leftovers, frozen-in-gravitational-fields]
+related_papers: [evaporating-charged-black-holes, pre-bang-leftovers, frozen-in-gravitational-fields, black-hole-third-law-violation, naked-black-hole-candidate, warp-drive-positive-energy]
 source_analysis: "claude_export/extracted-analyses/2026-06-13_dynamical-formation-of-gravastars-from-dust-collapse_3e59a7b3.md"
 ---
 
@@ -31,6 +31,11 @@ A black hole is the default “sink to a point” endpoint. A gravastar is a sta
 - No demonstration that nature selects these initial conditions.
 
 ## Connections
+
+- Reverse-link: [[black-hole-third-law-violation]]
+- Reverse-link: [[naked-black-hole-candidate]]
+- Reverse-link: [[warp-drive-positive-energy]]
+- Synthesis: [[modified-speculative-gravity]]
 
 - Regular / alternative interiors: [[black-hole-interiors]], [[evaporating-charged-black-holes]], [[null-energy-condition]]
 - Bounce / early-universe alternatives: [[pre-bang-leftovers]]

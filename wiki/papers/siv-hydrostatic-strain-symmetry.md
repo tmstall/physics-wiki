@@ -31,6 +31,8 @@ SiV is a balanced six-port quantum router glued by six equal Si–C links. Unifo
 
 ## Connections
 
+- Reverse-link: [[photonic-supersolid]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
   - Concepts: [[silicon-vacancy]], [[color-centers]]
 - Group-IV cousin: [[snv-super-coherent-excitation]] (SnV control vs SiV strain response).
 - Quantum-hardware culture shared with [[optical-ion-clocks]].

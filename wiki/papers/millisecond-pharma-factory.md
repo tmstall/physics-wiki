@@ -1,8 +1,8 @@
 ---
 tags: [papers, chemistry, synthesis, islands]
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [boronate-velcro-synthetic-cells, magnesium-benzidine-rearrangement]
+related_papers: [boronate-velcro-synthetic-cells, magnesium-benzidine-rearrangement, droplet-rewrites-ring]
 source_analysis: "claude_export/extracted-analyses/2026-06-03_millisecond-pharma-factory-drug-scaffold-rings-built-in-mida_20cc3e4b.md"
 ---
 
@@ -25,6 +25,9 @@ Nitrogen-containing heterocycles — rings with both nitrogen and either sulfur 
 - Analysis-based ingest from Claude export; confirm against primary literature.
 
 ## Connections
+
+- Synthesis: [[chemistry-biotech-methods]]
+- Reverse-link: [[droplet-rewrites-ring]]
 
 - Related: [[boronate-velcro-synthetic-cells]], [[magnesium-benzidine-rearrangement]]
 

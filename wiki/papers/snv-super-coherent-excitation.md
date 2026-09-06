@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-optics, quantum-networks, diamond]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: []
+related_papers: [filming-plasma-birth, photonic-supersolid]
 source_analysis: "raw/analyses/Diamond's Tin Defect Gets a Laser Trick.md"
 ---
 
@@ -33,6 +33,10 @@ Resonant control rings the right bell but drowns it with the tuning fork at the 
 - Nanopillar / implantation uniformity still limits multi-node spectral matching.
 
 ## Connections
+
+- Reverse-link: [[filming-plasma-birth]]
+- Reverse-link: [[photonic-supersolid]]
+- Synthesis: [[ultrafast-optics-and-solid-state-emitters]]
 
   - Concepts: [[color-centers]]
 - Group-IV cousin (SiV strain / symmetry): [[siv-hydrostatic-strain-symmetry]], [[silicon-vacancy]]

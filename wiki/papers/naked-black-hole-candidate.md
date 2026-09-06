@@ -1,6 +1,6 @@
 ---
 tags: [black-holes, general-relativity, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-29_the-naked-black-hole_4cff7056.md"
 ---
@@ -26,9 +26,13 @@ Two companion JWST papers combine to deliver the most extreme black hole portrai
 
 ## Connections
 
+- Reverse-link: [[black-hole-third-law-violation]]
+- Reverse-link: [[glimpse-17775-cocoon]]
+
 - [[black-hole-interiors]], [[gravastar-dust-collapse]], [[null-energy-condition]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
+- Reverse-link: [[s301-sgra-spin-sensitive-star]]
 
 ## Source
 

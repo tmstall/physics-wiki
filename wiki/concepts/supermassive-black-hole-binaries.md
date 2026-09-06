@@ -1,8 +1,8 @@
 ---
 tags: [concepts, black-holes, gravitational-waves]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, early-universe-popiii-flash-ionization, euclid-high-z-quasar-census]
+related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, early-universe-popiii-flash-ionization, euclid-high-z-quasar-census, bh-recoils-agn-survey, black-hole-recoil-agn, entropy-maximization-bh-mergers, horizon-direct-wave-gw250114, jwst-filament-cnd-ngc4696, pulsars-satellite-masses]
 ---
 
 # Supermassive Black Hole Binaries
@@ -18,6 +18,13 @@ Observational anchors: high-\(z\) dual quasars ([[high-z-quasar-pair-merger]]), 
 **Seed channel:** Pop III.1 supermassive stars can plant $\sim10^5\,M_\odot$ heavy seeds at $z\sim20$–$25$ while flash-ionizing the IGM ([[early-universe-popiii-flash-ionization]]) — a formation path that sets the comoving SMBH density before merger-driven pairing begins.
 
 ## Related
+
+- Reverse-link: [[bh-recoils-agn-survey]]
+- Reverse-link: [[black-hole-recoil-agn]]
+- Reverse-link: [[entropy-maximization-bh-mergers]]
+- Reverse-link: [[horizon-direct-wave-gw250114]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+- Reverse-link: [[pulsars-satellite-masses]]
 
 - [[dynamical-friction]], [[smbh-inclination-angle]], [[dual-agn]], [[pulsar-timing-arrays]], [[black-hole-interiors]]
 - [[early-universe-popiii-flash-ionization]], [[euclid-high-z-quasar-census]]

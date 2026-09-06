@@ -1,6 +1,6 @@
 ---
 tags: [condensed-matter, topology, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-07-27_light-induced-topological-band-inversion-in-snte_000b415d.md"
 ---
@@ -25,6 +25,11 @@ SnTe is a semiconductor that sits right on the boundary between an ordinary insu
 - Model- and selection-systematics may be under-specified in secondary sources.
 
 ## Connections
+
+- Reverse-link: [[tise2-core-level-cdw-excitons]]
+- Reverse-link: [[topo-chirality-structured-light]]
+- Synthesis: [[condensed-matter-topology-fractionalization]]
+- Reverse-link: [[erte3-competing-cdw-time-domain]]
 
 - [[brown-zak-nonlinear-transport]], [[photonic-supersolid]], [[quantum-metric-spin-momentum-locking]]
 

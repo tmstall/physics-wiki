@@ -34,6 +34,7 @@ Drop one molecule into a few-thousand-atom superfluid droplet and it becomes a n
 - Quantum fluids / 1D critical cousins: [[fractional-fermi-sea-1d-bosons]], [[photonic-supersolid]]
 
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
+- Reverse-link: [[quantum-droplets-bose-fermi]]
 
 ## Source
 

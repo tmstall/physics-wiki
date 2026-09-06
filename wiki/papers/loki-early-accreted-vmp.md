@@ -1,8 +1,8 @@
 ---
 tags: [papers, galactic-archaeology, astrophysics, stellar-abundances]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [cosmos-web-cosmic-web, ancient-immigrant-lmc-star]
+related_papers: [cosmos-web-cosmic-web, ancient-immigrant-lmc-star, imf-variation-milky-way, not-a-globular-cluster, oyashio-extragalactic-gc-stream]
 source_analysis: "raw/analyses/Loki - Early Accreted VMP Stars.md"
 ---
 
@@ -30,6 +30,10 @@ Very metal-poor stars are the first hire cohort before “Series A” iron fundi
 - Needs larger homogeneous samples (WEAVE, 4MOST) to confirm Loki as independent structure.
 
 ## Connections
+
+- Reverse-link: [[imf-variation-milky-way]]
+- Reverse-link: [[not-a-globular-cluster]]
+- Reverse-link: [[oyashio-extragalactic-gc-stream]]
 
 - Concepts: [[galactic-accretion]], [[ultra-metal-poor-stars]]
 - Sister fossil (LMC UMP star): [[ancient-immigrant-lmc-star]]

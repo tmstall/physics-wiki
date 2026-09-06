@@ -1,8 +1,8 @@
 ---
 tags: [papers, plasma, high-energy-astrophysics, blazars, laboratory-astrophysics]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [mrk501-double-jet-smbbh, beam-driven-plasma-mirror, plasma-relativistic-amplifier, aquila-booster-pevatron, dense-plasma-opacity-revision]
+related_papers: [mrk501-double-jet-smbbh, beam-driven-plasma-mirror, plasma-relativistic-amplifier, aquila-booster-pevatron, dense-plasma-opacity-revision, dark-photon-plasma-saturation, dephasingless-flying-focus-wakefield]
 source_analysis: "spacex_export/extracted-analyses/2026-01-14_laboratory-suppression-of-blazar-instabilities_fcdb46c3.md"
 ---
 
@@ -39,12 +39,19 @@ Ruling out strong beam–plasma dissipation strengthens the case that **somethin
 
 ## Connections
 
+- Synthesis: [[plasma-hed-lab]]
+- Reverse-link: [[dark-photon-plasma-saturation]]
+- Reverse-link: [[dephasingless-flying-focus-wakefield]]
+
 - Blazar / SMBH jets: [[mrk501-double-jet-smbbh]], [[category-79-quasar-wind]]
 - Lab / relativistic plasma tools: [[beam-driven-plasma-mirror]], [[plasma-relativistic-amplifier]], [[filming-plasma-birth]]
 - Extreme HEA accelerators: [[aquila-booster-pevatron]]
 - Dense-plasma context: [[dense-plasma-opacity-revision]], [[warm-dense-matter]]
 - Key terms: blazar pair cascade, Weibel-like instability, IGMF, inverse Compton cooling, laboratory astrophysics, CERN SPS
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Reverse-link: [[cygnus-x3-pevatron-bubble]]
+- Reverse-link: [[icecube-galactic-plane-neutrinos]]
+- Reverse-link: [[pks2233-neutrino-lensing]]
 
 ## Source
 

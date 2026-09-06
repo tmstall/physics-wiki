@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, quantum-foundations, measurement-problem, decoherence]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: synthesis
-related_papers: [collapse-models-clock-precision, problem-of-time-cold-atoms, time-goes-quantum, quantum-proper-time-ion-clocks, negative-weak-valued-excitation-times, quantum-jamming, certified-randomness-amplification, w-state-entangled-measurement, noise-driven-qubit-entanglement, dissipative-cavity-entanglement]
+related_papers: [collapse-models-clock-precision, problem-of-time-cold-atoms, time-goes-quantum, quantum-proper-time-ion-clocks, negative-weak-valued-excitation-times, quantum-jamming, certified-randomness-amplification, w-state-entangled-measurement, noise-driven-qubit-entanglement, dissipative-cavity-entanglement, color-space-geometry, feynman-path-integral-single-photons, atomic-scale-double-slit-si]
 source_notes: "claude_export/extracted-analyses/2026-07-28_measurement-problem-threads-1-7_19ad1981.md (Threads 1–7 study series; not a single paper)"
 ---
 
@@ -168,6 +168,8 @@ Horizons as special causal shields appear in foundations discussions of multipar
 5. **Thread 7** — Born bill for every family  
 6. **Wiki technical pages** — what is *constrained* or *illustrated*, not settled  
 
+**Prep sheet for Thread 8:** [[measurement-threads-1-7-refresher]] (short recap of 1–7 aimed at experimental collapse leverage).
+
 ---
 
 ## Map of pages
@@ -181,3 +183,11 @@ Horizons as special causal shields appear in foundations discussions of multipar
 | Bell / DI / jamming | [[certified-randomness-amplification]], [[quantum-jamming]], [[bell-tests]], [[device-independence]], [[no-signaling]] |
 | Engineered measurement | [[w-state-entangled-measurement]], [[dissipative-cavity-entanglement]], [[noise-driven-qubit-entanglement]], [[quantum-state-sculptor]] |
 | Sister syntheses | [[quantum-time-across-platforms]], [[amo-quantum-state-control]], [[black-hole-evaporation-energy-conditions]] (horizon / information side door only) |
+
+## Related
+
+- Paper: [[color-space-geometry]]
+
+## Lint addendum (2026-08-31)
+
+- QI compute neighbor: [[shor-algorithm-budget]]; path-integral lab test: [[feynman-path-integral-single-photons]].

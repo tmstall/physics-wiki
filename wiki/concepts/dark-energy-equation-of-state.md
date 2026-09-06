@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology, dark-energy]
-last_updated: 2026-08-04
+last_updated: 2026-08-16
 status: draft
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, universe-gas-pedal-leaky, massive-gravity-drgt]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, universe-gas-pedal-leaky, massive-gravity-drgt, early-universe-popiii-flash-ionization, quantum-damping-cosmological-shear, temporal-imbalance-gravity, topological-cosmological-constant]
 ---
 
 # Dark Energy Equation of State
@@ -22,6 +22,11 @@ A competing story replaces (or reshapes) the fluid entirely: **modified gravity*
 - Massive-gravity / finite-range gravity is a theory-side alternative, not a drop-in $w_0$–$w_a$ fit ([[massive-gravity-drgt]]).
 
 ## Related
+
+- Reverse-link: [[early-universe-popiii-flash-ionization]]
+- Reverse-link: [[quantum-damping-cosmological-shear]]
+- Reverse-link: [[temporal-imbalance-gravity]]
+- Reverse-link: [[topological-cosmological-constant]]
 
 - [[baryon-acoustic-oscillations]], [[hubble-tension]], [[type-ia-supernovae]], [[massive-gravity-drgt]], [[universe-gas-pedal-leaky]]
 - Synthesis: [[modified-speculative-gravity]] (massive gravity vs fluid DE competition)

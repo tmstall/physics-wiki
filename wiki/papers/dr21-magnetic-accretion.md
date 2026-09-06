@@ -1,6 +1,6 @@
 ---
 tags: [astrophysics, star-formation, papers]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
 source_analysis: "claude_export/extracted-analyses/2026-06-23_the-magnetic-compass-of-a-stellar-nursery_81e2ab23.md"
 ---
@@ -26,8 +26,15 @@ The DR21 complex in Cygnus X — one of the most massive nearby star-forming reg
 
 ## Connections
 
+- Reverse-link: [[interstellar-sulfur-ice]]
+- Reverse-link: [[jwst-filament-cnd-ngc4696]]
+- Reverse-link: [[jwst-ulirg-hydrocarbons]]
+- Synthesis: [[black-hole-feedback-and-changing-look-agn]]
+- Synthesis: [[high-energy-astrophysics-multimessenger]]
+
 - [[interstellar-glaciers-spherex]], [[cosmic-web]]
 - Low-mass YSO outburst / disk accretion flood: [[iras-21204-fuor]]
+- Circumtriple disk streamer / misalignment (disk still open to cloud): [[gw-ori-streamer-misalignment]]
 
 ## Source
 

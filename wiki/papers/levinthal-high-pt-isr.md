@@ -32,6 +32,8 @@ If hadrons were soft bags of mush, high-\(p_T\) particles should be exponentiall
 
 ## Connections
 
+- Reverse-link: [[b-meson-fcnc-anomaly]]
+- Synthesis: [[nuclear-dense-matter-precision]]
   - Concepts: [[high-pt-scaling]], [[parton-jets]]
 - Fuller experimental narrative of the same program: [[high-pt-physics-cern-isr]]
 - Historical foundation for modern QCD phenomenology (contrast with precision cosmology/JWST papers elsewhere in the wiki).

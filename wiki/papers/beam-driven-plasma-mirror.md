@@ -1,8 +1,8 @@
 ---
 tags: [papers, plasma, high-intensity-lasers, xfel]
-last_updated: 2026-08-01
+last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [plasma-relativistic-amplifier, filming-plasma-birth, lab-blazar-pair-instability]
+related_papers: [plasma-relativistic-amplifier, filming-plasma-birth, lab-blazar-pair-instability, ito-nanocrystal-fieldoscopy]
 source_analysis: "raw/analyses/List2_Combined_Clean.md (The Plasma Mirror One-Two Punch)"
 ---
 
@@ -34,9 +34,13 @@ A speedboat wakes the lake; the crest can be a mirror if it is dense and fast en
 
 ## Connections
 
+- Synthesis: [[plasma-hed-lab]]
+- Reverse-link: [[ito-nanocrystal-fieldoscopy]]
+
 - Laser-driven ROM cousin: [[plasma-relativistic-amplifier]] (contrast-controlled harmonics vs beam-driven flying mirror)
 - Plasma neighbors: [[filming-plasma-birth]], [[warm-dense-matter]]
 - Lab beam–plasma astrophysics (pair beams / blazar analogue): [[lab-blazar-pair-instability]]
+- Flying-focus dephasingless LWFA: [[dephasingless-flying-focus-wakefield]]
 - Key terms: a **plasma wakefield** is the charge-separation wave behind (or inside) a relativistic driver; a **relativistic flying mirror** is a near-\(c\) dense crest that Doppler-upshifts and time-compresses a reflected laser (attosecond X-ray path).
 - Plasma cousin (laser-driven ROM harmonics, different driver): [[plasma-relativistic-amplifier]], [[warm-dense-matter]]
 

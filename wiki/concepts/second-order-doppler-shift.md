@@ -1,8 +1,8 @@
 ---
 tags: [concepts, relativity, metrology]
-last_updated: 2026-07-31
+last_updated: 2026-08-16
 status: draft
-related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks]
+related_papers: [time-goes-quantum, quantum-proper-time-ion-clocks, collapse-models-clock-precision]
 ---
 
 # Second-Order Doppler Shift (Time Dilation in Clocks)
@@ -21,6 +21,8 @@ GPS analogy: satellites need relativistic corrections. Quantum version: the sate
 - Quantum SODS / proper time: central signal in [[time-goes-quantum]] and [[quantum-proper-time-ion-clocks]] (including vacuum and squeezing-induced variants: vSODS, sqSODS, qSODS).
 
 ## Related pages
+
+- Reverse-link: [[collapse-models-clock-precision]]
 
 - [[quantum-proper-time]]
 - [[optical-ion-clocks]]
