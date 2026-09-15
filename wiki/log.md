@@ -1430,3 +1430,18 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 ### Catalog
 - Papers **200 → 212** · Concepts 62 · Synthesis 18
 
+## [2026-09-12] ingest | 4-paper Cowork wave + lint
+
+### Papers created
+- [[ultraheavy-dm-levitated-magnet-polonaise]] — levitated mg magnet ultraheavy DM search (arXiv:2608.20464)
+- [[baryon-semileptonic-polarization-entanglement]] — BESIII hyperon semileptonic via pol.+entanglement (Nature)
+- [[eccentric-massive-protobinary-core-merger]] — massive YSO capture binary (Nat Astron)
+- [[ch3oh-hcn-3i-atlas-outgassing]] — 3I/ATLAS CH3OH/HCN outgassing (ApJL)
+
+### Synthesis
+- **No new hub** — all four land in existing maps (DM channels, nuclear/flavor, HEA, chemistry + Islands planetary)
+- Updated: [[dark-matter-detection-channels]], [[nuclear-dense-matter-precision]], [[high-energy-astrophysics-multimessenger]], [[chemistry-biotech-methods]]
+
+### Catalog
+- Papers **212 → 216** · Concepts 62 · Synthesis 18
+

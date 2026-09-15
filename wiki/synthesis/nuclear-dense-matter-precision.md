@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, nuclear-physics, qcd, dense-matter, heavy-ion, precision]
-last_updated: 2026-08-29
+last_updated: 2026-09-12
 status: synthesis
-related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, alice-jpsi-gluon-saturation, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr, nucleus-tells-on-itself, intrinsic-charm-proton-nnpdf, x2370-pseudoscalar-glueball, alice-oo-nene-nuclear-geometry-flow, tracking-baryon-number-nuclear-collisions, equilibrated-fraction-oo-qcd]
+related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, alice-jpsi-gluon-saturation, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr, nucleus-tells-on-itself, intrinsic-charm-proton-nnpdf, x2370-pseudoscalar-glueball, alice-oo-nene-nuclear-geometry-flow, tracking-baryon-number-nuclear-collisions, equilibrated-fraction-oo-qcd, baryon-semileptonic-polarization-entanglement]
 ---
 
 

@@ -1,11 +1,9 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-09-05** — ingest wave + chemistry/plasma synthesis hubs + full lint.
+Master catalog. Updated **2026-09-12** — 4-paper Cowork wave + full lint.
 
-**Papers:** 212 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
-**Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)  
-**SpaceX ingest:** **COMPLETE** — all 27 TRIAGE NEW files have paper pages  
-**Claude export wave 2:** COMPLETE — all papers indexed under topical clusters (no duplicate batch table)
+**Papers:** 216 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
 
@@ -203,6 +201,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[gamma-glow-pbh-detector]] | Diffuse gamma glow as PBH probe |
 | [[43gev-gamma-ray-line-clusters]] | ~43 GeV Fermi-LAT line toward nearby clusters (~4.3σ global) |
 | [[lz-dm-eft-high-energy-recoil]] | LZ high-E NR window + 293 EFT models; 2.6σ event of interest |
+| [[ultraheavy-dm-levitated-magnet-polonaise]] | Levitated mg magnet; ultraheavy DM exclusion (null + 8 blips) |
 | [[hi-intensity-mapping-meerkat]] | MeerKAT 21 cm autopower without galaxy survey |
 | [[supernova-onion-expansion]] | SN layered ejecta from expansion |
 | [[not-a-globular-cluster]] | Misclassified cluster analysis |
@@ -312,6 +311,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[eta-prime-mesic-nucleus]] | Semi-exclusive η′-mesic search |
 | [[color-superconductivity-qcd]] | Color SC / CFL / NS cores |
 | [[b-meson-fcnc-anomaly]] | LHCb b→sμμ anomaly |
+| [[baryon-semileptonic-polarization-entanglement]] | BESIII Λ semileptonic; pol.+entanglement → denser |Vus| program |
 | [[star-jpsi-spin-interference]] | STAR J/ψ spin interference in UPCs |
 | [[nucleus-shell-src-memory]] | Shell orbitals control short-range correlations |
 | [[rhic-net-proton-fluctuations]] | STAR BES-II net-proton $C_4/C_2$ min ~19.6 GeV |
@@ -389,6 +389,7 @@ Graduated from Islands (2026-08-29): paper list for engines / CR / multimessenge
 | [[astrophysical-neutrinos]] | HE neutrino messengers (concept hub) |
 | [[missing-watts-tarantula]] | 30 Dor leaky wind bubble; sims miss hard interior |
 | [[vacuum-birefringence-magnetar-xrays]] | Magnetar X-ray pol. fingerprint of QED vacuum birefringence |
+| [[eccentric-massive-protobinary-core-merger]] | Massive YSOs captured into eccentric binary; misaligned disks |
 
 ---
 
@@ -443,6 +444,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Page | Summary |
 | --- | --- |
 | [[chondrite-pressure-bump]] | Jupiter dust trap for CCs |
+| [[ch3oh-hcn-3i-atlas-outgassing]] | Interstellar comet 3I/ATLAS: high CH₃OH/HCN; asymmetric outgassing |
 
 ### Atmosphere / Earth system
 | Page | Summary |
@@ -467,6 +469,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Hard dups | `_possible_wiki_duplicates/` |
 | Synthesis | **18** topical hubs (+ measurement 1–7 refresher companion) |
 | Ingest 2026-09-05 | 12 new papers (+1 ErTe₃ analysis skipped_duplicate); catalog 212 |
+| Ingest 2026-09-12 | 4 Cowork papers; catalog 216; no new synthesis |
 | Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0 |
 
 Activity log: [[log]] (`wiki/log.md`).

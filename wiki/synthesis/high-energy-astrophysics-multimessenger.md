@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, astrophysics, multi-messenger, interstellar-medium, high-energy-astrophysics]
-last_updated: 2026-09-05
+last_updated: 2026-09-12
 status: synthesis
-related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays]
+related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing]
 ---
 
 # High-Energy Astrophysics, Multi-Messenger Signals & Early-Universe Thermal History
@@ -39,6 +39,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 | CMB $\tau$ + theory flash | First stars ($z\sim20$–$25$) | Early ionization + heavy seeds | [[early-universe-popiii-flash-ionization]] |
 | Soft X-ray + IR/optical layers | Local Group H II (30 Dor) | Where wind energy goes (mix/leak vs sealed bubble) | [[missing-watts-tarantula]] |
 | X-ray polarization (magnetar) | Galactic magnetar magnetosphere | QED vacuum birefringence fingerprint | [[vacuum-birefringence-magnetar-xrays]] |
+| Multi-epoch IR/mm orbits | Massive YSO binary | Capture vs co-formation; eccentric GW-progenitor seeds | [[eccentric-massive-protobinary-core-merger]] |
+| Molecular outgassing (interstellar comet) | 3I/ATLAS | CH₃OH/HCN chemistry + asymmetric sources | [[ch3oh-hcn-3i-atlas-outgassing]] |
 
 **Peeled out (2026-08-18):** DESI / Big Ring / IMF / TTT spins / JWST density–SFR maps → [[cosmology-expansion-history-and-structure]]. PBH γ-glow, dark-photon saturation, Oyashio streams, and the contested ~43 GeV cluster γ-line ([[43gev-gamma-ray-line-clusters]]) → [[dark-matter-detection-channels]]. AGN winds / Euclid census → [[black-hole-feedback-and-changing-look-agn]]. TC storms stay an Earth-system island (no HEA home).
 

@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, dark-matter, axions, cosmology, detectors, primordial-black-holes, gamma-rays]
-last_updated: 2026-08-31
+last_updated: 2026-09-12
 status: synthesis
-related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil]
+related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, ultraheavy-dm-levitated-magnet-polonaise]
 ---
 
 # Dark Matter Detection Channels
@@ -29,6 +29,7 @@ This synthesis is **detection and bound channels**. Expansion history and LSS ph
 | Diffuse γ glow | Tight / closed low-mass evaporating PBH DM window | [[gamma-glow-pbh-detector]] | Cosmological bound |
 | Cluster γ-ray line (~43 GeV) | Narrow Fermi-LAT excess toward massive nearby clusters; GC null under canonical annihilation | [[43gev-gamma-ray-line-clusters]] | Indirect search (sub-discovery; contested) |
 | LZ high-E NR + NREFT | Same exposure, ROI→~270 keV, 293 EFT/inelastic models; one ~248 keV event @ 2.6σ global | [[lz-dm-eft-high-energy-recoil]] | Direct detection (anomaly; preprint) |
+| Levitated mg magnet (Polonaise) | Ultraheavy / cell-scale DM; coherent neutron kick; null + conservative blips → exclusion | [[ultraheavy-dm-levitated-magnet-polonaise]] | Direct / mechanical sensor (null) |
 | Dark-photon resonant heating | Nonlinear plasma saturation weakens $\varepsilon$ bounds by ~$10^3$–$10^7$ | [[dark-photon-plasma-saturation]] | Bound reinterpretation |
 | Extragalactic GC stream | Halo mass / inner slope from stream morphology | [[oyashio-extragalactic-gc-stream]] | Dynamical probe |
 | Stochastic GWB → fermions | Freeze-in DM production | [[gw-induced-fermion-freeze-in]] | Production (not a search) |
