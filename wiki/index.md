@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-09-12** — 4-paper Cowork wave + full lint.
+Master catalog. Updated **2026-09-20** — 4-paper Cowork wave + full lint.
 
-**Papers:** 216 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 222 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -151,6 +151,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[direct-bh-mass-lrd-abell2744]] | First direct dynamical BH mass for a $z\sim7$ LRD |
 | [[discrete-gravity-planck-cells]] | GR rebuilt from indivisible Planck-scale cells |
 | [[bh-thermo-far-from-equilibrium]] | Dynamical first law; entropy on MTS not event horizon |
+| [[entanglement-islands-page-curves-kerr-ads]] | Kerr-AdS islands; Page curve can jump at swallow-tail |
 
 ### Concepts
 | Page | Summary |
@@ -202,7 +203,10 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[43gev-gamma-ray-line-clusters]] | ~43 GeV Fermi-LAT line toward nearby clusters (~4.3σ global) |
 | [[lz-dm-eft-high-energy-recoil]] | LZ high-E NR window + 293 EFT models; 2.6σ event of interest |
 | [[ultraheavy-dm-levitated-magnet-polonaise]] | Levitated mg magnet; ultraheavy DM exclusion (null + 8 blips) |
+| [[unconventional-materials-light-dm]] | Plasmon/CDW crystal antennas for light DM (roadmap) |
 | [[hi-intensity-mapping-meerkat]] | MeerKAT 21 cm autopower without galaxy survey |
+| [[lbt-yp-primordial-helium]] | LBT Yp series; average near-pristine galaxies → tighter Nν null |
+| [[topology-of-the-universe]] | Cosmic topology review; nulls weaker than often claimed |
 | [[supernova-onion-expansion]] | SN layered ejecta from expansion |
 | [[not-a-globular-cluster]] | Misclassified cluster analysis |
 | [[dr21-magnetic-accretion]] | DR21 magnetically guided accretion |
@@ -312,6 +316,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[color-superconductivity-qcd]] | Color SC / CFL / NS cores |
 | [[b-meson-fcnc-anomaly]] | LHCb b→sμμ anomaly |
 | [[baryon-semileptonic-polarization-entanglement]] | BESIII Λ semileptonic; pol.+entanglement → denser |Vus| program |
+| [[zz-entanglement-higgs-decays]] | Higgs→ZZ entanglement evidence (~4.7σ vs specific alt.) |
 | [[star-jpsi-spin-interference]] | STAR J/ψ spin interference in UPCs |
 | [[nucleus-shell-src-memory]] | Shell orbitals control short-range correlations |
 | [[rhic-net-proton-fluctuations]] | STAR BES-II net-proton $C_4/C_2$ min ~19.6 GeV |
@@ -390,6 +395,7 @@ Graduated from Islands (2026-08-29): paper list for engines / CR / multimessenge
 | [[missing-watts-tarantula]] | 30 Dor leaky wind bubble; sims miss hard interior |
 | [[vacuum-birefringence-magnetar-xrays]] | Magnetar X-ray pol. fingerprint of QED vacuum birefringence |
 | [[eccentric-massive-protobinary-core-merger]] | Massive YSOs captured into eccentric binary; misaligned disks |
+| [[rapid-orbital-decay-erassu-j060839]] | Ultracompact DD binary; GW-driven decay matches GR |
 
 ---
 
@@ -470,6 +476,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Synthesis | **18** topical hubs (+ measurement 1–7 refresher companion) |
 | Ingest 2026-09-05 | 12 new papers (+1 ErTe₃ analysis skipped_duplicate); catalog 212 |
 | Ingest 2026-09-12 | 4 Cowork papers; catalog 216; no new synthesis |
+| Ingest 2026-09-20 | 6 papers from 7 analyses (LBT Yp merged); catalog 222 |
 | Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0 |
 
 Activity log: [[log]] (`wiki/log.md`).

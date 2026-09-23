@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, cosmology, dark-energy, large-scale-structure, hubble-tension]
-last_updated: 2026-09-05
+last_updated: 2026-09-20
 status: synthesis
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe]
 ---
 
 # Cosmology: Expansion History and Large-Scale Structure
@@ -143,6 +143,11 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 - For AGN fuel–feedback loops that share filament/quasar pages, use [[black-hole-feedback-and-changing-look-agn]].
 
 **Catalog role:** Tenth synthesis page. Owns late-universe **cosmology phenomenology**; peels those papers out of HEA and modified-gravity overflow.
+
+## Addendum (2026-09-20)
+
+- [[lbt-yp-primordial-helium]] — BBN helium / $N_\nu$ null tightened via quality sample + He I λ10830.
+- [[topology-of-the-universe]] — topology ≠ curvature; Planck nulls less decisive for inhomogeneous topologies.
 
 ## Lint addendum (2026-08-31)
 

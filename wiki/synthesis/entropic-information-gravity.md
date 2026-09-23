@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, quantum-gravity, thermodynamics, quantum-information, foundations]
-last_updated: 2026-08-22
+last_updated: 2026-09-20
 status: synthesis
-related_papers: [quantum-relative-entropy-einstein-equations, gravity-from-entropy, hawking-radiation-charge-shell, evaporating-charged-black-holes, topological-cosmological-constant, temporal-imbalance-gravity]
+RELATED_SKIPquantum-relative-entropy-einstein-equations, gravity-from-entropy, hawking-radiation-charge-shell, evaporating-charged-black-holes, topological-cosmological-constant, temporal-imbalance-gravity]
 ---
 
 # Entropic and Information-Theoretic Routes to Gravity

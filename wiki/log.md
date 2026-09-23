@@ -1445,3 +1445,18 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 ### Catalog
 - Papers **212 → 216** · Concepts 62 · Synthesis 18
 
+## [2026-09-20] ingest | 7 analyses → 6 papers (LBT Yp merged)
+
+`ingest all` after triage. No new synthesis hub (all owned).
+
+### Papers
+- [[rapid-orbital-decay-erassu-j060839]] — ultracompact DD; GW decay = GR
+- [[unconventional-materials-light-dm]] — plasmon/CDW light-DM antennas (PRL roadmap)
+- [[entanglement-islands-page-curves-kerr-ads]] — Kerr-AdS islands / Page jump
+- [[lbt-yp-primordial-helium]] — LBT Yp I–V (methods+results analyses merged)
+- [[zz-entanglement-higgs-decays]] — Higgs→ZZ entanglement
+- [[topology-of-the-universe]] — cosmic topology review
+
+### Catalog
+- Papers **216 → 222** · Concepts 62 · Synthesis 18
+

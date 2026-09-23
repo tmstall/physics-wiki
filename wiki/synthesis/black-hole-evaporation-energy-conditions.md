@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, semiclassical-gravity, general-relativity]
-last_updated: 2026-09-05
+last_updated: 2026-09-20
 status: synthesis
-related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes, warp-drive-positive-energy, quantum-relative-entropy-einstein-equations, bh-thermo-far-from-equilibrium]
+related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes, warp-drive-positive-energy, quantum-relative-entropy-einstein-equations, bh-thermo-far-from-equilibrium, entanglement-islands-page-curves-kerr-ads]
 ---
 
 # Black Hole Evaporation, Energy Conditions, and Regular Endpoints
@@ -20,6 +20,8 @@ For **modified / speculative gravity** (massive gravity, warp metrics, explorato
 A separate *origin* thread — not covered in the routes below — is early-universe [[primordial-black-holes]] from inflation or bounce survival ([[pre-bang-leftovers]]). Those objects may later evaporate or act as dark matter; this page focuses on interior regularity and thermality once a horizon already exists.
 
 **Foundations addendum (2026-09-05):** [[bh-thermo-far-from-equilibrium]] rebuilds the first law for finite, far-from-equilibrium processes and puts dynamical entropy on a **marginally trapped surface** (quasi-local), not the teleological event horizon. That strengthens the “what surface carries entropy mid-process?” question that Routes 1–3 already touch when horizons move. See also [[black-hole-thermodynamics]] and [[entropic-information-gravity]].
+
+**Islands / Page curve (2026-09-20):** [[entanglement-islands-page-curves-kerr-ads]] extends the island rule to Kerr-AdS and shows the Page curve can inherit a **jump** from the swallow-tail phase structure — ensemble-dependent bookkeeping, not a new sky observable.
 
 ---
 

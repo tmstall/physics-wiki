@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, astrophysics, multi-messenger, interstellar-medium, high-energy-astrophysics]
-last_updated: 2026-09-12
+last_updated: 2026-09-20
 status: synthesis
-related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing]
+related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing, rapid-orbital-decay-erassu-j060839]
 ---
 
 # High-Energy Astrophysics, Multi-Messenger Signals & Early-Universe Thermal History

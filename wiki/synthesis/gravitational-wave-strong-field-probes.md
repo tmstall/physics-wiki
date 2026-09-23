@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, gravitational-waves, black-holes, strong-field-gravity, multimessenger]
-last_updated: 2026-08-29
+last_updated: 2026-09-20
 status: synthesis
-related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, second-order-gw-strain-gauge, gw170817-jet-hubble, qg-deep-dive-1-mergers-emission, psr-j1906-binary-timing, gw-induced-fermion-freeze-in, pre-bang-leftovers, qg-deep-dive-2-info-holography, s301-sgra-spin-sensitive-star, astrid-z0-mbh-lss]
+related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, second-order-gw-strain-gauge, gw170817-jet-hubble, qg-deep-dive-1-mergers-emission, psr-j1906-binary-timing, gw-induced-fermion-freeze-in, pre-bang-leftovers, qg-deep-dive-2-info-holography, s301-sgra-spin-sensitive-star, astrid-z0-mbh-lss, rapid-orbital-decay-erassu-j060839]
 ---
 
 # Gravitational Waves as Strong-Field Probes
