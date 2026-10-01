@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, ultrafast-optics, nanophotonics, solid-state, quantum-emitters, fieldoscopy]
-last_updated: 2026-09-05
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [ito-nanocrystal-fieldoscopy, attosecond-stm-lightwave, hot-electron-coherent-phonons-ptcu, snv-super-coherent-excitation, siv-hydrostatic-strain-symmetry, tise2-core-level-cdw-excitons, photon-number-optical-analogy-control, evanescent-wave-transverse-spin, topo-chirality-structured-light, freeze-fiber-brillouin, bessy-tes-soft-xray-spectrometer, erte3-competing-cdw-time-domain, mmwave-optical-microcomb, correlated-electrons-xray-hhg, mirror-that-lies-diffractive-concealment, 25gpps-diffractive-microscope, recycling-idler-quantum-superresolution, desktop-ct-electron-clouds, woven-ferroelectric-domains-optical]
+related_papers: [ito-nanocrystal-fieldoscopy, attosecond-stm-lightwave, hot-electron-coherent-phonons-ptcu, snv-super-coherent-excitation, siv-hydrostatic-strain-symmetry, tise2-core-level-cdw-excitons, photon-number-optical-analogy-control, evanescent-wave-transverse-spin, topo-chirality-structured-light, freeze-fiber-brillouin, bessy-tes-soft-xray-spectrometer, erte3-competing-cdw-time-domain, mmwave-optical-microcomb, correlated-electrons-xray-hhg, mirror-that-lies-diffractive-concealment, 25gpps-diffractive-microscope, recycling-idler-quantum-superresolution, desktop-ct-electron-clouds, woven-ferroelectric-domains-optical, narrowband-tunable-euv-soft-xray-harmonics]
 ---
 
 # Ultrafast Optics and Solid-State Emitters

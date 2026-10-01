@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, cosmology, dark-energy, large-scale-structure, hubble-tension]
-last_updated: 2026-09-20
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe, cosmic-lockdown-vacuum-tunneling, tempos-metal-poor-o-stars]
 ---
 
 # Cosmology: Expansion History and Large-Scale Structure

@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, semiclassical-gravity, general-relativity]
-last_updated: 2026-09-20
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes, warp-drive-positive-energy, quantum-relative-entropy-einstein-equations, bh-thermo-far-from-equilibrium, entanglement-islands-page-curves-kerr-ads]
+related_papers: [evaporating-charged-black-holes, hawking-radiation-charge-shell, frozen-in-gravitational-fields, quantum-jamming, pre-bang-leftovers, black-hole-third-law-violation, qg-deep-dive-2-info-holography, qg-deep-dive-3-holographic-codes, warp-drive-positive-energy, quantum-relative-entropy-einstein-equations, bh-thermo-far-from-equilibrium, entanglement-islands-page-curves-kerr-ads, looking-inside-a-quantum-black-hole]
 ---
 
 # Black Hole Evaporation, Energy Conditions, and Regular Endpoints

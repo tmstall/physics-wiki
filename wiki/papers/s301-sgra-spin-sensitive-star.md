@@ -1,18 +1,20 @@
 ---
 tags: [papers, black-holes, galactic-center, astrometry, general-relativity]
-last_updated: 2026-08-22
+last_updated: 2026-10-01
 status: analysis-ingest
 related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, smbh-inclination-angle, naked-black-hole-candidate, astrid-z0-mbh-lss, stellar-spin-repeating-partial-tde]
-source_analysis: "raw/analyses/2026-08-19_eso2612a_s301-star-sensitive-to-spin-sgrA-star.md"
+source_analysis: "raw/analyses/2026-08-19_eso2612a_s301-star-sensitive-to-spin-sgrA-star.md; raw/analyses/2026-09-20_doi-10.1038-s41586-026-10894-w_s301-star-sensitive-to-spin-of-sgr-a-star.md"
 ---
 
 # S301: A Star Sensitive to the Spin of Sgr A*
 
-**One-line summary:** GRAVITY+ discovers S301 — shortest-period S-star yet (~8.7 yr, pericenter ~140–150 $r_s$, $v\sim0.08c$) — enabling a forecasted dynamical Sgr A* spin measurement (~±0.1 in $\chi$ by ~2035 with future RV), **not** a spin measurement today (ESO preprint eso2612a; adversarial).
+**One-line summary:** GRAVITY+ discovers S301 — shortest-period S-star yet (~8.7 yr, pericenter ~10× closer than S2, $v\sim0.085c$) — the first star that can carry a dynamical Sgr A* spin measurement, **not** a spin measurement today (*Nature* 2026, DOI 10.1038/s41586-026-10894-w; earlier ESO preprint eso2612a).
 
 ## Key claims and results
 
-- **Source:** GRAVITY+ Collaboration (Abd El Dayem et al.), ESO-style preprint eso2612a — no DOI/arXiv in analysis; treat as pre-publication.
+- **Source:** GRAVITY+ Collaboration, *Nature* (2026), DOI 10.1038/s41586-026-10894-w. Wiki page first ingested from ESO preprint eso2612a (2026-08-22); 2026-10-01 update folds the published analysis into the same page (no second paper).
+- Published text still does **not** report a measured spin. It reports the star that makes a future spin measurement possible. Peak speed ~8.5% $c$ is consistent with Kepler scaling for $\sim4\times10^6\,M_\odot$ and $e\approx0.98$.
+- Likely origin: surviving half of a binary torn apart by the black hole (Hills-like), not a quietly formed S-star.
 - Discovery: faint ($K\sim19.3$) main-sequence candidate; 19 astrometric epochs over ~8 yr; two analysis pipelines agree.
 - Orbit: $P\approx8.7$ yr, $e\approx0.98$, $a\sim83$ mas; ~10× closer pericenter than S2 → $(v/c)^3$ Lense–Thirring plausibly accessible.
 - **Not claimed:** measured spin. Fits assume Schwarzschild; spin sensitivity is a mock-data forecast through ~2035 (GRAVITY+ + future ELT/MICADO-class RV).
@@ -28,7 +30,7 @@ S2 already showed $(v/c)^2$ GR (redshift, Schwarzschild precession). Spin (frame
 - Single facility (VLTI GRAVITY+); no independent astrometric confirmation possible today.
 - Spin forecast orientation-dependent (~2σ–9σ in mocks); “within a decade” is conditional.
 - Perturber-separation arguments assume an unseen stellar-mass BH population model.
-- Adversarial posture: preprint / announcement-adjacent document.
+- Adversarial posture on the preprint is relaxed by *Nature* publication; spin remains a forecast, not a datum.
 
 ## Connections
 
@@ -47,4 +49,5 @@ S2 already showed $(v/c)^2$ GR (redshift, Schwarzschild precession). Spin (frame
 
 ## Source
 
-- `raw/analyses/2026-08-19_eso2612a_s301-star-sensitive-to-spin-sgrA-star.md`
+- `raw/analyses/2026-08-19_eso2612a_s301-star-sensitive-to-spin-sgrA-star.md` (preprint ingest)
+- `raw/analyses/2026-09-20_doi-10.1038-s41586-026-10894-w_s301-star-sensitive-to-spin-of-sgr-a-star.md` (published update, 2026-10-01)

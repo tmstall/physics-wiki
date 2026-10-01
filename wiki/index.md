@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-09-20** — 4-paper Cowork wave + full lint.
+Master catalog. Updated **2026-10-01** — 4-paper Cowork wave + full lint.
 
-**Papers:** 222 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 240 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -44,8 +44,11 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[massive-tunneling-schrodinger-cats]]    | ~608 u Rb collective tunneling; NOON cats                 |
 | [[negative-weak-valued-excitation-times]] | Weak-valued excitation time = group delay                 |
 | [[collective-superradiant-lasing]]        | SU(3) superradiant laser; vanishing cavity pulling        |
+| [[quantum-jumps-of-sound]] | Chip resonator phonon-number jumps; ~85% single-phonon herald |
+| [[extreme-loss-suppression-dipolar-molecules]] | Two-microwave shield; >10⁴× molecular-loss suppression |
 | [[collapse-models-clock-precision]]       | CSL/DP spacetime jitter → tiny proper-time floor          |
 | [[thorium-229-nuclear-clock]]             | Nuclear clock transition analysis                         |
+| [[big-g-bipm-torsion-balance-nist]] | NIST rebuild of BIPM torsion balance; Big G still scatters |
 | [[two-clocks-one-laser]]                  | Dual clocks on one laser; excess noise control            |
 | [[problem-of-time-cold-atoms]]            | Cold-atom probes of the problem of time                   |
 | [[mot-metal-hydride]]                     | First CaH magneto-optical trap                            |
@@ -126,7 +129,9 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[gravastar-dust-collapse]] | Pure-GR dynamical gravastar birth |
 | [[entropy-maximization-bh-mergers]] | Entropy peak predicts remnant spin |
 | [[horizon-direct-wave-gw250114]] | Direct wave reads horizon Ω_H, κ |
-| [[s301-sgra-spin-sensitive-star]] | GRAVITY+ S301; forecasted Sgr A* spin sensitivity |
+| [[s301-sgra-spin-sensitive-star]] | GRAVITY+ S301 (*Nature* 2026); spin still a forecast |
+| [[looking-inside-a-quantum-black-hole]] | Ringdown overtones profile the BH center |
+| [[geodesic-tessellation-schwarzschild-holography]] | Geodesic spray measures area; entropy by calibration |
 | [[stellar-spin-repeating-partial-tde]] | Pre-spin explains multi-flare rpTDE dimming |
 | [[quantum-relative-entropy-einstein-equations]] | Relative entropy → semiclassical Einstein (Jacobson upgrade) |
 | [[black-hole-third-law-violation]] | Vacuum 5D finite-time extremality; third law fails |
@@ -136,6 +141,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[jwst-filament-cnd-ngc4696]] | JWST filament → CND feeding in NGC 4696 |
 | [[category-79-quasar-wind]] | Fastest UV BAL wind (~0.3c) in J2318 |
 | [[radio-changing-look-agn]] | NLS1 radio quiet→loud and stays loud |
+| [[jet-aligned-halpha-cgm]] | Jet-axis Hα ~100×; jets light clouds, do not add them |
 | [[glimpse-17775-cocoon]] | LRD super-Eddington BH in gas cocoon |
 | [[gravity-from-entropy]] | Gravity-from-entropy / compression-error framework |
 | [[differential-signaling-quantum-vacuum]] | Vacuum response as differential signaling |
@@ -204,8 +210,13 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[lz-dm-eft-high-energy-recoil]] | LZ high-E NR window + 293 EFT models; 2.6σ event of interest |
 | [[ultraheavy-dm-levitated-magnet-polonaise]] | Levitated mg magnet; ultraheavy DM exclusion (null + 8 blips) |
 | [[unconventional-materials-light-dm]] | Plasmon/CDW crystal antennas for light DM (roadmap) |
+| [[fdm-wave-lensing-hs0810]] | Wave-halo lensing of HS 0810; ripples not decisive |
+| [[phantom-halo-verlinde-surface-density]] | Verlinde matches halo surface density; predicts a cusp |
+| [[negative-mass-objects-in-the-sky]] | Negative-mass lens would diverge light; solution ≠ existence |
+| [[cosmic-lockdown-vacuum-tunneling]] | Toy model: decoherence throttles vacuum escape |
 | [[hi-intensity-mapping-meerkat]] | MeerKAT 21 cm autopower without galaxy survey |
 | [[lbt-yp-primordial-helium]] | LBT Yp series; average near-pristine galaxies → tighter Nν null |
+| [[tempos-metal-poor-o-stars]] | Uniform FUV O-star sample at Z<0.2 Zsun; winds fade faster at lowest Z |
 | [[topology-of-the-universe]] | Cosmic topology review; nulls weaker than often claimed |
 | [[supernova-onion-expansion]] | SN layered ejecta from expansion |
 | [[not-a-globular-cluster]] | Misclassified cluster analysis |
@@ -269,6 +280,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[quantum-metric-spin-momentum-locking]] | Rashba locking → quantum metric in LAO/STO |
 | [[magnetic-heliknoton-electric-write]] | Current-written 3D heliknotons in FeGe |
 | [[ito-nanocrystal-fieldoscopy]] | ITO sub-cycle SWIR switch |
+| [[narrowband-tunable-euv-soft-xray-harmonics]] | Tunable HHG comb parked on Fe/Co/Ni edges |
 | [[brown-zak-nonlinear-transport]] | Brown–Zak fermions via nonlinear V |
 | [[snte-light-topological-inversion]] | Light-induced band inversion in SnTe |
 | [[hot-electron-coherent-phonons-ptcu]] | Hot electrons drive coherent phonons |
@@ -329,6 +341,8 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[alice-oo-nene-nuclear-geometry-flow]] | O+O/Ne+Ne flow encodes ab initio nuclear shapes |
 | [[tracking-baryon-number-nuclear-collisions]] | STAR: mid-rapidity $B$ transport favors soft baryon junction |
 | [[equilibrated-fraction-oo-qcd]] | O+O core–corona: equilibrated fraction vs multiplicity |
+| [[star-pt-correlations-qcd-critical]] | STAR pT-correlation dip near guessed critical point; not a discovery |
+| [[cms-black-holes-sphalerons-svm]] | No micro-BHs ≲9–11 TeV; phase-space SVM |
 
 ### Concepts
 | Page | Summary |
@@ -356,6 +370,7 @@ First-class cluster (charter 2026-08-29). Same ingest/lint rules as physics page
 | [[urban-congestion-routing-app]] | Google Maps shadow-toll field experiment; ~2% speed gains |
 | [[extracting-reasoning-traces-proprietary-llms]] | Encrypted LLM reasoning traces breakable via provider APIs |
 | [[deepmind-hurricane-forecasting]] | WN-C cyclone AI; beats track+intensity systems; NHC 2025 |
+| [[dynamics-informed-imputation]] | FPRM: delay-embed sensors to impute dynamical time series |
 
 ---
 
@@ -438,9 +453,21 @@ Graduated from Islands (2026-08-29 audit): large multi-paper shelf with a clear 
 | [[ultrafast-chemical-shifts]] | Ultrafast chemical-shift spectroscopy |
 | [[two-lasers-one-reaction]] | Two-laser control of one reaction path |
 | [[molecular-bias-point]] | Bias where a molecule stops responding |
+| [[orbformer-wavefunction-foundation-model]] | One ab initio model across molecules, including bond breaking |
 | [[electron-hole-migrate-molecule]] | Attosecond XFEL movie of hole migration; ~7 fs coherence |
 
 ---
+
+
+## Physiology & autonomic regulation
+
+Two-paper shelf (2026-10-01 `ingest all`). Not physics and not multi-agent. No synthesis hub until a third paper changes a conclusion. Reader question: what “HRV biofeedback” actually does, and why the literature is hard to replicate.
+
+### Papers
+| Page | Summary |
+| --- | --- |
+| [[hrv-resonance-baroreflex]] | ~0.1 Hz baroreflex resonance; height sets rate, age sets gain |
+| [[hrv-biofeedback-methods-review]] | Three protocols under one name; breathing rate rarely checked |
 
 ## Islands / Other
 
@@ -477,6 +504,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Ingest 2026-09-05 | 12 new papers (+1 ErTe₃ analysis skipped_duplicate); catalog 212 |
 | Ingest 2026-09-12 | 4 Cowork papers; catalog 216; no new synthesis |
 | Ingest 2026-09-20 | 6 papers from 7 analyses (LBT Yp merged); catalog 222 |
+| Ingest 2026-10-01 | 18 new + S301 update; geodesic pair merged; HRV shelf; catalog 240 |
 | Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0 |
 
 Activity log: [[log]] (`wiki/log.md`).

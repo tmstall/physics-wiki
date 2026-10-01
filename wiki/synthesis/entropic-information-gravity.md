@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, quantum-gravity, thermodynamics, quantum-information, foundations]
-last_updated: 2026-09-20
+last_updated: 2026-10-01
 status: synthesis
-RELATED_SKIPquantum-relative-entropy-einstein-equations, gravity-from-entropy, hawking-radiation-charge-shell, evaporating-charged-black-holes, topological-cosmological-constant, temporal-imbalance-gravity]
+related_papers: [quantum-relative-entropy-einstein-equations, gravity-from-entropy, hawking-radiation-charge-shell, evaporating-charged-black-holes, topological-cosmological-constant, temporal-imbalance-gravity, entanglement-islands-page-curves-kerr-ads, geodesic-tessellation-schwarzschild-holography]
 ---
 
 # Entropic and Information-Theoretic Routes to Gravity
@@ -16,6 +16,8 @@ RELATED_SKIPquantum-relative-entropy-einstein-equations, gravity-from-entropy, h
 > Is spacetime’s dynamics an **equation of state** read from horizon heat and entropy, and can that argument be made **QFT-finite** — or is gravity a **compression/coding** cost that does not need a horizon at all?
 
 No single paper owns both. Stack them and three layers appear: (1) **local horizon thermodynamics → Einstein** (Jacobson lineage, now with relative entropy), (2) **horizon-optional entropic/compression frameworks** (GfE analysis), (3) **neighbor constraints** from standard semiclassical BH thermo and exploratory time-first models. The tensions live where “derived Einstein equations” still smuggle in $S=A/4G$, or where compression-error language is mistaken for a drop-in field equation used in precision tests.
+
+**2026-10-01:** [[geodesic-tessellation-schwarzschild-holography]] counts area with a uniform geodesic spray and then *assigns* $1/4G$ per ray to recover Bekenstein–Hawking entropy — a calibration, not a derivation. It belongs next to layer (1) as a cautionary neighbor. [[entanglement-islands-page-curves-kerr-ads]] is the information-paradox cousin (Page curve), not an Einstein-from-entropy derivation.
 
 This synthesis is **entropic / QI foundations of gravity**. Evaporation endpoints, NEC violation, and double-copy thermality live on [[black-hole-evaporation-energy-conditions]] (constraint library). Massive gravity, warp metrics, MOND, and ontology rewrites live on [[modified-speculative-gravity]]. Strong-field *observations* (waveforms, S-stars) live on [[gravitational-wave-strong-field-probes]] / [[smbh-stellar-encounters]].
 

@@ -1460,3 +1460,24 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 ### Catalog
 - Papers **216 → 222** · Concepts 62 · Synthesis 18
 
+## [2026-10-01] ingest | 20 analyses (ingest all)
+
+### Special cases
+- [[s301-sgra-spin-sensitive-star]] **updated** to *Nature* DOI 10.1038/s41586-026-10894-w (still a spin forecast, not a measurement)
+- [[geodesic-tessellation-schwarzschild-holography]] merges arXiv:2609.21471 v1 + v2 foundations
+
+### New pages (18)
+- [[dynamics-informed-imputation]] · [[big-g-bipm-torsion-balance-nist]] · [[orbformer-wavefunction-foundation-model]]
+- [[narrowband-tunable-euv-soft-xray-harmonics]] · [[extreme-loss-suppression-dipolar-molecules]] · [[quantum-jumps-of-sound]]
+- [[tempos-metal-poor-o-stars]] · [[cosmic-lockdown-vacuum-tunneling]] · [[star-pt-correlations-qcd-critical]]
+- [[phantom-halo-verlinde-surface-density]] · [[fdm-wave-lensing-hs0810]] · [[negative-mass-objects-in-the-sky]]
+- [[cms-black-holes-sphalerons-svm]] · [[jet-aligned-halpha-cgm]]
+- [[hrv-biofeedback-methods-review]] · [[hrv-resonance-baroreflex]] (new Physiology shelf; no synth hub yet)
+- [[looking-inside-a-quantum-black-hole]]
+
+### Synthesis
+- No new hub. Touched AMO, ultrafast, chemistry, nuclear, DM, modified gravity, BH evaporation, entropic gravity, BH feedback, cosmology, HEA.
+
+### Catalog
+- Papers **222 → 240** · Concepts 62 · Synthesis 18
+

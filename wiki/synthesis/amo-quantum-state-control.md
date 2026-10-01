@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, amo, quantum-information, quantum-optics, cold-atoms]
-last_updated: 2026-08-29
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir, positronium-diffraction-graphene, cavity-qed-tur-io-bookkeeping, quantum-droplets-bose-fermi, cft-spectra-rydberg-simulator, mmwave-optical-microcomb, coupling-free-electrons-trapped-ion, imaging-vacuum-fluctuations-qft]
+related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir, positronium-diffraction-graphene, cavity-qed-tur-io-bookkeeping, quantum-droplets-bose-fermi, cft-spectra-rydberg-simulator, mmwave-optical-microcomb, coupling-free-electrons-trapped-ion, imaging-vacuum-fluctuations-qft, quantum-jumps-of-sound, extreme-loss-suppression-dipolar-molecules]
 ---
 
 # AMO and Quantum State Control Across Platforms

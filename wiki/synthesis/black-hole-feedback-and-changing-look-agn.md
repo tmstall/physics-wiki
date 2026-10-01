@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, agn, feedback, galaxy-evolution]
-last_updated: 2026-08-29
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744]
+related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744, jet-aligned-halpha-cgm]
 ---
 
 # Black Hole Feedback and Changing-Look AGN

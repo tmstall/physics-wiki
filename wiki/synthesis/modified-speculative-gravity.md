@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, gravity, modified-gravity, foundations, speculative, energy-conditions]
-last_updated: 2026-08-18
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells]
+related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells, phantom-halo-verlinde-surface-density, negative-mass-objects-in-the-sky]
 ---
 
 

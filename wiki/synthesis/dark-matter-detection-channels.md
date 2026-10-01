@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, dark-matter, axions, cosmology, detectors, primordial-black-holes, gamma-rays]
-last_updated: 2026-09-20
+last_updated: 2026-10-01
 status: synthesis
-related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, ultraheavy-dm-levitated-magnet-polonaise, unconventional-materials-light-dm]
+related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, ultraheavy-dm-levitated-magnet-polonaise, unconventional-materials-light-dm, fdm-wave-lensing-hs0810]
 ---
 
 # Dark Matter Detection Channels
