@@ -1,0 +1,1471 @@
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                             https://doi.org/10.3847/1538-4357/ae3c08
+© 2026. The Author(s). Published by the American Astronomical Society.
+                                                                                                                                                 aaaaaaa
+
+The ASTRID Simulation at z = 0: From Massive Black Holes to Large-scale Structure
+        Yihao Zhou (周亦豪)1 aa, Tiziana Di Matteo1 aa, Simeon Bird2 aa, Rupert Croft1 aa, Yueying Ni3 aa, Yanhui Yang2 aa,
+                    Nianyi Chen4 aa, Patrick Lachance1 aa, Xiaowen Zhang1 aa, and Fatemeh Hafezianzadeh1 aa
+         1
+             McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University, Pittsburgh, PA 15213, USA; yihaoz@andrew.cmu.edu
+                  2
+                    Department of Physics & Astronomy, University of California, Riverside, 900 University Avenue, Riverside, CA 92521, USA
+                                         3
+                                           Center for Astrophysics—Harvard & Smithsonian, Cambridge, MA 02138, USA
+                                      4
+                                        School of Natural Sciences, Institute for Advanced Study, Princeton, NJ 08540, USA
+                          Received 2025 October 15; revised 2025 December 30; accepted 2026 January 1; published 2026 February 23
+
+                                                                               Abstract
+              We present the z = 0 results for the cosmological simulation ASTRID. Hosting 2 × 55003 ≈ 0.33 trillion particles in a
+              box of 370 Mpc per side, ASTRID is one of the largest cosmological hydrodynamic simulations evolved to z = 0.
+              ASTRID features a large population of massive black holes (MBHs), covering a wide mass range
+              4 × 104 ∼ 2 × 1011 M⊙. The adopted dynamical friction model provides a relatively accurate description of MBH
+              dynamics, making ASTRID a powerful tool to study MBH growth and mergers in a cosmological context. ASTRID
+              successfully captures the coevolution of MBHs and their host galaxies, producing MBH–M� and MBH–σ relations in
+              good agreement with observations. Notably, ASTRID generates scatter in these relations that is more consistent with
+              observations than previous simulations, indicating a more realistic MBH diversity. The galaxy stellar mass function
+              at z = 0 is generally consistent with observational constraints. When dust attenuation is applied, the galaxy
+              luminosity function also agrees well with observations, and the bimodality in galaxy colors is reproduced as well.
+              ASTRID hosts a large population of massive galaxy groups and clusters: seven halos have M200c > 10 M⊙, and
+                                                                                                                       15
+
+              9709 halos have M200c > 1013 M⊙. We quantify the stellar mass content in these halos, and find that the correlations
+              between the stellar and halo mass match well with observational constraints. Finally, we present the z = 0 power
+              spectra of MBH and galaxies, as well as their bias with respect to the matter power spectrum. We find that MBHs
+              with MBH � 108 M⊙ and galaxies with M� � 1010.5 M⊙ serve as good tracers of large-scale structure.
+              Unified Astronomy Thesaurus concepts: Hydrodynamical simulations (767); Supermassive black holes (1663)
+
+                                   1. Introduction                                          In addition to galaxy properties, a cosmological simulation
+                                                                                         is also a powerful tool for studying the population of massive
+   Large-scale cosmological simulations are continually push-
+                                                                                         black holes (MBHs), and the subset of them visible as active
+ing computational frontiers to understand galaxy formation in
+                                                                                         galactic nuclei (AGNs). A variety of observational evidence
+a cosmological context. Many simulations have successfully
+                                                                                         confirms that massive black holes are ubiquitous in the
+produced realistic galaxy populations on cosmological scales,
+                                                                                         Universe, residing at the center of almost all massive galaxies
+such as Illustris (M. Vogelsberger et al. 2014a, 2014b),
+                                                                                         (S. Tremaine et al. 2002; J. Kormendy & L. C. Ho 2013).
+EAGLE (J. Schaye et al. 2015), MassiveBlack-II (N. Khandai
+                                                                                         MBHs coevolve with their local environment via gas accretion
+et al. 2015), BlueTides (Y. Feng et al. 2016), Horizon-AGN
+                                                                                         and energetic feedback, and play a pivotal role in shaping the
+(Y. Dubois et al. 2016), Romulus (M. Tremmel et al.
+2017), Magneticum (K. Dolag et al. 2017), IllustrisTNG                                   cosmic landscape we observe today. MBHs are usually treated
+(F. Marinacci et al. 2018; J. P. Naiman et al. 2018; D. Nelson                           as collisionless sink particles in the simulations mentioned
+et al. 2018; A. Pillepich et al. 2018a; V. Springel et al. 2018),                        above, particles that are able to accrete surrounding gas,
+SIMBA (R. Davé et al. 2019), NewHorizon (Y. Dubois                                       release energy into neighboring particles, and merge with other
+et al. 2021), and FLAMINGO (J. Schaye et al. 2023; see                                   MBHs (T. Di Matteo et al. 2005; R. Weinberger et al. 2018).
+M. Vogelsberger et al. 2020 for a review). Compared to dark-                             In large-volume simulations, due to the limits of achievable
+matter-only simulations, these large-volume hydrodynamical                               resolution, the MBH accretion disk cannot be fully resolved.
+simulations offer a more complete description of cosmic                                  Hence, the aforementioned accretion, feedback, and merging
+structures by including a variety of gas, stellar, and AGN                               are all accomplished through subgrid models. There is still no
+physics. With the inclusion of well-calibrated subgrid models,                           consensus on the details of these MBH models, and models
+cosmological simulations provide detailed information about                              adopted in different simulations vary widely (see M. Habouzit
+the origins and statistics of the galaxy population. Specific                            et al. 2022 for a recent review).
+observational features that have been reproduced include                                    The next decade promises an unprecedented influx of
+clustering bias (M. C. Artale et al. 2017), two-point correlation                        observational data related to MBHs. With the James Webb
+functions (V. Springel et al. 2018), galaxy colors (D. Nelson                            Space Telescope (JWST) opening up a new frontier for high-z
+et al. 2018), galaxy morphologies (A. Pillepich et al. 2019),                            AGN science, MBHs formed in the first billion years after the
+galaxy chemical history (P. Torrey et al. 2018), and merger                              Big Bang are now being observed (H. Übler et al. 2023;
+history (L. Eisert et al. 2023).                                                         J. Matthee et al. 2024). This data provides valuable insights
+                                                                                         into theories for how MBHs are seeded (e.g., J. Jeon et al.
+                 Original content from this work may be used under the terms
+                                                                                         2025). Scaling relations derived from local galaxies show that
+                 of the Creative Commons Attribution 4.0 licence. Any further            these MBHs are overmassive compared to their hosts, posing
+distribution of this work must maintain attribution to the author(s) and the title       challenges to the existing theory of the formation and growth
+of the work, journal citation and DOI.                                                   of MBHs. The next generation of X-ray missions, e.g., Athena
+
+                                                                                     1
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                       Zhou et al.
+
+(K. Nandra et al. 2013), AXIS (R. Mushotzky 2018), and                      contributed by those stars and BHs that surround the
+LynX (The Lynx Team 2018), will increase the current X-ray                  MBH particles, but are below the resolution limit of the
+flux sensitivity by at least 1 order of magnitude, aiming to                simulation. This model has been validated against both
+explore larger areas and the deeper Universe. They will be able             semianalytical predictions and high-resolution simula-
+to identify compact MBH binaries at small separations.                      tions (A. Genina et al. 2024; Y. Zhou et al. 2025b). It not
+Moreover, upcoming surveys such as the Roman High                           only provides a better description of MBH dynamics, but
+Latitude Survey (Y. Wang et al. 2022) and the Vera Rubin                    also leads to realistic MBH velocities and trajectories.
+Observatory Legacy Survey of Space and Time (Ž. Ivezić et al.               Because of this, the MBH orbital eccentricity, an
+2019) will reveal a broader and fainter MBH population.                     important indicator of the binary hardening timescale,
+   The recently inaugurated era of gravitational-wave (GW)                  can be measured for MBH binaries (N. Chen et al. 2023;
+astronomy has opened up new avenues for understanding the                   B. Y. Wang et al. 2025).
+intricate nature of MBH formation and interactions. Recent
+                                                                          A variety of papers have used ASTRID simulation data at
+reports by the Pulsar Timing Array (PTA) collaborations
+                                                                       high redshift. Y. Ni et al. (2022) presented the ASTRID MBH
+(NANOGrav, G. Agazie et al. 2023; EPTA+InPTA, EPTA                     population at z � 3, and Y. Ni et al. (2024) specifically
+Collaboration et al. 2023; and CPTA, H. Xu et al. 2023)                showed the influence of AGN feedback on galaxy evolution.
+provide evidence for a stochastic gravitational-wave back-             N. Chen et al. (2023) examined the properties and cosmic
+ground (GWB) at nanohertz frequencies. The primary source              evolution of dual AGNs. P. LaChance et al. (2025a)
+of the GWB at these frequencies is believed to be the                  investigated the galaxy morphology at 3 � z � 6. Using the
+population of MBH mergers with mass MBH ≳ 108 M⊙                       galaxy populations at 5 � z � 8, P. LaChance et al. (2025b)
+(S. Burke-Spolaor et al. 2019). Continuous waves (CWs)                 identified the counterparts to the “little red dot” objects
+from individual MBH binaries are expected to be observed               detected by JWST. The ASTRID MBH binary population
+in the next few years (P. A. Rosado et al. 2015;                       down to z = 0 has been used to make predictions for future
+C. M. F. Mingarelli et al. 2017; L. Z. Kelley et al. 2018).            GW detectors. N. Chen et al. (2025) estimated the GWB
+Additionally, the Laser Interferometer Space Antenna (LISA;            signals and found that ASTRID produces a GWB lower than
+P. Amaro-Seoane et al. 2017), expected to launch in the mid-           the constraints given by NANOGrav 15 yr data (G. Agazie
+2030s, is set to explore GW signals emitted at millihertz              et al. 2023), and consistent with the prediction based on local
+frequencies, targeting MBH mergers at the lower-mass                   EM observations (e.g., G. Sato-Polito & M. Zaldarriaga et al.
+end (MBH ≲ 108 M⊙; M. L. Katz et al. 2020; B. Y. Wang                  2025). Y. Zhou et al. (2025a) searched for PTA CW sources
+et al. 2025).                                                          in ASTRID, and found that all high-detectability CW sources
+   Fully leveraging the wealth of GW and EM observations in            arise from the central galaxies of massive galaxy clusters.
+the near future requires a cosmological simulation that hosts a        B. Y. Wang et al. (2025) calculated the LISA signal for each
+large population of MBH mergers, spans a wide mass range               MBH merger in ASTRID and estimated the LISA detec-
+and various galactic environments, and incorporates improved           tion rate.
+models for MBH dynamics. In this work, we present the                     This paper focuses on the z = 0 results in ASTRID, and is
+ASTRID simulation at z = 0. Below, we briefly list some of             structured as follows. Section 2 summarizes the adopted
+ASTRID’s key features.                                                 simulation models. In Section 3 we present the MBH
+   1. Large particle number: The simulation initial                    population in ASTRID. We analyze the properties of galaxies
+      conditions include 3.3 × 1011 particles: 55003 DM                and galaxy clusters in Sections 4 and 5, respectively. In
+      particles and 55003 smoothed particle hydrodynamics              Section 6 we study the matter clustering in ASTRID. We
+      (SPH) mass elements. Evolving the simulation from                conclude in Section 7.
+      z = 99 to z = 0 consumed about 896M CPU hours on the
+      Frontera facility at the Texas Advanced Computing
+      Center. This makes ASTRID one of the largest cosmolo-                               2. ASTRID Simulation
+      gical hydrodynamical simulations in terms of particle               ASTRID (S. Bird et al. 2022; Y. Ni et al. 2022, 2024) is a
+      number that have been evolved to z = 0.                          large-volume cosmological hydrodynamical simulation per-
+   2. Large MBH population: ASTRID covers a BH mass                    formed using the SPH code MP-GADGET (Y. Feng et al. 2018).
+      range spanning almost 7 orders of magnitude, and hosts           The simulation evolves a cube of 250 h−1 cMpc per side with
+      over 3 million MBH merger events. On the one hand,               2 × 55003 initial tracer particles comprising dark matter and
+      ASTRID adopts a relatively small BH seed mass, down to           baryons. The cosmological parameters used are from the
+      3 × 104 M⊙ h−1, enabling us to study MBH seed mergers,           Planck Collaboration et al. (2020) cosmology, with
+      the main target of the upcoming LISA mission. On the             h = 0.6774,     Ω0 = 0.3089,     ΩΛ = 0.6911,    Ωb = 0.0486,
+      other hand, the relatively large simulation volume samples       σ8 = 0.816, and ns = 0.9667. The initial conditions are set at
+      the sparse massive end of the MBH mass function. The             z = 99, and have a mass resolution of MDM = 6.7 × 106 h−1M⊙
+      most-massive black hole in ASTRID is 2 × 1011 M⊙. These          and Mgas = 1.3 × 106 h−1M⊙. The gravitational softening
+      MBHs undergo mergers that will contribute to the PTA             length is εg = 1.5 h−1 ckpc for both DM and gas particles.
+      GW background and are likely to be detected as PTA CW               ASTRID includes a full-physics subgrid treatment for
+      sources (N. Chen et al. 2025; Y. Zhou et al. 2025a).             modeling galaxy formation, MBHs, stellar and AGN feedback,
+   3. Better MBH Dynamics: Instead of adopting the                     and inhomogeneous hydrogen and helium reionization. In
+      widely used BH repositioning algorithm (R. A. Crain              Figure 1, we present a visual overview of the ASTRID
+      et al. 2015; D. Sijacki et al. 2015; R. Weinberger et al.        simulation at z = 0. The underlying background shows the
+      2018; R. Davé et al. 2019), ASTRID includes a subgrid            projected DM density through a 25 cMpc h−1 thick slab (10%
+      model to compensate for the dynamical friction                   of the simulation box length) over a 250 × 187.5 cMpc2 h−2
+
+                                                                   2
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                   Zhou et al.
+
+
+
+
+Figure 1. Visualization of the ASTRID simulation at z = 0. The underlying background is the dark matter density through a slab 25 cMpc h−1 thick (i.e., 10% of the
+simulation box length). The panel spans 250 × 187.5 cMpc2 h−2, covering 75% of the full 250 × 250 cMpc2 h−2 face. We further zoom in on two regions within this
+slice. Blue zoom (left): region centered on the most-massive halo in ASTRID (log M200c/M = 15.3), whose position is marked by the blue circle. The leftmost inset
+shows a trichromatic gas map in which hue encodes temperature (left), neutral hydrogen fraction (top), and metallicity (bottom). The left-middle inset zooms to a
+1.9 cMpc h−1 box and displays the stellar density colored by stellar age: red hues correspond to older stellar populations, and blue hues represent the younger ones.
+Green crosses indicate the black holes with MBH � 8 × 106 M⊙. Three example galaxies are highlighted: their virial radii are denoted by the white circles, and their
+mock observations for the Hubble Space Telescope (HST) Wide Field Camera (WFC3) are shown in the lower row. The red, green, and blue channels show the
+F625W, F475W, and F390W filters, respectively. Red zoom (right): region around a log M200c = 14.8 M⊙ halo. The red circle marks a nearby star-forming halo with
+log M200c = 14.0 M⊙. As for the blue zoom, we show the gas tricolor map (right-bottom inset), the stellar age field (right-middle inset), and mock HST images of
+three member galaxies (right-top inset) within the star-forming halo.
+
+
+area (75% of the full 250 × 250 cMpc2 h−2 face). We highlight                                                      2.1. BH Models
+two regions: the left insets zoom into the most-massive halo in
+                                                                                                                   2.1.1. BH Seeding
+ASTRID with log M200c / M = 15.3), and the right insets show
+a star-forming halo with M200c = 1014.7 M⊙. For both halos, we                           MBHs in ASTRID are seeded in halos with total mass
+represent their surrounding gas density field colored by                              Mhalo,FOF > 5 × 109 h−1 M⊙ and stellar mass M*,FOF > 2 ×
+temperature, neutral hydrogen fraction, and metallicity, stellar                      106 h−1 M⊙. The threshold for the halo stellar mass ensures
+density field colored by stellar age, and the mock Hubble                             that BHs are seeded only in halos with enough cold dense gas
+Space Telescope (HST) images for three member galaxies. We                            to form stars. Considering the complex astrophysical process
+use the green spikes to mark the black holes with                                     involving BH seed formation, we allow halos with the same
+MBH � 8 × 106 M⊙. It can be seen that both halos host a                               mass to host different BH seeds. Hence, rather than adopting a
+population of MBHs, and some of them are wandering MBHs                               uniform seed mass, we probe a range of BH seed masses
+located at the outskirts of the galaxies.                                             by stochastically drawing from the range 3 × 104 h−1 M⊙ to
+   In the following part of this section, we briefly list the                         3 × 105 h−1 M⊙.
+subgrid models relevant to MBH evolution and the prescrip-
+tion used to identify halo structures. We refer the reader to                                                     2.1.2. BH Dynamics
+S. Bird et al. (2022) and Y. Ni et al. (2022) for more details of                       A subgrid model is applied to estimate dynamical friction on
+the models implemented.                                                               the MBHs following M. Tremmel et al. (2015) and N. Chen
+
+                                                                                 3
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                     Zhou et al.
+
+et al. (2022b). Dynamical friction is the drag force experienced         (2017). BHs are distinguished as radiatively efficient or
+by the MBHs when they move through a medium of smaller                   radiatively inefficient based on the Eddington ratio
+collisionless particles. It dissipates the momentum of the               fEdd = MBH/MEdd :
+MBHs, causing their orbits to decay toward the galactic center
+and, hence, plays an important role in describing the                                               MBH c2 , fEdd > 0.1;
+                                                                                      L bol =                                                      (3 )
+coevolution of BHs and their host galaxies, and predicting                                       10fEdd     MBH c2 , fEdd         0.1,
+MBH merger rates. Compared to the widely used implementa-
+tion that directly repositions BHs to the local potential                where η = 0.1 is the radiative efficiency (N. I. Shakura &
+minimum (R. Weinberger et al. 2017), this dynamical friction             R. A. Sunyaev 1973). To better compare with observational
+model not only gives a better estimation of the MBH                      data, in this work, we present the hard X-ray luminosity of
+hardening timescale, but also provides well-defined MBH                  BHs (LX), which is converted from Lbol according to the
+trajectories and velocities. We save the position, velocity, and
+                                                                         bolometric correction proposed by P. F. Hopkins et al. (2007).
+accretion rate for each BH in ASTRID across the entire
+simulation on the fly. This means we have the full history of all
+                                                                                                   2.1.4. AGN Feedback
+BHs and are able to trace BH activity over cosmic time. The
+available MBH trajectories allow us to impose a more physical               ASTRID adopts two-mode AGN feedback: high accretion
+criterion for BH mergers. Following J. Bellovary et al. (2011)           mode (or thermal feedback) and low-accretion mode (or
+and M. Tremmel et al. (2017), we merge two BHs based on                  kinetic feedback). The low-accretion mode is activated at
+their separation and whether they are gravitationally bound:             z = 2.3 and is implemented for BHs with fEdd < χthr. The high-
+                                                                         accretion mode is applied to BHs with fEdd � χthr for z � 2.3,
+                         r        <2   g,                                and the entire BH population for z > 2.3.5 The Eddington
+                     1                                        (1 )       threshold χthr is dependent on the BH mass:
+                     2
+                             v2   < a·      r,
+                                                                                                                         2
+                                                                                                                 MBH
+where Δa, Δv, and Δr are the relative acceleration, velocity,                             thr = min 0.002                    , 0.05 ,              (4)
+                                                                                                                 Mcrit
+and position of the two BHs. εg = 1.5 h−1 ckpc is the
+gravitational softening length.                                          where Mcrit = 5 × 108 h−1 M⊙ is the critical mass for AGN
+   We ensure stability of the dynamical friction model
+                                                                         feedback.
+immediately after black hole seeding by adopting a BH mass
+                                                                            In the high accretion mode, 5% of the radiated energy
+tracer, the dynamical mass Mdyn. This is necessary, as the                 Ehigh = 0.05 MBH c 2 is thermally injected into the gas
+minimum BH seed mass is smaller than that of the stellar and
+                                                                         within twice the radius of the SPH smoothing kernel of the
+DM particles, and would otherwise experience significant
+                                                                         BH. The injection is done istropically, distributing energy
+artificial dynamical heating. Mdyn is used only for calculating
+                                                                         according to the SPH kernel weight. The low-accretion mode
+the gravitational force and the dynamical friction. We use the
+                                                                         is implemented following the prescription described by
+intrinsic BH mass MBH to account for BH accretion and AGN
+                                                                         R. Weinberger et al. (2017), albeit with a different set of
+feedback. When a new BH is seeded, we initialize the
+                                                                         parameters. The AGN feedback is deposited as
+corresponding Mdyn = 107 h−1 M⊙, which is 1.5 times the mass               Ehigh = f,kin MBH c 2 . The feedback efficiency εf,kin is scaled
+of DM particles. Mdyn is kept until MBH grows above Mdyn.
+                                                                         by the BH local gas density and has a maximum value capped
+After that, MBH is used to calculate the dynamical friction
+                                                                         at 0.05:
+force applied to the BHs. As shown by N. Chen et al. (2022b),
+this can effectively alleviate dynamical heating and stabilize
+                                                                                                                 BH
+the BH motion in the early growth phase.                                                  f,kin = min                       , 0.05 ,               ( 5)
+                                                                                                          0.05   SF,thres
+                         2.1.3. BH Accretion
+                                                                         where     SF,thres is the density threshold for star formation.
+   The BH accretion rate MBH is estimated using the Bondi–
+Hoyle formalism (H. Bondi & F. Hoyle 1944; T. Di Matteo                                    2.2. Identifying Bound Structures
+et al. 2005), which is based on the local properties of nearby
+gas particles:                                                              We identify halos using the friends-of-friends (FOF)
+                                                                         algorithm (M. Davis et al. 1985) with a linking length of 0.2
+          MB = 4              2
+                         G 2 MBH       (2   2
+                                   BH cs + vvel   ) 3/2 ,     ( 2)       times the mean particle separation. Each halo hosts at least 32
+                                                                         DM particles. Subsequently, we post-process these FOF
+                                                                         groups with the SUBFIND algorithm (V. Springel et al. 2001)
+where cs is the local sound speed, ρBH is the gas density around
+                                                                         to hierarchically identify the substructures. The halo samples
+the BH, and vvel is the velocity of the black hole relative to the       we study in this work are FOF halos, and the galaxies are the
+surrounding gas. The dimensionless boost α = 100 is adopted              SUBFIND substructures with nonzero stellar mass. In this work,
+to account for the underestimation of the accretion rate due to          we limit our galaxy population to those whose stellar mass
+the unresolved interstellar medium. Super-Eddington accretion            within twice the stellar half-mass–radius is larger than 108 M⊙.
+is allowed with an upper limit of twice the Eddington accretion          The halo size is characterized by R200c or R500c, which is
+rate MEdd . Therefore, the black hole accretion rate MBH is
+determined by MBH = min (MB, 2MEdd ).
+                                                                         5
+                                                                            When the high-accretion mode is activated at z = 2.3, only 543 MBHs are
+   In this work, we compute the AGN luminosity following the             found to be in the kinetic feedback regime. Among them, 127 have masses
+                                                                         MBH � 108 M⊙, which is <4% of the total MBHs population above this mass
+model of E. Churazov et al. (2005), which is also used by                threshold in ASTRID at the same redshift. This suggests that the low-accretion
+M. Habouzit et al. (2021, 2022) and R. Weinberger et al.                 mode plays a negligible role at z ≳ 2.3.
+
+                                                                     4
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                      Zhou et al.
+
+                      0                                  Shankar+2009
+                                                                                    and discrepancies exist between different works. We see that
+                                                                                    ASTRID predictions are in overall good agreement with the
+                      1                                  Ueda+2014                  observational results over the mass range MBH ≳ 107 M⊙. The
+log10 /[dex 1Mpc 3]
+                                                                                    mass function for MBHs with Lbol > 1041 erg s−1 is closer to
+                      2                                                             that from F. Shankar et al. (2009), probably because those
+                                                                                    detections are biased to bright BHs.
+                      3
+                                                                                                    3.2. AGN Luminosity Function
+                      4                                                                The left panel of Figure 3 shows the AGN bolometric
+                      5         All BHs
+                                                                                    luminosity, Lbol, as a function of MBH mass, MBH, illustrating
+                                                                                    the correlations between them at z = 0. The median Lbol is
+                                logLbol 41 erg/s                                    <10−3 LEdd, consistent with other cosmological simulations
+                      6         logfEdd 0.01                                        including Illustris, TNG, and Horizon-AGN (M. Habouzit
+                          5       6        7       8      9       10                et al. 2022). For MBH ≲ 108 M⊙, Lbol and MBH are positively
+                                       log10[MBH/M ]                                correlated. However, the luminosity significantly decreases for
+                                                                                    MBHs of MBH � 5 × 108 M⊙, which reflects the impact of
+Figure 2. The black hole mass function in ASTRID at z = 0. The black solid          AGN kinetic feedback. The transition from high-accretion
+curve includes all of the BHs. The orange and yellow solid curves show the          mode       to     low-accretion      mode      occurs      around
+contribution from the BH population with Lbol � 1041 erg s−1 and fEdd � 0.01,
+respectively. The blue solid and dashed lines show the observational
+                                                                                    MBH ∼ 5 × 108 M⊙ to 109 M⊙, as expected from Equation (4).
+constraints given by F. Shankar et al. (2009) and Y. Ueda et al. (2014).            In the right panel of Figure 3, we show the relation between
+                                                                                    the galaxy stellar mass M� and Lbol. Due to the tight correlation
+defined as the radius within which the mean enclosed mass                           between MBH and M�, Lbol scales with M� similarly to its
+density is 200 or 500 times the critical value ρc. We adopt the                     scaling with MBH. The brightest AGN come from galaxies
+spherical-overdensity mass M200c or M500c for the halo mass,                        with M� ∼ 1011−11.5 M⊙.
+i.e., the total mass enclosed within R200c or R500c. If a galaxy                       Figure 4 presents the distribution of Eddington ratios fEdd for
+resides at the potential minimum of a halo, we call it the                          three samples: small-mass BHs with MBH < 107 M⊙ (blue),
+central galaxy of this halo. All other galaxies within R200c are                    BHs with MBH = 107–109 M⊙ (yellow), and high-mass BHs
+defined as satellite galaxies.                                                      with MBH > 109 M⊙ (red). Each distribution is normalized by
+                                                                                    the total number of BHs in the corresponding sample. Most of
+                                                                                    these MBHs have small Eddington ratios: across the entire
+                                  3. MBH Populations                                mass range, only a very small fraction have fEdd > 10−2. For
+                                                                                    small-mass MBHs with MBH < 107 M⊙, the distribution of fEdd
+                              3.1. Black Hole Mass Function
+                                                                                    is relatively uniform. For BHs with 107 < MBH � 109 M⊙, fEdd
+   We start our analysis by presenting an overview of the MBH                       peaks at 3 × 10−3. The most-massive BHs (MBH > 109 M⊙)
+population in ASTRID. In Figure 2, we show the black hole                           exhibit a bimodal distribution in fEdd: in addition to a dominant
+mass function at z = 0. The black solid curve includes all BHs.                     peak at fEdd = 10−4, the minor, high-fEdd peak of fEdd is at
+The orange and yellow solid curves show the contribution                            10−2. This reflects the transition between the two modes of
+from the BH population with Lbol � 1041 erg s−1 and                                 AGN feedback models. We mark the χthr,1e9, the Eddington
+fEdd � 0.01, respectively. Within the box of side length                            threshold for the AGN kinetic feedback (see Equation (4))
+250 h−1 Mpc, the most-massive black hole has mass                                   evaluated at MBH = 109 h−1 M⊙, using the vertical gray line.
+2 × 1011 M⊙, and the smallest MBH seed mass is                                      This line shows where the BHs in the red distribution shift
+4 × 104 M⊙. Hence, ASTRID covers a BH mass range of                                 from the high-accretion mode to the low-accretion mode. The
+almost 7 orders of magnitude. There is a bump in the black                          minor peak coincides with χthr,1e9, which means the BHs
+curve around 109 M⊙, corresponding to the “critical mass”                           around this high-fEdd peak are those that recently triggered
+Mcrit for the kinetic feedback, marking the transition from                         kinetic feedback, while the surrounding gas has not yet been
+high-accretion mode to low-accretion mode. Below 109 M⊙,                            fully expelled. As more and more kinetic energy is released,
+the AGN feedback is dominated by the high-accretion mode,                           the local gas density decreases significantly, moving the BHs
+allowing for fast growth for small BHs. When the BHs reach                          in the fEdd distribution to the major, low-fEdd peak. The
+109 M⊙, the kinetic feedback mode turns on, and the BH                              distribution of strongly accreting MBHs with fEdd > 0.01
+growth is suppressed. As a result, the black holes pile up                          shows no clear dependence on mass. Compared to other
+around the critical mass 109 M⊙. The bump disappears when                           simulations (M. Habouzit et al. 2022), ASTRID has more-
+we apply the luminosity cut (Lbol � 1041 erg s−1), indicating                       massive BHs with high fEdd.
+these BHs have low-accretion rates. To show the contribution                           The AGN luminosity function quantifies the AGN space
+from active BHs, we plot the mass function from the BH                              density as a function of luminosity, and constrains a
+population with an Eddington ratio above 0.01. Across the                           combination of BH mass and accretion rate. In Figure 5 we
+entire mass range, these BHs constitute ≲10% of the total BH                        plot the hard X-ray (2–10 keV) AGN luminosity function in
+population. Hence, most of the BHs at z = 0 are inactive, as the                    ASTRID at z = 0.4 (left panel), z = 0.2 (middle panel), and
+gas at the galactic center has been depleted. We also plot the                      z = 0 (right panel). In each panel, the purple and blue regions
+observational constraints inferred by F. Shankar et al. (2009;                      show the observational results from X. Shen et al. (2020) and
+blue solid curve) and Y. Ueda et al. (2014; blue dashed curve)                      J. Buchner et al. (2015), respectively. The LX is calculated
+in Figure 2. We note there are large uncertainties in the                           based on the method described in Section 2.1.3. As the
+assumptions made to arrive at these observational inferences,                       radiative efficiency η ranges from 10% to 20% in different
+
+                                                                                5
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                               Zhou et al.
+
+
+
+
+Figure 3. Left panel: relation between BH bolometric luminosity Lbol and BH mass MBH at z = 0 in ASTRID. The underlying background shows a 2D distribution of
+Lbol–MBH. The blue solid line gives the median AGN luminosity for each MBH bin, and the shaded area depicts the 16th–84th percentiles. The orange dotted/dotted–
+dashed/dashed/solid lines mark the 100/10−1/10−2/10−3 × LEdd, respectively. Right panel: the relation between BH bolometric luminosity Lbol and the stellar mass
+of their host galaxies M�.
+
+                                                                                     bright AGNs with LX > 1045 erg s−1 for z � 0.4 in ASTRID
+                100
+                      z=0                                  thr, 1e9
+                                                                                     while some bright AGNs within this luminosity range are
+                                                                                     observed. M. Habouzit et al. (2022) found that the bright end
+               10 1                                                                  of the luminosity function is sensitive to AGN short timescale
+                                                                                     variability, which is not resolved in cosmological simulations.
+NBH/NBH, tot
+
+
+
+
+               10 2                                                                                 3.3. MBH–M� and MBH–σ Relation
+                                                                                        The strong relationship between central BHs and their host
+               10 3                                                                  galaxy properties, such as stellar mass, bulge mass, luminosity,
+                                                                                     and effective radius, point toward a close coevolution. In this
+                                                                                     section, we focus on the scaling relations between MBH and the
+               10 4      logMBH 7
+                         7 < logMBH 9
+                                                                                     galaxy stellar mass M� and the galaxy stellar 1D velocity
+                                                                                     dispersion σ.
+                         logMBH > 9                                                     In the left panel of Figure 6, we present the MBH–M�
+               10 5 6                                                                diagrams from ASTRID at z = 0. MBH is the mass of the most-
+                  10            10 4                 10 2                            massive BHs in each galaxy, and M� is measured for stars
+                                          fEdd                                       within twice the stellar half-mass–radius. The BH population
+                                                                                     in ASTRID exhibits a relatively tight correlation between MBH
+Figure 4. The Eddington ratio distributions for BH population in ASTRID at           and M�, and is in good agreement with the observations at the
+z = 0. We show the BH in three mass bins: BHs with mass MBH � 107 M⊙                 massive end (M� ≳ 1010 M⊙), with the median relation lying
+(blue), MBH = 107–109 M⊙ (yellow), and those with MBH > 109 M⊙ (red). The            within the fitted scaling relation for inactive and active
+three distributions are normalized to the BH number in the corresponding mass
+bin. The vertical line marks χthr (the Eddington threshold for the AGN kinetic       galaxies.
+feedback mode; see Equation (4)) for MBH = 109 h−1 M⊙. In both panels, we               Although the galaxy stellar mass is an easier quantity to
+only include the central BH, i.e., the most-massive BH, of each galaxy.              measure in observations, in reality the scaling relation of
+                                                                                     MBH–M� is less tight than the relation between MBH and the
+                                                                                     stellar velocity dispersion σ (J. Kormendy & L. C. Ho 2013).
+simulations (e.g., IllustrisTNG adopts η = 0.2), we show two
+                                                                                     C. Marsden et al. (2020) suggested that MBH–σ is a more
+sets of AGN luminosity functions assuming η = 0.1 (solid                             fundamental relation compared to those between BH and
+orange curves) and η = 0.2 (dashed orange curves). In Y. Ni                          galaxy mass, luminosity, or effective radius. In the right panel
+et al. (2024), the authors presented AGN luminosity functions                        of Figure 6, we plot the MBH–σ relation in ASTRID at z = 0. As
+with a higher amplitude. This is because they did not                                for the left panel, we include only the central MBH (i.e., the
+distinguish the radiatively inefficient AGN when estimating                          most-massive BH) in each galaxy, and the velocity dispersion
+the luminosity, and used Mc 2 for the entire BH population.                          is measured within twice the stellar half-mass–radius for each
+We find general good agreement between the ASTRID AGN                                galaxy. We found very similar results using σ measured from
+luminosity functions and those from observations for the                             all star particles within 30 kpc of the galactic center.
+luminosity range 1042 < LX < 1044 erg s−1, especially when                              The BH population in ASTRID exhibits an MBH–σ correlation
+we assume η = 0.2. AGN feedback prevents the existence of                            generally in agreement with the observations, especially for
+
+                                                                                 6
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                    Zhou et al.
+
+ log10 /[dex 1 Mpc 3]   1                  z = 0.4            1            z = 0.2                                1             z=0
+                        2                                     2                                                   2
+                        3                                     3                                                   3
+                        4                                     4                                                   4
+                        5    ASTRID, = 0.1                    5                                                   5
+                        6    ASTRID, = 0.2                    6                                                   6
+                             Shen+2020
+                        7    Buchner+2015                     7                                                   7
+                        8 40 41 42 43 44 45                   8 40 41 42 43 44 45                                 8 40 41 42 43 44 45
+                             log10(LX [erg/s])                           log10(LX [erg/s])                                   log10(LX [erg/s])
+Figure 5. AGN hard X-ray (2–10 keV) luminosity function in ASTRID at z = 0.4 (left panel), z = 0.2 (middle panel), and z = 0 (right panel). The orange solid line
+presents the results based on the radiative efficiency η = 0.1, and the orange dashed line corresponds to η = 0.2. In each panel, the purple region shows the
+observational constraints compiled by X. Shen et al. (2020), and the blue region is the observation from J. Buchner et al. (2015).
+
+
+
+
+Figure 6. The correlation between MBHs and their host galaxies at z = 0 in ASTRID. We include only the most-massive BHs in each galaxy. The left panel shows the
+relation between the MBH mass MBH and the galaxy stellar mass M�, and the right panel presents the correlation between galaxy central MBH mass MBH and stellar
+velocity dispersion σ. M� and σ are measured based using the stars within twice the stellar half-mass–radius. In both frames, the background shows the 2D
+distribution of galaxies in ASTRID, sharing the color bar on the right. The blue solid curve and the shaded area represent the median and the 16th–84th percentiles of
+the overall population. To guide the eye, we show some empirical scaling relations from the literature. For MBH–M�, we plot the scaling relations from
+N. J. McConnell & C.-P. Ma (2013; red shaded line), J. Kormendy & L. C. Ho (2013; purple dotted–dashed line), D. Baron & B. Ménard (2019; purple dotted line),
+the early-type galaxy sample (orange solid line), and the local broad-line AGN sample (red solid line) in A. E. Reines & M. Volonteri (2015). For MBH–σ, we include
+the fitted scaling relation from J. Kormendy & L. C. Ho (2013; orange solid line), N. J. McConnell & C.-P. Ma (2013; orange dashed line), I. Martín-Navarro et al.
+(2018; red dotted–dashed line), and D. Baron & B. Ménard (2019; red dotted line). The gray dashed contours represent the KDE estimate of the individual observed
+BHs (combined from A. E. Reines & M. Volonteri 2015; M. C. Bentz & E. Manne-Nicholas 2018; D. Baron & B. Ménard 2019 for MBH–M�, and from J. E. Greene
+& L. C. Ho 2006; T. Xiao et al. 2011; D. Baron & B. Ménard 2019 for MBH–σ), enclosing 97.5% of the observational sample. They visualize the observational
+scatter for MBH (not the dispersion between different fitted relations).
+
+massive BHs (MBH ≳ 109 M⊙). On the other hand, at the low-                            Illustris and TNG-100 made by Y. Li et al. (2020), as well as
+mass end, most BHs in ASTRID are overmassive when                                     observations. ASTRID produces an MBH–σ relation more
+compared to the empirical scaling relations. A similar but a                          consistent with the observational constraints than either Illustris
+more severe discrepancy is observed in Illustris and TNG-100,                         or TNG-100, although the MBH are still slightly overmassive.
+with Y. Li et al. (2020) claiming that this is due to the σ in                           In both BH–galaxy correlations shown in Figure 6, we
+simulations being smaller than that of realistic galaxies. This                       observe changes in the slope. For MBH ≲ 107.5 M⊙ and
+might come from insufficient numerical resolution, or be                              MBH ≳ 109 M⊙, the slope for both MBH–M� and MBH–σ
+related to the overestimation of galaxy sizes in Illustris and                        becomes flat. The transition at the high-mass end corresponds
+TNG (D. Xu et al. 2017; S. Genel et al. 2018). In Figure 7,                           to the feedback critical mass 109 M⊙. As discussed previously,
+we fit a linear function to the MBH–σ relation for the massive                        BH growth is suppressed after the low-accretion mode is
+galaxies with σ > 100 km s−1 in ASTRID: log MBH (M ) =                                turned on, and lags behind the evolution of galaxies, the latter
+4.15 log (km s 1) 0.73. We compare with the best fit for                              being quantified through the growth of M� and σ. Such a
+
+                                                                                  7
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                Zhou et al.
+
+                                                                                                     logLbol 43 erg/s
+                                                                                                     logLbol 42 erg/s
+                                                                                         1.0         logLbol 44 erg/s
+
+                                                                                         0.8
+                                                                                         0.6
+
+
+
+
+                                                                                   fAGN
+                                                                                         0.4
+                                                                                         0.2                                               logM       9M
+                                                                                                                                           logM       10 M
+                                                                                         0.0                                               logM       11 M
+                                                                                                0        1         2         3         4          5          6
+                                                                                                                            z
+                                                                                   Figure 8. The evolution of AGN fraction with Lbol � 1043 erg s−1 in galaxies
+                                                                                   with different mass cuts: M� � 1011 M⊙ (yellow solid), M� � 1010 M⊙ (orange
+Figure 7. The fitted linear relation of MBH–σ for massive galaxies with            solid), and M� � 109 M⊙ (red solid). For galaxies with M� � 109 M⊙ (red), we
+σ > 100 km s−1 in different simulations: Astrid (red line), Illustris (blue        plot the AGN fraction with Lbol � 1042 erg s−1 (red dotted) and
+dashed line), and TNG-100 (blue solid line). The gray dots are observed AGNs       Lbol � 1044 erg s−1 (red dashed). The shaded areas correspond to the 1σ
+from J. E. Greene & L. C. Ho (2006), T. Xiao et al. (2011), and D. Baron &         uncertainty from the sample variance. The gray error bars show existing
+B. Ménard (2019).                                                                  observational constraints compiled in Z. C. Marsan et al. (2017).
+
+
+transition has not been identified in the observational data,                      M� ∼ 1010.5–1011 M⊙. This region is not populated in many
+probably due to the lack of samples at the high-mass end (as                       simulations (M. Habouzit et al. 2021). This can be attributed to
+the gray contours in Figure 6 show), as well as the fact that the                  the fact that we do not implement the repositioning algorithm,
+BHs in the low-accretion mode generally have low luminosity.                       which makes some wandering black holes decay to the galactic
+The latter reason is supported by the mass function plotted in                     center too fast and so undergo too much efficient accretion.
+Figure 2: for the BH population with Lbol � 41 erg s−1, no                         Moreover, due to the adopted small MBH seed mass and the
+excess of BHs around MBH = 109 M⊙ appears. The flattening                          high resolution, there are some MBHs with MBH < 106 M⊙
+of the scaling relations for low-mass galaxies (with                               residing in galaxies with M� ≲ 109 M⊙. These correspond to
+σ < 96 km s−1 ) was also identified in observational data                          detected AGNs in local dwarf galaxies (A. E. Reines et al.
+(I. Martín-Navarro et al. 2018). In these small galaxies, a                        2013; V. F. Baldassare et al. 2015; M. Mezcua et al. 2016;
+larger fraction of BHs are not massive enough to reach the                         J. J. Han et al. 2025). The failure in ASTRID to create MBHs
+self-regulated regime. Their accretion rate is dominated by                        with MBH ≲ 108 M⊙ in galaxies with M� = 1011 ∼ 1011.5 M⊙
+their initial mass, while less sensitive to the local environment.                 might be because of the limited simulation volume. The BH
+This suggests the role of AGN feedback in regulating star                          seeding scheme being tightly dependent on halo mass may also
+formation becomes subdominant in low-σ galaxies.                                   contribute to the smaller scatter in the MBH–M� relation. In
+M. Habouzit et al. (2017) and M. Habouzit et al. (2021)                            addition, the lack of inclusion of some physical processes in
+highlighted that the strength of supernova feedback has a large                    the simulations may also shrink the scatter of the scaling
+impact in this mass range. Our results here imply that with the                    relations. For example, S. Bustamante & V. Springel (2019)
+next generation of X-ray missions covering larger and deeper                       showed that introducing a model for BH spin evolution and
+sky areas, the details of BH–galaxy correlations will reveal                       relating the AGN feedback efficiency to the BH spin would
+important information about AGN feedback and even the                              increase the scatter in the MBH–M� relations for the massive
+seeding mechanism.                                                                 galaxies.
+   The scatter in MBH–σ has been studied for a long time
+(K. Gebhardt et al. 2000; K. Gültekin et al. 2009), and it has                                  3.4. AGN Fraction and BH Occupation
+been shown that the scatter can be reproduced by introducing a                        In this section, we investigate the AGN fraction in ASTRID.
+third parameter related to the host galaxy (A. Marconi &                           Following M. Habouzit et al. (2022), we define the AGN
+L. K. Hunt 2003; A. W. Graham 2008), which indicates the                           fraction as the number of galaxies hosting at least one active
+coevolution of MBH and their host galaxies is a multi-                             BH divided by the number of galaxies hosting BHs. In
+dimensional correlation. By plotting the MBH–M� relations                          Figure 8 we plot the evolution of the AGN fraction in galaxies
+in Illustris, Horizon-AGN, EAGLE, TNG, and SIMBA,                                  with different mass cuts: M� � 1011 M⊙ (yellow solid),
+M. Habouzit et al. (2021) found that cosmological simulations                      M� � 1010 M⊙ (orange solid), and M� � 109 M⊙ (red solid).
+struggle to produce the diversity of BHs observed in                               We use a bolometric luminosity cut of Lbol � 1043 erg s−1 to
+galaxies in the local Universe. By comparing the MBH in                            identify the AGN, which roughly corresponds to the AGN
+ASTRID and the gray dashed contours plotted in Figure 6 that                       population that could be detected by current instruments
+represent the observational data, we can see that ASTRID                           (e.g., Chandra, XMM-Newton, and JWST). To show the
+reproduces most of the observed data shown by the gray                             influence of applying different luminosity cuts, we also
+contour, except for the MBHs close to the lower bound                              plot the AGN fraction with Lbol � 1042 erg s−1 (red dotted)
+for galaxies with M� ≳ 1011 M⊙. Notably, ASTRID includes                           and Lbol � 1044 erg s−1 (red dashed) for the galaxies with
+the small-mass MBHs (MBH ∼ 106−8 M⊙) in the galaxies with                          M� � 109 M⊙. The gray points with error bars are the existing
+
+                                                                               8
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                    Zhou et al.
+
+
+                      103     all BHs                                                                   1.0
+                              MBH > 106M
+
+
+
+
+                                                                                  Occupation Fraction
+ Occupation Number
+                      102     MBH > 108M                                                                0.8
+                              LX > 1036 erg/s                                                           0.6
+                      101
+                      100                                                                               0.4
+                     10 1                                                                               0.2
+                                                                                                                                       Miller+2015
+                     10 2                                                                               0.0
+                        108    109         1010 1011                       1012                           108        109      1010 1011                  1012
+                                          M [M ]                                                                             M [M ]
+Figure 9. Left panel: the averaged occupation number of BHs as a function of the galaxy stellar mass. The red lines include the entire BH population. The dashed
+lines represent the BHs above different mass thresholds of MBH � 106 M⊙ (orange) and MBH � 108 M⊙ (yellow). The purple dotted lines show the BH population
+with bolometric luminosity LX � 1036 erg s−1, corresponding to the luminosity limit of the sample in B. P. Miller et al. (2015). Right panel: the fraction of galaxies
+that at least host one BH in each stellar mass bin. Different BH populations are shown with the same color conventions as in the left panel. The gray shaded area
+represents the observational constraint from B. P. Miller et al. (2015).
+
+observational constraints compiled by Z. C. Marsan                                           by the same galaxy would merge quickly. Our results indicate
+et al. (2017).                                                                               that a large population of smaller MBHs exists in massive
+   Across all galaxy stellar mass bins, we find that the AGN                                 galaxies. There are about 20 wandering MBHs in galaxies with
+fraction is higher at high redshifts. This trend has been                                    M� = 1011 M⊙ on average, and over 1000 wandering MBHs in
+confirmed by observations (J. Aird et al. 2018). For galaxies                                galaxies with M� = 1012 M⊙. Most of these wandering MBHs
+with M� � 1011 M⊙, the fraction peaks at z = 3 and reaches 1.                                are seed MBHs with MBH � 106 M⊙. When a mass cut of
+For less-massive galaxies, the fraction is relatively stable for                             MBH > 106 M⊙ is applied, the averaged BH occupation
+3 < z < 5: fAGN ∼ 0.8 for galaxies with M� � 1010 M⊙, and                                    number is 4 for galaxies with M� = 1011 M⊙ and 82 for those
+fAGN ∼ 0.3 for galaxies with M� � 109 M⊙. For z < 3, the                                     with M� = 1012 M⊙.
+fraction goes through a sharp decline, especially for the bright                                The right panel plots the fraction of galaxies that host at
+AGNs         with     Lbol � 1044 erg s−1.    Fainter      AGNs                              least one MBH in each stellar mass bin. Almost all galaxies
+                   −1
+(Lbol ≲ 10 erg s ) present a smoother decline after the peak
+           42
+                                                                                             (98%) with M� > 109 M⊙ host BHs, and 95% of them host
+in fAGN. Massive galaxies in ASTRID have a larger fAGN, a                                    BHs with masses over 106 M⊙. For galaxies at M� = 108 M⊙,
+trend also found in observations (J. Aird et al. 2012; Z.-y. Man                             the BH occupation fraction drops to 95% for the entire BH
+et al. 2019). By z = 0, there are still 20% of galaxies with                                 population, and to 83% for those with MBH > 106 M⊙.
+M� � 1010 M⊙ that host an AGN with Lbol � 1043 erg s−1.                                      Multiple simulations find that MBH growth in low-mass
+While for galaxies above M� = 109 M⊙, this fraction is                                       galaxies with M� � 109 M⊙ is regulated or stunted by super-
+only 2%.                                                                                     nova feedback so that low-mass galaxies in general have a
+   There is compelling evidence that almost every massive                                    lower probability of hosting an MBH (Y. Dubois et al. 2015).
+galaxy in the local Universe contains an MBH at its center                                   About 87% of massive galaxies with M� � 1011 M⊙ host an
+(J. Kormendy & L. C. Ho 2013). In Figure 9, we present the                                   MBH over MBH = 108 M⊙ in mass. When we consider the
+BH occupation number as a function of the stellar mass in the                                luminosity threshold of LX > 1036 erg s−1, which is similar to
+host galaxy. The left panel shows the occupation number of                                   the limit of the observed AGN sample compiled in B. P. Miller
+BHs, with a variety of different mass cuts, as well as a                                     et al. (2015), the MBH occupation fraction (purple dotted
+luminosity threshold of LX = 1036 erg s−1, corresponding to                                  curve) is consistent with the constraints given by B. P. Miller
+the luminosity limit of the AGN sample compiled in                                           et al. (2015; gray shaded area).
+B. P. Miller et al. (2015). For galaxies with M� > 1010 M⊙,
+the occupation number increases sharply with stellar mass.
+This is consistent with A. Ricarte et al. (2021), who found that                                              3.5. BH Mass and Accretion Rate Density
+the wandering MBH occupation number scales with galaxy                                          The gas reservoir in the galaxy is believed to be the main
+mass as a power-law relation. When we limit our analysis to                                  source of both BH and galaxy mass growth. The partitioning of
+the     massive      MBHs      (MBH � 108 M⊙)       or     AGNs                              gas between fueling star formation versus BH accretion
+                  −1
+(LX � 10 erg s ), there is only one MBH for each galaxy
+          46
+                                                                                             determines the coevolution of MBH and their host galaxies.
+even for the most-massive galaxies. AGN feedback prevents                                    S. Dattathri et al. (2025) found that the interplay between the
+individual galaxies from hosting multiple massive or luminous                                BH accretion rate density (BHAD) and global star formation
+MBHs. Moreover, as pointed out by Y. Ni et al. (2022) and                                    rate density (SFRD) drives the evolution of the mean relation
+N. Chen et al. (2022a), massive MBHs have a shorter                                          of MBH–M�. In this section, we focus on the global
+hardening timescale and a larger merger rate compared to                                     evolutionary history of the BH mass density (BHMD) and
+seed MBHs, which means that multiple massive MBHs hosted                                     the BHAD over cosmic time, then compare them with the star
+
+                                                                                  9
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                         Zhou et al.
+
+                                                              Ueda+14                                                                Barchiesi+25         Ranalli+16
+                  106                                         Volonteri+16                                                           Yang+23
+                                                                                                                                     Vito+18
+                                                                                                                                                          Aird+15
+                                                                                                                                                          Ueda+14
+
+
+
+
+                                                                                   BHAD [M /yr Mpc3]
+                                                                                                       10 4
+ BHMD [M /Mpc3]
+                  105
+                  104                                                                                  10 5
+                  103                                                                                  10 6
+                             All BHs                                                                              All BHs
+                  102        MBH < 106 M                                                                          LX 1042 erg/s
+                             106 MBH < 108 M                                                                      fEdd 0.1
+                             MBH 108 M
+                                                                                                       10 7       0.01 fEdd < 0.1
+                  101
+                        0        2              4               6              8                        104 0         2              4               6              8
+
+
+
+
+                                                                                           SFRD/BHAD
+   SMD/BHMD
+
+
+
+
+                  103
+                  102                                                                                   103
+                        0        2              4               6              8                        102 0         2              4               6              8
+                                                z                                                                                    z
+Figure 10. Evolution of MBH Mass and accretion rate densities. Left panels: the top subpanel shows the evolution of the global MBH mass density (BHMD) as a
+function of redshift. The black curve includes all MBHs. The colored lines show the BHMD contributed by the MBHs in a given range of masses: red for
+MBH < 106 M⊙, orange for 106 � MBH � 108 M⊙, and yellow for MBH � 108 M⊙. We show the observational constraints from Y. Ueda et al. (2014; gray curve) and
+M. Volonteri & A. E. Reines (2016; gray shaded area). The bottom subpanel shows the ratio between the global stellar mass density (SMD) and BHMD. Right
+panels: the top subpanel shows the evolution of the MBH accretion rate density (BHAD) as a function of redshift. The colored dashed lines correspond to different
+MBH populations: red for MBHs with LX < 1042 erg s−1, orange for LX � 1042 erg s−1, and yellow curve represents the MBHs with high Eddington ratios
+( fEdd � 0.01). As indicated in the legend, the gray dots present the observational data from L. Barchiesi et al. (2025), G. Yang et al. (2023), and F. Vito et al. (2018).
+We also include the fitted relation from P. Ranalli et al. (2016), J. Aird et al. (2015), and Y. Ueda et al. (2014). The bottom subpanel shows the ratio of the cosmic
+star formation rate density (SFRD) to the BHAD.
+
+mass density (SMD) and SFRD. In the top-left panel of                                         maximum of 45% at z = 5, while for z < 1, it is negligible.
+Figure 10, we plot the global BHMD as a function of redshift.                                 Bright AGNs with LX � 1042 erg s−1 typically account for
+The gray curve is the observational constraints from Y. Ueda                                  30% ∼ 40% of the total BHAD at z < 5.
+et al. (2014) based on the X-ray AGN luminosity function. The                                    We include the observational constraints for BHAD in
+gray shaded area denotes the predicted range reported by                                      Figure 10: the gray dots present the data from L. Barchiesi
+M. Volonteri & A. E. Reines (2016), which is derived from the                                 et al. (2025), G. Yang et al. (2023), and F. Vito et al. (2018),
+galaxy mass function of A. Grazian et al. (2015) and relies on                                and the gray curves are the fitted relations from P. Ranalli et al.
+assumptions about the MBH–stellar mass relation. It can be                                    (2016), J. Aird et al. (2015), and Y. Ueda et al. (2014). These
+seen that the BHMD in ASTRID is well placed in the regime                                     observational data typically cover samples above
+indicated by the observations. At high redshift, z > 2, most of                               LX > 1042 erg s−1, while suffering from incompleteness at the
+the MBH mass is still from seed MBHs (MBH < 106 M⊙). For                                      lower-luminosity end. The BHAD in ASTRID contributed by
+z < 2, the MBH mass is dominated by larger objects. The                                       MBHs with LX � 1042 erg s−1 is in good agreement with the
+contributions from the BH population with MBH = 106−8 M⊙                                      observations at z � 2, while it is an overestimate by more than
+and from those with MBH � 108 M⊙ are similar: in the local                                    1 dex at z = 0. It has been noted in previous work that the
+Universe, the former consists of 49% of the total BH mass, and
+                                                                                              BHAD predictions made by simulations are in general higher
+the latter consists of 47%, about 1 order of magnitude larger
+                                                                                              than indicated by observations (F. Vito et al. 2018). However,
+than the BHMD from seed BHs. The bottom-left panel shows
+                                                                                              the BHAD in ASTRID at z = 0 is still ∼0.5 dex larger compared
+the ratio between the global SMD and BHMD. At high
+redshifts, the star formation process builds up galaxy mass                                   to other simulations such as Horizon-AGN (M. Volonteri &
+faster than BH formation and accretion, the ratio between                                     A. E. Reines 2016) and Illustris (D. Sijacki et al. 2015). This
+SMD and BHMD goes through a slow increase, and reaches a                                      implies that the AGN feedback in ASTRID is not sufficiently
+peak of ∼600 at z = 3, corresponding to “Cosmic Noon”                                         efficient.
+(P. Madau & M. Dickinson 2014). At z = 0, SMD/                                                   The bottom panel shows the ratio of the cosmic SFRD to the
+BHAD ∼ 250.                                                                                   global BHAD. The ratio goes through a slow decrease across
+   The top-right panel of Figure 10 shows the redshift                                        the redshift: changing from ≈4500 at z = 8 to ≈500 at z = 0.
+evolution of BHAD in ASTRID. For z ≳ 0.3, more than half                                      S. Dattathri et al. (2025) found that ASTRID has much more
+of the accretion is contributed by MBHs with moderate                                         minor redshift evolution in this ratio compared to TNG300.
+Eddington ratios 0.01 � fEdd < 0.1. It peaks at z ≈ 1.5 where                                 The SFRD/BHAD in ASTRID is small compared to results
+they supply ∼90% of the total, then declines to ∼30% by                                       from previous works: J. Kormendy & L. C. Ho (2013) found
+z = 0. The accretion from fast accretors with fEdd � 0.1 peaks                                5000 × BHAD fits well the observed SFRD contained by
+at z = 2.5, and its fraction among the total BHAD reaches its                                 A. M. Hopkins (2004), and F. Vito et al. (2018) adopted a ratio
+
+                                                                                   10
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                Zhou et al.
+
+
+
+
+Figure 11. Mock observations of six galaxy mergers present in the ASTRID simulation. The top row contains HST WFC3 mock observations with the red, green, and
+blue channels showing the F625W, F475W, and F390W filters, respectively. The bottom row shows James Webb Space Telescope (JWST) NIRCam mock
+observations with the F444W, F277W, and F115W filters as the red, green, and blue channels. The green crosses represent the black hole population hosted by these
+galaxies, whose sizes are scaled by MBH. The galaxy stellar mass is labeled at the top of each HST image with units of M⊙. The masses of their central MBHs are
+shown at the top of JWST images. In the right three images in the top row, we plot the black hole trajectory over the past 100 Myr for those with MBH � 105 M⊙
+(blue curves). These paths are plotted relative to one of the central black holes, which is indicated by a red cross.
+
+of 3000 to scale the SFRD in R. J. Bouwens et al. (2015),                           M. Donnari et al. 2019, Appendix A). Moreover, to bracket
+getting a density aligned with the observed BHAD.                                   the typical galaxy apertures used in observational surveys, we
+                                                                                    apply a fixed 3D aperture of 30 kpc when measuring the SFRs.
+                               4. Galaxies                                          We have tested a range of timescales (100 Myr, 50 Myr, and
+                                                                                    10 Myr) and aperture cuts (20 kpc and twice the half-mass–
+   In this section, we analyze the z = 0 galaxy population,
+                                                                                    radius) to define the galaxy’s SFR, and found that our results
+whose stellar mass within twice the stellar half-mass–radius is
+                                                                                    are robust to the specific choice of these parameters. In the first
+larger than 108 h−1 M⊙ in ASTRID. With its relatively low
+                                                                                    panel of Figure 12, we compare our simulated sSFR with
+particle mass, ASTRID is able to well resolve these galaxies, as
+                                                                                    observational constraints from prior literature. It can be seen
+each of them contains at least a few hundred stellar particles.
+                                                                                    that various observational data differ by up to 1 dex for a given
+Mock observations of a variety of these galaxies can be seen in
+                                                                                    galaxy mass bin. For galaxies with M� ≲ 1010.5 M⊙, ASTRID
+both Figures 1 and 11. The process of creating these mock
+                                                                                    predicts an sSFR in good agreement with observations.
+observations is detailed in Section 4.1.
+                                                                                    However, while observations show a rapid decline in sSFR
+                                                                                    around M� = 1010.5 M⊙, marking the transition to quiescence,
+                        4.1. Galaxy Properties
+                                                                                    ASTRID exhibits this drop only beyond M� = 10 M⊙, where
+                                                                                                                                       11
+
+   In Figure 12, we show the relation between galaxy stellar                        the AGN kinetic feedback takes effect. This discrepancy may
+mass and specific star formation rate (sSFR; top left), stellar                     indicate that the adopted threshold for AGN kinetic feedback,
+half-mass–radius (top right), stellar velocity dispersion (bot-                     i.e., the critical mass Mcric in Equation (4), was set too high.
+tom left), and metallicity (bottom right). The galaxy mass is                       Adopting a lower threshold Mcirc = 108 M⊙, TNG-100 gen-
+defined as the stellar mass enclosed within twice the stellar                       erates an sSFR turnover at 1010.5 M⊙ (M. Donnari et al. 2019).
+half-mass–radius. In each panel, the underlying 2D distribution                     Another noticeable feature in the ASTRID sSFR–M� relation
+is for the galaxy population in ASTRID at z = 0. Except for the                     appears at the high-mass end. For massive galaxies with
+top-right panel, we show the median value in each mass bin                          M� � 1012 M⊙, where observational data are lacking, the sSFR
+using an orange curve, with the shaded area indicating the                          stops falling and begins to rise. This trend can be attributed to
+16th–84th percentiles. We only plot the median for bins                             the frequent mergers experienced by these massive systems,
+hosting more than 10 galaxies.                                                      which can trigger significant star formation activities. This
+   Although many simulations report galaxies’ SFR based on                          interpretation is supported by Y. Zhou et al. (2025a), which
+the star-forming gas particles, this instantaneous SFR is not an                    shows sSFR–M� for galaxies hosting recent MBH mergers in
+observable. From an observational point of view, the galaxy’s                       ASTRID. The sSFR of these merger-host galaxies are higher
+SFR is typically inferred from the luminosity in specific bands.                    than the median sSFR for the overall galaxies we present here.
+Widely used star formation tracers span the full electromagnetic                       We further explore the quiescent fraction of galaxies.
+spectrum, including those from X-ray, ultraviolet (UV), and                         Following the definition adopted J. Schaye et al. (2015, 2023),
+radio wavelengths. They are sensitive to star formation history                     we classify galaxies at z = 0 as quiescent if their sSFR is
+over different characteristic timescales, ranging from 10 Myr                       smaller than 10−11 yr−1; galaxies above this threshold are
+(Hα-based) to 200 Myr (UV-based; R. C. Kennicutt &                                  considered star-forming. In observational studies, galaxies are
+N. J. Evans 2012). To make our results more comparable to                           divided into star-forming (late type) or quiescent (early type or
+observational values, we derive the galaxy’s SFR from the                           passive) populations using a variety of diagnostics: the color–
+amount of stellar mass formed over the last 200 Myr.                                color diagram (e.g., A. Muzzin et al. 2013), Sérsic index (e.g.,
+We choose 200 Myr, which is close to the upper limit                                R. Lange et al. 2015), or the concentration index (e.g., S. Shen
+of the timescale the observational SFR indicators can trace,                        et al. 2003). Replicating these diagnostics in simulations would
+to mitigate the resolution effects in the simulation (see                           require a more sophisticated dust attenuation model tailored to
+
+                                                                              11
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                          Zhou et al.
+
+
+
+
+Figure 12. The relation between galaxy stellar mass and specific star formation rate (sSFR; top left), stellar half-mass–radius (top right), stellar velocity dispersion
+(bottom left), and metallicity (bottom right). In each panel, the underlying distribution is for the galaxy population in ASTRID at z = 0. The x-axis represents the
+galaxy mass, defined as the stellar mass enclosed within twice the stellar half-mass–radius. Except for the bottom-right panel, we show the median value in each
+mass bin by the orange curve, with the shaded area indicating the 16th–84th percentiles. We only plot the median for bins hosting more than 10 galaxies. In the R1/2
+panel, we plot the median value for the star-forming (blue) and quiescent (red) galaxy populations separately. The sSFR is calculated within 30 kpc from the galactic
+center and averaged over the past 200 Myr. The stellar metallicity and the velocity dispersion are estimated based on the star particles within twice the stellar half-
+mass–radius, and the metallicity is normalized by solar metallicity Z� = 0.0127. As indicated in the legends, the simulation is compared with the observed sSFRs
+from S. Oliver et al. (2010), Y.-Y. Chang et al. (2015), J. S. Speagle et al. (2014), D. Elbaz et al. (2007), S. Salim et al. (2007), H. J. Zahid et al. (2012), A. E. Bauer
+et al. (2013), and J. Moustakas et al. (2013), and the stellar metallicity from E. N. Kirby et al. (2013), J. Woo et al. (2008), and A. Gallazzi et al. (2006). We compare
+to the fitted σ–M� relation from A. A. Dutton et al. (2011) and A. Gallazzi et al. (2006), and the galaxy size from R. Lange et al. (2015), A. van der Wel et al. (2014),
+A. A. Dutton et al. (2011), and S. Shen et al. (2003). The sSFR and stellar masses for Milky Way and Andromeda plotted in the first panel are from A. Tamm et al.
+(2012), S. Rahmani et al. (2016), and T. C. Licquia & J. A. Newman (2015).
+
+specific color bands, which is beyond the scope of this work.                            to the regime in the top-left panel of Figure 12, where ASTRID
+In Figure 13, we plot the quiescent fraction predicted by                                shows high sSFR compared to observations. At the high-mass
+ASTRID as a function of galaxy stellar mass at z = 0. Overall,                           end (M� > 1011.5 M⊙), the quiescent fraction begins to decline,
+the quiescent fraction increases with galaxy mass, consistent                            a trend that is validated by one of the observational works
+with the general observational trend. The upturn at                                      J. Moustakas et al. (2013). As mentioned before, this may be
+M� ≲ 1010 M⊙ is a resolution effect: as we rely on the newly                             attributed to the frequent mergers experienced by these
+formed stars over the past 200 Myr to estimate the galaxy’s                              massive galaxies.
+SFR, the finite particle mass imposes a lower limit on the                                  The top-right panel of Figure 12 presents the correlation
+resolvable SFR. This limitation also appears in the sSFR panel                           between the half-mass–radius R1/2 and the galaxy stellar mass.
+of Figure 12: no galaxies populate the bottom-left region of the                         We plot the median value for the star-forming (blue) and
+sSFR–M� plane. In the intermediate-mass range M� = 1010                                  quiescent (red) galaxy populations separately. For small
+−11
+    M⊙, the quiescent fraction in ASTRID is lower than                                   galaxies with M� < 5 × 1011 M⊙, the median R1/2 over the
+observations. The discrepancy is particularly pronounced                                 galaxy mass is flat for both star-forming and quiescent
+around 5 × 1010 M⊙, where ASTRID predicts approximately                                  galaxies, varying between 2 and 3 kpc. For M� > 5 ×
+10% quiescent fraction, while observational constraint is over                           1011 M⊙, R1/2 increases steeply, with log R1 / 2 1.1 log M .
+40% (J. R. Weaver et al. 2023). This mass range corresponds                              At M� ∼ 1010−11 M⊙, we observed a clear drop in R1/2 for
+
+                                                                                    12
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                  Zhou et al.
+
+
+                     1.0              ASTRID z = 0
+                                  Moustakas+13 (z 0.1)
+
+
+
+
+                                                                                      SFRD [M yr 1Mpc 3]
+Quiescent Fraction
+                                  Muzzin+13 (0.2 < z < 0.5)
+                     0.8          Weaver+23 (0.2 < z < 0.5)                                                10 1
+                     0.6
+                     0.4                                                                                   10 2
+                     0.2                                                                                                         Enia+22         Bouwens+12
+                                                                                                                    Astrid       Novak+17        Hopkins04
+                     0.0                                                                                   10 3
+                           108          109          1010     1011   1012                                         0 1 2 3 4 5 6 7 8
+                                              log M [M ]                                                                          z
+Figure 13. Quiescent fraction of galaxies as a function of the galaxy stellar         Figure 14. The evolution of cosmic star formation rate density (SFRD) as a
+mass. The blue curve shows the fraction of the quiescent galaxies in ASTRID at        function of redshift. We compare the SFRD in ASTRID (blue curve) with the
+z = 0. The quiescent galaxies are defined as those with the                           observational constraints compiled from A. Enia et al. (2022), M. Novak et al.
+sSFR < 10−11 yr−1. The data points show the observational results compiled            (2017), R. J. Bouwens et al. (2015), and A. M. Hopkins (2004).
+in J. Moustakas et al. (2013), A. Muzzin et al. (2013), and J. R. Weaver
+et al. (2023).                                                                        also include the observations compiled in A. Enia et al. (2022),
+                                                                                      M. Novak et al. (2017), R. J. Bouwens et al. (2015), and
+                                                                                      A. M. Hopkins (2004). At redshifts above z = 2, the SFRD in
+                                                                                      ASTRID is in good agreement with the observational
+quenched galaxies. Y. Ni et al. (2024) found similar results and                      constraints. However, at low redshift, the SFRD in the
+demonstrated that the central black holes in these galaxies lie                       real Universe is observed to drop rapidly. Compared to the
+above the MBH–M� relations. These massive MBHs are fueled                             peak of 0.1 M⊙ yr−1 Mpc−3 at z = 1, the SFRD at the local
+by intense gas inflows, resulting in a compact galaxy                                 Universe is 1 order of magnitude lower. In ASTRID, the
+morphology, and their AGN feedback simultaneously sup-                                SFRD drops relatively slowly. At z = 0, SRFD is about
+presses star formation. We also plot some results from                                3 × 10−2 M⊙ yr−1 Mpc−3. Such behavior is similar to the
+observations: R. Lange et al. (2015), A. van der Wel et al.                           evolution of BHAD shown in Figure 10 as the black hole
+(2014), A. A. Dutton et al. (2011), and S. Shen et al. (2003).                        accretion rate closely tracks the cosmic SFRD. Both of them
+Among them, S. Shen et al. (2003) classified star-forming/                            can be explained by the inefficient AGN feedback at low
+quiescent galaxies according to their concentration factor,                           redshifts.
+R. Lange et al. (2015) based their classification on the Sérsic                          In the left panel of Figure 15, we show the galaxy stellar
+index, and A. van der Wel et al. (2014) and A. A. Dutton et al.                       mass function (GSMF) at z = 0. The blue solid curve, red
+(2011) used color–color diagrams. The differences in these                            dashed line, and the orange dashed line account for the stellar
+identification methods and the criteria adopted in this work
+                                                                                      mass within twice the stellar half-mass–radius for all of the
+(i.e., solely based on the sSFR) are likely to cause some of the
+                                                                                      galaxies, central galaxies, and satellite galaxies, respectively.
+deviations seen in the plot. For a detailed discussion of various
+                                                                                      As mentioned in Y. Ni et al. (2024), some massive galaxies
+systematic factors involved in the comparison of R1/2–M�
+                                                                                      have a diffuse component caused by tidal stripping, so that the
+relations from observations to simulations, we refer readers to
+                                                                                      mass within R1/2star cannot properly account for the galaxy
+S. Genel et al. (2018).
+                                                                                      mass. Hence, to more closely mimic observational data, we
+   In the bottom panels of Figure 12, both the stellar metallicity
+and the velocity dispersion are estimated based on the star                           also present the results using a 3D spherical aperture of
+particles within twice the stellar half-mass–radius. For the                          30 ckpc h−1 applied to the central galaxies (yellow dotted–
+σ–M� correlation, we plot the fitted relation from A. A. Dutton                       dashed curve). The choice of aperture cut only affects galaxies
+et al. (2011) and A. Gallazzi et al. (2006). ASTRID generates                         at the high-mass end (M� ≳ 1012 M⊙). We compare to a
+a σ–M� correlation in remarkable agreement with the                                   compendium of observational data from S. P. Driver et al.
+observations.                                                                         (2022), A. Rodríguez-Puebla et al. (2017), R. D’Souza et al.
+   The stellar metallicity Z� shown in the bottom-right panel is                      (2015), M. Bernardi et al. (2013), and C. Li & S. D. M. White
+normalized by the solar metallicity Z� = 0.0127. Z� increases                         (2009), which is plotted using gray dots. Overall, ASTRID
+with the stellar mass and flattens off for M� > 1011 M⊙, as a                         satisfies the available observational constraints, especially the
+result of the suppressed star formation. Compared to the                              mass function based on the central galaxy within twice the
+observational results from the Sloan Digital Sky Survey                               stellar half-mass–radius. The galaxy abundance at the low-
+(SDSS) DR2 (A. Gallazzi et al. 2006), the galaxies in ASTRID                          mass end (M� < 109 M⊙) is regulated mainly by the stellar
+have a larger metallicity, while still residing in the regime of                      feedback. Hence, the consistency demonstrated here implies
+statistical error of the observational constraints.                                   that the SN wind feedback performs well in ASTRID. The
+                                                                                      observational samples exhibit a more pronounced “knee”
+                                                                                      around M� ∼ 1011, and ASTRID predicts a mass function up to
+                                 4.2. Galaxy Stellar Mass Function
+                                                                                      0.5 dex lower compared to the Galaxy and Mass Assembly
+  Figure 14 plots the global SFRD over cosmic time. In                                (GAMA) survey (S. P. Driver et al. 2022). Similar deficiencies
+addition to the evolution of SFRD in ASTRID (blue curve), we                          appear as early as z = 2 in ASTRID (Y. Ni et al. 2024) and are
+
+                                                                                 13
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                          Zhou et al.
+
+                              1                                                                                        1
+     log10 [dex 1 Mpc 3]                                                            z=0                                                                   z=0
+
+
+
+
+                                                                                                 log10 [dex 1 Mpc 3]
+                              2                                                                                        2
+                              3 Observations:
+                                  Driver+22                                                                            3
+                                        Rodriguez-Puebla+17
+                                        D'Souza+15
+                              4         Bernardi+13
+                                        Li&White09                                                                     4 Observations:
+                                                                                                                             Driver+2012
+                                                                                                                                Loveday+2012
+                                                   All Gal < 2R1/2 stars
+                              5                    Cen Gal < 2R1/2 stars                                               5          Intrinsic
+                                                   Cen Gal < 30kpc
+                                                   Sat Gal < 2R1/2 stars                                                          Dust Attenuated
+                              6                                                                                        6
+                                   8           9              10           11       12                                     12    14      16     18   20    22
+                                                      log10[M * /M ]                                                                           Mu
+Figure 15. Left panel: the z = 0 galaxy stellar mass function in ASTRID. The red, orange, and yellow solid curves account for the stellar mass within twice the stellar
+half-mass–radius for all of the galaxies, central galaxies, and satellite galaxies, respectively. The blue dashed line uses the stellar mass within 30 kpc for the entire
+galaxy population. We also show the observational constraints from S. P. Driver et al. (2022), A. Rodríguez-Puebla et al. (2017), R. D’Souza et al. (2015),
+M. Bernardi et al. (2013), and C. Li & S. D. M. White (2009) using the gray dots. Right panel: the galaxy luminosity function from z = 0 ASTRID observed at the
+SDSS u band. The blue curve represents the intrinsic magnitude, and the red curve incorporates the dust attenuation. Observations from J. Loveday et al. (2012) and
+S. P. Driver et al. (2012) are marked by gray circles.
+
+also generated by FABLE simulation suite (N. A. Henden et al.                                           SDSS u, g, and r bands (S. P. Driver et al. 2012; J. Loveday
+2018; L. Bigwood et al. 2025). This can be attributed to the                                            et al. 2012). The luminosity for an individual galaxy is
+high SFR of the galaxies in this mass range, as shown in the                                            computed by summing the emission of all of the star particles
+top-left panel of Figure 12. The larger SFR makes the galaxies                                          contained in this galaxy.
+grow faster; thus, fewer galaxies within this mass range are                                               The stellar luminosities calculated during this process are
+observed, while a higher number of massive galaxies are                                                 also used in the creation of the mock observations shown in
+produced.                                                                                               Figures 1 and 11 following the process described in
+                                                                                                        P. LaChance et al. (2025a). They are created by adding each
+                                   4.3. Galaxy Luminosity Function                                      star particle’s luminosity in a given filter to the mock
+   The galaxy luminosity function and galaxy colors are key                                             observation based on its position, and smoothing it with the
+observables that constrain models of star formation and stellar                                         SPH kernel according to its smoothing length. For the JWST
+evolution (G. Kauffmann et al. 2003; I. K. Baldry et al. 2006).                                         images, we use a pixel resolution of 0. 030 with the NIRCam
+In this section, we present the z = 0 luminosity function and                                           F444W, F277W, and F115W filters being the red, green, and
+SDSS g − r colors of galaxies in ASTRID, facilitating direct                                            blue channels, respectively. For the HST images, the Wide
+comparison with observations. We model each star particle as                                            Field Camera 3 (WFC3) F625W, F475W, and F390W filters
+a simple stellar population with its birth time, metallicity, and                                       are used for the three color channels, with a pixel resolution of
+the mass extracted from the simulation. We use the FSPS stellar                                         0. 040. All mock observations are made as though the galaxies
+population synthesis code (C. Conroy et al. 2009; C. Conroy &                                           are at a distance of z = 0.05.
+J. E. Gunn 2010) with the PARSEC isochrones (A. Bressan                                                    The impact of dust attenuation is most pronounced in the u
+et al. 2012), MILES stellar library (P. Sánchez-Blázquez et al.                                         band, and we show the galaxy luminosity function in
+2006), assuming a Chabrier initial mass function (G. Chabrier                                           this band in the right panel of Figure 15. After applying
+2003). We attenuate the stellar light based on the metals along                                         the dust attenuation, ASTRID produces a luminosity
+each star’s line of sight, with a wavelength dependence                                                 function in good agreement with the observational con-
+following a simple power-law relation with a slope of                                                   straints. The distribution of dust-attenuated galaxy color
+γ = −1.0 (S. M. Wilkins et al. 2017; P. LaChance et al.                                                 (SDSS g − r) is presented in Figure 16, and galaxies
+2025a). This is steeper than the Starburst curve (D. Calzetti                                           within different mass bins are plotted separately, as
+et al. 2000), but flatter than the Small Magellanic Cloud curve                                         indicated by the legend. It can be seen that ASTRID
+(Y. C. Pei 1992). The metal surface density (Σ(x, y, z)) is                                             successfully reproduces the galaxy color bimodality. At the
+calculated by creating a 3D metal density map from the gas                                              low-mass end (log M < 10), the color peaks around
+particles in the galaxy, and summing the column in front of                                             g − r = 0.3. With increasing stellar mass, galaxies become
+each star particle. This is used to determine the optical depth at                                      redder, and the peak of the distribution is located at
+a given wavelength via the equation
+                                                                                                        g − r = 0.65 for galaxies with 11.5 < log M < 12.0 M⊙. A
+                                                                                                        sharp transition occurs at a mass scale M� ≈ 1011 M⊙. This
+                           ISM (   )=        ISM     (x , y , z )               ,        (6 )           transition shifts to a higher mass compared to IllustrisTNG
+                                                                    0.55 µ m                            (at M� ≈ 1010 M⊙; D. Nelson et al. 2018) and Millen-
+                                                                                                        niumTNG (at M� ≈ 1010.5 M⊙; R. Pakmor et al. 2023). We
+κISM is a calibration parameter that we set to 103.0 by                                                 associate this with differences in the efficiency of the kinetic
+calibrating against observed galaxy luminosity functions in the                                         AGN feedback.
+
+                                                                                                14
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                 Zhou et al.
+
+                                                                  log M = 9.0-9.5                                 log M = 10.5-11.0
+                                                                  log M = 9.5-10.0                                log M = 11.0-11.5
+                                                                  log M = 10.0-10.5                               log M = 11.5-12.0
+
+                                                        6
+
+                                                        4
+
+                                                  PDF   2
+
+                                                        0
+                                                            0.0      0.2       0.4                        0.6         0.8       1.0
+                                                                                  g r
+Figure 16. The distribution of simulated SDSS g − r colors for galaxies in ASTRID at z = 0. Dust attenuation is implemented. We show the galaxies in different mass
+bins separately, as indicated by the legend.
+
+
+
+
+                              104                                      z=0                                                  logM      8
+                                                                                                                103         logM      9
+                                                                                       Halo Occupation Number
+                                                                       z=1
+        Halo Num ( > M200c)
+
+
+
+
+                                                                                                                            logM      10
+                              103                                                                                           logM      11
+                                                                                                                102
+                              102
+                                                                                                                101
+                              101
+
+                              100                                                                               100                           z=0
+                                1013              1014               1015                                                1013          1014   1015
+                                         Halo Mass M200c [M ]                                                            Halo Mass M200c [M ]
+Figure 17. Galaxy cluster and groups in ASTRID, i.e., halos with M200c � 1013 M⊙. Left panel: cumulative halo number above the given halo mass M200c at z = 0
+(blue) and z = 1 (cyan). Right panel: halo occupation number in ASTRID, i.e., average number of member galaxies within R200c as a function of halo mass. Different
+mass cuts are applied for the member galaxies: M� � 108 M⊙ (red), M� � 109 M⊙ (yellow), M� � 1010 M⊙ (cyan), and M� � 1011 M⊙ (blue). The shaded area covers
+the 16th–84th percentiles.
+
+
+                        5. Groups and Clusters of Galaxies                                    mass of M� = 1012.8 M⊙ measured within twice stellar half-
+  Due to its large simulation volume, ASTRID hosts a                                          mass–radius. Y. Zhou et al. (2025a) found that the most-
+population of massive galaxy clusters or groups                                               massive halo in ASTRID hosts a triple merger event involving
+(M200c � 1013 M⊙). In this section, we present their demo-                                    two consecutive MBH mergers occurring within a 500 Myr
+graphics and provide a census of their stellar mass content.                                  duration, and both of these two mergers are potential PTA CW
+                                                                                              sources with high detectability. This provides insights into the
+                                                                                              environments where CW sources will be observed, offering
+                                    5.1. Halo Mass Function                                   valuable guidance for the future search for their EM counter-
+   The left panel of Figure 17 gives the cumulative histogram                                 part. At z = 0, there are seven massive galaxy clusters, halos
+of halo number above a given mass at z = 0 (blue) as well as                                  with M200c > 1015 M⊙. There are 9709 galaxy groups, halos
+z = 1 (cyan). At z = 0, the most-massive halo has                                             with M200c � 1013 M⊙. At z = 1, the most-massive halo is
+M200c = 1.8 × 1015 M⊙ (M500c = 1.5 × 1015 M⊙), which is a                                     M200c = 7 × 1014 M⊙, and there are 3715 halos with
+Coma-like cluster, i.e., M200c ∼ 1.3–2 × 1015 M⊙ at z = 0.023                                 M200c > 1013 M⊙. The number of halos with M200c � 1014 M⊙
+(S. M. Weinmann et al. 2011). Its central galaxy has a stellar                                increases by 1 order of magnitude from z = 1 to z = 0. Based
+
+                                                                                  15
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                          Zhou et al.
+
+                      0.30         Central: < 30 kpc
+                                                                                        of 14%. The location of the SMHM peak is sensitive to details
+                                                                                        of the stellar and AGN feedback prescriptions, including the
+                                   Central: < 2 R1/2, star
+                      0.25
+Mstar /M200c ( b / m) 1
+                                   All Stars                                            adopted BH feedback efficiency, whether galactic winds are
+                                                                                        implemented isotropically/with metallicity dependence, or
+                             Observations:
+                      0.20       Rodriguez-Puebla+17
+                                                                                        whether a minimum wind velocity is imposed (A. Pillepich
+                                                                                        et al. 2018b; Y. Ni et al. 2023). Toward the low-mass end,
+                                 Kravstsov+17-cen
+                                 Kravstsov+17-tot                                       Mstar/M200c declines steeply: the star-forming efficiency
+                      0.15       Moster+17
+                                 Behroozi+13                                            halves      at     M200c = 1011 M⊙.       In    the      range
+                                 Obs Cluster-cen                                        1010.5 ≲ M200c ≲ 1011.5, ASTRID predicts a higher stellar
+                      0.10       Obs Cluster-tot
+                                                                                        conversion efficiency than typically inferred from observa-
+                                                                                        tions. At the high-mass end, the drop is more gradual, halving
+                      0.05                                                              at M200c ≈ 1013 M⊙. For the most-massive galaxy clusters with
+                                                                                        M200c > 1014 M⊙, ASTRID yields a stellar mass fraction in
+                      0.00      109 1010 1011 1012 1013 1014 1015
+                                                                                        good agreement with most observational constraints. For
+                                                                                        central galaxies, applying a fixed 30 kpc aperture produces
+                                         Halo Mass M200c [M ]                           measurements that are more consistent with observations than
+                                                                                        those based on twice the stellar half-mass–radius.
+Figure 18. The stellar mass–halo mass (SMHM) relation for halos in ASTRID
+at z = 0. The yellow and red curves are the median values based on the central
+galaxies’ stellar mass within fixed spherical apertures of 30 kpc, and twice the                           5.3. Stellar Mass Budget
+stellar half-mass–radius, respectively. The purple dashed line is the median
+value using all of the stars in the halos. The black solid, dashed, and dashed–            In this section, we present the stellar mass census of the
+dotted curves represent results from the abundance matching or semiempirical
+models from V. Rodriguez-Gomez et al. (2015), central galaxies in
+                                                                                        cluster components: central galaxies, satellite galaxies, and
+A. V. Kravtsov et al. (2018), and total stars in A. V. Kravtsov et al. (2018).          intracluster light (ICL). Following A. Pillepich et al. (2019),
+The black and green shaded areas are the 1σ region for B. P. Moster et al.              we define the ICL as the stellar mass beyond a fixed aperture
+(2018) and P. S. Behroozi et al. (2013). The gray stars and circles are                 from the center of the halo to a maximum boundary set by the
+observational data from A. V. Kravtsov et al. (2018).                                   virial radius (e.g., R200c or R500c), with the satellites and
+                                                                                        gravitationally unbound stars removed. In this work, we adopt
+on this, ASTRID provides a large sample of galaxy clusters or                           the fixed aperture boundary of 30 kpc.
+groups, maintaining good statistics at the high-mass end.                                  We focus on the FOF halos in ASTRID at z = 0 with
+   In the right panel of Figure 17, we plot the richness, or halo                       M500c � 1013 M⊙, which is similar to the observed galaxy
+occupation number, i.e., the number of galaxies above a given                           groups and clusters, and present their stellar mass budget in
+stellar mass threshold in an individual halo. Only galaxies                             Figure 19. In the top-left panel, we show the mass of all stars
+within R200c are counted. The galaxy richness is a steep                                within R500c as a function of the halo mass M500c. In the top-
+function of the total halo mass, whose slope is insensitive to                          right panel, we plot the mass of the central galaxy in each halo,
+the adopted galaxy mass threshold. Galaxies clusters with                               and compare to observational constraints. As can be seen in the
+M200c � 1015 M⊙ host about 30 massive galaxies                                          plot, both Mstar,tot–M500c and Mstar,cen–M500c correlations
+(M� � 1011 M⊙), and over 1000 galaxies with M� � 108 M⊙.                                generated by ASTRID are in good agreement with the
+Low-mass halos (M200c ∼ 1013 M⊙) have fewer than 20                                     observations, especially at the high-mass end, where most of
+member galaxies. Galaxies with M� � 1011 M⊙ can only be                                 the observational data are located.
+found in halos of M200c > 1013 M⊙.                                                         We show the total stellar mass of satellite galaxies within
+                                                                                        R500c in the bottom-left panel of Figure 19, compared to X-ray
+                                                                                        observations (A. V. Kravtsov et al. 2018). The stellar mass in
+                                   5.2. The SMHM Relation
+                                                                                        satellites is a much steeper function of the halo mass than in
+   In Figure 18, we show the stellar mass–halo mass (SMHM)                              central galaxies. For 1013 < M500c < 1015 M⊙, the increase in
+relation for halos in ASTRID at z = 0, parameterized by                                 the central galaxy stellar mass is ~1 order of magnitude, while
+Mstar /M200c ( b / m ) 1. The yellow and red curves use the                             for the satellite galaxies, their total stellar mass is boosted by
+central galaxies’ stellar mass within a fixed spherical aperture                        more than 2 orders of magnitude. For M500c ∼ 1013 M⊙, almost
+of 30 kpc and twice the stellar half-mass–radius, respectively.                         80% of the total stellar mass within an aperture of 30 kpc is
+We use different spherical apertures to account for the galaxy                          contributed by the central galaxies. At the high-mass end
+stellar mass to give a better comparison to the observational                           (M500c ≳ 1015 M⊙), the fraction of stellar mass from central
+data. The purple dashed line includes all of the stars in the                           galaxies drops below 20%, and 60% of the star mass is in the
+halos. We also show a variety of observational surveys. There                           satellite galaxies. This indicates that in the massive galaxy
+is limited consensus among observational results, as the                                clusters of ASTRID, the central galaxies are surrounded by
+measurement of Mstar/M200c for a halo is challenging, and                               many massive satellite galaxies. The less-massive galaxy
+these observations suffer from a lack of common calibration                             groups are relatively isolated, with the central galaxy
+and definition of halo mass.                                                            dominating the total stellar mass.
+   ASTRID produces a strongly peaked SMHM relation, in                                     In the bottom-right panel, we present the fraction of the total
+agreement with the observational constraints. It has been long                          stellar mass that contributes to the ICL as a function of M200c.
+recognized that the efficiency with which halos convert                                 We use M200c for the ICL fraction rather than M500c, like the
+baryons to stars peaks around M200c ∼ 1012 M⊙ and is reduced                            other three panels, to enable a direct comparison with the
+for higher-mass halos (C. Conroy & R. H. Wechsler 2009;                                 observational constraints compiled in R. Ragusa et al. (2023;
+A. Leauthaud et al. 2012). In ASTRID, the peak is at a slightly                         the gray circles in the figure). As can be seen, the ICL fraction
+lower mass: M200c = 1011.8 M⊙, with a conversion efficiency                             for ASTRID in the investigated mass range does not exhibit
+
+                                                                                   16
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                        Zhou et al.
+
+
+
+
+Figure 19. The stellar mass budget of galaxy groups and clusters. In each panel, the underlying distribution corresponds to the number density of the halos in ASTRID
+at z = 0. The four panels share the same color bars, which are shown on the right. The red curve represents the median value for the halos in the given mass bin. The
+seven most-massive halos with M200c � 1015 M⊙ are highlighted by the red dots. Top-left panel: the total stellar mass in the halo (including central galaxies, satellite
+galaxies, and ICL) within R500c as a function of the halo mass M500c. As indicated by the legend, we include the observational constraints from D. Akino et al. (2022),
+J. M. Budzynski et al. (2014), I. Chiu et al. (2018), A. V. Kravtsov et al. (2018), and A. H. Gonzalez et al. (2013). Top-right panel: the star mass in the central
+galaxies vs. the M500c. The central stellar mass is measured within 30 kpc from the galactic center. To guide the eye, we show the observational data from D. Akino
+et al. (2022), A. V. Kravtsov et al. (2018), and I. Chiu et al. (2018). Bottom-left panel: the cumulative stellar mass in satellites within R500c. The gray shaded area is
+the observational result from A. V. Kravtsov et al. (2018). Bottom-right panel: the stellar mass fraction in the ICL as a function of M200c. Note that we use M200c for
+this panel rather than M500c, like the other three subplots, to enable a direct comparison with the observational constraints compiled in R. Ragusa et al. (2023; the
+gray circles). This includes the observed galaxy clusters or groups with z < 0.05 (R. A. Pildis et al. 1995; C. Da Rocha & C. Mendes de Oliveira 2005; C. Da Rocha
+et al. 2008; J. C. Mihos et al. 2017; Y. Jiménez-Teja et al. 2019; M. Kluge et al. 2021; M. Montes et al. 2021; D. Poliakov et al. 2021; R. Ragusa et al. 2021). The
+black dashed curve is the best fit provided in R. Ragusa et al. (2023) based on this dataset.
+
+significant evolution, and there is only a minor increase of a                                            6. Matter and Galaxy Clustering
+factor of 2 from M200c = 1013 M⊙ to 1015 M⊙. The evolution of
+                                                                                           With a large simulation box of 250 h−1 Mpc per side,
+the ICL fraction in the observational data is even less obvious,
+                                                                                        ASTRID has sufficient volume to make a precise prediction for
+as the best fit from R. Ragusa et al. (2023) changes by <0.05
+                                                                                        clustering on cosmologically relevant scales. In this section,
+over this mass range.
+                                                                                        we investigate the matter clustering and bias of different
+   The correlations of all components (central galaxies,
+                                                                                        tracers in ASTRID. We will further study the baryonic effects
+satellite galaxies, ICL, and total stellar mass) with the halo
+                                                                                        on matter clustering in future work, using a dark-matter-only
+mass are well described by power-law relations. To facilitate
+                                                                                        counterpart to ASTRID.
+future comparisons, we fit the relation between different stellar
+components with M500c with log M = A log M500c + B , and
+                                                                                                                6.1. Scale-dependent Bias
+provide the optimal parameter set A, B and the corresponding
+scatter in Table 1. Based on the slopes of these power laws, we                            In Figure 20, we present the clustering bias
+can see that the stellar mass of central galaxies evolves                               b (k ) = [Ptracer (k )/ Pmatter (k )]1 / 2 as a function of wavenumber
+relatively slowly as a function of M500c, while the stellar mass                        k. Observers rely on different observational tracers to study the
+bound to satellites and the ICL mass is a steeper function of the                       large-scale structure of our Universe. These tracers are
+halo mass.                                                                              identified in different surveys according to various criteria.
+
+                                                                                   17
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                 Zhou et al.
+
+
+
+
+Figure 20. Scale-dependent bias for mass and SFR-selected tracers. Top-left panel: halos selected by M200; top-right panel: black holes by MBH; bottom-left panel:
+galaxies by stellar mass M�; and bottom-right panel: galaxies by SFR. The top x-axis indicates real space distance r = 2π/k, and the horizontal gray line shows
+b(k) = 1.
+
+                                                                           Table 1
+                Best-fitting Parameters to the Relation between Stellar Components and Halo Mass for Groups and Clusters in ASTRID at z = 0
+
+Y                          X                        3D Apertures                           a                                  b                            Scatter
+Mstar,all                  M500c                      <R500c                        0.793 ± 0.002                       1.010 ± 0.033                      0.079
+Mstar,cen                  M500c                     >30 kpc                        0.437 ± 0.004                       5.538 ± 0.053                      0.127
+Mstar,cen                  M500c                     >100 kpc                       0.527 ± 0.004                       4.390 ± 0.051                      0.123
+Mstar,cen                  M500c                   >2R1/2 stars                     0.678 ± 0.003                       2.348 ± 0.044                      0.106
+Mstar,sat                  M500c                   30 kpc–R500c                     1.273 ± 0.010                      −6.089 ± 0.133                      0.319
+Mstar,sat                  M500c                   100 kpc–R500c                    1.362 ± 0.011                      −7.362 ± 0.143                      0.343
+Mstar,ICL                  M200c                   30 kpc–R200c                     1.276 ± 0.005                      −6.435 ± 0.068                      0.162
+Mstar,ICL                  M200c                   100 kpc–R200c                    1.632 ± 0.005                     −11.729 ± 0.068                      0.163
+
+Note. The adopted fitting function is log10 Y = a log10 X + b . The third column is the 3D aperture applied on the stellar components (the first column). The last
+column is the standard deviation of the residuals.
+
+
+To examine the influence of sample selection criteria, we                           selection. In each panel, the curves with colors from blue to
+investigate four types of tracers: halos selected by M200 (top                      red correspond to tracers with a lower mass/SFR cut (higher
+left), MBHs selected by their mass (top right), galaxies                            abundance) to a higher mass/SFR cut (lower abundance). For
+selected by M� (bottom left), and galaxies selected by SFR                          the halo samples, the bias decreases sharply with k on small
+(bottom right), here used as a proxy for rest-frame UV                              scales (k > 0.3 h Mpc−1), especially for the massive halos. The
+
+                                                                               18
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                  Zhou et al.
+
+                                         r [Mpc/h]
+                        500    100           10          1         0.2
+                  104                                    z=0
+P(k) [h 3Mpc3]
+
+                  103
+                  102
+                  101
+                              BH (MBH 108 M /h)
+                  100         Gal (M 5 × 1010 M /h)
+                              all matter
+                 10 1         linear theory
+                    10 2         10 1          100         101
+                                      k [h Mpc 1]
+Figure 21. Matter power spectra for BHs with MBH � 108 h−1M⊙(blue),
+galaxies with M� � 5 × 1010 h−1M⊙(red), and all matter (black) in ASTRID at        Figure 22. Large-scale (constant or linear) bias measured at k = 0.1 h−1 Mpc
+z = 0. The gray line shows the z = 0 matter power spectrum predicted by            as a function of tracer space number density n. We show the bias of galaxies
+linear perturbation theory.                                                        selected by stellar mass (yellow), black holes selected by black hole mass
+                                                                                   (purple), galaxies selected by SFR (red), and halos selected by M200 (blue).
+                                                                                   The BH sample with the largest abundance (the leftmost purple point)
+bias of BHs increases monotonically with k across the entire                       corresponds to the entire population. The horizontal gray line indicates the unit
+mass range. This trend is also observed for the M�-selected                        level. Note that we invert the x-axis: rarer samples are to the right.
+galaxy samples, except for the small-mass population with
+M� < 1010 M⊙. For the SFR-selected galaxies, there is a                            n = 3 × 10−4 h3 Mpc−3 and b = 1.6. The galaxy population
+suppression of bias at intermediate scales (k ≈ 1 h Mpc−1),                        selected by SFR has a much lower bias, and crosses b = 1 at
+followed by a strong rise toward small scales.                                     n ≈ 2 × 10−3 h3 Mpc−3. For M�-selected galaxies and BHs, the
+   The bias of BHs with MBH � 108 M⊙ and galaxies with                             bias becomes negative at higher n: n = 0.02 h3 Mpc−3 and
+M� � 1010.5 M⊙, stays above 1 and is quite stable for                              n = 0.006 h3 Mpc−3, respectively. Among these tracers, halos
+k < 1 h Mpc−1, which indicates they are good tracers of                            and black holes have the largest dependence on the number
+large-scale structure. In Figure 21, we plot their power spectra.                  density. The galaxies selected using SFR show the weakest
+We apply the mass cut of MBH � 108 M⊙h−1 for BHs and                               variation of bias with number density. Similar results were also
+M� � 5 × 1010 M⊙h−1 for galaxies. For both BHs and galaxies,                       found in V. Springel et al. (2018). This comes from the fact
+this corresponds to a number density of ≈2 × 10−3 h3 Mpc3.                         that high-SFR galaxies do not tend to populate the most-
+As a reference, the typical galaxy space number densities                          massive halos, as most of the massive halos are quenched
+observed by existing surveys vary between 3 × 10−4 to                              by z = 0.
+5 × 10−3 h3 Mpc−3 (L. J. Liivamägi et al. 2012; S. Yuan
+et al. 2021; M. Vakili et al. 2023; R. Zhou et al. 2023). For
+comparison, we also plot the total matter power spectrum in                                      6.2. The Clustering of Wandering MBH
+ASTRID (black) and that predicted by linear perturbation theory                       We further explore the extent to which MBHs trace large-
+(gray). For the all-matter spectrum, the slope changes around                      scale structure based on the large MBH population in ASTRID.
+k = 2 h Mpc−1. On smaller scales, the spectrum is dominated                        In the right panel of Figure 23, we present the trajectory of all
+by the particle pairs within the same halo (“one-halo term”),                      MBHs in a slice of 125 × 250 × 25 h−3 Mpc3 at z = 0. We
+and for larger scales (smaller k), the clustering mainly comes                     trace the MBHs from z = 15 to z = 0. The DM density field of
+from the pairs in different halos (“two-halo term”; A. Cooray                      the same slice is plotted in the left panel. The comparison
+& R. Sheth 2002). The effects of nonlinear evolution of the                        between the MBH trajectory and the DM density shows that
+power spectrum are clearly visible for k > 0.1 h Mpc−1. With                       MBHs, especially those with high mass, trace the large-scale
+the adopted mass cut, the BH and galaxy populations have                           structure closely. In the inset of the right panel, we zoom into a
+similar power spectra across all scales, staying higher than the                   10 Mpc h−1 cube to show the trajectories in more detail,
+all-matter spectrum. As we found in Figure 20, their bias is                       allowing us to view those of smaller MBHs more easily. The
+stable for the “two-halo” regime (k < 2 h Mpc−1), while                            zoomed-in region includes two massive halos, which have a
+increasing significantly on smaller scales.                                        mass of M200 of 1014.9 (upper) and 1014.9 M⊙ (lower),
+   In Figure 22, we present the large-scale bias measured at                       respectively. We mark the halo center positions using white
+k = 0.1h Mpc−1 for different tracers. To allow for a direct                        crosses, and show their R200 using white circles. The largest
+comparison between these objects, we consider samples with                         MBHs move along the dense filament and end up close to the
+different space densities n. It can be seen in Figure 22 that                      halo center. The tracks of the smaller MBHs are generally
+tracers with the same number density but of different types can                    more diffuse and space-filling, appearing throughout the low-
+exhibit substantially different biases. For the n range achieved                   density region (even the lower central region of the small
+by current surveys (n ≲ 5 × 103 h3 Mpc−3), galaxies selected                       inset). We notice that a dense cloud of trajectories from low-
+by M� have the highest clustering, followed by BHs selected                        mass MBHs surrounds the few most-massive black holes in
+by MBH. The highest bias comes from the rarest samples:                            these two halos.
+
+                                                                              19
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                  Zhou et al.
+
+
+
+
+Figure 23. Black hole tracks in ASTRID compared with the large-scale structures. Left panel: the DM density field in a slice of 125 × 250 × 25 h−3 Mpc3 at z = 0.
+Right panel: the trajectories of all black holes in the same slice plotted on the right. We trace the MBHs from z = 15 to z = 0. The orbits are colored by MBH mass,
+with the yellow regions corresponding to the massive MBHs. The small inset shows the MBH trajectory in a zoomed-in 10 Mpc h−1 box. We change the color bar to
+highlight the smaller MBHs. The two circles mark the R200 of the most-massive halos in this region, which have log M200 of 14.7 and 14.9, respectively. The white
+crosses are the positions of the halo centers.
+
+   A remarkable feature presented in Figure 22 is that the                           structure to some degree. To explain this, in Figure 24, we
+relation between the large-scale bias and the tracer density is                      investigate the BH population hosted by halos with different
+not monotonic for BHs. Below n = 0.1 h3 Mpc−3, the bias rises                        masses. We plot the MBH and the mass of their host halo for
+steadily toward rarer samples. While for n > 0.1 h3 Mpc−3, the                       individual BHs, colored by the BH number. The red contour
+bias for high-density tracers increases. The BH bias is below 1                      shows the regime of the central BHs of halos, which
+at 0.5 < n < 0.01 h3 Mpc−3. However, when we include the                             demonstrates that the mass of central BHs increases with the
+entire population (the leftmost purple point), the bias goes up                      mass of their host halos. Outside the regime occupied by these
+to 1.2. This indicates the seed MBHs reflect the large-scale                         central BHs, there is a large group of wandering BHs in the
+
+                                                                                20
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                         Zhou et al.
+
+                                                                                           In this work, we present z = 0 results of ASTRID simulation,
+                                                                                        spanning the MBH population, galaxy, galaxy groups and
+                                                                                        clusters, and matter clustering on large scales. Our main results
+                                                                                        are summarized as follows:
+                                                                                          1. The black hole mass function in ASTRID at z = 0 matches
+                                                                                             the observational data for MBH � 107 M⊙. There is an
+                                                                                             excess of small-mass black holes with MBH < 107 M⊙,
+                                                                                             which could be due to an overabundance of seed BHs.
+                                                                                             The AGN hard X-ray luminosity function (2–10 keV) is
+                                                                                             generally consistent with observational constraints for
+                                                                                             LX = 1042−45 erg s−1 when we assume a radiative
+                                                                                             efficiency ranging from 0.1 < η < 0.2.
+                                                                                          2. ASTRID successfully captures the coevolution of MBHs
+                                                                                             and their host galaxies, generating MBH–M� and MBH–σ
+                                                                                             relations in good agreement with observational con-
+                                                                                             straints. Remarkably, the scatter in both scaling relations
+                                                                                             is comparable to that in the observed population at
+                                                                                             M� < 1011 M⊙. In particular, ASTRID reproduces the
+Figure 24. The relation between the black hole mass MBH and the mass of
+their host halos. The red contour represents the 3σ regions of halo central BHs.
+                                                                                             small-mass black holes (MBH = 106−8 M⊙) in galaxies
+                                                                                             with M� = 1010.5−11 M⊙. This regime is not well
+                                                                                             reproduced in many simulations, which indicates ASTRID
+massive halos, which have a mass of MBH ≲ 106 M⊙ located in
+                                                                                             generates better MBH diversity. This can be attributed to
+the halo of Mhalo > 1012 M⊙. These wandering BHs are
+                                                                                             the fact that we do not implement a black hole
+populated in the massive halos, boosting the BH bias.
+                                                                                             repositioning algorithm, but instead allow black holes
+Similarly, compared to low-mass halos, the massive halos
+                                                                                             to merge more naturally with dynamical friction.
+host a large population of small-mass satellite galaxies, which
+                                                                                          3. The galaxy stellar mass function at z = 0 generally aligns
+is supported by Figure 17. This explains why the galaxy bias
+                                                                                             well with observational data, especially when we only
+increases at the high-abundance end (low-mass cut) in
+                                                                                             include the central galaxies with a fixed 3D aperture of
+Figure 22. A caveat is that our results presented here are
+                                                                                             30 kpc. However, near the “knee” M� ∼ 1011 M⊙,
+partly determined by our BH seeding prescription, for which
+                                                                                             ASTRID underpredicts the galaxy number density by up
+we seed BHs in halos above Mhalo,FOF > 5 × 109 h−1M⊙. This
+                                                                                             to 0.5 dex relative to the GAMA survey. This deficiency
+also implies the possibility that the clustering of wandering
+                                                                                             likely reflects an overly high critical mass adopted for the
+BHs can be used to test the BH seeding model.
+                                                                                             kinetic AGN feedback as galaxies in the same mass
+   Current and upcoming GW detectors, such as LISA and
+PTA, will detect catalogs of MBH binaries. The clustering of                                 range have a high sSFR compared to the observations.
+these sources, even if small in number, can be inferred from                                 After applying dust attenuation, the z = 0 galaxy
+their cross-correlation with the galaxy population in large                                  luminosity function from ASTRID agrees well with
+surveys and used to constrain the population of MBHs and                                     observational constraints, and the SDSS g − r color
+cosmology over a wide redshift range (e.g., M. Bosi et al.                                   distribution exhibits the red-blue bimodality. We also
+2023). The relatively high bias of the wandering MBH                                         present the distribution of galaxy sSFR, stellar half-
+population we have seen in Astrid will be highly relevant to                                 mass–radius, stellar velocity dispersion, and stellar
+these future analyses.                                                                       metallicity. All of them exhibit a correlation with galaxy
+                                                                                             mass broadly consistent with available observations.
+                                                                                          4. Due to its large simulation volume, ASTRID hosts a
+                                                                                             large population of massive galaxy groups and clusters. At
+                              7. Conclusion
+                                                                                             z = 0, the most-massive halo is a Coma-like cluster,
+   With a simulation box of 250 h−1 Mpc per side and                                         having a mass of M200c = 1.8 × 1015 M⊙ (M500c =
+2 × 55003 particles, ASTRID is one of the largest cosmological                               1.5 × 1015 M⊙). There are 9709 halos with M200c >
+hydrodynamic simulations in terms of particle numbers that                                   1013 M⊙, and seven of them have a mass over
+have yet reached z = 0. The unique combination of large                                      M200c = 1015 M⊙. We quantify the stellar mass content
+volume and high resolution enables detailed studies of galaxy                                in these halos, including the central galaxies, satellite
+and MBH evolution, while capturing rare, high-mass systems                                   galaxies, and ICL, and find that their correlations with
+in a statistically representative volume. ASTRID includes                                    halo mass are in good agreement with observational
+MBHs in a mass range spanning nearly 7 orders of magnitude,                                  constraints. To facilitate future comparisons, we provide
+and records over 3 million MBH mergers, encompassing the                                     the fitted power-law relations between different stellar
+GW sources targeted by LISA and PTA experiments. The                                         components and the halo mass.
+inclusion of a dynamical friction subgrid model provides an                               5. We present the power spectra for the black hole and the
+improved description of MBH dynamics than earlier large                                      galaxy spatial distributions at z = 0, as well as their
+simulations, and provides realistic MBH velocities and                                       scale-dependent bias. We then examine the influence of
+trajectories, improving the predictions for merger environ-                                  sample selection criteria by studying the bias for four
+ments and event rates. All of these advantages make ASTRID a                                 types of tracers: halos selected by M200, BH selected by
+powerful tool for investigating MBHs and their mergers in a                                  MBH, galaxies selected by M�, and galaxies selected by
+fully cosmological context.                                                                  SFR (used as a proxy for rest-frame UV). Among the
+
+                                                                                   21
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                   Zhou et al.
+
+      tracers that we investigate, M�-selected galaxies and                          Bird, S., Ni, Y., Di Matteo, T., et al. 2022, MNRAS, 512, 3703
+      MBHs have the largest bias at a given number density.                          Bondi, H., & Hoyle, F. 1944, MNRAS, 104, 273
+      SFR-selected galaxies are less clustered compared to the                       Bosi, M., Bellomo, N., & Raccanelli, A. 2023, JCAP, 2023, 086
+                                                                                     Bouwens, R. J., Illingworth, G. D., Oesch, P. A., et al. 2015, ApJ, 803, 34
+      M�-selected galaxies. We find that MBHs with                                   Bressan, A., Marigo, P., Girardi, L., et al. 2012, MNRAS, 427, 127
+      MBH � 108 M⊙ and galaxies with M� � 1010.5 M⊙ are                              Buchner, J., Georgakakis, A., Nandra, K., et al. 2015, ApJ, 802, 89
+      good tracers of large-scale structure, as they both have a                     Budzynski, J. M., Koposov, S. E., McCarthy, I. G., & Belokurov, V. 2014,
+      large bias, and the bias remains scale-independent for                            MNRAS, 437, 1362
+      k < 2 h Mpc−1.
+                                                                                     Burke-Spolaor, S., Taylor, S. R., Charisi, M., et al. 2019, A&ARv, 27, 5
+                                                                                     Bustamante, S., & Springel, V. 2019, MNRAS, 490, 4133
+                                                                                     Calzetti, D., Armus, L., Bohlin, R. C., et al. 2000, ApJ, 533, 682
+                                                                                     Chabrier, G. 2003, PASP, 115, 763
+                          Acknowledgments                                            Chang, Y.-Y., van der Wel, A., da Cunha, E., & Rix, H.-W. 2015, ApJS,
+                                                                                        219, 8
+  Y.Z. acknowledges helpful discussions with TianQing                                Chen, N., Di Matteo, T., Ni, Y., et al. 2023, MNRAS, 522, 1895
+Zhang, Lei Hu, and Zhiwei Shao. Y.Z. and T.D.M. acknowl-                             Chen, N., Di Matteo, T., Zhou, Y., et al. 2025, ApJL, 991, L19
+edge the support from the NASA FINESST grant                                         Chen, N., Ni, Y., Holgado, A. M., et al. 2022a, MNRAS, 514, 2220
+NNH24ZDA001N. T.D.M. acknowledges funding from                                       Chen, N., Ni, Y., Tremmel, M., et al. 2022b, MNRAS, 510, 531
+                                                                                     Chiu, I., Mohr, J. J., McDonald, M., et al. 2018, MNRAS, 478, 3072
+NASA ATP 80NSSC20K0519, NSF PHY-2020295, NASA                                        Churazov, E., Sazonov, S., Sunyaev, R., et al. 2005, MNRAS, 363, L91
+ATP NNX17AK56G, and NASA ATP 80NSSC18K101,                                           Conroy, C., & Gunn, J. E. 2010, ApJ, 712, 833
+NASA Theory grant 80NSSC22K072. N.C. acknowledges                                    Conroy, C., Gunn, J. E., & White, M. 2009, ApJ, 699, 486
+support from the Schmidt Futures Fund. Y.N. acknowledges                             Conroy, C., & Wechsler, R. H. 2009, ApJ, 696, 620
+                                                                                     Cooray, A., & Sheth, R. 2002, PhR, 372, 1
+support from the ITC Postdoctoral Fellowship. S.B. acknowl-                          Crain, R. A., Schaye, J., Bower, R. G., et al. 2015, MNRAS, 450, 1937
+edges funding from NASA ATP 80NSSC22K1897 and NSF                                    Da Rocha, C., & Mendes de Oliveira, C. 2005, MNRAS, 364, 1069
+AST-2509639. ASTRID was run on the Frontera facility at the                          Da Rocha, C., Ziegler, B. L., & Mendes de Oliveira, C. 2008, MNRAS,
+Texas Advanced Computing Center.                                                        388, 1433
+                                                                                     Dattathri, S., Natarajan, P., Porras-Valverde, A. J., et al. 2025, ApJ, 984, 122
+                                                                                     Davé, R., Anglés-Alcázar, D., Narayanan, D., et al. 2019, MNRAS, 486, 2827
+                           Data Availability                                         Davis, M., Efstathiou, G., Frenk, C. S., & White, S. D. M. 1985, ApJ, 292, 371
+                                                                                     Di Matteo, T., Springel, V., & Hernquist, L. 2005, Natur, 433, 604
+   The ASTRID simulations are publicly available and acces-                          Dolag, K., Mevius, E., & Remus, R.-S. 2017, Galax, 5, 35
+sible at https://astrid.psc.edu, where we share the full particle-                   Donnari, M., Pillepich, A., Nelson, D., et al. 2019, MNRAS, 485, 4817
+in-group data, the FOFGroups and SubFind subgroup catalogs,                          Driver, S. P., Bellstedt, S., Robotham, A. S. G., et al. 2022, MNRAS, 513, 439
+and the MBH merger catalog.                                                          Driver, S. P., Robotham, A. S., Kelvin, L., et al. 2012, MNRAS, 427, 3244
+                                                                                     D’Souza, R., Vegetti, S., & Kauffmann, G. 2015, MNRAS, 454, 4027
+                                                                                     Dubois, Y., Beckmann, R., Bournaud, F., et al. 2021, A&A, 651, A109
+                              ORCID iDs                                              Dubois, Y., Peirani, S., Pichon, C., et al. 2016, MNRAS, 463, 3948
+                                                                                     Dubois, Y., Volonteri, M., Silk, J., et al. 2015, MNRAS, 452, 1502
+Yihao Zhou (周亦豪)aa https://orcid.org/0000-0002-8828-8461                             Dutton, A. A., van den Bosch, F. C., Faber, S. M., et al. 2011, MNRAS,
+Tiziana Di Matteoaa https://orcid.org/0000-0002-6462-5734                               410, 1660
+Simeon Birdaa https://orcid.org/0000-0001-5803-5490                                  Eisert, L., Pillepich, A., Nelson, D., et al. 2023, MNRAS, 519, 2199
+                                                                                     Elbaz, D., Daddi, E., Le Borgne, D., et al. 2007, A&A, 468, 33
+Rupert Croftaa https://orcid.org/0000-0003-0697-2583                                 Enia, A., Talia, M., Pozzi, F., et al. 2022, ApJ, 927, 204
+Yueying Niaa https://orcid.org/0000-0001-7899-7195                                   EPTA CollaborationInPTA Collaboration, Antoniadis, J., et al. 2023, A&A,
+Yanhui Yangaa https://orcid.org/0000-0001-6221-6024                                     678, A50
+Nianyi Chenaa https://orcid.org/0000-0001-6627-2533                                  Feng, Y., Bird, S., Anderson, L., Font-Ribera, A., & Pedersen, C. 2018, MP-
+Patrick Lachanceaa https://orcid.org/0009-0006-7511-0329                                Gadget/MP-Gadget: A tag for getting a DOI, vFirstDOI, Zenodo, doi:10.
+                                                                                        5281/zenodo.1451799
+Xiaowen Zhangaa https://orcid.org/0009-0008-0370-6021                                Feng, Y., Di-Matteo, T., Croft, R. A., et al. 2016, MNRAS, 455, 2778
+Fatemeh Hafezianzadehaa https://orcid.org/0000-0002-                                 Gallazzi, A., Charlot, S., Brinchmann, J., & White, S. D. M. 2006, MNRAS,
+9140-3950                                                                               370, 1106
+                                                                                     Gebhardt, K., Bender, R., Bower, G., et al. 2000, ApJL, 539, L13
+                                                                                     Genel, S., Nelson, D., Pillepich, A., et al. 2018, MNRAS, 474, 3976
+                               References                                            Genina, A., Springel, V., & Rantala, A. 2024, MNRAS, 534, 957
+                                                                                     Gonzalez, A. H., Sivanandam, S., Zabludoff, A. I., & Zaritsky, D. 2013, ApJ,
+Agazie, G., Anumarlapudi, A., Archibald, A. M., et al. 2023, ApJL, 951, L8              778, 14
+Aird, J., Coil, A. L., & Georgakakis, A. 2018, MNRAS, 474, 1225                      Graham, A. W. 2008, ApJ, 680, 143
+Aird, J., Coil, A. L., Georgakakis, A., et al. 2015, MNRAS, 451, 1892                Grazian, A., Fontana, A., Santini, P., et al. 2015, A&A, 575, A96
+Aird, J., Coil, A. L., Moustakas, J., et al. 2012, ApJ, 746, 90                      Greene, J. E., & Ho, L. C. 2006, ApJL, 641, L21
+Akino, D., Eckert, D., Okabe, N., et al. 2022, PASJ, 74, 175                         Gültekin, K., Richstone, D. O., Gebhardt, K., et al. 2009, ApJ, 698, 198
+Amaro-Seoane, P., Audley, H., Babak, S., et al. 2017, arXiv:1702.00786               Habouzit, M., Li, Y., Somerville, R. S., et al. 2021, MNRAS, 503, 1940
+Artale, M. C., Pedrosa, S. E., Trayford, J. W., et al. 2017, MNRAS, 470, 1771        Habouzit, M., Somerville, R. S., Li, Y., et al. 2022, MNRAS, 509, 3015
+Baldassare, V. F., Reines, A. E., Gallo, E., & Greene, J. E. 2015, ApJL,             Habouzit, M., Volonteri, M., & Dubois, Y. 2017, MNRAS, 468, 3935
+   809, L14                                                                          Han, J. J., El-Badry, K., Lucchini, S., et al. 2025, ApJ, 982, 188
+Baldry, I. K., Balogh, M. L., Bower, R. G., et al. 2006, MNRAS, 373, 469             Henden, N. A., Puchwein, E., Shen, S., & Sijacki, D. 2018, MNRAS,
+Barchiesi, L., Carrera, F. J., Vignali, C., et al. 2025, JATIS, 11, 031609              479, 5385
+Baron, D., & Ménard, B. 2019, MNRAS, 487, 3404                                       Hopkins, A. M. 2004, ApJ, 615, 209
+Bauer, A. E., Hopkins, A. M., Gunawardhana, M., et al. 2013, MNRAS,                  Hopkins, P. F., Richards, G. T., & Hernquist, L. 2007, ApJ, 654, 731
+   434, 209                                                                          Ivezić, Ž., Kahn, S. M., Tyson, J. A., et al. 2019, ApJ, 873, 111
+Behroozi, P. S., Wechsler, R. H., & Conroy, C. 2013, ApJ, 770, 57                    Jeon, J., Liu, B., Taylor, A. J., et al. 2025, ApJ, 988, 110
+Bellovary, J., Volonteri, M., Governato, F., et al. 2011, ApJ, 742, 13               Jiménez-Teja, Y., Dupke, R. A., Lopes de Oliveira, R., et al. 2019, A&A,
+Bentz, M. C., & Manne-Nicholas, E. 2018, ApJ, 864, 146                                  622, A183
+Bernardi, M., Meert, A., Sheth, R. K., et al. 2013, MNRAS, 436, 697                  Katz, M. L., Kelley, L. Z., Dosopoulou, F., et al. 2020, MNRAS, 491, 2301
+Bigwood, L., Bourne, M. A., Iršič, V., Amon, A., & Sijacki, D. 2025,                 Kauffmann, G., Heckman, T. M., White, S. D. M., et al. 2003, MNRAS,
+   MNRAS, 542, 3206                                                                     341, 33
+
+                                                                                22
+The Astrophysical Journal, 999:41 (23pp), 2026 March 1                                                                                                  Zhou et al.
+
+Kelley, L. Z., Blecha, L., Hernquist, L., Sesana, A., & Taylor, S. R. 2018,          Rodriguez-Gomez, V., Genel, S., Vogelsberger, M., et al. 2015, MNRAS,
+    MNRAS, 477, 964                                                                     449, 49
+Kennicutt, R. C., & Evans, N. J. 2012, ARA&A, 50, 531                                Rodríguez-Puebla, A., Primack, J. R., Avila-Reese, V., & Faber, S. M. 2017,
+Khandai, N., Di Matteo, T., Croft, R., et al. 2015, MNRAS, 450, 1349                    MNRAS, 470, 651
+Kirby, E. N., Cohen, J. G., Guhathakurta, P., et al. 2013, ApJ, 779, 102             Rosado, P. A., Sesana, A., & Gair, J. 2015, MNRAS, 451, 2417
+Kluge, M., Bender, R., Riffeser, A., et al. 2021, ApJS, 252, 27                      Salim, S., Rich, R. M., Charlot, S., et al. 2007, ApJS, 173, 267
+Kormendy, J., & Ho, L. C. 2013, ARA&A, 51, 511                                       Sánchez-Blázquez, P., Peletier, R. F., Jiménez-Vicente, J., et al. 2006,
+Kravtsov, A. V., Vikhlinin, A. A., & Meshcheryakov, A. V. 2018, AstL, 44, 8             MNRAS, 371, 703
+LaChance, P., Croft, R., Ni, Y., et al. 2025a, OJAp, 8, 20                           Sato-Polito, G., & Zaldarriaga, M. 2025, PhRvD, 111, 023043
+LaChance, P., Croft, R. A. C., Di Matteo, T., et al. 2025b, arXiv:2505.20439         Schaye, J., Crain, R. A., Bower, R. G., et al. 2015, MNRAS, 446, 521
+Lange, R., Driver, S. P., Robotham, A. S. G., et al. 2015, MNRAS, 447, 2603          Schaye, J., Kugel, R., Schaller, M., et al. 2023, MNRAS, 526, 4978
+Leauthaud, A., Tinker, J., Bundy, K., et al. 2012, ApJ, 744, 159                     Shakura, N. I., & Sunyaev, R. A. 1973, A&A, 24, 337
+Li, C., & White, S. D. M. 2009, MNRAS, 398, 2177                                     Shankar, F., Weinberg, D. H., & Miralda-Escudé, J. 2009, ApJ, 690, 20
+Li, Y., Habouzit, M., Genel, S., et al. 2020, ApJ, 895, 102                          Shen, S., Mo, H. J., White, S. D. M., et al. 2003, MNRAS, 343, 978
+Licquia, T. C., & Newman, J. A. 2015, ApJ, 806, 96                                   Shen, X., Hopkins, P. F., Faucher-Giguère, C.-A., et al. 2020, MNRAS,
+Liivamägi, L. J., Tempel, E., & Saar, E. 2012, A&A, 539, A80                            495, 3252
+Loveday, J., Norberg, P., Baldry, I. K., et al. 2012, MNRAS, 420, 1239               Sijacki, D., Vogelsberger, M., Genel, S., et al. 2015, MNRAS, 452, 575
+Madau, P., & Dickinson, M. 2014, ARA&A, 52, 415                                      Speagle, J. S., Steinhardt, C. L., Capak, P. L., & Silverman, J. D. 2014, ApJS,
+Man, Z.-y., Peng, Y.-j., Kong, X., et al. 2019, MNRAS, 488, 89                          214, 15
+Marconi, A., & Hunt, L. K. 2003, ApJL, 589, L21                                      Springel, V., Pakmor, R., Pillepich, A., et al. 2018, MNRAS, 475, 676
+Marinacci, F., Vogelsberger, M., Pakmor, R., et al. 2018, MNRAS, 480, 5113           Springel, V., White, S. D. M., Tormen, G., & Kauffmann, G. 2001, MNRAS,
+Marsan, Z. C., Marchesini, D., Brammer, G. B., et al. 2017, ApJ, 842, 21                328, 726
+Marsden, C., Shankar, F., Ginolfi, M., & Zubovas, K. 2020, FrP, 8, 61                Tamm, A., Tempel, E., Tenjes, P., Tihhonova, O., & Tuvikene, T. 2012, A&A,
+Martín-Navarro, I., Brodie, J. P., Romanowsky, A. J., Ruiz-Lara, T., &                  546, A4
+    van de Ven, G. 2018, Natur, 553, 307                                             The Lynx Team 2018, arXiv:1809.09642
+Matthee, J., Naidu, R. P., Brammer, G., et al. 2024, ApJ, 963, 129                   Torrey, P., Vogelsberger, M., Hernquist, L., et al. 2018, MNRAS, 477, L16
+McConnell, N. J., & Ma, C.-P. 2013, ApJ, 764, 184                                    Tremaine, S., Gebhardt, K., Bender, R., et al. 2002, ApJ, 574, 740
+Mezcua, M., Civano, F., Fabbiano, G., Miyaji, T., & Marchesi, S. 2016, ApJ,          Tremmel, M., Governato, F., Volonteri, M., & Quinn, T. R. 2015, MNRAS,
+    817, 20                                                                             451, 1868
+Mihos, J. C., Harding, P., Feldmeier, J. J., et al. 2017, ApJ, 834, 16               Tremmel, M., Karcher, M., Governato, F., et al. 2017, MNRAS, 470, 1121
+Miller, B. P., Gallo, E., Greene, J. E., et al. 2015, ApJ, 799, 98                   Übler, H., Maiolino, R., Curtis-Lake, E., et al. 2023, A&A, 677, A145
+Mingarelli, C. M. F., Lazio, T. J. W., Sesana, A., et al. 2017, NatAs, 1, 886        Ueda, Y., Akiyama, M., Hasinger, G., Miyaji, T., & Watson, M. G. 2014, ApJ,
+Montes, M., Brough, S., Owers, M. S., & Santucci, G. 2021, ApJ, 910, 45                 786, 104
+Moster, B. P., Naab, T., & White, S. D. M. 2018, MNRAS, 477, 1822                    Vakili, M., Hoekstra, H., Bilicki, M., et al. 2023, A&A, 675, A202
+Moustakas, J., Coil, A. L., Aird, J., et al. 2013, ApJ, 767, 50                      van der Wel, A., Franx, M., van Dokkum, P. G., et al. 2014, ApJ, 788, 28
+Mushotzky, R. 2018, SPIE, 10699, 1069929                                             Vito, F., Brandt, W. N., Yang, G., et al. 2018, MNRAS, 473, 2378
+Muzzin, A., Marchesini, D., Stefanon, M., et al. 2013, ApJ, 777, 18                  Vogelsberger, M., Genel, S., Springel, V., et al. 2014a, Natur, 509, 177
+Naiman, J. P., Pillepich, A., Springel, V., et al. 2018, MNRAS, 477, 1206            Vogelsberger, M., Genel, S., Springel, V., et al. 2014b, MNRAS, 444, 1518
+Nandra, K., Barret, D., Barcons, X., et al. 2013, arXiv:1306.2307                    Vogelsberger, M., Marinacci, F., Torrey, P., & Puchwein, E. 2020, NatRP,
+Nelson, D., Pillepich, A., Springel, V., et al. 2018, MNRAS, 475, 624                   2, 42
+Ni, Y., Chen, N., Zhou, Y., et al. 2025, ApJ, 990, 120                               Volonteri, M., & Reines, A. E. 2016, ApJL, 820, L6
+Ni, Y., Di Matteo, T., Bird, S., et al. 2022, MNRAS, 513, 670                        Wang, B. Y., Zhou, Y., Chen, W., et al. 2025, ApJ, 993, 199
+Ni, Y., Genel, S., Anglés-Alcázar, D., et al. 2023, ApJ, 959, 136                    Wang, Y., Zhai, Z., Alavi, A., et al. 2022, ApJ, 928, 1
+Novak, M., Smolčić, V., Delhaize, J., et al. 2017, A&A, 602, A5                      Weaver, J. R., Davidzon, I., Toft, S., et al. 2023, A&A, 677, A184
+Oliver, S., Frost, M., Farrah, D., et al. 2010, MNRAS, 405, 2279                     Weinberger, R., Springel, V., Hernquist, L., et al. 2017, MNRAS, 465,
+Pakmor, R., Springel, V., Coles, J. P., et al. 2023, MNRAS, 524, 2539                   3291
+Pei, Y. C. 1992, ApJ, 395, 130                                                       Weinberger, R., Springel, V., Pakmor, R., et al. 2018, MNRAS, 479, 4056
+Pildis, R. A., Bregman, J. N., & Schombert, J. M. 1995, AJ, 110, 1498                Weinmann, S. M., Lisker, T., Guo, Q., Meyer, H. T., & Janz, J. 2011,
+Pillepich, A., Nelson, D., Hernquist, L., et al. 2018a, MNRAS, 475, 648                 MNRAS, 416, 1197
+Pillepich, A., Nelson, D., Springel, V., et al. 2019, MNRAS, 490, 3196               Wilkins, S. M., Feng, Y., Di Matteo, T., et al. 2017, MNRAS, 469, 2517
+Pillepich, A., Springel, V., Nelson, D., et al. 2018b, MNRAS, 473, 4077              Woo, J., Courteau, S., & Dekel, A. 2008, MNRAS, 390, 1453
+Planck Collaboration, Aghanim, N., Akrami, Y., et al. 2020, A&A, 641, A6             Xiao, T., Barth, A. J., Greene, J. E., et al. 2011, ApJ, 739, 28
+Poliakov, D., Mosenkov, A. V., Brosch, N., Koriski, S., & Rich, R. M. 2021,          Xu, D., Springel, V., Sluse, D., et al. 2017, MNRAS, 469, 1824
+    MNRAS, 503, 6059                                                                 Xu, H., Chen, S., Guo, Y., et al. 2023, RAA, 23, 075024
+Ragusa, R., Iodice, E., Spavone, M., et al. 2023, A&A, 670, L20                      Yang, G., Caputi, K. I., Papovich, C., et al. 2023, ApJL, 950, L5
+Ragusa, R., Spavone, M., Iodice, E., et al. 2021, A&A, 651, A39                      Yuan, S., Hadzhiyska, B., Bose, S., Eisenstein, D. J., & Guo, H. 2021,
+Rahmani, S., Lianou, S., & Barmby, P. 2016, MNRAS, 456, 4128                            MNRAS, 502, 3582
+Ranalli, P., Koulouridis, E., Georgantopoulos, I., et al. 2016, A&A, 590, A80        Zahid, H. J., Dima, G. I., Kewley, L. J., Erb, D. K., & Davé, R. 2012, ApJ,
+Reines, A. E., Greene, J. E., & Geha, M. 2013, ApJ, 775, 116                            757, 54
+Reines, A. E., & Volonteri, M. 2015, ApJ, 813, 82                                    Zhou, R., Dey, B., Newman, J. A., et al. 2023, AJ, 165, 58
+Ricarte, A., Tremmel, M., Natarajan, P., Zimmer, C., & Quinn, T. 2021,               Zhou, Y., Di Matteo, T., Chen, N., et al. 2025a, ApJL, 988, L74
+    MNRAS, 503, 6098                                                                 Zhou, Y., Mukherjee, D., Chen, N., et al. 2025b, ApJ, 980, 79
+
+
+
+
+                                                                                23
+

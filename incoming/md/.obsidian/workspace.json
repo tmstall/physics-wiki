@@ -1,0 +1,262 @@
+{
+  "main": {
+    "id": "fe9883d309d0615e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0187d865cdd0343",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11b2f80f843b9c8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2ef6fc0b763aeec2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e6b31651855c84a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97e4a6cc2406eb3c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5ed64ccd191ab396",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "09-13",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fe7a5a0ee6d3931c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c5526f0690b00866",
+    "type": "split",
+    "children": [
+      {
+        "id": "c49051f7ac5399d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7eb01dd37c4354fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2026-09-23_doi-10.3847-1538-4365-ae95f6_tempos-treasury-extremely-metal-poor-o-stars.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "d005a6949d19913a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "eb052787cd9a1117",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fdc443b451ae67da",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5200e01583934cec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "floating": {
+    "id": "64d35a219961d29d",
+    "type": "floating",
+    "children": [
+      {
+        "id": "44760b5ee8977ee7",
+        "type": "window",
+        "children": [
+          {
+            "id": "9f0ba9da84996bcb",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3f19c3d6f9b85198",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 626,
+        "y": 0,
+        "width": 1213,
+        "height": 1031,
+        "maximize": false,
+        "zoom": 2
+      }
+    ]
+  },
+  "active": "3f19c3d6f9b85198",
+  "lastOpenFiles": [
+    "2026-10-02_arxiv-2510.05232_megatron-pop3-iron-plateau-ultra-faint-dwarfs.md",
+    "2026-10-02_doi-10.1103-g49y-8cjl_cms-jet-diffusion-wake-dijets-heavy-ion.md",
+    "2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md",
+    "sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field.md",
+    "2026-09-29_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography-v2-foundations.md",
+    "2026-09-27_hrvb-combined-6-sources_resonance-baroreflex-physiology-and-methods.md",
+    "2026-09-28_arxiv-2609.20788_looking-inside-a-quantum-black-hole.md",
+    "2026-09-26_doi-10.3847-2041-8213-ae9cbd_jet-aligned-halpha-cgm-radio-galaxies.md",
+    "2026-09-28_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography.md",
+    "2026-09-27_doi-10.1007-s10484-006-9009-3_doi-10.3389-fpsyg.2014.00756_hrv-resonance-baroreflex-physiology.md",
+    "2026-09-25_doi-10.3847-2041-8213-ae9a9e_fdm-wave-simulation-lensing-hs0810.md",
+    "2026-09-26_doi-10.1016-j.dark.2026.102364_negative-mass-objects-in-the-sky.md",
+    "2026-09-24_arxiv-2512.14204_cosmic-lockdown-decoherence-vacuum-tunneling.md",
+    "2026-09-24_doi-10.1103-2xsn-rgx3_nonmonotonicity-transverse-momentum-correlations-star.md",
+    "archive/2026-09-04_nodoi_25gpps-diffractive-microscope.md",
+    "2026-09-23_doi-10.3847-1538-4365-ae95f6_tempos-treasury-extremely-metal-poor-o-stars.md",
+    "2026-09-21_doi-10.1126-science.aeh7535_quantum-jumps-of-sound.md",
+    "2026-09-21_doi-10.1126-science.adz0521_extreme-loss-suppression-dipolar-molecular-gas.md",
+    "2026-09-21_doi-10.1038-s42005-026-02791-5_narrowband-tunable-euv-soft-xray-harmonics.md",
+    "2026-09-18_doi-10.1038-s41550-026-02930-6_topology-of-the-universe.md",
+    "2026-09-14_lbt-yp_part2of2_result-and-implications.md",
+    "2026-09-15_doi-10.1103-y1nh-1b82_zz-boson-pair-entanglement-higgs-decays.md",
+    "2026-09-14_lbt-yp_part1of2_methodology-and-data.md",
+    "Untitled.canvas",
+    "2026-09-13_doi-10.1140-epjc-s10052-026-15820-y_entanglement-islands-page-curves-kerr-ads.md",
+    "2026-09-13_doi-10.1103-jdw6-3556_unconventional-materials-light-dark-matter-detection.md",
+    "2026-09-04_arxiv-2301.11943_hi-intensity-mapping-meerkat-autopower-detection.md",
+    "Still To Read",
+    "New folder",
+    "_to_delete"
+  ]
+}
