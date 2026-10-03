@@ -1,6 +1,6 @@
 # incoming/automation - paper pipeline (Phase 3)
 
-Headless paper analysis on this laptop with Claude Code (Opus) and the newest Academic Paper Analysis Framework in `C:\Users\tmsta\Desktop\Gold\Prompts` (resolved by version number, currently v3.12).
+Headless paper analysis on this laptop with Claude Code (Opus) and the newest Academic Paper Analysis Framework in `C:\Users\tmsta\Desktop\Gold\Prompts` (resolved by version number, currently v3.13).
 
 ## Files
 
@@ -17,7 +17,7 @@ Headless paper analysis on this laptop with Claude Code (Opus) and the newest Ac
 | `ANALYZE_HEADLESS.md` / `DEEPDIVE_HEADLESS.md` | Instructions Claude follows in headless runs. |
 | `run-claude.ps1` | Finds the newest `claude.exe` bundled with Claude Desktop. |
 | `papers-analyzed-log.md` | One row per delivered analysis. |
-| `scratch\work\<stamp>_<id>\` | Per-run work folder (PDF, text, prompt, `claude.jsonl`, `run.log`, output). Git-ignored. |
+| `scratch\work\<stamp>_<id>\` | Per-run work folder (PDF, text, arXiv source `src\`, `figures\`, prompt, `claude.jsonl`, `run.log`, output). Git-ignored. |
 | `queue\` | Job files and worker logs. Git-ignored. |
 
 ## Analyze a paper
@@ -26,10 +26,11 @@ Headless paper analysis on this laptop with Claude Code (Opus) and the newest Ac
 cd C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation
 .\analyze-paper.ps1 2605.16504                    # arXiv ID, arXiv URL, DOI or doi.org URL
 .\analyze-paper.ps1 10.1103/pz3y-3lv5 -Title 'Neutrino flavor conversion ...'
-.\analyze-paper.ps1 2605.16504 -DryRun            # no Claude call, no delivery (checks + PDF + prompt only)
+.\analyze-paper.ps1 2605.16504 -DryRun            # no Claude call, no delivery (checks + PDF + figures + prompt only)
+.\analyze-paper.ps1 2605.16504 -Replace           # re-run an analyzed paper: replaces the incoming\md file (same name) and its log row
 ```
 
-Options: `-NoDeliver` (leave the output in the work folder), `-NoPush`, `-Force` (ignore duplicate hits).
+Options: `-NoDeliver` (leave the output in the work folder), `-NoPush`, `-Force` (ignore duplicate hits), `-Replace` (re-run: implies `-Force`; the output takes the existing `incoming\md` file name, the papers-log row is replaced with a `re-run <date>, framework vX.Y` note, and the commit says "Replace analysis"; the old version stays in git history), `-NoFigures` (skip figure extraction).
 Exit codes: `0` done, `1` failed, `2` duplicate (skipped), `3` usage limit (stopped cleanly).
 
 What it does:
@@ -37,15 +38,26 @@ What it does:
 1. **Metadata.** arXiv API (latest version, DOI, journal ref). For a DOI, Crossref finds the arXiv preprint (`has-preprint`, else an exact title match on arXiv).
 2. **Duplicate check.** Searches `wiki\papers`, `raw\analyses`, `incoming\md` (all subfolders) and `papers-analyzed-log.md` for the arXiv ID, DOI, filename id and title. A filename, title or log hit, or an id hit in the first 40 lines of a file, is **strong** and stops the run. Id mentions deeper in other files are reported as **weak** and don't stop it.
 3. **Full text.** Downloads the latest arXiv PDF, plus a `pdftotext` copy, into the work folder.
+3b. **Figures** (see below). Extracted into `figures\` in the work folder before Claude runs.
 4. **Claude Code on Opus.** Follows `ANALYZE_HEADLESS.md`, which loads the newest framework. Claude can write only to `scratch\**`, through absolute `Write`/`Edit` rules. Output is captured as UTF-8 stream-json in `claude.jsonl`. The run prompt also includes this rule: when comparing with other papers, check each one's latest arXiv version (abs page or listing), not a tool summary of an older version.
 5. **Blocked save.** If the save was blocked, the analysis is recovered from the jsonl (permission denials and Write calls).
 6. **Usage limit.** If the usage limit is hit, the run stops cleanly with exit `3`, and a queued job stays queued as `limit`.
 7. **Delivery.** Every copy is checked for size and SHA-256:
-   1. `incoming\md\<YYYY-MM-DD>_<id>_<slug>.md`
-   2. `G:\My Drive\Technical Papers\Analyses\`. If G: isn't mounted, Google Drive for Desktop is started; if it's still missing, the copy is queued in `queue\drive-retry.txt`. The laptop has no pandoc/LaTeX, so the PDF is listed in `queue\pdf-todo.txt` and built on the box (pandoc + xelatex).
+   1. `incoming\md\<YYYY-MM-DD>_<id>_<slug>.md`, plus every image it embeds (`figures/<file>`) into `incoming\md\figures\`. An embed whose file is missing stops the delivery.
+   2. `G:\My Drive\Technical Papers\Analyses\` (figures into `Analyses\figures\`). If G: isn't mounted, Google Drive for Desktop is started; if it's still missing, the copy is queued in `queue\drive-retry.txt`. The laptop has no pandoc/LaTeX, so the PDF is listed in `queue\pdf-todo.txt` and built on the box (pandoc + xelatex; copy the embedded `figures\` files next to the `.md` on the box and pass `--resource-path` to that folder so the images are in the PDF).
    3. A row is appended to `papers-analyzed-log.md`: date | title | arXiv/DOI | file | model | words.
-   4. `git add` and commit of just the analysis and the log (never wiki/raw or other changes), then `git push`. A failed push is retried by the next worker run.
+   4. `git add` and commit of just the analysis, its embedded figure files and the log (never wiki/raw or other changes), then `git push`. A failed push is retried by the next worker run.
 8. **Inbox count.** Prints how many `.md` files are in `incoming\md` root (pending ingest).
+
+## Figures
+
+Framework v3.13 asks every full analysis to show the paper's key figures where it discusses them (image, numbered caption, one- or two-sentence "what to look at" note). The pipeline supplies the images:
+
+1. **arXiv source first.** `https://arxiv.org/e-print/<id>` (the same version as the PDF) is unpacked into `src\`. The main `.tex` is parsed: figure environments are numbered in order, and each `\includegraphics` / `\plotone` / `\fig` file is rendered to `figures\<prefix>_figN.png` (PDF figures via `pdftoppm`, longest side 1600 px; PNG/JPG copied; multi-file figures get `_figNa`, `_figNb`). `<prefix>` = first title word + id, e.g. `neutrino-2605.16504`, the same pattern as the earlier `megatron-2510.05232_fig3.png`.
+2. **Page renders.** The pages whose text has a figure caption are rendered at 150 dpi to `figures\pages\page-NN.png`, for context and for cropping.
+3. **pdfimages.** Only when the source yields nothing: the large embedded raster images go to `figures\pdfimages\` (small fragments are dropped).
+4. **Manifest.** `figures\FIGURES.md` lists the figure numbers, files, LaTeX labels and caption starts. Claude reads it, views the images, crops page renders with Python/Pillow where needed, and embeds its picks as `![Fig. N: ...](figures/<file>)` (ANALYZE_HEADLESS.md section 5).
+5. **Delivery** copies only the embedded files to `incoming\md\figures\` and `Drive Analyses\figures\`, so the relative links work in Obsidian, on Drive and in the box PDF build.
 
 ## Queue (works while the laptop sleeps)
 

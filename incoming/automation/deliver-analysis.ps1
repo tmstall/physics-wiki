@@ -1,7 +1,8 @@
 <#
 .SYNOPSIS
   Deliver an existing analysis .md (verified copies): incoming\md, Drive Analyses (+PDF if a converter
-  exists), papers-analyzed log, git commit + push. analyze-paper.ps1 calls the same code.
+  exists), papers-analyzed log, git commit + push. Images it embeds as figures/<file> (relative to the
+  .md) are copied to incoming\md\figures\ and Drive Analyses\figures\ and committed with it. analyze-paper.ps1 calls the same code.
   Overrides exist so it can be tested against a throwaway folder / repo.
 
 .EXAMPLE
@@ -15,7 +16,8 @@ param(
     [string]$Title,
     [string]$Model = 'opus',
     [string]$MdDir, [string]$DriveDir, [string]$LogFile, [string]$RepoRoot, [string]$PdfTodo,
-    [switch]$NoGit, [switch]$NoPush, [switch]$Force
+    [switch]$NoGit, [switch]$NoPush, [switch]$Force,
+    [switch]$Replace, [string]$Note   # re-delivery: replace the paper's log row; Note goes into the model column
 )
 $ErrorActionPreference = 'Stop'
 # Stash the overrides BEFORE dot-sourcing: the lib sets script-scope $MdDir/$RepoRoot, which would overwrite them.
@@ -23,7 +25,7 @@ $ov = @{ MdDir = $MdDir; DriveDir = $DriveDir; LogFile = $LogFile; RepoRoot = $R
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
 Initialize-PipelineEnv
 $meta = Get-PaperMeta $Paper $Title
-$p = @{ SourceFile = (Resolve-Path -LiteralPath $File).Path; Meta = $meta; Model = $Model; NoGit = $NoGit; NoPush = $NoPush; Force = $Force }
+$p = @{ SourceFile = (Resolve-Path -LiteralPath $File).Path; Meta = $meta; Model = $Model; NoGit = $NoGit; NoPush = $NoPush; Force = $Force; Replace = $Replace; Note = $Note }
 foreach ($k in @($ov.Keys)) { if ($ov[$k]) { $p[$k] = $ov[$k] } }
 $d = Invoke-Delivery @p
 $d | Format-List

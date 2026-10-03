@@ -4,8 +4,8 @@
 ingest_threshold: 10
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
-canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.12.md   # current as of 2026-10-02
-canonical_framework_sha256: 94FB578234AB97C770D67EBB3B46E25013E6B746ECF5EDABEA881F40224A31F2
+canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.13.md   # current as of 2026-10-03
+canonical_framework_sha256: 8483917356AFBCD842244EC6BBB480E2985E5F355505483DB788183B7025CF18
 analysis_runner: Claude Code (bundled with Claude Desktop) on laptop
 delivery:
   - incoming\md
@@ -37,3 +37,9 @@ phases_status:
 - Queue: `incoming\automation\queue\` + scheduled task `PhysicsWiki-PaperQueue` (logon, wake from sleep, every 30 min); Drive inbox `G:\My Drive\Technical Papers\Queue\`.
 - PDFs: no pandoc/LaTeX on the laptop, so PDFs are built on the box from `queue\pdf-todo.txt`.
 - Deep dives: `deep-dive.ps1` -> `incoming\deep-dives\` + `G:\My Drive\Technical Papers\Deep Dives\`.
+
+## Notes (framework v3.13 + figures, 2026-10-03)
+
+- Canonical framework is now v3.13 (Gold\Prompts, 2026-10-03): Key Figures rule, a shorter explanatory Claim Check (~400-800 words), consistency check reports significant findings only. v3.12 stays in Gold\Prompts as history. The "currently v3.x" pointers (AGENTS.md, PIPELINE.md, ANALYZE.md, analysis-pack) now say v3.13.
+- Figures: analyze-paper.ps1 extracts figures before the Claude run (arXiv source tarball first, then pdftoppm page renders, then pdfimages) into scratch\work\<run>\figures\ with a FIGURES.md manifest; Claude embeds its picks as figures/<prefix>_figN.png; delivery copies the embedded files to incoming\md\figures\ and Drive Analyses\figures\ and commits them. See README.md "Figures".
+- Re-runs: analyze-paper.ps1 -Replace overwrites the existing incoming\md analysis (same file name), replaces its papers-log row (note "re-run <date>, framework vX.Y") and commits as "Replace analysis".

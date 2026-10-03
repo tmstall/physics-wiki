@@ -9,6 +9,7 @@
   .\analyze-paper.ps1 https://arxiv.org/abs/2605.16504 -Title 'Neutrino flavor conversion ...'
   .\analyze-paper.ps1 10.1103/pz3y-3lv5
   .\analyze-paper.ps1 2602.03456 -DryRun        # no Claude call, no delivery
+  .\analyze-paper.ps1 2605.16504 -Replace       # re-run: overwrite the existing analysis (same file name) and its log row
 
   Exit codes: 0 done (or dry run ok), 1 failed, 2 duplicate (skipped), 3 usage limit (stopped cleanly).
 #>
@@ -19,15 +20,18 @@ param(
     [switch]$NoDeliver,    # run Claude but leave the output in the work folder
     [switch]$NoPush,       # commit but do not push
     [switch]$Force,        # ignore duplicate hits / overwrite identical names
+    [switch]$Replace,      # re-run: implies -Force; output takes the existing incoming\md file name, the log row is replaced
+    [switch]$NoFigures,    # skip figure extraction
     [string]$ResultFile,   # JSON result for the queue worker
     [string]$JobId
 )
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
 Initialize-PipelineEnv
+if ($Replace) { $Force = $true }
 
 $result = [ordered]@{ status = 'failed'; paper = $Paper; jobId = $JobId; started = (Get-Date).ToString('s'); title = $null; arxiv = $null; doi = $null
-    workDir = $null; output = $null; words = $null; bytes = $null; model = $null; elapsed = $null; costUsd = $null
+    workDir = $null; output = $null; figures = $null; words = $null; bytes = $null; model = $null; elapsed = $null; costUsd = $null
     usageBefore = $null; usageAfter = $null; resetsAt = $null; recovered = $false; duplicates = @(); delivery = $null; error = $null }
 $runLog = $null
 try {
@@ -63,6 +67,18 @@ try {
         Write-Log "  PDF: $($pdfInfo.pdf) ($($pdfInfo.bytes) bytes, $($pdfInfo.pages) pages)" $runLog
     } else { Write-Log '  No arXiv version found: Claude will retrieve the text via the DOI (ANALYZE_HEADLESS.md section 3).' $runLog }
 
+    # 3b. figures: arXiv source files first, then PDF page renders / embedded images (ANALYZE_HEADLESS.md section 5)
+    $figInfo = $null
+    if (-not $NoFigures) {
+        try {
+            $figInfo = Get-PaperFigures $meta $pdfInfo $workDir (Get-FigurePrefix $meta)
+            $nf = @($figInfo.figures | Where-Object { $_.files.Count }).Count
+            $result.figures = "$nf figure(s) from $($figInfo.source); $(@($figInfo.pages).Count) page render(s); $(@($figInfo.pdfimages).Count) raw image(s)"
+            Write-Log "  Figures: $($result.figures) -> $($figInfo.dir)" $runLog
+            foreach ($n in $figInfo.notes) { Write-Log "  figures note: $n" $runLog }
+        } catch { Write-Log "  WARNING: figure extraction failed: $($_.Exception.Message)" $runLog }
+    }
+
     # 4. prompt
     $desc = "Paper to analyze: $($meta.title)"
     if ($meta.authors.Count) { $au = ($meta.authors | Select-Object -First 4) -join ', '; if ($meta.authors.Count -gt 4) { $au += ' et al.' }; $desc += " by $au" }
@@ -77,7 +93,12 @@ try {
     } else {
         $text = 'No local PDF was available: get the full text yourself as ANALYZE_HEADLESS.md section 3 describes (DOI landing page / open-access version).'
     }
-    $prompt = 'Read incoming/automation/ANALYZE_HEADLESS.md and follow it exactly (the framework itself defines the depth target, full-paper reading, claim check and referee pass). Then resolve and read the newest framework in ' + $FrameworkDir + ' as ANALYZE_HEADLESS.md section 1 describes, and apply it. ' +
+    if ($figInfo) {
+        $text += " The paper's figures were pre-extracted to $($figInfo.dir) - read the manifest $($figInfo.manifest) first, view the images, and show the key figures in the analysis as ANALYZE_HEADLESS.md section 5 describes (embed as figures/<file name>; file-name prefix $($figInfo.prefix))."
+    } else {
+        $text += ' No figure files were pre-extracted: describe the key figures and reference them by number (ANALYZE_HEADLESS.md section 5).'
+    }
+    $prompt = 'Read incoming/automation/ANALYZE_HEADLESS.md and follow it exactly (the framework itself defines the depth target, full-paper reading, key figures, claim check and referee pass). Then resolve and read the newest framework in ' + $FrameworkDir + ' as ANALYZE_HEADLESS.md section 1 describes, and apply it. ' +
         $desc + ' ' + $text + ' Python is available for numeric checks (run python only; put any scripts in the work directory). ' + $CompareRule + ' ' +
         'Work directory for this run: ' + $workDir + ' - write the finished analysis there using the filename convention in ANALYZE_HEADLESS.md (id ' + $idLabel + ', no suffix). Write nowhere else; the pipeline script does the delivery.'
     Write-Utf8File (Join-Path $workDir 'prompt.txt') $prompt
@@ -113,15 +134,24 @@ try {
     $first = ([IO.File]::ReadAllLines($out.FullName) | Select-Object -First 2) -join ' '
     if ($first -notmatch 'v\d+\.\d+') { Write-Log "  WARNING: header lines do not show a framework version: $first" $runLog }
 
-    # normalize filename: today's date + id label
+    # normalize filename: today's date + id label (with -Replace: the existing incoming\md name for this paper)
     $today = Get-Date -Format 'yyyy-MM-dd'
     $name = $out.Name
-    if ($name -notmatch ('^' + [regex]::Escape($today) + '_' + [regex]::Escape($idLabel) + '_.+\.md$')) {
+    $target = $null
+    if ($Replace) {
+        $existing = @(Get-ChildItem -Path $MdDir -File -Filter ('*_' + $idLabel + '_*.md') -ErrorAction SilentlyContinue)
+        if ($existing.Count -gt 1) { throw "-Replace: more than one analysis for $idLabel in $MdDir ($(($existing | ForEach-Object { $_.Name }) -join ', '))" }
+        if ($existing.Count -eq 1) { $target = $existing[0].Name; Write-Log "  -Replace: will replace $target" $runLog }
+        else { Write-Log '  -Replace: no existing analysis in incoming\md; delivering under a new name' $runLog }
+    }
+    if (-not $target -and $name -notmatch ('^' + [regex]::Escape($today) + '_' + [regex]::Escape($idLabel) + '_.+\.md$')) {
         $slug = $(if ($name -match '^\d{4}-\d{2}-\d{2}_(?:arxiv|doi)-[^_]+_(.+)\.md$') { $Matches[1] } else { Get-Slug $meta.title })
-        $name = $today + '_' + $idLabel + '_' + $slug + '.md'
-        Rename-Item -LiteralPath $out.FullName -NewName $name
-        $out = Get-Item (Join-Path $workDir $name)
-        Write-Log "  renamed output to $name" $runLog
+        $target = $today + '_' + $idLabel + '_' + $slug + '.md'
+    }
+    if ($target -and $target -ne $name) {
+        Rename-Item -LiteralPath $out.FullName -NewName $target
+        $out = Get-Item -LiteralPath (Join-Path $workDir $target)
+        Write-Log "  renamed output to $target" $runLog
     }
     $result.output = $out.FullName; $result.bytes = $out.Length; $result.words = Get-WordCount $out.FullName
     Write-Log "Output: $($out.FullName) ($($out.Length) bytes, ~$($result.words) words)" $runLog
@@ -130,7 +160,9 @@ try {
     if ($NoDeliver) { $result.status = 'done-undelivered'; Write-Log 'NoDeliver: output left in the work folder.' $runLog }
     else {
         $model = $(if ($run.model) { $run.model } else { 'opus' })
-        $result.delivery = Invoke-Delivery -SourceFile $out.FullName -Meta $meta -Model $model -NoPush:$NoPush -Force:$Force -RunLog $runLog
+        $note = $null
+        if ($Replace) { $fwv = $(if ($first -match '(v\d+\.\d+)') { $Matches[1] } else { '?' }); $note = "re-run $today, framework $fwv" }
+        $result.delivery = Invoke-Delivery -SourceFile $out.FullName -Meta $meta -Model $model -NoPush:$NoPush -Force:$Force -Replace:$Replace -Note $note -RunLog $runLog
         $result.status = 'done'
     }
     Write-Log "DONE: $($result.status)" $runLog

@@ -185,6 +185,237 @@ function Get-ArxivPdf($Meta, [string]$WorkDir) {
     return [pscustomobject]@{ pdf = $pdf; bytes = $len; pages = $pages; txt = $txt }
 }
 
+# ---------- figures (arXiv source first, then PDF page renders / embedded images) ----------
+# Output: <work>\figures\ with <prefix>_figN.png (N = figure number), pages\page-NN.png, pdfimages\, FIGURES.md.
+# The analysis embeds them as figures/<file>; delivery copies the embedded ones to incoming\md\figures\ and Drive.
+
+function Get-FigurePrefix($Meta) {
+    $w = Get-Slug "$($Meta.title)" 1
+    if (-not $w -or $w -eq 'title') { $w = 'paper' }
+    $id = $(if ($Meta.arxiv) { $Meta.arxiv } elseif ($Meta.doi) { ($Meta.doi -replace '[^A-Za-z0-9.\-]', '-') } else { Get-Date -Format 'HHmmss' })
+    return ($w + '-' + $id)
+}
+
+function Get-FileHead([string]$Path, [int]$Count) {
+    $fs = [IO.File]::OpenRead($Path)
+    try { $b = New-Object byte[] $Count; $n = $fs.Read($b, 0, $Count); return $b[0..([Math]::Max(0, $n - 1))] } finally { $fs.Close() }
+}
+
+function Get-PngSize([string]$Path) {
+    try {
+        $b = Get-FileHead $Path 24
+        if ($b.Count -lt 24 -or $b[1] -ne 0x50 -or $b[2] -ne 0x4E -or $b[3] -ne 0x47) { return $null }
+        $w = ([int]$b[16] -shl 24) -bor ([int]$b[17] -shl 16) -bor ([int]$b[18] -shl 8) -bor [int]$b[19]
+        $h = ([int]$b[20] -shl 24) -bor ([int]$b[21] -shl 16) -bor ([int]$b[22] -shl 8) -bor [int]$b[23]
+        return [pscustomobject]@{ w = $w; h = $h }
+    } catch { return $null }
+}
+
+function Remove-TexComments([string]$Text) { return [regex]::Replace($Text, '(?m)(?<!\\)%.*$', '') }
+
+function Expand-TexInputs([string]$Text, [string]$Dir, [int]$Depth = 0) {
+    if ($Depth -gt 3) { return $Text }
+    $ev = [Text.RegularExpressions.MatchEvaluator] {
+        param($m)
+        $n = $m.Groups[1].Value.Trim()
+        foreach ($c in @($n, ($n + '.tex'))) {
+            $p = Join-Path $Dir $c
+            if (Test-Path -LiteralPath $p -PathType Leaf) { return (Expand-TexInputs (Remove-TexComments ([IO.File]::ReadAllText($p))) $Dir ($Depth + 1)) }
+        }
+        return $m.Value
+    }
+    return [regex]::Replace($Text, '\\(?:input|include)\s*\{([^}]+)\}', $ev)
+}
+
+function Get-TexBraceArg([string]$Text, [int]$Start) {
+    # Text[Start] must be '{'; returns the balanced content
+    if ($Start -lt 0 -or $Start -ge $Text.Length -or $Text[$Start] -ne '{') { return $null }
+    $depth = 0
+    for ($i = $Start; $i -lt $Text.Length; $i++) {
+        $ch = $Text[$i]
+        if ($ch -eq '\') { $i++; continue }
+        if ($ch -eq '{') { $depth++ } elseif ($ch -eq '}') { $depth--; if ($depth -eq 0) { return $Text.Substring($Start + 1, $i - $Start - 1) } }
+    }
+    return $null
+}
+
+function ConvertTo-PlainCaption([string]$Tex, [int]$Max = 240) {
+    $s = [regex]::Replace($Tex, '\\label\s*\{[^}]*\}', '')
+    $s = [regex]::Replace($s, '\\(?:cite[tp]?|ref|eqref)\s*\{[^}]*\}', '[ref]')
+    $s = [regex]::Replace($s, '\\[A-Za-z]+\*?', ' ')
+    $s = ($s -replace '[{}$~\\]', ' ' -replace '\s+', ' ').Trim()
+    if ($s.Length -gt $Max) { $s = $s.Substring(0, $Max) + '...' }
+    return $s.Replace('|', '/')
+}
+
+function Resolve-TexGraphic([string]$Ref, [string]$SrcDir) {
+    $r = $Ref.Trim().Trim('"').Replace('/', '\').TrimStart('.', '\')
+    if ($r -match '\.\.') { return $null }
+    $exts = @('', '.pdf', '.png', '.jpg', '.jpeg', '.eps', '.ps')
+    foreach ($e in $exts) { $p = Join-Path $SrcDir ($r + $e); if (Test-Path -LiteralPath $p -PathType Leaf) { return (Get-Item -LiteralPath $p) } }
+    $leaf = Split-Path $r -Leaf
+    $all = @(Get-ChildItem -LiteralPath $SrcDir -Recurse -File -ErrorAction SilentlyContinue)
+    foreach ($e in $exts) { $hit = $all | Where-Object { $_.Name -ieq ($leaf + $e) } | Select-Object -First 1; if ($hit) { return $hit } }
+    return $null
+}
+
+function Convert-FigureFile($File, [string]$OutBase) {
+    $ErrorActionPreference = 'Continue'
+    $ext = $File.Extension.ToLowerInvariant()
+    if ($ext -eq '.png') { Copy-Item -LiteralPath $File.FullName -Destination ($OutBase + '.png') -Force; return ($OutBase + '.png') }
+    if ($ext -eq '.jpg' -or $ext -eq '.jpeg') { Copy-Item -LiteralPath $File.FullName -Destination ($OutBase + '.jpg') -Force; return ($OutBase + '.jpg') }
+    if ($ext -eq '.pdf' -and (Get-Command pdftoppm -ErrorAction SilentlyContinue)) {
+        & pdftoppm -png -scale-to 1600 -f 1 -l 1 -singlefile $File.FullName $OutBase 2>$null
+        if (Test-Path -LiteralPath ($OutBase + '.png')) { return ($OutBase + '.png') }
+    }
+    return $null   # .eps/.ps (no Ghostscript) or a failed render: use the page render instead
+}
+
+function Get-TexFigures([string]$SrcDir, [string]$FigDir, [string]$Prefix) {
+    $rows = @()
+    $main = $null
+    $readme = Join-Path $SrcDir '00README.json'
+    if (Test-Path -LiteralPath $readme) {
+        try {
+            $j = [IO.File]::ReadAllText($readme) | ConvertFrom-Json
+            $tl = @($j.sources | Where-Object { $_.usage -eq 'toplevel' }) | Select-Object -First 1
+            if ($tl) { $p = Join-Path $SrcDir $tl.filename; if (Test-Path -LiteralPath $p) { $main = Get-Item -LiteralPath $p } }
+        } catch { }
+    }
+    if (-not $main) {
+        $main = Get-ChildItem -LiteralPath $SrcDir -Recurse -File -Filter *.tex -ErrorAction SilentlyContinue |
+            Where-Object { [IO.File]::ReadAllText($_.FullName) -match '\\documentclass' } | Sort-Object Length -Descending | Select-Object -First 1
+    }
+    if (-not $main) { return $rows }
+    $tex = Expand-TexInputs (Remove-TexComments ([IO.File]::ReadAllText($main.FullName))) $main.DirectoryName
+    $n = 0
+    foreach ($m in [regex]::Matches($tex, '\\begin\{figure\*?\}(.*?)\\end\{figure\*?\}', 'Singleline')) {
+        $n++
+        $body = $m.Groups[1].Value
+        $refs = @()
+        foreach ($g in [regex]::Matches($body, '\\includegraphics\*?\s*(?:\[[^\]]*\])?\s*\{([^}]+)\}')) { $refs += $g.Groups[1].Value }
+        foreach ($g in [regex]::Matches($body, '\\(?:plotone|fig)\s*\{([^}]+)\}')) { $refs += $g.Groups[1].Value }
+        foreach ($g in [regex]::Matches($body, '\\plottwo\s*\{([^}]+)\}\s*\{([^}]+)\}')) { $refs += $g.Groups[1].Value; $refs += $g.Groups[2].Value }
+        $cap = ''
+        $ci = $body.IndexOf('\caption')
+        if ($ci -ge 0) {
+            $k = $ci + 8
+            while ($k -lt $body.Length -and ($body[$k] -eq ' ' -or $body[$k] -eq '*')) { $k++ }
+            if ($k -lt $body.Length -and $body[$k] -eq '[') { $k = $body.IndexOf(']', $k) + 1; while ($k -lt $body.Length -and $body[$k] -eq ' ') { $k++ } }
+            $arg = Get-TexBraceArg $body $k
+            if ($arg) { $cap = ConvertTo-PlainCaption $arg }
+        }
+        $label = $(if ($body -match '\\label\s*\{([^}]+)\}') { $Matches[1] } else { '' })
+        $files = @(); $missing = @()
+        for ($i = 0; $i -lt $refs.Count; $i++) {
+            $suffix = $(if ($refs.Count -gt 1) { [string][char](97 + [Math]::Min($i, 25)) } else { '' })
+            $f = Resolve-TexGraphic $refs[$i] $SrcDir
+            $out = $null
+            if ($f) { $out = Convert-FigureFile $f (Join-Path $FigDir ('{0}_fig{1}{2}' -f $Prefix, $n, $suffix)) }
+            if ($out) { $files += (Split-Path $out -Leaf) } else { $missing += $refs[$i] }
+        }
+        $rows += [pscustomobject]@{ fig = $n; files = $files; missing = $missing; caption = $cap; label = $label }
+    }
+    return $rows
+}
+
+function Get-PaperFigures($Meta, $PdfInfo, [string]$WorkDir, [string]$Prefix) {
+    $ErrorActionPreference = 'Continue'   # native stderr must not throw
+    $figDir = Join-Path $WorkDir 'figures'
+    New-Item -ItemType Directory -Path $figDir -Force | Out-Null
+    $res = [ordered]@{ dir = $figDir; prefix = $Prefix; manifest = (Join-Path $figDir 'FIGURES.md'); source = 'none'; figures = @(); pages = @(); pdfimages = @(); notes = @() }
+    # 1. arXiv source tarball: the authors' own figure files are the best copies
+    if ($Meta.arxiv) {
+        $v = $(if ($Meta.version) { 'v' + $Meta.version } else { '' })
+        $bin = Join-Path $WorkDir 'arxiv-source.bin'; $srcDir = Join-Path $WorkDir 'src'
+        try {
+            Invoke-WebRequest -Uri ('https://arxiv.org/e-print/' + $Meta.arxiv + $v) -OutFile $bin -UseBasicParsing -TimeoutSec 180 -UserAgent 'Mozilla/5.0 (physics-wiki-pipeline)'
+            $hd = [Text.Encoding]::ASCII.GetString((Get-FileHead $bin 5))
+            if ($hd -eq '%PDF-') { $res.notes += 'arXiv has no LaTeX source for this paper (PDF-only submission)' }
+            else {
+                New-Item -ItemType Directory -Path $srcDir -Force | Out-Null
+                & tar -xf $bin -C $srcDir 2>$null
+                if (-not @(Get-ChildItem -LiteralPath $srcDir -Recurse -File -ErrorAction SilentlyContinue).Count) { $res.notes += 'arXiv source is a single file, not an archive (no figure files)' }
+            }
+        } catch { $res.notes += "arXiv source download failed: $($_.Exception.Message)" }
+        if ((Test-Path -LiteralPath $srcDir) -and @(Get-ChildItem -LiteralPath $srcDir -Recurse -File -ErrorAction SilentlyContinue).Count) {
+            try { $res.figures = @(Get-TexFigures $srcDir $figDir $Prefix) } catch { $res.notes += "LaTeX figure parse failed: $($_.Exception.Message)" }
+            if (@($res.figures | Where-Object { $_.files.Count }).Count) { $res.source = 'arXiv source (' + $srcDir + ')' }
+            foreach ($r in $res.figures) { if ($r.missing.Count) { $res.notes += "Fig. $($r.fig): not converted ($($r.missing -join ', ')) - use the page render" } }
+        }
+    }
+    # 2. page renders of the pages that carry figure captions (context + crop source)
+    if ($PdfInfo -and $PdfInfo.pdf -and (Get-Command pdftoppm -ErrorAction SilentlyContinue)) {
+        $capPages = @{}
+        if ($PdfInfo.txt -and (Test-Path -LiteralPath $PdfInfo.txt)) {
+            $pg = [IO.File]::ReadAllText($PdfInfo.txt) -split "`f"
+            for ($i = 0; $i -lt $pg.Count; $i++) {
+                foreach ($cm in [regex]::Matches($pg[$i], '(?m)(?:^|\s{2,})(?:FIG\.|Fig\.|FIGURE|Figure)\s*(\d+)\s*[\.:|]')) {
+                    $p = $i + 1; if (-not $capPages.ContainsKey($p)) { $capPages[$p] = @() }
+                    if ($capPages[$p] -notcontains $cm.Groups[1].Value) { $capPages[$p] += $cm.Groups[1].Value }
+                }
+            }
+        }
+        $pagesDir = Join-Path $figDir 'pages'
+        New-Item -ItemType Directory -Path $pagesDir -Force | Out-Null
+        foreach ($p in (@($capPages.Keys) | Sort-Object | Select-Object -First 20)) {
+            $base = Join-Path $pagesDir ('page-{0:D2}' -f $p)
+            & pdftoppm -png -r 150 -f $p -l $p -singlefile $PdfInfo.pdf $base 2>$null
+            if (Test-Path -LiteralPath ($base + '.png')) { $res.pages += [pscustomobject]@{ page = $p; file = ('pages/page-{0:D2}.png' -f $p); figs = ($capPages[$p] -join ', ') } }
+        }
+        # 3. raw embedded images, only when the source gave no figure files (often fragments; filtered by size)
+        if (-not @($res.figures | Where-Object { $_.files.Count }).Count -and (Get-Command pdfimages -ErrorAction SilentlyContinue)) {
+            $rawDir = Join-Path $figDir 'pdfimages'
+            New-Item -ItemType Directory -Path $rawDir -Force | Out-Null
+            & pdfimages -png -p $PdfInfo.pdf (Join-Path $rawDir 'img') 2>$null
+            foreach ($f in @(Get-ChildItem -LiteralPath $rawDir -File -Filter *.png -ErrorAction SilentlyContinue)) {
+                $s = Get-PngSize $f.FullName
+                if (-not $s -or $s.w -lt 300 -or $s.h -lt 200 -or $f.Length -lt 15000) { Remove-Item -LiteralPath $f.FullName -Force }
+                else { $res.pdfimages += ('pdfimages/' + $f.Name + " ($($s.w)x$($s.h))") }
+            }
+            if (-not $capPages.Count) {
+                # no captions found in the text either: render the pages that hold large images
+                $imgPages = @($res.pdfimages | ForEach-Object { if ($_ -match 'img-(\d+)-') { [int]$Matches[1] } } | Select-Object -Unique | Select-Object -First 20)
+                foreach ($p in $imgPages) {
+                    $base = Join-Path $pagesDir ('page-{0:D2}' -f $p)
+                    & pdftoppm -png -r 150 -f $p -l $p -singlefile $PdfInfo.pdf $base 2>$null
+                    if (Test-Path -LiteralPath ($base + '.png')) { $res.pages += [pscustomobject]@{ page = $p; file = ('pages/page-{0:D2}.png' -f $p); figs = '?' } }
+                }
+            }
+        }
+    }
+    # 4. manifest for Claude
+    $L = New-Object System.Collections.Generic.List[string]
+    $L.Add("# Figures for: $($Meta.title)"); $L.Add('')
+    $L.Add("Folder: $figDir"); $L.Add("File-name prefix: $Prefix (embed in the analysis as figures/<file name>)"); $L.Add("Figure-file source: $($res.source)"); $L.Add('')
+    $L.Add('## Figure files'); $L.Add('')
+    if (@($res.figures).Count) {
+        $L.Add('Numbered by the order of figure environments in the LaTeX source, which normally matches the published numbering; check it against the captions in the PDF (appendix figures may be numbered differently). Vector figures were rendered to PNG (longest side 1600 px).'); $L.Add('')
+        $L.Add('| Fig. | file(s) | LaTeX label | caption (start) |'); $L.Add('| --- | --- | --- | --- |')
+        foreach ($r in $res.figures) { $L.Add('| ' + $r.fig + ' | ' + $(if ($r.files.Count) { $r.files -join ', ' } else { '(not converted: ' + ($r.missing -join ', ') + ')' }) + ' | ' + $r.label + ' | ' + $r.caption + ' |') }
+    } else { $L.Add('None from the arXiv source. Use the page renders below (crop the figure out with Python/Pillow, see ANALYZE_HEADLESS.md section 5) or the raw embedded images.') }
+    $L.Add(''); $L.Add('## Page renders (150 dpi; pages whose text has a figure caption)'); $L.Add('')
+    if (@($res.pages).Count) { $L.Add('| page | file | captions found on page |'); $L.Add('| --- | --- | --- |'); foreach ($p in $res.pages) { $L.Add('| ' + $p.page + ' | ' + $p.file + ' | ' + $p.figs + ' |') } } else { $L.Add('None.') }
+    if (@($res.pdfimages).Count) { $L.Add(''); $L.Add('## Raw embedded images (pdfimages; name = img-<page>-<n>; may be fragments or panels)'); $L.Add(''); foreach ($x in $res.pdfimages) { $L.Add('- ' + $x) } }
+    if (@($res.notes).Count) { $L.Add(''); $L.Add('## Notes'); $L.Add(''); foreach ($x in $res.notes) { $L.Add('- ' + $x) } }
+    Write-Utf8File $res.manifest (($L -join "`r`n") + "`r`n")
+    return [pscustomobject]$res
+}
+
+function Get-EmbeddedFigures([string]$Path) {
+    # Relative image embeds of the form ![..](figures/...) or ![[figures/...]] in an analysis
+    $t = [IO.File]::ReadAllText($Path)
+    $rels = @()
+    foreach ($m in [regex]::Matches($t, '!\[[^\]]*\]\(\s*<?(figures/[^)>\s]+)>?(?:\s+"[^"]*")?\s*\)')) { $rels += $m.Groups[1].Value }
+    foreach ($m in [regex]::Matches($t, '!\[\[(figures/[^\]|#]+)')) { $rels += $m.Groups[1].Value }
+    $out = @()
+    foreach ($r in ($rels | ForEach-Object { [uri]::UnescapeDataString($_) } | Select-Object -Unique)) {
+        if ($r -match '\.\.|[:*?"<>|]') { throw "Unsafe figure path in analysis: $r" }
+        $out += $r
+    }
+    return $out
+}
+
 # ---------- Claude Code run ----------
 
 function Invoke-ClaudeRun([string]$Prompt, [string]$JsonlPath, [string[]]$ExtraAddDirs) {
@@ -275,6 +506,8 @@ function Get-WordCount([string]$Path) {
 # ---------- delivery ----------
 
 function Copy-Verified([string]$Src, [string]$Dest) {
+    $parent = Split-Path $Dest
+    if ($parent -and -not (Test-Path -LiteralPath $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
     Copy-Item -LiteralPath $Src -Destination $Dest -Force
     $a = (Get-Item -LiteralPath $Src).Length; $b = (Get-Item -LiteralPath $Dest).Length
     if ($a -ne $b) { throw "Size mismatch after copy: $Src ($a) -> $Dest ($b)" }
@@ -319,14 +552,28 @@ function Invoke-Delivery {
         [string]$LogFile = $script:PapersLog,
         [string]$RepoRoot = $script:RepoRoot,
         [string]$PdfTodo = (Join-Path $script:QueueDir 'pdf-todo.txt'),
-        [switch]$NoGit, [switch]$NoPush, [switch]$Force, [string]$RunLog
+        [switch]$NoGit, [switch]$NoPush, [switch]$Force, [string]$RunLog,
+        [switch]$Replace,   # replace the existing log row for this paper (re-run) instead of appending one
+        [string]$Note       # appended to the model column of the log row, e.g. 're-run 2026-10-03, framework v3.13'
     )
-    $d = [ordered]@{ file = (Split-Path $SourceFile -Leaf); bytes = $null; words = $null; md = $null; drive = $null; pdf = $null; log = $null; git = $null; push = $null; inbox = $null; warnings = @() }
+    $d = [ordered]@{ file = (Split-Path $SourceFile -Leaf); bytes = $null; words = $null; md = $null; figures = @(); drive = $null; pdf = $null; log = $null; git = $null; push = $null; inbox = $null; warnings = @() }
     $src = Get-Item -LiteralPath $SourceFile
     $d.bytes = $src.Length
     if ($src.Length -lt 15000) { throw "Analysis file is only $($src.Length) bytes; a full nine-section analysis should be tens of KB. Not delivering." }
     $d.words = Get-WordCount $SourceFile
     Write-Log "Delivery: $($d.file) ($($d.bytes) bytes, ~$($d.words) words)" $RunLog
+
+    # figures embedded in the analysis (figures/<file>, relative to the .md) travel with it; check them all first
+    $srcDirOfMd = Split-Path $SourceFile
+    $figRels = @(Get-EmbeddedFigures $SourceFile)
+    $figPairs = @()
+    foreach ($rel in $figRels) {
+        $from = [IO.Path]::GetFullPath((Join-Path $srcDirOfMd $rel.Replace('/', '\')))
+        $to = [IO.Path]::GetFullPath((Join-Path $MdDir $rel.Replace('/', '\')))
+        if (-not (Test-Path -LiteralPath $from) -and -not (Test-Path -LiteralPath $to)) { throw "The analysis embeds $rel, but that file is in neither $srcDirOfMd nor $MdDir. Not delivering." }
+        $figPairs += [pscustomobject]@{ rel = $rel; from = $from; to = $to }
+    }
+    if ($figPairs.Count) { Write-Log "  figures embedded: $($figPairs.Count) ($(($figPairs | ForEach-Object { Split-Path $_.rel -Leaf }) -join ', '))" $RunLog }
 
     # a. incoming\md
     if (-not (Test-Path $MdDir)) { New-Item -ItemType Directory -Path $MdDir | Out-Null }
@@ -336,6 +583,11 @@ function Invoke-Delivery {
     }
     $n = Copy-Verified $SourceFile $mdDest
     $d.md = "$mdDest ($n bytes, verified)"; Write-Log "  a. md   -> $($d.md)" $RunLog
+    foreach ($f in $figPairs) {
+        if ((Test-Path -LiteralPath $f.from) -and ($f.from -ne $f.to)) { [void](Copy-Verified $f.from $f.to) }
+        $d.figures += $f.to
+    }
+    if ($figPairs.Count) { Write-Log "  a. figs -> $($figPairs.Count) file(s) in $(Join-Path $MdDir 'figures') (verified)" $RunLog }
 
     # b. Drive (synced folder) + PDF
     if (Wait-DriveMount $DriveDir) {
@@ -343,17 +595,20 @@ function Invoke-Delivery {
         $driveDest = Join-Path $DriveDir $d.file
         $n = Copy-Verified $SourceFile $driveDest
         $d.drive = "$driveDest ($n bytes, verified)"
+        foreach ($f in $figPairs) { [void](Copy-Verified $f.to (Join-Path $DriveDir $f.rel.Replace('/', '\'))) }
+        if ($figPairs.Count) { $d.drive += " + $($figPairs.Count) figure(s) in $(Join-Path $DriveDir 'figures')" }
     } else {
         $d.drive = 'FAILED: Google Drive (G:) not mounted'; $d.warnings += $d.drive
         Add-Utf8Line (Join-Path (Split-Path $PdfTodo) 'drive-retry.txt') ($mdDest + "`t" + $DriveDir)
+        foreach ($f in $figPairs) { Add-Utf8Line (Join-Path (Split-Path $PdfTodo) 'drive-retry.txt') ($f.to + "`t" + (Split-Path (Join-Path $DriveDir $f.rel.Replace('/', '\')))) }
     }
     Write-Log "  b. drive-> $($d.drive)" $RunLog
     if ((Get-Command pandoc -ErrorAction SilentlyContinue) -and (Get-Command xelatex -ErrorAction SilentlyContinue) -and $d.drive -notlike 'FAILED*') {
         $pdfOut = Join-Path $DriveDir ([IO.Path]::ChangeExtension($d.file, '.pdf'))
-        & pandoc $mdDest -o $pdfOut --pdf-engine=xelatex -f markdown-implicit_figures+lists_without_preceding_blankline -V geometry:margin=2.2cm 2>$null
+        & pandoc $mdDest -o $pdfOut --pdf-engine=xelatex --resource-path=$MdDir -f markdown-implicit_figures+lists_without_preceding_blankline -V geometry:margin=2.2cm 2>$null
         if ((Test-Path $pdfOut) -and (Get-Item $pdfOut).Length -gt 20000) { $d.pdf = "$pdfOut ($((Get-Item $pdfOut).Length) bytes)" } else { $d.pdf = 'pandoc failed'; $d.warnings += 'PDF build failed' }
     } else {
-        $d.pdf = 'not built on laptop (no pandoc/xelatex); queued in pdf-todo.txt for the box'
+        $d.pdf = 'not built on laptop (no pandoc/xelatex); queued in pdf-todo.txt for the box' + $(if ($figPairs.Count) { ' (needs the figures/ files next to the .md)' } else { '' })
         Add-Utf8Line $PdfTodo ((Get-Date -Format 'yyyy-MM-dd') + "`t" + $d.file)
     }
     Write-Log "  b. pdf  -> $($d.pdf)" $RunLog
@@ -364,21 +619,34 @@ function Invoke-Delivery {
     }
     $ids = @(); if ($Meta.arxiv) { $ids += ('arXiv:' + $Meta.arxiv) }; if ($Meta.doi) { $ids += ('doi:' + $Meta.doi) }
     $title = ("$($Meta.title)" -replace '\|', '/' -replace '\s+', ' ').Trim()
-    $row = '| ' + (Get-Date -Format 'yyyy-MM-dd') + ' | ' + $title + ' | ' + ($ids -join ' / ') + ' | ' + $d.file + ' | ' + $Model + ' | ' + $d.words + ' |'
+    $modelCol = $(if ($Note) { $Model + ' (' + ($Note -replace '\|', '/') + ')' } else { $Model })
+    $row = '| ' + (Get-Date -Format 'yyyy-MM-dd') + ' | ' + $title + ' | ' + ($ids -join ' / ') + ' | ' + $d.file + ' | ' + $modelCol + ' | ' + $d.words + ' |'
     $before = (Get-Item $LogFile).Length
-    Add-Utf8Line $LogFile $row
+    $replaced = $false
+    if ($Replace) {
+        $lines = [IO.File]::ReadAllLines($LogFile)
+        for ($i = 0; $i -lt $lines.Count; $i++) {
+            $l = $lines[$i]
+            if ($l.StartsWith('| ') -and ($l.Contains(' ' + $d.file + ' ') -or ($Meta.arxiv -and $l.Contains('arXiv:' + $Meta.arxiv + ' ')) -or ($Meta.doi -and $l.Contains('doi:' + $Meta.doi + ' ')))) {
+                $lines[$i] = $row; $replaced = $true; break
+            }
+        }
+        if ($replaced) { Write-Utf8File $LogFile (($lines -join "`r`n") + "`r`n") }
+    }
+    if (-not $replaced) { Add-Utf8Line $LogFile $row }
     $after = (Get-Item $LogFile).Length
-    if ($after -le $before -or -not (Select-String -Path $LogFile -SimpleMatch -Pattern $d.file -Quiet)) { throw "Log append could not be verified ($LogFile)" }
-    $d.log = "$LogFile ($before -> $after bytes)"; Write-Log "  c. log  -> $($d.log)" $RunLog
+    if ((-not $replaced -and $after -le $before) -or -not ([IO.File]::ReadAllText($LogFile).Contains($row))) { throw "Log update could not be verified ($LogFile)" }
+    $d.log = "$LogFile ($(if ($replaced) { 'row replaced' } else { 'row appended' }), $before -> $after bytes)"; Write-Log "  c. log  -> $($d.log)" $RunLog
 
     # d. git commit (analysis + log only) and push
     if ($NoGit) { $d.git = 'skipped (-NoGit)' }
     else {
         $relMd = Get-RelPath $RepoRoot $mdDest; $relLog = Get-RelPath $RepoRoot $LogFile
-        $g = Invoke-Git $RepoRoot @('add', '--', $relMd, $relLog)
+        $paths = @($relMd, $relLog) + @($d.figures | ForEach-Object { Get-RelPath $RepoRoot $_ })
+        $g = Invoke-Git $RepoRoot (@('add', '--') + $paths)
         if ($g.code -ne 0) { throw "git add failed: $($g.out)" }
-        $msg = 'Add analysis: ' + $title + ' (' + ($ids -join ', ') + ')'
-        $g = Invoke-Git $RepoRoot @('commit', '-m', $msg.Replace('"', "'"), '--', $relMd, $relLog)
+        $msg = $(if ($Replace) { 'Replace analysis' + $(if ($Note) { ' (' + $Note + ')' } else { '' }) + ': ' } else { 'Add analysis: ' }) + $title + ' (' + ($ids -join ', ') + ')'
+        $g = Invoke-Git $RepoRoot (@('commit', '-m', $msg.Replace('"', "'"), '--') + $paths)
         if ($g.code -ne 0) { throw "git commit failed: $($g.out)" }
         $d.git = (Invoke-Git $RepoRoot @('rev-parse', '--short', 'HEAD')).out.Trim()
         if ($NoPush) { $d.push = 'skipped (-NoPush)' }
