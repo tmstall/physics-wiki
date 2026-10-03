@@ -12,6 +12,8 @@ delivery:
   - G:\My Drive\Technical Papers\Analyses
   - incoming\automation\papers-analyzed-log.md   # papers-analyzed log in repo (created in Phase 3)
 picks: 4-5 per request
+to_read_dir: G:\My Drive\To Read   # every delivered analysis (.md + figures/) is also copied here for phone/tablet reading
+to_read_retention_days: 14   # prune-to-read.ps1 deletes .md files older than this (LastWriteTime) and unreferenced figures
 phases_status:
   phase_0: done 2026-10-02
   phase_2: done 2026-10-02 (headless test runs, scratch only)
@@ -51,3 +53,9 @@ phases_status:
 ## Notes (framework v3.15, 2026-10-03)
 
 - Canonical framework is now v3.15 (Gold\Prompts, 2026-10-03): protected 'Origins & Big Picture' subsection in Section 3 (~400-700 words, e.g. DNS formation: recycling, Case BB, ultra-stripped supernovae) that the length limits do not cut; no math appendix (derivations cut, not moved); physics before forecasts (explain the phenomenon, then a short plain-language note on difficulty, no exponents or error budgets); significant findings always reported in plain words, never trimmed; parameter tables cut to the 4-6 numbers that matter; total target still ~5,000-7,500 words. v3.14 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.15.
+
+## Notes (To Read folder, 2026-10-03)
+
+- `G:\My Drive\To Read\` (Drive folder 'To Read' in My Drive) holds recent analyses as Markdown only (no PDFs), with embedded images in `To Read\figures\` so the `figures/<file>` links resolve. The Android phone and tablet sync it into a local Obsidian vault with DriveSync Pro.
+- Delivery step b2 (Invoke-Delivery) copies each delivered `.md` and its figures there, non-fatal (a failure only logs a warning). Target = `to_read_dir` above.
+- `prune-to-read.ps1` (`-DryRun` to preview) deletes `.md` files older than `to_read_retention_days` by LastWriteTime and figures no longer referenced by a remaining `.md`; it never touches `README.md`. The queue worker runs it at most once per calendar day (stamp `queue\prune-to-read.last`, log `queue\prune-to-read.log`).

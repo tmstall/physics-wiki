@@ -15,6 +15,19 @@ $script:MdDir      = Join-Path $script:RepoRoot 'incoming\md'
 $script:PapersLog  = Join-Path $script:AutoDir 'papers-analyzed-log.md'
 $script:FrameworkDir = 'C:\Users\tmsta\Desktop\Gold\Prompts'
 $script:Utf8NoBom  = New-Object System.Text.UTF8Encoding($false)
+function Get-PipelineConfigValue([string]$Key, [string]$Default) {
+    # Reads 'key: value' (first match, trailing '# comment' dropped) from pipeline-config.md; falls back to $Default.
+    $cfg = Join-Path $script:AutoDir 'pipeline-config.md'
+    if (Test-Path -LiteralPath $cfg) {
+        foreach ($l in [IO.File]::ReadAllLines($cfg)) {
+            if ($l -match ('^\s*' + [regex]::Escape($Key) + ':\s*([^#]+?)\s*(#.*)?$')) { return $Matches[1].Trim() }
+        }
+    }
+    return $Default
+}
+# To Read: recent analyses for reading on phone/tablet (Drive -> DriveSync Pro -> Obsidian). Pruned after N days.
+$script:ToReadDir  = Get-PipelineConfigValue 'to_read_dir' 'G:\My Drive\To Read'
+$script:ToReadDays = [int](Get-PipelineConfigValue 'to_read_retention_days' '14')
 $script:CompareRule = 'Extra rule for this run: when you compare with other papers (prior work, competing or independent results), check the latest arXiv version of each such paper via its arXiv abs page or listing (which shows the version history and the current abstract), and cite which version you used; do not rely on a tool summary of an older version. If you could only see an older version or a summary, say so explicitly.'
 
 function Initialize-PipelineEnv {
@@ -525,6 +538,26 @@ function Wait-DriveMount([string]$Dir, [int]$Seconds = 120) {
     return $false
 }
 
+function Copy-ToRead([string]$MdFile, [string]$ToReadDir = $script:ToReadDir, [string]$Name) {
+    # Copies an analysis .md (optionally under a new name) and the images it embeds (figures/<file>, relative
+    # to the .md) into the To Read folder, keeping the same relative paths so the links resolve there.
+    # LastWriteTime is set to now so the retention clock (prune-to-read.ps1) starts at arrival.
+    if (-not $ToReadDir) { return 'skipped (no to_read_dir configured)' }
+    if (-not (Test-Path -LiteralPath $ToReadDir)) { New-Item -ItemType Directory -Path $ToReadDir -Force | Out-Null }
+    if (-not $Name) { $Name = Split-Path $MdFile -Leaf }
+    $srcDir = Split-Path $MdFile
+    $figs = @()
+    foreach ($rel in @(Get-EmbeddedFigures $MdFile)) {
+        $from = Join-Path $srcDir $rel.Replace('/', '\')
+        if (-not (Test-Path -LiteralPath $from)) { throw "embedded figure $rel not found next to $MdFile" }
+        $figs += [pscustomobject]@{ from = $from; to = (Join-Path $ToReadDir $rel.Replace('/', '\')) }
+    }
+    foreach ($f in $figs) { [void](Copy-Verified $f.from $f.to); (Get-Item -LiteralPath $f.to).LastWriteTime = Get-Date }
+    $dest = Join-Path $ToReadDir $Name
+    [void](Copy-Verified $MdFile $dest); (Get-Item -LiteralPath $dest).LastWriteTime = Get-Date
+    return "$dest + $($figs.Count) figure(s)"
+}
+
 function Get-InboxCount([string]$Dir = $script:MdDir) {
     return @(Get-ChildItem -Path $Dir -File -Filter *.md -ErrorAction SilentlyContinue).Count
 }
@@ -552,11 +585,12 @@ function Invoke-Delivery {
         [string]$LogFile = $script:PapersLog,
         [string]$RepoRoot = $script:RepoRoot,
         [string]$PdfTodo = (Join-Path $script:QueueDir 'pdf-todo.txt'),
+        [string]$ToReadDir = $script:ToReadDir,   # '' = skip the To Read copy
         [switch]$NoGit, [switch]$NoPush, [switch]$Force, [string]$RunLog,
         [switch]$Replace,   # replace the existing log row for this paper (re-run) instead of appending one
         [string]$Note       # appended to the model column of the log row, e.g. 're-run 2026-10-03, framework v3.13'
     )
-    $d = [ordered]@{ file = (Split-Path $SourceFile -Leaf); bytes = $null; words = $null; md = $null; figures = @(); drive = $null; pdf = $null; log = $null; git = $null; push = $null; inbox = $null; warnings = @() }
+    $d = [ordered]@{ file = (Split-Path $SourceFile -Leaf); bytes = $null; words = $null; md = $null; figures = @(); drive = $null; toRead = $null; pdf = $null; log = $null; git = $null; push = $null; inbox = $null; warnings = @() }
     $src = Get-Item -LiteralPath $SourceFile
     $d.bytes = $src.Length
     if ($src.Length -lt 15000) { throw "Analysis file is only $($src.Length) bytes; a full nine-section analysis should be tens of KB. Not delivering." }
@@ -612,6 +646,18 @@ function Invoke-Delivery {
         Add-Utf8Line $PdfTodo ((Get-Date -Format 'yyyy-MM-dd') + "`t" + $d.file)
     }
     Write-Log "  b. pdf  -> $($d.pdf)" $RunLog
+
+    # b2. To Read folder (phone/tablet reading copy) - non-fatal
+    if ($ToReadDir) {
+        try {
+            if (-not (Wait-DriveMount $ToReadDir 30)) { throw "the drive for $ToReadDir is not mounted" }
+            $d.toRead = Copy-ToRead $mdDest $ToReadDir
+            Write-Log "  b2. to-read -> $($d.toRead)" $RunLog
+        } catch {
+            $d.toRead = 'FAILED (non-fatal): ' + $_.Exception.Message; $d.warnings += ('To Read copy failed: ' + $_.Exception.Message)
+            Write-Log "  WARNING: To Read copy failed (delivery continues): $($_.Exception.Message)" $RunLog
+        }
+    } else { $d.toRead = 'skipped' }
 
     # c. papers-analyzed log
     if (-not (Test-Path $LogFile)) {
