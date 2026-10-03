@@ -1,0 +1,3 @@
+# Runtime queue state (job files, lock, logs) stays local.
+*
+!.gitignore

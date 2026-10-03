@@ -52,8 +52,8 @@ The framework's master retrieval protocol and full-paper reading rule govern *wh
 The framework's Claim Check defines *what* to verify. In this run:
 
 - Python is allowed (run `python` only; numpy is available).
-- Keep scripts short. Save any script files in the scratch directory named in the run prompt.
-- Do not install packages or touch files outside the scratch directory.
+- Keep scripts short. Save any script files in the **work directory** named in the run prompt.
+- Do not install packages or touch files outside the work directory.
 - In the analysis, say that the checks were run in Python and name the script file(s).
 
 ## 5. Output file
@@ -61,14 +61,14 @@ The framework's Claim Check defines *what* to verify. In this run:
 - Write the complete analysis (exactly what would have been delivered in chat) as one Markdown file using the Write tool. Only the final, referee-revised version goes to disk. Do not write a separate draft file.
 - Filename: `YYYY-MM-DD_<id>_<slug>.md`
   - `YYYY-MM-DD` = today's date (local).
-  - `<id>` = `doi-<doi with / and other unsafe characters replaced by ->` (e.g. `doi-10.1038-s41586-026-01234-5`) or `arxiv-NNNN.NNNNN` (no version suffix).
+  - `<id>` = `doi-<doi with / and other unsafe characters replaced by ->` (e.g. `doi-10.1038-s41586-026-01234-5`) or `arxiv-NNNN.NNNNN` (no version suffix). If the run prompt names the id to use, use that one.
   - `<slug>` = short lowercase hyphenated slug of the title (≈4–8 words).
   - If the run prompt asks for a suffix (e.g. `_run3`), add it before `.md`.
-- Output directory: given in the run prompt.
+- Output directory: the **work directory** given in the run prompt (a per-run folder under `incoming\automation\scratch\work\`).
 
-## 6. Phase 2 restrictions (current phase)
+## 6. Write scope and delivery (Phase 3)
 
-- Write **only** to the scratch directory named in the run prompt (`incoming\automation\scratch\`). Python scratch scripts, if any, also go there.
-- Do **NOT** do delivery: no Google Drive, no `incoming\md`, no papers-analyzed log, no wiki edits, no git operations.
+- Write **only** to the work directory named in the run prompt. Python scratch scripts, if any, also go there.
+- **Delivery is done by the pipeline script, not by you.** After you finish, `incoming\automation\analyze-paper.ps1` checks the file and copies it to `incoming\md\`, Google Drive and the papers-analyzed log, and commits it to git. So do **NOT** write to `incoming\md`, Google Drive, the papers-analyzed log or the wiki, and do no git operations. You have no write access there anyway.
 - Do not modify any other file in the repo, and never modify anything in `C:\Users\tmsta\Desktop\Gold\Prompts` (read-only).
 - After writing, print one final line: `WROTE <full path> <byte count if known>`, preceded by one line `FRAMEWORK <resolved framework path> vX.Y`.
