@@ -1,11 +1,11 @@
 # Grok Build prompt — trigger: `analyze`
 
 Paste this into Grok Build (or bind the trigger string **`analyze`** to this text).  
-You operate under repo-root `AGENTS.md`. Framework and quality pack: `incoming/analysis-pack/`.
+You operate under repo-root `AGENTS.md`. Framework: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.12). Quality pack: `incoming/analysis-pack/`.
 
-**Purpose:** Produce Framework **v3.10** paper analyses that match Claude gold **structure and honesty**, without mimicking Claude’s voice. Gold exemplars are **rubric fuel**, not a training set — do not paste full gold bodies into context as style targets.
+**Purpose:** Produce paper analyses under the current Framework (currently **v3.12**) that match Claude gold **structure and honesty**, without mimicking Claude’s voice. Gold exemplars are **rubric fuel**, not a training set — do not paste full gold bodies into context as style targets.
 
-**Kickoff packets:** If the user pastes an **Analysis kickoff** (from the Wiki Coordinator Bot or `ANALYZE_KICKOFF.md`), treat it as a valid start: honor mode A/B/C/D notes, optional posture/lite **only if set**, and shared slug if present. Still run the full v3.10 contract — the kickoff is not the analysis. If mode C/D is noted, do **not** auto-run `compare` unless the user says `compare`. Bot never replaces this trigger.
+**Kickoff packets:** If the user pastes an **Analysis kickoff** (from the Wiki Coordinator Bot or `ANALYZE_KICKOFF.md`), treat it as a valid start: honor mode A/B/C/D notes, optional posture/lite **only if set**, and shared slug if present. Still run the full Framework contract — the kickoff is not the analysis. If mode C/D is noted, do **not** auto-run `compare` unless the user says `compare`. Bot never replaces this trigger.
 
 ---
 
@@ -14,7 +14,7 @@ You operate under repo-root `AGENTS.md`. Framework and quality pack: `incoming/a
 When the user says **`analyze`** (optionally with a PDF, DOI, arXiv id, or pasted text):
 
 1. Confirm the upload is a technical/academic paper (or meaningful excerpt). If not, say so and ask — do not force the framework.
-2. Load the contract from `incoming/analysis-pack/Academic_Paper_Analysis_Framework_v3_10.md` (Parts 1–4). That document is authoritative for sections, checkpoints, lite mode, retrieval protocol, and reader calibration.
+2. Load the contract: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.12) — pick the highest version number, compared numerically, not by file date. Read Parts 1–4. That document is authoritative for sections, checkpoints, lite mode, retrieval protocol (including the full-paper reading rule), depth target, Claim Check, Referee Pass, and reader calibration. (The v3.10 copy in `incoming/analysis-pack/` is historical, not canonical.)
 3. Optionally open **one** exemplar **card** in `incoming/analysis-pack/GOLD_EXEMPLARS.md` matching paper type (experimental / theory / ultrafast-CM / speculative). Do **not** load full gold markdown unless a prior bakeoff failed a specific checkpoint and you need a pattern for that section only.
 4. Produce the analysis under the **Output contract** below.
 5. Run the **Anti-truncation checklist** before finishing.
@@ -29,12 +29,14 @@ When the user says **`analyze`** (optionally with a PDF, DOI, arXiv id, or paste
 ### Line 1
 
 ```
-Analyzing | Framework v3.10
+Analyzing | Framework vX.Y
 ```
+
+`vX.Y` = the version of the framework file you loaded (currently v3.12).
 
 Add `| lite mode` and/or `| adversarial posture` / status notes when applicable.
 
-Also emit version prefix **v3.10** as required by the framework (action line satisfies Part 1).
+Also emit version prefix **vX.Y** as required by the framework (action line satisfies Part 1).
 
 ### Analysis version banner (required)
 
@@ -43,7 +45,7 @@ After Access Status (or immediately under the action line if Access Status is om
 ```markdown
 **Analysis version:** `g-<short-slug>-vN` · **YYYY-MM-DD**
 **Changelog:** v1 = … · v2 = … · **vN (current)** = …
-**Framework:** v3.10
+**Framework:** vX.Y
 ```
 
 Rules:
@@ -66,14 +68,14 @@ If anything less than a clean full-text upload was used, output the Access Statu
 1. Punchy Title & One-Sentence Hook  
 2. Big-Picture Context (+ Paper Type & Stakes + **Prior Belief Check** + **Replication & Convergence Note**)  
 3. Necessary Background Crash-Course (analogies + **Breaks when:** each + **Central analogy** once at end)  
-4. Core Technical Explanation (+ **Assumption Audit**, 2–4 Watch items, no filler)  
+4. Core Technical Explanation (+ **Claim check** subsection per the Framework + **Assumption Audit**, 2–4 Watch items, no filler)  
 5. What’s Genuinely New or Clever (+ **Predictive Content Check**: falsifiable handle always; formalism-load conditional)  
 6. Limitations & Open Questions (each item: **(A)/(B)/(C)** + justification + source tag)  
-7. Detailed Summary & Explanation (+ **Where I’m least confident…**)  
+7. Detailed Summary & Explanation (+ **Where I’m least confident…**, optional one-line **Revision notes:** from the Referee Pass)  
 8. Three Crystallized Takeaways  
 9. Shorter Summary (**≤350 words hard ceiling**)
 
-Honesty checkpoints are **not optional** when adapting section depth to paper type. If you adapt structure, note what changed in the Genuine Uncertainty Disclosure.
+Honesty checkpoints are **not optional** when adapting section depth to paper type. The Framework's Depth Target, Claim Check, and Referee Pass also apply in full mode; the Framework text governs them (do not restate or reinterpret here). If you adapt structure, note what changed in the Genuine Uncertainty Disclosure.
 
 ### Lite mode
 
@@ -126,6 +128,7 @@ Mark each item mentally; if any fail, **continue writing** — do not hand back 
 - [ ] ≥1 Breaks when + Central analogy (§3 full mode)  
 - [ ] §3 teaches concepts in paragraphs (not glossary-only); frameworks/acronyms explained on first use  
 - [ ] §4 walks the method as explained steps (“what this buys you”), not package-name bullets alone  
+- [ ] Claim check subsection with headline-number status, sensitivity, and one robustness test (§4 full mode)  
 - [ ] Assumption Audit with 2–4 real Watch lines (§4 full mode)  
 - [ ] Predictive Content falsifiable handle (§5)  
 - [ ] ≥2 limitations with (A)/(B)/(C) + source tags (§6)  
@@ -140,7 +143,7 @@ Mark each item mentally; if any fail, **continue writing** — do not hand back 
 If context pressure is high: **trim §7 repetition and extra §4 detail** before gutting teaching prose in §§3–4. Checkpoints outrank empty padding. **Explanatory flow outranks terse completeness.** Still finish through §9.
 
 **Recovery if you notice truncation mid-flight:** output  
-`Continuing | Framework v3.10 | resume from §N`  
+`Continuing | Framework vX.Y | resume from §N`  
 then complete from the first incomplete section through §9 — do not restart from §1 unless the user asks.
 
 ### Density bar for honesty sections (Claude gap fix — 2026-08-28)
@@ -245,7 +248,7 @@ After §9, **before** any Deep Dive sessions, you **may** add a short checklist 
 
 ## Related files
 
-- Framework: `incoming/analysis-pack/Academic_Paper_Analysis_Framework_v3_10.md`  
+- Framework: newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.12)  
 - Gold cards: `incoming/analysis-pack/GOLD_EXEMPLARS.md`  
 - Rubric / gate: `incoming/analysis-pack/RUBRIC.md`, `PRODUCTION_GATE.md`  
 - Deep dive: `incoming/prompts/DEEP_DIVE.md`  

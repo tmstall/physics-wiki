@@ -7,7 +7,7 @@ Short stub. Full prompt text lives in `incoming/prompts/`. Bot paste packs: `inc
 | Trigger | Where | Prompt file | Role |
 | --- | --- | --- | --- |
 | **Bot intake** (Android OK) | Grok Bot — Wiki Coordinator | [`bot/`](bot/) + [`prompts/COORDINATOR.md`](prompts/COORDINATOR.md) | Kickoffs + reminders only — **never** full analysis |
-| **`analyze`** | Grok Build | [`prompts/ANALYZE.md`](prompts/ANALYZE.md) | Framework v3.10 + gate; `g_` prefix; Drive sync |
+| **`analyze`** | Grok Build | [`prompts/ANALYZE.md`](prompts/ANALYZE.md) | Framework (newest in `Gold\Prompts`, currently v3.12) + gate; `g_` prefix; Drive sync |
 | **`analyze`** | Claude Cowork | [`prompts/COWORK_ANALYZE.md`](prompts/COWORK_ANALYZE.md) | Claude analysis → `incoming/md/YYYY-MM-DD_…` |
 | **`compare`** | Build and/or Bot | [`prompts/COMPARE.md`](prompts/COMPARE.md) | Rubric scorecard; human picks wiki source |
 | **`start deep dive` / `end deep dive`** | Grok Build | [`prompts/DEEP_DIVE.md`](prompts/DEEP_DIVE.md) | Append Q&A on `incoming/md/` file; Drive sync on end |

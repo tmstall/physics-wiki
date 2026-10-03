@@ -1,4 +1,4 @@
-# Analysis scoring rubric (v3.10-aligned)
+# Analysis scoring rubric (written for v3.10; applies to the current framework — newest in `Gold\Prompts`, currently v3.12)
 
 Score a finished analysis **0–2** on each dimension (0 = missing/wrong, 1 = partial, 2 = solid). Max **24**. Use Claude golds as calibration anchors for what a **2** looks like — not as text to imitate.
 
@@ -6,7 +6,7 @@ Score a finished analysis **0–2** on each dimension (0 = missing/wrong, 1 = pa
 
 | ID | Dimension | What a 2 looks like |
 | --- | --- | --- |
-| D1 | **Section spine** | All required sections present for mode (full 1–9 or lite 1,2,5,6,8,9). Action line + `Framework v3.10`. |
+| D1 | **Section spine** | All required sections present for mode (full 1–9 or lite 1,2,5,6,8,9). Action line + `Framework vX.Y` (the version actually used; currently v3.12). |
 | D2 | **Access / posture** | Access Status when needed; adversarial vs explanatory posture correct for source type. |
 | D3 | **Prior Belief + Replication** | Expert-calibrated surprise/incremental call; single-group vs convergence named; confirmation path stated. |
 | D4 | **Background + analogies (pedagogy)** | §3 *teaches* in flowing paragraphs: intuition before operational defs; frameworks/acronyms explained on first use; ≥1 strong systems/CS (or chemistry) analogy woven into the narrative (not bolted under a glossary bullet); each has **Breaks when:**; **Central analogy** locked once. Glossary-only §3 = max 1, usually 0. |

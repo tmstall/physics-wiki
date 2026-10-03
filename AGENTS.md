@@ -51,7 +51,7 @@ Every wiki page should have:
 ## Standard Operations
 
 ### Ingest
-When the user says **`analyze`** (or clearly means a Framework paper analysis), follow **`incoming/prompts/ANALYZE.md`** in full — v3.10 contract, anti-truncation, rubric self-score, production gate before `incoming/md/`. Grok analyses use the `g_` filename prefix. Quality pack: `incoming/analysis-pack/`. See also `incoming/PIPELINE.md`.
+When the user says **`analyze`** (or clearly means a Framework paper analysis), follow **`incoming/prompts/ANALYZE.md`** in full — current Framework contract (newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.12)), anti-truncation, rubric self-score, production gate before `incoming/md/`. Grok analyses use the `g_` filename prefix. Quality pack: `incoming/analysis-pack/`. Headless Claude Code runs follow `incoming/automation/ANALYZE_HEADLESS.md`. See also `incoming/PIPELINE.md`.
 
 When the user says **`start deep dive`** / **`end deep dive`** (or clearly means that session), follow **`incoming/prompts/DEEP_DIVE.md`** in full — append Q&A onto the analysis file in `incoming/md/` (never `raw/`); concatenate multiple sessions; resume open sections for Obsidian restarts.
 
