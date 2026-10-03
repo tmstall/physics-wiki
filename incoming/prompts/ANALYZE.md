@@ -1,9 +1,9 @@
 # Grok Build prompt — trigger: `analyze`
 
 Paste this into Grok Build (or bind the trigger string **`analyze`** to this text).  
-You operate under repo-root `AGENTS.md`. Framework: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.13). Quality pack: `incoming/analysis-pack/`.
+You operate under repo-root `AGENTS.md`. Framework: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.14). Quality pack: `incoming/analysis-pack/`.
 
-**Purpose:** Produce paper analyses under the current Framework (currently **v3.13**) that match Claude gold **structure and honesty**, without mimicking Claude’s voice. Gold exemplars are **rubric fuel**, not a training set — do not paste full gold bodies into context as style targets.
+**Purpose:** Produce paper analyses under the current Framework (currently **v3.14**) that match Claude gold **structure and honesty**, without mimicking Claude’s voice. Gold exemplars are **rubric fuel**, not a training set — do not paste full gold bodies into context as style targets.
 
 **Kickoff packets:** If the user pastes an **Analysis kickoff** (from the Wiki Coordinator Bot or `ANALYZE_KICKOFF.md`), treat it as a valid start: honor mode A/B/C/D notes, optional posture/lite **only if set**, and shared slug if present. Still run the full Framework contract — the kickoff is not the analysis. If mode C/D is noted, do **not** auto-run `compare` unless the user says `compare`. Bot never replaces this trigger.
 
@@ -14,7 +14,7 @@ You operate under repo-root `AGENTS.md`. Framework: the newest `Academic Paper A
 When the user says **`analyze`** (optionally with a PDF, DOI, arXiv id, or pasted text):
 
 1. Confirm the upload is a technical/academic paper (or meaningful excerpt). If not, say so and ask — do not force the framework.
-2. Load the contract: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.13) — pick the highest version number, compared numerically, not by file date. Read Parts 1–4. That document is authoritative for sections, checkpoints, lite mode, retrieval protocol (including the full-paper reading rule), depth target, Claim Check, Referee Pass, and reader calibration. (The v3.10 copy in `incoming/analysis-pack/` is historical, not canonical.)
+2. Load the contract: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.14) — pick the highest version number, compared numerically, not by file date. Read Parts 1–4. That document is authoritative for sections, checkpoints, lite mode, retrieval protocol (including the full-paper reading rule), depth target, Claim Check, Referee Pass, and reader calibration. (The v3.10 copy in `incoming/analysis-pack/` is historical, not canonical.)
 3. Optionally open **one** exemplar **card** in `incoming/analysis-pack/GOLD_EXEMPLARS.md` matching paper type (experimental / theory / ultrafast-CM / speculative). Do **not** load full gold markdown unless a prior bakeoff failed a specific checkpoint and you need a pattern for that section only.
 4. Produce the analysis under the **Output contract** below.
 5. Run the **Anti-truncation checklist** before finishing.
@@ -32,7 +32,7 @@ When the user says **`analyze`** (optionally with a PDF, DOI, arXiv id, or paste
 Analyzing | Framework vX.Y
 ```
 
-`vX.Y` = the version of the framework file you loaded (currently v3.13).
+`vX.Y` = the version of the framework file you loaded (currently v3.14).
 
 Add `| lite mode` and/or `| adversarial posture` / status notes when applicable.
 
@@ -248,7 +248,7 @@ After §9, **before** any Deep Dive sessions, you **may** add a short checklist 
 
 ## Related files
 
-- Framework: newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.13)  
+- Framework: newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.14)  
 - Gold cards: `incoming/analysis-pack/GOLD_EXEMPLARS.md`  
 - Rubric / gate: `incoming/analysis-pack/RUBRIC.md`, `PRODUCTION_GATE.md`  
 - Deep dive: `incoming/prompts/DEEP_DIVE.md`  

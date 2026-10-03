@@ -9,7 +9,7 @@ These instructions are general: they apply to any paper type (experiment, theory
 ## 1. Resolve and load the framework (mandatory, every run)
 
 1. List the framework files with Glob: `C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v*.md` (Markdown only; ignore the `.pdf` renders and any differently named files such as `Academic_Paper_Analysis_Framework_v3_10.md`).
-2. Pick the **highest version number**, comparing the parts numerically (major, then minor, then patch): v3.13 > v3.12 > v3.9. Do not sort as text and do not go by file date. (As of 2026-10-03 the newest is **v3.13**.)
+2. Pick the **highest version number**, comparing the parts numerically (major, then minor, then patch): v3.14 > v3.13 > v3.9. Do not sort as text and do not go by file date. (As of 2026-10-03 the newest is **v3.14**.)
 3. Read that file **in full** before doing anything else. The framework is long, so a single Read may be cut off. If it is, keep paging with offset/limit until you reach the last line (the file ends with the changelog and a closing italic footer). Call its version `vX.Y` below (take it from the filename; it should match the file's own `**Version X.Y …**` header line — if they disagree, use the header and say so in the Genuine Uncertainty Disclosure).
 4. If no file matches, stop and print `FAIL no framework found in C:\Users\tmsta\Desktop\Gold\Prompts` instead of analyzing.
 
@@ -29,7 +29,7 @@ The framework's Depth Target is defined generically. On this laptop, calibrate a
 - `incoming\analysis-pack\exemplars\*.md`: read the exemplar closest to this paper's type in full, and skim the others for structure and density.
 - `incoming\analysis-pack\RUBRIC.md` and `incoming\analysis-pack\PRODUCTION_GATE.md`.
 
-The exemplars were written under v3.10, so they predate the Claim Check and Referee Pass. Use them for explanatory depth and density only, and take everything else from the framework. Never copy or closely paraphrase exemplar sentences.
+The exemplars were written under v3.10, so they predate the Claim Check and Referee Pass. Use them for explanatory depth only, and take everything else from the framework, including the length target and how much math to show (v3.14+: explain first, few equations, about 5,000-7,500 words), which the longer, more mathematical exemplars predate. Never copy or closely paraphrase exemplar sentences.
 
 ## 3. Getting and reading the paper (tool specifics)
 

@@ -4,8 +4,8 @@
 ingest_threshold: 10
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
-canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.13.md   # current as of 2026-10-03
-canonical_framework_sha256: 57D8DBA4B43F065AB9CC1F9EDD1D86081B5C245C7097DEB4F321D3F79AAE85B3
+canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.14.md   # current as of 2026-10-03
+canonical_framework_sha256: EE9BEBB56F488AE17EB54FF040E07586FCF7440E20A2A3BA477BEC430E3372C9
 analysis_runner: Claude Code (bundled with Claude Desktop) on laptop
 delivery:
   - incoming\md
@@ -43,3 +43,7 @@ phases_status:
 - Canonical framework is now v3.13 (Gold\Prompts, 2026-10-03): Key Figures rule, optional ASCII concept diagram, a shorter explanatory Claim Check (~400-800 words), consistency check reports significant findings only. v3.12 stays in Gold\Prompts as history. The "currently v3.x" pointers (AGENTS.md, PIPELINE.md, ANALYZE.md, analysis-pack) now say v3.13.
 - Figures: analyze-paper.ps1 extracts figures before the Claude run (arXiv source tarball first, then pdftoppm page renders, then pdfimages) into scratch\work\<run>\figures\ with a FIGURES.md manifest; Claude embeds its picks as figures/<prefix>_figN.png; delivery copies the embedded files to incoming\md\figures\ and Drive Analyses\figures\ and commits them. See README.md "Figures".
 - Re-runs: analyze-paper.ps1 -Replace overwrites the existing incoming\md analysis (same file name), replaces its papers-log row (note "re-run <date>, framework vX.Y") and commits as "Replace analysis".
+
+## Notes (framework v3.14, 2026-10-03)
+
+- Canonical framework is now v3.14 (Gold\Prompts, 2026-10-03): length target about 5,000-7,500 words (was 5,000-9,500); Sections 3-4 explain first, then support (plain words, then key numbers / a table / a figure), only the few equations that carry the main result, derivations in a short optional appendix or cut; the v3.12 'do not compress Sections 3-4' rule removed; Claim Check hard cap 800 words, results and meaning only. Everything else unchanged from v3.13. v3.13, v3.12 and v3.11 stay in Gold\Prompts as history. The 'currently v3.x' pointers (AGENTS.md, PIPELINE.md, ANALYZE.md, analysis-pack, automation README, ANALYZE_HEADLESS.md) now say v3.14.

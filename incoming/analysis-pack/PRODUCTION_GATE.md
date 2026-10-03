@@ -16,7 +16,7 @@ Analyses that fail this gate stay in chat or in `incoming/analysis-pack/bakeoff/
 
 - Rubric total ≥18/24 (full) or lite-rescaled equivalent; D4 ≥1 and D5 ≥1; prefer D6–D9 ≥1 with teaching-density watches, numbered falsifiable handles, and a least-confident tied to the novel claim.
 - Filename convention matches pipeline: Grok → `g_YYYY-MM-DD_doi-..._slug.md` (or `g_…_arxiv-…` / `g_…_eso…`); Claude omits the `g_` prefix. Same date/id/slug shape either way.
-- First line / action line includes `Framework vX.Y` for the framework version actually used (newest in `Gold\Prompts`, currently v3.13).
+- First line / action line includes `Framework vX.Y` for the framework version actually used (newest in `Gold\Prompts`, currently v3.14).
 - Closing footer notes analyzer + date + posture (optional but preferred for provenance).
 - Deep Dive Q&A (if any) lives **on this same file** via `start deep dive` / `end deep dive` — not required for gate pass; append after staging to `incoming/md/` is fine.
 
