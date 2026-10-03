@@ -5,7 +5,7 @@ ingest_threshold: 10
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
 canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.14.md   # current as of 2026-10-03
-canonical_framework_sha256: EE9BEBB56F488AE17EB54FF040E07586FCF7440E20A2A3BA477BEC430E3372C9
+canonical_framework_sha256: 605AF9B29439994DF943ECFEF39627799B7B73FC35833CE435BEFBAA7CB8757A
 analysis_runner: Claude Code (bundled with Claude Desktop) on laptop
 delivery:
   - incoming\md
@@ -47,3 +47,7 @@ phases_status:
 ## Notes (framework v3.14, 2026-10-03)
 
 - Canonical framework is now v3.14 (Gold\Prompts, 2026-10-03): length target about 5,000-7,500 words (was 5,000-9,500); Sections 3-4 explain first, then support (plain words, then key numbers / a table / a figure), only the few equations that carry the main result, derivations in a short optional appendix or cut; the v3.12 'do not compress Sections 3-4' rule removed; Claim Check hard cap 800 words, results and meaning only. Everything else unchanged from v3.13. v3.13, v3.12 and v3.11 stay in Gold\Prompts as history. The 'currently v3.x' pointers (AGENTS.md, PIPELINE.md, ANALYZE.md, analysis-pack, automation README, ANALYZE_HEADLESS.md) now say v3.14.
+
+## Notes (framework v3.15, 2026-10-03)
+
+- Canonical framework is now v3.15 (Gold\Prompts, 2026-10-03): protected 'Origins & Big Picture' subsection in Section 3 (~400-700 words, e.g. DNS formation: recycling, Case BB, ultra-stripped supernovae) that the length limits do not cut; no math appendix (derivations cut, not moved); physics before forecasts (explain the phenomenon, then a short plain-language note on difficulty, no exponents or error budgets); significant findings always reported in plain words, never trimmed; parameter tables cut to the 4-6 numbers that matter; total target still ~5,000-7,500 words. v3.14 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.15.

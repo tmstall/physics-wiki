@@ -1,12 +1,12 @@
 # Grok analysis-quality pack
 
-Raise Grok paper analyses to the same **structural honesty and completeness** bar as the best Claude (Cowork) analyses under the current Framework (newest in `C:\Users\tmsta\Desktop\Gold\Prompts`, currently **v3.14**) — without training Grok to mimic Claude’s voice.
+Raise Grok paper analyses to the same **structural honesty and completeness** bar as the best Claude (Cowork) analyses under the current Framework (newest in `C:\Users\tmsta\Desktop\Gold\Prompts`, currently **v3.15**) — without training Grok to mimic Claude’s voice.
 
 ## What this pack is
 
 | Piece | Role |
 | --- | --- |
-| `C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v*.md` (newest version; currently v3.14) | Canonical analysis contract (sections, checkpoints, posture, lite mode, depth target, claim check, referee pass) |
+| `C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v*.md` (newest version; currently v3.15) | Canonical analysis contract (sections, checkpoints, posture, lite mode, depth target, claim check, referee pass) |
 | [`Academic_Paper_Analysis_Framework_v3_10.md`](Academic_Paper_Analysis_Framework_v3_10.md) | **Historical** v3.10 copy, kept for reference only — not canonical |
 | [`prompts/ANALYZE.md`](../prompts/ANALYZE.md) | Grok Build trigger: **`analyze`** — output contract + anti-truncation |
 | [`GOLD_EXEMPLARS.md`](GOLD_EXEMPLARS.md) | Four Claude gold analyses + **exemplar cards** (what to emulate structurally) |
@@ -24,7 +24,7 @@ Raise Grok paper analyses to the same **structural honesty and completeness** ba
 ## How to run an analysis (Grok Build)
 
 1. Read [`../prompts/ANALYZE.md`](../prompts/ANALYZE.md) (or say **`analyze`** if bound).
-2. Load the current Framework: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.14).
+2. Load the current Framework: the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.15).
 3. Optionally skim **one** exemplar **card** in `GOLD_EXEMPLARS.md` matching the paper type — not the full gold markdown unless debugging a failed bakeoff.
 4. Produce the full 9-section analysis (or lite when appropriate).
 5. Self-check against the anti-truncation checklist in `ANALYZE.md`.
