@@ -71,6 +71,7 @@ The framework decides *which* figures to show and how to caption them (v3.13+: K
   Then the caption line and the What-to-look-at note the framework specifies. Use forward slashes and no `..`, absolute paths or URLs. Use only files that exist in `figures\` (the pipeline refuses to deliver an analysis with a broken embed, and copies the embedded files next to the delivered `.md` in `incoming\md\figures\`, so these paths resolve in Obsidian and in the PDF build). Do not embed page renders that you have not cropped unless no better copy exists. Never embed files you did not check.
 - **No figures pre-extracted** (DOI-only paper, extraction failed): describe each key figure in words and reference it by number, as the framework's fallback says. Say so in the Access Status.
 - State in the Access Status which figures you viewed and where they came from (arXiv source files, page renders or crops).
+- **Concept diagram** (framework v3.13+, optional but encouraged): write it as plain text in a fenced code block, using ASCII characters only (`->`, `|`, `v`, `+-->`) and lines of at most about 70 characters, so it renders the same in Obsidian and in the box PDF build. It is not an image file and needs no embed.
 
 ## 6. Output file
 
