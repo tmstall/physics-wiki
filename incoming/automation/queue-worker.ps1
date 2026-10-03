@@ -5,6 +5,7 @@
 
   Each run:
     1. retries a failed git push and any Drive copies that failed earlier;
+    1c. prunes the To Read folder (prune-to-read.ps1), at most once per calendar day;
     2. imports job files dropped into G:\My Drive\Technical Papers\Queue\ (moved to Queue\_picked\);
     3. resets orphaned *.running jobs to pending;
     4. processes pending jobs one at a time (oldest first). A usage limit stops the run and
@@ -51,6 +52,17 @@ try {
         }
         if ($left.Count) { Set-Content $retry $left -Encoding UTF8 } else { Remove-Item $retry -Force }
     }
+
+    # 1c. prune the To Read folder, at most once per calendar day (stamp file queue\prune-to-read.last)
+    try {
+        $pstamp = Join-Path $QueueDir 'prune-to-read.last'
+        $plast = $(if (Test-Path $pstamp) { (Get-Item $pstamp).LastWriteTime } else { [datetime]::MinValue })
+        if ($plast.Date -lt (Get-Date).Date -and (Test-Path -LiteralPath $ToReadDir)) {
+            & (Join-Path $AutoDir 'prune-to-read.ps1') -LogFile (Join-Path $QueueDir 'prune-to-read.log') *>&1 | Out-Null
+            Set-Content -Path $pstamp -Value (Get-Date -Format s)
+            Write-Log "To Read prune ran (log: queue\prune-to-read.log)" $wlog
+        }
+    } catch { Write-Log "To Read prune failed (non-fatal): $($_.Exception.Message)" $wlog }
 
     # 2. Drive inbox
     if (-not $NoDriveInbox -and (Test-Path $DriveQueue)) {

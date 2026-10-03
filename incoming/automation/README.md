@@ -13,6 +13,7 @@ Headless paper analysis on this laptop with Claude Code (Opus) and the newest Ac
 | `submit-job.ps1` | Adds a job file to `queue\` (and with `-RunNow`, starts the scheduled task). |
 | `register-queue-task.ps1` | Registers the scheduled task `PhysicsWiki-PaperQueue` (`-Remove` to delete it). |
 | `run-hidden.vbs` | Starts the worker without a console window (the task's action). |
+| `prune-to-read.ps1` | Deletes items older than 14 days from `G:\My Drive\To Read\` (and unreferenced figures); `-DryRun` previews. Run daily by the queue worker. |
 | `pipeline-lib.ps1` | Shared functions. |
 | `ANALYZE_HEADLESS.md` / `DEEPDIVE_HEADLESS.md` | Instructions Claude follows in headless runs. |
 | `run-claude.ps1` | Finds the newest `claude.exe` bundled with Claude Desktop. |
@@ -45,6 +46,7 @@ What it does:
 7. **Delivery.** Every copy is checked for size and SHA-256:
    1. `incoming\md\<YYYY-MM-DD>_<id>_<slug>.md`, plus every image it embeds (`figures/<file>`) into `incoming\md\figures\`. An embed whose file is missing stops the delivery.
    2. `G:\My Drive\Technical Papers\Analyses\` (figures into `Analyses\figures\`). If G: isn't mounted, Google Drive for Desktop is started; if it's still missing, the copy is queued in `queue\drive-retry.txt`. The laptop has no pandoc/LaTeX, so the PDF is listed in `queue\pdf-todo.txt` and built on the box (pandoc + xelatex; copy the embedded `figures\` files next to the `.md` on the box and pass `--resource-path` to that folder so the images are in the PDF).
+   2b. **To Read** (`to_read_dir` in `pipeline-config.md`, default `G:\My Drive\To Read\`): the `.md` and its figures (`To Read\figures\`), for reading on the phone/tablet (DriveSync Pro -> Obsidian). Non-fatal: a failure logs a warning and delivery continues. Copies get today's LastWriteTime; `prune-to-read.ps1` removes them after 14 days.
    3. A row is appended to `papers-analyzed-log.md`: date | title | arXiv/DOI | file | model | words.
    4. `git add` and commit of just the analysis, its embedded figure files and the log (never wiki/raw or other changes), then `git push`. A failed push is retried by the next worker run.
 8. **Inbox count.** Prints how many `.md` files are in `incoming\md` root (pending ingest).
