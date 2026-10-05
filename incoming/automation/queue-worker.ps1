@@ -9,9 +9,12 @@
     2. imports job files dropped into G:\My Drive\Technical Papers\Queue\ (moved to Queue\_picked\);
     3. resets orphaned *.running jobs to pending;
     4. processes pending jobs one at a time (oldest first). A usage limit stops the run and
-       parks the job as *.limit until the reset time; later runs retry it.
+       parks the job as *.limit until the reset time; later runs retry it;
+    5. auto-ingest: if incoming\md root has >= ingest_threshold analysis .md files (default 10,
+       from pipeline-config.md) and auto_ingest is not false, runs ingest-wiki.ps1. Skips when
+       under threshold, when disabled, or when an ingest is already running (ingest.lock).
 #>
-param([int]$MaxJobs = 10, [switch]$NoDriveInbox)
+param([int]$MaxJobs = 10, [switch]$NoDriveInbox, [switch]$NoAutoIngest)
 $ErrorActionPreference = 'Continue'
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
 Initialize-PipelineEnv
@@ -138,6 +141,43 @@ try {
         Write-Log "Job end: $(Split-Path $final -Leaf) exit $code status $st$(if ($res) { ' (' + $res.status + ')' })" $wlog
         $done++
         if ($st -eq 'limit') { Write-Log 'Stopping the queue: usage limit (extra usage is disabled).' $wlog; break }
+    }
+
+    # 5. auto-ingest when enough analyses wait in incoming\md root
+    if ($NoAutoIngest) {
+        Write-Log 'Auto-ingest: skipped (-NoAutoIngest).' $wlog
+    } else {
+        try {
+            $autoOn = (Get-PipelineConfigValue 'auto_ingest' 'true').ToLowerInvariant()
+            $threshold = [int](Get-PipelineConfigValue 'ingest_threshold' '10')
+            if ($autoOn -in @('false', '0', 'no', 'off')) {
+                Write-Log "Auto-ingest: disabled (auto_ingest=$autoOn in pipeline-config.md)." $wlog
+            } elseif ($threshold -le 0) {
+                Write-Log "Auto-ingest: disabled (ingest_threshold=$threshold)." $wlog
+            } else {
+                $inboxCount = @(Get-ChildItem -LiteralPath $MdDir -Filter '*.md' -File -ErrorAction SilentlyContinue).Count
+                if ($inboxCount -lt $threshold) {
+                    Write-Log "Auto-ingest: skip (inbox root has $inboxCount analysis .md; need >= $threshold)." $wlog
+                } else {
+                    Write-Log "Auto-ingest: FIRE (inbox root $inboxCount >= $threshold) -> ingest-wiki.ps1" $wlog
+                    $ps = Join-Path $PSHOME 'powershell.exe'
+                    $ingestScript = Join-Path $AutoDir 'ingest-wiki.ps1'
+                    $ingestLog = Join-Path $QueueDir 'auto-ingest.log'
+                    & $ps -NoProfile -ExecutionPolicy Bypass -File $ingestScript 2>&1 |
+                        ForEach-Object { "$_" } |
+                        Tee-Object -FilePath $ingestLog -Append |
+                        ForEach-Object { Write-Log "ingest: $_" $wlog }
+                    $icode = $LASTEXITCODE
+                    if ($icode -eq 4) {
+                        Write-Log 'Auto-ingest: skip (ingest already running; ingest.lock held).' $wlog
+                    } else {
+                        Write-Log "Auto-ingest: finished exit $icode (detail: queue\auto-ingest.log)" $wlog
+                    }
+                }
+            }
+        } catch {
+            Write-Log "Auto-ingest: failed (non-fatal): $($_.Exception.Message)" $wlog
+        }
     }
 }
 finally { $lock.Close() }

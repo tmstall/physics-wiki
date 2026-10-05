@@ -31,6 +31,23 @@ $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
 Initialize-PipelineEnv
 
+# Single-instance lock (auto-ingest + manual share queue\ingest.lock)
+$ingestLockPath = Join-Path $script:QueueDir 'ingest.lock'
+New-Item -ItemType Directory -Path $script:QueueDir -Force | Out-Null
+try {
+    $script:IngestLock = [IO.File]::Open($ingestLockPath, 'OpenOrCreate', 'ReadWrite', 'None')
+} catch {
+    Write-Host "ingest-wiki: another ingest holds ingest.lock; exiting."
+    if ($ResultFile) {
+        (@{ status = 'busy'; error = 'ingest.lock held' } | ConvertTo-Json) | Set-Content -LiteralPath $ResultFile -Encoding UTF8
+    }
+    exit 4
+}
+$script:IngestLock.SetLength(0)
+$lb = [Text.Encoding]::ASCII.GetBytes("pid $PID ingest-wiki $(Get-Date -Format s)")
+$script:IngestLock.Write($lb, 0, $lb.Length); $script:IngestLock.Flush()
+try {
+
 $MdDir = $script:MdDir
 $RepoRoot = $script:RepoRoot
 $AutoDir = $script:AutoDir
@@ -417,11 +434,17 @@ try {
     if ($ResultFile) {
         ($result | ConvertTo-Json -Depth 6) | Set-Content -LiteralPath $ResultFile -Encoding UTF8
     }
-    if ($result.status -eq 'failed') { exit 1 } else { exit 0 }
+    if ($result.status -eq 'failed') { $script:IngestExitCode = 1 } else { $script:IngestExitCode = 0 }
 } catch {
     $result.error = $_.Exception.Message
     $result.elapsed = ((Get-Date) - $started).ToString('hh\:mm\:ss')
     Write-RunLog "ERROR: $($result.error)"
     if ($ResultFile) { ($result | ConvertTo-Json -Depth 6) | Set-Content -LiteralPath $ResultFile -Encoding UTF8 }
+    $script:IngestExitCode = 1
     throw
 }
+} finally {
+    if ($script:IngestLock) { try { $script:IngestLock.Close() } catch { } }
+}
+if ($null -eq $script:IngestExitCode) { $script:IngestExitCode = 1 }
+exit $script:IngestExitCode

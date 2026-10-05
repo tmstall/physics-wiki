@@ -2,6 +2,7 @@
 
 ```yaml
 ingest_threshold: 10
+auto_ingest: true   # queue-worker runs ingest-wiki.ps1 when inbox root .md count >= ingest_threshold; set false to disable
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
 canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.16.md   # current as of 2026-10-04
@@ -70,4 +71,5 @@ phases_status:
 
 - `ingest-wiki.ps1` replaces the manual Cowork `copy` + Grok Build `ingest` seam for headless runs: stages `incoming\md` root (+ embedded figures) into `raw\analyses` / `raw\analyses\figures`, archives originals, appends READY_QUEUE pending rows, then runs `grok.exe` with `INGEST_HEADLESS.md`.
 - Human pause tokens from `INGEST.md` are auto-continued in headless mode. Twin policy for unattended runs is documented in `INGEST_HEADLESS.md` (prefer non-`sonnet_`; prefer `*_plain.md` when both exist; skip_duplicate if wiki page exists).
-- Reminder routine / threshold changes / Mywiki role remain Phase 5. Ingest threshold stays 10; Bot notify threshold stays 5.
+- **Auto-ingest (same date):** `queue-worker.ps1` step 5 (PhysicsWiki-PaperQueue every 30 min) counts `incoming\md\*.md` at the inbox root (not archive/subfolders). If count >= `ingest_threshold` (10) and `auto_ingest` is true, it runs `ingest-wiki.ps1`. Under threshold: skip (logged). Concurrent runs blocked by `queue\ingest.lock` (exit 4). Disable: set `auto_ingest: false`, or `ingest_threshold: 0`, or run the worker with `-NoAutoIngest`.
+- Bot notify threshold (5) and Mywiki / reminder-Bot role remain Phase 5 — unchanged here.

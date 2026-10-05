@@ -45,11 +45,11 @@ Unspecified mode: **ask** (no silent default yet). Posture/lite: blank unless us
 1. **Bot** (optional): intake on phone → kickoff(s); ask to queue Build if wanted.
 2. **Claude** and/or **Build** `analyze` → files in `incoming/md/` (+ Drive for Grok).
 3. Optional: Build deep dive; Bot/Build **`compare`** if twins exist → human picks wiki source.
-4. Cowork **`copy`** (Bot may remind at ≥5 files — never copies itself).
-5. Build **`ingest`**.
-6. Pause tokens: `continue` / `next` / `stop` / `lint now` / `skip <file>`.
+4. Cowork **`copy`** **or** headless `automation/ingest-wiki.ps1` staging (Bot may remind at ≥5 files — never copies itself).
+5. Build **`ingest`** **or** the same `ingest-wiki.ps1` headless path (also auto-fired by `PhysicsWiki-PaperQueue` when inbox root ≥ `ingest_threshold` 10; see `automation/pipeline-config.md`).
+6. Pause tokens (interactive Build only): `continue` / `next` / `stop` / `lint now` / `skip <file>`.
 
-Cowork must **not** auto-start Build. Build must **not** modify `raw/` (except reading). Bot must **not** analyze, copy, or ingest. Grok `analyze` / deep dive must **not** auto-`copy` / auto-`ingest`.
+Cowork must **not** auto-start Build. Build must **not** modify `raw/` (except reading). Bot must **not** analyze, copy, or ingest. Grok `analyze` / deep dive must **not** auto-`copy` / auto-`ingest`. Scheduled auto-ingest is the laptop queue worker only (not the Bot).
 
 ### Dual analyses (Mode C/D)
 

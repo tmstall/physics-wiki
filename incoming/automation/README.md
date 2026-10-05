@@ -9,12 +9,14 @@ Headless paper analysis on this laptop with Claude Code (Opus) and the newest Ac
 | `analyze-paper.ps1` | One command per paper: duplicate check, latest arXiv PDF, Claude Code (Opus) run, verified delivery. |
 | `deliver-analysis.ps1` | Delivery only, for an existing `.md` (same code `analyze-paper.ps1` uses). Has overrides for testing. |
 | `deep-dive.ps1` | Answers one question about an already-analyzed paper (Claude Code, Opus). |
-| `queue-worker.ps1` | Processes queued jobs one at a time under `queue\worker.lock`. |
+| `queue-worker.ps1` | Processes queued jobs one at a time under `queue\worker.lock`; auto-runs ingest when inbox >= threshold. |
 | `submit-job.ps1` | Adds a job file to `queue\` (and with `-RunNow`, starts the scheduled task). |
 | `register-queue-task.ps1` | Registers the scheduled task `PhysicsWiki-PaperQueue` (`-Remove` to delete it). |
 | `run-hidden.vbs` | Starts the worker without a console window (the task's action). |
 | `prune-to-read.ps1` | Deletes items older than 14 days from `G:\My Drive\To Read\` (and unreferenced figures); `-DryRun` previews. Run daily by the queue worker. |
 | `pipeline-lib.ps1` | Shared functions. |
+| `ingest-wiki.ps1` | Phase 4: stage inbox + headless Grok wiki ingest + commit/push (`queue\ingest.lock`). |
+| `INGEST_HEADLESS.md` | Instructions Grok follows for headless ingest. |
 | `ANALYZE_HEADLESS.md` / `DEEPDIVE_HEADLESS.md` | Instructions Claude follows in headless runs. |
 | `run-claude.ps1` | Finds the newest `claude.exe` bundled with Claude Desktop. |
 | `papers-analyzed-log.md` | One row per delivered analysis. |
@@ -74,6 +76,7 @@ Each worker run:
 2. Imports Drive inbox files.
 3. Resets orphaned `running` jobs.
 4. Works through `pending` jobs oldest first.
+5. **Auto-ingest:** if `incoming\md` root has >= `ingest_threshold` (10) waiting `.md` analyses and `auto_ingest` is true in `pipeline-config.md`, runs `ingest-wiki.ps1`. Otherwise skips (logged in `queue\worker.log`). Duplicate ingest blocked by `queue\ingest.lock`.
 
 A usage limit parks the job as `limit` with `retryAfter` (the reset time from Claude's rate-limit event) and stops the queue until then. Duplicates end as `done` with `result.status = duplicate`.
 
@@ -144,9 +147,12 @@ What it does:
 1. **Stage** (replaces Cowork `copy`): root `incoming\md\*.md` -> verified copy into `raw\analyses\`, embedded `figures\<file>` into `raw\analyses\figures\` (inbox figures kept), originals moved to `incoming\md\archive\`, `READY_QUEUE.md` pending rows appended (history preserved). Never deletes analyses; never overwrites `raw\analyses\` unless `-Force`.
 2. **Ingest**: runs `C:\Users\tmsta\.grok\bin\grok.exe` headlessly with `INGEST_HEADLESS.md` (follows `incoming\prompts\INGEST.md` + `AGENTS.md`, no human pause tokens). Writes/updates `wiki\`, READY_QUEUE statuses, `_PIPELINE_STATUS.md`, and a lint report.
 3. **Git**: commits only explicit paths (script/docs, staged raw analyses+figures, wiki/, READY_QUEUE, status, lint report). Does not stage `.gitignore` or unrelated dirty files. Push is on by default (`-NoPush` to skip).
+4. **Lock:** holds `queue\ingest.lock` so auto-ingest and a manual run cannot overlap (busy exit code 4).
+
+**Auto-trigger:** the scheduled `PhysicsWiki-PaperQueue` worker (every 30 min) calls this when the inbox root reaches `ingest_threshold` (10). See `pipeline-config.md` (`auto_ingest`, `ingest_threshold`). Disable with `auto_ingest: false`, `ingest_threshold: 0`, or `queue-worker.ps1 -NoAutoIngest`.
 
 Undo: tag `pre-ingest-phase4-2026-10-05` marks the commit before the first Phase 4 ingest.
 
 ## Not here (later phases)
 
-The threshold-5/10 inbox reminder routine and Mywiki's role (Phase 5) are not built. Do not change those thresholds here.
+Bot notify-at-5 reminder routine and Mywiki's role remain Phase 5 (not built). Auto-ingest at threshold 10 **is** on via the queue worker — see above.
