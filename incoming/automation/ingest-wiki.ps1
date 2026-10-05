@@ -335,6 +335,15 @@ function Invoke-GitCommit {
         foreach ($fig in ($result.figuresCopied | Select-Object -Unique)) {
             $paths.Add(('raw/analyses/figures/' + $fig)) | Out-Null
         }
+        # Archived originals (recoverable) + remove former inbox-root paths from the index
+        foreach ($name in $result.staged) {
+            $arch = Join-Path $ArchiveDir $name
+            if (Test-Path -LiteralPath $arch) { $paths.Add(('incoming/md/archive/' + $name)) | Out-Null }
+            $oldInbox = Join-Path $MdDir $name
+            if (-not (Test-Path -LiteralPath $oldInbox)) {
+                git rm --ignore-unmatch --quiet -- ('incoming/md/' + $name) 2>&1 | ForEach-Object { Write-RunLog "git rm inbox: $_" }
+            }
+        }
         if (Test-Path 'wiki') {
             git add -A -- 'wiki' 2>&1 | ForEach-Object { Write-RunLog "git: $_" }
         }
