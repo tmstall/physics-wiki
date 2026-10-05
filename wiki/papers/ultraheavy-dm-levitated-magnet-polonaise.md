@@ -1,8 +1,8 @@
 ---
 tags: [papers, dark-matter, levitated-sensors, ultraheavy-dm, optomechanics]
-last_updated: 2026-09-12
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [dark-matter-detection-channels, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, gamma-glow-pbh-detector]
+related_papers: [dark-matter-detection-channels, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, gamma-glow-pbh-detector, levitated-oscillator-stationary-entanglement]
 source_analysis: "raw/analyses/2026-09-08_arxiv-2608.20464_ultraheavy-dark-matter-levitated-magnet-polonaise.md"
 ---
 
@@ -33,6 +33,7 @@ WIMP tanks count many soft hits. Ultraheavy DM is so sparse that you wait for on
 ## Connections
 
 - Synthesis: [[dark-matter-detection-channels]]
+- Same word “levitated,” different experiment: [[levitated-oscillator-stationary-entanglement]] entangles a silica bead’s motion with outgoing light. It is not a dark-matter search.
 - Other DM / exotic channels in-wiki: [[43gev-gamma-ray-line-clusters]], [[lz-dm-eft-high-energy-recoil]], [[gamma-glow-pbh-detector]]
 
 ## Source

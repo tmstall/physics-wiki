@@ -1,8 +1,8 @@
 ---
 tags: [concepts, galactic-dynamics, black-holes]
-last_updated: 2026-08-29
+last_updated: 2026-10-05
 status: draft
-related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, jwst-filament-cnd-ngc4696, mrk501-double-jet-smbbh, pulsars-satellite-masses, ultramassive-bh-binary-cavity, astrid-z0-mbh-lss]
+related_papers: [smbh-inclination-angle, high-z-quasar-pair-merger, jwst-filament-cnd-ngc4696, mrk501-double-jet-smbbh, pulsars-satellite-masses, ultramassive-bh-binary-cavity, astrid-z0-mbh-lss, astrid-bh-occupation-fraction]
 ---
 
 # Dynamical Friction
@@ -23,3 +23,4 @@ A SMBH moving through a galactic disk raises a trailing overdensity; that overde
 
 - [[supermassive-black-hole-binaries]], [[smbh-inclination-angle]]
 - Simulation infrastructure: [[astrid-z0-mbh-lss]] (DF subgrid vs repositioning at cosmological volume)
+- Dwarf census on the same box: [[astrid-bh-occupation-fraction]] — shallow potentials leave ~half of 10⁷ M☉ black holes outside the stellar half-mass radius by z = 0. The drag often does not finish. Resolution at that mass is comparable to the galaxy.

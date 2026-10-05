@@ -168,3 +168,7 @@ Do not collapse into “dissipation always helps.” Prefer: **sometimes the env
 ## Lint addendum (2026-08-31)
 
 - Vacuum / QI neighbor also linked from paper side: [[differential-signaling-quantum-vacuum]], [[imaging-vacuum-fluctuations-qft]].
+
+## Addendum (2026-10-05)
+
+- [[levitated-oscillator-stationary-entanglement]]: steady-state entanglement between a levitated bead’s motion and light that has left the cavity, with no cryostat. Red detuning cools; blue detuning writes photon–phonon pairs. The witness is only ~8% below the separable bound, the state is not steerable, and the bead readout trusts a calibration chain. This is an engineered optomechanical resource, closer to the cavity-entanglement and mechanical-cat rows than to a new foundations claim. Do not confuse it with the levitated-magnet dark-matter search [[ultraheavy-dm-levitated-magnet-polonaise]].

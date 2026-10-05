@@ -106,6 +106,7 @@ Label these clearly so readers do not treat freeze-in as a matched-filter templa
 - Remnant entropy heuristic ([[entropy-maximization-bh-mergers]]).
 - Siren + jet geometry for $H_0$ ([[gw170817-jet-hubble]]).
 - Binary-pulsar strong-field timing ([[psr-j1906-binary-timing]]).
+- Lightest precise DNS total mass, with a 1.4% decay check ([[psr-j1856-lightest-dns]]). Birth-rate context, not a waveform: [[neutrino-flavor-failed-supernovae]].
 
 ### Still thin (honest gaps)
 

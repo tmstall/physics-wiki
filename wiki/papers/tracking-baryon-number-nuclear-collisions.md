@@ -36,6 +36,7 @@ Think of the three valence quarks as high-bandwidth data links and the junction 
 - Same STAR / baryon-number laboratory: [[rhic-net-proton-fluctuations]] (fluctuations of net protons vs this paper’s *transport* of mean net baryon)
 - Photonuclear / UPC neighbors: [[star-jpsi-spin-interference]], [[alice-jpsi-gluon-saturation]]
 - Heavy-ion geometry cousin: [[alice-oo-nene-nuclear-geometry-flow]]
+- Where a quenched jet’s momentum reappears: [[cms-jet-diffusion-wake]]
 - Nonperturbative nucleon / gluonic structure: [[intrinsic-charm-proton-nnpdf]], [[x2370-pseudoscalar-glueball]]
 - Isospin / isobar-style control: [[na61-isospin-kaon-asymmetry]]
 - Synthesis: [[nuclear-dense-matter-precision]]

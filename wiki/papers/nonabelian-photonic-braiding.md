@@ -1,8 +1,8 @@
 ---
 tags: [papers, photonics, topology, quantum-optics]
-last_updated: 2026-08-16
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [photon-number-optical-analogy-control, twisted-light-chiral-ms, photonic-supersolid, 1d-anyons-momentum-tails, evanescent-wave-transverse-spin, magnetic-heliknoton-electric-write]
+related_papers: [photon-number-optical-analogy-control, twisted-light-chiral-ms, photonic-supersolid, 1d-anyons-momentum-tails, evanescent-wave-transverse-spin, magnetic-heliknoton-electric-write, photonic-momentum-space-topology]
 source_analysis: "spacex_export/extracted-analyses/2026-02-13_programmable-non-abelian-photonic-braiding_c725bcab.md"
 ---
 
@@ -42,6 +42,7 @@ This platform **practices** non-commutative braiding with classical light at roo
 - Programmable optical state control: [[photon-number-optical-analogy-control]]
 - Structured light / OAM: [[twisted-light-chiral-ms]]
 - Topological soft light: [[photonic-supersolid]]
+- Momentum-space emulator, not a braid: [[photonic-momentum-space-topology]] reads a Zak phase and a fitted Chern number of a lossy model, one wavevector at a time, with no lattice. Different integer, same honesty rule — a chip practice, not a material anyon.
 - Anyonic statistics (1D theory): [[1d-anyons-momentum-tails]]
 - Key terms: non-Abelian braiding, photonic pseudospin, SU(2) rotation gate, topological photonics
 - Symmetry-protected BIC cousin in linearized GR (exploratory): [[gw-bound-states-continuum]]

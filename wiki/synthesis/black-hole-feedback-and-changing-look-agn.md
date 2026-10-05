@@ -124,6 +124,8 @@ An NLS1 jumped from radio-quiet (~1.4 mJy) to radio-loud (~39 mJy) and *stayed* 
 
 Euclid multiplies the high-$z$ quasar sample; extreme JWST portraits (naked / horizonless candidates, LRD cocoons) stress how incomplete “standard AGN SED” assumptions are. [[direct-bh-mass-lrd-abell2744]] adds the first reionization-era *dynamical* LRD mass (~$5\times10^7\,M_\odot$), calming some virial-scare scenarios for that object while sharpening the $M_{\rm BH}/M_*$ assembly puzzle. Feedback models trained on local quasars must not pretend every $z\sim6$–8 object is a scaled-up SDSS template.
 
+**Addendum (2026-10-05).** [[astrid-bh-occupation-fraction]] splits the same ASTRID box as [[astrid-z0-mbh-lss]] into total, central, and active occupation. Near-unity total occupation is the seeding rule. In 10⁷ M☉ dwarfs only about half the holes are still inside the stellar half-mass radius by z = 0, and an Eddington-ratio cut above 0.01 sees only a few percent. An AGN fraction is a duty cycle. Do not read the heavy-seed slice as a light-versus-heavy test: ASTRID has one heavy channel. The star-forming versus quiescent location split is a correlation with an open causal arrow, and it sits near the force resolution.
+
 ---
 
 ## Where the rungs agree

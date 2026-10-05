@@ -11,8 +11,8 @@ Short stub. Full prompt text lives in `incoming/prompts/`. Bot paste packs: `inc
 | **`analyze`** | Claude Cowork | [`prompts/COWORK_ANALYZE.md`](prompts/COWORK_ANALYZE.md) | Claude analysis → `incoming/md/YYYY-MM-DD_…` |
 | **`compare`** | Build and/or Bot | [`prompts/COMPARE.md`](prompts/COMPARE.md) | Rubric scorecard; human picks wiki source |
 | **`start deep dive` / `end deep dive`** | Grok Build | [`prompts/DEEP_DIVE.md`](prompts/DEEP_DIVE.md) | Append Q&A on `incoming/md/` file; Drive sync on end |
-| **`copy`** | Claude Cowork | [`prompts/COPY.md`](prompts/COPY.md) | Stage inbox → `raw/analyses/` + archive + READY_QUEUE |
-| **`ingest`** | Grok Build | [`prompts/INGEST.md`](prompts/INGEST.md) | Queue batches of 5; light lint @10; full lint at end |
+| **`copy`** / Phase 4 stage | Claude Cowork **or** `automation/ingest-wiki.ps1` | [`prompts/COPY.md`](prompts/COPY.md) | Stage inbox → `raw/analyses/` + archive + READY_QUEUE |
+| **`ingest`** | Grok Build **or** `automation/ingest-wiki.ps1` (headless) | [`prompts/INGEST.md`](prompts/INGEST.md) | Queue batches of 5; light lint @10; full lint at end |
 
 ## Analyzer modes (A–D)
 

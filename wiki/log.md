@@ -1481,3 +1481,48 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 ### Catalog
 - Papers **222 → 240** · Concepts 62 · Synthesis 18
 
+## [2026-10-05] ingest | Batch 1 — levitated entanglement, UFD iron, LyC leak, failed SNe, jet wake
+
+### Papers created
+- [[levitated-oscillator-stationary-entanglement]] — from `2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md` (sonnet twin kept in raw, not a second page)
+- [[megatron-ufd-iron-plateau]] — from `2026-10-02_arxiv-2510.05232_megatron-pop3-iron-plateau-ultra-faint-dwarfs.md`
+- [[mxdfz4-4-lyc-emitter]] — from `2026-10-02_arxiv-2603.04517_mxdfz4-4-lyc-emitter-lya-halo-tracer.md`
+- [[neutrino-flavor-failed-supernovae]] — from `2026-10-02_arxiv-2605.16504_neutrino-flavor-conversion-failed-supernova-rate.md`
+- [[cms-jet-diffusion-wake]] — from `2026-10-02_doi-10.1103-g49y-8cjl_cms-jet-diffusion-wake-dijets-heavy-ion.md`
+
+### Skipped
+- `2026-10-02_doi-10.1038-s41586-026-10904-x_cft-spectra-rydberg-quantum-simulator.md` — skipped_duplicate of [[cft-spectra-rydberg-simulator]] (same DOI; no Deep Dive block to fold)
+
+### Hubs touched
+- Concepts: [[ultra-metal-poor-stars]], [[parton-jets]]
+- Synthesis: [[amo-quantum-state-control]], [[nuclear-dense-matter-precision]], [[high-energy-astrophysics-multimessenger]], [[cosmology-expansion-history-and-structure]]
+
+### Catalog
+- Papers **240 → 245** · Concepts 62 · Synthesis 18
+- Successes this run: 5. Queue remaining after this batch: 6 pending rows (CHIME pair, BH occupation, PSR J1856, photonic topology, Gauss–Bonnet QNMs). Sonnet twin marked done with the levitated page.
+
+## [2026-10-05] ingest | Batch 2 — CHIME autopower, ASTRID occupation, J1856, photonic Zak, Gauss–Bonnet
+
+### Papers created
+- [[chime-21cm-autopower-z1]] — from `2026-10-04_arxiv-2511.19620_chime-21cm-auto-power-detection-z1_plain.md` (technical twin kept in raw, not a second page)
+- [[astrid-bh-occupation-fraction]] — from `2026-10-03_arxiv-2607.09853_black-hole-occupation-fraction-fossil-record.md` (same ASTRID box as [[astrid-z0-mbh-lss]], not a duplicate)
+- [[psr-j1856-lightest-dns]] — from `2026-10-03_arxiv-2607.27333_psr-j1856-0039-lightest-double-neutron-star.md`
+- [[photonic-momentum-space-topology]] — from `2026-10-03_arxiv-2609.38352_interferometric-readout-momentum-space-topology-photonic-circuit.md`
+- [[gauss-bonnet-qnm-spectral-atlas]] — from `2026-10-04_arxiv-2608.06083_gauss-bonnet-black-hole-quasinormal-modes-spectral.md`
+
+### Hubs touched
+- Concepts: [[baryon-acoustic-oscillations]], [[dynamical-friction]]
+- Synthesis: [[cosmology-expansion-history-and-structure]], [[black-hole-feedback-and-changing-look-agn]], [[gravitational-wave-strong-field-probes]], [[modified-speculative-gravity]], [[condensed-matter-topology-fractionalization]], [[high-energy-astrophysics-multimessenger]]
+
+### Catalog
+- Papers **245 → 250** · Concepts 62 · Synthesis 18
+- Successes this run: 10. Queue remaining: 0.
+
+## [2026-10-05] lint | Full AGENTS lint after headless ingest (10 papers)
+
+- Report: `LINT_REPORT_2026-10-05.md`
+- Catalog: **250 papers · 62 concepts · 18 synthesis** (+ companion refresher on disk)
+- Index complete for every paper file; **0** unresolved wikilinks
+- Light lint not run separately: the 10th success closed the queue, so this is the one full lint
+- Patched primary reverse links and three pre-existing duplicate `last_updated` keys
+

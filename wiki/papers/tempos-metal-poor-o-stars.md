@@ -1,8 +1,8 @@
 ---
 tags: [papers, massive-stars, metallicity, stellar-winds, reionization]
-last_updated: 2026-10-01
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [high-energy-astrophysics-multimessenger, lbt-yp-primordial-helium, early-universe-popiii-flash-ionization, ultra-metal-poor-stars]
+related_papers: [high-energy-astrophysics-multimessenger, lbt-yp-primordial-helium, early-universe-popiii-flash-ionization, ultra-metal-poor-stars, megatron-ufd-iron-plateau]
 source_analysis: "raw/analyses/2026-09-23_doi-10.3847-1538-4365-ae95f6_tempos-treasury-extremely-metal-poor-o-stars.md"
 ---
 
@@ -35,6 +35,7 @@ Line-driven winds are a saturating bus. Hydrogen and helium barely absorb an O s
 
 - Synthesis: [[high-energy-astrophysics-multimessenger]]
 - Low-$Z$ / early-universe neighbors: [[lbt-yp-primordial-helium]], [[early-universe-popiii-flash-ionization]], [[ultra-metal-poor-stars]]
+- A simulated ultra-faint iron floor, not this stellar sample: [[megatron-ufd-iron-plateau]]
 
 ## Source
 

@@ -35,6 +35,7 @@ An accelerometer measures position. Position and energy do not commute, so that 
 
 - Synthesis: [[amo-quantum-state-control]]
 - Other quantum-platform pages: [[time-goes-quantum]], [[collective-superradiant-lasing]]
+- Levitated motion entangled with outgoing light: [[levitated-oscillator-stationary-entanglement]]
 
 ## Source
 

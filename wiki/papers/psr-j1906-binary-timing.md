@@ -1,8 +1,8 @@
 ---
 tags: [papers, pulsars, general-relativity, binary-neutron-stars]
-last_updated: 2026-08-04
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [pulsars-satellite-masses, gw170817-jet-hubble, second-order-gw-strain-gauge, horizon-direct-wave-gw250114]
+related_papers: [pulsars-satellite-masses, gw170817-jet-hubble, second-order-gw-strain-gauge, horizon-direct-wave-gw250114, psr-j1856-lightest-dns]
 source_analysis: "spacex_export/extracted-analyses/2026-02-17_long-term-timing-of-psr-j1906-0746-binary_19e0bfc4.md"
 ---
 
@@ -39,6 +39,7 @@ A binary pulsar is a clock on a warped train track. Years of arrival-time residu
 - Synthesis: [[gravitational-wave-strong-field-probes]]
 
 - Pulsar mass / acceleration work: [[pulsars-satellite-masses]]
+- Lightest precise double-neutron-star total mass: [[psr-j1856-lightest-dns]]
 - Multi-messenger neutron-star binaries: [[gw170817-jet-hubble]]
 - GW strain / timing language: [[second-order-gw-strain-gauge]], [[horizon-direct-wave-gw250114]]
 - Concepts: [[pulsar-timing-arrays]] (population context)

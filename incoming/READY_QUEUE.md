@@ -1,7 +1,7 @@
 # READY_QUEUE
 
-staged_at: 2026-10-01
-notes: Staged by Cowork `copy`. Wave 2026-09-05: 12 ingested + 1 skipped_duplicate (ErTe₃); 0 pending. Wave 2026-09-12: 4 copied to raw/analyses/ + verified (byte-size match), 0 pending (ingested 2026-09-12) — but the archive-move step could NOT run this pass (device_bash unreachable on this session due to the Windows-mount issue tracked since 2026-09-08); all 4 inbox originals remain in incoming/md/ root, not yet moved to incoming/md/archive/. Safe to re-run `copy` once device_bash is back — raw/analyses/ already has verified copies, so a re-run will correctly skip_exists on these 4 and just complete the archive move. Wave 2026-09-20: 7 copied to raw/analyses/ + verified (byte-size match) and archived to incoming/md/archive/ (rapid-orbital-decay-erassu-j060839, unconventional-materials-light-dark-matter-detection, entanglement-islands-page-curves-kerr-ads, lbt-yp part1of2, lbt-yp part2of2, zz-boson-pair-entanglement-higgs-decays, topology-of-the-universe); 0 pending (ingested 2026-09-20). The 4 files noted as stranded since 2026-09-12 (ultraheavy-dark-matter-levitated-magnet-polonaise, baryon-semileptonic-decays-polarization-entanglement, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing) were skipped_exists again this run, per COPY.md's literal default (a skip leaves the inbox original in place, unarchived) — contrary to the prior note's expectation that a re-run would complete the archive move; COPY.md as written never archives on the skip_exists path. These 4 remain in incoming/md/ root, already byte-verified in raw/analyses/, awaiting either manual archiving or a `copy --force` re-run if that's the path wanted. Follow-up same session: hash-verified (sha256) all 4 stranded 2026-09-12-wave inbox originals (ultraheavy-dark-matter-levitated-magnet-polonaise, baryon-semileptonic-decays-polarization-entanglement, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing) against their raw/analyses/ copies — all 4 matched byte-for-byte — then archived them to incoming/md/archive/ by hand at the user's request. incoming/md/ root is now fully empty. No status/row changes needed (all 4 were already `done`). Wave 2026-10-01: 20 copied to raw/analyses/ + verified (byte-size + sha256 match) and archived to incoming/md/archive/; 0 skipped_exists, 0 failed; 0 pending (ingested 2026-10-01).
+staged_at: 2026-10-05
+notes: Staged by automation ingest-wiki.ps1 (2026-10-05). Build/Grok consumes pending rows.
 
 | status | filename | staged_at | notes |
 | --- | --- | --- | --- |
@@ -76,3 +76,16 @@ notes: Staged by Cowork `copy`. Wave 2026-09-05: 12 ingested + 1 skipped_duplica
 | done | 2026-09-28_arxiv-2609.20788_looking-inside-a-quantum-black-hole.md | 2026-10-01 | [[looking-inside-a-quantum-black-hole]] |
 | done | 2026-09-28_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography.md | 2026-10-01 | [[geodesic-tessellation-schwarzschild-holography]] (with v2) |
 | done | 2026-09-29_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography-v2-foundations.md | 2026-10-01 | [[geodesic-tessellation-schwarzschild-holography]] (foundations) |
+| done | 2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md | 2026-10-05 | [[levitated-oscillator-stationary-entanglement]] |
+| done | 2026-10-02_arxiv-2510.05232_megatron-pop3-iron-plateau-ultra-faint-dwarfs.md | 2026-10-05 | [[megatron-ufd-iron-plateau]] |
+| done | 2026-10-02_arxiv-2603.04517_mxdfz4-4-lyc-emitter-lya-halo-tracer.md | 2026-10-05 | [[mxdfz4-4-lyc-emitter]] |
+| done | 2026-10-02_arxiv-2605.16504_neutrino-flavor-conversion-failed-supernova-rate.md | 2026-10-05 | [[neutrino-flavor-failed-supernovae]] |
+| skipped_duplicate | 2026-10-02_doi-10.1038-s41586-026-10904-x_cft-spectra-rydberg-quantum-simulator.md | 2026-10-05 | skipped_duplicate of [[cft-spectra-rydberg-simulator]] (same DOI; no Deep Dive block) |
+| done | 2026-10-02_doi-10.1103-g49y-8cjl_cms-jet-diffusion-wake-dijets-heavy-ion.md | 2026-10-05 | [[cms-jet-diffusion-wake]] |
+| done | 2026-10-03_arxiv-2511.19620_chime-21cm-auto-power-detection-z1.md | 2026-10-05 | twin kept in raw; wiki from 2026-10-04_arxiv-2511.19620_chime-21cm-auto-power-detection-z1_plain.md |
+| done | 2026-10-03_arxiv-2607.09853_black-hole-occupation-fraction-fossil-record.md | 2026-10-05 | [[astrid-bh-occupation-fraction]] |
+| done | 2026-10-03_arxiv-2607.27333_psr-j1856-0039-lightest-double-neutron-star.md | 2026-10-05 | [[psr-j1856-lightest-dns]] |
+| done | 2026-10-03_arxiv-2609.38352_interferometric-readout-momentum-space-topology-photonic-circuit.md | 2026-10-05 | [[photonic-momentum-space-topology]] |
+| done | 2026-10-04_arxiv-2511.19620_chime-21cm-auto-power-detection-z1_plain.md | 2026-10-05 | [[chime-21cm-autopower-z1]] |
+| done | 2026-10-04_arxiv-2608.06083_gauss-bonnet-black-hole-quasinormal-modes-spectral.md | 2026-10-05 | [[gauss-bonnet-qnm-spectral-atlas]] |
+| done | sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field.md | 2026-10-05 | twin kept in raw; wiki from 2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md |

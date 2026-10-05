@@ -40,6 +40,8 @@ Standard reionization is a slow city-light rollout at $z\lesssim10$. Pop III.1 i
 - Expansion / parameter tensions: [[desi-evolving-dark-energy]], [[hubble-tension]], [[dark-energy-equation-of-state]]
 - Key terms: Pop III.1, flash ionization, CMB optical depth $\tau$, heavy seeds, Strömgren spheres, EDGES 21 cm
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
+- Faint-dwarf iron floor from ordinary (~100 M☉) Pop III, not this supermassive flash: [[megatron-ufd-iron-plateau]]
+- A z = 4.44 ionizing leak, after the flash epoch: [[mxdfz4-4-lyc-emitter]]
 - Synthesis: [[cosmology-expansion-history-and-structure]]
 
 ## Source

@@ -1,8 +1,8 @@
 ---
 tags: [papers, gravity, cosmology, modified-gravity, quantum-field-theory]
-last_updated: 2026-08-04
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [desi-evolving-dark-energy, universe-gas-pedal-leaky, gravity-from-entropy, topological-cosmological-constant, hawking-radiation-charge-shell]
+related_papers: [desi-evolving-dark-energy, universe-gas-pedal-leaky, gravity-from-entropy, topological-cosmological-constant, hawking-radiation-charge-shell, gauss-bonnet-qnm-spectral-atlas]
 source_analysis: "spacex_export/extracted-analyses/2025-11-08_massive-gravity-gluon-magic_a16227af.md"
 ---
 
@@ -38,6 +38,7 @@ Einstein’s gravity is a massless force: infinite range, inverse-square, two po
 - Gauge–gravity dictionaries (related toolkit): [[double-copy]], [[hawking-radiation-charge-shell]]
 - Key terms: dRGT, Boulware–Deser ghost, Vainshtein mechanism, graviton mass, one-loop effective potential
 - Synthesis: [[modified-speculative-gravity]] (modified & speculative gravity map)
+- Higher-D curvature correction, not a massive graviton: [[gauss-bonnet-qnm-spectral-atlas]] is a numerical ringdown catalogue. Its DECIGO claim does not survive. It is not an observational channel for this theory.
 
 ## Source
 

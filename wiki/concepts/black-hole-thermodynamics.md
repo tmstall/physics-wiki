@@ -1,8 +1,7 @@
 ---
 tags: [concepts, black-holes, thermodynamics]
-last_updated: 2026-08-16
-status: draft
 last_updated: 2026-09-05
+status: draft
 related_papers: [entropy-maximization-bh-mergers, horizon-direct-wave-gw250114, evaporating-charged-black-holes, hawking-radiation-charge-shell, black-hole-third-law-violation, gravity-from-entropy, bh-thermo-far-from-equilibrium]
 ---
 

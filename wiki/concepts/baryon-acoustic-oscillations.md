@@ -1,8 +1,8 @@
 ---
 tags: [concepts, cosmology, large-scale-structure]
-last_updated: 2026-08-16
+last_updated: 2026-10-05
 status: draft
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, big-ring-ultra-large-structure]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, big-ring-ultra-large-structure, chime-21cm-autopower-z1, hi-intensity-mapping-meerkat]
 ---
 
 # Baryon Acoustic Oscillations (BAO)
@@ -17,9 +17,11 @@ Before recombination, photon–baryon plasma supported sound waves. At decouplin
 
 - DESI multi-tracer BAO (BGS, LRG, ELG, QSO, Lyα) is the current precision engine ([[desi-evolving-dark-energy]]).
 - Combined with CMB + SN Ia, BAO drives the evolving-dark-energy tension with pure \(\Lambda\).
+- [[chime-21cm-autopower-z1]] detects 21 cm autopower at z ≈ 1.16 and **throws the BAO scale away** with the foreground filter. It is not a new ruler measurement. [[hi-intensity-mapping-meerkat]] is the same kind of fine-scale autopower at lower redshift.
 
 ## Related
 
 - Reverse-link: [[big-ring-ultra-large-structure]]
 
 - [[dark-energy-equation-of-state]], [[type-ia-supernovae]], [[hubble-tension]], [[cosmic-web]]
+- 21 cm autopower that does **not** measure this ruler: [[chime-21cm-autopower-z1]], [[hi-intensity-mapping-meerkat]]

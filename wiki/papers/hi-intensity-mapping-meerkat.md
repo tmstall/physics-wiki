@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, 21cm, meerkat, intensity-mapping]
-last_updated: 2026-09-05
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [cosmology-expansion-history-and-structure, baryon-acoustic-oscillations]
+related_papers: [cosmology-expansion-history-and-structure, baryon-acoustic-oscillations, chime-21cm-autopower-z1]
 source_analysis: "raw/analyses/2026-09-04_doi-10.3847-2041-8213-ae808f_hi-intensity-mapping-meerkat-autopower-detection.md"
 ---
 
@@ -28,12 +28,13 @@ Every hydrogen cloud rings a fixed 21 cm tuning fork; redshift turns frequency i
 - Significance fell under review; residual short-baseline MeerKAT artifact still under investigation.
 - "Auto-power" means same tracer (HI × HI), not autocorrelating one cube with itself — the measurement always cross-correlates independent splits.
 - 1-D binning leaves velocity-dispersion / shot-noise degeneracy unbroken; small scales mix shot noise and Fingers-of-God.
-- Primacy landscape contested (CHIME z ~ 1 auto-power; MeerKLASS single-dish; GMRT limits) — narrow "first" (interferometric Mpc-scale autopower at z ≈ 0.3–0.44) is the defensible claim.
+- Primacy: [[chime-21cm-autopower-z1]] is the z ≈ 1.16 autopower (12.4σ, fine scales, BAO filtered out). This page remains the interferometric Mpc-scale autopower at z ≈ 0.3–0.44, with significance revised down under review. MeerKLASS single-dish and GMRT limits are still separate claims.
 
 ## Connections
 
 - Cosmology structure / expansion: [[cosmology-expansion-history-and-structure]]
 - Large-scale clustering rulers: [[baryon-acoustic-oscillations]]
+- Higher-redshift CHIME autopower (stronger detection, still not a BAO ruler): [[chime-21cm-autopower-z1]]
 
 ## Source
 

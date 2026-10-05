@@ -3,7 +3,6 @@ tags: [concepts, cosmology, astrophysics]
 last_updated: 2026-08-16
 status: draft
 related_papers: [cigars-i-supernova-cosmology, desi-evolving-dark-energy, holismokes-sn-winny, gw170817-jet-hubble, supernova-onion-expansion]
-last_updated: 2026-08-01
 ---
 
 # Type Ia Supernovae

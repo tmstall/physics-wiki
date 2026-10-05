@@ -1,9 +1,8 @@
 ---
 tags: [concepts, galactic-archaeology, stellar-chemistry]
-last_updated: 2026-08-16
+last_updated: 2026-10-05
 status: draft
-related_papers: [ancient-immigrant-lmc-star, loki-early-accreted-vmp, imf-variation-milky-way, not-a-globular-cluster]
-last_updated: 2026-08-14
+related_papers: [ancient-immigrant-lmc-star, loki-early-accreted-vmp, imf-variation-milky-way, not-a-globular-cluster, megatron-ufd-iron-plateau, tempos-metal-poor-o-stars]
 ---
 
 # Ultra-Metal-Poor Stars
@@ -21,9 +20,11 @@ Resolved open-cluster work ([[imf-variation-milky-way]]) challenges the *univers
 - [[ancient-immigrant-lmc-star]]: SDSS J0715−7334 — extreme UMP, LMC-associated, single Pop III SN-like pattern; dust-cooling implication.
 - [[loki-early-accreted-vmp]]: planar VMP population as early-accreted MW fossil (“Loki”).
 - [[imf-variation-milky-way]]: Gaia open-cluster break-mass vs age — IMF shape may evolve, not only dynamical stripping.
+- [[megatron-ufd-iron-plateau]]: simulation argument that the ultra-faint iron floor near [Fe/H] ≈ −2.5 is one pair-instability yield diluted in a UV-pinned halo, with a still-missing iron-poor tail. Galaxy averages, not single UMP stars. [[tempos-metal-poor-o-stars]] is the living low-Z massive-star sample, not a Pop III yield.
 
 ## Related
 
 - Reverse-link: [[not-a-globular-cluster]]
 
 - [[galactic-accretion]], [[loki-early-accreted-vmp]], [[ancient-immigrant-lmc-star]], [[imf-variation-milky-way]]
+- [[megatron-ufd-iron-plateau]], [[tempos-metal-poor-o-stars]]

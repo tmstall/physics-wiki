@@ -18,6 +18,7 @@ phases_status:
   phase_0: done 2026-10-02
   phase_2: done 2026-10-02 (headless test runs, scratch only)
   phase_3: built 2026-10-03 (live delivery, queue, scheduled task, deep dives)
+  phase_4: built 2026-10-05 (ingest-wiki.ps1 stage+headless Grok ingest)
 ```
 
 ## Notes (Phase 0)
@@ -64,3 +65,9 @@ phases_status:
 - `G:\My Drive\To Read\` (Drive folder 'To Read' in My Drive) holds recent analyses as Markdown only (no PDFs), with embedded images in `To Read\figures\` so the `figures/<file>` links resolve. The Android phone and tablet sync it into a local Obsidian vault with DriveSync Pro.
 - Delivery step b2 (Invoke-Delivery) copies each delivered `.md` and its figures there, non-fatal (a failure only logs a warning). Target = `to_read_dir` above.
 - `prune-to-read.ps1` (`-DryRun` to preview) deletes `.md` files older than `to_read_retention_days` by LastWriteTime and figures no longer referenced by a remaining `.md`; it never touches `README.md`. The queue worker runs it at most once per calendar day (stamp `queue\prune-to-read.last`, log `queue\prune-to-read.log`).
+
+## Notes (Phase 4, 2026-10-05)
+
+- `ingest-wiki.ps1` replaces the manual Cowork `copy` + Grok Build `ingest` seam for headless runs: stages `incoming\md` root (+ embedded figures) into `raw\analyses` / `raw\analyses\figures`, archives originals, appends READY_QUEUE pending rows, then runs `grok.exe` with `INGEST_HEADLESS.md`.
+- Human pause tokens from `INGEST.md` are auto-continued in headless mode. Twin policy for unattended runs is documented in `INGEST_HEADLESS.md` (prefer non-`sonnet_`; prefer `*_plain.md` when both exist; skip_duplicate if wiki page exists).
+- Reminder routine / threshold changes / Mywiki role remain Phase 5. Ingest threshold stays 10; Bot notify threshold stays 5.

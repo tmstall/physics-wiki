@@ -1,8 +1,8 @@
 ---
 tags: [papers, black-holes, ringdown, quasinormal-modes, quantum-gravity]
-last_updated: 2026-10-01
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [black-hole-evaporation-energy-conditions, black-hole-interiors, horizon-direct-wave-gw250114, entanglement-islands-page-curves-kerr-ads]
+related_papers: [black-hole-evaporation-energy-conditions, black-hole-interiors, horizon-direct-wave-gw250114, entanglement-islands-page-curves-kerr-ads, gauss-bonnet-qnm-spectral-atlas]
 source_analysis: "raw/analyses/2026-09-28_arxiv-2609.20788_looking-inside-a-quantum-black-hole.md"
 ---
 
@@ -37,6 +37,7 @@ A very wiggly wave ignores gentle terrain and responds only where the geometry i
 - What can be inferred past the horizon: [[black-hole-interiors]]
 - Semiclassical endpoints and energy conditions: [[black-hole-evaporation-energy-conditions]]
 - Observed ringdown versus a horizon-locked direct wave: [[horizon-direct-wave-gw250114]]
+- Higher-D Gauss–Bonnet tone catalogue (classical spectrum, not an interior probe): [[gauss-bonnet-qnm-spectral-atlas]]
 - Information and islands on the interior side: [[entanglement-islands-page-curves-kerr-ads]]
 
 ## Source

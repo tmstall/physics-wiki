@@ -86,6 +86,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 
 **Limits:** One core/site; tiny atom counts; which SN remains open; Beyond EPICA for pre-entry baseline.
 
+**Addendum (2026-10-05) — who fails to explode.** [[neutrino-flavor-failed-supernovae]] is a core-collapse population lever, not an IceCube source. Forcing flavor equipartition below a density cutoff in 195 one-dimensional runs raises the failed share from ~26% of models to 51–96%, mostly by killing 16–30 M☉ explosions. Deep cutoffs clash with failed-supernova searches, multi-dimensional work can flip the sign at low mass, and the birth-rate-weighted column did not reproduce from the figure. The robust claim is that flavor physics belongs in neutron-star and black-hole birth models. It does not yet supply those models with a number. This partially fills the “core-collapse neutrino channel” gap below. It is still a schematic switch, not a detected supernova neutrino burst.
+
 ---
 
 ## Thread C — Gas lighting, chemistry, and accretion across the web
@@ -129,6 +131,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 
 **Limits:** Idealized flash; WIMP heating unproven; Planck prefers lower $\tau$; 21 cm / LiteBIRD / patchy kSZ will decide.
 
+**Addendum (2026-10-05) — a leak you can point at.** [[mxdfz4-4-lyc-emitter]] is an individual z = 4.44 Lyman-continuum detection (~260 Myr after reionization’s usual end), not the Pop III.1 flash. The flux is real. The escape fraction is an envelope (tens of percent and up) that assumes a rare clear sightline and a very young burst. An independent group on what is likely the same galaxy gets ~35%. Stack this with the flash as late versus early ionization bookkeeping. Do not treat one galaxy as the cosmic escape fraction.
+
 **D vs A tension:** Pop III.1 is **theory-first thermal history**. Fermi SLSN is **data-first engine physics**. Both use “high energy” language; only one is multi-messenger in the instrument sense.
 
 ---
@@ -149,7 +153,7 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 - **True multi-messenger coincidences** (GW+EM, neutrino+EM) — Galactic neutrino *glow* and blazar *candidates* now on disk ([[icecube-galactic-plane-neutrinos]], [[pks2233-neutrino-lensing]]); still no airtight joint neutrino+EM discovery event page.
 - **Core-collapse SN neutrino and GW channels** — optical/γ and ice fossils dominate; SN neutrino burst pages still thin.
 - **GRB / kilonova / r-process** ladder — not a deep stack here (contrast with SLSN magnetar focus).
-- **21 cm intensity mapping experiments** as data pages — Pop III.1 predicts EDGES-class radio excess; primary 21 cm experiment pages sparse.
+- **Reionization-era 21 cm** — Pop III.1 predicts an EDGES-class radio excess. Post-reionization autopower now has pages ([[hi-intensity-mapping-meerkat]], [[chime-21cm-autopower-z1]]); the high-z experiment page is still missing.
 - **IGMF observational bounds** beyond the lab-suppression argument — theory/lab strong; multi-telescope cascade halo campaigns thin.
 - **Statistical samples of ULIRG CON chemistry and FUor recurrence** — both $N=1$-class anchors on disk.
 

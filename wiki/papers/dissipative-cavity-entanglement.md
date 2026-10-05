@@ -1,8 +1,8 @@
 ---
 tags: [papers, quantum-information, cavity-qed, quantum-metrology]
-last_updated: 2026-08-16
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [noise-driven-qubit-entanglement, w-state-entangled-measurement, collective-superradiant-lasing, massive-tunneling-schrodinger-cats, quantum-state-sculptor]
+related_papers: [noise-driven-qubit-entanglement, w-state-entangled-measurement, collective-superradiant-lasing, massive-tunneling-schrodinger-cats, quantum-state-sculptor, levitated-oscillator-stationary-entanglement]
 source_analysis: "claude_export/extracted-analyses/2026-06-06_dissipation-as-a-feature-not-a-bug_e3b36343.md"
 ---
 
@@ -42,6 +42,7 @@ Imagine $N$ atoms as cores sharing one leaky memory bus (the cavity). Usually th
 - Reverse-link: [[quantum-state-sculptor]]
 
 - Neighboring “noise helps” experiment: [[noise-driven-qubit-entanglement]] (correlated microwave noise → entanglement; complementary platform)
+- A measured steady state, not this dark-state proposal: [[levitated-oscillator-stationary-entanglement]] entangles a room-temperature bead’s motion with light that has left the cavity. The witness sits close to the separable bound.
 - Multipartite photonic measurement: [[w-state-entangled-measurement]]
 - Collective cavity clocks / lasers: [[collective-superradiant-lasing]]
 - Macroscopic / exotic cats: [[massive-tunneling-schrodinger-cats]], [[macroscopic-crystal-entanglement-neutrons]]

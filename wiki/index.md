@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-10-01** — 4-paper Cowork wave + full lint.
+Master catalog. Updated **2026-10-05** — headless ingest of the 2026-10-05 queue.
 
-**Papers:** 240 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 250 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -98,6 +98,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[three-body-quantum-company]] | Three-body quantum dynamics analysis |
 | [[color-space-geometry]] | Non-Riemannian rebuild of color geometry |
 | [[feynman-path-integral-single-photons]] | Direct lab test of Feynman’s two path-integral postulates |
+| [[levitated-oscillator-stationary-entanglement]] | Room-temp levitated bead; stationary motion–light entanglement, thin margin |
 
 ### Concepts
 | Page | Summary |
@@ -158,6 +159,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[discrete-gravity-planck-cells]] | GR rebuilt from indivisible Planck-scale cells |
 | [[bh-thermo-far-from-equilibrium]] | Dynamical first law; entropy on MTS not event horizon |
 | [[entanglement-islands-page-curves-kerr-ads]] | Kerr-AdS islands; Page curve can jump at swallow-tail |
+| [[gauss-bonnet-qnm-spectral-atlas]] | 5D–26D Gauss–Bonnet ringdown atlas; DECIGO claim does not survive |
 
 ### Concepts
 | Page | Summary |
@@ -215,6 +217,8 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[negative-mass-objects-in-the-sky]] | Negative-mass lens would diverge light; solution ≠ existence |
 | [[cosmic-lockdown-vacuum-tunneling]] | Toy model: decoherence throttles vacuum escape |
 | [[hi-intensity-mapping-meerkat]] | MeerKAT 21 cm autopower without galaxy survey |
+| [[chime-21cm-autopower-z1]] | CHIME z ≈ 1.16 autopower at 12.4σ; BAO scales filtered out |
+| [[astrid-bh-occupation-fraction]] | ASTRID: total vs central vs active occupation are different fossils |
 | [[lbt-yp-primordial-helium]] | LBT Yp series; average near-pristine galaxies → tighter Nν null |
 | [[tempos-metal-poor-o-stars]] | Uniform FUV O-star sample at Z<0.2 Zsun; winds fade faster at lowest Z |
 | [[topology-of-the-universe]] | Cosmic topology review; nulls weaker than often claimed |
@@ -236,6 +240,8 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[imf-variation-milky-way]] | Gaia open clusters: IMF break mass evolves with age |
 | [[bottom-heavy-imf-early-galaxies]] | $z\approx0.73$ quiescent IMF bottom-heavy; hidden stellar mass |
 | [[primordial-tidal-torque-galaxy-spin]] | MaNGA×ELUCID TTT spin imprint (~7σ, gas in ellipticals) |
+| [[megatron-ufd-iron-plateau]] | One PISN + a UV-pinned gas tank → UFD iron floor near −2.5; tail untested |
+| [[mxdfz4-4-lyc-emitter]] | z = 4.44 LyC leak; flux solid, 50–100% escape is a model envelope |
 
 ### Concepts
 | Page | Summary |
@@ -306,6 +312,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[mirror-that-lies-diffractive-concealment]] | Passive diffractive lying mirror; camouflage not encryption |
 | [[25gpps-diffractive-microscope]] | Shared-objective compressive microscope ~25 Gpx/s |
 | [[desktop-ct-electron-clouds]] | Lab-table 3D orbital tomography ~8 h |
+| [[photonic-momentum-space-topology]] | Chip reads Zak/Chern of a lossy model one wavevector at a time |
 
 ### Concepts
 | Page | Summary |
@@ -343,6 +350,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[equilibrated-fraction-oo-qcd]] | O+O core–corona: equilibrated fraction vs multiplicity |
 | [[star-pt-correlations-qcd-critical]] | STAR pT-correlation dip near guessed critical point; not a discovery |
 | [[cms-black-holes-sphalerons-svm]] | No micro-BHs ≲9–11 TeV; phase-space SVM |
+| [[cms-jet-diffusion-wake]] | ~1% soft-particle dip opposite a subleading jet; wake ID still an inference |
 
 ### Concepts
 | Page | Summary |
@@ -411,6 +419,8 @@ Graduated from Islands (2026-08-29): paper list for engines / CR / multimessenge
 | [[vacuum-birefringence-magnetar-xrays]] | Magnetar X-ray pol. fingerprint of QED vacuum birefringence |
 | [[eccentric-massive-protobinary-core-merger]] | Massive YSOs captured into eccentric binary; misaligned disks |
 | [[rapid-orbital-decay-erassu-j060839]] | Ultracompact DD binary; GW-driven decay matches GR |
+| [[neutrino-flavor-failed-supernovae]] | Schematic flavor mixing raises failed-SN share; 16–30 M☉ hit hardest |
+| [[psr-j1856-lightest-dns]] | Lightest precise DNS total mass, 2.48841 M☉; GR decay at 1.4% |
 
 ---
 
@@ -505,6 +515,8 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Ingest 2026-09-12 | 4 Cowork papers; catalog 216; no new synthesis |
 | Ingest 2026-09-20 | 6 papers from 7 analyses (LBT Yp merged); catalog 222 |
 | Ingest 2026-10-01 | 18 new + S301 update; geodesic pair merged; HRV shelf; catalog 240 |
+| Ingest 2026-10-05 batch 1 | 5 new; CFT DOI skipped_duplicate; levitated sonnet twin not a second page; catalog 245 |
+| Ingest 2026-10-05 batch 2 | 5 new; CHIME plain is the wiki source; catalog 250 |
 | Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0 |
 
 Activity log: [[log]] (`wiki/log.md`).

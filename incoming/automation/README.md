@@ -1,4 +1,4 @@
-# incoming/automation - paper pipeline (Phase 3)
+# incoming/automation - paper pipeline (Phase 4)
 
 Headless paper analysis on this laptop with Claude Code (Opus) and the newest Academic Paper Analysis Framework in `C:\Users\tmsta\Desktop\Gold\Prompts` (resolved by version number, currently v3.16).
 
@@ -127,6 +127,26 @@ Keys: `paper`, `title`, `type` (`analyze` | `deepdive`), `question`, `append`, `
 4. **Saves the answer** to `incoming\deep-dives\<date>_<id>_dd-<slug>.md` and to `G:\My Drive\Technical Papers\Deep Dives\`, then commits and pushes it.
 5. **`-Append`** also appends the Q&A to the analysis as a closed `## Deep Dive - <date> (session N)` section, in the DEEP_DIVE.md format, and re-syncs that analysis to Drive Analyses. This only works for an analysis in `incoming\md` root, per DEEP_DIVE.md.
 
+## Wiki ingest (Phase 4)
+
+```powershell
+cd C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation
+.\ingest-wiki.ps1                 # stage inbox + headless Grok ingest + commit/push
+.\ingest-wiki.ps1 -DryRun         # report only
+.\ingest-wiki.ps1 -StageOnly      # COPY.md staging only (no Grok)
+.\ingest-wiki.ps1 -IngestOnly     # Grok ingest of current READY_QUEUE pending only
+.\ingest-wiki.ps1 -NoGit          # do not commit
+.\ingest-wiki.ps1 -NoPush         # commit locally, no push
+```
+
+What it does:
+
+1. **Stage** (replaces Cowork `copy`): root `incoming\md\*.md` -> verified copy into `raw\analyses\`, embedded `figures\<file>` into `raw\analyses\figures\` (inbox figures kept), originals moved to `incoming\md\archive\`, `READY_QUEUE.md` pending rows appended (history preserved). Never deletes analyses; never overwrites `raw\analyses\` unless `-Force`.
+2. **Ingest**: runs `C:\Users\tmsta\.grok\bin\grok.exe` headlessly with `INGEST_HEADLESS.md` (follows `incoming\prompts\INGEST.md` + `AGENTS.md`, no human pause tokens). Writes/updates `wiki\`, READY_QUEUE statuses, `_PIPELINE_STATUS.md`, and a lint report.
+3. **Git**: commits only explicit paths (script/docs, staged raw analyses+figures, wiki/, READY_QUEUE, status, lint report). Does not stage `.gitignore` or unrelated dirty files. Push is on by default (`-NoPush` to skip).
+
+Undo: tag `pre-ingest-phase4-2026-10-05` marks the commit before the first Phase 4 ingest.
+
 ## Not here (later phases)
 
-The threshold-10 ingest reminder (Phase 4), the 5-paper pause, and the `copy` / INGEST staging step (Phase 4/5) are not built.
+The threshold-5/10 inbox reminder routine and Mywiki's role (Phase 5) are not built. Do not change those thresholds here.

@@ -1,8 +1,8 @@
 ---
 tags: [concepts, neutrinos, multimessenger, cosmic-rays]
-last_updated: 2026-08-19
+last_updated: 2026-10-05
 status: draft
-related_papers: [icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, lab-blazar-pair-instability, aquila-booster-pevatron]
+related_papers: [icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, lab-blazar-pair-instability, aquila-booster-pevatron, neutrino-flavor-failed-supernovae]
 ---
 
 # Astrophysical Neutrinos
@@ -24,3 +24,4 @@ Two wiki questions so far:
 - CR / PeVatron context: [[aquila-booster-pevatron]], [[peters-cycle-cosmic-rays]], [[pulsar-wind-nebulae]]
 - Blazar cascade lab: [[lab-blazar-pair-instability]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]]
+- Not this page: [[neutrino-flavor-failed-supernovae]] is MeV-scale flavor physics inside a collapsing star, not an IceCube source.

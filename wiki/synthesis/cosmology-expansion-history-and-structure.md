@@ -118,7 +118,7 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 
 - Large statistical siren samples beyond GW170817.
 - Cosmography-grade time delays for Winny (foundation only).
-- Dedicated 21 cm experiment pages as data anchors for Pop III.1 radio excess.
+- Reionization-era 21 cm (the Pop III.1 / EDGES lever). Low-z and z ≈ 1 autopower pages now exist ([[hi-intensity-mapping-meerkat]], [[chime-21cm-autopower-z1]]); neither measures BAO.
 - Joint $w_0w_a$ + MOND + dRGT comparison on one dataset (not in wiki).
 - Full Planck / ACT primary CMB pipeline pages (DESI combos assume them).
 
@@ -148,6 +148,13 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 
 - [[lbt-yp-primordial-helium]] — BBN helium / $N_\nu$ null tightened via quality sample + He I λ10830.
 - [[topology-of-the-universe]] — topology ≠ curvature; Planck nulls less decisive for inhomogeneous topologies.
+
+## Addendum (2026-10-05)
+
+- [[megatron-ufd-iron-plateau]] — ultra-faint iron floor as one pair-instability yield in a UV-pinned halo. Assembly fossil, not an expansion ruler. The iron-poor tail is the prediction that can fail.
+- [[mxdfz4-4-lyc-emitter]] — direct LyC at z = 4.44. Escape fraction is model-bounded. Belongs with reionization bookkeeping, not with BAO or supernova distances.
+- [[chime-21cm-autopower-z1]] — first strong 21 cm autopower at z ≈ 1.16 (12.4σ). Systematics milestone. The BAO ruler is filtered out, so this does not yet move the expansion-history threads.
+- [[astrid-bh-occupation-fraction]] — dwarf occupation on the ASTRID box is a seeding/dynamics/duty-cycle split, not an expansion probe. Primary census discussion: [[black-hole-feedback-and-changing-look-agn]].
 
 ## Lint addendum (2026-08-31)
 

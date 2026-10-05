@@ -121,6 +121,8 @@ This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology li
 
 **Limits:** Loss, fabrication detuning; classical simulation, not a topological qubit.
 
+**Addendum (2026-10-05).** [[photonic-momentum-space-topology]] does not build a lattice. A four-mode mesh evaluates one wavevector at a time and reads a Zak phase (0 vs π) and a fitted Chern number (0 vs 1) for lossy SSH and Rice–Mele models. For injection into the lossy site the phase copies the programmed coupling, so the integer is the Hermitian parent’s. This is an emulator readout, like [[nonabelian-photonic-braiding]], not a material fractional-charge result. The exceptional-point winding, as the main text describes it, follows from the contour. The supplement was unread.
+
 **D vs A tension:** Photonic non-Abelian braiding **emulates** non-commutative structure. TMD anyon–trions claim **material** fractional charge. Use D as a design lab; do not treat it as condensed-matter anyon discovery.
 
 ---

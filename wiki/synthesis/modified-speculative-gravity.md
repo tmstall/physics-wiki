@@ -68,6 +68,8 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 
 **A-thread status:** Research-program class — serious literature, open viability windows, **not** a replacement of GR in applications.
 
+**Addendum (2026-10-05) — higher-D curvature correction, not a detection.** [[gauss-bonnet-qnm-spectral-atlas]] is a 300-digit ringdown catalogue for Gauss–Bonnet holes in 5–26 dimensions. Anchor tones and a six-dimensional tensor instability check out. The paper’s claim that string dimensions would ring in the DECIGO band does not: the hertz conversion is dimensionally inconsistent, and a hole much larger than compact extra dimensions is not higher-dimensional. File this as a numerical reference next to [[massive-gravity-drgt]], not as an observational modified-gravity channel. WKB did not “miss the fundamental” if fundamental means the longest-lived tone.
+
 ---
 
 ## Thread B — Metric engineering inside (or next to) classical GR

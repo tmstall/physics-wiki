@@ -119,6 +119,8 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 
 **Limits:** UPC systematics and model backgrounds; ISR pre-modern pQCD.
 
+**Addendum (2026-10-05) — medium response, not jet finding.** [[cms-jet-diffusion-wake]] uses an η gap between dijets so a subleading jet’s diffusion wake lands clear of the leading jet’s fragments. Central PbPb shows a ~1% soft-track deficit (>5σ from zero) that moves with the gap. HYBRID overpredicts the depth. The dip is a measurement. Calling it the wake is an inference until ATLAS repeats the geometry and a centrality-matched model hits the size. This sits on the hard-probe ladder next to [[parton-jets]]: quenching says what the parton loses; the wake asks where the momentum goes.
+
 ---
 
 ## Thread D — Finite-density QCD probes beyond the beam scan

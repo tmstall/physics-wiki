@@ -1,8 +1,8 @@
 ---
 tags: [papers, cosmology, black-holes, simulations, large-scale-structure, agn]
-last_updated: 2026-08-29
+last_updated: 2026-10-05
 status: analysis-ingest
-related_papers: [dual-agn-green-pea, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, smbh-inclination-angle, s301-sgra-spin-sensitive-star, stellar-spin-repeating-partial-tde, gamma-glow-pbh-detector, 43gev-gamma-ray-line-clusters, bottom-heavy-imf-early-galaxies]
+related_papers: [dual-agn-green-pea, high-z-quasar-pair-merger, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, smbh-inclination-angle, s301-sgra-spin-sensitive-star, stellar-spin-repeating-partial-tde, gamma-glow-pbh-detector, 43gev-gamma-ray-line-clusters, bottom-heavy-imf-early-galaxies, astrid-bh-occupation-fraction]
 source_analysis: "raw/analyses/2026-08-28_doi-10.3847-1538-4357-ae3c08_astrid-simulation-z0-black-holes-large-scale-structure.md"
 ---
 
@@ -37,6 +37,7 @@ Repositioning is a teleport script: every black hole is glued to a halo’s pote
 - Feedback / pairing ladder: [[dual-agn-green-pea]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]], [[ultramassive-bh-binary-cavity]], [[smbh-inclination-angle]]
 - One-star / local SMBH probes: [[s301-sgra-spin-sensitive-star]], [[stellar-spin-repeating-partial-tde]]
 - Structure / DM-adjacent: [[bottom-heavy-imf-early-galaxies]], [[gamma-glow-pbh-detector]], [[43gev-gamma-ray-line-clusters]]
+- Same box, occupation decomposed into total / central / active: [[astrid-bh-occupation-fraction]]
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]], [[gravitational-wave-strong-field-probes]], [[cosmology-expansion-history-and-structure]]
 
 ## Open questions

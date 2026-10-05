@@ -37,6 +37,7 @@ CDM builds a highway network of filaments; galaxies grow at the interchanges. Mo
 - Dual high-$z$ quasars: [[high-z-quasar-pair-merger]], [[euclid-high-z-quasar-census]]
 - Cosmic web maps: [[cosmos-web-cosmic-web]]
 - Early flash ionization / heavy seeds: [[early-universe-popiii-flash-ionization]]
+- Individual LyC leak at z = 4.44 (same instrument family, different target): [[mxdfz4-4-lyc-emitter]]
 - Feedback ladder: [[black-hole-feedback-and-changing-look-agn]]
 - Concepts: [[cosmic-web]], [[dual-agn]]
 - Key terms: Lyα emission mapping, MUSE IFU, CGM–IGM transition, MUDF
