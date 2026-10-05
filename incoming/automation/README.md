@@ -1,6 +1,6 @@
 # incoming/automation - paper pipeline (Phase 3)
 
-Headless paper analysis on this laptop with Claude Code (Opus) and the newest Academic Paper Analysis Framework in `C:\Users\tmsta\Desktop\Gold\Prompts` (resolved by version number, currently v3.15).
+Headless paper analysis on this laptop with Claude Code (Opus) and the newest Academic Paper Analysis Framework in `C:\Users\tmsta\Desktop\Gold\Prompts` (resolved by version number, currently v3.16).
 
 ## Files
 

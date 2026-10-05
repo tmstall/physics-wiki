@@ -2,7 +2,7 @@
 
 Four Claude (Cowork) analyses chosen for **complete v3.10 checkpoint coverage**, honest calibration, pedagogical flow, and paper-type diversity. Use them to **score** Grok output for structure, honesty, *and* explanatory density (teach before jargon; paragraphs over glossary). Do **not** paste full gold bodies into context as style-transfer exemplars — match depth of explanation, not wording.
 
-**Framework version note:** the golds were written under v3.10. The current framework is the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.15); it adds a Depth Target, Claim Check (with internal consistency sweep), full-paper reading rule, and Referee Pass that the golds predate. Use the golds for depth, density, and checkpoint *presence*; take those newer requirements from the framework itself.
+**Framework version note:** the golds were written under v3.10. The current framework is the newest `Academic Paper Analysis Framework v*.md` in `C:\Users\tmsta\Desktop\Gold\Prompts` (currently v3.16); it adds a Depth Target, Claim Check (with internal consistency sweep), full-paper reading rule, and Referee Pass that the golds predate. Use the golds for depth, density, and checkpoint *presence*; take those newer requirements from the framework itself.
 
 Copies live in [`exemplars/`](exemplars/). Archive originals remain under `incoming/md/archive/` (also mirrored in `raw/analyses/` after copy).
 

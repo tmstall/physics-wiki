@@ -9,7 +9,7 @@ These instructions are general: they apply to any paper type (experiment, theory
 ## 1. Resolve and load the framework (mandatory, every run)
 
 1. List the framework files with Glob: `C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v*.md` (Markdown only; ignore the `.pdf` renders and any differently named files such as `Academic_Paper_Analysis_Framework_v3_10.md`).
-2. Pick the **highest version number**, comparing the parts numerically (major, then minor, then patch): v3.15 > v3.14 > v3.9. Do not sort as text and do not go by file date. (As of 2026-10-03 the newest is **v3.15**.)
+2. Pick the **highest version number**, comparing the parts numerically (major, then minor, then patch): v3.16 > v3.15 > v3.9. Do not sort as text and do not go by file date. (As of 2026-10-04 the newest is **v3.16**.)
 3. Read that file **in full** before doing anything else. The framework is long, so a single Read may be cut off. If it is, keep paging with offset/limit until you reach the last line (the file ends with the changelog and a closing italic footer). Call its version `vX.Y` below (take it from the filename; it should match the file's own `**Version X.Y …**` header line — if they disagree, use the header and say so in the Genuine Uncertainty Disclosure).
 4. If no file matches, stop and print `FAIL no framework found in C:\Users\tmsta\Desktop\Gold\Prompts` instead of analyzing.
 
@@ -29,7 +29,9 @@ The framework's Depth Target is defined generically. On this laptop, calibrate a
 - `incoming\analysis-pack\exemplars\*.md`: read the exemplar closest to this paper's type in full, and skim the others for structure and density.
 - `incoming\analysis-pack\RUBRIC.md` and `incoming\analysis-pack\PRODUCTION_GATE.md`.
 
-The exemplars were written under v3.10, so they predate the Claim Check and Referee Pass. Use them for explanatory depth only, and take everything else from the framework, including the length target and how much math to show (v3.14+: explain first, few equations, about 5,000-7,500 words; v3.15+: no appendix, small tables, protected origins background), which the longer, more mathematical exemplars predate. Never copy or closely paraphrase exemplar sentences.
+The exemplars were written under v3.10, so they predate the Claim Check and Referee Pass. Use them for explanatory depth only, and take everything else from the framework, including the length target and how much math to show (v3.14+: explain first, few equations, about 5,000-7,500 words; v3.15+: no appendix, small tables, protected origins background; v3.16+: numbers, notation and jargon budgets, Section 4 step template, plain-verdict Claim check), which the longer, more mathematical exemplars predate. Never copy or closely paraphrase exemplar sentences.
+
+**Calibration limits (v3.16+):** `RUBRIC.md`, `PRODUCTION_GATE.md` and the exemplars predate v3.14. Where they reward symbol definitions, "concrete numbers in context", "specific numbers/thresholds", or density, the framework's plain-language rules win (numbers budget, no notation in prose or headings, jargon budget, plain-verdict Claim check). Never use them to set how many numbers, symbols or technical terms the analysis carries; use them only for checkpoint presence and explanatory depth.
 
 ## 3. Getting and reading the paper (tool specifics)
 
@@ -55,6 +57,7 @@ The framework's Claim Check defines *what* to verify. In this run:
 - Keep scripts short. Save any script files in the **work directory** named in the run prompt.
 - Do not install packages or touch files outside the work directory.
 - In the analysis, say that the checks were run in Python and name the script file(s).
+- The script output stays in the work directory. The analysis reports verdicts and their meaning in plain words, as the framework's Claim Check specifies; do not paste test statistics, fitted values or per-bin results from the script into the analysis.
 
 ## 5. Figures (tool specifics)
 
@@ -72,6 +75,7 @@ The framework decides *which* figures to show and how to caption them (v3.13+: K
 - **No figures pre-extracted** (DOI-only paper, extraction failed): describe each key figure in words and reference it by number, as the framework's fallback says. Say so in the Access Status.
 - State in the Access Status which figures you viewed and where they came from (arXiv source files, page renders or crops).
 - **Concept diagram** (framework v3.13+, optional but encouraged): write it as plain text in a fenced code block, using ASCII characters only (`->`, `|`, `v`, `+-->`) and lines of at most about 70 characters, so it renders the same in Obsidian and in the box PDF build. It is not an image file and needs no embed.
+- **Visual micro-example** (framework v3.16+, encouraged): for the hardest unfamiliar concept, you may draw one analyst-built explainer picture with Python into the work directory's `figures\` folder, named `<prefix>_explainer.png` (prefix from the run prompt). matplotlib is **not** installed and you must not install packages; draw with Pillow (`PIL.Image`, `PIL.ImageDraw`: lines, polylines from computed points, rectangles, text), which is installed. Keep it to two or three small labelled panels with a few real numbers, white background, at least 1200 px wide, readable text. View it with Read and redo it if labels overlap or are cut off. Embed it like a paper figure (`![Explainer: short description](figures/<prefix>_explainer.png)`), followed by the caption line *Analyst-built illustration (not from the paper):* ... and a one-sentence What to look at note. If the result is not clean, use a short plain-text sketch in a fenced code block instead.
 
 ## 6. Output file
 
@@ -88,4 +92,5 @@ The framework decides *which* figures to show and how to caption them (v3.13+: K
 - Write **only** to the work directory named in the run prompt. Python scratch scripts and figure crops, if any, also go there (crops into its `figures\` folder).
 - **Delivery is done by the pipeline script, not by you.** After you finish, `incoming\automation\analyze-paper.ps1` checks the file and copies it (plus the figure files it embeds) to `incoming\md\`, Google Drive and the papers-analyzed log, and commits it to git. So do **NOT** write to `incoming\md`, Google Drive, the papers-analyzed log or the wiki, and do no git operations. You have no write access there anyway.
 - Do not modify any other file in the repo, and never modify anything in `C:\Users\tmsta\Desktop\Gold\Prompts` (read-only).
-- After writing, print one final line: `WROTE <full path> <byte count if known>`, preceded by one line `FRAMEWORK <resolved framework path> vX.Y`.
+- **Self-check before writing (mandatory, v3.16+):** on the final text, count with Python: total words; displayed equations (`$$` blocks); inline symbols in Sections 1-4 (inline `$...$` math, Greek letters other than σ, and sub/superscripted variables, outside displayed equations); and the largest number of numeric values in any one prose paragraph of Sections 1-4. Targets: words at most 7,500 (aim for 5,000-6,500), displayed equations at most 3, inline symbols in Sections 1-4 zero (σ for significance excepted), at most two numbers per paragraph except in the Claim check and result tables. If any target is missed, revise and count again before writing the file.
+- After writing, print `SELFCHECK words=<n> display_eq=<n> inline_symbols_s1_4=<n> max_numbers_per_paragraph=<n>`, then one line `FRAMEWORK <resolved framework path> vX.Y`, then the final line `WROTE <full path> <byte count if known>`.

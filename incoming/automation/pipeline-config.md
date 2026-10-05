@@ -4,8 +4,8 @@
 ingest_threshold: 10
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
-canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.15.md   # current as of 2026-10-03
-canonical_framework_sha256: 605AF9B29439994DF943ECFEF39627799B7B73FC35833CE435BEFBAA7CB8757A
+canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.16.md   # current as of 2026-10-04
+canonical_framework_sha256: F996A82C61789D934D4738C6EA2C8119DE63CD0E5F38DB86F5774E37A4EC044C
 analysis_runner: Claude Code (bundled with Claude Desktop) on laptop
 delivery:
   - incoming\md
@@ -53,6 +53,11 @@ phases_status:
 ## Notes (framework v3.15, 2026-10-03)
 
 - Canonical framework is now v3.15 (Gold\Prompts, 2026-10-03): protected 'Origins & Big Picture' subsection in Section 3 (~400-700 words, e.g. DNS formation: recycling, Case BB, ultra-stripped supernovae) that the length limits do not cut; no math appendix (derivations cut, not moved); physics before forecasts (explain the phenomenon, then a short plain-language note on difficulty, no exponents or error budgets); significant findings always reported in plain words, never trimmed; parameter tables cut to the 4-6 numbers that matter; total target still ~5,000-7,500 words. v3.14 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.15.
+
+## Notes (framework v3.16, 2026-10-04)
+
+- Canonical framework is now v3.16 (Gold\Prompts, 2026-10-04): plain-language budgets — numbers budget (one or two rounded numbers per paragraph, each with its meaning; exact values, error bars, p-values and test statistics only where a conclusion depends on them), no notation in prose or headings (Rule A now forbids inline math with any trigger; σ for significance excepted), jargon budget (terms used again at least twice; tool names at most once); Section 4 steps as problem -> what they do -> what it buys (~50-180 words); Claim Check as status word + plain sentences, null tests without p-values; new Visual micro-example (annotated picture for the hardest concept); the 'load-bearing worked numerical micro-example' and 'actual numbers in context' phrases softened. Unchanged: 5,000-7,500 words, protected Origins & Big Picture (~400-700 words), 1-3 displayed equations, all checkpoints. Motivation: CHIME 21 cm pipeline run (2026-10-03) too complex vs. the 2026-10-04 plain rewrite. v3.15 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.16.
+- ANALYZE_HEADLESS.md (same date): RUBRIC/PRODUCTION_GATE/exemplars demoted for numeric and notation density; pre-write self-check (words, displayed equations, inline symbols in Sections 1-4, max numbers per paragraph) printed as a SELFCHECK line; optional analyst-built explainer PNG drawn with Python/Pillow into figures\.
 
 ## Notes (To Read folder, 2026-10-03)
 
