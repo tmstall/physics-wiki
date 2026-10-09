@@ -14,3 +14,4 @@ One row per delivered analysis (written by incoming/automation/analyze-paper.ps1
 | 2026-10-05 | Primordial Black Holes are 5D | arXiv:2506.14874 / doi:10.1103/g12h-93th | 2026-10-05_arxiv-2506.14874_primordial-black-holes-are-5d.md | claude-opus-5-5 | 7234 |
 | 2026-10-08 | Tesla patent US 2026/0310299 A1 - Three-Dimensional Soft Compliant Array Tactile Sensor | local:tesla-patent-US20260310299A1 | 2026-10-08_tesla-patent-US20260310299A1_thermoformed-3d-tactile-sensor-robot-hand.md | claude-opus-5-5 | 7343 |
 | 2026-10-09 | GRB 220706A: a gamma-ray burst with a month-long engine and a luminous supernova | arXiv:2609.22426 | 2026-10-09_arxiv-2609.22426_grb-220706a-month-long-engine-luminous-supernova.md | claude-opus-5-5 | 7414 |
+| 2026-10-09 | lin-2026-apjs-286-9 | local:lin-2026-apjs-286-9 | 2026-10-09_lin-2026-apjs-286-9_muse-confirmation-desi-lens-candidates.md | claude-opus-5-5 | 7071 |
