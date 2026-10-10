@@ -16,6 +16,13 @@
 #>
 param([int]$MaxJobs = 10, [switch]$NoDriveInbox, [switch]$NoAutoIngest)
 $ErrorActionPreference = 'Continue'
+# 0. Google Drive (G:) must be mounted: pipeline-lib builds its Drive paths at load time and the run fails silently without it.
+#    Checked before the lock is taken, so there is no lock to release here (and a running worker's lock is never touched).
+if (-not (Test-Path -LiteralPath 'G:\My Drive')) {
+    $q0 = Join-Path $PSScriptRoot 'queue'; New-Item -ItemType Directory -Path $q0 -Force | Out-Null
+    [IO.File]::AppendAllText((Join-Path $q0 'worker.log'), (Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + '  G: not mounted (G:\My Drive missing), skipping this run.' + "`r`n", (New-Object Text.UTF8Encoding($false)))
+    exit 0
+}
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
 Initialize-PipelineEnv
 New-Item -ItemType Directory -Path $QueueDir -Force | Out-Null
@@ -76,7 +83,7 @@ try {
             $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
             try {
                 $s = Read-JobSpecFile $f.FullName
-                $jp = New-QueueJob -Paper $s.paper -Title $s.title -Type $(if ($s.type) { $s.type } else { 'analyze' }) -Question $s.question -Append:([bool]$s.append) -DryRun:([bool]$s.dryRun) -Force:([bool]$s.force) -Source ('drive:' + $f.Name)
+                $jp = New-QueueJob -Paper $s.paper -Title $s.title -Type $(if ($s.type) { $s.type } else { 'analyze' }) -Question $s.question -Append:([bool]$s.append) -DryRun:([bool]$s.dryRun) -Force:([bool]$s.force) -Source ('drive:' + $f.Name) -Framework $s.framework -LocalPdf $s.localPdf -Slug $s.slug
                 Move-Item -LiteralPath $f.FullName -Destination (Join-Path $picked ($stamp + '_' + $f.Name)) -Force
                 Write-Log "Imported Drive job $($f.Name) -> $jp" $wlog
             } catch {
@@ -121,6 +128,9 @@ try {
             if ($job.title) { $a += @('-Title', (& $clean $job.title)) }
             if ($job.dryRun) { $a += '-DryRun' }
             if ($job.force) { $a += '-Force' }
+            if ($job.framework) { $a += @('-Framework', (& $clean $job.framework)) }
+            if ($job.localPdf) { $a += @('-LocalPdf', (& $clean $job.localPdf)) }
+            if ($job.slug) { $a += @('-Slug', (& $clean $job.slug)) }
         }
         & $ps @a 2>&1 | ForEach-Object { "$_" } | Out-File (Join-Path $QueueDir 'last-job-console.log') -Encoding utf8
         $code = $LASTEXITCODE

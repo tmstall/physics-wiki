@@ -330,6 +330,7 @@ Working directory is the Physics-Wiki repo root.
 }
 
 function Invoke-GitCommit {
+    $ErrorActionPreference = 'Continue'   # git prints LF/CRLF warnings on stderr; under 'Stop' with 2>&1 that aborted the commit (2026-10-09). Function-scoped.
     if ($NoGit -or $DryRun) { Write-RunLog 'Skipping git (NoGit/DryRun)'; return }
     Write-RunLog '=== GIT COMMIT (explicit paths) ==='
     Push-Location $RepoRoot

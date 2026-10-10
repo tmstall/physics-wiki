@@ -14,7 +14,7 @@
   Exit codes: 0 done (or dry run ok), 1 failed, 2 duplicate (skipped), 3 usage limit (stopped cleanly).
 #>
 param(
-    [Parameter(Mandatory = $true, Position = 0)][string]$Paper,
+    [Parameter(Position = 0)][string]$Paper,
     [string]$Title,
     [switch]$DryRun,       # metadata + duplicate check + PDF download + prompt only; no Claude, no delivery
     [switch]$NoDeliver,    # run Claude but leave the output in the work folder
@@ -23,7 +23,10 @@ param(
     [switch]$Replace,      # re-run: implies -Force; output takes the existing incoming\md file name, the log row is replaced
     [switch]$NoFigures,    # skip figure extraction
     [string]$ResultFile,   # JSON result for the queue worker
-    [string]$JobId
+    [string]$JobId,
+    [string]$Framework,    # explicit framework file (default: newest 'Academic Paper Analysis Framework v*.md', resolved per ANALYZE_HEADLESS.md)
+    [string]$LocalPdf,     # local PDF instead of an arXiv ID/DOI: no metadata lookup, no arXiv download
+    [string]$Slug          # id label for -LocalPdf runs (default: slug of -Title)
 )
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
@@ -36,7 +39,21 @@ $result = [ordered]@{ status = 'failed'; paper = $Paper; jobId = $JobId; started
 $runLog = $null
 try {
     # 1. metadata
-    $meta = Get-PaperMeta $Paper $Title
+    if ($LocalPdf) {
+        if (-not (Test-Path -LiteralPath $LocalPdf -PathType Leaf)) { throw "-LocalPdf not found: $LocalPdf" }
+        $LocalPdf = (Resolve-Path -LiteralPath $LocalPdf).Path
+        if (-not $Slug) { $Slug = Get-Slug $(if ($Title) { $Title } else { [IO.Path]::GetFileNameWithoutExtension($LocalPdf) }) }
+        $Slug = ($Slug -replace '[^A-Za-z0-9.\-]', '-').Trim('-')
+        $result.paper = $LocalPdf
+        $meta = [pscustomobject][ordered]@{ input = $LocalPdf; arxiv = $null; doi = $null; version = $null; title = $(if ($Title) { $Title } else { $Slug }); authors = @(); journal = $null; notes = @("local PDF $LocalPdf (no arXiv/DOI lookup)"); slug = $Slug }
+    } else {
+        if (-not $Paper) { throw 'Give a paper (arXiv ID/DOI/URL) or -LocalPdf.' }
+        $meta = Get-PaperMeta $Paper $Title
+    }
+    if ($Framework) {
+        if (-not (Test-Path -LiteralPath $Framework -PathType Leaf)) { throw "-Framework not found: $Framework" }
+        $Framework = (Resolve-Path -LiteralPath $Framework).Path
+    }
     $result.title = $meta.title; $result.arxiv = $meta.arxiv; $result.doi = $meta.doi
     $idLabel = Get-IdLabel $meta
     New-Item -ItemType Directory -Path $WorkRoot -Force | Out-Null
@@ -47,6 +64,7 @@ try {
     Write-Log "Paper: $($meta.title)" $runLog
     Write-Log "  arXiv: $($meta.arxiv) v$($meta.version)  DOI: $($meta.doi)  journal: $($meta.journal)" $runLog
     foreach ($n in $meta.notes) { Write-Log "  note: $n" $runLog }
+    if ($Framework) { Write-Log "  framework (explicit): $Framework" $runLog }
 
     # 2. duplicate check
     $dups = Find-PaperDuplicates $meta
@@ -62,7 +80,10 @@ try {
 
     # 3. full text
     $pdfInfo = $null
-    if ($meta.arxiv) {
+    if ($LocalPdf) {
+        $pdfInfo = Get-LocalPdf $LocalPdf $workDir $Slug
+        Write-Log "  PDF (local copy): $($pdfInfo.pdf) ($($pdfInfo.bytes) bytes, $($pdfInfo.pages) pages, text layer: $(if ($pdfInfo.scanned) { 'none - scanned page images' } else { 'yes' }))" $runLog
+    } elseif ($meta.arxiv) {
         $pdfInfo = Get-ArxivPdf $meta $workDir
         Write-Log "  PDF: $($pdfInfo.pdf) ($($pdfInfo.bytes) bytes, $($pdfInfo.pages) pages)" $runLog
     } else { Write-Log '  No arXiv version found: Claude will retrieve the text via the DOI (ANALYZE_HEADLESS.md section 3).' $runLog }
@@ -86,7 +107,13 @@ try {
     if ($meta.doi) { $desc += "; DOI $($meta.doi)" }
     if ($meta.journal) { $desc += "; published as $($meta.journal)" }
     $desc += '.'
-    if ($pdfInfo) {
+    if ($LocalPdf) { $desc = "Document to analyze: $($meta.title) (local PDF, id $Slug; it has no arXiv ID or DOI)." }
+    if ($pdfInfo -and $LocalPdf) {
+        $text = "The full document PDF ($($pdfInfo.pages) pages) was copied to $($pdfInfo.pdf) - it is the only source; do not look for an arXiv or DOI version."
+        if ($pdfInfo.scanned) { $text += ' It is a SCANNED document: every page is an image with no text layer (text extraction is empty), so read it visually - open the PDF with the Read tool in page ranges of at most 20 pages (Read shows the page images) and read every page, including the claims and all drawing sheets. Take text only from what you see on the page images, and note any illegible passages in the Access Status.' }
+        elseif ($pdfInfo.txt) { $text += " Backup: full-text extraction at $($pdfInfo.txt)." }
+        $text += ' Read the whole document.'
+    } elseif ($pdfInfo) {
         $text = "The full paper PDF (arXiv v$($meta.version), the latest version, $($pdfInfo.pages) pages) is at $($pdfInfo.pdf) - read it directly with the Read tool (poppler is installed; use page ranges of at most 20 pages)."
         if ($pdfInfo.txt) { $text += " Backup: full-text extraction at $($pdfInfo.txt)." }
         $text += ' Read the whole paper including any appendices and supplementary material (if the supplement is a separate file, fetch it as ANALYZE_HEADLESS.md section 3 describes).'
@@ -98,7 +125,9 @@ try {
     } else {
         $text += ' No figure files were pre-extracted: describe the key figures and reference them by number (ANALYZE_HEADLESS.md section 5).'
     }
-    $prompt = 'Read incoming/automation/ANALYZE_HEADLESS.md and follow it exactly (the framework itself defines the depth target, full-paper reading, key figures, claim check and referee pass). Then resolve and read the newest framework in ' + $FrameworkDir + ' as ANALYZE_HEADLESS.md section 1 describes, and apply it. ' +
+    $fwText = 'Then resolve and read the newest framework in ' + $FrameworkDir + ' as ANALYZE_HEADLESS.md section 1 describes, and apply it. '
+    if ($Framework) { $fwText = 'Framework for this run (explicit path; it overrides the newest-version search in ANALYZE_HEADLESS.md section 1): read ' + $Framework + ' in full and apply it. Do not use any Academic Paper Analysis Framework file. ' }
+    $prompt = 'Read incoming/automation/ANALYZE_HEADLESS.md and follow it exactly (the framework itself defines the depth target, full-paper reading, key figures, claim check and referee pass). ' + $fwText +
         $desc + ' ' + $text + ' Python is available for numeric checks (run python only; put any scripts in the work directory). ' + $CompareRule + ' ' +
         'Work directory for this run: ' + $workDir + ' - write the finished analysis there using the filename convention in ANALYZE_HEADLESS.md (id ' + $idLabel + ', no suffix). Write nowhere else; the pipeline script does the delivery.'
     Write-Utf8File (Join-Path $workDir 'prompt.txt') $prompt
@@ -111,7 +140,8 @@ try {
     # 5. Claude Code on Opus
     $jsonl = Join-Path $workDir 'claude.jsonl'
     Write-Log "Running Claude Code (opus); log $jsonl" $runLog
-    $run = Invoke-ClaudeRun $prompt $jsonl
+    $extraDirs = @(); if ($Framework -and -not (Split-Path $Framework).TrimEnd('\').Equals($FrameworkDir.TrimEnd('\'), [StringComparison]::OrdinalIgnoreCase)) { $extraDirs += (Split-Path $Framework) }
+    $run = Invoke-ClaudeRun $prompt $jsonl $extraDirs
     $result.model = $run.model; $result.elapsed = $run.elapsed; $result.costUsd = $run.costUsd
     $result.usageBefore = $run.usageFirst; $result.usageAfter = $run.usageLast
     $fmt = { param($u) if ($u) { '5h ' + [int]([double]$u.fiveHour * 100) + '% / week ' + [int]([double]$u.weekly * 100) + '%' } else { 'n/a' } }

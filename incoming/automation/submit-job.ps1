@@ -8,17 +8,25 @@
   .\submit-job.ps1 2602.03456 -DryRun -RunNow
 #>
 param(
-    [Parameter(Mandatory = $true, Position = 0)][string]$Paper,
+    [Parameter(Position = 0)][string]$Paper,
     [string]$Title,
     [ValidateSet('analyze', 'deepdive')][string]$Type = 'analyze',
     [string]$Question,
     [switch]$Append, [switch]$DryRun, [switch]$Force,
     [string]$Source = 'laptop',
-    [switch]$RunNow
+    [switch]$RunNow,
+    [string]$Framework, [string]$LocalPdf, [string]$Slug   # optional: explicit framework file; local PDF (no arXiv/DOI) + its id slug
 )
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'pipeline-lib.ps1')
-$path = New-QueueJob -Paper $Paper -Title $Title -Type $Type -Question $Question -Append:$Append -DryRun:$DryRun -Force:$Force -Source $Source
+if ($LocalPdf) {
+    $LocalPdf = (Resolve-Path -LiteralPath $LocalPdf).Path
+    if (-not $Slug) { $Slug = Get-Slug $(if ($Title) { $Title } else { [IO.Path]::GetFileNameWithoutExtension($LocalPdf) }) }
+    if (-not $Paper) { $Paper = $Slug }
+}
+if ($Framework) { $Framework = (Resolve-Path -LiteralPath $Framework).Path }
+if (-not $Paper) { throw 'Give a paper (arXiv ID/DOI/URL) or -LocalPdf.' }
+$path = New-QueueJob -Paper $Paper -Title $Title -Type $Type -Question $Question -Append:$Append -DryRun:$DryRun -Force:$Force -Source $Source -Framework $Framework -LocalPdf $LocalPdf -Slug $Slug
 Write-Host "Queued: $path"
 if ($RunNow) {
     $t = Get-ScheduledTask -TaskName 'PhysicsWiki-PaperQueue' -ErrorAction SilentlyContinue

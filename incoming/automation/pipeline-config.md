@@ -1,8 +1,8 @@
-# Paper-analysis automation pipeline config
+﻿# Paper-analysis automation pipeline config
 
 ```yaml
 ingest_threshold: 10
-auto_ingest: true   # queue-worker runs ingest-wiki.ps1 when inbox root .md count >= ingest_threshold; set false to disable
+auto_ingest: false   # queue-worker runs ingest-wiki.ps1 when inbox root .md count >= ingest_threshold; set false to disable
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
 canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.16.md   # current as of 2026-10-04
@@ -58,7 +58,7 @@ phases_status:
 
 ## Notes (framework v3.16, 2026-10-04)
 
-- Canonical framework is now v3.16 (Gold\Prompts, 2026-10-04): plain-language budgets — numbers budget (one or two rounded numbers per paragraph, each with its meaning; exact values, error bars, p-values and test statistics only where a conclusion depends on them), no notation in prose or headings (Rule A now forbids inline math with any trigger; σ for significance excepted), jargon budget (terms used again at least twice; tool names at most once); Section 4 steps as problem -> what they do -> what it buys (~50-180 words); Claim Check as status word + plain sentences, null tests without p-values; new Visual micro-example (annotated picture for the hardest concept); the 'load-bearing worked numerical micro-example' and 'actual numbers in context' phrases softened. Unchanged: 5,000-7,500 words, protected Origins & Big Picture (~400-700 words), 1-3 displayed equations, all checkpoints. Motivation: CHIME 21 cm pipeline run (2026-10-03) too complex vs. the 2026-10-04 plain rewrite. v3.15 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.16.
+- Canonical framework is now v3.16 (Gold\Prompts, 2026-10-04): plain-language budgets â€” numbers budget (one or two rounded numbers per paragraph, each with its meaning; exact values, error bars, p-values and test statistics only where a conclusion depends on them), no notation in prose or headings (Rule A now forbids inline math with any trigger; Ïƒ for significance excepted), jargon budget (terms used again at least twice; tool names at most once); Section 4 steps as problem -> what they do -> what it buys (~50-180 words); Claim Check as status word + plain sentences, null tests without p-values; new Visual micro-example (annotated picture for the hardest concept); the 'load-bearing worked numerical micro-example' and 'actual numbers in context' phrases softened. Unchanged: 5,000-7,500 words, protected Origins & Big Picture (~400-700 words), 1-3 displayed equations, all checkpoints. Motivation: CHIME 21 cm pipeline run (2026-10-03) too complex vs. the 2026-10-04 plain rewrite. v3.15 and earlier stay in Gold\Prompts as history. The 'currently v3.x' pointers now say v3.16.
 - ANALYZE_HEADLESS.md (same date): RUBRIC/PRODUCTION_GATE/exemplars demoted for numeric and notation density; pre-write self-check (words, displayed equations, inline symbols in Sections 1-4, max numbers per paragraph) printed as a SELFCHECK line; optional analyst-built explainer PNG drawn with Python/Pillow into figures\.
 
 ## Notes (To Read folder, 2026-10-03)
@@ -72,4 +72,4 @@ phases_status:
 - `ingest-wiki.ps1` replaces the manual Cowork `copy` + Grok Build `ingest` seam for headless runs: stages `incoming\md` root (+ embedded figures) into `raw\analyses` / `raw\analyses\figures`, archives originals, appends READY_QUEUE pending rows, then runs `grok.exe` with `INGEST_HEADLESS.md`.
 - Human pause tokens from `INGEST.md` are auto-continued in headless mode. Twin policy for unattended runs is documented in `INGEST_HEADLESS.md` (prefer non-`sonnet_`; prefer `*_plain.md` when both exist; skip_duplicate if wiki page exists).
 - **Auto-ingest (same date):** `queue-worker.ps1` step 5 (PhysicsWiki-PaperQueue every 30 min) counts `incoming\md\*.md` at the inbox root (not archive/subfolders). If count >= `ingest_threshold` (10) and `auto_ingest` is true, it runs `ingest-wiki.ps1`. Under threshold: skip (logged). Concurrent runs blocked by `queue\ingest.lock` (exit 4). Disable: set `auto_ingest: false`, or `ingest_threshold: 0`, or run the worker with `-NoAutoIngest`.
-- Bot notify threshold (5) and Mywiki / reminder-Bot role remain Phase 5 — unchanged here.
+- Bot notify threshold (5) and Mywiki / reminder-Bot role remain Phase 5 â€” unchanged here.

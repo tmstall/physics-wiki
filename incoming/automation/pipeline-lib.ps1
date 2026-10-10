@@ -64,6 +64,7 @@ function Resolve-PaperRef([string]$Ref) {
 function Get-IdLabel($Meta) {
     if ($Meta.arxiv) { return 'arxiv-' + $Meta.arxiv }
     if ($Meta.doi) { return 'doi-' + (($Meta.doi -replace '[^A-Za-z0-9.\-]', '-')) }
+    if ($Meta.slug) { return [string]$Meta.slug }
     return 'paper-' + (Get-Date -Format 'HHmmss')
 }
 
@@ -146,6 +147,7 @@ function Find-PaperDuplicates($Meta, [string]$LogFile = $script:PapersLog, [stri
     $namePats = @()
     if ($Meta.arxiv) { $namePats += ('arxiv-' + $Meta.arxiv) }
     if ($Meta.doi) { $namePats += ('doi-' + ($Meta.doi -replace '[^A-Za-z0-9.\-]', '-')) }
+    if ($Meta.slug) { $namePats += [string]$Meta.slug; $patterns += [string]$Meta.slug }
     $titlePat = $null
     if ($Meta.title -and $Meta.title.Length -ge 25 -and $Meta.title -ne '(title unknown)') { $titlePat = $Meta.title }
     $hits = New-Object System.Collections.ArrayList
@@ -198,11 +200,35 @@ function Get-ArxivPdf($Meta, [string]$WorkDir) {
     return [pscustomobject]@{ pdf = $pdf; bytes = $len; pages = $pages; txt = $txt }
 }
 
+function Get-LocalPdf([string]$Path, [string]$WorkDir, [string]$Slug) {
+    # -LocalPdf runs: verified copy into the work dir; scanned = no usable text layer (page images only)
+    $ErrorActionPreference = 'Continue'   # native stderr must not throw
+    $head = [Text.Encoding]::ASCII.GetString((Get-FileHead $Path 5))
+    if ($head -ne '%PDF-') { throw "Not a PDF: $Path" }
+    $pdf = Join-Path $WorkDir ($Slug + '.pdf')
+    $len = Copy-Verified $Path $pdf
+    $pages = $null; $txt = $null; $scanned = $null
+    if (Get-Command pdfinfo -ErrorAction SilentlyContinue) {
+        $info = & pdfinfo $pdf 2>$null
+        $pl = $info | Where-Object { $_ -match '^Pages:\s+(\d+)' } | Select-Object -First 1
+        if ($pl -match '(\d+)') { $pages = [int]$Matches[1] }
+    }
+    if (Get-Command pdftotext -ErrorAction SilentlyContinue) {
+        $txt = [IO.Path]::ChangeExtension($pdf, $null).TrimEnd('.') + '_fulltext.txt'
+        & pdftotext -layout $pdf $txt 2>$null
+        if (-not (Test-Path $txt)) { $txt = $null }
+        $chars = $(if ($txt) { ([IO.File]::ReadAllText($txt) -replace '\s', '').Length } else { 0 })
+        $scanned = ($chars -lt 200 -or ($pages -and $chars -lt 100 * $pages))
+    }
+    return [pscustomobject]@{ pdf = $pdf; bytes = $len; pages = $pages; txt = $txt; scanned = $scanned }
+}
+
 # ---------- figures (arXiv source first, then PDF page renders / embedded images) ----------
 # Output: <work>\figures\ with <prefix>_figN.png (N = figure number), pages\page-NN.png, pdfimages\, FIGURES.md.
 # The analysis embeds them as figures/<file>; delivery copies the embedded ones to incoming\md\figures\ and Drive.
 
 function Get-FigurePrefix($Meta) {
+    if ($Meta.slug) { return [string]$Meta.slug }
     $w = Get-Slug "$($Meta.title)" 1
     if (-not $w -or $w -eq 'title') { $w = 'paper' }
     $id = $(if ($Meta.arxiv) { $Meta.arxiv } elseif ($Meta.doi) { ($Meta.doi -replace '[^A-Za-z0-9.\-]', '-') } else { Get-Date -Format 'HHmmss' })
@@ -664,6 +690,7 @@ function Invoke-Delivery {
         Write-Utf8File $LogFile ("# Papers analyzed log`r`n`r`nOne row per delivered analysis (written by incoming/automation/analyze-paper.ps1).`r`n`r`n| date | title | arXiv/DOI | file | model | words |`r`n| --- | --- | --- | --- | --- | --- |`r`n")
     }
     $ids = @(); if ($Meta.arxiv) { $ids += ('arXiv:' + $Meta.arxiv) }; if ($Meta.doi) { $ids += ('doi:' + $Meta.doi) }
+    if (-not $ids.Count -and $Meta.slug) { $ids += ('local:' + $Meta.slug) }
     $title = ("$($Meta.title)" -replace '\|', '/' -replace '\s+', ' ').Trim()
     $modelCol = $(if ($Note) { $Model + ' (' + ($Note -replace '\|', '/') + ')' } else { $Model })
     $row = '| ' + (Get-Date -Format 'yyyy-MM-dd') + ' | ' + $title + ' | ' + ($ids -join ' / ') + ' | ' + $d.file + ' | ' + $modelCol + ' | ' + $d.words + ' |'
@@ -722,7 +749,7 @@ function Save-Result([string]$Path, $Obj) {
 
 function New-QueueJob {
     param([Parameter(Mandatory)][string]$Paper, [string]$Title, [string]$Type = 'analyze', [string]$Question,
-        [switch]$Append, [switch]$DryRun, [switch]$Force, [string]$Source = 'laptop', [string]$QueueDir = $script:QueueDir)
+        [switch]$Append, [switch]$DryRun, [switch]$Force, [string]$Source = 'laptop', [string]$QueueDir = $script:QueueDir, [string]$Framework, [string]$LocalPdf, [string]$Slug)
     if (-not (Test-Path $QueueDir)) { New-Item -ItemType Directory -Path $QueueDir | Out-Null }
     if ($Type -eq 'deepdive' -and -not $Question) { throw 'A deepdive job needs a question.' }
     $label = ($Paper -replace '^(?i)https?://', '' -replace '[^A-Za-z0-9.\-]', '-').Trim('-')
@@ -732,6 +759,7 @@ function New-QueueJob {
     $i = 1; while (Test-Path $path) { $path = Join-Path $QueueDir ($stamp + '-' + $i + '_' + $Type + '_' + $label + '.pending.json'); $i++ }
     $job = [ordered]@{ type = $Type; paper = $Paper; title = $Title; question = $Question; append = [bool]$Append; dryRun = [bool]$DryRun; force = [bool]$Force
         source = $Source; submitted = (Get-Date).ToString('s'); attempts = 0; retryAfter = $null; finished = $null; result = $null }
+    if ($Framework) { $job.framework = $Framework }; if ($LocalPdf) { $job.localPdf = $LocalPdf }; if ($Slug) { $job.slug = $Slug }
     Write-Utf8File $path ($job | ConvertTo-Json -Depth 6)
     return $path
 }
@@ -745,12 +773,13 @@ function Read-JobSpecFile([string]$Path) {
     $spec = @{}; $plain = @()
     foreach ($l in ($raw -split "`r?`n")) {
         $t = $l.Trim(); if (-not $t -or $t.StartsWith('#')) { continue }
-        if ($t -match '^(?i)(paper|title|type|question|append|dryrun|dry-run|force)\s*:\s*(.+)$') { $spec[$Matches[1].ToLower().Replace('-', '')] = $Matches[2].Trim() }
+        if ($t -match '^(?i)(paper|title|type|question|append|dryrun|dry-run|force|framework|pdf|slug)\s*:\s*(.+)$') { $spec[$Matches[1].ToLower().Replace('-', '')] = $Matches[2].Trim() }
         else { $plain += $t }
     }
     if (-not $spec.paper -and $plain.Count) { $spec.paper = $plain[0] }
     if (-not $spec.title -and $plain.Count -gt 1) { $spec.title = $plain[1] }
+    if (-not $spec.paper -and $spec.pdf) { $spec.paper = $(if ($spec.slug) { $spec.slug } else { Get-Slug $(if ($spec.title) { $spec.title } else { [IO.Path]::GetFileNameWithoutExtension($spec.pdf) }) }) }
     if (-not $spec.paper) { throw 'no paper reference found' }
     return [pscustomobject]@{ paper = $spec.paper; title = $spec.title; type = $(if ($spec.type) { $spec.type } else { 'analyze' }); question = $spec.question
-        append = ($spec.append -match '^(?i)(1|true|yes)$'); dryRun = ($spec.dryrun -match '^(?i)(1|true|yes)$'); force = ($spec.force -match '^(?i)(1|true|yes)$') }
+        append = ($spec.append -match '^(?i)(1|true|yes)$'); dryRun = ($spec.dryrun -match '^(?i)(1|true|yes)$'); force = ($spec.force -match '^(?i)(1|true|yes)$'); framework = $spec.framework; localPdf = $spec.pdf; slug = $spec.slug }
 }

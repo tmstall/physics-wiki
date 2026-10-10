@@ -8,6 +8,7 @@ These instructions are general: they apply to any paper type (experiment, theory
 
 ## 1. Resolve and load the framework (mandatory, every run)
 
+0. **An explicit framework path wins.** If the run prompt names an exact framework file, read that file in full (as in step 3) and apply it; skip steps 1-2 and do not substitute the newest Academic Paper Analysis Framework. If that file is missing, stop and print `FAIL framework not found <path>`.
 1. List the framework files with Glob: `C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v*.md` (Markdown only; ignore the `.pdf` renders and any differently named files such as `Academic_Paper_Analysis_Framework_v3_10.md`).
 2. Pick the **highest version number**, comparing the parts numerically (major, then minor, then patch): v3.16 > v3.15 > v3.9. Do not sort as text and do not go by file date. (As of 2026-10-04 the newest is **v3.16**.)
 3. Read that file **in full** before doing anything else. The framework is long, so a single Read may be cut off. If it is, keep paging with offset/limit until you reach the last line (the file ends with the changelog and a closing italic footer). Call its version `vX.Y` below (take it from the filename; it should match the file's own `**Version X.Y …**` header line — if they disagree, use the header and say so in the Genuine Uncertainty Disclosure).
