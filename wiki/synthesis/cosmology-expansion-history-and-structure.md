@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, cosmology, dark-energy, large-scale-structure, hubble-tension]
-last_updated: 2026-10-01
+last_updated: 2026-10-09
 status: synthesis
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe, cosmic-lockdown-vacuum-tunneling, tempos-metal-poor-o-stars]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe, cosmic-lockdown-vacuum-tunneling, tempos-metal-poor-o-stars, muse-desi-lens-confirmation]
 ---
 
 # Cosmology: Expansion History and Large-Scale Structure
@@ -27,7 +27,7 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 | --- | --- | --- | --- |
 | BAO standard ruler | $D_M/r_d$, $D_H/r_d$ vs $z$ | [[desi-evolving-dark-energy]], [[baryon-acoustic-oscillations]] | Evolving $w$ vs $\Lambda$; shared $r_d$ with CMB |
 | SN Ia distance ladder / photometric | Luminosity distance + host systematics | [[cigars-i-supernova-cosmology]], [[type-ia-supernovae]] | Mass-step physics; SN-sample dependence of DESI combos |
-| Time-delay cosmography | Geometric $H_0$ from delays + mass model | [[holismokes-sn-winny]], [[time-delay-cosmography]] | Independent $H_0$ path; not yet cosmography-grade for Winny |
+| Time-delay cosmography | Geometric $H_0$ from delays + mass model | [[holismokes-sn-winny]], [[muse-desi-lens-confirmation]], [[time-delay-cosmography]] | Independent $H_0$ path; not yet cosmography-grade for Winny; double-plane systems are a distance-ratio lever still modeling-limited |
 | Standard siren + jet geometry | Luminosity distance + host ID | [[gw170817-jet-hubble]] | Sparse $N=1$ multimessenger $H_0$ |
 | Force-law / pairwise velocities | Effective gravity exponent on ~30–230 Mpc | [[newton-ksz-force-law]], [[ksz-effect]] | $n\approx2$ vs modified-force alternatives |
 | Density / web maps | Overdensity ↔ SFR, filaments | [[cosmos-web-cosmic-web]], [[cosmic-web]] | Environment physics, not $w(z)$ itself |
@@ -43,7 +43,7 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 
 ## Thread A — Expansion history: rulers, candles, sirens, delays
 
-**Papers:** [[desi-evolving-dark-energy]], [[cigars-i-supernova-cosmology]], [[holismokes-sn-winny]], [[gw170817-jet-hubble]], [[universe-gas-pedal-leaky]]  
+**Papers:** [[desi-evolving-dark-energy]], [[cigars-i-supernova-cosmology]], [[holismokes-sn-winny]], [[muse-desi-lens-confirmation]], [[gw170817-jet-hubble]], [[universe-gas-pedal-leaky]]  
 **Concepts:** [[baryon-acoustic-oscillations]], [[dark-energy-equation-of-state]], [[hubble-tension]], [[time-delay-cosmography]]
 
 ### A1 — DESI BAO prefers evolving dark energy
@@ -63,6 +63,7 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 ### A3 — Independent geometric paths (still thin)
 
 - [[holismokes-sn-winny]]: first galaxy-scale strongly lensed SLSN (Winny, $z\approx2$, five images) — foundation for future time-delay $H_0$; **delays not yet measured**; models not cosmography-grade.
+- [[muse-desi-lens-confirmation]]: MUSE confirms 55 southern DESI neural-net lens candidates (47 robust for both redshifts) and rejects 6 impostors. Two double-source-plane systems give a mass-independent distance-ratio handle on expansion history; imaging and mass models still dominate, as in the Carousel Lens companion.
 - [[gw170817-jet-hubble]]: still the only GW event with a named host for siren $H_0$; jet geometry tightens inclination systematics.
 
 **A-thread tension:** BAO+SN prefers evolving DE; sirens and time delays target $H_0$ with different systematics. They are **complementary**, not automatic mutual confirmation. [[universe-gas-pedal-leaky]] sits as a neighboring acceleration narrative (thermodynamic / emergent-gravity flavor) — cite as constraint context, not as DESI’s microphysics.

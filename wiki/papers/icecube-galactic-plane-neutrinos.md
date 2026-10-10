@@ -36,7 +36,7 @@ Cosmic-ray nuclei are charged — Galactic B-fields scramble their arrival direc
 
 - Companion neutrino-source candidate (blazar / lensing exploratory): [[pks2233-neutrino-lensing]]
 - Concepts: [[astrophysical-neutrinos]], [[pulsar-wind-nebulae]]
-- CR / PeVatron neighbors: [[aquila-booster-pevatron]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]]
+- CR / PeVatron neighbors: [[aquila-booster-pevatron]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]], [[sgr-a-pevatron-magnetic-penrose]]
 - Lab blazar cascade physics: [[lab-blazar-pair-instability]]
 - Multi-messenger ice fossils (different messenger): [[ice-core-fe60-local-cloud]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]]

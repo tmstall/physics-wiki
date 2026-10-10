@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, gravity, modified-gravity, foundations, speculative, energy-conditions]
-last_updated: 2026-10-01
+last_updated: 2026-10-09
 status: synthesis
-related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells, phantom-halo-verlinde-surface-density, negative-mass-objects-in-the-sky]
+related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells, phantom-halo-verlinde-surface-density, negative-mass-objects-in-the-sky, primordial-black-holes-are-5d]
 ---
 
 
@@ -31,6 +31,7 @@ This synthesis is **modified / speculative gravity**. Semiclassical black-hole e
 | dRGT massive gravity | Graviton mass; 5 healthy modes; finite range at large scales | Active research program (not “settled DE solution”) | Multimessenger GW speed, solar-system/Vainshtein; DESI/$w$ data as **competing** narrative (owned on cosmology synth) | [[massive-gravity-drgt]], [[desi-evolving-dark-energy]], [[dark-energy-equation-of-state]], [[cosmology-expansion-history-and-structure]] |
 | Positive-energy warp shell | Shift-vector metric on a TOV matter shell; claims all classical energy conditions at **constant subluminal** $v$ | Classical GR construction; engineering-impractical | [[null-energy-condition]], Alcubierre exotic-matter history; no acceleration phase | [[warp-drive-positive-energy]] |
 | 5D classical worldline gravity | Extra evolution parameter $\tau$; classical emergence of GR-like + QM-like effects | **Exploratory / non-consensus** | No PPN suite; no QFT sector; not community GR | [[five-dimensional-classical-gravity]] |
+| Dark Dimension 5D PBHs | One compact micron extra dimension; PBH mass ceiling ~$10^{23}$ g | Swampland-motivated scenario; not a detection | Drops inflationary PBH production by assumption; 4D γ-glow bounds weaken only if the extra dimension is real | [[primordial-black-holes-are-5d]], [[primordial-black-holes]] |
 | Temporal imbalance | Gravity from time-flow scalar gradients + entropy flow | **Exploratory / non-consensus** preprint | Operational clocks do **not** depend on it | [[temporal-imbalance-gravity]], [[quantum-proper-time]] |
 | Gravity-from-entropy (GfE) | Thermodynamic / information origin of gravitational dynamics | Speculative foundations analysis | Overlaps BH thermo language; not a drop-in field equation set | [[gravity-from-entropy]], [[black-hole-thermodynamics]] |
 | Topological $\Lambda$ protection | Quantized / topologically protected cosmological constant sector | Theory proposal in Ashtekar variables | Does not select observed tiny $\Lambda$; separate from evolving-$w$ data | [[topological-cosmological-constant]], [[gravitational-theta-vacua]] |

@@ -2,7 +2,7 @@
 tags: [papers, astronomy, exoplanets, instrumentation, mission-concept]
 last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [euclid-high-z-quasar-census]
+related_papers: [euclid-high-z-quasar-census, tesla-thermoformed-tactile-sensor]
 source_analysis: "raw/analyses/2026-08-15_arxiv-2608.04342_life2.0-distributed-telescope-array-biosignatures.md"
 ---
 
@@ -35,6 +35,7 @@ Don’t build one unbuildable 30 m space mirror — build a cluster of identical
 
 - Survey / census infrastructure neighbors: [[euclid-high-z-quasar-census]] (different science)
 - No multi-paper biosignature hub yet — leave as Islands · Instrumentation.
+- Other Islands instrumentation (robot-skin manufacturing patent, different domain): [[tesla-thermoformed-tactile-sensor]]
 
 ## Source
 

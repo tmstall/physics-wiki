@@ -34,6 +34,7 @@ Cool halo gas is too faint to photograph one galaxy at a time, so many quasar ba
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]]
 - Radio state changes, winds, and cold-gas fueling: [[radio-changing-look-agn]], [[category-79-quasar-wind]], [[jwst-filament-cnd-ngc4696]]
+- High-$z$ radio galaxy (jets + Lyα nebula, power ranking overstated): [[radio-galaxy-z4946]]
 
 ## Source
 

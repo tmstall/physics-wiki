@@ -32,7 +32,7 @@ Fuzzy dark matter is one coherent wave. In a galaxy it makes a dense core and in
 ## Connections
 
 - Synthesis: [[dark-matter-detection-channels]]
-- Lensing geometry: [[strong-gravitational-lensing]]
+- Lensing geometry: [[strong-gravitational-lensing]], [[muse-desi-lens-confirmation]]
 - Force-law alternative (contrast only): [[mond-external-field-sparc]]
 
 ## Source

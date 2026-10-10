@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, agn, feedback, galaxy-evolution]
-last_updated: 2026-10-01
+last_updated: 2026-10-09
 status: synthesis
-related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744, jet-aligned-halpha-cgm]
+related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744, jet-aligned-halpha-cgm, radio-galaxy-z4946]
 ---
 
 # Black Hole Feedback and Changing-Look AGN
@@ -31,7 +31,7 @@ Think of a power plant with a fuel pipe, a furnace, an exhaust stack, and occasi
 | **Staging buffer** | Circumnuclear disk (CND) holds rotating gas near the sphere of influence | [[jwst-filament-cnd-ngc4696]] |
 | **Furnace mode** | Accretion lights a quasar / AGN; soft vs hard continua, WLQ vs strong-lined | [[category-79-quasar-wind]], [[glimpse-17775-cocoon]], [[euclid-high-z-quasar-census]] |
 | **Exhaust (radiative)** | UV / X-ray winds carry mass and kinetic power | [[category-79-quasar-wind]] |
-| **Exhaust (mechanical)** | Jets and radio lobes reheat atmospheres; radio loudness can flip | [[radio-changing-look-agn]], [[mrk501-double-jet-smbbh]] |
+| **Exhaust (mechanical)** | Jets and radio lobes reheat atmospheres; radio loudness can flip | [[radio-changing-look-agn]], [[mrk501-double-jet-smbbh]], [[radio-galaxy-z4946]] (hidden $z=4.95$ radio galaxy; power ranking overstated) |
 | **Pairing** | Two holes in one host; inclination filters merger vs stall | [[smbh-inclination-angle]], [[high-z-quasar-pair-merger]], [[mrk501-double-jet-smbbh]], [[dual-agn-green-pea]] |
 | **Hardening / scouring** | Binary slingshots stars and gas; kpc cavities | [[ultramassive-bh-binary-cavity]] |
 | **Kick** | GW recoil flings the remnant through the nucleus | [[bh-recoils-agn-survey]], [[black-hole-recoil-agn]] |

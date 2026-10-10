@@ -1526,3 +1526,50 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 - Light lint not run separately: the 10th success closed the queue, so this is the one full lint
 - Patched primary reverse links and three pre-existing duplicate `last_updated` keys
 
+## [2026-10-09] ingest | Batch 1 — 5D PBHs, Earth/Mars mix, Enceladus salts, Tesla skin, Sgr A* PeVatron
+
+### Papers created
+- [[primordial-black-holes-are-5d]] — from `2026-10-05_arxiv-2506.14874_primordial-black-holes-are-5d.md`
+- [[volatile-depletion-hybrid-accretion]] — from `2026-10-05_doi-10.1038-s41550-026-02984-6_volatile-depletion-hybrid-accretion-earth-mars.md`
+- [[enceladus-ice-grain-salt-segregation]] — from `2026-10-05_doi-10.1126-sciadv.aee7256_enceladus-ice-grain-salt-segregation-cassini-cda.md`
+- [[tesla-thermoformed-tactile-sensor]] — from `2026-10-08_tesla-patent-US20260310299A1_thermoformed-3d-tactile-sensor-robot-hand.md`
+- [[sgr-a-pevatron-magnetic-penrose]] — from `2026-10-09_arxiv-2609.04051_sgr-a-pevatron-magnetic-penrose-process.md`
+
+### Hubs touched
+- Concepts: [[primordial-black-holes]]
+- Synthesis: [[modified-speculative-gravity]], [[dark-matter-detection-channels]], [[high-energy-astrophysics-multimessenger]], [[smbh-stellar-encounters]]
+
+### Catalog
+- Papers **250 → 255** · Concepts 62 · Synthesis 18
+- Successes this run: 5. Queue remaining after this batch: 5.
+
+## [2026-10-09] ingest | Batch 2 — LM scaling, GRB 220706A, ReLU ensemble, z=4.95 radio galaxy, MUSE lenses
+
+### Papers created
+- [[model-growth-looping-scaling-exponents]] — from `2026-10-09_arxiv-2609.19107_model-growth-looping-scaling-exponents.md`
+- [[grb-220706a-month-long-engine]] — from `2026-10-09_arxiv-2609.22426_grb-220706a-month-long-engine-luminous-supernova.md`
+- [[deep-relu-statmech-realization]] — from `2026-10-09_arxiv-2609.22965_deep-relu-exact-statistical-mechanics-realization.md`
+- [[radio-galaxy-z4946]] — from `2026-10-09_arxiv-2609.28632_most-powerful-radio-galaxy-z4946.md`
+- [[muse-desi-lens-confirmation]] — from `2026-10-09_lin-2026-apjs-286-9_muse-confirmation-desi-lens-candidates.md`
+
+### Hubs touched
+- Concepts: [[strong-gravitational-lensing]], [[time-delay-cosmography]]
+- Synthesis: [[cosmology-expansion-history-and-structure]], [[high-energy-astrophysics-multimessenger]], [[black-hole-feedback-and-changing-look-agn]]
+
+### Islands
+- Planetary shelf now 4 papers (chondrite, 3I/ATLAS, Earth/Mars mix, Enceladus) — **graduation candidate**, not moved this run.
+- New ML/computation Islands subsection (scaling exponents + ReLU ensemble). Tesla patent stays under instrumentation.
+
+### Catalog
+- Papers **255 → 260** · Concepts 62 · Synthesis 18
+- Successes this run: 10. Queue remaining: 0.
+
+## [2026-10-09] lint | Full AGENTS lint after headless ingest (10 papers)
+
+- Report: `LINT_REPORT_2026-10-09.md`
+- Catalog: **260 papers · 62 concepts · 18 synthesis** (+ companion refresher on disk)
+- Index complete for every paper file; **0** unresolved page targets
+- Light lint not run separately: the 10th success closed the queue, so this is the one full lint
+- Patched primary reverse links; no duplicate `last_updated` keys
+- Planetary Islands (4 papers) flagged as a graduation candidate; not migrated
+

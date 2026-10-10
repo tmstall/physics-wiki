@@ -1,7 +1,7 @@
 # READY_QUEUE
 
-staged_at: 2026-10-05
-notes: Staged by automation ingest-wiki.ps1 (2026-10-05). Build/Grok consumes pending rows.
+staged_at: 2026-10-09
+notes: Staged by automation ingest-wiki.ps1 (2026-10-09). Build/Grok consumes pending rows.
 
 | status | filename | staged_at | notes |
 | --- | --- | --- | --- |
@@ -89,3 +89,13 @@ notes: Staged by automation ingest-wiki.ps1 (2026-10-05). Build/Grok consumes pe
 | done | 2026-10-04_arxiv-2511.19620_chime-21cm-auto-power-detection-z1_plain.md | 2026-10-05 | [[chime-21cm-autopower-z1]] |
 | done | 2026-10-04_arxiv-2608.06083_gauss-bonnet-black-hole-quasinormal-modes-spectral.md | 2026-10-05 | [[gauss-bonnet-qnm-spectral-atlas]] |
 | done | sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field.md | 2026-10-05 | twin kept in raw; wiki from 2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md |
+| done | 2026-10-05_arxiv-2506.14874_primordial-black-holes-are-5d.md | 2026-10-09 | [[primordial-black-holes-are-5d]] |
+| done | 2026-10-05_doi-10.1038-s41550-026-02984-6_volatile-depletion-hybrid-accretion-earth-mars.md | 2026-10-09 | [[volatile-depletion-hybrid-accretion]] |
+| done | 2026-10-05_doi-10.1126-sciadv.aee7256_enceladus-ice-grain-salt-segregation-cassini-cda.md | 2026-10-09 | [[enceladus-ice-grain-salt-segregation]] |
+| done | 2026-10-08_tesla-patent-US20260310299A1_thermoformed-3d-tactile-sensor-robot-hand.md | 2026-10-09 | [[tesla-thermoformed-tactile-sensor]] |
+| done | 2026-10-09_arxiv-2609.04051_sgr-a-pevatron-magnetic-penrose-process.md | 2026-10-09 | [[sgr-a-pevatron-magnetic-penrose]] |
+| done | 2026-10-09_arxiv-2609.19107_model-growth-looping-scaling-exponents.md | 2026-10-09 | [[model-growth-looping-scaling-exponents]] |
+| done | 2026-10-09_arxiv-2609.22426_grb-220706a-month-long-engine-luminous-supernova.md | 2026-10-09 | [[grb-220706a-month-long-engine]] |
+| done | 2026-10-09_arxiv-2609.22965_deep-relu-exact-statistical-mechanics-realization.md | 2026-10-09 | [[deep-relu-statmech-realization]] |
+| done | 2026-10-09_arxiv-2609.28632_most-powerful-radio-galaxy-z4946.md | 2026-10-09 | [[radio-galaxy-z4946]] |
+| done | 2026-10-09_lin-2026-apjs-286-9_muse-confirmation-desi-lens-candidates.md | 2026-10-09 | [[muse-desi-lens-confirmation]] |

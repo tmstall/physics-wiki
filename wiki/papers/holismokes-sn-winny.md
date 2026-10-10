@@ -37,6 +37,7 @@ A wine-glass galaxy between us and a distant explosion multiplies the image and 
 - Reverse-link: [[pks2233-neutrino-lensing]]
 
   - Concepts: [[strong-gravitational-lensing]], [[time-delay-cosmography]], [[hubble-tension]]
+- Spectroscopic confirmation factory for neural-net lens candidates (MUSE/DESI): [[muse-desi-lens-confirmation]]
 - SN cosmology neighbor: [[cigars-i-supernova-cosmology]] (standardizable Ia vs lensed SLSN path to \(H_0\)).
 - High-\(z\) photometric-survey era neighbor: [[cosmos-web-cosmic-web]] / [[photometric-redshifts]] (density mapping vs time-delay cosmography).
 

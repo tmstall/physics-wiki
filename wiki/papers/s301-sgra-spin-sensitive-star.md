@@ -2,7 +2,7 @@
 tags: [papers, black-holes, galactic-center, astrometry, general-relativity]
 last_updated: 2026-10-01
 status: analysis-ingest
-related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, smbh-inclination-angle, naked-black-hole-candidate, astrid-z0-mbh-lss, stellar-spin-repeating-partial-tde]
+related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, smbh-inclination-angle, naked-black-hole-candidate, astrid-z0-mbh-lss, stellar-spin-repeating-partial-tde, sgr-a-pevatron-magnetic-penrose]
 source_analysis: "raw/analyses/2026-08-19_eso2612a_s301-star-sensitive-to-spin-sgrA-star.md; raw/analyses/2026-09-20_doi-10.1038-s41586-026-10894-w_s301-star-sensitive-to-spin-of-sgr-a-star.md"
 ---
 
@@ -39,6 +39,7 @@ S2 already showed $(v/c)^2$ GR (redshift, Schwarzschild precession). Spin (frame
 - SMBH geometry: [[smbh-inclination-angle]], [[naked-black-hole-candidate]]
 - Concepts: [[black-hole-thermodynamics]], [[supermassive-black-hole-binaries]] (environment; not a binary)
 - Synthesis: [[smbh-stellar-encounters]] (primary — star–SMBH probes)
+- Sgr A* PeVatron model that *takes* a high spin as input (not a measurement): [[sgr-a-pevatron-magnetic-penrose]]
 - Synthesis: [[gravitational-wave-strong-field-probes]] (strong-field tests neighbor); light touch [[black-hole-evaporation-energy-conditions]] only for Kerr thermodynamics language
 
 ## Open questions

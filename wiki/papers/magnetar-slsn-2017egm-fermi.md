@@ -37,6 +37,7 @@ SLSNe are too bright and long-lived for ordinary radioactive nickel alone. Two e
 
 - Reverse-link: [[cygnus-x3-pevatron-bubble]]
 
+- Ultra-long GRB + luminous SN candidate (engine duration, not GeV leak): [[grb-220706a-month-long-engine]]
 - Supernova structure/evolution: [[supernova-onion-expansion]]
 - Extreme particle accelerators: [[aquila-booster-pevatron]]
 - Diffuse high-energy messengers: [[gamma-glow-pbh-detector]]

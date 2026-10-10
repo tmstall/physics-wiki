@@ -37,6 +37,7 @@ Two campfires with a stream of gas between them are not one fire in a funhouse m
 - Reverse-link: [[early-universe-popiii-flash-ionization]]
 - Reverse-link: [[entropy-maximization-bh-mergers]]
 - Reverse-link: [[euclid-high-z-quasar-census]]
+- Reverse-link: [[radio-galaxy-z4946]]
 - Reverse-link: [[glimpse-17775-cocoon]]
 - Reverse-link: [[jwst-filament-cnd-ngc4696]]
 

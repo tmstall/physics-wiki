@@ -46,6 +46,7 @@ Think of the pulsar as a power supply and the nebula as a particle factory. The 
 
 - Related (SpaceX set): [[magnetar-slsn-2017egm-fermi]] — Magnetar-powered SLSN GeV detection
 - Microquasar PeVatron / Cygnus Bubble model: [[cygnus-x3-pevatron-bubble]]
+- Central SMBH as a proposed PeVatron (magnetic Penrose; flux overstated): [[sgr-a-pevatron-magnetic-penrose]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]] (HEA & multi-messenger map)
 - Reverse-link: [[icecube-galactic-plane-neutrinos]]
 

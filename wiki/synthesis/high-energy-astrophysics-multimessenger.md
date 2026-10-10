@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, astrophysics, multi-messenger, interstellar-medium, high-energy-astrophysics]
-last_updated: 2026-10-01
+last_updated: 2026-10-09
 status: synthesis
-related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing, rapid-orbital-decay-erassu-j060839, tempos-metal-poor-o-stars]
+related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing, rapid-orbital-decay-erassu-j060839, tempos-metal-poor-o-stars, sgr-a-pevatron-magnetic-penrose, grb-220706a-month-long-engine]
 ---
 
 # High-Energy Astrophysics, Multi-Messenger Signals & Early-Universe Thermal History
@@ -26,7 +26,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 | Messenger / channel | Epoch or scale | What it diagnoses | Wiki anchors |
 | --- | --- | --- | --- |
 | GeV γ-rays (Fermi-LAT) | Nearby transient (~days–months) | Central engine vs CSM in SLSNe | [[magnetar-slsn-2017egm-fermi]] |
-| UHE γ / CR / PeVatron | Galactic accelerators | Knee-scale particle factories | [[aquila-booster-pevatron]], [[cygnus-x3-pevatron-bubble]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]] |
+| UHE γ / CR / PeVatron | Galactic accelerators | Knee-scale particle factories | [[aquila-booster-pevatron]], [[cygnus-x3-pevatron-bubble]], [[sgr-a-pevatron-magnetic-penrose]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]] |
+| X-ray flares / ultra-long GRB | Cosmological transient (weeks rest-frame) | Engine still on vs afterglow | [[grb-220706a-month-long-engine]] |
 | Lab pair beams | Blazar cascade physics | IGMF vs plasma instability | [[lab-blazar-pair-instability]] |
 | HE astrophysical neutrinos | Galactic diffuse glow; blazar candidates | Hadronic CR interactions; source ID | [[icecube-galactic-plane-neutrinos]], [[pks2233-neutrino-lensing]], [[astrophysical-neutrinos]] |
 | Flying-focus LWFA / dense plasma | Lab accelerator plasma | Dephasingless electron gain; opacity | [[dephasingless-flying-focus-wakefield]], [[dense-plasma-opacity-revision]] |
@@ -65,6 +66,10 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 ### A2 — Galactic PeVatrons and CR composition
 
 [[aquila-booster-pevatron]], [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]]: Galactic accelerators and multi-species CR spectra map where the knee-scale machine lives and what nuclei it launches. [[supernova-onion-expansion]] supplies the layered ejecta context that $^{60}$Fe ash later samples.
+
+[[sgr-a-pevatron-magnetic-penrose]] proposes the central hole itself as the PeVatron: ADAF neutrons decay in the ergosphere and a magnetic Penrose voltage flings protons to a few–tens of PeV. The energy scale follows from the assumed vacuum field; the published γ-ray/neutrino *rate* treats every arriving neutron as a decay and is overstated by ~40–140× at high spin. Place it next to PWN/microquasar PeVatrons as a different engine, not as a confirmed Galactic Center source.
+
+[[grb-220706a-month-long-engine]] is the stellar-engine cousin of A1: X-ray flares to ~27 rest-frame days and a dust-boosted luminous SN candidate. Treat the month-long engine as a ~3–4σ hint on low-count Swift points, not as a measured engine class.
 
 ### A3 — Blazar cascades and lab IGMF physics
 

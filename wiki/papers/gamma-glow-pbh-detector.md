@@ -34,6 +34,7 @@ Primordial black holes formed in the early universe from overdense regions are a
 - Reverse-link: [[pks2233-neutrino-lensing]]
 
 - [[primordial-black-holes]], [[pre-bang-leftovers]], [[stochastic-gw-background]]
+- 5D Dark Dimension mass ceiling (weakens 4D Hawking bookkeeping *if* that scenario is real): [[primordial-black-holes-are-5d]]
 
 - Related (SpaceX set): [[magnetar-slsn-2017egm-fermi]] — SLSN 2017egm Fermi-LAT
 - Indirect γ **line** search (spectral spike, not diffuse PBH glow): [[43gev-gamma-ray-line-clusters]]

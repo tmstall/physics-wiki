@@ -34,7 +34,7 @@ A star spun from rest is a flywheel getting kicked up each periapse — more fra
 
 - GC / extreme orbits: [[s301-sgra-spin-sensitive-star]]
 - AGN variability / feeding: [[category-79-quasar-wind]], [[radio-changing-look-agn]], [[glimpse-17775-cocoon]]
-- Transient engines (different): [[magnetar-slsn-2017egm-fermi]]
+- Transient engines (different): [[magnetar-slsn-2017egm-fermi]], [[grb-220706a-month-long-engine]] (nuclear position raised a TDE reading; X-rays look like a burst)
 - Synthesis: [[smbh-stellar-encounters]] (primary — Hills / rpTDE)
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]], [[high-energy-astrophysics-multimessenger]]
 

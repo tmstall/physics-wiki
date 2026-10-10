@@ -33,7 +33,7 @@ If gravity leaks into large extra dimensions, a 13 TeV collision might make a mi
 
 - Synthesis: [[nuclear-dense-matter-precision]]
 - Earlier hard-scatter program: [[high-pt-physics-cern-isr]]
-- Early-universe black holes (different origin): [[primordial-black-holes]]
+- Early-universe black holes (different origin): [[primordial-black-holes]], [[primordial-black-holes-are-5d]]
 
 ## Source
 

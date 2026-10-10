@@ -31,6 +31,7 @@ The European Space Agency's Euclid telescope has discovered 31 new quasars — t
 - Reverse-link: [[glimpse-17775-cocoon]]
 
 - [[high-z-quasar-pair-merger]], [[supermassive-black-hole-binaries]], [[cosmos-web-cosmic-web]]
+- Hidden high-$z$ radio galaxy (dropout method; power ranking overstated): [[radio-galaxy-z4946]]
 
 - Synthesis: [[black-hole-feedback-and-changing-look-agn]] (feedback / changing-look ladder)
 - Synthesis: [[high-energy-astrophysics-multimessenger]]

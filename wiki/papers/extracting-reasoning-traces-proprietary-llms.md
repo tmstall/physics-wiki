@@ -39,6 +39,7 @@ AEAD is a sealed envelope that authenticity-checks contents — fine against a w
 - LLM population conventions / bias: [[emergent-social-conventions-llm-populations]]
 - Platform-scale agent sandboxes: [[oasis-million-agent-social-simulator]]
 - Majority lock-in cousin: [[ai-agents-majority-following]]
+- Transformer scaling / growth (training-economics cousin, not a population result): [[model-growth-looping-scaling-exponents]]
 - Do **not** force a physics metaphor — this is access-control failure on shared crypto infrastructure.
 
 ## Source

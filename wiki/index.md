@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-10-05** — headless ingest of the 2026-10-05 queue.
+Master catalog. Updated **2026-10-09** — headless ingest of the 2026-10-09 queue.
 
-**Papers:** 250 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 260 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -160,6 +160,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[bh-thermo-far-from-equilibrium]] | Dynamical first law; entropy on MTS not event horizon |
 | [[entanglement-islands-page-curves-kerr-ads]] | Kerr-AdS islands; Page curve can jump at swallow-tail |
 | [[gauss-bonnet-qnm-spectral-atlas]] | 5D–26D Gauss–Bonnet ringdown atlas; DECIGO claim does not survive |
+| [[primordial-black-holes-are-5d]] | Dark Dimension: standard PBH channels sit below ~$10^{23}$ g, so 5D; title is a mass ceiling |
 
 ### Concepts
 | Page | Summary |
@@ -242,6 +243,8 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[primordial-tidal-torque-galaxy-spin]] | MaNGA×ELUCID TTT spin imprint (~7σ, gas in ellipticals) |
 | [[megatron-ufd-iron-plateau]] | One PISN + a UV-pinned gas tank → UFD iron floor near −2.5; tail untested |
 | [[mxdfz4-4-lyc-emitter]] | z = 4.44 LyC leak; flux solid, 50–100% escape is a model envelope |
+| [[muse-desi-lens-confirmation]] | MUSE: 55 DESI lens candidates confirmed, 6 impostors; 47 robust for both $z$ |
+| [[radio-galaxy-z4946]] | $z=4.946$ radio galaxy confirmed; “most powerful” claim misses a $1+z$ factor |
 
 ### Concepts
 | Page | Summary |
@@ -421,6 +424,8 @@ Graduated from Islands (2026-08-29): paper list for engines / CR / multimessenge
 | [[rapid-orbital-decay-erassu-j060839]] | Ultracompact DD binary; GW-driven decay matches GR |
 | [[neutrino-flavor-failed-supernovae]] | Schematic flavor mixing raises failed-SN share; 16–30 M☉ hit hardest |
 | [[psr-j1856-lightest-dns]] | Lightest precise DNS total mass, 2.48841 M☉; GR decay at 1.4% |
+| [[sgr-a-pevatron-magnetic-penrose]] | Sgr A* magnetic Penrose PeVatron; energy scale holds, flux omits decay odds |
+| [[grb-220706a-month-long-engine]] | GRB 220706A X-ray flares to ~27 rest-frame days; SN claim is dust-fragile |
 
 ---
 
@@ -488,6 +493,8 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | --- | --- |
 | [[chondrite-pressure-bump]] | Jupiter dust trap for CCs |
 | [[ch3oh-hcn-3i-atlas-outgassing]] | Interstellar comet 3I/ATLAS: high CH₃OH/HCN; asymmetric outgassing |
+| [[volatile-depletion-hybrid-accretion]] | Earth mostly pebble-envelope loss, Mars mostly dried planetesimals |
+| [[enceladus-ice-grain-salt-segregation]] | Cassini Type 3 grains are one-salt fragments of slowly frozen droplets |
 
 ### Atmosphere / Earth system
 | Page | Summary |
@@ -498,6 +505,15 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Page | Summary |
 | --- | --- |
 | [[life2-telescope-array-biosignatures]] | Life 2.0: ~900×1 m array for ppm transit biosignatures (concept) |
+| [[tesla-thermoformed-tactile-sensor]] | Tesla US 2026/0310299 A1: two orders for curved robot-skin grids; no device data |
+
+### Machine learning / computation
+Two-paper shelf (2026-10-09 ingest). Architecture/scaling and a ReLU stat-mech identity. Not collective AI; stay Islands until a third paper shares the question.
+
+| Page | Summary |
+| --- | --- |
+| [[model-growth-looping-scaling-exponents]] | Growth + boundary operator steepen LM compute-optimal slope (~1.55× at ladder top) |
+| [[deep-relu-statmech-realization]] | Exact $T=0$ mask ensemble = deep ReLU; “phase transition” is a level crossing |
 
 ---
 
@@ -517,6 +533,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | Ingest 2026-10-01 | 18 new + S301 update; geodesic pair merged; HRV shelf; catalog 240 |
 | Ingest 2026-10-05 batch 1 | 5 new; CFT DOI skipped_duplicate; levitated sonnet twin not a second page; catalog 245 |
 | Ingest 2026-10-05 batch 2 | 5 new; CHIME plain is the wiki source; catalog 250 |
-| Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0 |
+| Ingest 2026-10-09 | 10 new (5+5 headless); planetary 4 papers (graduation candidate); new ML Islands shelf; catalog 260 |
+| Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0, ML |
 
 Activity log: [[log]] (`wiki/log.md`).

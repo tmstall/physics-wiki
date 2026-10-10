@@ -44,6 +44,7 @@ Instead of quantizing the metric, let spacetime and particle threads co-relax in
 - Concepts: [[black-hole-interiors]], [[loop-quantum-cosmology]]
 - Key terms: Stueckelberg 5D parameter, worldline density gravity, retrocausal zigzag, classical emergence of interference
 - Synthesis: [[modified-speculative-gravity]] (modified & speculative gravity map — exploratory tier)
+- Different extra-dimension program (compact micron bulk + 5D PBHs, not classical worldlines): [[primordial-black-holes-are-5d]]
 
 ## Source
 

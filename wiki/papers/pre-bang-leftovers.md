@@ -42,6 +42,7 @@ Standard Big Bang singularity is a model failure notice, not a photo of the begi
 - Synthesis: [[gravitational-wave-strong-field-probes]]
 
   - Concepts: [[primordial-black-holes]]
+- Dark Dimension mass ceiling on standard PBH channels (different origin story): [[primordial-black-holes-are-5d]]
 - Early-universe cousins: [[gw-induced-fermion-freeze-in]] (SGWB as DM factory — different channel), [[stochastic-gw-background]].
 - Late-time BH interior / evaporation questions (different chapter if relics survive): [[black-hole-interiors]], [[black-hole-evaporation-energy-conditions]].
 

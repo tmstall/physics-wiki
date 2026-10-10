@@ -37,6 +37,7 @@ Chemists draw dots and bonds; modern wave functions live in a $3N$-dimensional f
 - Chemistry / bond language neighbors: [[one-bond-inductive-effect]], [[bond-breaking-discount]]
 - Graphene platforms (different questions — diffraction, moiré SC, geometry transport): [[positronium-diffraction-graphene]], [[supermoire-trilayer-graphene-sc]], [[brown-zak-nonlinear-transport]]
 - Synthesis: [[condensed-matter-topology-fractionalization]] (graphene electronic-structure cousin — **not** a fractionalization claim; parked here until a methods/NN-WF hub exists)
+- NN-as-stat-mech identity (ReLU masks, not electronic structure): [[deep-relu-statmech-realization]]
 - Key terms: FermiNet, DeepSolid, PDVMS / DVMS, Voronoi particlization, Linnett vs Kekulé, spin-staggered graphene, Slater-determinant bias
 
 ## Open questions

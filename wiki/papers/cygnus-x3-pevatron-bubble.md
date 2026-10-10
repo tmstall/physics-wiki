@@ -32,7 +32,7 @@ Match the smoking gun (orbital PeV clock at Cyg X-3) to the bullet hole (extende
 
 ## Connections
 
-- Galactic PeVatrons: [[aquila-booster-pevatron]], [[pulsar-wind-nebulae]]
+- Galactic PeVatrons: [[aquila-booster-pevatron]], [[pulsar-wind-nebulae]], [[sgr-a-pevatron-magnetic-penrose]]
 - Extreme CR / UHE messengers: [[peters-cycle-cosmic-rays]], [[beyond-iron-ultraheavy-cosmic-rays]]
 - HE γ engines: [[magnetar-slsn-2017egm-fermi]]
 - Synthesis: [[high-energy-astrophysics-multimessenger]]

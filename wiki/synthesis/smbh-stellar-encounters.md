@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, tidal-disruption, galactic-center, stellar-dynamics]
-last_updated: 2026-08-22
+last_updated: 2026-10-09
 status: synthesis
-related_papers: [s301-sgra-spin-sensitive-star, stellar-spin-repeating-partial-tde, category-79-quasar-wind, glimpse-17775-cocoon, smbh-inclination-angle]
+related_papers: [s301-sgra-spin-sensitive-star, stellar-spin-repeating-partial-tde, category-79-quasar-wind, glimpse-17775-cocoon, smbh-inclination-angle, sgr-a-pevatron-magnetic-penrose]
 ---
 
 # SMBH–Star Encounters: Orbits, Spins, and Repeating Disruptions
@@ -26,6 +26,7 @@ This synthesis is **SMBH–star dynamics**. AGN fuel, winds, duals, and cavities
 | Probe | What it constrains | Wiki anchors | Status |
 | --- | --- | --- | --- |
 | Extreme S-star pericenter | Path to dynamical $M_\bullet$ spin ($\chi$) via Lense–Thirring | [[s301-sgra-spin-sensitive-star]] | Discovery + **forecast** (not measured $\chi$) |
+| Sgr A* magnetic Penrose | Uses a high-spin *assumption* to fling ADAF neutrons to PeV | [[sgr-a-pevatron-magnetic-penrose]] | Neighbor only — messenger science on [[high-energy-astrophysics-multimessenger]]; does **not** measure $\chi$ |
 | rpTDE multi-flare dimming | Stellar spin history + density evolution under repeated stripping | [[stellar-spin-repeating-partial-tde]] | Hydro mechanism; indirect Hills evidence |
 | Hills binary disruption | Natural source of tight, eccentric, tidally-locked pre-spin | both pages | Shared formation language |
 | AGN radiative/mechanical exhaust | Different question (engine push, not one-star meals) | [[category-79-quasar-wind]], [[glimpse-17775-cocoon]] | Neighbor only |

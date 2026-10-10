@@ -33,6 +33,7 @@ A coma is an expanding TTL cache of ices. Parents write at the nucleus and decay
 ## Connections
 
 - Astrochemistry / interstellar ices: [[interstellar-sulfur-ice]], [[interstellar-glaciers-spherex]], [[chondrite-pressure-bump]]
+- Planetary volatile fingerprints (Earth/Mars mix; Enceladus salt sorting): [[volatile-depletion-hybrid-accretion]], [[enceladus-ice-grain-salt-segregation]]
 - Broader methods / multimessenger context: [[chemistry-biotech-methods]], [[high-energy-astrophysics-multimessenger]]
 
 ## Source
