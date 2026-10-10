@@ -17,3 +17,4 @@ One row per delivered analysis (written by incoming/automation/analyze-paper.ps1
 | 2026-10-09 | lin-2026-apjs-286-9 | local:lin-2026-apjs-286-9 | 2026-10-09_lin-2026-apjs-286-9_muse-confirmation-desi-lens-candidates.md | claude-opus-5-5 | 7071 |
 | 2026-10-09 | Sgr A* as a Galactic PeVatron: Multimessenger Signatures of the Magnetic Penrose Process | arXiv:2609.04051 | 2026-10-09_arxiv-2609.04051_sgr-a-pevatron-magnetic-penrose-process.md | claude-opus-5-5 | 6423 |
 | 2026-10-09 | The quest for high-redshift radio galaxies II. Discovery of the most powerful known radio galaxy at z=4.946 | arXiv:2609.28632 | 2026-10-09_arxiv-2609.28632_most-powerful-radio-galaxy-z4946.md | claude-opus-5-5 | 7022 |
+| 2026-10-09 | How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents | arXiv:2609.19107 | 2026-10-09_arxiv-2609.19107_model-growth-looping-scaling-exponents.md | claude-opus-5-5 | 7173 |
