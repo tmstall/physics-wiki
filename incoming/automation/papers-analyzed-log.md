@@ -19,3 +19,4 @@ One row per delivered analysis (written by incoming/automation/analyze-paper.ps1
 | 2026-10-09 | The quest for high-redshift radio galaxies II. Discovery of the most powerful known radio galaxy at z=4.946 | arXiv:2609.28632 | 2026-10-09_arxiv-2609.28632_most-powerful-radio-galaxy-z4946.md | claude-opus-5-5 | 7022 |
 | 2026-10-09 | How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents | arXiv:2609.19107 | 2026-10-09_arxiv-2609.19107_model-growth-looping-scaling-exponents.md | claude-opus-5-5 | 7173 |
 | 2026-10-09 | Exact Realization of Deep ReLU Computation in a Microscopic Statistical-Mechanical System | arXiv:2609.22965 | 2026-10-09_arxiv-2609.22965_deep-relu-exact-statistical-mechanics-realization.md | claude-opus-5-5 | 6951 |
+| 2026-10-10 | doi-10.1038-s41467-026-77625-7 | local:doi-10.1038-s41467-026-77625-7 | 2026-10-10_doi-10.1038-s41467-026-77625-7_coleoid-3d-genome-architecture-regulatory-landscape.md | claude-opus-5-5 | 7073 |
