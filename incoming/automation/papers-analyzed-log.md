@@ -22,3 +22,4 @@ One row per delivered analysis (written by incoming/automation/analyze-paper.ps1
 | 2026-10-10 | doi-10.1038-s41467-026-77625-7 | local:doi-10.1038-s41467-026-77625-7 | 2026-10-10_doi-10.1038-s41467-026-77625-7_coleoid-3d-genome-architecture-regulatory-landscape.md | claude-opus-5-5 | 7073 |
 | 2026-10-10 | Quantised inertia from relativity and the uncertainty principle | arXiv:1610.06787 / doi:10.1209/0295-5075/115/69001 | 2026-10-10_arxiv-1610.06787_quantised-inertia-relativity-uncertainty-principle.md | claude-opus-5-5 | 6961 |
 | 2026-10-11 | doi-10.1103-mwl6-8nzl | local:doi-10.1103-mwl6-8nzl | 2026-10-11_doi-10.1103-mwl6-8nzl_coexisting-spin-vibrational-orbital-excitations.md | claude-opus-5-5 | 7025 |
+| 2026-10-11 | doi-10.1103-yh2j-b3wq | local:doi-10.1103-yh2j-b3wq | 2026-10-11_doi-10.1103-yh2j-b3wq_gravity-stretched-jet-light-solidified-fibers.md | claude-opus-5-5 | 6314 |
