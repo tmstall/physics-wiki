@@ -24,3 +24,4 @@ One row per delivered analysis (written by incoming/automation/analyze-paper.ps1
 | 2026-10-11 | doi-10.1103-mwl6-8nzl | local:doi-10.1103-mwl6-8nzl | 2026-10-11_doi-10.1103-mwl6-8nzl_coexisting-spin-vibrational-orbital-excitations.md | claude-opus-5-5 | 7025 |
 | 2026-10-11 | doi-10.1103-yh2j-b3wq | local:doi-10.1103-yh2j-b3wq | 2026-10-11_doi-10.1103-yh2j-b3wq_gravity-stretched-jet-light-solidified-fibers.md | claude-opus-5-5 | 6314 |
 | 2026-10-12 | Quantum birthmarks: Ergodicity breaking beyond scarring | arXiv:2412.02982 / doi:10.1103/dhzb-28rb | 2026-10-12_arxiv-2412.02982_quantum-birthmarks-ergodicity-breaking-beyond-scarring.md | claude-opus-5-5 | 7261 |
+| 2026-10-13 | Nonlinear circular dichroism reveals the local Berry curvature | local:doi-10.1038-s41566-026-02025-8 | 2026-10-13_doi-10.1038-s41566-026-02025-8_nonlinear-circular-dichroism-local-berry-curvature.md | claude-opus-5-5 | 7060 |
