@@ -55,7 +55,7 @@ When the user says **`analyze`** (or clearly means a Framework paper analysis), 
 
 When the user says **`start deep dive`** / **`end deep dive`** (or clearly means that session), follow **`incoming/prompts/DEEP_DIVE.md`** in full — append Q&A onto the analysis file in `incoming/md/` (never `raw/`); concatenate multiple sessions; resume open sections for Obsidian restarts.
 
-When the user says **`ingest`** (or clearly means the staged ingest run), follow **`incoming/prompts/INGEST.md`** in full — queue/READY_QUEUE handling, batches of 5, human pause tokens, light lint every 10 successes, full AGENTS lint at end. See also `incoming/PIPELINE.md`.
+When the user says **`ingest`** (or clearly means the staged ingest run), follow **`incoming/prompts/INGEST.md`** in full — queue/READY_QUEUE handling, batches of 5, human pause tokens, light lint every 10 successes, full AGENTS lint at end. Before each paper page, apply any matching card in **`incoming/INGEST_DIRECTIVES.md`**. See also `incoming/PIPELINE.md`.
 
 When the user says **`compare`** (two analyses of the same paper, or clearly a bakeoff/wiki-source choice), follow **`incoming/prompts/COMPARE.md`** — rubric scorecard only; anti-paraphrase; prompt `use A` / `use B` / `merge deep dives` / `defer`. Do not auto-ingest the winner.
 
