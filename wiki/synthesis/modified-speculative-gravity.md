@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, gravity, modified-gravity, foundations, speculative, energy-conditions]
-last_updated: 2026-10-09
+last_updated: 2026-10-31
 status: synthesis
-related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells, phantom-halo-verlinde-surface-density, negative-mass-objects-in-the-sky, primordial-black-holes-are-5d]
+related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensional-classical-gravity, temporal-imbalance-gravity, gravity-from-entropy, topological-cosmological-constant, mond-external-field-sparc, newton-ksz-force-law, gravastar-dust-collapse, gw-bound-states-continuum, alena-tensor-rotation-dm, quantum-relative-entropy-einstein-equations, discrete-gravity-planck-cells, phantom-halo-verlinde-surface-density, negative-mass-objects-in-the-sky, primordial-black-holes-are-5d, quantised-inertia-failed-derivation]
 ---
 
 
@@ -17,6 +17,8 @@ related_papers: [massive-gravity-drgt, warp-drive-positive-energy, five-dimensio
 Modified gravity, exotic metrics, and “gravity emerges from X” programs usually sit in separate corners. In this wiki they answer one systems question:
 
 > What piece of the standard package does each approach **change** — the graviton mass, the energy budget of a metric ansatz, the ontology of spacetime, or the force law — and what **wiki-local constraints** already stress-test that change?
+
+**Failed derivation (2026-10-31):** [[quantised-inertia-failed-derivation]] does **not** show that quantised inertia follows from the uncertainty principle. The 2016 derivation fails on recomputation (prefactor, signs, and a mass change set equal to a total mass). Do not cite it as support for that model.
 
 No winner. Stack them and four layers appear: (1) **field-theory modifications** still written in a GR-like language (massive gravity), (2) **metric engineering** inside classical GR (warp shells, gravastars), (3) **foundational rewrites** that claim to derive gravity (5D classical, temporal imbalance, gravity-from-entropy), (4) **phenomenological force-law alternatives** (MOND / EFE) that target galaxy data rather than horizons. The tensions live where “works” means ghost-free Lagrangian, numerical energy conditions, or rotation-curve fit.
 

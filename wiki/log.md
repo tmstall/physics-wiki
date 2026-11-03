@@ -1573,3 +1573,13 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 - Patched primary reverse links; no duplicate `last_updated` keys
 - Planetary Islands (4 papers) flagged as a graduation candidate; not migrated
 
+## [2026-10-31] ingest | 10 analyses
+
+- [[quantised-inertia-failed-derivation]] — card applied; pass test PASS on the written page (status, title, five reads, no concept page, hub denies the abstract)
+- [[coleoid-3d-genome-architecture]] · [[coexisting-spin-vibrational-orbital-excitations]] · [[gravity-stretched-light-solidified-fibers]]
+- [[quantum-birthmarks-ergodicity-breaking]] · [[nonlinear-circular-dichroism-berry-curvature]]
+- [[sign-changing-dark-energy-teleparallel]] · [[xuv-stimulated-raman-phase-control-helium]]
+- [[star-oxygen-jet-quenching]] · [[super-chandrasekhar-magnetized-white-dwarfs]]
+
+No new synthesis hub. [[modified-speculative-gravity]] states the 2016 QI derivation fails on recomputation.
+

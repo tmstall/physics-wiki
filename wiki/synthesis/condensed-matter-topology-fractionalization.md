@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, condensed-matter, topology, fractionalization, moire, quantum-geometry]
-last_updated: 2026-09-05
+last_updated: 2026-10-31
 status: synthesis
-related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw, tise2-core-level-cdw-excitons, erte3-competing-cdw-time-domain, woven-ferroelectric-domains-optical]
+related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw, tise2-core-level-cdw-excitons, erte3-competing-cdw-time-domain, woven-ferroelectric-domains-optical, coexisting-spin-vibrational-orbital-excitations, nonlinear-circular-dichroism-berry-curvature]
 ---
 
 

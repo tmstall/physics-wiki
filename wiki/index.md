@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-10-09** — headless ingest of the 2026-10-09 queue.
+Master catalog. Updated **2026-10-31** — 10-paper wave including failed QI derivation. Updated **2026-10-09** — headless ingest of the 2026-10-09 queue.
 
-**Papers:** 260 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 270 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -51,6 +51,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[big-g-bipm-torsion-balance-nist]] | NIST rebuild of BIPM torsion balance; Big G still scatters |
 | [[two-clocks-one-laser]]                  | Dual clocks on one laser; excess noise control            |
 | [[problem-of-time-cold-atoms]]            | Cold-atom probes of the problem of time                   |
+| [[quantum-birthmarks-ergodicity-breaking]] | Chaotic quantum states remember themselves ≥2×; scars are one case |
 | [[mot-metal-hydride]]                     | First CaH magneto-optical trap                            |
 | [[molecular-rotation-superfluid-he]]      | Optical centrifuge in He nanodroplets                     |
 | [[quantum-droplets-bose-fermi]]           | Self-bound Bose–Fermi droplets via Fermi pressure         |
@@ -215,12 +216,15 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[unconventional-materials-light-dm]] | Plasmon/CDW crystal antennas for light DM (roadmap) |
 | [[fdm-wave-lensing-hs0810]] | Wave-halo lensing of HS 0810; ripples not decisive |
 | [[phantom-halo-verlinde-surface-density]] | Verlinde matches halo surface density; predicts a cusp |
+| [[quantised-inertia-failed-derivation]] | Derivation fails: 2016 QI formula not recovered from uncertainty |
+| [[sign-changing-dark-energy-teleparallel]] | Neglected torsion branch: DE negative then positive; poor data fit |
 | [[negative-mass-objects-in-the-sky]] | Negative-mass lens would diverge light; solution ≠ existence |
 | [[cosmic-lockdown-vacuum-tunneling]] | Toy model: decoherence throttles vacuum escape |
 | [[hi-intensity-mapping-meerkat]] | MeerKAT 21 cm autopower without galaxy survey |
 | [[chime-21cm-autopower-z1]] | CHIME z ≈ 1.16 autopower at 12.4σ; BAO scales filtered out |
 | [[astrid-bh-occupation-fraction]] | ASTRID: total vs central vs active occupation are different fossils |
 | [[lbt-yp-primordial-helium]] | LBT Yp series; average near-pristine galaxies → tighter Nν null |
+| [[super-chandrasekhar-magnetized-white-dwarfs]] | Imposed B-field raises WD max mass; field not computed |
 | [[tempos-metal-poor-o-stars]] | Uniform FUV O-star sample at Z<0.2 Zsun; winds fade faster at lowest Z |
 | [[topology-of-the-universe]] | Cosmic topology review; nulls weaker than often claimed |
 | [[supernova-onion-expansion]] | SN layered ejecta from expansion |
@@ -289,6 +293,10 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[quantum-metric-spin-momentum-locking]] | Rashba locking → quantum metric in LAO/STO |
 | [[magnetic-heliknoton-electric-write]] | Current-written 3D heliknotons in FeGe |
 | [[ito-nanocrystal-fieldoscopy]] | ITO sub-cycle SWIR switch |
+| [[nonlinear-circular-dichroism-berry-curvature]] | Below-gap pump twists SHG; qualitative Berry-curvature handle |
+| [[coexisting-spin-vibrational-orbital-excitations]] | Sort spin, vibration, and orbital peaks on a superconductor |
+| [[gravity-stretched-light-solidified-fibers]] | Hanging fiber weight, not chemistry, sets photopolymer thickness |
+| [[xuv-stimulated-raman-phase-control-helium]] | XUV Raman in helium via continuum; phase fringes, methods milestone |
 | [[narrowband-tunable-euv-soft-xray-harmonics]] | Tunable HHG comb parked on Fe/Co/Ni edges |
 | [[brown-zak-nonlinear-transport]] | Brown–Zak fermions via nonlinear V |
 | [[snte-light-topological-inversion]] | Light-induced band inversion in SnTe |
@@ -351,6 +359,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[alice-oo-nene-nuclear-geometry-flow]] | O+O/Ne+Ne flow encodes ab initio nuclear shapes |
 | [[tracking-baryon-number-nuclear-collisions]] | STAR: mid-rapidity $B$ transport favors soft baryon junction |
 | [[equilibrated-fraction-oo-qcd]] | O+O core–corona: equilibrated fraction vs multiplicity |
+| [[star-oxygen-jet-quenching]] | RHIC O+O: away-side jet suppressed; onset between p+A and O+O |
 | [[star-pt-correlations-qcd-critical]] | STAR pT-correlation dip near guessed critical point; not a discovery |
 | [[cms-black-holes-sphalerons-svm]] | No micro-BHs ≲9–11 TeV; phase-space SVM |
 | [[cms-jet-diffusion-wake]] | ~1% soft-particle dip opposite a subleading jet; wake ID still an inference |
@@ -468,6 +477,7 @@ Graduated from Islands (2026-08-29 audit): large multi-paper shelf with a clear 
 | [[ultrafast-chemical-shifts]] | Ultrafast chemical-shift spectroscopy |
 | [[two-lasers-one-reaction]] | Two-laser control of one reaction path |
 | [[molecular-bias-point]] | Bias where a molecule stops responding |
+| [[coleoid-3d-genome-architecture]] | Squid/octopus loops reinvented; one deletion shrinks embryonic brains |
 | [[orbformer-wavefunction-foundation-model]] | One ab initio model across molecules, including bond breaking |
 | [[electron-hole-migrate-molecule]] | Attosecond XFEL movie of hole migration; ~7 fs coherence |
 

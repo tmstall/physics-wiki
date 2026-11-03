@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, chemistry, biotech, catalysis, ultrafast-chemistry]
-last_updated: 2026-10-01
+last_updated: 2026-10-31
 status: synthesis
-related_papers: [boronate-velcro-synthetic-cells, kinetic-barcoding-cas13a, magnesium-benzidine-rearrangement, water-double-life-nanoconfinement, droplet-rewrites-ring, millisecond-pharma-factory, ruthenium-atom-catalysis, bond-breaking-discount, one-bond-inductive-effect, gpu-mass-spectrometry, water-rna-polymerase, enzyme-resistance-tax, cryptochrome-ascorbate-compass, interstellar-sulfur-ice, phosphorus-radical-hydroamination, ultrafast-chemical-shifts, two-lasers-one-reaction, molecular-bias-point, electron-hole-migrate-molecule, desktop-ct-electron-clouds, ch3oh-hcn-3i-atlas-outgassing, orbformer-wavefunction-foundation-model]
+related_papers: [boronate-velcro-synthetic-cells, kinetic-barcoding-cas13a, magnesium-benzidine-rearrangement, water-double-life-nanoconfinement, droplet-rewrites-ring, millisecond-pharma-factory, ruthenium-atom-catalysis, bond-breaking-discount, one-bond-inductive-effect, gpu-mass-spectrometry, water-rna-polymerase, enzyme-resistance-tax, cryptochrome-ascorbate-compass, interstellar-sulfur-ice, phosphorus-radical-hydroamination, ultrafast-chemical-shifts, two-lasers-one-reaction, molecular-bias-point, electron-hole-migrate-molecule, desktop-ct-electron-clouds, ch3oh-hcn-3i-atlas-outgassing, orbformer-wavefunction-foundation-model, coleoid-3d-genome-architecture, gravity-stretched-light-solidified-fibers]
 ---
 
 # Chemistry and Biotech Methods
