@@ -461,7 +461,7 @@ function Invoke-ClaudeRun([string]$Prompt, [string]$JsonlPath, [string[]]$ExtraA
     $ErrorActionPreference = 'Continue'   # native stderr must not throw
     # Windows PowerShell 5.1 does not escape embedded double quotes for native exes: strip them.
     $Prompt = $Prompt.Replace('"', "'")
-    $scratchRule = '//c/Users/tmsta/Documents/Physics-Wiki/incoming/automation/scratch/**'
+    $scratchRule = '//c/Users/tmsta/Documents/Projects/Physics-Wiki/incoming/automation/scratch/**'
     $claudeArgs = @('-p', $Prompt, '--model', 'opus', '--verbose', '--output-format', 'stream-json', '--permission-mode', 'dontAsk',
         '--add-dir', $script:FrameworkDir)
     foreach ($d in $ExtraAddDirs) { $claudeArgs += @('--add-dir', $d) }
