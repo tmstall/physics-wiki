@@ -38,7 +38,7 @@ Unspecified mode: **ask** (no silent default yet). Posture/lite: blank unless us
 | `G:\My Drive\Technical Papers\Analyses\` | Drive mirror of analyses + `_PIPELINE_STATUS.md` |
 | `incoming/_PIPELINE_STATUS.md` | Local status card (never under `incoming/md/`) |
 | `wiki/` | Build-owned |
-| `C:\Users\tmsta\Documents\MSL\` | **Separate** MSL project (not this vault) |
+| `C:\Users\tmsta\Documents\Projects\MSL\` | **Separate** MSL project (not this vault) |
 
 ## Human seam
 
@@ -68,4 +68,4 @@ Both Claude and `g_` files may sit in `raw/analyses/`. Ingest creates **one** pa
 1. **Grok Bot** — create Wiki Coordinator from `incoming/bot/`; see `SETUP_CHECKLIST.md`.
 2. **Claude Cowork** — bind `copy` → `COPY.md`; bind `analyze` → `COWORK_ANALYZE.md`.
 3. **Grok Build** — `analyze` / `ingest` / `compare` / deep dive via `AGENTS.md` + prompts.
-4. **MSL** — separate Bot + `Documents\MSL\docs\bot\`; never merge with this pipeline.
+4. **MSL** — separate Bot + `Documents\Projects\MSL\docs\bot\`; never merge with this pipeline.

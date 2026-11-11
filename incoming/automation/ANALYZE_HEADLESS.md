@@ -24,7 +24,7 @@ Apply it **exactly**: this is the Claude Project's *Trigger 4 — Paper Analysis
 
 ## 2. Depth calibration files (laptop locations)
 
-The framework's Depth Target is defined generically. On this laptop, calibrate against the gold exemplars before drafting (paths relative to the repo root `C:\Users\tmsta\Documents\Physics-Wiki`):
+The framework's Depth Target is defined generically. On this laptop, calibrate against the gold exemplars before drafting (paths relative to the repo root `C:\Users\tmsta\Documents\Projects\Physics-Wiki`):
 
 - `incoming\analysis-pack\GOLD_EXEMPLARS.md`: paper-type cards. Pick the card matching this paper's type.
 - `incoming\analysis-pack\exemplars\*.md`: read the exemplar closest to this paper's type in full, and skim the others for structure and density.

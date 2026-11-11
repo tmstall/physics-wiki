@@ -8,4 +8,4 @@
 - Posture/lite: never guess from title alone.
 - Dual analyses: both in `raw/`; human chooses wiki source; Bot/Build may scorecard.
 - Status card: `incoming/_PIPELINE_STATUS.md` + Drive `Analyses/_PIPELINE_STATUS.md` — **not** in `incoming/md/`.
-- MSL truth under `Documents/MSL/docs/bot/` only.
+- MSL truth under `Documents/Projects/MSL/docs/bot/` only.

@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\tmsta\Documents\Physics-Wiki")
+ROOT = Path(r"C:\Users\tmsta\Documents\Projects\Physics-Wiki")
 BACKEND = (
     ROOT
     / "SpaceX_exported_data"

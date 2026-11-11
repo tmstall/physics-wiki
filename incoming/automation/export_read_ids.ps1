@@ -1,6 +1,6 @@
 # export_read_ids.ps1 - export "already read" paper identifiers for the phys.org picks tool.
 # Read-only against the wiki; writes ONLY incoming\automation\read_ids.txt.
-# Usage (from anywhere):  powershell -ExecutionPolicy Bypass -File "C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation\export_read_ids.ps1"
+# Usage (from anywhere):  powershell -ExecutionPolicy Bypass -File "C:\Users\tmsta\Documents\Projects\Physics-Wiki\incoming\automation\export_read_ids.ps1"
 # Output lines (tab-separated):
 #   ID      <token>   <source>        token = doi-10.xxxx-... | arxiv-NNNN.NNNNN | doi:10.xxxx/... (from text)
 #   TITLE   <slug>    <title>         wiki/papers slug + H1 title, and analysis filename slugs

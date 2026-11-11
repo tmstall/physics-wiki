@@ -35,7 +35,7 @@ If `incoming/md` root count ≥ **5** (learning threshold), remind: open Claude 
 
 ## Paths (Windows)
 
-- Wiki repo: `C:\Users\tmsta\Documents\Physics-Wiki`
+- Wiki repo: `C:\Users\tmsta\Documents\Projects\Physics-Wiki`
 - Inbox: `incoming/md/*.md` (root)
 - Drive analyses: `G:\My Drive\Technical Papers\Analyses\`
 - Status card: Drive `…\Analyses\_PIPELINE_STATUS.md` (local mirror `incoming/_PIPELINE_STATUS.md` — not under `incoming/md/`)

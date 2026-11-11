@@ -11,4 +11,4 @@ Execution of analyze / copy / ingest stays in Claude + Grok Build — see `incom
 | `SETUP_CHECKLIST.md` | Wave 2 human checklist |
 | `LESSONS.md` | Post-smoke notes |
 
-**MSL Bot sources of truth:** `C:\Users\tmsta\Documents\MSL\docs\bot\` only (not duplicated here).
+**MSL Bot sources of truth:** `C:\Users\tmsta\Documents\Projects\MSL\docs\bot\` only (not duplicated here).

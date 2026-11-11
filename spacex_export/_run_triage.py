@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\tmsta\Documents\Physics-Wiki")
+ROOT = Path(r"C:\Users\tmsta\Documents\Projects\Physics-Wiki")
 exts = json.loads((ROOT / "spacex_export" / "_extract_heads.json").read_text(encoding="utf-8"))
 by_file = {e["file"]: e for e in exts}
 

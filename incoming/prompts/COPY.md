@@ -15,7 +15,7 @@ When the user says **`copy`** (alone or as the clear intent of the message), exe
 
 - The repo root is the device-connected folder **`Physics-Wiki`**. All relative paths below (`incoming/md/`, `raw/analyses/`, etc.) are relative to that root.
 - Do the actual staging work with the **`device_bash`** tool (shell commands run on the user's machine, inside the connected-folder mount) — it can `cp`, `mv`, list, size-check, and hash in single commands, which is far cheaper than round-tripping each file through the cloud workspace. Anchor every command at `$HOME/mnt/Physics-Wiki/` (e.g. `$HOME/mnt/Physics-Wiki/incoming/md`, `$HOME/mnt/Physics-Wiki/raw/analyses`) — don't hand-construct any other path.
-- `device_list_dir` (Windows-style path, e.g. `C:\Users\tmsta\Documents\Physics-Wiki\incoming\md`) is fine for a quick eyeball listing before or after the run, but isn't the execution mechanism.
+- `device_list_dir` (Windows-style path, e.g. `C:\Users\tmsta\Documents\Projects\Physics-Wiki\incoming\md`) is fine for a quick eyeball listing before or after the run, but isn't the execution mechanism.
 - `rm`/`rmdir`/`unlink` are blocked on this bridge by design — not a problem here, since this algorithm only ever copies and moves, never deletes.
 - For "today's ISO date" (staged_at, archive collision suffix), run `date +%F` on the device via `device_bash` rather than guessing — that's the actual local date on the user's machine.
 - If the `Physics-Wiki` folder isn't connected in the current session, ask the user to connect it (desktop app → "Add folder") before doing anything else.

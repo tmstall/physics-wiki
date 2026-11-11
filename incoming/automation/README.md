@@ -26,7 +26,7 @@ Headless paper analysis on this laptop with Claude Code (Opus) and the newest Ac
 ## Analyze a paper
 
 ```powershell
-cd C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation
+cd C:\Users\tmsta\Documents\Projects\Physics-Wiki\incoming\automation
 .\analyze-paper.ps1 2605.16504                    # arXiv ID, arXiv URL, DOI or doi.org URL
 .\analyze-paper.ps1 10.1103/pz3y-3lv5 -Title 'Neutrino flavor conversion ...'
 .\analyze-paper.ps1 2605.16504 -DryRun            # no Claude call, no delivery (checks + PDF + figures + prompt only)
@@ -83,7 +83,7 @@ A usage limit parks the job as `limit` with `retryAfter` (the reset time from Cl
 ### Submit a job: laptop awake (Shell on the laptop)
 
 ```powershell
-cd C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation
+cd C:\Users\tmsta\Documents\Projects\Physics-Wiki\incoming\automation
 .\submit-job.ps1 2605.16504 -Source box -RunNow
 .\submit-job.ps1 10.1103/pz3y-3lv5 -Title 'Optional title' -Source box -RunNow
 .\submit-job.ps1 2605.16504 -Type deepdive -Question 'Why does deep mixing hurt 20 Msun stars?' -Append -Source box -RunNow
@@ -133,7 +133,7 @@ Keys: `paper`, `title`, `type` (`analyze` | `deepdive`), `question`, `append`, `
 ## Wiki ingest (Phase 4)
 
 ```powershell
-cd C:\Users\tmsta\Documents\Physics-Wiki\incoming\automation
+cd C:\Users\tmsta\Documents\Projects\Physics-Wiki\incoming\automation
 .\ingest-wiki.ps1                 # stage inbox + headless Grok ingest + commit/push
 .\ingest-wiki.ps1 -DryRun         # report only
 .\ingest-wiki.ps1 -StageOnly      # COPY.md staging only (no Grok)

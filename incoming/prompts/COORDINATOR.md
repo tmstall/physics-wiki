@@ -7,7 +7,7 @@ See also: `ANALYZE_KICKOFF.md`, `COMPARE.md`, `PIPELINE.md`, `incoming/bot/`.
 - Analyzer when unspecified: **always ask** (no silent default; may add a default later)
 - Inbox notify threshold: **5** while learning (raise to 10 later)
 - Bot **does not** write paper analyses or wiki pages
-- MSL is a **separate** project (`Documents/MSL/`) — not this Bot
+- MSL is a **separate** project (`Documents/Projects/MSL/`) — not this Bot
 
 ---
 

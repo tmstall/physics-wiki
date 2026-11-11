@@ -13,7 +13,7 @@
 ## Create MSL Bot
 
 - [ ] New Bot → name **MSL Curator**
-- [ ] Paste profile from `C:\Users\tmsta\Documents\MSL\docs\bot\MSL_BOT_PROFILE.md`
+- [ ] Paste profile from `C:\Users\tmsta\Documents\Projects\MSL\docs\bot\MSL_BOT_PROFILE.md`
 - [ ] Save skills from `MSL\docs\bot\MSL_BOT_SKILLS.md`
 - [ ] Do **not** enable Wiki skills on this Bot
 
@@ -26,7 +26,7 @@
 ## Build
 
 - [ ] Open Physics-Wiki; `compare` / `/wiki-compare` available
-- [ ] Open sibling `Documents\MSL` as its own Build project when doing releases
+- [ ] Open sibling `Documents\Projects\MSL` as its own Build project when doing releases
 
 ## Smoke
 
