@@ -1,7 +1,7 @@
 # READY_QUEUE
 
-staged_at: 2026-10-09
-notes: Staged by automation ingest-wiki.ps1 (2026-10-09). Build/Grok consumes pending rows.
+staged_at: 2026-11-04
+notes: Staged by Cowork `copy` (2026-11-04); partial run, 7 of 10 inbox files (3 kept in inbox by user: 2026-10-26 Alfvenic, 2026-10-30 Yang-Mills primer, 2026-10-31 gravitational reconnection). Build consumes `pending` rows only.
 
 | status | filename | staged_at | notes |
 | --- | --- | --- | --- |
@@ -99,3 +99,20 @@ notes: Staged by automation ingest-wiki.ps1 (2026-10-09). Build/Grok consumes pe
 | done | 2026-10-09_arxiv-2609.22965_deep-relu-exact-statistical-mechanics-realization.md | 2026-10-09 | [[deep-relu-statmech-realization]] |
 | done | 2026-10-09_arxiv-2609.28632_most-powerful-radio-galaxy-z4946.md | 2026-10-09 | [[radio-galaxy-z4946]] |
 | done | 2026-10-09_lin-2026-apjs-286-9_muse-confirmation-desi-lens-candidates.md | 2026-10-09 | [[muse-desi-lens-confirmation]] |
+| done | 2026-10-10_arxiv-1610.06787_quantised-inertia-relativity-uncertainty-principle.md | 2026-10-31 | [[quantised-inertia-failed-derivation]] pass test PASS (page read 2026-10-31: status derivation-fails, title leads with failure, five reads present, no concept page, hub denies the abstract) |
+| done | 2026-10-10_doi-10.1038-s41467-026-77625-7_coleoid-3d-genome-architecture-regulatory-landscape.md | 2026-10-31 | [[coleoid-3d-genome-architecture]] |
+| done | 2026-10-11_doi-10.1103-mwl6-8nzl_coexisting-spin-vibrational-orbital-excitations.md | 2026-10-31 | [[coexisting-spin-vibrational-orbital-excitations]] |
+| done | 2026-10-11_doi-10.1103-yh2j-b3wq_gravity-stretched-jet-light-solidified-fibers.md | 2026-10-31 | [[gravity-stretched-light-solidified-fibers]] |
+| done | 2026-10-12_arxiv-2412.02982_quantum-birthmarks-ergodicity-breaking-beyond-scarring.md | 2026-10-31 | [[quantum-birthmarks-ergodicity-breaking]] |
+| done | 2026-10-13_doi-10.1038-s41566-026-02025-8_nonlinear-circular-dichroism-local-berry-curvature.md | 2026-10-31 | [[nonlinear-circular-dichroism-berry-curvature]] |
+| done | 2026-10-14_arxiv-2410.23068_sign-changing-dark-energy-teleparallel-gravity.md | 2026-10-31 | [[sign-changing-dark-energy-teleparallel]] |
+| done | 2026-10-20_Eichmann-2026-XUV-Raman-phase-control_xuv-stimulated-raman-phase-control-helium.md | 2026-10-31 | [[xuv-stimulated-raman-phase-control-helium]] |
+| done | 2026-10-21_STAR-2026-OO-jet-quenching-2604.13935_star-oxygen-jet-quenching-rhic.md | 2026-10-31 | [[star-oxygen-jet-quenching]] |
+| done | 2026-10-23_doi-10.3847-2041-8213-aea97e_super-chandrasekhar-magnetized-white-dwarfs.md | 2026-10-31 | [[super-chandrasekhar-magnetized-white-dwarfs]] |
+| pending | 2026-09-22_doi-10.1093-mnras-stag1230_hunting-first-cosmic-giants-direct-collapse-black-holes.md | 2026-11-04 | |
+| pending | 2026-09-24_doi-10.1038-s41550-026-02959-7_hypersoft-x-ray-sources-low-energy-cosmic-emitters.md | 2026-11-04 | |
+| pending | 2026-10-24_doi-10.1103-dlfv-z6m2_lvk-o1-o4a-cosmological-gwb-implications.md | 2026-11-04 | |
+| pending | 2026-10-24_doi-10.1103-gbkc-6nlj_one-positron-quantum-cyclotron.md | 2026-11-04 | |
+| pending | 2026-10-29_doi-10.1103-lz37-crg1_rotational-ksz-cluster-rotation.md | 2026-11-04 | |
+| pending | 2026-11-01_doi-10.1038-s41467-026-77905-2_particle-anti-spin-ice-charge-frustration.md | 2026-11-04 | |
+| pending | 2026-11-01_doi-10.1038-s41550-026-03006-1_retention-primordial-atmospheres-giant-impacts.md | 2026-11-04 | |

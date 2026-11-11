@@ -5,13 +5,14 @@ ingest_threshold: 10
 auto_ingest: false   # queue-worker runs ingest-wiki.ps1 when inbox root .md count >= ingest_threshold; set false to disable
 framework_source_dir: C:\Users\tmsta\Desktop\Gold\Prompts
 canonical_framework_rule: newest 'Academic Paper Analysis Framework v*.md' in framework_source_dir, by version number (numeric compare)
-canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.16.md   # current as of 2026-10-04
+canonical_framework: C:\Users\tmsta\Desktop\Gold\Prompts\Academic Paper Analysis Framework v3.17.md   # current as of 2026-11-10
 canonical_framework_sha256: F996A82C61789D934D4738C6EA2C8119DE63CD0E5F38DB86F5774E37A4EC044C
 analysis_runner: Claude Code (bundled with Claude Desktop) on laptop
 delivery:
   - incoming\md
   - G:\My Drive\Technical Papers\Analyses
   - incoming\automation\papers-analyzed-log.md   # papers-analyzed log in repo (created in Phase 3)
+  - G:\My Drive\To Read   # documentation only: reading copy (.md + figures), see to_read_dir; failed copies are retried via queue\drive-retry.txt
 picks: 4-5 per request
 to_read_dir: G:\My Drive\To Read   # every delivered analysis (.md + figures/) is also copied here for phone/tablet reading
 to_read_retention_days: 14   # prune-to-read.ps1 deletes .md files older than this (LastWriteTime) and unreferenced figures

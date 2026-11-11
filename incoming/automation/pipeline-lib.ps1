@@ -682,6 +682,8 @@ function Invoke-Delivery {
         } catch {
             $d.toRead = 'FAILED (non-fatal): ' + $_.Exception.Message; $d.warnings += ('To Read copy failed: ' + $_.Exception.Message)
             Write-Log "  WARNING: To Read copy failed (delivery continues): $($_.Exception.Message)" $RunLog
+            # queue it for the next worker run (queue-worker step 1b: a line whose target is the To Read folder is retried with Copy-ToRead)
+            try { Add-Utf8Line (Join-Path (Split-Path $PdfTodo) 'drive-retry.txt') ($mdDest + "`t" + $ToReadDir); $d.toRead += ' (queued in drive-retry.txt)' } catch { }
         }
     } else { $d.toRead = 'skipped' }
 

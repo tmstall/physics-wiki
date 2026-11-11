@@ -14,3 +14,13 @@ SpaceX_exported_data/
 **/*credentials*
 **/*service-account*
 **/*.key
+
+# Headless analysis scratch (Phase 2 automation)
+incoming/automation/scratch/
+
+# Local scratch, not part of the wiki
+Claude outputs/
+_to_delete/
+incoming/_backup_*/
+*.bak
+*.bak-*

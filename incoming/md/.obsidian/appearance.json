@@ -1,1 +1,6 @@
-{}
+{
+  "baseFontSize": 21,
+  "enabledCssSnippets": [
+    "file-list-size"
+  ]
+}

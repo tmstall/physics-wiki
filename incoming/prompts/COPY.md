@@ -26,6 +26,7 @@ When the user says **`copy`** (alone or as the clear intent of the message), exe
 - Ignore entirely: `incoming/md/archive/`, `incoming/md/_to_delete/`, any other subdirectory, and any `_*` status files if present by mistake (e.g. `_PIPELINE_STATUS.md` belongs in `incoming/` or Drive, **not** the inbox)
 - Destination: `raw/analyses/` (plural — never `raw/analysis/`)
 - Archive: `incoming/md/archive/`
+- Figures source: `incoming/md/figures/` · Figures destination: `raw/analyses/figures/`
 - Queue: `incoming/READY_QUEUE.md`
 - Filenames: Claude analyses use `YYYY-MM-DD_…`; Grok analyses use **`g_YYYY-MM-DD_…`**. Keep the basename exact on copy (including `g_`). Deep Dive sections already embedded in the file travel with it.
 
@@ -52,6 +53,11 @@ The Grok **Wiki Coordinator** Bot may have reminded the user that the inbox has 
    - **Move** inbox original → `incoming/md/archive/<name>` (`mv`).
      - If archive already has `<name>`: move as `incoming/md/archive/<stem>.copied-YYYYMMDD<ext>` instead (YYYYMMDD from `date +%F` on the device), and note the rename in the report.
    - Record as `copied`.
+   - **Copy figures** for this analysis (only after the `.md` copy verified):
+     - Find every image link in the copied file that points into `figures/` (Markdown `](figures/<file>)`, any extension).
+     - For each `<file>`: if `raw/analyses/figures/<file>` already exists, skip it (no overwrite unless `--force`); otherwise `cp -p incoming/md/figures/<file>` → `raw/analyses/figures/<file>` and verify with `sha256sum`.
+     - Leave the originals in `incoming/md/figures/` (copy only; do not move or delete figures).
+     - Record per file: `figures_copied`, `figures_skipped_exists`, `figures_missing` (linked but not in `incoming/md/figures/`), `figures_failed`. A missing or failed figure does **not** undo the `.md` staging; list it in the report.
 5. **Write / refresh** `incoming/READY_QUEUE.md`:
    - Use the Markdown table format in `incoming/READY_QUEUE.example.md`.
    - Set top-level `staged_at` / notes for this run (ISO date from the device — see above).
@@ -69,6 +75,8 @@ The Grok **Wiki Coordinator** Bot may have reminded the user that the inbox has 
 | copied | N |
 | skipped_exists | N |
 | failed | N |
+| figures_copied | N |
+| figures_missing | N |
 
 ### Copied → raw/analyses/
 - `filename` …
@@ -79,6 +87,10 @@ The Grok **Wiki Coordinator** Bot may have reminded the user that the inbox has 
 ### Failed
 - `filename` — reason
 
+### Figures
+- copied N → raw/analyses/figures/ (skipped_exists N, failed N)
+- missing: `analysis filename` → `figures/<file>` …
+
 READY_QUEUE: incoming/READY_QUEUE.md (pending: N)
 Next: in Grok Build, run `ingest`.
 ```
@@ -86,7 +98,8 @@ Next: in Grok Build, run `ingest`.
 ### Hard rules
 
 - Copy **then** verify **then** move. Never move-only. Never delete without a verified copy.
-- Never overwrite `raw/analyses/`.
+- Never overwrite `raw/analyses/` (including `raw/analyses/figures/`).
+- Always copy the figures an analysis links to; figures are part of the analysis.
 - Never edit `wiki/`, `AGENTS.md`, or launch Build/Grok.
 - Never stage files from `archive/` or `_to_delete/`.
 - Re-running `copy` with an empty eligible inbox is a successful no-op report.

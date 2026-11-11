@@ -1,0 +1,730 @@
+# generated 2026-10-02T12:08:09 from C:\Users\tmsta\Documents\Physics-Wiki
+ID	doi:10.1103/zf6z-2jjs	wiki/papers/1d-anyons-momentum-tails.md
+ID	doi:10.1103/h2vs-ll9d	wiki/papers/1d-anyons-momentum-tails.md
+TITLE	1d-anyons-momentum-tails	Universal Momentum Tails of 1D Anyons
+TITLE	25gpps-diffractive-microscope	25 Gigapixel-per-Second Diffractive Microscope
+ID	doi:10.1038/s41467-026-70690-y	wiki/papers/3d-electron-diffraction-osc.md
+ID	arxiv-2502.11254	wiki/papers/3d-electron-diffraction-osc.md
+TITLE	3d-electron-diffraction-osc	3D Electron Diffraction Completes TEM Mapping of Organic Solar Cells
+ID	doi:10.1103/lq5r-sjp7	wiki/papers/43gev-gamma-ray-line-clusters.md
+TITLE	43gev-gamma-ray-line-clusters	Evidence for a 43 GeV Gamma-Ray Line from Nearby Galaxy Clusters
+ID	doi:10.1126/sciadv.aea6091	wiki/papers/ai-agents-majority-following.md
+TITLE	ai-agents-majority-following	AI Agent Groups Coordinate Like a Curie–Weiss Ferromagnet
+ID	doi:10.1088/1402-4896/ae59ca	wiki/papers/alena-tensor-rotation-dm.md
+TITLE	alena-tensor-rotation-dm	Rotation Was Always the Dark Matter (Alena Tensor)
+ID	doi:10.1103/jmwb-75m7	wiki/papers/alice-jpsi-gluon-saturation.md
+ID	arxiv-2503.18708	wiki/papers/alice-jpsi-gluon-saturation.md
+TITLE	alice-jpsi-gluon-saturation	ALICE: J/ψ Suppression in Incoherent Photonuclear Production (Gluon Saturation Evidence)
+ID	doi:10.1103/gymp-vp87	wiki/papers/alice-oo-nene-nuclear-geometry-flow.md
+TITLE	alice-oo-nene-nuclear-geometry-flow	ALICE O+O / Ne+Ne: Nuclear Geometry Imprinted in Anisotropic Flow
+ID	arxiv-2509.21643	wiki/papers/ancient-immigrant-lmc-star.md
+TITLE	ancient-immigrant-lmc-star	The Ancient Immigrant (SDSS J0715−7334)
+ID	doi:10.1038/s41586-026-10101-w	wiki/papers/anyon-trions-twisted-mote2.md
+TITLE	anyon-trions-twisted-mote2	Anyon–Trions Fingerprint Fractional Charges in Twisted MoTe₂
+ID	arxiv-2603.15537	wiki/papers/aquila-booster-pevatron.md
+TITLE	aquila-booster-pevatron	The Aquila Booster (LHAASO PeVatron PWN)
+ID	doi:10.3847/1538-4357/ae3c08	wiki/papers/astrid-z0-mbh-lss.md
+TITLE	astrid-z0-mbh-lss	ASTRID at $z=0$: Massive Black Holes, Galaxies, and Large-Scale Structure
+ID	doi:10.1038/s41586-026-10914-9	wiki/papers/atomic-scale-double-slit-si.md
+TITLE	atomic-scale-double-slit-si	Atomic-Scale Double-Slit Interferometry in Silicon
+TITLE	attosecond-stm-lightwave	Attosecond Lightwave STM Tunneling
+TITLE	axion-detector-quantum-erasure	Axion Quantum Signatures Erased in Haloscope Detectors
+ID	doi:10.1103/24g9-yn9d	wiki/papers/b-meson-fcnc-anomaly.md
+ID	arxiv-2512.18053	wiki/papers/b-meson-fcnc-anomaly.md
+TITLE	b-meson-fcnc-anomaly	The B-Meson’s Forbidden Shortcut (LHCb \(b\to s\mu\mu\))
+ID	doi:10.1038/s41586-026-10818-8	wiki/papers/baryon-semileptonic-polarization-entanglement.md
+TITLE	baryon-semileptonic-polarization-entanglement	Hyperon Semileptonic Decays via Polarization and Entanglement (BESIII)
+TITLE	bata2s5-field-induced-sc	When Magnetism Rescues Superconductivity (BaTa₂S₅)
+TITLE	beam-driven-plasma-mirror	Beam-Driven Plasma Flying Mirror (Attosecond X-Rays)
+TITLE	bessy-tes-soft-xray-spectrometer	BESSY II TES Soft X-ray Spectrometer
+TITLE	beyond-iron-ultraheavy-cosmic-rays	Beyond Iron: Ultraheavy Nuclei as Ultrahigh-Energy Cosmic Rays
+ID	doi:10.48550/arXiv.2605.04781	wiki/papers/bh-recoils-agn-survey.md
+ID	arxiv-2605.04781	wiki/papers/bh-recoils-agn-survey.md
+TITLE	bh-recoils-agn-survey	Black Hole Recoils in Active Galactic Nuclei
+ID	arxiv-2512.11659	wiki/papers/bh-thermo-far-from-equilibrium.md
+ID	arxiv-2604.00170	wiki/papers/bh-thermo-far-from-equilibrium.md
+TITLE	bh-thermo-far-from-equilibrium	Black-Hole Thermodynamics Far from Equilibrium
+ID	doi:10.1088/1681-7575/ae570f	wiki/papers/big-g-bipm-torsion-balance-nist.md
+TITLE	big-g-bipm-torsion-balance-nist	NIST Redetermination of Big G with the BIPM Torsion Balance
+ID	doi:10.1088/1475-7516/2024/07/055	wiki/papers/big-ring-ultra-large-structure.md
+TITLE	big-ring-ultra-large-structure	The Big Ring: Ultra-Large Structure in Mg II Quasar Absorbers
+TITLE	black-hole-recoil-agn	Black Hole Recoils in AGN
+TITLE	black-hole-third-law-violation	Black Hole Third Law Violation (Vacuum, 5D)
+TITLE	bond-breaking-discount	The Bond-Breaking Discount
+TITLE	boronate-velcro-synthetic-cells	Boronate Velcro Synthetic Cells
+ID	doi:10.1038/s41550-026-02932-4	wiki/papers/bottom-heavy-imf-early-galaxies.md
+TITLE	bottom-heavy-imf-early-galaxies	Bottom-Heavy IMFs Reveal Hidden Stellar Mass in Early Galaxies
+ID	doi:10.1103/ydym-5t5p	wiki/papers/brown-zak-nonlinear-transport.md
+ID	arxiv-2605.05681	wiki/papers/brown-zak-nonlinear-transport.md
+TITLE	brown-zak-nonlinear-transport	Brown–Zak Fermions via Nonlinear Transport
+TITLE	category-79-quasar-wind	Category 79 Quasar Wind (J2318)
+ID	arxiv-2602.06744	wiki/papers/cavity-qed-tur-io-bookkeeping.md
+TITLE	cavity-qed-tur-io-bookkeeping	Cavity QED Thermodynamics: IO vs Standard Bookkeeping (TUR)
+ID	arxiv-2412.17931	wiki/papers/certified-randomness-amplification.md
+TITLE	certified-randomness-amplification	Certified Randomness Amplification (ETH Zurich)
+ID	doi:10.1038/s41586-026-10904-x	wiki/papers/cft-spectra-rydberg-simulator.md
+TITLE	cft-spectra-rydberg-simulator	CFT Excitation Spectra in a Rydberg Quantum Simulator
+ID	doi:10.3847/2041-8213/ae433b	wiki/papers/ch3oh-hcn-3i-atlas-outgassing.md
+TITLE	ch3oh-hcn-3i-atlas-outgassing	Methanol and HCN Outgassing from Interstellar Comet 3I/ATLAS
+TITLE	chondrite-pressure-bump	One Dust Trap for Carbonaceous Chondrite Diversity
+TITLE	cigars-i-supernova-cosmology	CIGaRS I: Physics-Based Supernova Cosmology
+ID	doi:10.1126/sciadv.aec9325	wiki/papers/ciss-homochirality.md
+TITLE	ciss-homochirality	Dynamic Mirror Breaking in CISS and Life’s Homochirality
+ID	doi:10.31526/PHEP.2026.21	wiki/papers/cms-black-holes-sphalerons-svm.md
+ID	arxiv-2511.10662	wiki/papers/cms-black-holes-sphalerons-svm.md
+TITLE	cms-black-holes-sphalerons-svm	CMS Limits on Microscopic Black Holes and Sphalerons (Phase-Space SVM)
+ID	doi:10.1103/p6tj-lg8l	wiki/papers/collapse-models-clock-precision.md
+TITLE	collapse-models-clock-precision	Spacetime Jitter from Collapse Models (Clock Floor)
+ID	doi:10.1103/v6jq-m6sk	wiki/papers/collective-superradiant-lasing.md
+ID	arxiv-2506.12267	wiki/papers/collective-superradiant-lasing.md
+TITLE	collective-superradiant-lasing	Fully Collective Superradiant Lasing with Vanishing Cavity Pulling
+TITLE	color-space-geometry	Non-Riemannian Color Geometry (Bujack et al.)
+TITLE	color-superconductivity-qcd	Color Superconductivity: The Inevitable Dense-QCD Phase
+TITLE	confinement-stiffening-films	Confinement Stiffening: Inverse-Cube Ballistic Toughness
+ID	doi:10.1038/s41566-026-01976-2	wiki/papers/correlated-electrons-xray-hhg.md
+TITLE	correlated-electrons-xray-hhg	Correlated Electrons Extend X-ray HHG Beyond the Single-Electron Limit
+ID	arxiv-2512.14204	wiki/papers/cosmic-lockdown-vacuum-tunneling.md
+TITLE	cosmic-lockdown-vacuum-tunneling	Cosmic Lockdown — Decoherence and Vacuum Tunneling
+ID	doi:10.3847/1538-4357/ae5bac	wiki/papers/cosmos-web-cosmic-web.md
+TITLE	cosmos-web-cosmic-web	COSMOS-Web: Galaxy Evolution in the Cosmic Web to \(z \sim 7\)
+ID	arxiv-2601.11446	wiki/papers/coupling-free-electrons-trapped-ion.md
+TITLE	coupling-free-electrons-trapped-ion	Coupling Free Electrons to a Trapped-Ion Quantum Computer
+TITLE	cryptochrome-ascorbate-compass	Todd Intended: The Spin-Quiet Partner That Almost Never Shows Up
+ID	doi:10.3847/2041-8213/ae878e	wiki/papers/cygnus-x3-pevatron-bubble.md
+TITLE	cygnus-x3-pevatron-bubble	Cygnus X-3 as PeVatron Powering the Cygnus Bubble (Model)
+ID	doi:10.1103/98cx-7t43	wiki/papers/dark-photon-plasma-saturation.md
+ID	arxiv-2510.13956	wiki/papers/dark-photon-plasma-saturation.md
+TITLE	dark-photon-plasma-saturation	Dark-Photon Resonant Heating: Nonlinear Plasma Saturation Weakens Cosmological Bounds
+TITLE	deepmind-hurricane-forecasting	DeepMind Weather-Next Cyclone (Hurricane) Forecasting
+TITLE	dense-plasma-opacity-revision	Dense Plasma Opacity Rulebook Revision
+ID	doi:10.1038/s41567-026-03352-x	wiki/papers/dephasingless-flying-focus-wakefield.md
+TITLE	dephasingless-flying-focus-wakefield	Dephasingless Laser Wakefield Acceleration with a Flying Focus
+ID	arxiv-2503.14738	wiki/papers/desi-evolving-dark-energy.md
+TITLE	desi-evolving-dark-energy	The Cosmological Constant Is Losing (DESI BAO + Dark Energy)
+TITLE	desktop-ct-electron-clouds	Desktop CT for 3D Electron Clouds (Photoelectron Tomography)
+TITLE	differential-signaling-quantum-vacuum	Differential Signaling for the Quantum Vacuum
+ID	doi:10.1038/s41586-026-10579-4	wiki/papers/direct-bh-mass-lrd-abell2744.md
+TITLE	direct-bh-mass-lrd-abell2744	Direct Dynamical Black-Hole Mass for a $z\sim7$ Little Red Dot
+ID	arxiv-2109.03752	wiki/papers/discrete-gravity-planck-cells.md
+TITLE	discrete-gravity-planck-cells	Discrete Gravity from Planck-Scale Cells
+TITLE	dissipative-cavity-entanglement	Dissipation as a Feature: Dark-State Many-Body Entanglement in Cavity QED
+TITLE	dr21-magnetic-accretion	DR21 Magnetic Field Guided Accretion
+TITLE	droplet-rewrites-ring	Microdroplet Aniline → Pyridine (Ring Rewrite)
+ID	arxiv-2607.17729	wiki/papers/dual-agn-green-pea.md
+TITLE	dual-agn-green-pea	Dual AGN in a Green Pea Galaxy (J1622+3521)
+ID	doi:10.1038/s41467-026-77922-1	wiki/papers/dynamics-informed-imputation.md
+ID	doi:10.6084/m9.figshare.30446765	wiki/papers/dynamics-informed-imputation.md
+TITLE	dynamics-informed-imputation	Dynamics-Informed Imputation of Missing Time Series (FPRM)
+TITLE	early-universe-popiii-flash-ionization	Flash Ionization of the Early Universe by Pop III.1 Supermassive Stars
+ID	doi:10.1038/s41550-026-02953-z	wiki/papers/eccentric-massive-protobinary-core-merger.md
+ID	arxiv-2609.07390	wiki/papers/eccentric-massive-protobinary-core-merger.md
+TITLE	eccentric-massive-protobinary-core-merger	Eccentric Massive Protobinary Caught Mid-Capture
+ID	doi:10.1038/s41567-026-03360-x	wiki/papers/electron-hole-migrate-molecule.md
+TITLE	electron-hole-migrate-molecule	Watching an Electron Hole Migrate Across a Molecule
+ID	arxiv-2410.12099	wiki/papers/emc-effect-marathon-a3.md
+TITLE	emc-effect-marathon-a3	EMC Effect in Tritium and ³He (JLab MARATHON)
+ID	arxiv-2410.08948	wiki/papers/emergent-social-conventions-llm-populations.md
+ID	doi:10.1126/sciadv.adu9368	wiki/papers/emergent-social-conventions-llm-populations.md
+TITLE	emergent-social-conventions-llm-populations	Emergent Social Conventions and Collective Bias in LLM Populations
+ID	doi:10.1140/epjc/s10052-026-15820-y	wiki/papers/entanglement-islands-page-curves-kerr-ads.md
+TITLE	entanglement-islands-page-curves-kerr-ads	Entanglement Islands and Page Curves for Kerr-AdS
+ID	doi:10.1103/hvp6-ydbq	wiki/papers/entropy-maximization-bh-mergers.md
+TITLE	entropy-maximization-bh-mergers	Entropy Maximization in Black Hole Mergers
+TITLE	enzyme-resistance-tax	Todd ActuaL: The resistance tax — how breaking the one enzyme that dodges
+ID	arxiv-2604.05307	wiki/papers/equilibrated-fraction-oo-qcd.md
+ID	doi:10.1103/r39m-l6gz	wiki/papers/equilibrated-fraction-oo-qcd.md
+TITLE	equilibrated-fraction-oo-qcd	Equilibrated Fraction in O+O Collisions (DCCI2 Core–Corona)
+ID	doi:10.1038/s41567-026-03382-5	wiki/papers/erte3-competing-cdw-time-domain.md
+ID	arxiv-2503.13936	wiki/papers/erte3-competing-cdw-time-domain.md
+TITLE	erte3-competing-cdw-time-domain	Competing CDWs in ErTe₃: Time-Domain Transition-Order Diagnostic
+ID	doi:10.1103/6vsl-ng7x	wiki/papers/eta-prime-mesic-nucleus.md
+ID	arxiv-2509.07824	wiki/papers/eta-prime-mesic-nucleus.md
+TITLE	eta-prime-mesic-nucleus	The Ghostly Nucleus: Semi-Exclusive Hunt for the η′-Mesic Nucleus
+ID	doi:10.1051/0004-6361/202658883	wiki/papers/euclid-high-z-quasar-census.md
+TITLE	euclid-high-z-quasar-census	Euclid High-z Quasar Census
+TITLE	evanescent-wave-transverse-spin	Extraordinary Momentum and Spin in Evanescent Waves
+TITLE	evaporating-charged-black-holes	Evaporating Charged Black Holes Avoid Singularities
+ID	arxiv-2608.09867	wiki/papers/extracting-reasoning-traces-proprietary-llms.md
+TITLE	extracting-reasoning-traces-proprietary-llms	Extracting Reasoning Traces from Proprietary LLMs
+ID	doi:10.1126/science.adz0521	wiki/papers/extreme-loss-suppression-dipolar-molecules.md
+ID	arxiv-2505.08773	wiki/papers/extreme-loss-suppression-dipolar-molecules.md
+TITLE	extreme-loss-suppression-dipolar-molecules	Extreme Loss Suppression in a Dipolar Molecular Gas
+ID	doi:10.3847/2041-8213/ae9a9e	wiki/papers/fdm-wave-lensing-hs0810.md
+ID	arxiv-2607.20614	wiki/papers/fdm-wave-lensing-hs0810.md
+TITLE	fdm-wave-lensing-hs0810	Fuzzy-DM Wave Halos Lensing HS 0810+2554
+ID	doi:10.1126/sciadv.aeh1011	wiki/papers/feynman-path-integral-single-photons.md
+TITLE	feynman-path-integral-single-photons	Feynman Path-Integral Postulates Tested with Single Photons
+ID	doi:10.1038/s41467-026-71429-5	wiki/papers/filming-plasma-birth.md
+TITLE	filming-plasma-birth	Filming the Birth of a Plasma
+ID	doi:10.1038/s41598-025-32860-8	wiki/papers/five-dimensional-classical-gravity.md
+TITLE	five-dimensional-classical-gravity	Five-Dimensional Classical Framework for Gravity and Quantum Phenomena
+ID	arxiv-2602.17657	wiki/papers/fractional-fermi-sea-1d-bosons.md
+TITLE	fractional-fermi-sea-1d-bosons	Fractional Fermi Seas in a 1D Bose Gas
+ID	doi:10.1364/OPTICA.600056	wiki/papers/freeze-fiber-brillouin.md
+TITLE	freeze-fiber-brillouin	Freeze the Fiber: Cryogenic Liquid-Core Brillouin Gain
+TITLE	frozen-in-gravitational-fields	Frozen-In Gravitational Fields
+ID	arxiv-2606.10013	wiki/papers/gamma-glow-pbh-detector.md
+TITLE	gamma-glow-pbh-detector	Gamma-Ray Glow as PBH Detector
+ID	arxiv-2609.21471	wiki/papers/geodesic-tessellation-schwarzschild-holography.md
+TITLE	geodesic-tessellation-schwarzschild-holography	Geodesic Tessellation of Schwarzschild (Holography Foundations)
+TITLE	gigaparsec-anisotropic-structures	Anisotropic Cosmic Structures at Gigaparsec Scale
+TITLE	glimpse-17775-cocoon	GLIMPSE-17775: Little Red Dot Super-Eddington Cocoon
+TITLE	gpu-mass-spectrometry	The GPU Moment for Mass Spectrometry
+ID	doi:10.1103/c6lw-nx7k	wiki/papers/gravastar-dust-collapse.md
+ID	arxiv-2509.15302	wiki/papers/gravastar-dust-collapse.md
+TITLE	gravastar-dust-collapse	Dynamical Formation of Gravastars from Dust Collapse
+TITLE	gravity-from-entropy	Gravity as a Compression Error (GfE Thermodynamics)
+ID	doi:10.1088/1402-4896/ae92db	wiki/papers/gw-bound-states-continuum.md
+TITLE	gw-bound-states-continuum	Bound States in the Continuum of Gravitational Waves
+ID	doi:10.1103/lr69-45v8	wiki/papers/gw-induced-fermion-freeze-in.md
+ID	arxiv-2405.09723	wiki/papers/gw-induced-fermion-freeze-in.md
+TITLE	gw-induced-fermion-freeze-in	GW-Induced Freeze-In of Fermionic Dark Matter
+ID	doi:10.3847/1538-3881/ae8bae	wiki/papers/gw-ori-streamer-misalignment.md
+TITLE	gw-ori-streamer-misalignment	Streamer-Driven Misalignment in the Circumtriple Disk of GW Ori
+TITLE	gw170817-jet-hubble	GW170817 Jet Geometry and Hubble Constant
+TITLE	hawking-radiation-charge-shell	Hawking Radiation from a Charge Shell (Double Copy)
+ID	doi:10.3847/2041-8213/ae808f	wiki/papers/hi-intensity-mapping-meerkat.md
+TITLE	hi-intensity-mapping-meerkat	MeerKAT HI Intensity Mapping Autopower Detection
+TITLE	high-pt-physics-cern-isr	High-\(p_T\) Physics at the CERN ISR
+ID	arxiv-2604.06504	wiki/papers/high-z-quasar-pair-merger.md
+TITLE	high-z-quasar-pair-merger	Two Cosmic Dragons: Confirmed Quasar Pair in a \(z=5.7\) Merger
+ID	arxiv-2510.21694	wiki/papers/holismokes-sn-winny.md
+ID	arxiv-2602.16620	wiki/papers/holismokes-sn-winny.md
+TITLE	holismokes-sn-winny	HOLISMOKES XIX & XX: Lensed SLSN Winny
+ID	arxiv-2509.09165	wiki/papers/horizon-direct-wave-gw250114.md
+TITLE	horizon-direct-wave-gw250114	The Horizon Speaks: Direct-Wave Horizon Thermodynamics in GW250114
+TITLE	hot-electron-coherent-phonons-ptcu	Hot Electrons as Coherent Phonon Drivers in Pt/Cu
+ID	doi:10.1007/s10484-023-09582-6	wiki/papers/hrv-biofeedback-methods-review.md
+TITLE	hrv-biofeedback-methods-review	HRV Biofeedback Methods — A Systematic Review of Protocol Heterogeneity
+ID	doi:10.1023/A:1014587304314	wiki/papers/hrv-resonance-baroreflex.md
+ID	doi:10.1007/s10484-006-9009-3	wiki/papers/hrv-resonance-baroreflex.md
+TITLE	hrv-resonance-baroreflex	Resonance Breathing and the Baroreflex
+TITLE	ic1262-metal-mixing	IC 1262: A Metal-Mixing Machine
+ID	doi:10.1103/nxjq-jwgp	wiki/papers/ice-core-fe60-local-cloud.md
+TITLE	ice-core-fe60-local-cloud	Supernova $^{60}$Fe in Antarctic Ice Maps the Local Interstellar Cloud
+ID	doi:10.1126/science.adc9818	wiki/papers/icecube-galactic-plane-neutrinos.md
+ID	arxiv-2307.04427	wiki/papers/icecube-galactic-plane-neutrinos.md
+TITLE	icecube-galactic-plane-neutrinos	IceCube: High-Energy Neutrinos from the Galactic Plane
+ID	arxiv-2608.20311	wiki/papers/imaging-vacuum-fluctuations-qft.md
+TITLE	imaging-vacuum-fluctuations-qft	Imaging Vacuum Fluctuations in a Cold-Atom Quantum Field
+ID	doi:10.3847/2041-8213/ae7444	wiki/papers/imf-variation-milky-way.md
+TITLE	imf-variation-milky-way	Direct Evidence for Stellar IMF Variation in the Milky Way
+ID	doi:10.3847/1538-4357/ae5180	wiki/papers/interstellar-glaciers-spherex.md
+ID	arxiv-2603.12390	wiki/papers/interstellar-glaciers-spherex.md
+TITLE	interstellar-glaciers-spherex	Interstellar Glaciers: SPHEREx Ice Maps
+TITLE	interstellar-sulfur-ice	Paper analysis on sulfur chemistry in interstellar ice
+ID	doi:10.1038/s41586-022-04998-2	wiki/papers/intrinsic-charm-proton-nnpdf.md
+TITLE	intrinsic-charm-proton-nnpdf	Intrinsic Charm in the Proton (NNPDF4.0)
+ID	arxiv-2602.15157	wiki/papers/iras-21204-fuor.md
+TITLE	iras-21204-fuor	Eruptive Low-Mass YSO IRAS 21204+4913 (FUor-Class Outburst)
+ID	doi:10.1002/advs.202516818	wiki/papers/ito-nanocrystal-fieldoscopy.md
+ID	arxiv-2508.21518	wiki/papers/ito-nanocrystal-fieldoscopy.md
+TITLE	ito-nanocrystal-fieldoscopy	Watching a Nanocrystal Flip a Light Switch (ITO Fieldoscopy)
+ID	doi:10.3847/2041-8213/ae9cbd	wiki/papers/jet-aligned-halpha-cgm.md
+ID	arxiv-2606.30088	wiki/papers/jet-aligned-halpha-cgm.md
+TITLE	jet-aligned-halpha-cgm	Jet-Aligned Hα in the CGM of Radio Galaxies
+TITLE	jwst-filament-cnd-ngc4696	JWST Filament → Circumnuclear Disk Feeding in NGC 4696
+TITLE	jwst-ulirg-hydrocarbons	JWST Hydrocarbon Factory in ULIRG Nucleus IRAS 07251−0248
+ID	doi:10.1038/s41551-026-01642-6	wiki/papers/kinetic-barcoding-cas13a.md
+TITLE	kinetic-barcoding-cas13a	Kinetic Barcoding for Multiplexed Cas13a RNA Detection
+ID	doi:10.1073/pnas.2513365122	wiki/papers/lab-blazar-pair-instability.md
+TITLE	lab-blazar-pair-instability	Laboratory Suppression of Blazar Pair-Beam Instabilities
+ID	doi:10.3847/1538-4357/ae879b	wiki/papers/lbt-yp-primordial-helium.md
+TITLE	lbt-yp-primordial-helium	LBT Yp Project — Primordial Helium and Neutrino Counting
+TITLE	levinthal-high-pt-isr	Levinthal High-\(p_T\) Production at the ISR
+ID	arxiv-2608.04342	wiki/papers/life2-telescope-array-biosignatures.md
+TITLE	life2-telescope-array-biosignatures	Life 2.0: Distributed Space-Telescope Array for Biosignature Spectroscopy
+TITLE	light-as-friction-brake	Light as a Mechanical Brake
+ID	doi:10.1093/mnras/stag563	wiki/papers/loki-early-accreted-vmp.md
+ID	arxiv-2409.13813	wiki/papers/loki-early-accreted-vmp.md
+TITLE	loki-early-accreted-vmp	Loki: Early-Accreted Planar Very Metal-Poor Stars
+ID	arxiv-2609.20788	wiki/papers/looking-inside-a-quantum-black-hole.md
+ID	arxiv-2609.07514	wiki/papers/looking-inside-a-quantum-black-hole.md
+ID	arxiv-2609.26724	wiki/papers/looking-inside-a-quantum-black-hole.md
+TITLE	looking-inside-a-quantum-black-hole	Looking Inside a Quantum Black Hole via Ringdown Overtones
+TITLE	lz-dm-eft-high-energy-recoil	LZ High-Energy Nuclear Recoils under Dark-Matter EFT
+ID	arxiv-2403.05471	wiki/papers/macroscopic-crystal-entanglement-neutrons.md
+TITLE	macroscopic-crystal-entanglement-neutrons	Macroscopic Crystal Entanglement via Neutrons
+ID	doi:10.1002/chem.202503607	wiki/papers/magnesium-benzidine-rearrangement.md
+TITLE	magnesium-benzidine-rearrangement	Magnesium-Promoted Benzidine-Type Biaryl Synthesis
+TITLE	magnetar-slsn-2017egm-fermi	Fermi-LAT GeV Detection of SLSN 2017egm (Magnetar Engine)
+ID	doi:10.1038/s41563-025-02450-0	wiki/papers/magnetic-heliknoton-electric-write.md
+TITLE	magnetic-heliknoton-electric-write	Electrically Written Magnetic Heliknotons in FeGe
+ID	arxiv-1307.7169	wiki/papers/massive-gravity-drgt.md
+TITLE	massive-gravity-drgt	Ghost-Free Massive Gravity (dRGT) and Quantum Corrections
+TITLE	massive-tunneling-schrodinger-cats	Massive Tunneling Schrödinger Cats
+TITLE	metal-fall-apart-on-purpose	Intentional Phase Separation in HfNbTaTiZr HEA
+TITLE	millisecond-pharma-factory	Millisecond Pharma-Factory: Drug-Scaffold Rings Built in Midair Without Catalysts
+ID	doi:10.1038/s41467-026-76488-2	wiki/papers/mirror-that-lies-diffractive-concealment.md
+TITLE	mirror-that-lies-diffractive-concealment	A Mirror That Lies (Diffractive Optical Concealment)
+TITLE	missing-watts-tarantula	Missing Watts of the Tarantula (30 Dor / R136 Wind Bubble)
+ID	doi:10.1038/s41467-026-76747-2	wiki/papers/mmwave-optical-microcomb.md
+TITLE	mmwave-optical-microcomb	Direct mm-Wave Comb from an Unamplified Optical Microcomb
+TITLE	molecular-bias-point	Finding the Bias Point Where a Molecule Stops Listening
+TITLE	molecular-rotation-superfluid-he	Optical Centrifuge of Molecules in Superfluid Helium Nanodroplets
+TITLE	mond-external-field-sparc	MOND’s Cosmic Fingerprint (External Field Effect on SPARC)
+TITLE	mot-metal-hydride	Magneto-Optical Trap of CaH (Metal Hydride)
+TITLE	mrk501-double-jet-smbbh	Two Jets, One Core: Mrk 501 as a Close SMBH Binary
+ID	doi:10.1038/s41550-024-02463-w	wiki/papers/muse-quasar-filament-z3.md
+TITLE	muse-quasar-filament-z3	MUSE Lyα Filament Between a $z\approx3.22$ Quasar Pair
+ID	doi:10.1038/s41467-025-57234-6	wiki/papers/na61-isospin-kaon-asymmetry.md
+TITLE	na61-isospin-kaon-asymmetry	Isospin-Symmetry Violation in Kaon Yields (NA61/SHINE)
+ID	arxiv-2508.21748	wiki/papers/naked-black-hole-candidate.md
+TITLE	naked-black-hole-candidate	The Naked Black Hole
+ID	doi:10.1038/s42005-026-02791-5	wiki/papers/narrowband-tunable-euv-soft-xray-harmonics.md
+TITLE	narrowband-tunable-euv-soft-xray-harmonics	Narrowband Tunable EUV and Soft-X-ray Harmonics
+ID	doi:10.1016/j.dark.2026.102364	wiki/papers/negative-mass-objects-in-the-sky.md
+ID	arxiv-2602.15058	wiki/papers/negative-mass-objects-in-the-sky.md
+TITLE	negative-mass-objects-in-the-sky	Negative-Mass Objects in the Sky
+ID	arxiv-2409.03680	wiki/papers/negative-weak-valued-excitation-times.md
+TITLE	negative-weak-valued-excitation-times	Negative Weak-Valued Atomic Excitation Times
+ID	doi:10.1103/rk8v-rcm3	wiki/papers/newton-ksz-force-law.md
+TITLE	newton-ksz-force-law	Newton Was Right Across 230 Mpc (kSZ Force-Law Test)
+TITLE	nickelate-nodeless-gap-arpes	Nodeless Gap and 70 meV Kink in Bilayer Nickelate Films (ARPES)
+ID	arxiv-2510.07139	wiki/papers/noise-driven-qubit-entanglement.md
+TITLE	noise-driven-qubit-entanglement	Noise-Driven Entanglement of Distant Superconducting Qubits
+ID	doi:10.1103/rgfy-n6zd	wiki/papers/nonabelian-photonic-braiding.md
+TITLE	nonabelian-photonic-braiding	Programmable Non-Abelian Photonic Braiding
+ID	doi:10.1051/0004-6361/202659349	wiki/papers/not-a-globular-cluster.md
+ID	arxiv-2604.00098	wiki/papers/not-a-globular-cluster.md
+TITLE	not-a-globular-cluster	A Globular Cluster That Isn't
+TITLE	nucleus-shell-src-memory	The Nucleus Has a Memory: Shell Structure Controls Short-Range Correlations
+TITLE	nucleus-tells-on-itself	Nuclear γ Upbend: E1 vs M1 via Parity Bookkeeping ($^{70}$Zn)
+ID	arxiv-2411.11581	wiki/papers/oasis-million-agent-social-simulator.md
+TITLE	oasis-million-agent-social-simulator	OASIS: Million-Agent Open Social Interaction Simulator
+TITLE	one-bond-inductive-effect	One Bond and Done
+ID	doi:10.1038/s41467-026-76604-2	wiki/papers/orbformer-wavefunction-foundation-model.md
+ID	arxiv-2506.19960	wiki/papers/orbformer-wavefunction-foundation-model.md
+TITLE	orbformer-wavefunction-foundation-model	Orbformer — Shared Ab Initio Wavefunctions Across Molecules
+ID	doi:10.1038/s41586-026-10878-w	wiki/papers/oyashio-extragalactic-gc-stream.md
+ID	arxiv-2608.12254	wiki/papers/oyashio-extragalactic-gc-stream.md
+TITLE	oyashio-extragalactic-gc-stream	Oyashio: First Globular-Cluster Stellar Stream Beyond the Milky Way
+ID	doi:10.1103/g6v2-grnl	wiki/papers/particle-view-nn-wavefunction.md
+TITLE	particle-view-nn-wavefunction	Particle View of Many-Body Electronic Structure with Neural-Network Wave Functions
+ID	arxiv-2511.05409	wiki/papers/peters-cycle-cosmic-rays.md
+TITLE	peters-cycle-cosmic-rays	Peters Cycle Confirmed: Charge-Dependent Softening Below the Knee
+TITLE	phantom-halo-verlinde-surface-density	Phantom-Halo Surface Density in Verlinde Gravity
+ID	doi:10.1038/s41586-026-10263-7	wiki/papers/phosphorus-radical-hydroamination.md
+TITLE	phosphorus-radical-hydroamination	Phosphine-Photoredox Markovnikov Hydroamination of Terminal Alkenes
+ID	doi:10.1038/s41567-026-03370-9	wiki/papers/photon-number-optical-analogy-control.md
+ID	arxiv-2601.05118	wiki/papers/photon-number-optical-analogy-control.md
+TITLE	photon-number-optical-analogy-control	Photon-Number Axis as Optical Beam Control
+ID	doi:10.1038/s41586-025-08616-9	wiki/papers/photonic-supersolid.md
+TITLE	photonic-supersolid	Photonic Supersolid in Polariton Condensates
+ID	doi:10.1093/mnras/stag1355	wiki/papers/pks2233-neutrino-lensing.md
+TITLE	pks2233-neutrino-lensing	PKS 2233−148: IceCube Neutrino Candidate with Possible Lensing Signatures
+TITLE	plasma-relativistic-amplifier	Plasma as a Relativistic Amplifier (ROM Harmonics)
+ID	doi:10.1038/s41467-025-67920-0	wiki/papers/positronium-diffraction-graphene.md
+TITLE	positronium-diffraction-graphene	Positronium Diffraction from Graphene
+ID	arxiv-2602.17702	wiki/papers/pre-bang-leftovers.md
+TITLE	pre-bang-leftovers	Pre-Bang Leftovers: Bounce Dark Matter
+ID	doi:10.1038/s41550-026-02948-w	wiki/papers/primordial-tidal-torque-galaxy-spin.md
+ID	arxiv-2512.11383	wiki/papers/primordial-tidal-torque-galaxy-spin.md
+TITLE	primordial-tidal-torque-galaxy-spin	Primordial Tidal Torque Imprints on Galaxy Spins (~7σ)
+ID	doi:10.1103/1h9j-df4k	wiki/papers/problem-of-time-cold-atoms.md
+TITLE	problem-of-time-cold-atoms	Testing the Problem of Time with Cold Atoms
+ID	arxiv-2602.05947	wiki/papers/psr-j1906-binary-timing.md
+TITLE	psr-j1906-binary-timing	Long-Term Timing of PSR J1906+0746
+ID	doi:10.1103/zz5s-zwh8	wiki/papers/pulsars-satellite-masses.md
+ID	arxiv-2512.10883	wiki/papers/pulsars-satellite-masses.md
+TITLE	pulsars-satellite-masses	Pulsars as Accelerometers for Satellite Masses
+TITLE	qg-deep-dive-1-mergers-emission	QG Deep Dive 1: Beyond-GR Merger–Ringdown Waveforms
+TITLE	qg-deep-dive-2-info-holography	QG Deep Dive 2: Information Paradox → Holography
+TITLE	qg-deep-dive-3-holographic-codes	QG Deep Dive 3: Holographic Codes and Bulk Reconstruction
+TITLE	qg-deep-dive-4-de-sitter	QG Deep Dive 4: de Sitter Holography
+ID	doi:10.1103/f8tr-bq61	wiki/papers/quantum-damping-cosmological-shear.md
+ID	arxiv-2603.18175	wiki/papers/quantum-damping-cosmological-shear.md
+ID	arxiv-2604.08912	wiki/papers/quantum-damping-cosmological-shear.md
+TITLE	quantum-damping-cosmological-shear	Quantum Damping of Cosmological Shear (mLQC-I)
+ID	arxiv-2601.12777	wiki/papers/quantum-droplets-bose-fermi.md
+ID	doi:10.1103/5pr6-5fmd	wiki/papers/quantum-droplets-bose-fermi.md
+TITLE	quantum-droplets-bose-fermi	Self-Bound Bose–Fermi Quantum Droplets (Variational Theory)
+ID	arxiv-2512.23702	wiki/papers/quantum-jamming.md
+TITLE	quantum-jamming	Quantum Jamming
+ID	doi:10.1126/science.aeh7535	wiki/papers/quantum-jumps-of-sound.md
+TITLE	quantum-jumps-of-sound	Quantum Jumps of Sound
+TITLE	quantum-metallurgy-cdw	Quantum Metallurgy: Melting Electron Crystals in 2D TaS₂
+ID	doi:10.1126/science.adq3255	wiki/papers/quantum-metric-spin-momentum-locking.md
+TITLE	quantum-metric-spin-momentum-locking	Quantum Metric from Spin-Momentum Locking (LAO/STO)
+ID	doi:10.1103/qhj9-pc2b	wiki/papers/quantum-proper-time-ion-clocks.md
+ID	arxiv-2509.09573	wiki/papers/quantum-proper-time-ion-clocks.md
+TITLE	quantum-proper-time-ion-clocks	Quantum Signatures of Proper Time in Optical Ion Clocks
+ID	doi:10.1103/lmq8-nsty	wiki/papers/quantum-relative-entropy-einstein-equations.md
+ID	arxiv-2510.24491	wiki/papers/quantum-relative-entropy-einstein-equations.md
+TITLE	quantum-relative-entropy-einstein-equations	From Quantum Relative Entropy to Semiclassical Einstein Equations
+TITLE	quantum-state-sculptor	Quantum State Sculptor: Non-Gaussian Oscillator Superpositions
+TITLE	radio-changing-look-agn	Radio Changing-Look AGN (SDSS J1105+1452)
+ID	doi:10.3847/2041-8213/ae8cf7	wiki/papers/rapid-orbital-decay-erassu-j060839.md
+TITLE	rapid-orbital-decay-erassu-j060839	Rapid Orbital Decay in eRASSU J060839 (Ultracompact DD Binary)
+ID	arxiv-2303.04948	wiki/papers/recycling-idler-quantum-superresolution.md
+TITLE	recycling-idler-quantum-superresolution	Recycling the Idler for Quantum Super-Resolution
+ID	doi:10.1103/znyd-npk5	wiki/papers/retrocausal-noisy-channel-capacity.md
+TITLE	retrocausal-noisy-channel-capacity	Retrocausal Capacity of Noisy Quantum Channels
+ID	arxiv-2504.00817	wiki/papers/rhic-net-proton-fluctuations.md
+TITLE	rhic-net-proton-fluctuations	Precision Net-Proton Fluctuations at RHIC (STAR BES-II)
+TITLE	ruthenium-atom-catalysis	A Single Ruthenium Atom That Both Lights the Match and Bends the Bond
+ID	doi:10.1038/s41586-026-10894-w	wiki/papers/s301-sgra-spin-sensitive-star.md
+TITLE	s301-sgra-spin-sensitive-star	S301: A Star Sensitive to the Spin of Sgr A*
+ID	doi:10.1103/pwbs-xwrh	wiki/papers/second-order-gw-strain-gauge.md
+TITLE	second-order-gw-strain-gauge	Second-Order Cosmological GW Strain: Newton Gauge Wins
+TITLE	shor-algorithm-budget	Shor’s Algorithm on a Budget (Neutral Atoms + qLDPC)
+ID	doi:10.1063/5.0300210	wiki/papers/siv-hydrostatic-strain-symmetry.md
+TITLE	siv-hydrostatic-strain-symmetry	SiV Centers under Hydrostatic Strain: Lattice Stretch Flips Symmetry
+TITLE	smbh-inclination-angle	Inclination Is Destiny (SMBH Pairing Angle Filter)
+TITLE	snte-light-topological-inversion	Light-Induced Topological Band Inversion in SnTe
+ID	doi:10.1038/s41467-026-69911-1	wiki/papers/snv-super-coherent-excitation.md
+TITLE	snv-super-coherent-excitation	SUPER Coherent Excitation of Diamond SnV Centers
+ID	doi:10.1038/s41467-026-70298-2	wiki/papers/spin-flip-flop-saf.md
+TITLE	spin-flip-flop-saf	Spin Flip-Flop: Magnon Mode Hop in a Synthetic Antiferromagnet
+TITLE	star-jpsi-spin-interference	Quantum Ghosts in the Collision Zone (STAR J/ψ Spin Interference)
+ID	doi:10.1103/2xsn-rgx3	wiki/papers/star-pt-correlations-qcd-critical.md
+ID	arxiv-2609.26449	wiki/papers/star-pt-correlations-qcd-critical.md
+ID	arxiv-2609.17279	wiki/papers/star-pt-correlations-qcd-critical.md
+TITLE	star-pt-correlations-qcd-critical	Non-monotonic Transverse-Momentum Correlations at STAR
+ID	doi:10.3847/1538-4357/ae8f31	wiki/papers/stellar-spin-repeating-partial-tde.md
+TITLE	stellar-spin-repeating-partial-tde	Stellar Spin in Repeating Partial Tidal Disruption Events
+TITLE	sunlight-spdc-ghost-imaging	Sunlight-Driven SPDC and Ghost Imaging
+ID	arxiv-2509.24670	wiki/papers/supermoire-trilayer-graphene-sc.md
+TITLE	supermoire-trilayer-graphene-sc	Supermoiré Lattice Superconductivity in Asymmetric Twisted Trilayer Graphene
+TITLE	supernova-onion-expansion	Reading a Supernova’s Onion by Watching It Grow
+ID	doi:10.1029/2025JD045986	wiki/papers/tc-vertical-alignment.md
+TITLE	tc-vertical-alignment	Tropical Cyclone Vertical Alignment: Quickly Aligning vs Persistently Tilted
+TITLE	temporal-imbalance-gravity	Temporal Imbalance Theory: Gravity from Time-Flow Gradients
+ID	doi:10.3847/1538-4365/ae95f6	wiki/papers/tempos-metal-poor-o-stars.md
+ID	arxiv-2609.20928	wiki/papers/tempos-metal-poor-o-stars.md
+TITLE	tempos-metal-poor-o-stars	TEMPOS Treasury of Extremely Metal-Poor O Stars
+ID	doi:10.48550/arxiv.2606.04997	wiki/papers/thorium-229-nuclear-clock.md
+TITLE	thorium-229-nuclear-clock	Thorium-229 Nuclear Clock
+TITLE	three-body-quantum-company	Three's Company (Three-Body Quantum Dynamics)
+TITLE	time-goes-quantum	Time Goes Quantum: Proper Time Superpositions in Ion Clocks
+ID	arxiv-2407.00772	wiki/papers/tise2-core-level-cdw-excitons.md
+TITLE	tise2-core-level-cdw-excitons	Transient Core-Level Spectroscopy of the 1T-TiSe₂ CDW (Exciton Precursors)
+TITLE	topo-chirality-structured-light	Free-Space Optical Hall Effect via Pancharatnam Topological Charge
+ID	doi:10.1103/rzz5-p4f4	wiki/papers/topological-cosmological-constant.md
+ID	arxiv-2506.14886	wiki/papers/topological-cosmological-constant.md
+TITLE	topological-cosmological-constant	Topology Saves Einstein’s Ugliest Term (Gravitational θ-Vacua)
+ID	arxiv-2606.24886	wiki/papers/topology-of-the-universe.md
+TITLE	topology-of-the-universe	Topology of the Universe (Review)
+ID	doi:10.1126/science.ads5962	wiki/papers/tracking-baryon-number-nuclear-collisions.md
+ID	arxiv-2408.15441	wiki/papers/tracking-baryon-number-nuclear-collisions.md
+TITLE	tracking-baryon-number-nuclear-collisions	Tracking Baryon Number with Nuclear Collisions (STAR)
+TITLE	trinity-ca-cu-si-clathrate	Novel Type-I Ca–Cu–Si Clathrate from Trinity Trinitite
+TITLE	truncated-photon-dynamical-casimir	Truncated Photon and the Dynamical Casimir Effect
+TITLE	twisted-light-chiral-ms	Twisted Light and Chiral Mass Spectrometry
+TITLE	two-clocks-one-laser	Two Clocks, One Laser, Zero Excess Noise
+TITLE	two-lasers-one-reaction	Two Lasers, One Reaction
+TITLE	ultrafast-chemical-shifts	Ultrafast chemical shifts analysis
+ID	arxiv-2608.20464	wiki/papers/ultraheavy-dm-levitated-magnet-polonaise.md
+TITLE	ultraheavy-dm-levitated-magnet-polonaise	Ultraheavy Dark Matter Search with a Levitated Milligram Magnet (Polonaise)
+TITLE	ultramassive-bh-binary-cavity	Ultramassive BH Binary Carves a Starless Kiloparsec Cavity
+ID	doi:10.1103/jdw6-3556	wiki/papers/unconventional-materials-light-dm.md
+TITLE	unconventional-materials-light-dm	Unconventional Materials for Light Dark-Matter Detection (Plasmon Antennas)
+TITLE	universe-gas-pedal-leaky	The Universe's Gas Pedal Is a Leaky Engine
+ID	doi:10.1038/s44284-026-00443-x	wiki/papers/urban-congestion-routing-app.md
+TITLE	urban-congestion-routing-app	Urban Congestion Relief via Routing-App Shadow Tolls
+ID	arxiv-2604.10477	wiki/papers/vacuum-birefringence-magnetar-xrays.md
+TITLE	vacuum-birefringence-magnetar-xrays	Vacuum Birefringence in Magnetar X-rays
+ID	doi:10.1126/sciadv.adx4180	wiki/papers/w-state-entangled-measurement.md
+TITLE	w-state-entangled-measurement	W-State Whisperer: First Entangled Measurement for W States
+TITLE	warp-drive-positive-energy	Positive-Energy Subluminal Warp Shell (Fuchs et al.)
+ID	doi:10.1038/s41567-026-03301-8	wiki/papers/water-double-life-nanoconfinement.md
+TITLE	water-double-life-nanoconfinement	Water's Secret Double Life
+ID	doi:10.1016/j.molcel.2026.04.007	wiki/papers/water-rna-polymerase.md
+TITLE	water-rna-polymerase	Water molecules in RNA polymerase II catalysis
+TITLE	woven-ferroelectric-domains-optical	Woven Ferroelectric Domains with Optical Control
+ID	arxiv-2607.20366	wiki/papers/x2370-pseudoscalar-glueball.md
+TITLE	x2370-pseudoscalar-glueball	X(2370): Flavor-Singlet Null Test for the Lightest Pseudoscalar Glueball
+ID	doi:10.1103/y1nh-1b82	wiki/papers/zz-entanglement-higgs-decays.md
+TITLE	zz-entanglement-higgs-decays	ZZ Boson-Pair Entanglement in Higgs Decays
+TITLE	d40be7a8	
+TITLE	fd46ef60	
+TITLE	a467bb47	
+TITLE	284130d8	
+TITLE	a16227af	
+TITLE	c344a460	
+TITLE	bc2d307c	
+TITLE	fcdb46c3	
+TITLE	1d9d4313	
+TITLE	2c39fa3c	
+TITLE	757ca7d7	
+TITLE	7ba11668	
+TITLE	a388b090	
+TITLE	c725bcab	
+TITLE	65da18c4	
+TITLE	7e86dd11	
+TITLE	f38a787f	
+TITLE	19e0bfc4	
+TITLE	de2d756d	
+TITLE	48e8a69e	
+TITLE	653e2cb3	
+TITLE	898c8c43	
+TITLE	c172b505	
+TITLE	90d5cce7	
+TITLE	a9c50c9b	
+TITLE	6e74a90c	
+TITLE	42edff4d	
+TITLE	1507751a	
+TITLE	4e0316bd	
+TITLE	42ee8206	
+TITLE	765e7590	
+TITLE	6487c8e0	
+TITLE	20cc3e4b	
+TITLE	b2eb34ef	
+TITLE	9f350308	
+TITLE	911cf359	
+TITLE	098f3cd6	
+TITLE	e3b36343	
+TITLE	d44aa7e3	
+TITLE	0a5c3ef4	
+TITLE	73204815	
+TITLE	35bae5fb	
+TITLE	3e59a7b3	
+TITLE	344a8eb5	
+TITLE	c4c4cae5	
+TITLE	3bdca1d2	
+TITLE	6b9b99ac	
+TITLE	74b6ff14	
+TITLE	d08f1727	
+TITLE	f460aa4e	
+TITLE	416551a8	
+TITLE	acd4b7cd	
+TITLE	ebf7f8a9	
+TITLE	9cdb1c0c	
+TITLE	27a5c392	
+TITLE	d5678701	
+TITLE	860d3f57	
+TITLE	e58c866e	
+TITLE	81e2ab23	
+TITLE	7f776ce5	
+TITLE	94785e1d	
+TITLE	1ad48d4d	
+TITLE	0b25cbf8	
+TITLE	8707aeb2	
+TITLE	e23e36e1	
+TITLE	50eacd55	
+TITLE	e511d1e3	
+TITLE	a175fb0e	
+TITLE	69f8581e	
+TITLE	5c0fdae0	
+TITLE	447ad3f1	
+TITLE	4318f0b4	
+TITLE	cea522d1	
+TITLE	4cff7056	
+TITLE	942df2d8	
+TITLE	9beb4c8d	
+TITLE	bb64afb7	
+TITLE	22da14b0	
+TITLE	2f60382c	
+TITLE	9b801f92	
+TITLE	7a3d1b76	
+TITLE	666dfff1	
+TITLE	15c38246	
+TITLE	6609c393	
+TITLE	30ce2966	
+TITLE	57963c1b	
+TITLE	af4e5b7a	
+TITLE	239be18f	
+TITLE	f7f83901	
+TITLE	b51aa206	
+TITLE	77b287ab	
+TITLE	d836bdf8	
+TITLE	062a278d	
+TITLE	694c81b2	
+TITLE	7db43741	
+TITLE	2745e811	
+TITLE	1bb5fc5d	
+TITLE	e1d211de	
+TITLE	edc2587e	
+TITLE	93719d40	
+TITLE	de8ad8dd	
+TITLE	439a3921	
+TITLE	000b415d	
+ID	doi-10.1038-s41567-026-03352-x	2026-08-12_doi-10.1038-s41567-026-03352-x_dephasingless-flying-focus-wakefield.md
+TITLE	dephasingless-flying-focus-wakefield	
+ID	doi-10.1038-s41586-026-10878-w	2026-08-13_doi-10.1038-s41586-026-10878-w_globular-cluster-stellar-stream.md
+TITLE	globular-cluster-stellar-stream	
+ID	doi-10.1103-jmwb-75m7	2026-08-13_doi-10.1103-jmwb-75m7_alice-jpsi-gluon-saturation.md
+TITLE	alice-jpsi-gluon-saturation	
+ID	doi-10.3847-2041-8213-ae7444	2026-08-13_doi-10.3847-2041-8213-ae7444_imf-variation-milky-way.md
+TITLE	imf-variation-milky-way	
+ID	doi-10.1029-2025JD045986	2026-08-14_doi-10.1029-2025JD045986_tc-vertical-alignment.md
+TITLE	tc-vertical-alignment	
+ID	doi-10.1038-s41550-026-02948-w	2026-08-14_doi-10.1038-s41550-026-02948-w_primordial-tidal-torque-galaxy-spin.md
+TITLE	primordial-tidal-torque-galaxy-spin	
+ID	arxiv-2608.04342	2026-08-15_arxiv-2608.04342_life2.0-distributed-telescope-array-biosignatures.md
+TITLE	life2.0-distributed-telescope-array-biosignatures	
+ID	doi-10.1088-1402-4896-ae92db	2026-08-15_doi-10.1088-1402-4896-ae92db_bound-states-continuum-gravitational-waves.md
+TITLE	bound-states-continuum-gravitational-waves	
+ID	doi-10.3847-2041-8213-ae878e	2026-08-15_doi-10.3847-2041-8213-ae878e_cygnus-x3-pevatron-cygnus-bubble.md
+TITLE	cygnus-x3-pevatron-cygnus-bubble	
+ID	arxiv-2407.00772	2026-08-16_arxiv-2407.00772_core-level-signature-density-wave-tise2.md
+TITLE	core-level-signature-density-wave-tise2	
+ID	doi-10.1103-98cx-7t43	2026-08-16_doi-10.1103-98cx-7t43_dark-photon-dark-matter-nonlinear-plasma-saturation.md
+TITLE	dark-photon-dark-matter-nonlinear-plasma-saturation	
+ID	doi-10.1126-science.adc9818	2026-08-16_doi-10.1126-science.adc9818_high-energy-neutrinos-galactic-plane.md
+TITLE	high-energy-neutrinos-galactic-plane	
+ID	arxiv-2607.17729	2026-08-17_arxiv-2607.17729_dual-agn-green-pea-galaxy.md
+TITLE	dual-agn-green-pea-galaxy	
+TITLE	pks2233-148-neutrino-lensing	
+ID	doi-10.1038-s41550-026-02932-4	2026-08-18_doi-10.1038-s41550-026-02932-4_bottom-heavy-imf-hidden-mass-early-galaxies.md
+TITLE	bottom-heavy-imf-hidden-mass-early-galaxies	
+ID	doi-10.1126-sciadv-aea6091	2026-08-18_doi-10.1126-sciadv-aea6091_ai-agents-majority-following-coordination.md
+TITLE	ai-agents-majority-following-coordination	
+ID	arxiv-2602.06744	2026-08-19_arxiv-2602.06744_bridging-quantum-semiclassical-thermodynamics-cavity-qed.md
+TITLE	bridging-quantum-semiclassical-thermodynamics-cavity-qed	
+ID	doi-10.1038-s41567-026-03382-5	2026-08-19_doi-10.1038-s41567-026-03382-5_time-domain-competing-cdw-ErTe3.md
+TITLE	time-domain-competing-cdw-ErTe3	
+ID	doi-10.1038-s41586-022-04998-2	2026-08-19_doi-10.1038-s41586-022-04998-2_intrinsic-charm-proton-nnpdf.md
+TITLE	intrinsic-charm-proton-nnpdf	
+ID	doi-10.1103-5pr6-5fmd	2026-08-19_doi-10.1103-5pr6-5fmd_quantum-droplets-bose-fermi-mixture.md
+TITLE	quantum-droplets-bose-fermi-mixture	
+TITLE	s301-star-sensitive-to-spin-sgrA-star	
+ID	arxiv-2607.20366	2026-08-20_arxiv-2607.20366_x2370-lightest-pseudoscalar-glueball.md
+TITLE	x2370-lightest-pseudoscalar-glueball	
+ID	doi-10.1038-s41467-026-76747-2	2026-08-20_doi-10.1038-s41467-026-76747-2_mmwave-comb-optical-microcomb.md
+TITLE	mmwave-comb-optical-microcomb	
+ID	doi-10.1038-s41586-026-10904-x	2026-08-20_doi-10.1038-s41586-026-10904-x_cft-spectra-quantum-simulator.md
+TITLE	cft-spectra-quantum-simulator	
+ID	doi-10.1103-gymp-vp87	2026-08-20_doi-10.1103-gymp-vp87_nuclear-geometry-anisotropic-flow-oo-nene.md
+TITLE	nuclear-geometry-anisotropic-flow-oo-nene	
+ID	doi-10.1103-lmq8-nsty	2026-08-20_doi-10.1103-lmq8-nsty_quantum-relative-entropy-semiclassical-einstein-equations.md
+TITLE	quantum-relative-entropy-semiclassical-einstein-equations	
+ID	doi-10.3847-1538-4357-ae8f31	2026-08-22_doi-10.3847-1538-4357-ae8f31_stellar-spin-repeating-partial-tidal-disruption.md
+TITLE	stellar-spin-repeating-partial-tidal-disruption	
+ID	doi-10.1126-science.ads5962	2026-08-23_doi-10.1126-science.ads5962_tracking-baryon-number-nuclear-collisions.md
+TITLE	tracking-baryon-number-nuclear-collisions	
+ID	arxiv-2601.11446	2026-08-24_arxiv-2601.11446_coupling-free-electrons-trapped-ion-quantum-computer.md
+TITLE	coupling-free-electrons-trapped-ion-quantum-computer	
+ID	doi-10.1038-s41566-026-01976-2	2026-08-24_doi-10.1038-s41566-026-01976-2_correlated-electrons-xray-hhg-beyond-single-electron-limit.md
+TITLE	correlated-electrons-xray-hhg-beyond-single-electron-limit	
+ID	doi-10.1103-g6v2-grnl	2026-08-24_doi-10.1103-g6v2-grnl_particle-view-many-body-electronic-structure-nn-wavefunction.md
+TITLE	particle-view-many-body-electronic-structure-nn-wavefunction	
+ID	doi-10.1103-lq5r-sjp7	2026-08-26_doi-10.1103-lq5r-sjp7_43gev-gamma-ray-line-galaxy-clusters.md
+TITLE	43gev-gamma-ray-line-galaxy-clusters	
+ID	doi-10.1126-sciadv.adu9368	2026-08-26_doi-10.1126-sciadv.adu9368_emergent-social-conventions-collective-bias-llm-populations.md
+TITLE	emergent-social-conventions-collective-bias-llm-populations	
+ID	doi-10.3847-1538-3881-ae8bae	2026-08-26_doi-10.3847-1538-3881-ae8bae_streamer-misalignment-gw-ori-circumtriple-disk.md
+TITLE	streamer-misalignment-gw-ori-circumtriple-disk	
+ID	arxiv-2411.11581	2026-08-27_arxiv-2411.11581_oasis-million-agent-social-simulator.md
+TITLE	oasis-million-agent-social-simulator	
+ID	doi-10.1038-s41586-026-10914-9	2026-08-27_doi-10.1038-s41586-026-10914-9_atomic-scale-double-slit-interferometry-si.md
+TITLE	atomic-scale-double-slit-interferometry-si	
+ID	arxiv-2604.05307	2026-08-28_arxiv-2604.05307_equilibrated-fraction-qcd-oo-collisions.md
+TITLE	equilibrated-fraction-qcd-oo-collisions	
+ID	doi-10.3847-1538-4357-ae3c08	2026-08-28_doi-10.3847-1538-4357-ae3c08_astrid-simulation-z0-black-holes-large-scale-structure.md
+TITLE	astrid-simulation-z0-black-holes-large-scale-structure	
+ID	arxiv-2608.20311	2026-08-29_arxiv-2608.20311_imaging-vacuum-fluctuations-quantum-field.md
+TITLE	imaging-vacuum-fluctuations-quantum-field	
+ID	doi-10.1038-s44284-026-00443-x	2026-08-29_doi-10.1038-s44284-026-00443-x_urban-congestion-relief-routing-app-interventions.md
+TITLE	urban-congestion-relief-routing-app-interventions	
+ID	doi-10.1038-s41586-026-10579-4	2026-08-30_doi-10.1038-s41586-026-10579-4_direct-black-hole-mass-little-red-dot-high-redshift.md
+TITLE	direct-black-hole-mass-little-red-dot-high-redshift	
+ID	arxiv-2109.03752	2026-08-31_arxiv-2109.03752_discrete-gravity-planck-scale-cells.md
+TITLE	discrete-gravity-planck-scale-cells	
+ID	doi-10.1126-sciadv.aeh1011	2026-08-31_doi-10.1126-sciadv.aeh1011_feynman-path-integral-postulates-single-photons.md
+TITLE	feynman-path-integral-postulates-single-photons	
+TITLE	dark-matter-eft-nuclear-recoil-higher-energies	
+TITLE	missing-watts-tarantula	
+ID	arxiv-2512.11659	2026-09-04_arxiv-2512.11659_bh-thermo-far-from-equilibrium.md
+TITLE	bh-thermo-far-from-equilibrium	
+ID	arxiv-2604.10477	2026-09-04_arxiv-2604.10477_vacuum-birefringence-magnetar-xrays.md
+TITLE	vacuum-birefringence-magnetar-xrays	
+ID	arxiv-2608.09867	2026-09-04_arxiv-2608.09867_extracting-reasoning-traces-proprietary-llms.md
+TITLE	extracting-reasoning-traces-proprietary-llms	
+ID	doi-10.1038-s41467-026-76488-2	2026-09-04_doi-10.1038-s41467-026-76488-2_mirror-that-lies-diffractive-concealment.md
+TITLE	mirror-that-lies-diffractive-concealment	
+ID	doi-10.1038-s41567-026-03360-x	2026-09-04_doi-10.1038-s41567-026-03360-x_electron-hole-migrate-molecule.md
+TITLE	electron-hole-migrate-molecule	
+ID	doi-10.3847-2041-8213-ae808f	2026-09-04_doi-10.3847-2041-8213-ae808f_hi-intensity-mapping-meerkat-autopower-detection.md
+TITLE	hi-intensity-mapping-meerkat-autopower-detection	
+TITLE	25gpps-diffractive-microscope	
+TITLE	deepmind-hurricane-forecasting	
+TITLE	desktop-ct-electron-clouds-3d-pot	
+TITLE	phase-transition-hides-fingerprints	
+TITLE	recycling-idler-quantum-superresolution	
+TITLE	woven-ferroelectric-domains-optical	
+ID	arxiv-2608.20464	2026-09-08_arxiv-2608.20464_ultraheavy-dark-matter-levitated-magnet-polonaise.md
+TITLE	ultraheavy-dark-matter-levitated-magnet-polonaise	
+ID	doi-10.1038-s41586-026-10818-8	2026-09-08_doi-10.1038-s41586-026-10818-8_baryon-semileptonic-decays-polarization-entanglement.md
+TITLE	baryon-semileptonic-decays-polarization-entanglement	
+ID	doi-10.1038-s41550-026-02953-z	2026-09-10_doi-10.1038-s41550-026-02953-z_eccentric-massive-protobinary-core-merger.md
+TITLE	eccentric-massive-protobinary-core-merger	
+ID	doi-10.3847-2041-8213-ae433b	2026-09-10_doi-10.3847-2041-8213-ae433b_ch3oh-hcn-3i-atlas-outgassing.md
+TITLE	ch3oh-hcn-3i-atlas-outgassing	
+ID	doi-10.3847-2041-8213-ae8cf7	2026-09-12_doi-10.3847-2041-8213-ae8cf7_rapid-orbital-decay-erassu-j060839-double-degenerate-binary.md
+TITLE	rapid-orbital-decay-erassu-j060839-double-degenerate-binary	
+ID	doi-10.1103-jdw6-3556	2026-09-13_doi-10.1103-jdw6-3556_unconventional-materials-light-dark-matter-detection.md
+TITLE	unconventional-materials-light-dark-matter-detection	
+ID	doi-10.1140-epjc-s10052-026-15820-y	2026-09-13_doi-10.1140-epjc-s10052-026-15820-y_entanglement-islands-page-curves-kerr-ads.md
+TITLE	entanglement-islands-page-curves-kerr-ads	
+TITLE	part1of2_methodology-and-data	
+TITLE	part2of2_result-and-implications	
+ID	doi-10.1103-y1nh-1b82	2026-09-15_doi-10.1103-y1nh-1b82_zz-boson-pair-entanglement-higgs-decays.md
+TITLE	zz-boson-pair-entanglement-higgs-decays	
+ID	doi-10.1038-s41550-026-02930-6	2026-09-18_doi-10.1038-s41550-026-02930-6_topology-of-the-universe.md
+TITLE	topology-of-the-universe	
+ID	doi-10.1038-s41467-026-77922-1	2026-09-20_doi-10.1038-s41467-026-77922-1_dynamics-informed-imputation-missing-systems-dynamics.md
+TITLE	dynamics-informed-imputation-missing-systems-dynamics	
+ID	doi-10.1038-s41586-026-10894-w	2026-09-20_doi-10.1038-s41586-026-10894-w_s301-star-sensitive-to-spin-of-sgr-a-star.md
+TITLE	s301-star-sensitive-to-spin-of-sgr-a-star	
+ID	doi-10.1088-1681-7575-ae570f	2026-09-20_doi-10.1088-1681-7575-ae570f_redetermination-gravitational-constant-bipm-torsion-balance-nist.md
+TITLE	redetermination-gravitational-constant-bipm-torsion-balance-nist	
+ID	doi-10.1038-s41467-026-76604-2	2026-09-21_doi-10.1038-s41467-026-76604-2_orbformer-ab-initio-foundation-model-wavefunctions-bond-breaking.md
+TITLE	orbformer-ab-initio-foundation-model-wavefunctions-bond-breaking	
+ID	doi-10.1038-s42005-026-02791-5	2026-09-21_doi-10.1038-s42005-026-02791-5_narrowband-tunable-euv-soft-xray-harmonics.md
+TITLE	narrowband-tunable-euv-soft-xray-harmonics	
+ID	doi-10.1126-science.adz0521	2026-09-21_doi-10.1126-science.adz0521_extreme-loss-suppression-dipolar-molecular-gas.md
+TITLE	extreme-loss-suppression-dipolar-molecular-gas	
+ID	doi-10.1126-science.aeh7535	2026-09-21_doi-10.1126-science.aeh7535_quantum-jumps-of-sound.md
+TITLE	quantum-jumps-of-sound	
+ID	doi-10.3847-1538-4365-ae95f6	2026-09-23_doi-10.3847-1538-4365-ae95f6_tempos-treasury-extremely-metal-poor-o-stars.md
+TITLE	tempos-treasury-extremely-metal-poor-o-stars	
+ID	arxiv-2512.14204	2026-09-24_arxiv-2512.14204_cosmic-lockdown-decoherence-vacuum-tunneling.md
+TITLE	cosmic-lockdown-decoherence-vacuum-tunneling	
+ID	doi-10.1103-2xsn-rgx3	2026-09-24_doi-10.1103-2xsn-rgx3_nonmonotonicity-transverse-momentum-correlations-star.md
+TITLE	nonmonotonicity-transverse-momentum-correlations-star	
+TITLE	phantom-halo-surface-density-scale-verlinde-gravity	
+ID	doi-10.3847-2041-8213-ae9a9e	2026-09-25_doi-10.3847-2041-8213-ae9a9e_fdm-wave-simulation-lensing-hs0810.md
+TITLE	fdm-wave-simulation-lensing-hs0810	
+ID	doi-10.1016-j.dark.2026.102364	2026-09-26_doi-10.1016-j.dark.2026.102364_negative-mass-objects-in-the-sky.md
+TITLE	negative-mass-objects-in-the-sky	
+ID	doi-10.31526-PHEP.2026.21	2026-09-26_doi-10.31526-PHEP.2026.21_cms-black-holes-sphalerons-phase-space-svm.md
+TITLE	cms-black-holes-sphalerons-phase-space-svm	
+ID	doi-10.3847-2041-8213-ae9cbd	2026-09-26_doi-10.3847-2041-8213-ae9cbd_jet-aligned-halpha-cgm-radio-galaxies.md
+TITLE	jet-aligned-halpha-cgm-radio-galaxies	
+ID	doi-10.1007-s10484-023-09582-6	2026-09-27_doi-10.1007-s10484-023-09582-6_hrv-biofeedback-methods-systematic-review.md
+TITLE	hrv-biofeedback-methods-systematic-review	
+TITLE	resonance-baroreflex-physiology-and-methods	
+ID	arxiv-2609.20788	2026-09-28_arxiv-2609.20788_looking-inside-a-quantum-black-hole.md
+TITLE	looking-inside-a-quantum-black-hole	
+ID	arxiv-2609.21471	2026-09-28_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography.md
+TITLE	geodesic-tessellation-schwarzschild-holography	
+ID	arxiv-2609.21471	2026-09-29_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography-v2-foundations.md
+TITLE	geodesic-tessellation-schwarzschild-holography-v2-foundations	
+ID	arxiv-2602.03456	2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md
+TITLE	stationary-entanglement-levitated-oscillator-optical-field	
+ID	arxiv-2510.05232	2026-10-02_arxiv-2510.05232_megatron-pop3-iron-plateau-ultra-faint-dwarfs.md
+TITLE	megatron-pop3-iron-plateau-ultra-faint-dwarfs	
+ID	doi-10.1103-g49y-8cjl	2026-10-02_doi-10.1103-g49y-8cjl_cms-jet-diffusion-wake-dijets-heavy-ion.md
+TITLE	cms-jet-diffusion-wake-dijets-heavy-ion	
+ID	doi-10.1103-r39m-l6gz	g_2026-08-27_doi-10.1103-r39m-l6gz_equilibrated-fraction-oo-qcd.md
+TITLE	equilibrated-fraction-oo-qcd	
+ID	doi-10.3847-1538-4357-ae3c08	g_2026-08-28_doi-10.3847-1538-4357-ae3c08_astrid-z0-mbh-lss.md
+TITLE	astrid-z0-mbh-lss	
+ID	arxiv-2602.03456	sonnet_2026-10-01_arxiv-2602.03456_levitated-nanosphere-stationary-entanglement-optical-field.md
+TITLE	levitated-nanosphere-stationary-entanglement-optical-field	
+RECENT	2026-10-02_doi-10.1103-g49y-8cjl_cms-jet-diffusion-wake-dijets-heavy-ion.md
+RECENT	2026-10-02_arxiv-2510.05232_megatron-pop3-iron-plateau-ultra-faint-dwarfs.md
+RECENT	2026-10-01_arxiv-2602.03456_stationary-entanglement-levitated-oscillator-optical-field.md
+RECENT	2026-09-29_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography-v2-foundations.md
+RECENT	2026-09-28_arxiv-2609.21471_geodesic-tessellation-schwarzschild-holography.md
+RECENT	2026-09-28_arxiv-2609.20788_looking-inside-a-quantum-black-hole.md
+RECENT	2026-09-27_hrvb-combined-6-sources_resonance-baroreflex-physiology-and-methods.md
+RECENT	2026-09-27_doi-10.1007-s10484-023-09582-6_hrv-biofeedback-methods-systematic-review.md
+RECENT	2026-09-26_doi-10.3847-2041-8213-ae9cbd_jet-aligned-halpha-cgm-radio-galaxies.md
+RECENT	2026-09-26_doi-10.31526-PHEP.2026.21_cms-black-holes-sphalerons-phase-space-svm.md
+RECENT	2026-09-26_doi-10.1016-j.dark.2026.102364_negative-mass-objects-in-the-sky.md
+RECENT	2026-09-25_doi-10.3847-2041-8213-ae9a9e_fdm-wave-simulation-lensing-hs0810.md
+RECENT	2026-09-24_ssrn-7180683_phantom-halo-surface-density-scale-verlinde-gravity.md
+RECENT	2026-09-24_doi-10.1103-2xsn-rgx3_nonmonotonicity-transverse-momentum-correlations-star.md
+RECENT	2026-09-24_arxiv-2512.14204_cosmic-lockdown-decoherence-vacuum-tunneling.md

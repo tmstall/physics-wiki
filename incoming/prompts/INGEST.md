@@ -65,7 +65,9 @@ Before batch 1, print a short table (filename · inferred title/DOI one-liner if
 
 ---
 
-## 2. Duplicate detection (every file, before writing a new paper page)
+## 2. Duplicate detection and ingest directives (every file, before writing a new paper page)
+
+**Directives (required).** Before writing or updating the wiki page, open `incoming/INGEST_DIRECTIVES.md`. If any card matches this file (arXiv id, DOI, or filename stem), follow that card. It overrides the paper’s abstract and any one-line summary you would otherwise write. Do not create a concept page the card forbids. Say in the batch-summary Notes column that the directive was applied.
 
 Before creating a new `wiki/papers/` page, search wiki + recent logs for:
 

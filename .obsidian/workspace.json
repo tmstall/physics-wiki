@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4d3bd07162c040b5",
+        "id": "fcc5672d4a162d7d",
         "type": "tabs",
         "children": [
           {
-            "id": "cdd8008e77cc8271",
+            "id": "d8e3c86abd232caf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/synthesis/measurement-problem-threads.md",
-                "mode": "source",
+                "file": "wiki/index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "measurement-problem-threads"
+              "title": "index"
             }
           }
         ]
@@ -42,7 +42,7 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "autoReveal": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cern",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,12 +79,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 200
   },
   "right": {
     "id": "17eb6608e7d9bb90",
@@ -202,44 +201,48 @@
       "bases:Create new base": false
     }
   },
-  "active": "6efa1579fef3bd3c",
+  "active": "d8e3c86abd232caf",
   "lastOpenFiles": [
-    "wiki/papers/problem-of-time-cold-atoms.md",
-    "wiki/synthesis/measurement-problem-threads.md",
+    "index.md",
+    "wiki/log.md",
+    "LINT_REPORT_2026-08-22.md",
+    "LINT_REPORT_2026-09-20.md",
+    "_finish_wave_0920.py",
+    "LINT_REPORT_2026-08-16.md",
+    "LINT_REPORT_2026-09-05.md",
+    "LINT_REPORT_2026-09-12.md",
+    "wiki/synthesis/amo-quantum-state-control.md",
+    "wiki/papers/zz-entanglement-higgs-decays.md",
+    "wiki/papers/topology-of-the-universe.md",
+    "wiki/papers/lbt-yp-primordial-helium.md",
+    "wiki/papers/unconventional-materials-light-dm.md",
+    "wiki/papers/rapid-orbital-decay-erassu-j060839.md",
+    "wiki/papers/entanglement-islands-page-curves-kerr-ads.md",
     "wiki/index.md",
-    "CHECKPOINT_2026-08-04.md",
-    "spacex_export/DEEPEN_REPORT.md",
-    "spacex_export/POLISH_REPORT.md",
-    "wiki/synthesis/modified-speculative-gravity.md",
-    "wiki/synthesis/nuclear-dense-matter-precision.md",
-    "wiki/synthesis/high-energy-astrophysics-multimessenger.md",
-    "wiki/synthesis/condensed-matter-topology-fractionalization.md",
-    "spacex_export/CLEANUP_REPORT.md",
-    "wiki/papers/temporal-imbalance-gravity.md",
-    "wiki/papers/phosphorus-radical-hydroamination.md",
-    "wiki/papers/evanescent-wave-transverse-spin.md",
-    "wiki/papers/five-dimensional-classical-gravity.md",
-    "wiki/papers/warp-drive-positive-energy.md",
-    "wiki/papers/jwst-ulirg-hydrocarbons.md",
-    "wiki/papers/axion-detector-quantum-erasure.md",
-    "spacex_export/_wave5_heads/2026-02-05_v3-4-3-prompt-evanescent-waves-hidden-transverse-spin-moment_2c39fa3c.txt",
-    "spacex_export/_wave5_heads/2026-01-11_temporal-imbalance-theory-gravity-s-new-clock_bc2d307c.txt",
-    "spacex_export/_wave5_heads/2026-02-09_physically-possible-warp-drive-breakthrough_a388b090.txt",
-    "spacex_export/_wave5_heads/2026-02-25_phosphorus-radical-catalyzed-markovnikov-hydroamination_de2d756d.txt",
-    "spacex_export/_wave5_heads/2026-02-07_jwst-reveals-hydrocarbon-factory-in-ulirg_757ca7d7.txt",
-    "spacex_export/_wave5_heads/2026-01-07_five-dimensional-classical-gravity-model_c344a460.txt",
-    "spacex_export/_wave5_heads/2026-05-25_axion-quantum-signatures-erased-in-detectors_6487c8e0.txt",
-    "spacex_export/_wave5_heads",
-    "spacex_export/_all_extracts.txt",
-    "wiki/papers/iras-21204-fuor.md",
-    "wiki/papers/trinity-ca-cu-si-clathrate.md",
-    "wiki/papers/lab-blazar-pair-instability.md",
-    "wiki/papers/massive-gravity-drgt.md",
-    "wiki/papers/early-universe-popiii-flash-ionization.md",
-    "spacex_export/_wave4_heads/2026-01-14_laboratory-suppression-of-blazar-instabilities_fcdb46c3.txt",
-    "spacex_export/LINT_REPORT.md",
-    "wiki/papers/ice-core-fe60-local-cloud.md",
-    "wiki/papers/nonabelian-photonic-braiding.md",
+    "wiki/papers/tc-vertical-alignment.md",
+    "incoming/New/ODT/Woven ferroelectric domains and optical control.odt",
+    "incoming/New/Woven ferroelectric domains and optical control.md",
+    "incoming/New/ODT/Watching an Electron Hole Migrate Across a Molecule in Real Time.odt",
+    "incoming/New/Watching an Electron Hole Migrate Across a Molecule in Real Time.md",
+    "incoming/New/ODT/Vacuum birefringence in magnetar X-rays.odt",
+    "incoming/New/Vacuum birefringence in magnetar X-rays.md",
+    "incoming/New/ODT/The Missing Watts of the Tarantula.odt",
+    "incoming/New/The Missing Watts of the Tarantula.md",
+    "incoming/New/ODT/The 25-Gigapixel-Per-Second Microscope.odt",
+    "incoming/New/The 25-Gigapixel-Per-Second Microscope.md",
+    "incoming/New/ODT/Recycling the Idler.odt",
+    "incoming/New/Recycling the Idler.md",
+    "incoming/New/ODT/Light-induced topological band inversion in SnTe.odt",
+    "incoming/New/Light-induced topological band inversion in SnTe.md",
+    "incoming/New/ODT/Google DeepMind Cracks the Hurricane Forecasting Bottleneck.odt",
+    "incoming/New/Google DeepMind Cracks the Hurricane Forecasting Bottleneck.md",
+    "incoming/New/ODT/Extracting reasoning traces from proprietary LLMs.odt",
+    "incoming/New/Extracting reasoning traces from proprietary LLMs.md",
+    "incoming/New/Desktop CT Scanner for Electron Clouds.md",
+    "incoming/New/_odt_media/Pictures/10000000000009BC00000856975079FF.png",
+    "incoming/New/_odt_media/Pictures/100000000000035200000277FC753F76.jpg",
+    "incoming/New/_odt_media/Pictures/10000000000003520000014EF143FCA9.png",
+    "Untitled.canvas",
     "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/smflym6SHPvsBPOl-profile-picture.webp",
     "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/ndvVH00uaQ5xl889-profile-picture.webp",
     "SpaceX_exported_data/ttl/30d/export_data/0b555e90-6d15-442d-a448-aaaf8951e557/prod-mc-asset-server/fqed5OrQsIKMnSfA-profile-picture.webp",

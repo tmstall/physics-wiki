@@ -57,7 +57,13 @@ try {
         foreach ($l in (Get-Content $retry -Encoding UTF8)) {
             if (-not $l.Trim()) { continue }
             $src, $dst = $l -split "`t"
-            try { $n = Copy-Verified $src (Join-Path $dst (Split-Path $src -Leaf)); Write-Log "Drive retry ok: $src ($n bytes)" $wlog }
+            if ($ToReadDir -and $dst.TrimEnd('\').Equals($ToReadDir.TrimEnd('\'), [StringComparison]::OrdinalIgnoreCase)) {
+                # To Read entry: .md plus the figures it embeds, via Copy-ToRead
+                if (-not (Test-Path -LiteralPath $src)) { Write-Log "To Read retry dropped (source gone, e.g. ingested/archived): $src" $wlog; continue }
+                try { $r = Copy-ToRead $src $dst; Write-Log "To Read retry ok: $r" $wlog }
+                catch { $left += $l; Write-Log "To Read retry failed: $l - $($_.Exception.Message)" $wlog }
+                continue
+            }            try { $n = Copy-Verified $src (Join-Path $dst (Split-Path $src -Leaf)); Write-Log "Drive retry ok: $src ($n bytes)" $wlog }
             catch { $left += $l; Write-Log "Drive retry failed: $l - $($_.Exception.Message)" $wlog }
         }
         if ($left.Count) { Set-Content $retry $left -Encoding UTF8 } else { Remove-Item $retry -Force }
