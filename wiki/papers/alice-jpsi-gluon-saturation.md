@@ -40,6 +40,7 @@ Coherent production sees the nucleus as a smooth average; incoherent production 
 - Reverse-link: [[alice-oo-nene-nuclear-geometry-flow]]
 - Reverse-link: [[intrinsic-charm-proton-nnpdf]]
 - Reverse-link: [[x2370-pseudoscalar-glueball]]
+- Off-shell recursion for the known dilute–dense amplitude: [[gluon-production-cgc-bcfw]]
 
 ## Source
 

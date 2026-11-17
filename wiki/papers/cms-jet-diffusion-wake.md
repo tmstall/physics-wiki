@@ -47,6 +47,8 @@ A bus through a crowd is the everyday picture: people are pulled into the slipst
 - Soft correlations near a possible critical point, not a hard-probe wake: [[star-pt-correlations-qcd-critical]]
 - Concept: [[parton-jets]]
 - Synthesis: [[nuclear-dense-matter-precision]]
+- Kick distribution on an infinitely heavy quark, with no collider shift: [[heavy-quark-non-gaussian-transport]]
+- Method for a known dilute–dense gluon amplitude: [[gluon-production-cgc-bcfw]]
 
 ## Open questions
 

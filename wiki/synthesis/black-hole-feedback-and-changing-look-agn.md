@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, black-holes, agn, feedback, galaxy-evolution]
-last_updated: 2026-10-09
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744, jet-aligned-halpha-cgm, radio-galaxy-z4946]
+related_papers: [jwst-filament-cnd-ngc4696, category-79-quasar-wind, radio-changing-look-agn, glimpse-17775-cocoon, smbh-inclination-angle, mrk501-double-jet-smbbh, ultramassive-bh-binary-cavity, high-z-quasar-pair-merger, bh-recoils-agn-survey, black-hole-recoil-agn, euclid-high-z-quasar-census, naked-black-hole-candidate, muse-quasar-filament-z3, dual-agn-green-pea, stellar-spin-repeating-partial-tde, astrid-z0-mbh-lss, direct-bh-mass-lrd-abell2744, jet-aligned-halpha-cgm, radio-galaxy-z4946, direct-collapse-black-holes-local-lw]
 ---
 
 # Black Hole Feedback and Changing-Look AGN
@@ -125,6 +125,8 @@ An NLS1 jumped from radio-quiet (~1.4 mJy) to radio-loud (~39 mJy) and *stayed* 
 Euclid multiplies the high-$z$ quasar sample; extreme JWST portraits (naked / horizonless candidates, LRD cocoons) stress how incomplete “standard AGN SED” assumptions are. [[direct-bh-mass-lrd-abell2744]] adds the first reionization-era *dynamical* LRD mass (~$5\times10^7\,M_\odot$), calming some virial-scare scenarios for that object while sharpening the $M_{\rm BH}/M_*$ assembly puzzle. Feedback models trained on local quasars must not pretend every $z\sim6$–8 object is a scaled-up SDSS template.
 
 **Addendum (2026-10-05).** [[astrid-bh-occupation-fraction]] splits the same ASTRID box as [[astrid-z0-mbh-lss]] into total, central, and active occupation. Near-unity total occupation is the seeding rule. In 10⁷ M☉ dwarfs only about half the holes are still inside the stellar half-mass radius by z = 0, and an Eddington-ratio cut above 0.01 sees only a few percent. An AGN fraction is a duty cycle. Do not read the heavy-seed slice as a light-versus-heavy test: ASTRID has one heavy channel. The star-forming versus quiescent location split is a correlation with an open causal arrow, and it sits near the force resolution.
+
+**Addendum (2026-11-15).** [[direct-collapse-black-holes-local-lw]] asks where heavy seeds form inside one $z \approx 6$ quasar halo once Lyman–Werner light is local rather than a regional average. The count barely changes (54 versus 47). The clock moves: first seeds at $z \approx 22$. Growth does not follow formation. Only a handful exceed $10^{6.5}\,M_\odot$, so the JWST target is faint satellites, not the central quasar. One tree, a fixed $10^5\,M_\odot$ seed, and a point-source flux. Do not stack its comoving density on the Pop III.1 flash census in [[early-universe-popiii-flash-ionization]].
 
 ---
 

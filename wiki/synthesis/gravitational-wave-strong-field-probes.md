@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, gravitational-waves, black-holes, strong-field-gravity, multimessenger]
-last_updated: 2026-09-20
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, second-order-gw-strain-gauge, gw170817-jet-hubble, qg-deep-dive-1-mergers-emission, psr-j1906-binary-timing, gw-induced-fermion-freeze-in, pre-bang-leftovers, qg-deep-dive-2-info-holography, s301-sgra-spin-sensitive-star, astrid-z0-mbh-lss, rapid-orbital-decay-erassu-j060839]
+related_papers: [horizon-direct-wave-gw250114, entropy-maximization-bh-mergers, second-order-gw-strain-gauge, gw170817-jet-hubble, qg-deep-dive-1-mergers-emission, psr-j1906-binary-timing, gw-induced-fermion-freeze-in, pre-bang-leftovers, qg-deep-dive-2-info-holography, s301-sgra-spin-sensitive-star, astrid-z0-mbh-lss, rapid-orbital-decay-erassu-j060839, lvk-o4a-cosmological-gwb, ligo-frequency-dependent-squeezing, gravitational-field-reconnection]
 ---
 
 # Gravitational Waves as Strong-Field Probes
@@ -71,7 +71,7 @@ This synthesis is **GW as a strong-field instrument**. Semiclassical evaporation
 
 Second-order light-pulse timing for freely falling observers shows the physical strain content of Newton-gauge TT — a foundations-of-measurement result. It does not announce a new event; it polices how theory pages talk about “$h$.”
 
-**Bridge:** Detector language on LIGO/Virgo/KAGRA pages (when ingested) should respect this gauge hygiene.
+**Bridge:** Detector language on LIGO/Virgo/KAGRA pages should respect this gauge hygiene. The O1–O4a cosmological-background limits live on [[lvk-o4a-cosmological-gwb]], not on this strain-gauge page.
 
 ---
 
@@ -88,11 +88,12 @@ Second-order light-pulse timing for freely falling observers shows the physical 
 
 ## Thread D — Production and early-universe neighbors (not detectors)
 
-**Papers:** [[gw-induced-fermion-freeze-in]], [[pre-bang-leftovers]], [[qg-deep-dive-2-info-holography]]
+**Papers:** [[gw-induced-fermion-freeze-in]], [[pre-bang-leftovers]], [[qg-deep-dive-2-info-holography]], [[lvk-o4a-cosmological-gwb]]
 
 - [[gw-induced-fermion-freeze-in]]: stochastic GWB as a DM factory (freeze-in). Full detection-channel comparison lives on [[dark-matter-detection-channels]]; listed here so GW pages stay linked to production.
 - [[pre-bang-leftovers]]: bounce-survival relics / PBHs — origin story; evaporation endpoints stay on [[black-hole-evaporation-energy-conditions]].
 - [[qg-deep-dive-2-info-holography]]: information / holography deep dive — conceptual neighbor for “what horizons mean,” not a LIGO observable.
+- [[lvk-o4a-cosmological-gwb]]: one O1–O4a null spectrum, refit as eight early-universe templates, still a null. Flat-spectrum energy density below about $3 \times 10^{-9}$. String and stellar-mass PBH headlines apply only inside the stated loop model or mass window. This is a limit table, not a waveform.
 
 Label these clearly so readers do not treat freeze-in as a matched-filter template.
 
@@ -111,7 +112,9 @@ Label these clearly so readers do not treat freeze-in as a matched-filter templa
 ### Still thin (honest gaps)
 
 - Broad LIGO/Virgo/KAGRA catalog event pages beyond a few anchors.
-- PTA nanohertz stochastic background primary analyses.
+- PTA nanohertz stochastic background primary analyses. The audio-band cosmological null is now in: [[lvk-o4a-cosmological-gwb]].
+- The instrument behind that null is noise engineering, not a new detection: [[ligo-frequency-dependent-squeezing]] reviews frequency-dependent squeezing. Sub-SQL figures are inferred quantum noise after classical subtraction, and optical loss sets the delivered decibels. Index home is quantum metrology.
+- Field-sheet language for when the frozen-in condition fails, with no worked spacetime: [[gravitational-field-reconnection]]. Dictionary, not a waveform and not a new gravity theory.
 - Neutrino + GW coincidences.
 - Independent reproduction of direct-wave vs QNM separation.
 - Numerical-relativity remnant catalogs as first-class pages.

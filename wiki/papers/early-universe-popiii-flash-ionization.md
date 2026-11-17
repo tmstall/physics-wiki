@@ -2,7 +2,7 @@
 tags: [papers, cosmology, reionization, supermassive-black-holes, first-stars]
 last_updated: 2026-08-04
 status: analysis-ingest
-related_papers: [euclid-high-z-quasar-census, high-z-quasar-pair-merger, desi-evolving-dark-energy, muse-quasar-filament-z3, cosmos-web-cosmic-web, glimpse-17775-cocoon]
+related_papers: [euclid-high-z-quasar-census, high-z-quasar-pair-merger, desi-evolving-dark-energy, muse-quasar-filament-z3, cosmos-web-cosmic-web, glimpse-17775-cocoon, direct-collapse-black-holes-local-lw]
 source_analysis: "spacex_export/extracted-analyses/2025-08-20_early-universe-ionization-by-supermassive-stars_fd46ef60.md"
 ---
 
@@ -36,6 +36,7 @@ Standard reionization is a slow city-light rollout at $z\lesssim10$. Pop III.1 i
 ## Connections
 
 - High-$z$ quasars / seeds: [[euclid-high-z-quasar-census]], [[high-z-quasar-pair-merger]], [[glimpse-17775-cocoon]], [[supermassive-black-hole-binaries]]
+- Lyman–Werner direct collapse in one simulated quasar halo (different channel, much lower comoving density): [[direct-collapse-black-holes-local-lw]]
 - Cosmic web / IGM light-up: [[muse-quasar-filament-z3]], [[cosmos-web-cosmic-web]], [[cosmic-web]]
 - Expansion / parameter tensions: [[desi-evolving-dark-energy]], [[hubble-tension]], [[dark-energy-equation-of-state]]
 - Key terms: Pop III.1, flash ionization, CMB optical depth $\tau$, heavy seeds, Strömgren spheres, EDGES 21 cm

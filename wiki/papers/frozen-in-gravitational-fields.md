@@ -2,7 +2,7 @@
 tags: [papers, general-relativity, topology, plasma-analogy]
 last_updated: 2026-08-16
 status: analysis-ingest
-related_papers: [evaporating-charged-black-holes, topological-cosmological-constant, gravastar-dust-collapse, temporal-imbalance-gravity, warp-drive-positive-energy]
+related_papers: [evaporating-charged-black-holes, topological-cosmological-constant, gravastar-dust-collapse, temporal-imbalance-gravity, warp-drive-positive-energy, gravitational-field-reconnection]
 source_analysis: "raw/analyses/frozen gravity.md; List2_Combined_Clean.md (frozen gravity.md)"
 ---
 
@@ -42,6 +42,7 @@ Cache-coherency analogy: once ownership flags lock a line, the protocol forbids 
 - Reverse-link: [[warp-drive-positive-energy]]
 
 - Concepts: [[frozen-in-gravity]]
+- When the ideal condition fails (slippage versus reconnection; no worked spacetime): [[gravitational-field-reconnection]]
 - GR neighbor: [[evaporating-charged-black-holes]] (different angle: causal structure of evaporating interiors vs. topological constraints on evolution).
 - Topological protection of Λ (different topology story — θ-vacua / CSK, not flux freeze): [[topological-cosmological-constant]], [[gravitational-theta-vacua]]
 - Name-adjacent early-universe cousin (different physics — freeze-in DM, not curvature topology): [[gw-induced-fermion-freeze-in]]

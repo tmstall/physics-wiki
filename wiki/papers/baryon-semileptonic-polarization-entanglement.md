@@ -34,6 +34,7 @@ Kaon and tau |Vus| taps still disagree a bit, so hyperon decays are a third chec
 
 - Precision / flavor context: [[nuclear-dense-matter-precision]], [[b-meson-fcnc-anomaly]], [[flavor-changing-neutral-current]]
 - Related BESIII / hadron spectroscopy: [[x2370-pseudoscalar-glueball]]
+- LHCb dimuon evidence, a different flavor observable: [[lhcb-b0-mumu-run3]]
 
 ## Source
 

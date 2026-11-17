@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, cosmology, dark-energy, large-scale-structure, hubble-tension]
-last_updated: 2026-10-31
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe, cosmic-lockdown-vacuum-tunneling, tempos-metal-poor-o-stars, muse-desi-lens-confirmation, sign-changing-dark-energy-teleparallel]
+related_papers: [desi-evolving-dark-energy, cigars-i-supernova-cosmology, holismokes-sn-winny, gw170817-jet-hubble, big-ring-ultra-large-structure, gigaparsec-anisotropic-structures, newton-ksz-force-law, quantum-damping-cosmological-shear, cosmos-web-cosmic-web, universe-gas-pedal-leaky, early-universe-popiii-flash-ionization, imf-variation-milky-way, primordial-tidal-torque-galaxy-spin, bottom-heavy-imf-early-galaxies, astrid-z0-mbh-lss, hi-intensity-mapping-meerkat, lbt-yp-primordial-helium, topology-of-the-universe, cosmic-lockdown-vacuum-tunneling, tempos-metal-poor-o-stars, muse-desi-lens-confirmation, sign-changing-dark-energy-teleparallel, direct-collapse-black-holes-local-lw, lvk-o4a-cosmological-gwb, rotational-ksz-cluster-motions]
 ---
 
 # Cosmology: Expansion History and Large-Scale Structure
@@ -156,6 +156,12 @@ This synthesis is **data-driven expansion history and structure**. Speculative /
 - [[mxdfz4-4-lyc-emitter]] — direct LyC at z = 4.44. Escape fraction is model-bounded. Belongs with reionization bookkeeping, not with BAO or supernova distances.
 - [[chime-21cm-autopower-z1]] — first strong 21 cm autopower at z ≈ 1.16 (12.4σ). Systematics milestone. The BAO ruler is filtered out, so this does not yet move the expansion-history threads.
 - [[astrid-bh-occupation-fraction]] — dwarf occupation on the ASTRID box is a seeding/dynamics/duty-cycle split, not an expansion probe. Primary census discussion: [[black-hole-feedback-and-changing-look-agn]].
+
+## Addendum (2026-11-15)
+
+- [[direct-collapse-black-holes-local-lw]] — local Lyman–Werner weather in one quasar halo moves heavy-seed formation to $z \approx 22$ without much changing the count. Assembly channel, not an expansion ruler. Census discussion: [[black-hole-feedback-and-changing-look-agn]].
+- [[lvk-o4a-cosmological-gwb]] — O1–O4a null on a cosmological gravitational-wave background, as eight templates. Early-universe exclusion table. It does not move $H_0$ or $w(z)$. Primary home: [[gravitational-wave-strong-field-probes]].
+- [[rotational-ksz-cluster-motions]] — oriented stack of 25 clusters. The dipole is internal gas motion (mergers included in the journal title), about four times galaxy speeds, and it drops when Coma is removed or weights are equalized. Not an $H_0$ result and not the pairwise force law on [[newton-ksz-force-law]]. Giant-impact atmospheres stay off this hub.
 
 ## Lint addendum (2026-08-31)
 

@@ -41,6 +41,7 @@ Positions of galaxies tell you *where* structure ended up after a messy history.
   - Concepts: [[ksz-effect]], [[modified-newtonian-dynamics]]
 - Cosmology neighbors: [[cosmos-web-cosmic-web]] (structure mapping), [[hubble-tension]] (independent large-scale gravity stress test), [[gw-induced-fermion-freeze-in]] (early-universe GW/DM, different regime).
 - Galaxy-scale MOND EFE claim (different scale; SEP tension): [[mond-external-field-sparc]] — kSZ still prefers inverse-square on 30–230 Mpc.
+- Internal cluster motions, not this pairwise force law: [[rotational-ksz-cluster-motions]].
 
 ## Source
 

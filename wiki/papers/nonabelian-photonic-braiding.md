@@ -47,6 +47,7 @@ This platform **practices** non-commutative braiding with classical light at roo
 - Key terms: non-Abelian braiding, photonic pseudospin, SU(2) rotation gate, topological photonics
 - Symmetry-protected BIC cousin in linearized GR (exploratory): [[gw-bound-states-continuum]]
 - Synthesis: [[condensed-matter-topology-fractionalization]] (fractionalization & topology map)
+- Colloidal charge frustration, another emulator: [[particle-anti-spin-ice]]
 - Reverse-link: [[cft-spectra-rydberg-simulator]]
 
 ## Source

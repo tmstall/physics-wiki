@@ -33,6 +33,7 @@ The baroreflex is a blood-pressure governor with a stale reading and a limited b
 ## Connections
 
 - How the published trials actually set and report that rate: [[hrv-biofeedback-methods-review]]
+- Whole-body radiofrequency limits are a different question. Do not merge: [[icbe-emf-whole-body-limits]]
 
 ## Source
 

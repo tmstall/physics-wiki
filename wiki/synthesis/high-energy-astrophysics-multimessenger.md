@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, astrophysics, multi-messenger, interstellar-medium, high-energy-astrophysics]
-last_updated: 2026-10-31
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing, rapid-orbital-decay-erassu-j060839, tempos-metal-poor-o-stars, sgr-a-pevatron-magnetic-penrose, grb-220706a-month-long-engine, super-chandrasekhar-magnetized-white-dwarfs]
+related_papers: [magnetar-slsn-2017egm-fermi, ice-core-fe60-local-cloud, muse-quasar-filament-z3, jwst-ulirg-hydrocarbons, early-universe-popiii-flash-ionization, iras-21204-fuor, supernova-onion-expansion, interstellar-glaciers-spherex, interstellar-sulfur-ice, aquila-booster-pevatron, cygnus-x3-pevatron-bubble, lab-blazar-pair-instability, dephasingless-flying-focus-wakefield, beyond-iron-ultraheavy-cosmic-rays, peters-cycle-cosmic-rays, dr21-magnetic-accretion, dense-plasma-opacity-revision, icecube-galactic-plane-neutrinos, pks2233-neutrino-lensing, stellar-spin-repeating-partial-tde, missing-watts-tarantula, vacuum-birefringence-magnetar-xrays, eccentric-massive-protobinary-core-merger, ch3oh-hcn-3i-atlas-outgassing, rapid-orbital-decay-erassu-j060839, tempos-metal-poor-o-stars, sgr-a-pevatron-magnetic-penrose, grb-220706a-month-long-engine, super-chandrasekhar-magnetized-white-dwarfs, hypersoft-x-ray-sources]
 ---
 
 # High-Energy Astrophysics, Multi-Messenger Signals & Early-Universe Thermal History
@@ -70,6 +70,8 @@ This synthesis is **astrophysical messengers and thermal history**. SMBH fuel–
 [[sgr-a-pevatron-magnetic-penrose]] proposes the central hole itself as the PeVatron: ADAF neutrons decay in the ergosphere and a magnetic Penrose voltage flings protons to a few–tens of PeV. The energy scale follows from the assumed vacuum field; the published γ-ray/neutrino *rate* treats every arriving neutron as a decay and is overstated by ~40–140× at high spin. Place it next to PWN/microquasar PeVatrons as a different engine, not as a confirmed Galactic Center source.
 
 [[grb-220706a-month-long-engine]] is the stellar-engine cousin of A1: X-ray flares to ~27 rest-frame days and a dust-boosted luminous SN candidate. Treat the month-long engine as a ~3–4σ hint on low-count Swift points, not as a measured engine class.
+
+[[hypersoft-x-ray-sources]] is a local archival population, not an engine: 84 Chandra sources that exist only below 0.3 keV. The temperature is a population ceiling near 24 eV. Bolometric luminosities swing by orders of magnitude with the assumed temperature, and the paper calls the corrections illustrative. A black hole for the brightest objects is an exclusion guess. The Type Ia progenitor gap and extragalactic He II are proposed budgets, owned as open questions next to [[type-ia-supernovae]], not as closed by this catalog.
 
 ### A3 — Blazar cascades and lab IGMF physics
 

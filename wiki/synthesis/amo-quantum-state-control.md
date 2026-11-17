@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, amo, quantum-information, quantum-optics, cold-atoms]
-last_updated: 2026-10-31
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir, positronium-diffraction-graphene, cavity-qed-tur-io-bookkeeping, quantum-droplets-bose-fermi, cft-spectra-rydberg-simulator, mmwave-optical-microcomb, coupling-free-electrons-trapped-ion, imaging-vacuum-fluctuations-qft, quantum-jumps-of-sound, extreme-loss-suppression-dipolar-molecules, xuv-stimulated-raman-phase-control-helium]
+related_papers: [quantum-state-sculptor, massive-tunneling-schrodinger-cats, dissipative-cavity-entanglement, noise-driven-qubit-entanglement, fractional-fermi-sea-1d-bosons, freeze-fiber-brillouin, problem-of-time-cold-atoms, photon-number-optical-analogy-control, macroscopic-crystal-entanglement-neutrons, w-state-entangled-measurement, collective-superradiant-lasing, mot-metal-hydride, molecular-rotation-superfluid-he, truncated-photon-dynamical-casimir, positronium-diffraction-graphene, cavity-qed-tur-io-bookkeeping, quantum-droplets-bose-fermi, cft-spectra-rydberg-simulator, mmwave-optical-microcomb, coupling-free-electrons-trapped-ion, imaging-vacuum-fluctuations-qft, quantum-jumps-of-sound, extreme-loss-suppression-dipolar-molecules, xuv-stimulated-raman-phase-control-helium, one-positron-quantum-cyclotron, ligo-frequency-dependent-squeezing]
 ---
 
 # AMO and Quantum State Control Across Platforms
@@ -168,6 +168,11 @@ Do not collapse into “dissipation always helps.” Prefer: **sometimes the env
 ## Lint addendum (2026-08-31)
 
 - Vacuum / QI neighbor also linked from paper side: [[differential-signaling-quantum-vacuum]], [[imaging-vacuum-fluctuations-qft]].
+
+## Addendum (2026-11-15)
+
+- [[one-positron-quantum-cyclotron]]: one positron, months in a 300 mK Penning trap, with resolved cyclotron rungs and spin flips. Capability only. No magnetic moment. The loading trick is neutral positronium through a 640 μm cavity hole. Do not read the “>30×” CPT line as a completed comparison; the electron–positron test is still a forecast, and a same-trap swap would improve on 1987 by a smaller factor if both sides only match the 2023 electron precision. Different antimatter experiment: [[positronium-diffraction-graphene]].
+- [[ligo-frequency-dependent-squeezing]]: engineered vacuum at the LIGO dark port. A 300 m filter cavity rotates the squeeze ellipse with frequency. Loss, not the source, limits the delivered decibels. Detector review, not a state-sculpting experiment. Waveform home: [[gravitational-wave-strong-field-probes]].
 
 ## Addendum (2026-10-05)
 

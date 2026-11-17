@@ -40,6 +40,8 @@ Ringdown is the black hole’s after-ring, sounding from the light-ring “bell.
 - Lint link: [[qg-deep-dive-1-mergers-emission]]
 
 - Related (SpaceX set): [[psr-j1906-binary-timing]] — Binary NS timing / strong-field gravity
+- Noise engineering that sets what this class of waveform can be heard through: [[ligo-frequency-dependent-squeezing]]
+- Field-sheet dictionary, not a ringdown: [[gravitational-field-reconnection]]
 
 ## Source
 

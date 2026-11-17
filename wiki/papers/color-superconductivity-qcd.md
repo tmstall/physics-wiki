@@ -41,6 +41,7 @@ A sharp Fermi surface is a razor edge: any weak attraction piles infinite phase 
 
 - Related (SpaceX set): [[na61-isospin-kaon-asymmetry]] — NA61 isospin kaon excess
 - Synthesis: [[nuclear-dense-matter-precision]] (nuclear & dense-matter precision map)
+- Existence of a continuum Yang–Mills theory, with the mass gap still open: [[yang-mills-existence-mass-gap]]. Not a color-superconducting phase.
 
 ## Source
 

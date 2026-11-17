@@ -39,6 +39,7 @@ A hard scatter throws two sprays back to back. The near side is fragments of the
 - O+O core–corona equilibration: [[equilibrated-fraction-oo-qcd]]
 - LHC oxygen/neon geometry and flow: [[alice-oo-nene-nuclear-geometry-flow]]
 - Jet concept: [[parton-jets]]
+- Heavy-quark kick shape at weak coupling, not this O+O measurement: [[heavy-quark-non-gaussian-transport]]
 
 ## Source
 

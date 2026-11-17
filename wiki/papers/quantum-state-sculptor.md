@@ -40,6 +40,7 @@ A harmonic oscillator is an infinite ladder of rungs. Cats usually superpose two
 - Synthesis: [[amo-quantum-state-control]] (AMO state control)
 - Synthesis: [[measurement-problem-threads]]
 - Reverse-link: [[cft-spectra-rydberg-simulator]]
+- Kilometer-scale squeezed vacuum, a different control problem: [[ligo-frequency-dependent-squeezing]]
 
 ## Source
 

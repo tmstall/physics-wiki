@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, condensed-matter, topology, fractionalization, moire, quantum-geometry]
-last_updated: 2026-10-31
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw, tise2-core-level-cdw-excitons, erte3-competing-cdw-time-domain, woven-ferroelectric-domains-optical, coexisting-spin-vibrational-orbital-excitations, nonlinear-circular-dichroism-berry-curvature]
+related_papers: [anyon-trions-twisted-mote2, 1d-anyons-momentum-tails, fractional-fermi-sea-1d-bosons, supermoire-trilayer-graphene-sc, quantum-metric-spin-momentum-locking, brown-zak-nonlinear-transport, magnetic-heliknoton-electric-write, nonabelian-photonic-braiding, nickelate-nodeless-gap-arpes, three-body-quantum-company, snte-light-topological-inversion, photonic-supersolid, spin-flip-flop-saf, bata2s5-field-induced-sc, quantum-metallurgy-cdw, tise2-core-level-cdw-excitons, erte3-competing-cdw-time-domain, woven-ferroelectric-domains-optical, coexisting-spin-vibrational-orbital-excitations, nonlinear-circular-dichroism-berry-curvature, particle-anti-spin-ice]
 ---
 
 
@@ -113,13 +113,15 @@ This synthesis is **condensed-matter / AMO topology**. Quantum-time metrology li
 
 ## Thread D — Photonic and soft-matter emulators
 
-**Papers:** [[nonabelian-photonic-braiding]], [[photonic-supersolid]], [[twisted-light-chiral-ms]] (structured light neighbor)
+**Papers:** [[nonabelian-photonic-braiding]], [[photonic-supersolid]], [[particle-anti-spin-ice]], [[twisted-light-chiral-ms]] (structured light neighbor)
 
 [[nonabelian-photonic-braiding]]: reconfigurable photonic lattices implement full SU(2) pseudospin rotations; adiabatic loops braid light modes with path-order memory. Two Abelian bulks with mismatched spin bases can host a non-Abelian interface.
 
 **Intuition:** Sequence is memory — rotate $x$ then $y$ versus $y$ then $x$. Light’s internal labels are programmed couplers; braiding is classical room-temperature practice for ideas usually reserved for fragile non-Abelian anyons.
 
 **Limits:** Loss, fabrication detuning; classical simulation, not a topological qubit.
+
+**Addendum (2026-11-15).** [[particle-anti-spin-ice]] is a soft-matter emulator, not a fractional-charge claim. The experiment is a pentaheptite plateau near one-eighth filling: odd loops fail to maximize magnetic charge. The square and honeycomb charge crystals are simulation only. Field scale and spin speed are fitted, and residual entropy is not counted.
 
 **Addendum (2026-10-05).** [[photonic-momentum-space-topology]] does not build a lattice. A four-mode mesh evaluates one wavevector at a time and reads a Zak phase (0 vs π) and a fitted Chern number (0 vs 1) for lossy SSH and Rice–Mele models. For injection into the lossy site the phase copies the programmed coupling, so the integer is the Hermitian parent’s. This is an emulator readout, like [[nonabelian-photonic-braiding]], not a material fractional-charge result. The exceptional-point winding, as the main text describes it, follows from the contour. The supplement was unread.
 

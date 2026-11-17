@@ -45,6 +45,7 @@ A Hopf index counts how spin directions on a sphere wrap and link through 3D spa
 - Concepts: [[magnons]]
 - Key terms: heliknoton, Hopf soliton, chiral magnet, spin-transfer torque, skyrmion Hall effect
 - Synthesis: [[condensed-matter-topology-fractionalization]] (fractionalization & topology map)
+- Soft-matter charge crystal, a different write knob: [[particle-anti-spin-ice]]
 
 ## Source
 

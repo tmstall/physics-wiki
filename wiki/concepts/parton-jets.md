@@ -29,4 +29,5 @@ A hard-scattered parton fragments into a spray. Inclusive high-\(p_T\) triggers 
 - [[levinthal-high-pt-isr]]
 - [[star-jpsi-spin-interference]], [[alice-jpsi-gluon-saturation]]
 - [[cms-jet-diffusion-wake]]
+- [[gluon-production-cgc-bcfw]] re-derives the known dilute–dense amplitude. Method only.
 - Synthesis: [[nuclear-dense-matter-precision]]

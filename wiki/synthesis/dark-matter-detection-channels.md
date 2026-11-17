@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, dark-matter, axions, cosmology, detectors, primordial-black-holes, gamma-rays]
-last_updated: 2026-10-09
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, ultraheavy-dm-levitated-magnet-polonaise, unconventional-materials-light-dm, fdm-wave-lensing-hs0810, primordial-black-holes-are-5d]
+related_papers: [axion-detector-quantum-erasure, gamma-glow-pbh-detector, dark-photon-plasma-saturation, gw-induced-fermion-freeze-in, oyashio-extragalactic-gc-stream, alena-tensor-rotation-dm, mond-external-field-sparc, 43gev-gamma-ray-line-clusters, lz-dm-eft-high-energy-recoil, ultraheavy-dm-levitated-magnet-polonaise, unconventional-materials-light-dm, fdm-wave-lensing-hs0810, primordial-black-holes-are-5d, lvk-o4a-cosmological-gwb]
 ---
 
 # Dark Matter Detection Channels
@@ -66,6 +66,8 @@ This synthesis is **detection and bound channels**. Expansion history and LSS ph
 [[gamma-glow-pbh-detector]]: evaporating asteroid-mass PBHs contribute to the extragalactic γ-ray glow; updated bookkeeping (including positron / invisible channels) **tightens or closes** the low-mass PBH DM window (analysis-level: e.g. $10^{14}$ g cannot be more than a tiny DM fraction).
 
 [[primordial-black-holes-are-5d]] is a *scenario ceiling*, not a search: inside the Dark Dimension, standard formation channels cannot make a hole heavier than ~$10^{23}$ g, so any PBHs are five-dimensional and evaporate more slowly than the 4D Hawking law this glow bound assumes. Treat it as a possible weakening of Thread B1, owned on [[modified-speculative-gravity]] / [[primordial-black-holes]], not as a new detector.
+
+[[lvk-o4a-cosmological-gwb]] bounds a different slice: stellar-mass primordial holes as a merger background. The dark-matter fraction sits below about 1% from 1 to 100 solar masses (about 0.4% near 30–100) inside that binary model. Microlensing still wins below about 3 solar masses. This does not touch the asteroid-mass γ-glow window or the 5D ceiling.
 
 ### B2 — Dark-photon resonance self-limits
 

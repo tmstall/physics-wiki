@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, nuclear-physics, qcd, dense-matter, heavy-ion, precision]
-last_updated: 2026-10-31
+last_updated: 2026-11-15
 status: synthesis
-related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, alice-jpsi-gluon-saturation, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr, nucleus-tells-on-itself, intrinsic-charm-proton-nnpdf, x2370-pseudoscalar-glueball, alice-oo-nene-nuclear-geometry-flow, tracking-baryon-number-nuclear-collisions, equilibrated-fraction-oo-qcd, baryon-semileptonic-polarization-entanglement, zz-entanglement-higgs-decays, star-pt-correlations-qcd-critical, cms-black-holes-sphalerons-svm, star-oxygen-jet-quenching]
+related_papers: [rhic-net-proton-fluctuations, na61-isospin-kaon-asymmetry, emc-effect-marathon-a3, color-superconductivity-qcd, nucleus-shell-src-memory, star-jpsi-spin-interference, alice-jpsi-gluon-saturation, high-pt-physics-cern-isr, eta-prime-mesic-nucleus, b-meson-fcnc-anomaly, levinthal-high-pt-isr, nucleus-tells-on-itself, intrinsic-charm-proton-nnpdf, x2370-pseudoscalar-glueball, alice-oo-nene-nuclear-geometry-flow, tracking-baryon-number-nuclear-collisions, equilibrated-fraction-oo-qcd, baryon-semileptonic-polarization-entanglement, zz-entanglement-higgs-decays, star-pt-correlations-qcd-critical, cms-black-holes-sphalerons-svm, star-oxygen-jet-quenching, heavy-quark-non-gaussian-transport, gluon-production-cgc-bcfw, lhcb-b0-mumu-run3, yang-mills-existence-mass-gap]
 ---
 
 
@@ -120,6 +120,8 @@ This synthesis is **nuclear / dense-matter precision**. Multi-messenger HEA and 
 **Limits:** UPC systematics and model backgrounds; ISR pre-modern pQCD.
 
 **Addendum (2026-10-05) — medium response, not jet finding.** [[cms-jet-diffusion-wake]] uses an η gap between dijets so a subleading jet’s diffusion wake lands clear of the leading jet’s fragments. Central PbPb shows a ~1% soft-track deficit (>5σ from zero) that moves with the gap. HYBRID overpredicts the depth. The dip is a measurement. Calling it the wake is an inference until ATLAS repeats the geometry and a centrality-matched model hits the size. This sits on the hard-probe ladder next to [[parton-jets]]: quenching says what the parton loses; the wake asks where the momentum goes.
+
+**Addendum (2026-11-15).** [[heavy-quark-non-gaussian-transport]] computes the kick distribution on an infinitely heavy quark at weak coupling: Gaussian core plus lopsided exponential tails required by detailed balance. Same shape in a strong-coupling toy. No collider observable is shifted. [[gluon-production-cgc-bcfw]] re-derives the known dilute–dense production amplitude by off-shell recursion. Method, not a new cross section. [[lhcb-b0-mumu-run3]] is flavor, not the medium: $B^0\to\mu^+\mu^-$ at 3.0σ evidence, rates consistent with the Standard Model. [[yang-mills-existence-mass-gap]] is the existence question for the theory these calculations use. The mass gap is not claimed. Do not read any of these as a critical-point result.
 
 ---
 

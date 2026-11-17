@@ -41,6 +41,7 @@ This answers one pebble-accretion objection (Morbidelli, Kleine & Nimmo): pebble
 - Circumtriple disk still being fed: [[gw-ori-streamer-misalignment]]
 - Volatile inventory in a small body (comet, not planet): [[ch3oh-hcn-3i-atlas-outgassing]]
 - Islands planetary shelf; no synthesis hub yet (graduation candidate with Enceladus + chondrites)
+- Later giant impacts that can keep a hydrogen envelope: [[giant-impact-atmosphere-retention]]. Different question from Earth–Mars volatile budgets.
 
 ## Open questions
 

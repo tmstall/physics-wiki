@@ -1,8 +1,8 @@
 ---
 tags: [concepts, general-relativity, topology]
-last_updated: 2026-08-16
+last_updated: 2026-11-15
 status: draft
-related_papers: [frozen-in-gravitational-fields, topological-cosmological-constant]
+related_papers: [frozen-in-gravitational-fields, topological-cosmological-constant, gravitational-field-reconnection]
 ---
 
 # Frozen-In Gravity
@@ -13,7 +13,7 @@ related_papers: [frozen-in-gravitational-fields, topological-cosmological-consta
 
 Ideal MHD glues magnetic lines to a perfect conductor. Asenjo–Winkler–Comisso show vacuum GR can play the same game with Weyl curvature as the “field”: flux through comoving two-surfaces and linking (Gravitational Helicity) stay conserved under full nonlinear Einstein flow unless effective resistivity appears.
 
-Paper: [[frozen-in-gravitational-fields]].
+Paper: [[frozen-in-gravitational-fields]]. The sequel [[gravitational-field-reconnection]] defines the failure mode: a non-ideal term changes connectivity only when it cannot be absorbed into a new transport flow. No spacetime is computed, and the sheets depend on the observer frame.
 
 ## Related pages
 

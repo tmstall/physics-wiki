@@ -1583,3 +1583,56 @@ Overrides: `ingest all` / `no triage` / `auto-continue`. Batches 5+5+3; light li
 
 No new synthesis hub. [[modified-speculative-gravity]] states the 2016 QI derivation fails on recomputation.
 
+## [2026-11-15] ingest | Batch 1 — local DCBH weather, hypersoft X-rays, LVK silence, one positron, auroral rulers
+
+### Papers created
+- [[direct-collapse-black-holes-local-lw]] — from `2026-09-22_doi-10.1093-mnras-stag1230_hunting-first-cosmic-giants-direct-collapse-black-holes.md`
+- [[hypersoft-x-ray-sources]] — from `2026-09-24_doi-10.1038-s41550-026-02959-7_hypersoft-x-ray-sources-low-energy-cosmic-emitters.md`
+- [[lvk-o4a-cosmological-gwb]] — from `2026-10-24_doi-10.1103-dlfv-z6m2_lvk-o1-o4a-cosmological-gwb-implications.md`
+- [[one-positron-quantum-cyclotron]] — from `2026-10-24_doi-10.1103-gbkc-6nlj_one-positron-quantum-cyclotron.md`
+- [[alfvenic-modulation-auroral-potential]] — from `2026-10-26_doi-10.1029-2026JA035658_alfvenic-modulation-quasi-static-potential-optical.md` (Islands; cited figures were missing at copy)
+
+### Skipped
+- `2026-10-05_doi-10.1103-g12h-93th_primordial-black-holes-five-dimensional.md` — skipped_duplicate of [[primordial-black-holes-are-5d]] (same DOI 10.1103/g12h-93th; no Deep Dive block to fold)
+
+### Hubs touched
+- Concepts: [[stochastic-gw-background]], [[type-ia-supernovae]]
+- Synthesis: [[black-hole-feedback-and-changing-look-agn]], [[cosmology-expansion-history-and-structure]], [[gravitational-wave-strong-field-probes]], [[high-energy-astrophysics-multimessenger]], [[dark-matter-detection-channels]], [[amo-quantum-state-control]]
+- Also linked [[early-universe-popiii-flash-ionization]] (different heavy-seed channel)
+
+### Catalog
+- Papers **270 → 275** · Concepts 62 · Synthesis 18
+- Successes this run: 5. Queue remaining: 14 pending.
+
+## [2026-11-15] ingest | Remainder — cluster gas motion, Yang–Mills existence, reconnection, spin ice, atmospheres, heavy quarks, Lean, LHCb, LIGO squeeze, gluons, eml, RF limits
+
+Pauses after each batch and after the light lint were waived (`continue and no need to ask again`). Twelve new paper pages. The Yang–Mills deep dive and the 10 Nov assessment are folded into [[yang-mills-existence-mass-gap]], not extra catalog papers.
+
+### Papers created
+- [[rotational-ksz-cluster-motions]] — Goldstein & Hill; internal gas motion, not the pairwise force law
+- [[yang-mills-existence-mass-gap]] — primer + deep dive + YMGroup assessment-1; Wightman limit certified, mass gap open
+- [[gravitational-field-reconnection]] — slippage test; no worked spacetime
+- [[particle-anti-spin-ice]] — pentaheptite plateau; square crystal is simulation only
+- [[giant-impact-atmosphere-retention]] — Islands; valley exists in the no-impact control
+- [[heavy-quark-non-gaussian-transport]] — lopsided kick tails; no collider shift
+- [[lean-proof-assistant]] — Islands; Nov 7 primer status points at the Nov 10 verdict
+- [[lhcb-b0-mumu-run3]] — 3.0σ evidence; rates match the Standard Model
+- [[ligo-frequency-dependent-squeezing]] — one index row, under quantum metrology
+- [[gluon-production-cgc-bcfw]] — re-derives the known dilute–dense amplitude
+- [[eml-single-operator]] — Islands, Formal mathematics; completeness is a sketch
+- [[icbe-emf-whole-body-limits]] — Islands, RF exposure; not merged with HRV
+
+### Hubs touched
+- Concepts: [[frozen-in-gravity]], [[ksz-effect]], [[parton-jets]]
+- Synthesis: [[nuclear-dense-matter-precision]], [[condensed-matter-topology-fractionalization]], [[gravitational-wave-strong-field-probes]], [[amo-quantum-state-control]], [[cosmology-expansion-history-and-structure]]
+- [[modified-speculative-gravity]] left unchanged. The reconnection page points there only to say the rewrite is ordinary GR.
+
+### Catalog
+- Papers **275 → 287** · Concepts 62 · Synthesis 18
+- Successes this run: 5 + 12 = 17. Queue remaining: 0 pending.
+- Inbox leftovers not ingested: lunar-tidal frame degeneracy; Lieb–Robinson 1d continuum fermions.
+
+## [2026-11-15] lint | Full lint after empty queue
+
+Light lint (due at success 10) folded into `LINT_REPORT_2026-11-15.md`. The intermediate pause was waived. Catalog matches disk: 287 papers, 62 concepts, 19 synthesis files (18 hubs + companion). Verdict PASS. One intentional one-way link remains: reconnection → [[modified-speculative-gravity]].
+

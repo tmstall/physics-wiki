@@ -41,6 +41,7 @@ Warm, averaging all masks equally, is a purely linear model. Cold, you get the p
 - Neural many-body wavefunctions (NN as physics tool, not NN-as-stat-mech): [[particle-view-nn-wavefunction]]
 - Foundations neighbor (jamming / constraint language, not this construction): [[quantum-jamming]]
 - Islands ML/computation shelf with the scaling paper; no synthesis hub yet
+- A different exact identity, not this mask ensemble: [[eml-single-operator]] (Formal mathematics Islands, not this shelf)
 
 ## Open questions
 

@@ -1,8 +1,8 @@
 # Physics Wiki — Index
 
-Master catalog. Updated **2026-10-31** — 10-paper wave including failed QI derivation. Updated **2026-10-09** — headless ingest of the 2026-10-09 queue.
+Master catalog. Updated **2026-11-15** — ingest finished (17 new this run; one PBH journal twin skipped; Yang–Mills deep dive and assessment folded into one page). Updated **2026-10-31** — 10-paper wave including failed QI derivation.
 
-**Papers:** 270 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
+**Papers:** 287 · **Concepts:** 62 · **Synthesis:** 18 (+ companion [[measurement-threads-1-7-refresher]])  
 **Scope:** physics-first + **multi-agent / collective AI** (same vault; see `AGENTS.md`)
 
 ---
@@ -58,6 +58,8 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[cft-spectra-rydberg-simulator]]         | Rydberg array resolves Ising/TCI CFT level towers         |
 | [[mmwave-optical-microcomb]]              | Unamplified microcomb → broadband mm-wave harmonic comb   |
 | [[coupling-free-electrons-trapped-ion]]   | Free e⁻ coupled to trapped-ion QC; hybrid sensing/control |
+| [[one-positron-quantum-cyclotron]] | One positron, months at 300 mK; quantum rungs shown, moment not measured |
+| [[ligo-frequency-dependent-squeezing]] | LIGO filter-cavity squeeze; loss sets the decibels; sub-SQL is inferred |
 | [[imaging-vacuum-fluctuations-qft]]       | Cold-atom camera for QFT vacuum jitter ($1/\omega_k$) |
 
 ### Concepts
@@ -120,6 +122,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[evaporating-charged-black-holes]] | Charge + Hawking NEC → regular endpoints |
 | [[hawking-radiation-charge-shell]] | Double-copy charge shell thermality |
 | [[frozen-in-gravitational-fields]] | Curvature freeze like ideal MHD |
+| [[gravitational-field-reconnection]] | Slippage vs reconnection of field sheets; no worked spacetime |
 | [[pre-bang-leftovers]] | Bounce relics / PBHs |
 | [[gw-induced-fermion-freeze-in]] | GW freeze-in fermionic DM |
 | [[smbh-inclination-angle]] | Inclination filter for SMBH pairing |
@@ -157,6 +160,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[qg-deep-dive-3-holographic-codes]] | Bulk reconstruction as QEC |
 | [[qg-deep-dive-4-de-sitter]] | de Sitter holography without AdS walls |
 | [[direct-bh-mass-lrd-abell2744]] | First direct dynamical BH mass for a $z\sim7$ LRD |
+| [[direct-collapse-black-holes-local-lw]] | Local LW flux: DCBH seeds from $z \approx 22$; most stay faint |
 | [[discrete-gravity-planck-cells]] | GR rebuilt from indivisible Planck-scale cells |
 | [[bh-thermo-far-from-equilibrium]] | Dynamical first law; entropy on MTS not event horizon |
 | [[entanglement-islands-page-curves-kerr-ads]] | Kerr-AdS islands; Page curve can jump at swallow-tail |
@@ -195,6 +199,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[cigars-i-supernova-cosmology]] | Physics-based SN Ia inference |
 | [[holismokes-sn-winny]] | Lensed SLSN Winny |
 | [[newton-ksz-force-law]] | kSZ force law n≈2.1 |
+| [[rotational-ksz-cluster-motions]] | Cluster dipole is internal gas motion, not a force law |
 | [[loki-early-accreted-vmp]] | Early-accreted VMP fossil |
 | [[pulsars-satellite-masses]] | MSP accelerations → satellite masses |
 | [[interstellar-glaciers-spherex]] | SPHEREx ice maps |
@@ -249,6 +254,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[mxdfz4-4-lyc-emitter]] | z = 4.44 LyC leak; flux solid, 50–100% escape is a model envelope |
 | [[muse-desi-lens-confirmation]] | MUSE: 55 DESI lens candidates confirmed, 6 impostors; 47 robust for both $z$ |
 | [[radio-galaxy-z4946]] | $z=4.946$ radio galaxy confirmed; “most powerful” claim misses a $1+z$ factor |
+| [[lvk-o4a-cosmological-gwb]] | One O1–O4a null, eight early-universe templates; loud corners only |
 
 ### Concepts
 | Page | Summary |
@@ -292,6 +298,7 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[anyon-trions-twisted-mote2]] | Optical anyon–trions fingerprint e/3, e/5 |
 | [[quantum-metric-spin-momentum-locking]] | Rashba locking → quantum metric in LAO/STO |
 | [[magnetic-heliknoton-electric-write]] | Current-written 3D heliknotons in FeGe |
+| [[particle-anti-spin-ice]] | Pentaheptite charge plateau; square crystal is simulation only |
 | [[ito-nanocrystal-fieldoscopy]] | ITO sub-cycle SWIR switch |
 | [[nonlinear-circular-dichroism-berry-curvature]] | Below-gap pump twists SHG; qualitative Berry-curvature handle |
 | [[coexisting-spin-vibrational-orbital-excitations]] | Sort spin, vibration, and orbital peaks on a superconductor |
@@ -363,6 +370,10 @@ Companion (not a separate topical hub): [[measurement-threads-1-7-refresher]] �
 | [[star-pt-correlations-qcd-critical]] | STAR pT-correlation dip near guessed critical point; not a discovery |
 | [[cms-black-holes-sphalerons-svm]] | No micro-BHs ≲9–11 TeV; phase-space SVM |
 | [[cms-jet-diffusion-wake]] | ~1% soft-particle dip opposite a subleading jet; wake ID still an inference |
+| [[yang-mills-existence-mass-gap]] | Machine-checked Wightman limit for every compact simple group; mass gap open |
+| [[heavy-quark-non-gaussian-transport]] | Heavy-quark kick tails are lopsided; no collider shift |
+| [[lhcb-b0-mumu-run3]] | $B^0\to\mu^+\mu^-$ at 3.0σ; rates match the Standard Model |
+| [[gluon-production-cgc-bcfw]] | Off-shell recursion re-derives the known dilute–dense amplitude |
 
 ### Concepts
 | Page | Summary |
@@ -435,6 +446,7 @@ Graduated from Islands (2026-08-29): paper list for engines / CR / multimessenge
 | [[psr-j1856-lightest-dns]] | Lightest precise DNS total mass, 2.48841 M☉; GR decay at 1.4% |
 | [[sgr-a-pevatron-magnetic-penrose]] | Sgr A* magnetic Penrose PeVatron; energy scale holds, flux omits decay odds |
 | [[grb-220706a-month-long-engine]] | GRB 220706A X-ray flares to ~27 rest-frame days; SN claim is dust-fragile |
+| [[hypersoft-x-ray-sources]] | 84 Chandra sources below 0.3 keV; luminosity is a temperature assumption |
 
 ---
 
@@ -504,6 +516,7 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | [[chondrite-pressure-bump]] | Jupiter dust trap for CCs |
 | [[ch3oh-hcn-3i-atlas-outgassing]] | Interstellar comet 3I/ATLAS: high CH₃OH/HCN; asymmetric outgassing |
 | [[volatile-depletion-hybrid-accretion]] | Earth mostly pebble-envelope loss, Mars mostly dried planetesimals |
+| [[giant-impact-atmosphere-retention]] | Impacts can keep a hydrogen envelope; the radius valley exists without them |
 | [[enceladus-ice-grain-salt-segregation]] | Cassini Type 3 grains are one-salt fragments of slowly frozen droplets |
 
 ### Atmosphere / Earth system
@@ -517,6 +530,14 @@ True one-offs that fail the graduation bar (≥2–3 related papers + clear sect
 | [[life2-telescope-array-biosignatures]] | Life 2.0: ~900×1 m array for ppm transit biosignatures (concept) |
 | [[tesla-thermoformed-tactile-sensor]] | Tesla US 2026/0310299 A1: two orders for curved robot-skin grids; no device data |
 
+### Magnetosphere / aurora
+
+One-paper shelf (2026-11-15). Ground cameras separating a static auroral voltage from Alfvén waves. Not lab plasma. Stays here until a second arc paper shares the question.
+
+| Page | Summary |
+| --- | --- |
+| [[alfvenic-modulation-auroral-potential]] | Two optical rulers on one 25 s arc; poleward ~1 Hz disagreement is the result |
+
 ### Machine learning / computation
 Two-paper shelf (2026-10-09 ingest). Architecture/scaling and a ReLU stat-mech identity. Not collective AI; stay Islands until a third paper shares the question.
 
@@ -524,6 +545,23 @@ Two-paper shelf (2026-10-09 ingest). Architecture/scaling and a ReLU stat-mech i
 | --- | --- |
 | [[model-growth-looping-scaling-exponents]] | Growth + boundary operator steepen LM compute-optimal slope (~1.55× at ladder top) |
 | [[deep-relu-statmech-realization]] | Exact $T=0$ mask ensemble = deep ReLU; “phase transition” is a level crossing |
+
+### Formal mathematics
+
+Two-paper shelf (2026-11-15). A proof assistant and a single-operator calculus. Different questions. Not the machine-learning shelf.
+
+| Page | Summary |
+| --- | --- |
+| [[lean-proof-assistant]] | Clean build can still be the wrong definition, a vacuous hypothesis, or `sorry` |
+| [[eml-single-operator]] | $e^x-\ln y$ plus 1; completeness is a sketch; regression only to depth 2 |
+
+### RF exposure / environmental health
+
+One-paper shelf (2026-11-15). Whole-body SAR limits versus animal cancer counts. Not the HRV physiology shelf.
+
+| Page | Summary |
+| --- | --- |
+| [[icbe-emf-whole-body-limits]] | Heating limit versus NTP ratios; factor ~1000 is a linear extrapolation |
 
 ---
 
@@ -545,5 +583,7 @@ Two-paper shelf (2026-10-09 ingest). Architecture/scaling and a ReLU stat-mech i
 | Ingest 2026-10-05 batch 2 | 5 new; CHIME plain is the wiki source; catalog 250 |
 | Ingest 2026-10-09 | 10 new (5+5 headless); planetary 4 papers (graduation candidate); new ML Islands shelf; catalog 260 |
 | Island audit 2026-08-29 | Graduated: plasma HED, HEA, historical HEP, chemistry; remain: planetary, TC, Life 2.0, ML |
+| Ingest 2026-11-15 batch 1 | 5 new; PBH DOI `g12h-93th` skipped_duplicate of [[primordial-black-holes-are-5d]]; auroral page stays Islands; catalog 275 |
+| Ingest 2026-11-15 remainder | 12 new; Yang–Mills deep dive and assessment folded into [[yang-mills-existence-mass-gap]]; Formal mathematics and RF-exposure Islands; catalog 287 |
 
 Activity log: [[log]] (`wiki/log.md`).

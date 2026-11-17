@@ -42,6 +42,7 @@ A \(b\) quark cannot freely turn into an \(s\) quark plus muons at tree level—
 - HEP historical / collider neighbors: [[high-pt-physics-cern-isr]], [[parton-jets]]
 - Key terms: **Wilson coefficients** (e.g. \(C_9\), \(C_{10}\)) package short-distance \(b\to s\ell\ell\) physics in an EFT—experiments fit them when angular shapes deviate from the SM.
 - Concepts: [[flavor-changing-neutral-current]]
+- Run 3 dimuon rates, a branching-fraction test rather than the angular anomaly: [[lhcb-b0-mumu-run3]]
 
 ## Source
 
